@@ -1,43 +1,25 @@
-# Liga Juventino Rosas - MASTER V16
+# Liga Juventino Rosas · MASTER V16
 
-Correccion total de texto/codificacion y agregado visible de la Gran Final de Veteranos.
+Plataforma unificada de la **Liga Municipal de Fútbol Juventino Rosas A.C.**
 
-# Liga Juventino Rosas · MASTER V14
-
-Continuacion directa del trabajo de Work/Astral Max. Se conserva MASTER V12/V13 y se agrega la capa cinematografica 3D con el logo oficial.
-
-**Sitio:** https://jairofrancog7-star.github.io/Liga_Futbol/
-
-**Repo:** https://github.com/jairofrancog7-star/Liga_Futbol
-
----
-# Liga Juventino Rosas · MASTER V12 3D
-
-**Repositorio:** https://github.com/jairofrancog7-star/Liga_Futbol
-
-**GitHub Pages:** https://jairofrancog7-star.github.io/Liga_Futbol/
-
-**Vista HTMLPreview:** https://htmlpreview.github.io/?https://github.com/jairofrancog7-star/Liga_Futbol/blob/main/index.html
-
-V12 conserva las funciones de MASTER V11 y añade una capa visual cinematografica 3D en Inicio, usando el logo real de la Liga Municipal de Futbol Juventino Rosas A.C. El 3D tiene fallback para moviles/reduced-motion y no reemplaza los modulos administrativos.
-
----
-# Liga Juventino Rosas · MASTER V11
-
-Plataforma unificada de la **Liga Municipal de Fútbol Juventino Rosas** en un solo repositorio:
-
-- **JR Fútbol** (público): portada deportiva, JR Matchday, Match Center, tabla, goleadores, equipos, jugadores, Copa/Liguilla, noticias y avisos.
-- **JR Control** (privado): jugadores, equipos, jornadas, partidos, campos, árbitros, sanciones, actas, reportes, importar/exportar y respaldos.
+MASTER V16 es la versión actual del proyecto. Este README deja fuera los encabezados y enlaces de versiones anteriores para mostrar solamente el estado vigente.
 
 ## Abrir la plataforma
 
-**Sitio en vivo (GitHub Pages)**
+**Sitio en vivo (GitHub Pages)**  
+https://jairofrancog7-star.github.io/Liga_Futbol/
 
-https://jairofrancog7-star.github.io/liga-juventino-rosas/
+**Repositorio oficial**  
+https://github.com/jairofrancog7-star/Liga_Futbol
 
-**Repositorio de desarrollo (GitLab)**
+## Gran Final de Veteranos
 
-https://gitlab.com/huig7563037/liga-juventino-rosas
+**Pozos FC vs Juventus**  
+**Sábado 12 de septiembre de 2026**  
+**4:00 pm**  
+**Campo 1 · Unidad Deportiva Sur**
+
+La Gran Final queda destacada dentro de la portada y conectada con Match Center, jornada y tabla.
 
 ## Categorías
 
@@ -47,83 +29,96 @@ https://gitlab.com/huig7563037/liga-juventino-rosas
 - Veteranos 35+
 - Veteranos 50+
 
-## Funciones actuales (V11)
+## JR Fútbol · Zona pública
 
-**Zona pública · JR Fútbol**
-- JR Matchday y partidos del día
-- Match Center con timeline de eventos, alineaciones y estadísticas
-- Tabla de posiciones y goleo
-- Perfiles públicos de equipos y jugadores
+- Portada deportiva premium
+- JR Matchday
+- Match Center
+- Partidos EN VIVO
+- Jornadas y resultados
+- Tabla de posiciones
+- Goleadores y estadísticas
+- Equipos y jugadores
 - Copa / Liguilla
-- Noticias, avisos, juntas y multimedia
-- Fan Zone: favoritos, pronósticos, encuestas, reacciones, votación MVP y tarjeta de resultado
-- Shot map y credencial digital
+- Noticias y avisos
+- Juntas y multimedia
+- Fan Zone
+- Favoritos
+- Pronósticos sin dinero
+- Encuestas y reacciones
+- Votación MVP
+- Shot map
+- Credencial digital
 - Búsqueda global
-- Modo TV para juntas, finales y pantalla grande
+- Modo TV
 - Calendario `.ics`
 - Patrocinadores
-- Tema claro / oscuro y navegación móvil
+- Tema claro / oscuro
+- Navegación móvil
 - PWA instalable
 
-**Zona administrativa · JR Control**
-- Registro de jugadores (folio, CURP, posición, número)
-- Equipos, jornadas y partidos
-- Estados de partido: normal, suspendido, cancelado, walkover
-- Administración de campos y detector de conflictos de horario/campo
+## JR Control · Administración
+
+- Registro de jugadores
+- Equipos y plantillas
+- Jornadas y partidos
+- Campos y detección de conflictos
 - Árbitros y oficiales
-- Acta arbitral digital, imprimible o guardada como PDF desde el navegador
+- Alineaciones
+- Goles, asistencias y tarjetas
+- Cambios y penales
+- Estados normal, suspendido, cancelado y walkover
+- Acta arbitral digital
 - Sanciones y disciplina
 - Generador automático de fixture
-- Reportes por jornada
-- Importación / exportación CSV y respaldos
-- Operador móvil de partido desde la cancha
+- Reportes
+- Importación y exportación CSV
+- Respaldos
+- Operador móvil desde la cancha
 - Auditoría de cambios
 
-## Funcionamiento
+## Diseño MASTER V16
 
-La versión actual es una **demo funcional de interfaz** en un solo `index.html`. Las altas de jugadores, equipos, partidos, sanciones y los eventos del Match Center se guardan en `localStorage` del navegador para poder probar el flujo sin base de datos.
+- Estilo **Sports Broadcast + Premium App**
+- Fondo oscuro minimalista
+- Verde eléctrico como acento principal
+- Tipografías Sora, Bebas Neue y Manrope
+- Efectos 3D en títulos y marcadores
+- Botones con profundidad
+- Portada cinematográfica
+- Logo oficial de la Liga Municipal de Fútbol Juventino Rosas A.C.
+- Animaciones y scroll con fallback para móvil
+- Soporte para `prefers-reduced-motion`
 
-No sustituye todavía a Supabase/PostgreSQL de producción.
+## Funcionamiento actual
 
-## Estructura del repositorio
+La versión actual continúa siendo una **demo funcional de interfaz**. Las altas de jugadores, equipos, partidos, sanciones y eventos del Match Center se guardan localmente en el navegador mientras se completa la migración productiva.
 
-- `index.html`: aplicación completa (público + administración).
-- `sw.js` y `manifest.webmanifest`: PWA.
-- `icon.svg`: icono de la liga.
-- `docs/`: plan maestro, matriz de funciones, esquema Supabase y guías de ejecución.
-- `documentacion/`: auditoría, roadmap y especificaciones.
-- `scripts/`: utilidades.
+El objetivo técnico final es:
 
-## Stack objetivo
+**Next.js + React + TypeScript + Tailwind CSS + Supabase/PostgreSQL + Supabase Auth + Storage + Realtime + PWA.**
 
-Next.js + React + TypeScript + Tailwind CSS + Supabase/PostgreSQL + Supabase Auth + Storage + Realtime + PWA.
+## Estructura principal
 
-El principio es **no reescribir todo desde cero**: se conserva el motor administrativo actual y se moderniza por fases, sustituyendo las funciones demo por Supabase y código productivo sin romper lo que ya funciona.
-
-## Documentación para GitLab Duo
-
-Leer en este orden:
-
-1. `docs/GITLAB_DUO_EXECUTION_V11.md` (desarrollo dividido en 10 módulos)
-2. `docs/REPO_FILE_MAP_V11.md` (mapa de repositorios open source de referencia)
-3. `docs/DELTA_V11.md`
-4. `docs/MASTER_PLAN_V10.md`
-5. `docs/FEATURE_MATRIX_V10.md`
-6. `docs/OPEN_SOURCE_MAP_V10.md`
-7. `docs/ACCEPTANCE_CRITERIA_V10.md`
-8. `docs/SUPABASE_SCHEMA_V10.sql`
-9. `docs/RLS_GUIDE_V10.sql`
-
-De los repositorios de referencia solo se trasladan módulos y patrones útiles al stack único del proyecto, verificando primero su licencia. No se copian aplicaciones completas.
+- `index.html`: aplicación pública + administración
+- `assets/`: identidad visual y recursos del diseño
+- `sw.js`: service worker de la PWA
+- `manifest.webmanifest`: configuración instalable
+- `docs/`: arquitectura, seguridad, Supabase y continuidad del desarrollo
+- `documentacion/`: auditoría, especificaciones y roadmap
 
 ## Seguridad
 
 No subir al repositorio:
 
 - `.env`
-- claves `service_role` y secretos de Supabase
+- claves `service_role`
+- secretos de Supabase
 - contraseñas o tokens
 - CURP, INE o documentos personales reales
-- respaldos de producción o exportaciones con datos personales de jugadores
+- respaldos de producción con datos personales
 
+---
 
+**Versión actual: MASTER V16**  
+**Proyecto único: Liga_Futbol**
