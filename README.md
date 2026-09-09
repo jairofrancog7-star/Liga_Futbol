@@ -1,4 +1,13 @@
-﻿# Liga Juventino Rosas · MASTER V12 3D
+﻿# Liga Juventino Rosas · MASTER V14
+
+Continuacion directa del trabajo de Work/Astral Max. Se conserva MASTER V12/V13 y se agrega la capa cinematografica 3D con el logo oficial.
+
+**Sitio:** https://jairofrancog7-star.github.io/Liga_Futbol/
+
+**Repo:** https://github.com/jairofrancog7-star/Liga_Futbol
+
+---
+# Liga Juventino Rosas · MASTER V12 3D
 
 **Repositorio:** https://github.com/jairofrancog7-star/Liga_Futbol
 
@@ -112,4 +121,5 @@ No subir al repositorio:
 - contraseÃ±as o tokens
 - CURP, INE o documentos personales reales
 - respaldos de producciÃ³n o exportaciones con datos personales de jugadores
+
 

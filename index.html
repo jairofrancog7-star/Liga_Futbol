@@ -961,6 +961,7 @@ body.light .bottom-nav .nav-btn.active{
 }
 </style>
   <link rel="stylesheet" href="./assets/v12-3d.css">
+  <link rel="stylesheet" href="./assets/v14-cinematic.css">
 </head>
 <body>
 <div class="app">
@@ -999,6 +1000,44 @@ body.light .bottom-nav .nav-btn.active{
 
   <!-- ===== VISTA: INICIO ===== -->
   <section class="view active" id="view-home" aria-label="Inicio">
+
+    <!-- MASTER V14: continuaciÃ³n de Work/Astral Max, sin reemplazar MASTER V13 -->
+    <section id="v14CinematicHero" aria-label="Liga Municipal de FÃºtbol Juventino Rosas">
+      <div class="v14-grid">
+        <div class="v14-copy">
+          <div class="v14-kicker">Master V14 Â· Cinematic Sports 3D</div>
+          <div class="v14-lockup">
+            <img src="./assets/liga-logo.webp" alt="Liga Municipal de FÃºtbol Juventino Rosas A.C.">
+            <div><b>LIGA MUNICIPAL DE FÃšTBOL</b><small>Juventino Rosas A.C. Â· Guanajuato</small></div>
+          </div>
+          <h1 class="v14-title"><span class="outline">LA LIGA</span><br><span class="electric">SE VIVE</span><br>EN TIEMPO REAL.</h1>
+          <p class="v14-lead">La interfaz premium que ya construyÃ³ Work se mantiene. Esta capa aÃ±ade el salto cinematogrÃ¡fico: identidad oficial, balÃ³n 3D, profundidad, scroll y una entrada visual de nivel deportivo 2026 sin sacrificar la velocidad de tablas, formularios y JR Control.</p>
+          <div class="v14-actions">
+            <button class="primary-btn" data-view="matchcenter">ðŸ”´ Match Center</button>
+            <button class="ghost-btn" data-view="matches">âš½ Jornada</button>
+            <button class="ghost-btn" data-view="bracket">ðŸ† Liguilla</button>
+          </div>
+        </div>
+        <div class="v14-stage" aria-label="BalÃ³n tridimensional interactivo">
+          <canvas id="jrV14Canvas"></canvas>
+          <img class="v14-fallback" src="./assets/liga-logo.webp" alt="">
+          <div class="v14-chip a"><strong>5</strong> categorÃ­as</div>
+          <div class="v14-chip b"><strong>LIVE</strong> Match Center</div>
+          <div class="v14-chip c"><strong>JR</strong> Matchday</div>
+        </div>
+      </div>
+      <div class="v14-ticker" aria-hidden="true">
+        <div class="v14-track">
+          <span class="live">â— EN VIVO</span><span><b>Pozos FC 2â€”1 Juventus</b> Â· 73'</span>
+          <span>PRÃ“XIMO Â· <b>Boavista vs Cerrito</b> Â· 17:00</span>
+          <span>PRIMERA FUERZA</span><span>INTERMEDIA</span><span>SEGUNDA FUERZA</span><span>VETERANOS 35+</span><span>VETERANOS 50+</span>
+          <span class="live">â— EN VIVO</span><span><b>Pozos FC 2â€”1 Juventus</b> Â· 73'</span>
+          <span>PRÃ“XIMO Â· <b>Boavista vs Cerrito</b> Â· 17:00</span>
+          <span>PRIMERA FUERZA</span><span>INTERMEDIA</span><span>SEGUNDA FUERZA</span><span>VETERANOS 35+</span><span>VETERANOS 50+</span>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ===== V12 CINEMATIC SPORTS 3D ===== -->
     <section id="v12CinematicHero" aria-label="PresentaciÃ³n de Liga Juventino Rosas">
@@ -2463,6 +2502,12 @@ if(hash&&document.getElementById("view-"+hash))showView(hash);
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script src="./assets/hero3d.js"></script>
 <script src="./assets/v12-3d.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="./assets/v14-ball.js"></script>
+<script src="./assets/v14-effects.js"></script>
 </body>
 </html>
+
 
