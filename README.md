@@ -1,4 +1,72 @@
-﻿# Liga Juventino Rosas
+﻿# Liga Juventino Rosas Â· Proyecto unificado
+
+Este repositorio concentra **JR FÃºtbol + JR Control en un solo proyecto**.
+
+## Abrir la plataforma
+
+**Vista directa tipo tus proyectos anteriores**
+
+https://htmlpreview.github.io/?https://github.com/jairofrancog7-star/liga-juventino-rosas/blob/main/index.html
+
+**GitHub Pages**
+
+https://jairofrancog7-star.github.io/liga-juventino-rosas/
+
+## QuÃ© se combinÃ³
+
+La versiÃ³n unificada conserva el panel que ya funcionaba con:
+- Resumen
+- Jugadores
+- Equipos
+- Calendario y resultados
+- Tabla de posiciones
+- Goleo
+- Reportes y jornadas
+- Reglamento
+- Sanciones
+- Importar / exportar
+- Acceso administrativo
+
+Y aÃ±ade en el mismo `index.html`:
+- JR Matchday
+- Partidos del dÃ­a
+- Match Center
+- Timeline de eventos
+- Alineaciones
+- EstadÃ­sticas
+- Equipos y jugadores pÃºblicos
+- Copa / Liguilla
+- Noticias, avisos y juntas
+- Videos / Facebook
+- Historial
+- Operador mÃ³vil de partido
+- VotaciÃ³n MVP
+- ExportaciÃ³n demo
+- Calendario `.ics`
+- NavegaciÃ³n mÃ³vil
+- Tema claro / oscuro
+
+## Funcionamiento
+
+Los botones de esta versiÃ³n son interactivos. Para que puedas probar el flujo sin base de datos, altas de jugadores/equipos/partidos/sanciones y eventos del Match Center se guardan en `localStorage` del navegador.
+
+Esto es una **demo funcional de interfaz**, no sustituye Supabase/PostgreSQL de producciÃ³n.
+
+## Seguridad
+
+No subir:
+- `.env`
+- claves `service_role`
+- secretos de Supabase
+- contraseÃ±as o tokens
+- CURP / INE / documentos personales reales
+- respaldos de producciÃ³n
+
+---
+
+## Documentación anterior
+
+# Liga Juventino Rosas
 
 Repositorio único del proyecto **Liga Juventino Rosas**.
 
@@ -81,4 +149,5 @@ No subir al repositorio:
 - respaldos reales
 - exportaciones con datos personales de jugadores
 - documentos de identidad
+
 
