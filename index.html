@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#061812">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
 <title>Liga Juventino Rosas · Plataforma unificada</title>
 <style>
 :root{
@@ -92,6 +94,26 @@ body.light .bottom-nav{background:rgba(255,255,255,.94)}
 footer{margin:30px 0 8px;text-align:center;color:var(--muted);font-size:11px}
 @media(max-width:850px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr 1fr}.admin-shell{grid-template-columns:1fr}.admin-menu{position:static;display:flex;overflow:auto;gap:4px;padding:6px}.admin-menu button{width:auto;white-space:nowrap}.quick-actions{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.app{padding:12px 12px 100px}.topbar{margin:-12px -12px 12px;padding:10px 12px}.brand-copy small{display:none}.icon-btn{padding:9px}.hero{padding:18px;border-radius:24px}.match-hero{gap:6px}.team-logo{width:56px;height:56px;border-radius:18px}.team b{font-size:12px}.score strong{font-size:36px}.g2,.g3,.g4{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.more-grid{grid-template-columns:repeat(2,1fr)}.modal-backdrop{padding:8px}.modal{border-radius:22px}.top-actions .hide-mobile{display:none}}
+
+.fan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fan-btn{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:18px;padding:16px;font-weight:900;text-align:center}
+.fan-btn span{display:block;font-size:26px;margin-bottom:6px}
+.pitch{position:relative;min-height:420px;border-radius:22px;background:linear-gradient(90deg,#1f7b4d,#17633d);overflow:hidden;border:1px solid rgba(255,255,255,.18);cursor:crosshair}
+.pitch:before{content:"";position:absolute;inset:22px;border:2px solid rgba(255,255,255,.72);border-radius:4px}
+.pitch:after{content:"";position:absolute;left:50%;top:22px;bottom:22px;width:2px;background:rgba(255,255,255,.65)}
+.center-circle{position:absolute;width:90px;height:90px;border:2px solid rgba(255,255,255,.65);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.shot-dot{position:absolute;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.shot-goal{background:var(--accent)}.shot-saved{background:var(--blue)}.shot-missed{background:var(--danger)}.shot-blocked{background:var(--yellow)}
+.credential{max-width:420px;margin:auto;background:linear-gradient(145deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:var(--shadow)}
+.credential-head{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.qr{width:118px;height:118px;background:#fff;border-radius:14px;padding:7px;display:grid;grid-template-columns:repeat(13,1fr);gap:1px}
+.qr i{background:#fff}.qr i.on{background:#0a1712}
+.countdown{font-size:clamp(26px,5vw,44px);font-weight:950;letter-spacing:-.04em;color:var(--accent)}
+.badge-soft{display:inline-flex;border:1px solid var(--line);background:var(--surface);padding:6px 9px;border-radius:999px;color:var(--muted);font-size:11px;font-weight:850}
+.list-compact{display:grid;gap:8px}.list-compact .row{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid var(--line);border-radius:13px;background:var(--surface)}
+.progress{height:10px;background:var(--surface);border-radius:999px;overflow:hidden;border:1px solid var(--line)}.progress>i{display:block;height:100%;background:var(--accent)}
+@media(max-width:760px){.fan-grid{grid-template-columns:repeat(2,1fr)}.pitch{min-height:330px}}
+
 </style>
 </head>
 <body>
@@ -279,7 +301,83 @@ footer{margin:30px 0 8px;text-align:center;color:var(--muted);font-size:11px}
       <button class="more-link" data-view="media"><span>🎥</span>Videos</button>
       <button class="more-link" data-view="history"><span>🗂️</span>Historial</button>
       <button class="more-link" data-view="admin"><span>⚙️</span>JR Control</button>
+      <button class="more-link" data-view="fanzone"><span>🔥</span>Fan Zone</button>
+      <button class="more-link" data-view="shotmap"><span>🎯</span>Shot Map</button>
+      <button class="more-link" data-view="credential"><span>🪪</span>Credencial</button>
+      <button class="more-link" data-view="matchdaypro"><span>⏱️</span>JR Matchday+</button>
       <button class="more-link" id="installHint"><span>📲</span>Instalar app</button>
+    </div>
+  </section>
+
+
+  <section class="view" id="view-fanzone">
+    <div class="section-title"><div><div class="eyebrow">Fan Zone</div><h2>Participa con tu liga</h2></div><span class="badge-soft">Sin apuestas · solo puntos y diversión</span></div>
+    <div class="fan-grid">
+      <button class="fan-btn" id="favTeamBtn"><span>⭐</span>Seguir Pozos FC</button>
+      <button class="fan-btn" id="favMatchBtn"><span>🔔</span>Seguir partido</button>
+      <button class="fan-btn" id="reactionBtn"><span>🔥</span>Reaccionar</button>
+      <button class="fan-btn" id="shareResultBtn"><span>📤</span>Tarjeta resultado</button>
+    </div>
+    <div class="grid g2 section">
+      <div class="card">
+        <div class="section-title"><h3>Pronóstico</h3><span id="predictionScore" style="color:var(--muted)">0 puntos</span></div>
+        <form id="predictionForm" class="form-grid">
+          <div class="field"><label>Pozos FC</label><input type="number" min="0" max="20" name="home" value="2"></div>
+          <div class="field"><label>Juventus</label><input type="number" min="0" max="20" name="away" value="1"></div>
+          <div style="grid-column:1/-1"><button class="primary-btn">Guardar pronóstico</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <div class="section-title"><h3>Encuesta</h3><span id="pollCount" style="color:var(--muted)">0 votos</span></div>
+        <p style="color:var(--muted)">¿Quién gana la final?</p>
+        <div class="grid g2"><button class="ghost-btn pollBtn" data-choice="Pozos FC">Pozos FC</button><button class="ghost-btn pollBtn" data-choice="Boavista">Boavista</button></div>
+        <div class="progress section"><i id="pollProgress" style="width:50%"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-shotmap">
+    <div class="section-title"><div><div class="eyebrow">Estadística avanzada</div><h2>Mapa de tiros</h2></div><button class="ghost-btn" id="clearShots">Limpiar demo</button></div>
+    <div class="notice">Toca cualquier zona de la cancha para registrar un tiro. Esta es la idea para crear datos propios sin pagar un proveedor profesional.</div>
+    <div class="grid g2">
+      <div>
+        <div class="pitch" id="shotPitch"><div class="center-circle"></div></div>
+        <div class="toolbar section">
+          <select class="search" id="shotType" style="max-width:220px"><option value="goal">Gol</option><option value="saved">Atajado</option><option value="missed">Fuera</option><option value="blocked">Bloqueado</option></select>
+          <button class="primary-btn" id="downloadShotMap">Guardar imagen</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title"><h3>Resumen</h3><span class="badge-soft">Demo local</span></div>
+        <div class="grid g2" id="shotStats"></div>
+        <div class="section"><h3>Para producción</h3><p style="color:var(--muted)">Cada tiro debe guardar partido, jugador, equipo, minuto, coordenadas x/y y resultado. Después se puede calcular shot map, zonas de tiro y momentum propio.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-credential">
+    <div class="section-title"><div><div class="eyebrow">Validación</div><h2>Credencial digital de jugador</h2></div><button class="primary-btn" id="downloadCredential">Descargar tarjeta</button></div>
+    <div class="credential" id="credentialCard">
+      <div class="credential-head"><div><div class="eyebrow">Liga Municipal Juventino Rosas</div><h2 style="margin:5px 0">Jugador destacado</h2><p style="color:var(--muted);margin:0">Folio: LJR-00471</p></div><div class="avatar" style="width:74px;height:74px;font-size:32px">👤</div></div>
+      <div class="grid g2 section"><div><b>Pozos FC</b><p style="color:var(--muted)">Primera Fuerza · #10<br>Temporada 2026–27</p><span class="badge-soft" style="color:var(--accent)">● HABILITADO</span></div><div class="qr" id="qrBox" aria-label="Código visual de demostración"></div></div>
+      <p style="color:var(--muted);font-size:11px;margin-bottom:0">La versión final enlazará a una ficha pública limitada, sin exponer CURP/INE u otros documentos privados.</p>
+    </div>
+  </section>
+
+  <section class="view" id="view-matchdaypro">
+    <div class="section-title"><div><div class="eyebrow">JR Matchday+</div><h2>Centro de jornada</h2></div><span class="badge-soft">Inspirado en experiencia sports-app</span></div>
+    <div class="grid g2">
+      <article class="hero">
+        <div class="eyebrow">Próximo gran partido</div><h2>Pozos FC vs Juventus</h2><div class="countdown" id="countdown">00:00:00</div><p style="color:var(--muted)">Campo Municipal · Sábado · 17:00</p><button class="primary-btn" data-view="matchcenter">Abrir Match Center</button>
+      </article>
+      <div class="card">
+        <div class="section-title"><h3>Barra de jornada</h3></div>
+        <div class="list-compact">
+          <div class="row"><span>15:00 · Boavista vs Cerrito</span><strong style="color:var(--accent)">3–0 FINAL</strong></div>
+          <div class="row"><span>Pozos vs Juventus</span><strong style="color:var(--live)">2–1 · 73'</strong></div>
+          <div class="row"><span>19:00 · América vs UCKA</span><strong>Próximo</strong></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -299,6 +397,10 @@ footer{margin:30px 0 8px;text-align:center;color:var(--muted);font-size:11px}
         <button data-admin="sanctions">🟥 Sanciones</button>
         <button data-admin="import">↕️ Importar y exportar</button>
         <button data-admin="operator">📱 Operador de partido</button>
+        <button data-admin="fixture">🧠 Generar fixture</button>
+        <button data-admin="officials">👨‍⚖️ Árbitros y oficiales</button>
+        <button data-admin="disciplinepro">🛡️ Disciplina automática</button>
+        <button data-admin="audit">🧾 Auditoría</button>
       </aside>
       <main>
         <div class="admin-panel active" id="admin-summary">
@@ -341,11 +443,27 @@ footer{margin:30px 0 8px;text-align:center;color:var(--muted);font-size:11px}
             <button class="operator-btn" style="grid-column:1/-1" data-event="🏁 Final">🏁 FINAL</button>
           </div>
         </div>
+        <div class="admin-panel" id="admin-fixture">
+          <div class="section-title"><div><h3>Generador automático de calendario</h3><span style="color:var(--muted)">Round robin · demo</span></div><button class="primary-btn" id="generateFixture">Generar jornadas</button></div>
+          <div class="card"><p style="color:var(--muted)">Toma los equipos registrados en la demo más los equipos base y arma jornadas todos-contra-todos. En producción debe respetar canchas, horarios, descansos, categorías y conflictos.</p><div id="fixtureOutput"></div></div>
+        </div>
+        <div class="admin-panel" id="admin-officials">
+          <div class="section-title"><div><h3>Árbitros y oficiales</h3><span style="color:var(--muted)">Central · AR1 · AR2 · evaluador</span></div><button class="primary-btn" id="assignOfficials">Asignar demo</button></div>
+          <div class="grid g2"><div class="card"><b>Partido</b><p style="color:var(--muted)">Pozos FC vs Juventus</p></div><div class="card" id="officialAssignment"><b>Sin asignar</b><p style="color:var(--muted)">Usa “Asignar demo”.</p></div></div>
+        </div>
+        <div class="admin-panel" id="admin-disciplinepro">
+          <div class="section-title"><div><h3>Disciplina automática</h3><span style="color:var(--muted)">Acumulación y suspensiones</span></div><button class="ghost-btn" id="runDiscipline">Evaluar</button></div>
+          <div id="disciplineResult" class="card"><p style="color:var(--muted)">Ejecuta la evaluación para simular detección de acumulación de tarjetas.</p></div>
+        </div>
+        <div class="admin-panel" id="admin-audit">
+          <div class="section-title"><div><h3>Auditoría de administradores</h3><span style="color:var(--muted)">Quién cambió qué y cuándo</span></div></div>
+          <div class="table-wrap"><table><thead><tr><th>Hora</th><th>Acción</th><th>Actor</th><th>Detalle</th></tr></thead><tbody id="auditTable"></tbody></table></div>
+        </div>
       </main>
     </div>
   </section>
 
-  <footer>Liga Juventino Rosas · versión unificada de demostración · JR Fútbol + JR Control en un solo proyecto.</footer>
+  <footer>Liga Juventino Rosas · MASTER V10 · demo funcional unificada · JR Fútbol + JR Control en un solo proyecto.</footer>
 </div>
 
 <nav class="bottom-nav" id="bottomNav">
@@ -393,6 +511,11 @@ state.teams=state.teams||[];
 state.matches=state.matches||[];
 state.sanctions=state.sanctions||[];
 state.news=state.news||[];
+state.shots=state.shots||[];
+state.favorites=state.favorites||{team:false,match:false};
+state.prediction=state.prediction||null;
+state.polls=state.polls||{total:0,choices:{}};
+state.audit=state.audit||[];
 state.events=state.events||[
  {minute:"73'",label:"🟨 Amarilla",detail:"Juventus"},
  {minute:"64'",label:"🔄 Cambio",detail:"Pozos FC"},
@@ -403,7 +526,8 @@ state.events=state.events||[
 let currentCategory=localStorage.getItem("jrCategory")||"Primera Fuerza";
 let currentView="home";
 
-function save(){localStorage.setItem(storeKey,JSON.stringify(state));renderAdmin();renderDynamic();}
+function save(){localStorage.setItem(storeKey,JSON.stringify(state));renderAdmin();renderDynamic();renderV10();}
+function audit(action,detail){state.audit.unshift({time:new Date().toLocaleString(),action,actor:"Admin demo",detail});state.audit=state.audit.slice(0,50);localStorage.setItem(storeKey,JSON.stringify(state));renderAudit();}
 function toast(msg){const n=document.createElement("div");n.className="toast";n.textContent=msg;document.getElementById("toastWrap").appendChild(n);setTimeout(()=>n.remove(),2800)}
 function showView(name){
  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
@@ -471,7 +595,31 @@ function renderAdmin(){
  document.getElementById("adminSanctions").innerHTML=state.sanctions.length?`<div class="grid g2">${state.sanctions.map(s=>`<div class="card"><b>🟥 ${s.player}</b><p style="color:var(--muted)">${s.reason} · ${s.games} partido(s)</p></div>`).join("")}</div>`:`<div class="empty">No hay sanciones registradas en esta demo.</div>`;
 }
 function renderDynamic(){renderStandings();renderPlayers();renderTeams();renderMatches();renderScorers();renderNews();renderTimeline();renderCalendar()}
-renderDynamic();renderAdmin();
+function renderShots(){
+ const pitch=document.getElementById("shotPitch"); if(!pitch)return;
+ pitch.querySelectorAll(".shot-dot").forEach(x=>x.remove());
+ state.shots.forEach(s=>{const d=document.createElement("i");d.className="shot-dot shot-"+s.type;d.style.left=s.x+"%";d.style.top=s.y+"%";d.title=s.type;pitch.appendChild(d)});
+ const counts={goal:0,saved:0,missed:0,blocked:0};state.shots.forEach(s=>counts[s.type]++);
+ const labels={goal:"Goles",saved:"Atajados",missed:"Fuera",blocked:"Bloqueados"};
+ document.getElementById("shotStats").innerHTML=Object.keys(counts).map(k=>`<div class="card stat-card"><small>${labels[k]}</small><strong>${counts[k]}</strong></div>`).join("");
+}
+function renderFan(){
+ const a=document.getElementById("favTeamBtn");if(a)a.innerHTML=`<span>${state.favorites.team?"✅":"⭐"}</span>${state.favorites.team?"Siguiendo Pozos FC":"Seguir Pozos FC"}`;
+ const b=document.getElementById("favMatchBtn");if(b)b.innerHTML=`<span>${state.favorites.match?"✅":"🔔"}</span>${state.favorites.match?"Partido seguido":"Seguir partido"}`;
+ const pc=document.getElementById("pollCount");if(pc)pc.textContent=state.polls.total+" votos";
+ const ps=document.getElementById("predictionScore");if(ps&&state.prediction)ps.textContent=`${state.prediction.home}-${state.prediction.away} guardado`;
+}
+function renderAudit(){
+ const body=document.getElementById("auditTable");if(!body)return;
+ body.innerHTML=state.audit.length?state.audit.map(x=>`<tr><td>${x.time}</td><td>${x.action}</td><td>${x.actor}</td><td>${x.detail}</td></tr>`).join(""):`<tr><td colspan="4">Sin acciones registradas todavía.</td></tr>`;
+}
+function renderQR(){
+ const box=document.getElementById("qrBox");if(!box||box.children.length)return;
+ let seed=471;for(let i=0;i<169;i++){seed=(seed*9301+49297)%233280;const n=document.createElement("i");if(seed/233280>.52)n.className="on";box.appendChild(n)}
+}
+function renderV10(){renderShots();renderFan();renderAudit();renderQR()}
+
+renderDynamic();renderAdmin();renderV10();
 
 document.addEventListener("click",e=>{
  const view=e.target.closest("[data-view]")?.dataset.view;if(view){showView(view);return}
@@ -479,27 +627,27 @@ document.addEventListener("click",e=>{
  if(action==="new-player"){
   openModal("Registrar jugador",`<form id="playerForm"><div class="form-grid">${renderForm([
    {label:"Nombre",name:"name"},{label:"Folio",name:"folio",placeholder:"LJR-00001"},{label:"Equipo",name:"team"},{label:"Categoría",name:"category",type:"select",options:categories},{label:"Posición",name:"pos",type:"select",options:["Portero","Defensa","Medio","Delantero"]},{label:"Número",name:"number",type:"number"}])}</div><div class="toolbar section"><button class="primary-btn">Guardar jugador</button></div></form>`);
-  document.getElementById("playerForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.goals=0;d.assists=0;state.players.push(d);save();closeModal();toast("Jugador registrado en la demo")};return
+  document.getElementById("playerForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.goals=0;d.assists=0;state.players.push(d);audit("Jugador","Alta de "+d.name);save();closeModal();toast("Jugador registrado en la demo")};return
  }
  if(action==="new-team"){
   openModal("Nuevo equipo",`<form id="teamForm"><div class="form-grid">${renderForm([{label:"Nombre del equipo",name:"name"},{label:"Categoría",name:"category",type:"select",options:categories},{label:"Delegado",name:"delegate",required:false},{label:"Entrenador",name:"coach",required:false}])}</div><div class="toolbar section"><button class="primary-btn">Guardar equipo</button></div></form>`);
-  document.getElementById("teamForm").onsubmit=ev=>{ev.preventDefault();state.teams.push(Object.fromEntries(new FormData(ev.target)));save();closeModal();toast("Equipo agregado")};return
+  document.getElementById("teamForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.teams.push(d);audit("Equipo","Alta de "+d.name);save();closeModal();toast("Equipo agregado")};return
  }
  if(action==="new-match"){
   openModal("Programar partido",`<form id="matchForm"><div class="form-grid">${renderForm([{label:"Local",name:"home"},{label:"Visitante",name:"away"},{label:"Fecha",name:"date",type:"date"},{label:"Hora",name:"time",type:"time"},{label:"Cancha",name:"venue"},{label:"Categoría",name:"category",type:"select",options:categories}])}</div><div class="toolbar section"><button class="primary-btn">Programar</button></div></form>`);
-  document.getElementById("matchForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.status="PRÓXIMO";d.score="—";state.matches.push(d);save();closeModal();toast("Partido programado")};return
+  document.getElementById("matchForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.status="PRÓXIMO";d.score="—";state.matches.push(d);audit("Partido","Programado "+d.home+" vs "+d.away);save();closeModal();toast("Partido programado")};return
  }
  if(action==="new-sanction"){
   openModal("Nueva sanción",`<form id="sanctionForm"><div class="form-grid">${renderForm([{label:"Jugador",name:"player"},{label:"Motivo",name:"reason"},{label:"Partidos de suspensión",name:"games",type:"number"}])}</div><div class="toolbar section"><button class="primary-btn">Guardar sanción</button></div></form>`);
-  document.getElementById("sanctionForm").onsubmit=ev=>{ev.preventDefault();state.sanctions.push(Object.fromEntries(new FormData(ev.target)));save();closeModal();toast("Sanción registrada")};return
+  document.getElementById("sanctionForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.sanctions.push(d);audit("Sanción",d.player+" · "+d.reason);save();closeModal();toast("Sanción registrada")};return
  }
  if(action==="new-news"){
   openModal("Publicar aviso",`<form id="newsForm"><div class="form-grid">${renderForm([{label:"Tipo",name:"type",type:"select",options:["Aviso","Junta","Noticia","Disciplina"]},{label:"Título",name:"title"}])}</div><div class="field section"><label>Contenido</label><textarea name="text" required></textarea></div><div class="toolbar section"><button class="primary-btn">Publicar</button></div></form>`);
-  document.getElementById("newsForm").onsubmit=ev=>{ev.preventDefault();state.news.push(Object.fromEntries(new FormData(ev.target)));save();closeModal();toast("Aviso publicado")};return
+  document.getElementById("newsForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.news.push(d);audit("Aviso",d.title);save();closeModal();toast("Aviso publicado")};return
  }
  const evBtn=e.target.closest("[data-event]");if(evBtn){
   const label=evBtn.dataset.event;openModal(label,`<form id="eventForm"><div class="form-grid">${renderForm([{label:"Minuto",name:"minute",placeholder:"74'"},{label:"Detalle / jugador",name:"detail"}])}</div><div class="toolbar section"><button class="primary-btn">Confirmar evento</button></div></form>`);
-  document.getElementById("eventForm").onsubmit=x=>{x.preventDefault();const d=Object.fromEntries(new FormData(x.target));state.events.unshift({minute:d.minute,label,detail:d.detail});save();closeModal();toast(label+" actualizado en Match Center")};return
+  document.getElementById("eventForm").onsubmit=x=>{x.preventDefault();const d=Object.fromEntries(new FormData(x.target));state.events.unshift({minute:d.minute,label,detail:d.detail});audit("Evento de partido",label+" · "+d.detail);save();closeModal();toast(label+" actualizado en Match Center")};return
  }
 });
 
@@ -521,6 +669,48 @@ document.getElementById("reportAct").onclick=()=>toast("Acta PDF preparada para 
 document.getElementById("csvInput").addEventListener("change",e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const lines=r.result.split(/\r?\n/).filter(Boolean);document.getElementById("csvResult").textContent=`${Math.max(0,lines.length-1)} filas detectadas (sin guardar automáticamente).`};r.readAsText(f)});
 document.getElementById("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="liga-juventino-rosas-demo.json";a.click();URL.revokeObjectURL(a.href)};
 document.getElementById("icsBtn").onclick=()=>{const ics=`BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Liga Juventino Rosas//JR//ES\nBEGIN:VEVENT\nSUMMARY:Jornada Liga Juventino Rosas\nDTSTART:20260913T170000\nDTEND:20260913T190000\nLOCATION:Campo Municipal\nEND:VEVENT\nEND:VCALENDAR`;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="liga-juventino-rosas.ics";a.click();URL.revokeObjectURL(a.href)};
+
+// ===== V10: Fan Zone, shot map, credencial, fixture, disciplina y auditoría =====
+document.getElementById("favTeamBtn").onclick=()=>{state.favorites.team=!state.favorites.team;audit("Favorito",state.favorites.team?"Sigue Pozos FC":"Dejó de seguir Pozos FC");save();toast(state.favorites.team?"Equipo seguido":"Equipo quitado de favoritos")};
+document.getElementById("favMatchBtn").onclick=()=>{state.favorites.match=!state.favorites.match;audit("Favorito",state.favorites.match?"Sigue partido":"Dejó de seguir partido");save();toast(state.favorites.match?"Partido seguido":"Seguimiento desactivado")};
+document.getElementById("reactionBtn").onclick=()=>{openModal("Reacción rápida",`<div class="fan-grid"><button class="fan-btn react" data-r="🔥"><span>🔥</span>Fuego</button><button class="fan-btn react" data-r="⚽"><span>⚽</span>Gol</button><button class="fan-btn react" data-r="👏"><span>👏</span>Aplausos</button><button class="fan-btn react" data-r="😱"><span>😱</span>Sorpresa</button></div>`);document.querySelectorAll(".react").forEach(b=>b.onclick=()=>{audit("Reacción",b.dataset.r);closeModal();toast("Reacción "+b.dataset.r+" registrada")})};
+document.getElementById("predictionForm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));state.prediction={home:Number(d.home),away:Number(d.away)};audit("Pronóstico",`${d.home}-${d.away}`);save();toast("Pronóstico guardado")};
+document.querySelectorAll(".pollBtn").forEach(b=>b.onclick=()=>{const c=b.dataset.choice;state.polls.total++;state.polls.choices[c]=(state.polls.choices[c]||0)+1;audit("Encuesta",c);save();const share=(state.polls.choices[c]/state.polls.total)*100;document.getElementById("pollProgress").style.width=share+"%";toast("Voto registrado: "+c)});
+document.getElementById("shareResultBtn").onclick=()=>downloadResultCard();
+
+function downloadResultCard(){
+ const c=document.createElement("canvas");c.width=1080;c.height=1080;const x=c.getContext("2d");
+ x.fillStyle="#071b14";x.fillRect(0,0,c.width,c.height);x.fillStyle="#31c983";x.fillRect(0,0,c.width,22);
+ x.fillStyle="#f5f8f6";x.font="700 42px sans-serif";x.fillText("LIGA JUVENTINO ROSAS",70,110);
+ x.fillStyle="#a9bbb2";x.font="500 28px sans-serif";x.fillText("PRIMERA FUERZA · JORNADA 7",70,160);
+ x.fillStyle="#f5f8f6";x.font="800 58px sans-serif";x.fillText("POZOS FC",100,420);x.fillText("JUVENTUS",690,420);
+ x.fillStyle="#31c983";x.font="900 120px sans-serif";x.fillText("2 — 1",365,610);
+ x.fillStyle="#a9bbb2";x.font="500 30px sans-serif";x.fillText("73' · EN VIVO · Campo Municipal",300,690);
+ x.fillStyle="#f2c14e";x.font="700 30px sans-serif";x.fillText("JR Matchday",70,980);
+ const a=document.createElement("a");a.href=c.toDataURL("image/png");a.download="liga-juventino-rosas-resultado.png";a.click();audit("Compartir","Tarjeta de resultado generada")
+}
+
+document.getElementById("shotPitch").addEventListener("click",e=>{const r=e.currentTarget.getBoundingClientRect();const x=((e.clientX-r.left)/r.width)*100;const y=((e.clientY-r.top)/r.height)*100;state.shots.push({x:+x.toFixed(2),y:+y.toFixed(2),type:document.getElementById("shotType").value});audit("Shot map",document.getElementById("shotType").value);save();toast("Tiro registrado")});
+document.getElementById("clearShots").onclick=()=>{state.shots=[];audit("Shot map","Limpieza");save();toast("Mapa de tiros limpiado")};
+document.getElementById("downloadShotMap").onclick=()=>toast("Para exportación exacta del mapa se integrará html2canvas o render de servidor en producción");
+
+document.getElementById("downloadCredential").onclick=()=>{const c=document.createElement("canvas");c.width=900;c.height=520;const x=c.getContext("2d");x.fillStyle="#071b14";x.fillRect(0,0,900,520);x.fillStyle="#31c983";x.fillRect(0,0,900,16);x.fillStyle="#f5f8f6";x.font="700 32px sans-serif";x.fillText("LIGA MUNICIPAL JUVENTINO ROSAS",42,70);x.font="800 40px sans-serif";x.fillText("JUGADOR DESTACADO",42,145);x.fillStyle="#a9bbb2";x.font="500 25px sans-serif";x.fillText("Folio: LJR-00471",42,195);x.fillText("Pozos FC · Primera Fuerza · #10",42,245);x.fillStyle="#31c983";x.font="800 28px sans-serif";x.fillText("HABILITADO",42,330);x.fillStyle="#f5f8f6";x.font="600 22px sans-serif";x.fillText("Temporada 2026–27",42,385);const a=document.createElement("a");a.href=c.toDataURL("image/png");a.download="credencial-ljr-00471.png";a.click();audit("Credencial","Descarga LJR-00471")};
+
+function roundRobin(names){
+ let teams=[...names];if(teams.length%2)teams.push("DESCANSA");const n=teams.length;const rounds=[];let arr=[...teams];
+ for(let r=0;r<n-1;r++){const games=[];for(let i=0;i<n/2;i++){const a=arr[i],b=arr[n-1-i];if(a!=="DESCANSA"&&b!=="DESCANSA")games.push([a,b])}rounds.push(games);arr=[arr[0],arr[n-1],...arr.slice(1,n-1)]}
+ return rounds
+}
+document.getElementById("generateFixture").onclick=()=>{const names=[...new Set([...baseTeams.map(t=>t.name),...state.teams.map(t=>t.name)])];const rounds=roundRobin(names);document.getElementById("fixtureOutput").innerHTML=rounds.slice(0,6).map((g,i)=>`<div class="section"><b>Jornada ${i+1}</b><div class="list-compact">${g.map(m=>`<div class="row"><span>${m[0]}</span><strong>vs</strong><span>${m[1]}</span></div>`).join("")}</div></div>`).join("");audit("Fixture",rounds.length+" jornadas generadas");toast("Fixture generado")};
+
+document.getElementById("assignOfficials").onclick=()=>{document.getElementById("officialAssignment").innerHTML="<b>Árbitro: Ricardo Demo</b><p style='color:var(--muted)'>AR1: Luis · AR2: Mario · Evaluador: Ana</p>";audit("Oficiales","Asignación demo Pozos vs Juventus");toast("Oficiales asignados")};
+document.getElementById("runDiscipline").onclick=()=>{document.getElementById("disciplineResult").innerHTML="<b>⚠️ Detección demo</b><p style='color:var(--muted)'>Jugador #5: 3 amarillas acumuladas → revisar suspensión según reglamento. Jugador #12: 1 partido pendiente.</p>";audit("Disciplina","Evaluación automática ejecutada");toast("Disciplina evaluada")};
+
+let targetDate=new Date();targetDate.setHours(targetDate.getHours()+27);
+setInterval(()=>{const el=document.getElementById("countdown");if(!el)return;const d=Math.max(0,targetDate-Date.now());const h=String(Math.floor(d/3600000)).padStart(2,"0");const m=String(Math.floor((d%3600000)/60000)).padStart(2,"0");const s=String(Math.floor((d%60000)/1000)).padStart(2,"0");el.textContent=`${h}:${m}:${s}`},1000);
+
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}
+
 const theme=localStorage.getItem("jrTheme");if(theme==="light")document.body.classList.add("light");document.getElementById("themeBtn").onclick=()=>{document.body.classList.toggle("light");localStorage.setItem("jrTheme",document.body.classList.contains("light")?"light":"dark")};
 
 const hash=location.hash.replace("#","");if(hash&&document.getElementById("view-"+hash))showView(hash);

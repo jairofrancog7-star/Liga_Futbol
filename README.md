@@ -1,4 +1,35 @@
-﻿# Liga Juventino Rosas Â· Proyecto unificado
+﻿# Liga Juventino Rosas Â· MASTER V10
+
+Un solo repositorio para **JR FÃºtbol + JR Control**.
+
+## Abrir
+
+Vista directa:
+
+https://htmlpreview.github.io/?https://github.com/jairofrancog7-star/liga-juventino-rosas/blob/main/index.html
+
+GitHub Pages:
+
+https://jairofrancog7-star.github.io/liga-juventino-rosas/
+
+## V10 agrega
+
+Fan Zone, favoritos, pronÃ³sticos, encuestas, reacciones, tarjeta de resultado, shot map, credencial digital, generador de fixture, Ã¡rbitros/oficiales, disciplina automÃ¡tica demo, auditorÃ­a, PWA bÃ¡sica y documentaciÃ³n maestra para GitLab Duo.
+
+Lee primero:
+- `docs/MASTER_PLAN_V10.md`
+- `docs/GITLAB_DUO_MASTER_PROMPT_V10.md`
+- `docs/OPEN_SOURCE_MAP_V10.md`
+- `docs/FEATURE_MATRIX_V10.md`
+- `docs/SUPABASE_SCHEMA_V10.sql`
+- `docs/RLS_GUIDE_V10.sql`
+- `docs/ACCEPTANCE_CRITERIA_V10.md`
+
+---
+
+## Historial anterior
+
+# Liga Juventino Rosas Â· Proyecto unificado
 
 Este repositorio concentra **JR FÃºtbol + JR Control en un solo proyecto**.
 
@@ -149,5 +180,6 @@ No subir al repositorio:
 - respaldos reales
 - exportaciones con datos personales de jugadores
 - documentos de identidad
+
 
 

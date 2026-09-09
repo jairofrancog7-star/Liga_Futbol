@@ -1,0 +1,17 @@
+{
+  "name": "Liga Juventino Rosas",
+  "short_name": "Liga JR",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#061812",
+  "theme_color": "#071b14",
+  "description": "JR Fútbol + JR Control · plataforma de fútbol municipal",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
