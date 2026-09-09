@@ -549,3 +549,15 @@ function boot(){
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});
 else boot();
 })();
+
+/* MASTER V28 loader */
+(function(){
+  if(document.querySelector('script[data-v28-loader]'))return;
+  var l=document.createElement('link');
+  l.rel='stylesheet';l.href='./assets/v28-functional.css?v=28.0';
+  document.head.appendChild(l);
+  var s=document.createElement('script');
+  s.src='./assets/v28-functional.js?v=28.0';
+  s.defer=true;s.dataset.v28Loader='1';
+  document.body.appendChild(s);
+})();

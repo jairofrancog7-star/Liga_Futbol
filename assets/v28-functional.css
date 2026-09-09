@@ -1,0 +1,89 @@
+:root{
+  --v28-green:#22e07a;
+  --v28-line:rgba(255,255,255,.09);
+  --v28-card:#12141a;
+  --v28-muted:#9aa1ad;
+}
+
+/* Botones funcionales visuales */
+[data-v28-open-team], [data-v28-open-player], [data-v28-open-venue], [data-v28-action], [data-v28-badge]{
+  cursor:pointer;
+}
+[data-v28-open-team]:hover, [data-v28-open-player]:hover, [data-v28-open-venue]:hover, [data-v28-action]:hover, [data-v28-badge]:hover{
+  filter:brightness(1.04);
+}
+[data-v28-open-team]:focus-visible, [data-v28-open-player]:focus-visible, [data-v28-open-venue]:focus-visible, [data-v28-action]:focus-visible, [data-v28-badge]:focus-visible{
+  outline:2px solid var(--v28-green);
+  outline-offset:3px;
+}
+
+/* Separación top goleadores */
+.v28-player-fixed{
+  display:grid!important;
+  grid-template-columns:72px minmax(0,1fr) auto!important;
+  align-items:center!important;
+  gap:14px!important;
+}
+.v28-player-fixed .v28-player-avatar{
+  width:72px;height:72px;border-radius:18px;background:#1b1e25;border:1px solid var(--v28-line);
+  display:grid;place-items:center;font-size:34px
+}
+.v28-player-fixed .v28-player-info{
+  min-width:0;display:flex;flex-direction:column;gap:5px
+}
+.v28-player-fixed .v28-player-name{
+  color:#fff;font:900 18px/1.1 system-ui;display:block
+}
+.v28-player-fixed .v28-player-team{
+  color:var(--v28-muted);font:700 12px/1.2 system-ui;display:block
+}
+.v28-player-fixed .v28-player-stat{
+  color:#ffc54d;font:900 34px/1 system-ui;padding-left:8px
+}
+.v28-player-chip{
+  display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(34,224,122,.22);
+  background:rgba(34,224,122,.07);border-radius:999px;padding:7px 11px;color:#dfe5ee;font:800 11px/1 system-ui
+}
+
+/* Modal V28 */
+.v28-modal-bg{position:fixed;inset:0;z-index:130000;display:none;align-items:center;justify-content:center;padding:14px;background:rgba(0,0,0,.82)}
+.v28-modal-bg.show{display:flex}
+.v28-modal{width:min(940px,100%);max-height:92vh;overflow:auto;border-radius:24px;background:linear-gradient(145deg,#16181f,#0e1014);border:1px solid rgba(255,255,255,.11);box-shadow:0 30px 100px rgba(0,0,0,.6);color:#fff}
+.v28-modal-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:rgba(18,19,24,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--v28-line)}
+.v28-modal-head h3{margin:0;font:900 21px/1.05 system-ui}
+.v28-close{width:40px;height:40px;border-radius:12px;border:1px solid var(--v28-line);background:#22242b;color:#fff;font-size:22px;cursor:pointer}
+.v28-modal-body{padding:18px}
+.v28-note{padding:12px 14px;border-radius:15px;border:1px solid rgba(34,224,122,.21);background:rgba(34,224,122,.05);color:#c7ced8;font:650 12px/1.55 system-ui;margin-bottom:12px}
+.v28-hero{display:grid;grid-template-columns:78px minmax(0,1fr);gap:14px;align-items:center;padding:14px;border-radius:18px;border:1px solid rgba(34,224,122,.18);background:linear-gradient(145deg,rgba(34,224,122,.07),rgba(255,255,255,.015))}
+.v28-avatar{width:78px;height:78px;border-radius:18px;display:grid;place-items:center;background:#202229;color:#fff;font:950 28px/1 system-ui;overflow:hidden}
+.v28-avatar img{width:100%;height:100%;object-fit:contain}
+.v28-hero h4{margin:0;font:950 22px/1.05 system-ui}
+.v28-hero p{margin:7px 0 0;color:#a8adb8;font:600 12px/1.55 system-ui}
+.v28-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.v28-grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.v28-metric,.v28-card{padding:12px 13px;border-radius:16px;border:1px solid var(--v28-line);background:#13151a}
+.v28-metric small{display:block;color:var(--v28-muted);font:800 10px/1;text-transform:uppercase;letter-spacing:.06em}
+.v28-metric b{display:block;margin-top:8px;font:900 20px/1 system-ui}
+.v28-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.v28-btn,.v28-modal-body a.v28-btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 14px;border-radius:13px;border:1px solid var(--v28-line);background:#1a1c22;color:#fff;font:850 12px/1 system-ui;cursor:pointer}
+.v28-btn.primary{background:linear-gradient(180deg,#4cf4a8,#12c66d);color:#06110b;border-color:#7cffba}
+.v28-btn:hover{filter:brightness(1.06)}
+.v28-list{display:grid;gap:8px;margin-top:12px}
+.v28-item{padding:11px 12px;border-radius:13px;border:1px solid var(--v28-line);background:#111318;color:#d6dae2;font:700 12px/1.45 system-ui}
+.v28-item b{color:#fff}
+.v28-toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:160000;background:#13151a;border:1px solid rgba(34,224,122,.24);color:#fff;padding:10px 14px;border-radius:999px;font:800 12px/1 system-ui;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+
+/* Rótulos específicos */
+.v28-league-pill{white-space:normal!important}
+.v28-live-indicator{display:inline-flex;align-items:center;gap:10px}
+.v28-live-indicator .dot{width:10px;height:10px;border-radius:50%;background:#fff;display:inline-block}
+.v28-live-indicator.live .dot{background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.14)}
+
+@media(max-width:720px){
+  .v28-modal-bg{padding:0;align-items:flex-end}
+  .v28-modal{max-height:93vh;border-radius:24px 24px 0 0}
+  .v28-grid,.v28-grid-4{grid-template-columns:1fr}
+  .v28-player-fixed{grid-template-columns:64px minmax(0,1fr) auto!important;gap:10px!important}
+  .v28-player-fixed .v28-player-avatar{width:64px;height:64px;font-size:30px}
+  .v28-player-fixed .v28-player-name{font-size:16px}
+}
