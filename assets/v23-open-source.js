@@ -92,7 +92,7 @@ function installMore(){
   };
   add("v23TacticsBtn","🧠","Tácticas 2D / 3D",openTactics);
   add("v23SimulatorBtn","📈","Simulador de jornada",openSimulator);
-  add("v23GuideBtn","📗","Guía 3D / Open Source",()=>window.open("./docs/Guia_Liga_Futbol_3D_Open_Source.pdf","_blank","noopener"));
+
 }
 
 const formations={

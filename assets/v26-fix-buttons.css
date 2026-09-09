@@ -1,0 +1,59 @@
+
+/* MASTER V26 — botones de categoría funcionales en JR Control */
+.v26-admin-category-context{
+  margin:10px 0 18px;
+  padding:14px 16px;
+  border:1px solid rgba(32,232,131,.22);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(32,232,131,.08),rgba(255,255,255,.02));
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.v26-admin-category-context small{
+  display:block;
+  color:#8f95a3;
+  font:800 10px/1.2 system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin-bottom:5px;
+}
+.v26-admin-category-context strong{
+  display:block;
+  color:#fff;
+  font:900 16px/1.2 system-ui,sans-serif;
+}
+.v26-admin-category-context .v26-count{
+  color:#20e883;
+  font:900 12px/1 system-ui,sans-serif;
+  white-space:nowrap;
+}
+#view-admin #categoryBar,
+#view-admin .category-scroll{
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  touch-action:pan-x!important;
+  -webkit-overflow-scrolling:touch!important;
+  scroll-snap-type:x proximity;
+  scrollbar-width:none;
+}
+#view-admin #categoryBar::-webkit-scrollbar,
+#view-admin .category-scroll::-webkit-scrollbar{display:none}
+#view-admin [data-category]{
+  pointer-events:auto!important;
+  touch-action:manipulation!important;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  scroll-snap-align:center;
+}
+#view-admin [data-category].active{
+  color:#06110b!important;
+  background:linear-gradient(180deg,#4cf4a8,#13ca70)!important;
+  border-color:#80ffc0!important;
+  box-shadow:0 8px 22px rgba(32,232,131,.25),inset 0 -3px 0 rgba(0,0,0,.18)!important;
+}
+@media(max-width:640px){
+  .v26-admin-category-context{margin-left:0;margin-right:0;padding:12px 13px}
+}

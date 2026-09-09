@@ -497,3 +497,15 @@ function boot(){
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});
 else boot();
 })();
+
+/* MASTER V26 loader */
+(function(){
+  if(document.querySelector('script[data-v26-loader]'))return;
+  var l=document.createElement('link');
+  l.rel='stylesheet';l.href='./assets/v26-fix-buttons.css?v=26.0';
+  document.head.appendChild(l);
+  var s=document.createElement('script');
+  s.src='./assets/v26-fix-buttons.js?v=26.0';
+  s.defer=true;s.dataset.v26Loader='1';
+  document.body.appendChild(s);
+})();
