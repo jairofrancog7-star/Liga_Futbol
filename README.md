@@ -1,4 +1,39 @@
-﻿# Liga Juventino Rosas Â· MASTER V10
+﻿# Liga Juventino Rosas Â· MASTER V11
+
+Un solo repositorio: **JR FÃºtbol + JR Control**.
+
+## Abrir
+Vista directa:
+https://htmlpreview.github.io/?https://github.com/jairofrancog7-star/liga-juventino-rosas/blob/main/index.html
+
+GitHub Pages:
+https://jairofrancog7-star.github.io/liga-juventino-rosas/
+
+## V11
+MASTER V11 agrega a V10:
+- TV mode;
+- bÃºsqueda global;
+- patrocinadores;
+- detector de conflictos de campos;
+- acta arbitral imprimible/PDF;
+- estados suspendido/cancelado/walkover;
+- mapa de integraciÃ³n de los repos de cÃ³digo abierto;
+- ejecuciÃ³n de GitLab Duo en 10 mÃ³dulos.
+
+## GitLab Duo
+Lee primero:
+- `docs/GITLAB_DUO_EXECUTION_V11.md`
+- `docs/REPO_FILE_MAP_V11.md`
+- `docs/MASTER_PLAN_V10.md`
+- `docs/FEATURE_MATRIX_V10.md`
+- `docs/SUPABASE_SCHEMA_V10.sql`
+- `docs/RLS_GUIDE_V10.sql`
+
+---
+
+## Historial anterior
+
+# Liga Juventino Rosas Â· MASTER V10
 
 Un solo repositorio para **JR FÃºtbol + JR Control**.
 
@@ -180,6 +215,7 @@ No subir al repositorio:
 - respaldos reales
 - exportaciones con datos personales de jugadores
 - documentos de identidad
+
 
 
 
