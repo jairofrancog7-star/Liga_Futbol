@@ -1,0 +1,1682 @@
+{
+  "version": "MASTER V20",
+  "season": "2026",
+  "categories_order": [
+    "Veteranos 35+",
+    "Veteranos 50+",
+    "Primera Fuerza",
+    "Intermedia",
+    "Segunda Fuerza"
+  ],
+  "current_status": {
+    "Veteranos 35+": "FINAL",
+    "Veteranos 50+": "Torneo de Copa J6",
+    "Primera Fuerza": "Torneo de Copa J5",
+    "Intermedia": "Torneo de Copa J5",
+    "Segunda Fuerza": "Torneo de Copa J5"
+  },
+  "rosters": {
+    "Veteranos 35+": [
+      {
+        "name": "C. de Gasca",
+        "logo": "deportivo-cg.webp"
+      },
+      {
+        "name": "Juventus",
+        "logo": "juventus.webp"
+      },
+      {
+        "name": "Cuenda",
+        "logo": null
+      },
+      {
+        "name": "Pozos FC",
+        "logo": "pozos-fc.webp"
+      },
+      {
+        "name": "Boavista",
+        "logo": "boavista-fc.webp"
+      },
+      {
+        "name": "PSV",
+        "logo": "psv.webp"
+      },
+      {
+        "name": "A. Santiago",
+        "logo": "atletico-santiago.webp"
+      },
+      {
+        "name": "F. Tavera",
+        "logo": "franco-tavera-jr-veteranos.webp"
+      },
+      {
+        "name": "América",
+        "logo": null
+      },
+      {
+        "name": "Huracán",
+        "logo": null
+      }
+    ],
+    "Veteranos 50+": [
+      {
+        "name": "La Esperanza",
+        "logo": "la-esperanza-fc.webp"
+      },
+      {
+        "name": "Dynamo",
+        "logo": null
+      },
+      {
+        "name": "Boca JRS",
+        "logo": null
+      },
+      {
+        "name": "Toros de Cuenda",
+        "logo": null
+      },
+      {
+        "name": "Boavista",
+        "logo": "boavista-fc.webp"
+      },
+      {
+        "name": "Manchester",
+        "logo": "manchester-united.webp"
+      }
+    ],
+    "Primera Fuerza": [
+      {
+        "name": "Hermanos",
+        "logo": "club-deportivo-hermanos.webp"
+      },
+      {
+        "name": "San José FC",
+        "logo": "san-jose.webp"
+      },
+      {
+        "name": "Linces",
+        "logo": "linces.webp"
+      },
+      {
+        "name": "Juventus",
+        "logo": "juventus.webp"
+      },
+      {
+        "name": "Napoli",
+        "logo": null
+      },
+      {
+        "name": "Lobos CDG",
+        "logo": "lobos-cdg.webp"
+      },
+      {
+        "name": "Terrícolas",
+        "logo": "terricolas-fc.webp"
+      },
+      {
+        "name": "Galácticos",
+        "logo": "galacticos-pozos.webp"
+      },
+      {
+        "name": "Franco FC",
+        "logo": "franco-fc.webp"
+      },
+      {
+        "name": "Herreras FC",
+        "logo": "herrera-fc.webp"
+      },
+      {
+        "name": "Abejas",
+        "logo": null
+      }
+    ],
+    "Intermedia": [
+      {
+        "name": "La Canchita Deportes",
+        "logo": "la-canchita.webp"
+      },
+      {
+        "name": "Galeana",
+        "logo": "atletico-galeana.webp"
+      },
+      {
+        "name": "Aldama FC",
+        "logo": "aldama.webp"
+      },
+      {
+        "name": "Malvinas",
+        "logo": null
+      },
+      {
+        "name": "Capibaras",
+        "logo": null
+      },
+      {
+        "name": "La Cuadrilla",
+        "logo": null
+      },
+      {
+        "name": "Mazacotes FC",
+        "logo": null
+      },
+      {
+        "name": "Dep. Maravillas",
+        "logo": null
+      },
+      {
+        "name": "Osasuna",
+        "logo": null
+      },
+      {
+        "name": "San Antonio JRS",
+        "logo": "san-antonio-jr.webp"
+      },
+      {
+        "name": "Populares",
+        "logo": null
+      },
+      {
+        "name": "Promesas",
+        "logo": "promesas-fc-pozos.webp"
+      },
+      {
+        "name": "La Huerta",
+        "logo": "la-huerta-cuenda.webp"
+      }
+    ],
+    "Segunda Fuerza": [
+      {
+        "name": "Tavera FC",
+        "logo": "tavera-fc.webp"
+      },
+      {
+        "name": "Pachangas FC",
+        "logo": null
+      },
+      {
+        "name": "San Juan FC",
+        "logo": null
+      },
+      {
+        "name": "Tapatío",
+        "logo": null
+      },
+      {
+        "name": "Dep. La Luz",
+        "logo": null
+      },
+      {
+        "name": "San Julián",
+        "logo": "san-julian-fc.webp"
+      },
+      {
+        "name": "Barza",
+        "logo": null
+      },
+      {
+        "name": "San José JRS",
+        "logo": "san-jose-jr.webp"
+      },
+      {
+        "name": "San Antonio FC",
+        "logo": null
+      },
+      {
+        "name": "Célticos FC",
+        "logo": null
+      },
+      {
+        "name": "Dep. Nopalero",
+        "logo": "deportivo-nopalero.webp"
+      },
+      {
+        "name": "Dep. Zapata",
+        "logo": null
+      }
+    ]
+  },
+  "standings_veteranos_35": [
+    {
+      "pos": 1,
+      "team": "C. de Gasca",
+      "jj": 17,
+      "g": 13,
+      "e": 1,
+      "p": 3,
+      "gf": 54,
+      "gc": 17,
+      "dg": 37,
+      "pts": 40
+    },
+    {
+      "pos": 2,
+      "team": "Juventus",
+      "jj": 17,
+      "g": 10,
+      "e": 4,
+      "p": 3,
+      "gf": 47,
+      "gc": 27,
+      "dg": 20,
+      "pts": 34
+    },
+    {
+      "pos": 3,
+      "team": "Cuenda",
+      "jj": 17,
+      "g": 11,
+      "e": 0,
+      "p": 6,
+      "gf": 41,
+      "gc": 22,
+      "dg": 19,
+      "pts": 33
+    },
+    {
+      "pos": 4,
+      "team": "Pozos FC",
+      "jj": 17,
+      "g": 10,
+      "e": 2,
+      "p": 5,
+      "gf": 48,
+      "gc": 36,
+      "dg": 12,
+      "pts": 32
+    },
+    {
+      "pos": 5,
+      "team": "Boavista",
+      "jj": 17,
+      "g": 8,
+      "e": 3,
+      "p": 6,
+      "gf": 38,
+      "gc": 27,
+      "dg": 11,
+      "pts": 27
+    },
+    {
+      "pos": 6,
+      "team": "PSV",
+      "jj": 17,
+      "g": 9,
+      "e": 0,
+      "p": 8,
+      "gf": 49,
+      "gc": 40,
+      "dg": 9,
+      "pts": 27
+    },
+    {
+      "pos": 7,
+      "team": "A. Santiago",
+      "jj": 17,
+      "g": 7,
+      "e": 1,
+      "p": 9,
+      "gf": 36,
+      "gc": 57,
+      "dg": -21,
+      "pts": 22
+    },
+    {
+      "pos": 8,
+      "team": "F. Tavera",
+      "jj": 17,
+      "g": 4,
+      "e": 2,
+      "p": 11,
+      "gf": 27,
+      "gc": 50,
+      "dg": -23,
+      "pts": 14
+    },
+    {
+      "pos": 9,
+      "team": "América",
+      "jj": 17,
+      "g": 4,
+      "e": 1,
+      "p": 12,
+      "gf": 22,
+      "gc": 48,
+      "dg": -26,
+      "pts": 13
+    },
+    {
+      "pos": 10,
+      "team": "Huracán",
+      "jj": 17,
+      "g": 2,
+      "e": 0,
+      "p": 15,
+      "gf": 19,
+      "gc": 69,
+      "dg": -50,
+      "pts": 6
+    }
+  ],
+  "bulletins": [
+    {
+      "id": "actual-final-j6-j5",
+      "order": 1,
+      "label": "MÁS ACTUAL",
+      "color": "blue",
+      "title": "Final Veteranos 35+ · Copa J6/J5",
+      "subtitle": "Programación más reciente recibida",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "FINAL",
+          "games": [
+            {
+              "home": "C. de Gasca",
+              "away": "Pozos FC",
+              "time": "04:00",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "Torneo de Copa · J6",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Dynamo",
+              "time": "05:00",
+              "field": "3"
+            },
+            {
+              "home": "Boca JRS",
+              "away": "Toros de Cuenda",
+              "note": "Gana Toros de Cuenda"
+            },
+            {
+              "home": "Boavista",
+              "away": "Manchester",
+              "time": "03:00",
+              "field": "3"
+            }
+          ]
+        },
+        {
+          "category": "Primera Fuerza",
+          "title": "Torneo de Copa · J5",
+          "games": [
+            {
+              "home": "Hermanos",
+              "away": "San José FC",
+              "time": "10:00",
+              "field": "3"
+            },
+            {
+              "home": "Linces",
+              "away": "Juventus",
+              "time": "08:00",
+              "field": "3"
+            },
+            {
+              "home": "Napoli",
+              "away": "Lobos CDG",
+              "time": "12:00",
+              "field": "Cerrito de Gasca"
+            },
+            {
+              "home": "Terrícolas",
+              "away": "Galácticos",
+              "note": "Gana Terrícolas"
+            },
+            {
+              "home": "Franco FC",
+              "away": "Herreras FC",
+              "time": "08:00",
+              "field": "Romerillo"
+            },
+            {
+              "rest": "Abejas"
+            }
+          ]
+        },
+        {
+          "category": "Intermedia",
+          "title": "Torneo de Copa · J5",
+          "games": [
+            {
+              "home": "La Canchita Deportes",
+              "away": "Galeana",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "Aldama FC",
+              "away": "Malvinas",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Capibaras",
+              "away": "La Cuadrilla",
+              "time": "10:00",
+              "field": "Tavera"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Dep. Maravillas",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Osasuna",
+              "away": "San Antonio JRS",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Populares",
+              "away": "Promesas",
+              "time": "08:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "rest": "La Huerta"
+            }
+          ]
+        },
+        {
+          "category": "Segunda Fuerza",
+          "title": "Torneo de Copa · J5",
+          "games": [
+            {
+              "home": "Tavera FC",
+              "away": "Pachangas FC",
+              "time": "12:00",
+              "field": "Tavera"
+            },
+            {
+              "home": "San Juan FC",
+              "away": "Tapatío",
+              "time": "08:00",
+              "field": "San Juan"
+            },
+            {
+              "home": "Dep. La Luz",
+              "away": "San Julián",
+              "time": "10:00",
+              "field": "San Julián"
+            },
+            {
+              "home": "Barza",
+              "away": "San José JRS",
+              "time": "12:00",
+              "field": "San José"
+            },
+            {
+              "home": "San Antonio FC",
+              "away": "Célticos FC",
+              "time": "10:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Dep. Nopalero",
+              "away": "Dep. Zapata",
+              "time": "08:00",
+              "field": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semifinal-j5-j4",
+      "order": 2,
+      "label": "ANTERIOR",
+      "color": "green",
+      "title": "Semifinal Veteranos 35+ · Copa J5/J4",
+      "subtitle": "Boletín anterior",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "SEMIFINAL",
+          "games": [
+            {
+              "home": "C. de Gasca",
+              "away": "Boavista",
+              "time": "03:00",
+              "field": "1"
+            },
+            {
+              "home": "Juventus",
+              "away": "Pozos FC",
+              "time": "05:00",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "Torneo de Copa · J5",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Boca JRS",
+              "note": "Gana La Esperanza"
+            },
+            {
+              "home": "Dynamo",
+              "away": "Manchester",
+              "time": "03:30",
+              "field": "2"
+            },
+            {
+              "home": "Toros de Cuenda",
+              "away": "Boavista",
+              "time": "05:00",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Primera Fuerza",
+          "title": "Torneo de Copa · J4",
+          "games": [
+            {
+              "home": "Abejas",
+              "away": "Lobos CDG",
+              "time": "10:00",
+              "field": "Pozos"
+            },
+            {
+              "home": "Galácticos",
+              "away": "Napoli",
+              "note": "Gana Napoli"
+            },
+            {
+              "home": "Herreras FC",
+              "away": "Linces",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Juventus",
+              "away": "Hermanos",
+              "time": "08:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "San José FC",
+              "away": "Terrícolas",
+              "time": "12:00",
+              "field": "San José"
+            },
+            {
+              "rest": "Franco FC"
+            }
+          ]
+        },
+        {
+          "category": "Intermedia",
+          "title": "Torneo de Copa · J4",
+          "games": [
+            {
+              "home": "La Cuadrilla",
+              "away": "La Huerta",
+              "time": "12:00",
+              "field": "2"
+            },
+            {
+              "home": "Dep. Maravillas",
+              "away": "Aldama FC",
+              "time": "08:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "San Antonio JRS",
+              "away": "Populares",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "La Canchita Deportes",
+              "away": "Mazacotes FC",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Galeana",
+              "away": "Promesas",
+              "time": "10:00",
+              "field": "4"
+            },
+            {
+              "home": "Malvinas",
+              "away": "Capibaras",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "rest": "Osasuna"
+            }
+          ]
+        },
+        {
+          "category": "Segunda Fuerza",
+          "title": "Torneo de Copa · J4",
+          "games": [
+            {
+              "home": "Pachangas FC",
+              "away": "Dep. Zapata",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Célticos FC",
+              "away": "Dep. Nopalero",
+              "time": "12:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "San José JRS",
+              "away": "San Antonio FC",
+              "time": "10:00",
+              "field": "San José"
+            },
+            {
+              "home": "San Julián",
+              "away": "Barza",
+              "time": "10:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Tapatío",
+              "away": "Dep. La Luz",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Tavera FC",
+              "away": "San Juan FC",
+              "time": "12:00",
+              "field": "S. Juan de la Cruz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuartos-pendiente-j4-j3",
+      "order": 3,
+      "label": "ACTUALIZACIÓN",
+      "color": "red",
+      "title": "Cuartos de Final · actualización / Copa J4-J3",
+      "subtitle": "Publicación con partido pendiente de Veteranos 35+",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "CUARTOS DE FINAL · PENDIENTE",
+          "games": [
+            {
+              "home": "Pozos FC",
+              "away": "PSV",
+              "time": "05:00",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "Torneo de Copa · J4",
+          "games": [
+            {
+              "home": "Manchester",
+              "away": "Toros de Cuenda",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "Boca JRS",
+              "away": "Dynamo",
+              "note": "Gana Dynamo"
+            },
+            {
+              "home": "Boavista",
+              "away": "La Esperanza",
+              "time": "05:00",
+              "field": "3"
+            }
+          ]
+        },
+        {
+          "category": "Primera Fuerza",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "Lobos CDG",
+              "away": "Galácticos",
+              "note": "Gana Lobos CDG"
+            },
+            {
+              "home": "Hermanos",
+              "away": "Herreras FC",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Napoli",
+              "away": "San José FC",
+              "time": "12:00",
+              "field": "San José"
+            },
+            {
+              "home": "Terrícolas",
+              "away": "Juventus",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "Franco FC",
+              "away": "Abejas",
+              "time": "10:00",
+              "field": "Pozos"
+            },
+            {
+              "rest": "Linces"
+            }
+          ]
+        },
+        {
+          "category": "Intermedia",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "Aldama FC",
+              "away": "La Canchita Deportes",
+              "time": "10:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Capibaras",
+              "away": "Dep. Maravillas",
+              "time": "10:00",
+              "field": "Tavera"
+            },
+            {
+              "home": "La Huerta",
+              "away": "Malvinas",
+              "time": "10:00",
+              "field": "3"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Galeana",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Osasuna",
+              "away": "La Cuadrilla",
+              "time": "09:00",
+              "field": "Rincón de Centeno"
+            },
+            {
+              "home": "Promesas",
+              "away": "San Antonio JRS",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "rest": "Populares"
+            }
+          ]
+        },
+        {
+          "category": "Segunda Fuerza",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "San Juan FC",
+              "away": "Pachangas FC",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. La Luz",
+              "away": "Tavera FC",
+              "time": "08:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Barza",
+              "away": "Tapatío",
+              "time": "12:00",
+              "field": "3"
+            },
+            {
+              "home": "San Antonio FC",
+              "away": "San Julián",
+              "time": "10:00",
+              "field": "San Julián"
+            },
+            {
+              "home": "Dep. Nopalero",
+              "away": "San José JRS",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. Zapata",
+              "away": "Célticos FC",
+              "time": "08:00",
+              "field": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuartos-completos-j3",
+      "order": 4,
+      "label": "ANTERIOR",
+      "color": "red",
+      "title": "Cuartos completos · Copa J3",
+      "subtitle": "Programación completa de cuartos de Veteranos 35+",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "CUARTOS DE FINAL",
+          "games": [
+            {
+              "home": "C. de Gasca",
+              "away": "F. Tavera",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "Juventus",
+              "away": "A. Santiago",
+              "time": "05:00",
+              "field": "2"
+            },
+            {
+              "home": "Pozos FC",
+              "away": "PSV",
+              "time": "05:00",
+              "field": "3"
+            },
+            {
+              "home": "Cuenda",
+              "away": "Boavista",
+              "time": "05:00",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Manchester",
+              "time": "03:30",
+              "field": "3"
+            },
+            {
+              "home": "Boca JRS",
+              "away": "Boavista",
+              "note": "Gana Boavista"
+            },
+            {
+              "home": "Toros de Cuenda",
+              "away": "Dynamo",
+              "time": "03:30",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Primera Fuerza",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "Lobos CDG",
+              "away": "Galácticos",
+              "note": "Gana Lobos CDG"
+            },
+            {
+              "home": "Hermanos",
+              "away": "Herreras FC",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Napoli",
+              "away": "San José FC",
+              "time": "12:00",
+              "field": "San José"
+            },
+            {
+              "home": "Terrícolas",
+              "away": "Juventus",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "Franco FC",
+              "away": "Abejas",
+              "time": "10:00",
+              "field": "Pozos"
+            },
+            {
+              "rest": "Linces"
+            }
+          ]
+        },
+        {
+          "category": "Intermedia",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "Aldama FC",
+              "away": "La Canchita Deportes",
+              "time": "10:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Capibaras",
+              "away": "Dep. Maravillas",
+              "time": "10:00",
+              "field": "Tavera"
+            },
+            {
+              "home": "La Huerta",
+              "away": "Malvinas",
+              "time": "10:00",
+              "field": "3"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Galeana",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Osasuna",
+              "away": "La Cuadrilla",
+              "time": "09:00",
+              "field": "Rincón de Centeno"
+            },
+            {
+              "home": "Promesas",
+              "away": "San Antonio JRS",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "rest": "Populares"
+            }
+          ]
+        },
+        {
+          "category": "Segunda Fuerza",
+          "title": "Torneo de Copa · J3",
+          "games": [
+            {
+              "home": "San Juan FC",
+              "away": "Pachangas FC",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. La Luz",
+              "away": "Tavera FC",
+              "time": "08:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Barza",
+              "away": "Tapatío",
+              "time": "12:00",
+              "field": "3"
+            },
+            {
+              "home": "San Antonio FC",
+              "away": "San Julián",
+              "time": "10:00",
+              "field": "San Julián"
+            },
+            {
+              "home": "Dep. Nopalero",
+              "away": "San José JRS",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. Zapata",
+              "away": "Célticos FC",
+              "time": "08:00",
+              "field": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j17-revision",
+      "order": 5,
+      "label": "HISTÓRICO",
+      "color": "red",
+      "title": "Veteranos 35+ · J17 (revisión)",
+      "subtitle": "Programación regular previa a liguilla",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "J17",
+          "games": [
+            {
+              "home": "Boavista",
+              "away": "Juventus",
+              "time": "05:00",
+              "field": "1"
+            },
+            {
+              "home": "Pozos FC",
+              "away": "PSV",
+              "time": "05:00",
+              "field": "3"
+            },
+            {
+              "home": "A. Santiago",
+              "away": "C. de Gasca",
+              "time": "05:00",
+              "field": "C. de Gasca"
+            },
+            {
+              "home": "F. Tavera",
+              "away": "América",
+              "time": "05:00",
+              "field": "2"
+            },
+            {
+              "home": "Cuenda",
+              "away": "Huracán",
+              "time": "05:00",
+              "field": "Fraccionamiento"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "AMISTOSO",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Dynamo",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "Manchester",
+              "away": "Yustis",
+              "time": "03:30",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Amistosos",
+          "title": "AMISTOSOS",
+          "games": [
+            {
+              "home": "Franco FC",
+              "away": "Dep. Maravillas",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Linces",
+              "away": "La Canchita Deportes",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Barza",
+              "away": "Populares",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Promesas",
+              "away": "Rambitos",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "Capibaras",
+              "away": "Malvinas",
+              "time": "12:00",
+              "field": "2"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Dep. Zapata",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Galeana",
+              "away": "Osasuna",
+              "time": "08:00",
+              "field": "3"
+            },
+            {
+              "home": "Napoli",
+              "away": "Abejas",
+              "time": "10:00",
+              "field": "3"
+            },
+            {
+              "home": "Hermanos",
+              "away": "San Antonio JRS",
+              "time": "10:00",
+              "field": "Romerillo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j16-update",
+      "order": 6,
+      "label": "HISTÓRICO",
+      "color": "green",
+      "title": "Veteranos 35+ · J16 (actualización)",
+      "subtitle": "Hoja corregida recibida",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "J16",
+          "games": [
+            {
+              "home": "Pozos FC",
+              "away": "Juventus",
+              "time": "03:30",
+              "field": "2"
+            },
+            {
+              "home": "A. Santiago",
+              "away": "América",
+              "time": "05:00",
+              "field": "1"
+            },
+            {
+              "home": "Cuenda",
+              "away": "PSV",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "C. de Gasca",
+              "away": "Huracán",
+              "time": "05:00",
+              "field": "C. de Gasca"
+            },
+            {
+              "home": "F. Tavera",
+              "away": "Boavista",
+              "time": "05:00",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Amistosos",
+          "title": "AMISTOSOS",
+          "games": [
+            {
+              "home": "La Cuadrilla",
+              "away": "Osasuna",
+              "time": "10:00",
+              "field": "Rincón de Centeno"
+            },
+            {
+              "home": "San Antonio JRS",
+              "away": "Franco FC",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "Terrícolas",
+              "away": "La Huerta",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. Maravillas",
+              "away": "Mazacotes FC",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Populares",
+              "away": "Malvinas",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Lobos JRS",
+              "away": "Galeana",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "San Julián",
+              "away": "Tavera FC",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "San Juan FC",
+              "away": "Promesas",
+              "time": "08:00",
+              "field": "San Juan de la Cruz"
+            },
+            {
+              "home": "Abejas",
+              "away": "Rambitos FC",
+              "time": "12:00",
+              "field": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j16-original",
+      "order": 7,
+      "label": "HISTÓRICO",
+      "color": "green",
+      "title": "Veteranos 35+ · J16 (publicación anterior)",
+      "subtitle": "Versión anterior de la hoja J16",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "J16",
+          "games": [
+            {
+              "home": "Pozos FC",
+              "away": "Juventus",
+              "time": "03:30",
+              "field": "2"
+            },
+            {
+              "home": "A. Santiago",
+              "away": "América",
+              "time": "05:00",
+              "field": "1"
+            },
+            {
+              "home": "Cuenda",
+              "away": "PSV",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "C. de Gasca",
+              "away": "Huracán",
+              "time": "05:00",
+              "field": "C. de Gasca"
+            },
+            {
+              "home": "F. Tavera",
+              "away": "Boavista",
+              "time": "05:00",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Amistosos",
+          "title": "AMISTOSOS",
+          "games": [
+            {
+              "home": "La Cuadrilla",
+              "away": "San Juan FC",
+              "time": "10:00",
+              "field": "San Juan de la Cruz"
+            },
+            {
+              "home": "San Antonio JRS",
+              "away": "Franco FC",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Osasuna",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "La Canchita Deportes",
+              "away": "Promesas",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "Populares",
+              "away": "Malvinas",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Lobos JRS",
+              "away": "Galeana",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Abejas",
+              "away": "Rambitos FC",
+              "time": "12:00",
+              "field": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j15",
+      "order": 8,
+      "label": "HISTÓRICO",
+      "color": "red",
+      "title": "Veteranos 35+ · J15",
+      "subtitle": "Jornada regular anterior",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "J15",
+          "games": [
+            {
+              "home": "C. de Gasca",
+              "away": "PSV",
+              "time": "05:00",
+              "field": "Cerrito de Gasca"
+            },
+            {
+              "home": "Huracán",
+              "away": "América",
+              "time": "05:00",
+              "field": "2"
+            },
+            {
+              "home": "Pozos FC",
+              "away": "Boavista",
+              "time": "05:00",
+              "field": "1"
+            },
+            {
+              "home": "A. Santiago",
+              "away": "F. Tavera",
+              "time": "03:30",
+              "field": "Cuenda"
+            },
+            {
+              "home": "Cuenda",
+              "away": "Juventus",
+              "time": "05:00",
+              "field": "Cuenda"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "AMISTOSOS",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Yustis",
+              "time": "03:30",
+              "field": "1"
+            },
+            {
+              "home": "Manchester",
+              "away": "Cobras",
+              "time": "03:30",
+              "field": "2"
+            }
+          ]
+        },
+        {
+          "category": "Amistosos",
+          "title": "AMISTOSOS",
+          "games": [
+            {
+              "home": "La Cuadrilla",
+              "away": "Osasuna",
+              "time": "10:00",
+              "field": "Rincón de Centeno"
+            },
+            {
+              "home": "Rambitos",
+              "away": "La Huerta",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "home": "San Juan FC",
+              "away": "Innombrables",
+              "time": "10:00",
+              "field": "San Juan de la Cruz"
+            },
+            {
+              "home": "Mazacotes FC",
+              "away": "Populares",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "San Antonio JRS",
+              "away": "Franco FC",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "Abejas",
+              "away": "Galeana",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Barza",
+              "away": "Malvinas",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Terrícolas",
+              "away": "Dep. Zapata",
+              "time": "08:00",
+              "field": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j1-copa",
+      "order": 9,
+      "label": "MÁS ANTIGUO",
+      "color": "blue",
+      "title": "Copa J1 · pendiente Veteranos 35+",
+      "subtitle": "Hoja más antigua de las recibidas para Copa",
+      "groups": [
+        {
+          "category": "Veteranos 35+",
+          "title": "PENDIENTE",
+          "games": [
+            {
+              "home": "América",
+              "away": "PSV",
+              "time": "05:00",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Veteranos 50+",
+          "title": "Torneo de Copa · J1",
+          "games": [
+            {
+              "home": "La Esperanza",
+              "away": "Dynamo",
+              "time": "05:00",
+              "field": "2"
+            },
+            {
+              "home": "Boca JRS",
+              "away": "Toros de Cuenda",
+              "time": "03:30",
+              "field": "2"
+            },
+            {
+              "home": "Boavista",
+              "away": "Manchester",
+              "time": "03:30",
+              "field": "1"
+            }
+          ]
+        },
+        {
+          "category": "Primera Fuerza",
+          "title": "Torneo de Copa · J1",
+          "games": [
+            {
+              "home": "Galácticos",
+              "away": "San José FC",
+              "note": "Gana San José"
+            },
+            {
+              "home": "Lobos CDG",
+              "away": "Juventus",
+              "time": "08:00",
+              "field": "1"
+            },
+            {
+              "home": "Hermanos",
+              "away": "Franco FC",
+              "time": "10:00",
+              "field": "Romerillo"
+            },
+            {
+              "home": "Linces",
+              "away": "Abejas",
+              "time": "08:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Napoli",
+              "away": "Herreras FC",
+              "time": "10:00",
+              "field": "2"
+            },
+            {
+              "rest": "Terrícolas"
+            }
+          ]
+        },
+        {
+          "category": "Intermedia",
+          "title": "Torneo de Copa · J1",
+          "games": [
+            {
+              "home": "Aldama FC",
+              "away": "Galeana",
+              "time": "10:00",
+              "field": "4"
+            },
+            {
+              "home": "Capibaras",
+              "away": "Mazacotes FC",
+              "time": "10:00",
+              "field": "Tavera"
+            },
+            {
+              "home": "La Huerta",
+              "away": "La Canchita Deportes",
+              "time": "10:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "Osasuna",
+              "away": "Dep. Maravillas",
+              "time": "08:00",
+              "field": "4"
+            },
+            {
+              "home": "Populares",
+              "away": "Malvinas",
+              "time": "08:00",
+              "field": "2"
+            },
+            {
+              "home": "Promesas",
+              "away": "La Cuadrilla",
+              "time": "09:00",
+              "field": "Rincón de Centeno"
+            },
+            {
+              "rest": "San Antonio JRS"
+            }
+          ]
+        },
+        {
+          "category": "Segunda Fuerza",
+          "title": "Torneo de Copa · J1",
+          "games": [
+            {
+              "home": "El Alto",
+              "away": "Pachangas FC",
+              "note": "Gana Pachangas"
+            },
+            {
+              "home": "Barza",
+              "away": "San Juan FC",
+              "time": "12:00",
+              "field": "Fraccionamiento"
+            },
+            {
+              "home": "San Antonio FC",
+              "away": "Tavera FC",
+              "time": "12:00",
+              "field": "4"
+            },
+            {
+              "home": "Dep. Nopalero",
+              "away": "Tapatío",
+              "time": "12:00",
+              "field": "1"
+            },
+            {
+              "home": "Dep. Zapata",
+              "away": "San Julián",
+              "time": "10:00",
+              "field": "1"
+            },
+            {
+              "home": "Célticos FC",
+              "away": "San José JRS",
+              "time": "12:00",
+              "field": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "El Alto aparece solo en J1 y no forma parte del padrón vigente de Segunda Fuerza en J5.",
+    "Yustis, Cobras, Rambitos, Innombrables y Lobos JRS aparecen en amistosos/histórico y no se agregan al padrón vigente salvo que vuelvan a aparecer en una jornada oficial actual."
+  ]
+}
