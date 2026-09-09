@@ -1,4 +1,4 @@
-const CACHE='liga-jr-v26';
+const CACHE='liga-jr-v27';
 const CORE=[
   './','./index.html','./manifest.webmanifest','./icon.svg',
   './assets/v18-clubs.css?v=22','./assets/v18-clubs.js?v=22',
@@ -7,6 +7,7 @@ const CORE=[
   './assets/v24-performance.css?v=24','./assets/v24-performance.js?v=24',
   './assets/v25-ambitious.css?v=25.0','./assets/v25-ambitious.js?v=25.0',
   './assets/v26-fix-buttons.css?v=26.0','./assets/v26-fix-buttons.js?v=26.0',
+  './assets/v27-intelligent.css?v=27.0','./assets/v27-intelligent.js?v=27.0',
   './media/gran-final-veteranos-35.png',
   './docs/Reglamento_Liga_Juventino_Rosas_2026_2027.pdf'
 ];

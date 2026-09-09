@@ -1,0 +1,201 @@
+
+/* MASTER V27 — UX limpia + categorías + perfiles + simulador estadístico */
+:root{
+  --v27-green:#22e07a;
+  --v27-card:#131419;
+  --v27-card2:#191b21;
+  --v27-line:rgba(255,255,255,.08);
+  --v27-muted:#858a98;
+  --v27-gold:#f2c14e;
+  --v27-red:#ff5a68;
+}
+
+/* Una sola fila de categorías: ocultar duplicados añadidos por capas anteriores. */
+#view-table #v25TableCats,
+#view-matches .v21-category-tabs,
+#v20CalendarArchiveMatches .v21-category-tabs,
+#v20CalendarArchive .v21-category-tabs{
+  display:none!important;
+}
+
+/* Estadísticas V27 */
+.v27-stats-context{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  padding:12px 14px;margin:0 0 14px;border:1px solid rgba(34,224,122,.20);
+  border-radius:16px;background:linear-gradient(145deg,rgba(34,224,122,.07),rgba(255,255,255,.015));
+}
+.v27-stats-context span{color:var(--v27-muted);font:700 11px/1.3 system-ui}
+.v27-stats-context strong{color:var(--v27-green)}
+.v27-kpi{
+  position:relative;overflow:hidden
+}
+.v27-kpi::after{
+  content:"";position:absolute;inset:auto -25px -35px auto;width:90px;height:90px;
+  background:radial-gradient(circle,rgba(34,224,122,.11),transparent 68%);
+  pointer-events:none
+}
+.v27-performance-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px
+}
+.v27-performance{
+  border:1px solid var(--v27-line);border-radius:18px;background:var(--v27-card);
+  padding:14px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center
+}
+.v27-pos{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:#202229;color:#fff;font:900 15px/1 system-ui
+}
+.v27-performance:first-child .v27-pos{background:linear-gradient(180deg,#4cf4a8,#12c66d);color:#06110b}
+.v27-performance b{display:block;color:#fff;font:850 14px/1.2 system-ui}
+.v27-performance small{display:block;color:var(--v27-muted);font:600 10px/1.4 system-ui;margin-top:4px}
+.v27-pts{font:950 24px/1 system-ui;color:#fff;text-align:right}
+.v27-pts small{color:var(--v27-green);font-size:8px;letter-spacing:.12em}
+.v27-empty{
+  padding:18px;border:1px dashed var(--v27-line);border-radius:18px;
+  color:var(--v27-muted);background:#111217;font:600 12px/1.55 system-ui
+}
+
+/* Equipos interactivos */
+#teamsGrid > *{
+  cursor:pointer;
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+#teamsGrid > *:hover{
+  transform:translateY(-2px);
+  border-color:rgba(34,224,122,.30)!important;
+  box-shadow:0 12px 28px rgba(0,0,0,.26)
+}
+#teamsGrid > *:focus-visible{outline:2px solid var(--v27-green);outline-offset:3px}
+.v27-team-hint{
+  display:block!important;margin-top:7px!important;color:var(--v27-green)!important;
+  font:800 9px/1.3 system-ui!important;letter-spacing:.03em!important
+}
+
+/* Feature cards V23 ahora son botones reales visualmente */
+#v23FootballOS .v23-feature{
+  cursor:pointer;position:relative;
+  transition:transform .16s ease,border-color .16s ease,background .16s ease;
+}
+#v23FootballOS .v23-feature:hover{
+  transform:translateY(-3px);border-color:rgba(34,224,122,.32);
+  background:linear-gradient(145deg,rgba(34,224,122,.06),rgba(255,255,255,.02))
+}
+#v23FootballOS .v23-feature:focus-visible{outline:2px solid var(--v27-green);outline-offset:3px}
+#v23FootballOS .v23-feature::after{
+  content:"Abrir →";position:absolute;right:14px;bottom:12px;color:var(--v27-green);
+  font:850 9px/1 system-ui;opacity:.78
+}
+
+/* Modal V27 */
+.v27-modal-bg{
+  position:fixed;inset:0;z-index:120000;display:none;align-items:center;justify-content:center;
+  padding:16px;background:rgba(0,0,0,.80)
+}
+.v27-modal-bg.show{display:flex}
+.v27-modal{
+  width:min(920px,100%);max-height:91vh;overflow:auto;border-radius:24px;
+  background:linear-gradient(145deg,#17191f,#0e0f13);border:1px solid rgba(255,255,255,.11);
+  box-shadow:0 30px 100px rgba(0,0,0,.65);color:#fff
+}
+.v27-modal-head{
+  position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:15px 17px;border-bottom:1px solid var(--v27-line);
+  background:rgba(18,19,24,.96);backdrop-filter:blur(12px)
+}
+.v27-modal-head h3{margin:0;font:900 20px/1.05 system-ui}
+.v27-close{
+  width:40px;height:40px;border-radius:12px;border:1px solid var(--v27-line);
+  background:#22242b;color:#fff;font-size:22px;cursor:pointer
+}
+.v27-modal-body{padding:17px}
+.v27-note{
+  padding:12px 13px;border-radius:14px;border:1px solid rgba(34,224,122,.20);
+  background:rgba(34,224,122,.05);color:#b8bdc7;font:600 11px/1.5 system-ui;margin-bottom:13px
+}
+.v27-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.v27-field{display:flex;flex-direction:column;gap:6px}
+.v27-field label{color:#c9ccd4;font:800 10px/1 system-ui}
+.v27-field select,.v27-field input{
+  width:100%;box-sizing:border-box;border:1px solid var(--v27-line);border-radius:13px;
+  background:#0f1014;color:#fff;padding:11px 12px;outline:none;font:650 12px/1.2 system-ui
+}
+.v27-field select:focus,.v27-field input:focus{
+  border-color:rgba(34,224,122,.60);box-shadow:0 0 0 3px rgba(34,224,122,.08)
+}
+.v27-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.v27-btn{
+  border:1px solid var(--v27-line);border-radius:13px;padding:11px 13px;
+  background:#1b1d23;color:#fff;font:850 11px/1 system-ui;cursor:pointer
+}
+.v27-btn.primary{
+  background:linear-gradient(180deg,#4cf4a8,#12c66d);color:#06110b;border-color:#77ffb7
+}
+.v27-btn:hover{filter:brightness(1.06)}
+.v27-sim-result{margin-top:14px;display:grid;gap:10px}
+.v27-score-hero{
+  border:1px solid rgba(34,224,122,.20);border-radius:20px;padding:16px;
+  background:radial-gradient(circle at 50% 0,rgba(34,224,122,.10),transparent 45%),#111217;
+  text-align:center
+}
+.v27-score-hero small{display:block;color:var(--v27-muted);font:800 9px/1.2 system-ui;letter-spacing:.09em}
+.v27-score-hero strong{display:block;font:950 42px/1 system-ui;margin:9px 0}
+.v27-prob{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px
+}
+.v27-prob > div{
+  padding:11px;border:1px solid var(--v27-line);border-radius:14px;background:#15171c;text-align:center
+}
+.v27-prob small{display:block;color:var(--v27-muted);font:750 9px/1 system-ui;margin-bottom:6px}
+.v27-prob b{font:900 19px/1 system-ui}
+.v27-confidence{color:var(--v27-green);font-weight:850}
+.v27-fixture-list{display:grid;gap:8px;margin-top:12px}
+.v27-fixture-row{
+  display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;
+  border:1px solid var(--v27-line);border-radius:14px;padding:11px;background:#121318
+}
+.v27-fixture-row b:last-child{text-align:right}
+.v27-fixture-row span{font:950 18px/1 system-ui;color:var(--v27-green)}
+.v27-team-hero{
+  display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;
+  padding:14px;border:1px solid rgba(34,224,122,.18);border-radius:18px;
+  background:linear-gradient(145deg,rgba(34,224,122,.07),rgba(255,255,255,.015))
+}
+.v27-team-avatar{
+  width:72px;height:72px;border-radius:18px;display:grid;place-items:center;
+  background:#202229;color:#fff;font:950 27px/1 system-ui;overflow:hidden
+}
+.v27-team-avatar img{width:100%;height:100%;object-fit:contain}
+.v27-team-hero h4{margin:0;font:950 22px/1.05 system-ui}
+.v27-team-hero p{margin:7px 0 0;color:#a8adb8;font:600 11px/1.5 system-ui}
+.v27-team-metrics{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px
+}
+.v27-team-metrics div{padding:11px;border-radius:14px;border:1px solid var(--v27-line);background:#131419}
+.v27-team-metrics small{display:block;color:var(--v27-muted);font:750 8px/1 system-ui;text-transform:uppercase}
+.v27-team-metrics b{display:block;font:900 19px/1 system-ui;margin-top:7px}
+.v27-games{display:grid;gap:7px;margin-top:12px}
+.v27-game{
+  display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;
+  padding:10px 11px;border-radius:13px;border:1px solid var(--v27-line);background:#111217;
+  font:700 10px/1.3 system-ui;align-items:center
+}
+.v27-game span:last-child{text-align:right}
+.v27-game em{font-style:normal;color:var(--v27-green);font-weight:900}
+
+/* Scroll móvil: la fila global debe ser la única visible y usable */
+#categoryBar{
+  touch-action:pan-x!important;
+  -webkit-overflow-scrolling:touch!important;
+  overscroll-behavior-x:contain
+}
+
+@media(max-width:720px){
+  .v27-performance-grid{grid-template-columns:1fr}
+  .v27-team-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .v27-grid2{grid-template-columns:1fr}
+  .v27-modal-bg{padding:0;align-items:flex-end}
+  .v27-modal{max-height:93vh;border-radius:24px 24px 0 0}
+}
+@media(prefers-reduced-motion:reduce){
+  #teamsGrid > *,#v23FootballOS .v23-feature{transition:none!important}
+}
