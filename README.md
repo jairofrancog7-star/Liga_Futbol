@@ -1,8 +1,8 @@
-# Liga Juventino Rosas · MASTER V16
+# Liga Juventino Rosas · MASTER V17
 
 Plataforma unificada de la **Liga Municipal de Fútbol Juventino Rosas A.C.**
 
-MASTER V16 es la versión actual del proyecto. Este README deja fuera los encabezados y enlaces de versiones anteriores para mostrar solamente el estado vigente.
+MASTER V17 es la versión actual del proyecto. Este README deja fuera los encabezados y enlaces de versiones anteriores para mostrar solamente el estado vigente.
 
 ## Abrir la plataforma
 
@@ -77,7 +77,7 @@ La Gran Final queda destacada dentro de la portada y conectada con Match Center,
 - Operador móvil desde la cancha
 - Auditoría de cambios
 
-## Diseño MASTER V16
+## Diseño MASTER V17
 
 - Estilo **Sports Broadcast + Premium App**
 - Fondo oscuro minimalista
@@ -120,5 +120,13 @@ No subir al repositorio:
 
 ---
 
-**Versión actual: MASTER V16**  
+**Versión actual: MASTER V17**  
 **Proyecto único: Liga_Futbol**
+
+## Si ves una version antigua en el navegador
+
+Abre una vez:
+
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v17.html
+
+Esa pagina elimina el Service Worker/cache anterior y abre la version actual.
