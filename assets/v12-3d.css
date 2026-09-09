@@ -1,0 +1,160 @@
+
+/* =========================================================
+   LIGA JUVENTINO ROSAS — V12 CINEMATIC SPORTS 3D
+   Inspiración: sports broadcast + premium app + WebGL scroll.
+   Se carga encima del CSS existente para NO romper funciones.
+   ========================================================= */
+:root{
+  --v12-electric:#22e07a;
+  --v12-electric-2:#75ffb0;
+  --v12-blue:#1457ff;
+  --v12-red:#ff3657;
+  --v12-gold:#f2c14e;
+  --v12-ink:#050608;
+  --v12-glass:rgba(14,16,19,.70);
+}
+.logo{
+  overflow:hidden!important;
+  background:#050505!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  padding:2px!important;
+  box-shadow:0 0 0 1px rgba(34,224,122,.15),0 10px 28px rgba(0,0,0,.45)!important;
+}
+.logo img{width:100%;height:100%;object-fit:cover;border-radius:11px}
+#v12CinematicHero{
+  position:relative;
+  isolation:isolate;
+  min-height:min(760px,82vh);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:34px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 75% 30%,rgba(20,87,255,.20),transparent 33%),
+    radial-gradient(circle at 23% 20%,rgba(34,224,122,.16),transparent 28%),
+    linear-gradient(145deg,#090b0e 0%,#050608 55%,#030404 100%);
+  box-shadow:0 32px 90px rgba(0,0,0,.65);
+  margin-bottom:26px;
+}
+#v12CinematicHero:before{
+  content:"";
+  position:absolute;inset:0;z-index:-2;opacity:.38;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:48px 48px;
+  transform:perspective(900px) rotateX(63deg) scale(1.4) translateY(26%);
+  transform-origin:center bottom;
+  mask-image:linear-gradient(to bottom,transparent 0,#000 44%,#000 100%);
+}
+#v12CinematicHero:after{
+  content:"";
+  position:absolute;width:600px;height:600px;border-radius:50%;
+  right:-220px;top:-250px;z-index:-1;
+  border:1px solid rgba(34,224,122,.18);
+  box-shadow:0 0 120px rgba(34,224,122,.07),inset 0 0 100px rgba(20,87,255,.05);
+}
+.v12-hero-grid{
+  min-height:min(690px,75vh);
+  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(340px,.94fr);
+  align-items:center;gap:16px;padding:clamp(28px,5vw,72px);
+}
+.v12-copy{position:relative;z-index:5;max-width:730px}
+.v12-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid rgba(117,255,176,.22);
+  background:rgba(34,224,122,.07);
+  color:#9cffc6;border-radius:999px;padding:8px 12px;
+  font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase
+}
+.v12-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--v12-electric);box-shadow:0 0 18px var(--v12-electric)}
+.v12-brand-lockup{display:flex;align-items:center;gap:12px;margin:22px 0 16px}
+.v12-brand-lockup img{
+  width:66px;height:66px;border-radius:18px;object-fit:cover;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 14px 36px rgba(0,0,0,.48),0 0 32px rgba(20,87,255,.16)
+}
+.v12-brand-lockup b{display:block;font-family:'Sora',sans-serif;font-size:13px;letter-spacing:.02em}
+.v12-brand-lockup small{color:#7d8492}
+.v12-title{
+  font-family:'Sora',sans-serif;
+  font-size:clamp(42px,7vw,92px);
+  line-height:.92;letter-spacing:-.065em;margin:0 0 24px;
+  max-width:800px;text-wrap:balance
+}
+.v12-title .ghost-word{
+  -webkit-text-stroke:1px rgba(255,255,255,.34);
+  color:transparent;text-shadow:0 0 45px rgba(255,255,255,.05)
+}
+.v12-title .electric{
+  color:var(--v12-electric);
+  text-shadow:0 0 34px rgba(34,224,122,.17),0 7px 0 rgba(8,122,56,.20)
+}
+.v12-lead{max-width:620px;color:#a9b0bc;font-size:clamp(14px,1.7vw,18px);line-height:1.7}
+.v12-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.v12-stage{position:relative;height:570px;min-width:0;z-index:2}
+#jr3dCanvas{position:absolute;inset:-8% -14% -8% -10%;width:124%!important;height:116%!important;display:block;filter:drop-shadow(0 36px 50px rgba(0,0,0,.55))}
+.v12-stage-fallback{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:min(78%,410px);aspect-ratio:1;object-fit:contain;border-radius:50%;
+  opacity:0;filter:drop-shadow(0 28px 52px rgba(0,0,0,.65));
+  transition:opacity .3s ease
+}
+.v12-stage.static #jr3dCanvas{display:none}
+.v12-stage.static .v12-stage-fallback{opacity:.92}
+.v12-orbit-chip{
+  position:absolute;z-index:5;
+  padding:9px 12px;border-radius:13px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(5,6,8,.58);backdrop-filter:blur(18px);
+  box-shadow:0 12px 36px rgba(0,0,0,.32);
+  color:#cad0d9;font-size:11px;font-weight:800
+}
+.v12-orbit-chip strong{color:#fff}
+.v12-orbit-chip.one{left:2%;top:19%}.v12-orbit-chip.two{right:3%;top:32%}.v12-orbit-chip.three{left:12%;bottom:17%}
+.v12-ticker{
+  position:absolute;left:0;right:0;bottom:0;z-index:7;
+  border-top:1px solid rgba(255,255,255,.07);
+  background:rgba(5,6,8,.78);backdrop-filter:blur(18px);
+  overflow:hidden;white-space:nowrap
+}
+.v12-ticker-track{
+  display:inline-flex;gap:38px;align-items:center;min-width:max-content;
+  padding:13px 22px;
+  animation:v12ticker 26s linear infinite
+}
+.v12-ticker span{color:#9ba2ad;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.v12-ticker b{color:#fff}.v12-ticker .live{color:#ff5d72}
+@keyframes v12ticker{to{transform:translateX(-50%)}}
+.v12-depth-card{transform-style:preserve-3d;will-change:transform}
+.v12-depth-card>*{transform:translateZ(12px)}
+.v12-light-sweep{position:relative;overflow:hidden}
+.v12-light-sweep:after{
+  content:"";position:absolute;inset:-100% auto -100% -40%;width:34%;
+  transform:rotate(18deg);pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);
+  animation:v12sweep 8s ease-in-out infinite
+}
+@keyframes v12sweep{0%,65%{left:-45%}100%{left:135%}}
+.v12-reveal{opacity:0;transform:translateY(26px) scale(.985)}
+.v12-reveal.is-visible{opacity:1;transform:none;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+body.v12-webgl-ready #v12CinematicHero{border-color:rgba(117,255,176,.14)}
+@media(max-width:900px){
+  #v12CinematicHero{min-height:auto}
+  .v12-hero-grid{grid-template-columns:1fr;min-height:auto;padding:28px 22px 80px}
+  .v12-copy{max-width:none}
+  .v12-stage{height:420px;margin-top:-30px}
+  .v12-title{font-size:clamp(42px,12vw,72px)}
+}
+@media(max-width:620px){
+  #v12CinematicHero{border-radius:24px}
+  .v12-hero-grid{padding:22px 17px 68px}
+  .v12-brand-lockup img{width:56px;height:56px}
+  .v12-stage{height:300px;margin-top:-15px}
+  #jr3dCanvas{inset:-5% -22%;width:144%!important;height:110%!important}
+  .v12-orbit-chip{font-size:9px;padding:7px 9px}
+  .v12-orbit-chip.one{left:0;top:17%}.v12-orbit-chip.two{right:0;top:37%}.v12-orbit-chip.three{left:2%;bottom:14%}
+}
+@media(prefers-reduced-motion:reduce){
+  .v12-ticker-track,.v12-light-sweep:after{animation:none}
+  .v12-reveal{opacity:1;transform:none}
+}

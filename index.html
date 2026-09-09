@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-<title>Liga Juventino Rosas · Plataforma unificada</title>
+<title>Liga Juventino Rosas Â· Plataforma unificada</title>
 <style>
-/* ===== DESIGN TOKENS — ITERACIÓN 2: 3D MINIMALISTA ===== */
+/* ===== DESIGN TOKENS â€” ITERACIÃ“N 2: 3D MINIMALISTA ===== */
 :root{
   /* Fondos neutros casi negros */
   --bg:#0a0a0c;
@@ -23,18 +23,18 @@
   /* Bordes muy sutiles */
   --line:rgba(255,255,255,.06);
   --line2:rgba(255,255,255,.04);
-  /* Acento único: verde eléctrico */
+  /* Acento Ãºnico: verde elÃ©ctrico */
   --accent:#22e07a;
   --accent2:#3df090;
   --accent-deep:#0fa84e;
   --accent-darker:#087a38;
-  /* Dorado solo para campeón y métricas top */
+  /* Dorado solo para campeÃ³n y mÃ©tricas top */
   --gold:#f2c14e;
   --gold2:#ffd97d;
   /* Rojo solo EN VIVO */
   --live:#e8304a;
   --live2:#ff6b7a;
-  /* Escala de grises fríos para todo lo demás */
+  /* Escala de grises frÃ­os para todo lo demÃ¡s */
   --yellow:#f5c542;
   --blue:#57a5ff;
   --danger:#ff5a68;
@@ -90,7 +90,7 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .hidden{display:none!important}
 
-/* ===== TIPOGRAFÍA DISPLAY ===== */
+/* ===== TIPOGRAFÃA DISPLAY ===== */
 h1,h2,h3{
   font-family:'Sora',ui-sans-serif,system-ui,sans-serif;
   letter-spacing:-.03em;
@@ -371,7 +371,7 @@ body.light .topbar{background:rgba(244,245,247,.96)}
 }
 body.light .notice{color:#7a5a10;background:rgba(242,193,78,.08)}
 
-/* ===== CHIPS DE CATEGORÍA ===== */
+/* ===== CHIPS DE CATEGORÃA ===== */
 .category-scroll{
   display:flex;gap:8px;
   overflow-x:auto;overflow-y:hidden;
@@ -396,7 +396,7 @@ body.light .notice{color:#7a5a10;background:rgba(242,193,78,.08)}
   border:1px solid var(--line);
   box-shadow:var(--shadow);
 }
-/* Una sola luz radial suave detrás del hero */
+/* Una sola luz radial suave detrÃ¡s del hero */
 .hero-accent{
   position:absolute;inset:0;
   background:radial-gradient(ellipse at 50% -10%,rgba(34,224,122,.1),transparent 60%);
@@ -579,7 +579,7 @@ td strong{
   font-family:'Sora',ui-sans-serif,system-ui,sans-serif;
   font-size:13px;font-weight:700;
 }
-/* Top 1: fondo dorado translúcido */
+/* Top 1: fondo dorado translÃºcido */
 tbody tr:first-child{background:rgba(242,193,78,.04)}
 .pts{
   font-family:'Sora',ui-sans-serif,system-ui,sans-serif;
@@ -641,7 +641,7 @@ tbody tr:first-child{background:rgba(242,193,78,.04)}
 .admin-panel{display:none}
 .admin-panel.active{display:block}
 
-/* ===== ESTADOS VACÍOS ===== */
+/* ===== ESTADOS VACÃOS ===== */
 .empty{
   padding:28px 16px;text-align:center;
   color:var(--muted);
@@ -733,7 +733,7 @@ tbody tr:first-child{background:rgba(242,193,78,.04)}
 }
 @keyframes pop{from{transform:translateY(8px);opacity:0}to{opacity:1;transform:none}}
 
-/* ===== BARRA INFERIOR — PILL FLOTANTE 3D ===== */
+/* ===== BARRA INFERIOR â€” PILL FLOTANTE 3D ===== */
 .bottom-nav{
   position:fixed;left:50%;bottom:12px;
   transform:translateX(-50%);
@@ -762,7 +762,7 @@ body.light .bottom-nav{
   transition:background var(--transition),color var(--transition),transform var(--transition),box-shadow var(--transition);
 }
 .nav-btn span{display:block;font-size:20px;margin-bottom:2px}
-/* Tab activo: botón presionado con acento */
+/* Tab activo: botÃ³n presionado con acento */
 .nav-btn.active{
   background:linear-gradient(180deg,var(--accent2) 0%,var(--accent) 55%,var(--accent-deep) 100%);
   color:#03200e;
@@ -772,7 +772,7 @@ body.light .bottom-nav{
 .nav-btn:hover:not(.active){color:var(--text2);transform:translateY(-1px)}
 @media(prefers-reduced-motion:reduce){.nav-btn{transition:none}}
 
-/* ===== DRAWER ADMIN (móvil) ===== */
+/* ===== DRAWER ADMIN (mÃ³vil) ===== */
 .admin-drawer-overlay{
   display:none;position:fixed;inset:0;
   background:rgba(0,0,0,.65);z-index:200;
@@ -960,35 +960,36 @@ body.light .bottom-nav .nav-btn.active{
   color:#03200e;
 }
 </style>
+  <link rel="stylesheet" href="./assets/v12-3d.css">
 </head>
 <body>
 <div class="app">
   <!-- TOPBAR -->
   <header class="topbar">
     <div class="brand">
-      <div class="logo" aria-hidden="true">⚽</div>
+      <div class="logo" aria-hidden="true">âš½</div>
       <div class="brand-copy">
         <b>Liga Juventino Rosas</b>
-        <small id="seasonLabel">Torneo de Liga · 2026–27</small>
+        <small id="seasonLabel">Torneo de Liga Â· 2026â€“27</small>
       </div>
     </div>
     <div class="top-actions">
-      <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">☾</button>
-      <button class="ghost-btn hide-mobile" data-view="notifications" aria-label="Ver avisos">🔔 Avisos</button>
-      <button class="ghost-btn hide-mobile" id="globalSearchBtn" aria-label="Búsqueda global">⌕ Buscar</button>
-      <button class="ghost-btn hide-mobile" id="tvModeBtn" aria-label="Activar modo TV">📺 TV</button>
-      <button class="primary-btn" data-view="admin" aria-label="Abrir panel administrativo">⚙️ JR Control</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">â˜¾</button>
+      <button class="ghost-btn hide-mobile" data-view="notifications" aria-label="Ver avisos">ðŸ”” Avisos</button>
+      <button class="ghost-btn hide-mobile" id="globalSearchBtn" aria-label="BÃºsqueda global">âŒ• Buscar</button>
+      <button class="ghost-btn hide-mobile" id="tvModeBtn" aria-label="Activar modo TV">ðŸ“º TV</button>
+      <button class="primary-btn" data-view="admin" aria-label="Abrir panel administrativo">âš™ï¸ JR Control</button>
     </div>
   </header>
 
   <!-- AVISO -->
   <div class="notice" id="mainNotice">
-    ℹ️ Plataforma unificada Liga Juventino Rosas · Los datos mostrados son de demostración.
-    <button class="btn-icon" style="width:24px;height:24px;font-size:12px;float:right;margin-top:-2px" id="dismissNotice" aria-label="Cerrar aviso">✕</button>
+    â„¹ï¸ Plataforma unificada Liga Juventino Rosas Â· Los datos mostrados son de demostraciÃ³n.
+    <button class="btn-icon" style="width:24px;height:24px;font-size:12px;float:right;margin-top:-2px" id="dismissNotice" aria-label="Cerrar aviso">âœ•</button>
   </div>
 
-  <!-- CHIPS DE CATEGORÍA -->
-  <nav class="category-scroll" id="categoryBar" aria-label="Seleccionar categoría">
+  <!-- CHIPS DE CATEGORÃA -->
+  <nav class="category-scroll" id="categoryBar" aria-label="Seleccionar categorÃ­a">
     <button class="chip active" data-category="Primera Fuerza">Primera Fuerza</button>
     <button class="chip" data-category="Intermedia">Intermedia</button>
     <button class="chip" data-category="Segunda Fuerza">Segunda Fuerza</button>
@@ -999,33 +1000,71 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: INICIO ===== -->
   <section class="view active" id="view-home" aria-label="Inicio">
 
+    <!-- ===== V12 CINEMATIC SPORTS 3D ===== -->
+    <section id="v12CinematicHero" aria-label="PresentaciÃ³n de Liga Juventino Rosas">
+      <div class="v12-hero-grid">
+        <div class="v12-copy">
+          <div class="v12-kicker">Sports Broadcast Â· Premium 3D Â· 2026</div>
+          <div class="v12-brand-lockup">
+            <img src="./assets/liga-logo.webp" alt="Liga Municipal de FÃºtbol Juventino Rosas A.C.">
+            <div><b>LIGA MUNICIPAL DE FÃšTBOL</b><small>Juventino Rosas A.C. Â· Guanajuato</small></div>
+          </div>
+          <h1 class="v12-title"><span class="ghost-word">FÃšTBOL</span><br><span class="electric">QUE SE SIENTE</span><br>EN VIVO.</h1>
+          <p class="v12-lead">Jornadas, resultados, tabla, goleadores, liguilla y un Match Center pensado como una app deportiva moderna. El 3D vive en la portada; los datos siguen siendo rÃ¡pidos y legibles.</p>
+          <div class="v12-actions">
+            <button class="primary-btn" data-view="matchcenter">ðŸ”´ Abrir Match Center</button>
+            <button class="ghost-btn" data-view="matches">âš½ Ver jornada</button>
+            <button class="ghost-btn" data-view="bracket">ðŸ† Copa / Liguilla</button>
+          </div>
+        </div>
+        <div class="v12-stage" aria-label="BalÃ³n 3D interactivo">
+          <canvas id="jr3dCanvas"></canvas>
+          <img class="v12-stage-fallback" src="./assets/liga-logo.webp" alt="">
+          <div class="v12-orbit-chip one"><strong>5</strong> categorÃ­as</div>
+          <div class="v12-orbit-chip two"><strong>LIVE</strong> Match Center</div>
+          <div class="v12-orbit-chip three"><strong>JR</strong> Matchday</div>
+        </div>
+      </div>
+      <div class="v12-ticker" aria-hidden="true">
+        <div class="v12-ticker-track">
+          <span class="live">â— EN VIVO</span><span><b>Pozos FC 2â€”1 Juventus</b> Â· 73'</span>
+          <span>PRÃ“XIMO Â· <b>Boavista vs Cerrito</b> Â· 17:00</span>
+          <span>PRIMERA FUERZA</span><span>INTERMEDIA</span><span>SEGUNDA FUERZA</span><span>VETERANOS 35+</span><span>VETERANOS 50+</span>
+          <span class="live">â— EN VIVO</span><span><b>Pozos FC 2â€”1 Juventus</b> Â· 73'</span>
+          <span>PRÃ“XIMO Â· <b>Boavista vs Cerrito</b> Â· 17:00</span>
+          <span>PRIMERA FUERZA</span><span>INTERMEDIA</span><span>SEGUNDA FUERZA</span><span>VETERANOS 35+</span><span>VETERANOS 50+</span>
+        </div>
+      </div>
+    </section>
+
+
     <!-- HERO MATCH CENTER -->
     <article class="hero" id="heroSection">
       <div class="hero-accent"></div>
       <div class="hero-ring"></div>
       <div class="row-between" style="position:relative;z-index:2">
         <div>
-          <div class="eyebrow">JR Matchday · Jornada 7</div>
+          <div class="eyebrow">JR Matchday Â· Jornada 7</div>
           <h1 class="text-3d" style="margin:8px 0 0;font-size:clamp(24px,4vw,44px)">Tu liga, viva durante toda la jornada</h1>
         </div>
-        <div class="live-badge" aria-label="Partido en vivo, minuto 73"><div class="live-dot"></div> EN VIVO · 73'</div>
+        <div class="live-badge" aria-label="Partido en vivo, minuto 73"><div class="live-dot"></div> EN VIVO Â· 73'</div>
       </div>
       <div class="match-hero">
         <div class="team">
-          <div class="team-logo" aria-hidden="true">🟢</div>
+          <div class="team-logo" aria-hidden="true">ðŸŸ¢</div>
           <b>Pozos FC</b>
         </div>
         <div class="score">
-          <strong id="heroScore">2 — 1</strong>
+          <strong id="heroScore">2 â€” 1</strong>
           <small>Campo Municipal</small>
         </div>
         <div class="team">
-          <div class="team-logo" aria-hidden="true">⚪</div>
+          <div class="team-logo" aria-hidden="true">âšª</div>
           <b>Juventus</b>
         </div>
       </div>
       <div class="hero-actions">
-        <button class="primary-btn" data-view="matchcenter" aria-label="Abrir Match Center del partido en vivo">Ver Match Center →</button>
+        <button class="primary-btn" data-view="matchcenter" aria-label="Abrir Match Center del partido en vivo">Ver Match Center â†’</button>
         <button class="ghost-btn" id="shareBtn" aria-label="Compartir enlace de la liga">Compartir</button>
         <button class="ghost-btn" data-view="calendar" aria-label="Ver calendario completo">Calendario</button>
       </div>
@@ -1044,7 +1083,7 @@ body.light .bottom-nav .nav-btn.active{
     <section class="section grid g2">
       <div>
         <div class="section-title">
-          <h2>Tabla · <span class="categoryText">Primera Fuerza</span></h2>
+          <h2>Tabla Â· <span class="categoryText">Primera Fuerza</span></h2>
           <button class="ghost-btn" data-view="table" aria-label="Ver tabla completa">Completa</button>
         </div>
         <div class="table-wrap">
@@ -1071,17 +1110,17 @@ body.light .bottom-nav .nav-btn.active{
       </div>
       <div class="grid g3">
         <article class="card clickable" data-view="news" role="button" tabindex="0" aria-label="Ver aviso de cambios de horario">
-          <div class="eyebrow">📣 Aviso</div>
+          <div class="eyebrow">ðŸ“£ Aviso</div>
           <h3 style="margin:8px 0 6px">Cambios de horario y sedes</h3>
           <p style="color:var(--muted);font-size:13px">Comunicados oficiales sin mezclarlos con el panel administrativo.</p>
         </article>
         <article class="card clickable" data-view="news" role="button" tabindex="0" aria-label="Ver junta semanal">
-          <div class="eyebrow">🗓️ Junta</div>
+          <div class="eyebrow">ðŸ—“ï¸ Junta</div>
           <h3 style="margin:8px 0 6px">Junta semanal de liga</h3>
           <p style="color:var(--muted);font-size:13px">Fecha, hora, lugar, acuerdos y documentos en un solo espacio.</p>
         </article>
         <article class="card clickable" data-view="media" role="button" tabindex="0" aria-label="Ver multimedia">
-          <div class="eyebrow">🎥 Multimedia</div>
+          <div class="eyebrow">ðŸŽ¥ Multimedia</div>
           <h3 style="margin:8px 0 6px">Semifinales, finales y momentos</h3>
           <p style="color:var(--muted);font-size:13px">Videos y publicaciones enlazadas desde Facebook.</p>
         </article>
@@ -1092,12 +1131,12 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: PARTIDOS ===== -->
   <section class="view" id="view-matches" aria-label="Partidos">
     <div class="section-title">
-      <div><div class="eyebrow">JR Fútbol</div><h2>Partidos y jornadas</h2></div>
-      <button class="primary-btn" data-view="calendar" aria-label="Ver calendario completo">📅 Calendario</button>
+      <div><div class="eyebrow">JR FÃºtbol</div><h2>Partidos y jornadas</h2></div>
+      <button class="primary-btn" data-view="calendar" aria-label="Ver calendario completo">ðŸ“… Calendario</button>
     </div>
     <div class="toolbar">
       <select class="search" id="matchFilter" style="max-width:200px" aria-label="Filtrar partidos por estado">
-        <option>Todos</option><option>Próximos</option><option>Finalizados</option><option>En vivo</option>
+        <option>Todos</option><option>PrÃ³ximos</option><option>Finalizados</option><option>En vivo</option>
       </select>
       <input class="search" id="matchSearch" placeholder="Buscar equipo..." style="max-width:280px" aria-label="Buscar partido por equipo">
     </div>
@@ -1107,8 +1146,8 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: CALENDARIO ===== -->
   <section class="view" id="view-calendar" aria-label="Calendario">
     <div class="section-title">
-      <div><div class="eyebrow">Calendario</div><h2>Jornadas · <span class="categoryText">Primera Fuerza</span></h2></div>
-      <button class="ghost-btn" id="icsBtn" aria-label="Descargar calendario en formato ICS">📥 Descargar .ics</button>
+      <div><div class="eyebrow">Calendario</div><h2>Jornadas Â· <span class="categoryText">Primera Fuerza</span></h2></div>
+      <button class="ghost-btn" id="icsBtn" aria-label="Descargar calendario en formato ICS">ðŸ“¥ Descargar .ics</button>
     </div>
     <div class="grid g3" id="calendarCards"></div>
   </section>
@@ -1128,9 +1167,9 @@ body.light .bottom-nav .nav-btn.active{
   </section>
 
   <!-- ===== VISTA: STATS ===== -->
-  <section class="view" id="view-stats" aria-label="Estadísticas">
+  <section class="view" id="view-stats" aria-label="EstadÃ­sticas">
     <div class="section-title">
-      <div><div class="eyebrow">Estadísticas</div><h2>Goleo y rendimiento</h2></div>
+      <div><div class="eyebrow">EstadÃ­sticas</div><h2>Goleo y rendimiento</h2></div>
     </div>
     <div class="grid g4" id="statsKpis"></div>
     <div class="section">
@@ -1143,7 +1182,7 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-teams" aria-label="Equipos">
     <div class="section-title">
       <div><div class="eyebrow">Clubes</div><h2>Equipos</h2></div>
-      <button class="primary-btn" data-action="new-team" aria-label="Registrar nuevo equipo">🛡️ Nuevo equipo</button>
+      <button class="primary-btn" data-action="new-team" aria-label="Registrar nuevo equipo">ðŸ›¡ï¸ Nuevo equipo</button>
     </div>
     <input class="search" id="teamSearch" placeholder="Buscar equipo..." aria-label="Buscar equipo">
     <div id="teamsGrid" class="grid g3 section" role="list" aria-label="Lista de equipos"></div>
@@ -1153,7 +1192,7 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-players" aria-label="Jugadores">
     <div class="section-title">
       <div><div class="eyebrow">Plantillas</div><h2>Jugadores</h2></div>
-      <button class="primary-btn" data-action="new-player" aria-label="Registrar nuevo jugador">👤 Registrar jugador</button>
+      <button class="primary-btn" data-action="new-player" aria-label="Registrar nuevo jugador">ðŸ‘¤ Registrar jugador</button>
     </div>
     <input class="search" id="playerSearch" placeholder="Buscar por nombre, folio o equipo..." aria-label="Buscar jugador">
     <div id="playersGrid" class="grid g3 section" role="list" aria-label="Lista de jugadores"></div>
@@ -1163,13 +1202,13 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-bracket" aria-label="Liguilla">
     <div class="section-title">
       <div><div class="eyebrow">Liguilla / Copa</div><h2>Bracket eliminatorio</h2></div>
-      <button class="ghost-btn" id="shareBracket" aria-label="Compartir bracket">📤 Compartir</button>
+      <button class="ghost-btn" id="shareBracket" aria-label="Compartir bracket">ðŸ“¤ Compartir</button>
     </div>
     <div class="card bracket">
       <div class="bracket-inner">
         <div class="round">
           <div class="bracket-card"><div class="bracket-team"><span>Pozos FC</span><b>3</b></div><div class="bracket-team"><span>Juventus</span><b>1</b></div></div>
-          <div class="bracket-card"><div class="bracket-team"><span>Boavista</span><b>2</b></div><div class="bracket-team"><span>América</span><b>0</b></div></div>
+          <div class="bracket-card"><div class="bracket-team"><span>Boavista</span><b>2</b></div><div class="bracket-team"><span>AmÃ©rica</span><b>0</b></div></div>
         </div>
         <div class="connector"></div>
         <div class="round">
@@ -1178,7 +1217,7 @@ body.light .bottom-nav .nav-btn.active{
         <div class="connector"></div>
         <div class="round">
           <div class="bracket-card champion">
-            <div class="eyebrow" style="color:var(--gold)">🏆 Campeón</div>
+            <div class="eyebrow" style="color:var(--gold)">ðŸ† CampeÃ³n</div>
             <h3 style="margin:8px 0 0">Pozos FC</h3>
           </div>
         </div>
@@ -1195,24 +1234,24 @@ body.light .bottom-nav .nav-btn.active{
     <article class="hero" style="box-shadow:none">
       <div class="hero-accent"></div>
       <div class="match-hero" style="margin:8px 0 16px">
-        <div class="team"><div class="team-logo" aria-hidden="true">🟢</div><b>Pozos FC</b></div>
-        <div class="score"><strong id="mcScore">2 — 1</strong><small>Campo Municipal · Jornada 7</small></div>
-        <div class="team"><div class="team-logo" aria-hidden="true">⚪</div><b>Juventus</b></div>
+        <div class="team"><div class="team-logo" aria-hidden="true">ðŸŸ¢</div><b>Pozos FC</b></div>
+        <div class="score"><strong id="mcScore">2 â€” 1</strong><small>Campo Municipal Â· Jornada 7</small></div>
+        <div class="team"><div class="team-logo" aria-hidden="true">âšª</div><b>Juventus</b></div>
       </div>
       <div class="grid g4">
-        <div class="card stat-card"><small>Tiros</small><strong>12 — 8</strong></div>
-        <div class="card stat-card"><small>Al arco</small><strong>6 — 4</strong></div>
-        <div class="card stat-card"><small>Corners</small><strong>5 — 3</strong></div>
-        <div class="card stat-card"><small>Tarjetas</small><strong>2 — 3</strong></div>
+        <div class="card stat-card"><small>Tiros</small><strong>12 â€” 8</strong></div>
+        <div class="card stat-card"><small>Al arco</small><strong>6 â€” 4</strong></div>
+        <div class="card stat-card"><small>Corners</small><strong>5 â€” 3</strong></div>
+        <div class="card stat-card"><small>Tarjetas</small><strong>2 â€” 3</strong></div>
       </div>
     </article>
     <div class="grid g2 section">
       <div class="card">
-        <div class="section-title"><h3>Timeline</h3><span style="color:var(--muted);font-size:12px">Actualización en vivo</span></div>
+        <div class="section-title"><h3>Timeline</h3><span style="color:var(--muted);font-size:12px">ActualizaciÃ³n en vivo</span></div>
         <div class="timeline" id="timeline"></div>
       </div>
       <div class="card">
-        <div class="section-title"><h3>Alineaciones</h3><button class="ghost-btn" id="formationBtn" aria-label="Ver alineación sobre cancha">Ver cancha</button></div>
+        <div class="section-title"><h3>Alineaciones</h3><button class="ghost-btn" id="formationBtn" aria-label="Ver alineaciÃ³n sobre cancha">Ver cancha</button></div>
         <div class="grid g2">
           <div><b>Pozos FC</b><p style="color:var(--muted);line-height:1.8;font-size:13px;margin-top:6px">1 Portero<br>4 Defensa<br>8 Medio<br>10 Delantero<br>11 Extremo</p></div>
           <div><b>Juventus</b><p style="color:var(--muted);line-height:1.8;font-size:13px;margin-top:6px">1 Portero<br>5 Defensa<br>6 Medio<br>9 Delantero<br>17 Extremo</p></div>
@@ -1220,10 +1259,10 @@ body.light .bottom-nav .nav-btn.active{
       </div>
     </div>
     <div class="section">
-      <div class="section-title"><h3>Jugador del partido</h3><button class="primary-btn" id="mvpBtn" aria-label="Votar por el jugador del partido">⭐ Votar MVP</button></div>
+      <div class="section-title"><h3>Jugador del partido</h3><button class="primary-btn" id="mvpBtn" aria-label="Votar por el jugador del partido">â­ Votar MVP</button></div>
       <div class="card profile-card">
-        <div class="avatar" aria-hidden="true">⭐</div>
-        <div class="grow"><b>Jugador destacado</b><small>Pozos FC · #10</small></div>
+        <div class="avatar" aria-hidden="true">â­</div>
+        <div class="grow"><b>Jugador destacado</b><small>Pozos FC Â· #10</small></div>
         <div class="metric">9.1</div>
       </div>
     </div>
@@ -1233,7 +1272,7 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-news" aria-label="Noticias y avisos">
     <div class="section-title">
       <div><div class="eyebrow">Comunicados</div><h2>Noticias, avisos y juntas</h2></div>
-      <button class="primary-btn" data-action="new-news" aria-label="Publicar nuevo aviso">📣 Publicar aviso</button>
+      <button class="primary-btn" data-action="new-news" aria-label="Publicar nuevo aviso">ðŸ“£ Publicar aviso</button>
     </div>
     <div id="newsGrid" class="grid g3"></div>
   </section>
@@ -1241,13 +1280,13 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: MULTIMEDIA ===== -->
   <section class="view" id="view-media" aria-label="Multimedia">
     <div class="section-title">
-      <div><div class="eyebrow">Galería</div><h2>Videos y momentos</h2></div>
-      <a class="primary-btn" href="https://www.facebook.com/share/1CFnoMeiCa/" target="_blank" rel="noreferrer" aria-label="Abrir Facebook oficial de la liga">Facebook oficial ↗</a>
+      <div><div class="eyebrow">GalerÃ­a</div><h2>Videos y momentos</h2></div>
+      <a class="primary-btn" href="https://www.facebook.com/share/1CFnoMeiCa/" target="_blank" rel="noreferrer" aria-label="Abrir Facebook oficial de la liga">Facebook oficial â†—</a>
     </div>
     <div class="grid g3">
-      <article class="card"><div style="font-size:32px;margin-bottom:8px">▶️</div><h3>Cuartos de final</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Espacio para video o publicación de Facebook.</p></article>
-      <article class="card"><div style="font-size:32px;margin-bottom:8px">🎬</div><h3>Semifinales</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Resumen, goles y mejores momentos.</p></article>
-      <article class="card"><div style="font-size:32px;margin-bottom:8px">🏆</div><h3>Finales</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Final de Liga, Copa y campeón.</p></article>
+      <article class="card"><div style="font-size:32px;margin-bottom:8px">â–¶ï¸</div><h3>Cuartos de final</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Espacio para video o publicaciÃ³n de Facebook.</p></article>
+      <article class="card"><div style="font-size:32px;margin-bottom:8px">ðŸŽ¬</div><h3>Semifinales</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Resumen, goles y mejores momentos.</p></article>
+      <article class="card"><div style="font-size:32px;margin-bottom:8px">ðŸ†</div><h3>Finales</h3><p style="color:var(--muted);font-size:13px;margin-top:6px">Final de Liga, Copa y campeÃ³n.</p></article>
     </div>
   </section>
 
@@ -1255,9 +1294,9 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-history" aria-label="Historial">
     <div class="section-title"><div><div class="eyebrow">Archivo</div><h2>Historial por temporadas</h2></div></div>
     <div class="grid g3">
-      <article class="card"><div class="eyebrow">2026–27</div><h3 style="margin:8px 0 6px">Temporada actual</h3><p style="color:var(--muted);font-size:13px">Liga, Copa, goleadores y estadísticas.</p></article>
-      <article class="card"><div class="eyebrow">Campeones</div><h3 style="margin:8px 0 6px">Palmarés</h3><p style="color:var(--muted);font-size:13px">Campeones y subcampeones por categoría.</p></article>
-      <article class="card"><div class="eyebrow">Récords</div><h3 style="margin:8px 0 6px">Históricos</h3><p style="color:var(--muted);font-size:13px">Goleadores, rachas y marcas de temporada.</p></article>
+      <article class="card"><div class="eyebrow">2026â€“27</div><h3 style="margin:8px 0 6px">Temporada actual</h3><p style="color:var(--muted);font-size:13px">Liga, Copa, goleadores y estadÃ­sticas.</p></article>
+      <article class="card"><div class="eyebrow">Campeones</div><h3 style="margin:8px 0 6px">PalmarÃ©s</h3><p style="color:var(--muted);font-size:13px">Campeones y subcampeones por categorÃ­a.</p></article>
+      <article class="card"><div class="eyebrow">RÃ©cords</div><h3 style="margin:8px 0 6px">HistÃ³ricos</h3><p style="color:var(--muted);font-size:13px">Goleadores, rachas y marcas de temporada.</p></article>
     </div>
   </section>
 
@@ -1265,28 +1304,28 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-notifications" aria-label="Notificaciones">
     <div class="section-title"><div><div class="eyebrow">Centro de avisos</div><h2>Notificaciones</h2></div></div>
     <div class="grid">
-      <article class="card"><b>🕒 Próxima jornada</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Recibe aviso cuando se publique un horario nuevo.</p></article>
-      <article class="card"><b>📍 Cambio de sede</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Alertas para cambios relevantes de cancha o fecha.</p></article>
-      <article class="card"><b>⚽ Partido favorito</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Seguimiento de equipos y encuentros destacados.</p></article>
+      <article class="card"><b>ðŸ•’ PrÃ³xima jornada</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Recibe aviso cuando se publique un horario nuevo.</p></article>
+      <article class="card"><b>ðŸ“ Cambio de sede</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Alertas para cambios relevantes de cancha o fecha.</p></article>
+      <article class="card"><b>âš½ Partido favorito</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Seguimiento de equipos y encuentros destacados.</p></article>
     </div>
   </section>
 
-  <!-- ===== VISTA: MÁS ===== -->
-  <section class="view" id="view-more" aria-label="Más opciones">
-    <div class="section-title"><div><div class="eyebrow">Más</div><h2>Explora la liga</h2></div></div>
+  <!-- ===== VISTA: MÃS ===== -->
+  <section class="view" id="view-more" aria-label="MÃ¡s opciones">
+    <div class="section-title"><div><div class="eyebrow">MÃ¡s</div><h2>Explora la liga</h2></div></div>
     <div class="more-grid">
-      <button class="more-link" data-view="teams" aria-label="Ver equipos"><span>🛡️</span><b>Equipos</b></button>
-      <button class="more-link" data-view="players" aria-label="Ver jugadores"><span>👤</span><b>Jugadores</b></button>
-      <button class="more-link" data-view="bracket" aria-label="Ver liguilla"><span>🏆</span><b>Liguilla</b></button>
-      <button class="more-link" data-view="news" aria-label="Ver avisos"><span>📣</span><b>Avisos</b></button>
-      <button class="more-link" data-view="media" aria-label="Ver videos"><span>🎥</span><b>Videos</b></button>
-      <button class="more-link" data-view="history" aria-label="Ver historial"><span>🗂️</span><b>Historial</b></button>
-      <button class="more-link" data-view="admin" aria-label="Abrir panel administrativo"><span>⚙️</span><b>JR Control</b></button>
-      <button class="more-link" data-view="fanzone" aria-label="Abrir Fan Zone"><span>🔥</span><b>Fan Zone</b></button>
-      <button class="more-link" data-view="shotmap" aria-label="Ver mapa de tiros"><span>🎯</span><b>Shot Map</b></button>
-      <button class="more-link" data-view="credential" aria-label="Ver credencial digital"><span>🪪</span><b>Credencial</b></button>
-      <button class="more-link" data-view="matchdaypro" aria-label="Abrir JR Matchday+"><span>⏱️</span><b>JR Matchday+</b></button>
-      <button class="more-link" id="installHint" aria-label="Instalar aplicación PWA"><span>📲</span><b>Instalar app</b></button>
+      <button class="more-link" data-view="teams" aria-label="Ver equipos"><span>ðŸ›¡ï¸</span><b>Equipos</b></button>
+      <button class="more-link" data-view="players" aria-label="Ver jugadores"><span>ðŸ‘¤</span><b>Jugadores</b></button>
+      <button class="more-link" data-view="bracket" aria-label="Ver liguilla"><span>ðŸ†</span><b>Liguilla</b></button>
+      <button class="more-link" data-view="news" aria-label="Ver avisos"><span>ðŸ“£</span><b>Avisos</b></button>
+      <button class="more-link" data-view="media" aria-label="Ver videos"><span>ðŸŽ¥</span><b>Videos</b></button>
+      <button class="more-link" data-view="history" aria-label="Ver historial"><span>ðŸ—‚ï¸</span><b>Historial</b></button>
+      <button class="more-link" data-view="admin" aria-label="Abrir panel administrativo"><span>âš™ï¸</span><b>JR Control</b></button>
+      <button class="more-link" data-view="fanzone" aria-label="Abrir Fan Zone"><span>ðŸ”¥</span><b>Fan Zone</b></button>
+      <button class="more-link" data-view="shotmap" aria-label="Ver mapa de tiros"><span>ðŸŽ¯</span><b>Shot Map</b></button>
+      <button class="more-link" data-view="credential" aria-label="Ver credencial digital"><span>ðŸªª</span><b>Credencial</b></button>
+      <button class="more-link" data-view="matchdaypro" aria-label="Abrir JR Matchday+"><span>â±ï¸</span><b>JR Matchday+</b></button>
+      <button class="more-link" id="installHint" aria-label="Instalar aplicaciÃ³n PWA"><span>ðŸ“²</span><b>Instalar app</b></button>
     </div>
   </section>
 
@@ -1294,26 +1333,26 @@ body.light .bottom-nav .nav-btn.active{
   <section class="view" id="view-fanzone" aria-label="Fan Zone">
     <div class="section-title">
       <div><div class="eyebrow">Fan Zone</div><h2>Participa con tu liga</h2></div>
-      <span class="badge-soft">Sin apuestas · solo puntos y diversión</span>
+      <span class="badge-soft">Sin apuestas Â· solo puntos y diversiÃ³n</span>
     </div>
     <div class="fan-grid">
-      <button class="fan-btn" id="favTeamBtn" aria-label="Seguir o dejar de seguir a Pozos FC"><span>⭐</span>Seguir Pozos FC</button>
-      <button class="fan-btn" id="favMatchBtn" aria-label="Seguir o dejar de seguir el partido"><span>🔔</span>Seguir partido</button>
-      <button class="fan-btn" id="reactionBtn" aria-label="Enviar reacción al partido"><span>🔥</span>Reaccionar</button>
-      <button class="fan-btn" id="shareResultBtn" aria-label="Compartir tarjeta de resultado"><span>📤</span>Tarjeta resultado</button>
+      <button class="fan-btn" id="favTeamBtn" aria-label="Seguir o dejar de seguir a Pozos FC"><span>â­</span>Seguir Pozos FC</button>
+      <button class="fan-btn" id="favMatchBtn" aria-label="Seguir o dejar de seguir el partido"><span>ðŸ””</span>Seguir partido</button>
+      <button class="fan-btn" id="reactionBtn" aria-label="Enviar reacciÃ³n al partido"><span>ðŸ”¥</span>Reaccionar</button>
+      <button class="fan-btn" id="shareResultBtn" aria-label="Compartir tarjeta de resultado"><span>ðŸ“¤</span>Tarjeta resultado</button>
     </div>
     <div class="grid g2 section">
       <div class="card">
-        <div class="section-title"><h3>Pronóstico</h3><span id="predictionScore" style="color:var(--muted);font-size:12px">0 puntos</span></div>
+        <div class="section-title"><h3>PronÃ³stico</h3><span id="predictionScore" style="color:var(--muted);font-size:12px">0 puntos</span></div>
         <form id="predictionForm" class="form-grid">
           <div class="field"><label>Pozos FC</label><input type="number" min="0" max="20" name="home" value="2" aria-label="Goles Pozos FC"></div>
           <div class="field"><label>Juventus</label><input type="number" min="0" max="20" name="away" value="1" aria-label="Goles Juventus"></div>
-          <div style="grid-column:1/-1"><button class="primary-btn" type="submit" aria-label="Guardar pronóstico">Guardar pronóstico</button></div>
+          <div style="grid-column:1/-1"><button class="primary-btn" type="submit" aria-label="Guardar pronÃ³stico">Guardar pronÃ³stico</button></div>
         </form>
       </div>
       <div class="card">
         <div class="section-title"><h3>Encuesta</h3><span id="pollCount" style="color:var(--muted);font-size:12px">0 votos</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:10px">¿Quién gana la final?</p>
+        <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Â¿QuiÃ©n gana la final?</p>
         <div class="grid g2">
           <button class="ghost-btn pollBtn" data-choice="Pozos FC" aria-label="Votar por Pozos FC">Pozos FC</button>
           <button class="ghost-btn pollBtn" data-choice="Boavista" aria-label="Votar por Boavista">Boavista</button>
@@ -1326,13 +1365,13 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: SHOT MAP ===== -->
   <section class="view" id="view-shotmap" aria-label="Mapa de tiros">
     <div class="section-title">
-      <div><div class="eyebrow">Estadística avanzada</div><h2>Mapa de tiros</h2></div>
-      <button class="ghost-btn" id="clearShots" aria-label="Limpiar todos los tiros del mapa">🗑️ Limpiar</button>
+      <div><div class="eyebrow">EstadÃ­stica avanzada</div><h2>Mapa de tiros</h2></div>
+      <button class="ghost-btn" id="clearShots" aria-label="Limpiar todos los tiros del mapa">ðŸ—‘ï¸ Limpiar</button>
     </div>
     <div class="notice">Toca cualquier zona de la cancha para registrar un tiro. Esta es la idea para crear datos propios sin pagar un proveedor profesional.</div>
     <div class="grid g2">
       <div>
-        <div class="pitch" id="shotPitch" role="img" aria-label="Cancha de fútbol para registrar tiros"><div class="center-circle"></div></div>
+        <div class="pitch" id="shotPitch" role="img" aria-label="Cancha de fÃºtbol para registrar tiros"><div class="center-circle"></div></div>
         <div class="toolbar section">
           <select class="search" id="shotType" style="max-width:200px" aria-label="Tipo de tiro">
             <option value="goal">Gol</option>
@@ -1340,15 +1379,15 @@ body.light .bottom-nav .nav-btn.active{
             <option value="missed">Fuera</option>
             <option value="blocked">Bloqueado</option>
           </select>
-          <button class="primary-btn" id="downloadShotMap" aria-label="Guardar imagen del mapa de tiros">💾 Guardar imagen</button>
+          <button class="primary-btn" id="downloadShotMap" aria-label="Guardar imagen del mapa de tiros">ðŸ’¾ Guardar imagen</button>
         </div>
       </div>
       <div class="card">
         <div class="section-title"><h3>Resumen</h3><span class="badge-soft">Demo local</span></div>
         <div class="grid g2" id="shotStats"></div>
         <div class="section">
-          <h3 style="margin-bottom:8px">Para producción</h3>
-          <p style="color:var(--muted);font-size:13px">Cada tiro debe guardar partido, jugador, equipo, minuto, coordenadas x/y y resultado. Después se puede calcular shot map, zonas de tiro y momentum propio.</p>
+          <h3 style="margin-bottom:8px">Para producciÃ³n</h3>
+          <p style="color:var(--muted);font-size:13px">Cada tiro debe guardar partido, jugador, equipo, minuto, coordenadas x/y y resultado. DespuÃ©s se puede calcular shot map, zonas de tiro y momentum propio.</p>
         </div>
       </div>
     </div>
@@ -1357,8 +1396,8 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: CREDENCIAL ===== -->
   <section class="view" id="view-credential" aria-label="Credencial digital">
     <div class="section-title">
-      <div><div class="eyebrow">Validación</div><h2>Credencial digital de jugador</h2></div>
-      <button class="primary-btn" id="downloadCredential" aria-label="Descargar tarjeta de credencial">📥 Descargar tarjeta</button>
+      <div><div class="eyebrow">ValidaciÃ³n</div><h2>Credencial digital de jugador</h2></div>
+      <button class="primary-btn" id="downloadCredential" aria-label="Descargar tarjeta de credencial">ðŸ“¥ Descargar tarjeta</button>
     </div>
     <div class="credential" id="credentialCard">
       <div class="credential-head">
@@ -1367,17 +1406,17 @@ body.light .bottom-nav .nav-btn.active{
           <h2 style="margin:5px 0">Jugador destacado</h2>
           <p style="color:var(--muted);margin:0;font-size:13px">Folio: LJR-00471</p>
         </div>
-        <div class="avatar" style="width:74px;height:74px;font-size:32px" aria-hidden="true">👤</div>
+        <div class="avatar" style="width:74px;height:74px;font-size:32px" aria-hidden="true">ðŸ‘¤</div>
       </div>
       <div class="grid g2 section">
         <div>
           <b>Pozos FC</b>
-          <p style="color:var(--muted);font-size:13px;margin-top:4px">Primera Fuerza · #10<br>Temporada 2026–27</p>
-          <span class="badge-soft" style="color:var(--accent);margin-top:8px;display:inline-flex">● HABILITADO</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px">Primera Fuerza Â· #10<br>Temporada 2026â€“27</p>
+          <span class="badge-soft" style="color:var(--accent);margin-top:8px;display:inline-flex">â— HABILITADO</span>
         </div>
-        <div class="qr" id="qrBox" aria-label="Código visual de demostración"></div>
+        <div class="qr" id="qrBox" aria-label="CÃ³digo visual de demostraciÃ³n"></div>
       </div>
-      <p style="color:var(--muted);font-size:11px;margin-bottom:0">La versión final enlazará a una ficha pública limitada, sin exponer CURP/INE u otros documentos privados.</p>
+      <p style="color:var(--muted);font-size:11px;margin-bottom:0">La versiÃ³n final enlazarÃ¡ a una ficha pÃºblica limitada, sin exponer CURP/INE u otros documentos privados.</p>
     </div>
   </section>
 
@@ -1390,18 +1429,18 @@ body.light .bottom-nav .nav-btn.active{
     <div class="grid g2">
       <article class="hero">
         <div class="hero-accent"></div>
-        <div class="eyebrow" style="position:relative;z-index:2">Próximo gran partido</div>
+        <div class="eyebrow" style="position:relative;z-index:2">PrÃ³ximo gran partido</div>
         <h2 style="position:relative;z-index:2;margin:8px 0">Pozos FC vs Juventus</h2>
         <div class="countdown" id="countdown" aria-live="polite" aria-label="Cuenta regresiva">00:00:00</div>
-        <p style="color:var(--muted);font-size:13px;position:relative;z-index:2">Campo Municipal · Sábado · 17:00</p>
+        <p style="color:var(--muted);font-size:13px;position:relative;z-index:2">Campo Municipal Â· SÃ¡bado Â· 17:00</p>
         <button class="primary-btn" data-view="matchcenter" style="position:relative;z-index:2" aria-label="Abrir Match Center">Abrir Match Center</button>
       </article>
       <div class="card">
         <div class="section-title"><h3>Barra de jornada</h3></div>
         <div class="list-compact">
-          <div class="row"><span style="font-size:13px">15:00 · Boavista vs Cerrito</span><strong style="color:var(--accent)">3–0 FINAL</strong></div>
-          <div class="row"><span style="font-size:13px">Pozos vs Juventus</span><strong style="color:var(--live)">2–1 · 73'</strong></div>
-          <div class="row"><span style="font-size:13px">19:00 · América vs UCKA</span><strong style="color:var(--muted)">Próximo</strong></div>
+          <div class="row"><span style="font-size:13px">15:00 Â· Boavista vs Cerrito</span><strong style="color:var(--accent)">3â€“0 FINAL</strong></div>
+          <div class="row"><span style="font-size:13px">Pozos vs Juventus</span><strong style="color:var(--live)">2â€“1 Â· 73'</strong></div>
+          <div class="row"><span style="font-size:13px">19:00 Â· AmÃ©rica vs UCKA</span><strong style="color:var(--muted)">PrÃ³ximo</strong></div>
         </div>
       </div>
     </div>
@@ -1410,61 +1449,61 @@ body.light .bottom-nav .nav-btn.active{
   <!-- ===== VISTA: ADMIN ===== -->
   <section class="view" id="view-admin" aria-label="Panel administrativo JR Control">
     <div class="section-title">
-      <div><div class="eyebrow">Acceso privado</div><h2>JR Control · Panel administrativo</h2></div>
+      <div><div class="eyebrow">Acceso privado</div><h2>JR Control Â· Panel administrativo</h2></div>
       <div style="display:flex;gap:8px">
-        <button class="ghost-btn" id="adminMenuToggle" aria-label="Abrir menú de administración" style="display:none">☰ Menú</button>
-        <button class="ghost-btn" data-view="home" aria-label="Volver a JR Fútbol">← JR Fútbol</button>
+        <button class="ghost-btn" id="adminMenuToggle" aria-label="Abrir menÃº de administraciÃ³n" style="display:none">â˜° MenÃº</button>
+        <button class="ghost-btn" data-view="home" aria-label="Volver a JR FÃºtbol">â† JR FÃºtbol</button>
       </div>
     </div>
-    <div class="notice">Esta vista conserva la lógica del panel administrativo: Resumen, Jugadores, Equipos, Calendario, Tabla, Goleo, Reportes, Reglamento, Sanciones e Importar/exportar.</div>
+    <div class="notice">Esta vista conserva la lÃ³gica del panel administrativo: Resumen, Jugadores, Equipos, Calendario, Tabla, Goleo, Reportes, Reglamento, Sanciones e Importar/exportar.</div>
 
-    <!-- Drawer para móvil -->
+    <!-- Drawer para mÃ³vil -->
     <div class="admin-drawer-overlay" id="adminDrawerOverlay"></div>
-    <div class="admin-drawer" id="adminDrawer" role="dialog" aria-label="Menú administrativo" aria-modal="true">
+    <div class="admin-drawer" id="adminDrawer" role="dialog" aria-label="MenÃº administrativo" aria-modal="true">
       <div class="admin-drawer-header">
         <b>JR Control</b>
-        <button class="btn-icon" id="closeAdminDrawer" aria-label="Cerrar menú">✕</button>
+        <button class="btn-icon" id="closeAdminDrawer" aria-label="Cerrar menÃº">âœ•</button>
       </div>
-      <button class="active" data-admin="summary">📊 Resumen</button>
-      <button data-admin="players">👥 Jugadores</button>
-      <button data-admin="teams">🛡️ Equipos</button>
-      <button data-admin="matches">🗓️ Calendario y resultados</button>
-      <button data-admin="standings">🏆 Tabla de posiciones</button>
-      <button data-admin="scoring">⚽ Goleo</button>
-      <button data-admin="reports">📄 Reportes y jornadas</button>
-      <button data-admin="rules">📘 Reglamento</button>
-      <button data-admin="sanctions">🟥 Sanciones</button>
-      <button data-admin="import">↕️ Importar y exportar</button>
-      <button data-admin="operator">📱 Operador de partido</button>
-      <button data-admin="fixture">🧠 Generar fixture</button>
-      <button data-admin="officials">👨‍⚖️ Árbitros y oficiales</button>
-      <button data-admin="disciplinepro">🛡️ Disciplina automática</button>
-      <button data-admin="audit">🧾 Auditoría</button>
-      <button data-admin="venues">🏟️ Campos y conflictos</button>
-      <button data-admin="refreport">📋 Acta arbitral</button>
-      <button data-admin="competition">🏆 Estados / walkover</button>
+      <button class="active" data-admin="summary">ðŸ“Š Resumen</button>
+      <button data-admin="players">ðŸ‘¥ Jugadores</button>
+      <button data-admin="teams">ðŸ›¡ï¸ Equipos</button>
+      <button data-admin="matches">ðŸ—“ï¸ Calendario y resultados</button>
+      <button data-admin="standings">ðŸ† Tabla de posiciones</button>
+      <button data-admin="scoring">âš½ Goleo</button>
+      <button data-admin="reports">ðŸ“„ Reportes y jornadas</button>
+      <button data-admin="rules">ðŸ“˜ Reglamento</button>
+      <button data-admin="sanctions">ðŸŸ¥ Sanciones</button>
+      <button data-admin="import">â†•ï¸ Importar y exportar</button>
+      <button data-admin="operator">ðŸ“± Operador de partido</button>
+      <button data-admin="fixture">ðŸ§  Generar fixture</button>
+      <button data-admin="officials">ðŸ‘¨â€âš–ï¸ Ãrbitros y oficiales</button>
+      <button data-admin="disciplinepro">ðŸ›¡ï¸ Disciplina automÃ¡tica</button>
+      <button data-admin="audit">ðŸ§¾ AuditorÃ­a</button>
+      <button data-admin="venues">ðŸŸï¸ Campos y conflictos</button>
+      <button data-admin="refreport">ðŸ“‹ Acta arbitral</button>
+      <button data-admin="competition">ðŸ† Estados / walkover</button>
     </div>
 
     <div class="admin-shell">
-      <aside class="card admin-menu" id="adminMenu" role="navigation" aria-label="Menú administrativo">
-        <button class="active" data-admin="summary">📊 Resumen</button>
-        <button data-admin="players">👥 Jugadores</button>
-        <button data-admin="teams">🛡️ Equipos</button>
-        <button data-admin="matches">🗓️ Calendario y resultados</button>
-        <button data-admin="standings">🏆 Tabla de posiciones</button>
-        <button data-admin="scoring">⚽ Goleo</button>
-        <button data-admin="reports">📄 Reportes y jornadas</button>
-        <button data-admin="rules">📘 Reglamento</button>
-        <button data-admin="sanctions">🟥 Sanciones</button>
-        <button data-admin="import">↕️ Importar y exportar</button>
-        <button data-admin="operator">📱 Operador de partido</button>
-        <button data-admin="fixture">🧠 Generar fixture</button>
-        <button data-admin="officials">👨‍⚖️ Árbitros y oficiales</button>
-        <button data-admin="disciplinepro">🛡️ Disciplina automática</button>
-        <button data-admin="audit">🧾 Auditoría</button>
-        <button data-admin="venues">🏟️ Campos y conflictos</button>
-        <button data-admin="refreport">📋 Acta arbitral</button>
-        <button data-admin="competition">🏆 Estados / walkover</button>
+      <aside class="card admin-menu" id="adminMenu" role="navigation" aria-label="MenÃº administrativo">
+        <button class="active" data-admin="summary">ðŸ“Š Resumen</button>
+        <button data-admin="players">ðŸ‘¥ Jugadores</button>
+        <button data-admin="teams">ðŸ›¡ï¸ Equipos</button>
+        <button data-admin="matches">ðŸ—“ï¸ Calendario y resultados</button>
+        <button data-admin="standings">ðŸ† Tabla de posiciones</button>
+        <button data-admin="scoring">âš½ Goleo</button>
+        <button data-admin="reports">ðŸ“„ Reportes y jornadas</button>
+        <button data-admin="rules">ðŸ“˜ Reglamento</button>
+        <button data-admin="sanctions">ðŸŸ¥ Sanciones</button>
+        <button data-admin="import">â†•ï¸ Importar y exportar</button>
+        <button data-admin="operator">ðŸ“± Operador de partido</button>
+        <button data-admin="fixture">ðŸ§  Generar fixture</button>
+        <button data-admin="officials">ðŸ‘¨â€âš–ï¸ Ãrbitros y oficiales</button>
+        <button data-admin="disciplinepro">ðŸ›¡ï¸ Disciplina automÃ¡tica</button>
+        <button data-admin="audit">ðŸ§¾ AuditorÃ­a</button>
+        <button data-admin="venues">ðŸŸï¸ Campos y conflictos</button>
+        <button data-admin="refreport">ðŸ“‹ Acta arbitral</button>
+        <button data-admin="competition">ðŸ† Estados / walkover</button>
       </aside>
       <main>
         <!-- RESUMEN -->
@@ -1472,70 +1511,70 @@ body.light .bottom-nav .nav-btn.active{
           <div class="grid g4">
             <div class="card stat-card"><small>Jugadores activos</small><strong id="adminPlayerCount">0</strong><small>Registros locales</small></div>
             <div class="card stat-card"><small>Equipos activos</small><strong id="adminTeamCount">0</strong><small><span class="categoryText">Primera Fuerza</span></small></div>
-            <div class="card stat-card"><small>Partidos programados</small><strong id="adminMatchCount">0</strong><small>Próximas jornadas</small></div>
+            <div class="card stat-card"><small>Partidos programados</small><strong id="adminMatchCount">0</strong><small>PrÃ³ximas jornadas</small></div>
             <div class="card stat-card"><small>Sanciones vigentes</small><strong id="adminSanctionCount">0</strong><small>Por cumplir</small></div>
           </div>
           <div class="section">
-            <div class="section-title"><h3>Alta rápida</h3></div>
+            <div class="section-title"><h3>Alta rÃ¡pida</h3></div>
             <div class="quick-actions">
-              <button class="quick-action" data-action="new-player" aria-label="Registrar nuevo jugador"><span>👤</span><b>Registrar jugador</b></button>
-              <button class="quick-action" data-action="new-team" aria-label="Crear nuevo equipo"><span>🛡️</span><b>Nuevo equipo</b></button>
-              <button class="quick-action" data-action="new-match" aria-label="Programar nuevo partido"><span>🗓️</span><b>Programar partido</b></button>
-              <button class="quick-action" data-action="new-sanction" aria-label="Registrar nueva sanción"><span>🟥</span><b>Nueva sanción</b></button>
+              <button class="quick-action" data-action="new-player" aria-label="Registrar nuevo jugador"><span>ðŸ‘¤</span><b>Registrar jugador</b></button>
+              <button class="quick-action" data-action="new-team" aria-label="Crear nuevo equipo"><span>ðŸ›¡ï¸</span><b>Nuevo equipo</b></button>
+              <button class="quick-action" data-action="new-match" aria-label="Programar nuevo partido"><span>ðŸ—“ï¸</span><b>Programar partido</b></button>
+              <button class="quick-action" data-action="new-sanction" aria-label="Registrar nueva sanciÃ³n"><span>ðŸŸ¥</span><b>Nueva sanciÃ³n</b></button>
             </div>
           </div>
-          <div class="section card"><h3 style="margin-bottom:8px">Actividad reciente</h3><p id="activityText" style="color:var(--muted);font-size:13px">La base local de demostración está lista para recibir información.</p></div>
+          <div class="section card"><h3 style="margin-bottom:8px">Actividad reciente</h3><p id="activityText" style="color:var(--muted);font-size:13px">La base local de demostraciÃ³n estÃ¡ lista para recibir informaciÃ³n.</p></div>
         </div>
 
         <!-- JUGADORES -->
         <div class="admin-panel" id="admin-players">
-          <div class="section-title"><h3>Jugadores</h3><button class="primary-btn" data-action="new-player" aria-label="Registrar nuevo jugador">👤 Registrar jugador</button></div>
+          <div class="section-title"><h3>Jugadores</h3><button class="primary-btn" data-action="new-player" aria-label="Registrar nuevo jugador">ðŸ‘¤ Registrar jugador</button></div>
           <div id="adminPlayers"></div>
         </div>
 
         <!-- EQUIPOS -->
         <div class="admin-panel" id="admin-teams">
-          <div class="section-title"><h3>Equipos</h3><button class="primary-btn" data-action="new-team" aria-label="Crear nuevo equipo">🛡️ Nuevo equipo</button></div>
+          <div class="section-title"><h3>Equipos</h3><button class="primary-btn" data-action="new-team" aria-label="Crear nuevo equipo">ðŸ›¡ï¸ Nuevo equipo</button></div>
           <div id="adminTeams"></div>
         </div>
 
         <!-- CALENDARIO -->
         <div class="admin-panel" id="admin-matches">
-          <div class="section-title"><h3>Calendario y resultados</h3><button class="primary-btn" data-action="new-match" aria-label="Programar nuevo partido">🗓️ Programar partido</button></div>
+          <div class="section-title"><h3>Calendario y resultados</h3><button class="primary-btn" data-action="new-match" aria-label="Programar nuevo partido">ðŸ—“ï¸ Programar partido</button></div>
           <div id="adminMatches"></div>
         </div>
 
         <!-- TABLA -->
         <div class="admin-panel" id="admin-standings">
           <div class="section-title"><h3>Tabla de posiciones</h3></div>
-          <p style="color:var(--muted);font-size:13px;margin-bottom:12px">La tabla pública y administrativa comparten la misma fuente de datos en la versión final.</p>
-          <button class="ghost-btn" data-view="table" aria-label="Abrir tabla pública">Abrir tabla pública</button>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:12px">La tabla pÃºblica y administrativa comparten la misma fuente de datos en la versiÃ³n final.</p>
+          <button class="ghost-btn" data-view="table" aria-label="Abrir tabla pÃºblica">Abrir tabla pÃºblica</button>
         </div>
 
         <!-- GOLEO -->
         <div class="admin-panel" id="admin-scoring">
           <div class="section-title"><h3>Goleo</h3></div>
-          <button class="ghost-btn" data-view="stats" aria-label="Abrir estadísticas de goleo">Abrir estadísticas</button>
+          <button class="ghost-btn" data-view="stats" aria-label="Abrir estadÃ­sticas de goleo">Abrir estadÃ­sticas</button>
         </div>
 
         <!-- REPORTES -->
         <div class="admin-panel" id="admin-reports">
           <div class="section-title"><h3>Reportes y jornadas</h3></div>
           <div class="grid g2">
-            <button class="quick-action" id="reportRound" aria-label="Generar reporte de jornada"><span>📄</span><b>Reporte de jornada</b></button>
-            <button class="quick-action" id="reportAct" aria-label="Generar acta de partido"><span>🧾</span><b>Acta de partido</b></button>
+            <button class="quick-action" id="reportRound" aria-label="Generar reporte de jornada"><span>ðŸ“„</span><b>Reporte de jornada</b></button>
+            <button class="quick-action" id="reportAct" aria-label="Generar acta de partido"><span>ðŸ§¾</span><b>Acta de partido</b></button>
           </div>
         </div>
 
         <!-- REGLAMENTO -->
         <div class="admin-panel" id="admin-rules">
           <div class="section-title"><h3>Reglamento</h3></div>
-          <div class="card"><b>Criterios configurables</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Puntos → diferencia de goles → goles a favor → enfrentamiento directo → disciplina, conforme al reglamento real.</p></div>
+          <div class="card"><b>Criterios configurables</b><p style="color:var(--muted);font-size:13px;margin-top:6px">Puntos â†’ diferencia de goles â†’ goles a favor â†’ enfrentamiento directo â†’ disciplina, conforme al reglamento real.</p></div>
         </div>
 
         <!-- SANCIONES -->
         <div class="admin-panel" id="admin-sanctions">
-          <div class="section-title"><h3>Sanciones</h3><button class="primary-btn" data-action="new-sanction" aria-label="Registrar nueva sanción">🟥 Nueva sanción</button></div>
+          <div class="section-title"><h3>Sanciones</h3><button class="primary-btn" data-action="new-sanction" aria-label="Registrar nueva sanciÃ³n">ðŸŸ¥ Nueva sanciÃ³n</button></div>
           <div id="adminSanctions"></div>
         </div>
 
@@ -1545,14 +1584,14 @@ body.light .bottom-nav .nav-btn.active{
           <div class="grid g2">
             <div class="card">
               <h3 style="margin-bottom:8px">Importar CSV</h3>
-              <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Carga un CSV y muestra cuántas filas detecta.</p>
+              <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Carga un CSV y muestra cuÃ¡ntas filas detecta.</p>
               <input type="file" id="csvInput" accept=".csv,text/csv" class="search" aria-label="Seleccionar archivo CSV para importar">
               <p id="csvResult" style="color:var(--muted);font-size:12px;margin-top:8px"></p>
             </div>
             <div class="card">
               <h3 style="margin-bottom:8px">Exportar respaldo</h3>
               <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Descarga los datos guardados en este navegador.</p>
-              <button class="primary-btn" id="exportBtn" aria-label="Exportar datos como JSON">📤 Exportar JSON</button>
+              <button class="primary-btn" id="exportBtn" aria-label="Exportar datos como JSON">ðŸ“¤ Exportar JSON</button>
             </div>
           </div>
         </div>
@@ -1560,37 +1599,37 @@ body.light .bottom-nav .nav-btn.active{
         <!-- OPERADOR -->
         <div class="admin-panel" id="admin-operator">
           <div class="section-title">
-            <div><h3>Operador móvil de partido</h3><span style="color:var(--muted);font-size:12px">Pozos 2 — 1 Juventus · 73'</span></div>
-            <button class="ghost-btn" data-view="matchcenter" aria-label="Ver vista pública del partido">Ver público</button>
+            <div><h3>Operador mÃ³vil de partido</h3><span style="color:var(--muted);font-size:12px">Pozos 2 â€” 1 Juventus Â· 73'</span></div>
+            <button class="ghost-btn" data-view="matchcenter" aria-label="Ver vista pÃºblica del partido">Ver pÃºblico</button>
           </div>
           <div class="card operator-grid">
-            <button class="operator-btn goal" data-event="⚽ Gol" aria-label="Registrar gol">⚽ GOL</button>
-            <button class="operator-btn yellow" data-event="🟨 Amarilla" aria-label="Registrar tarjeta amarilla">🟨 AMARILLA</button>
-            <button class="operator-btn red" data-event="🟥 Roja" aria-label="Registrar tarjeta roja">🟥 ROJA</button>
-            <button class="operator-btn" data-event="🔄 Cambio" aria-label="Registrar cambio de jugador">🔄 CAMBIO</button>
-            <button class="operator-btn" data-event="⚪ Penal" aria-label="Registrar penal">⚪ PENAL</button>
-            <button class="operator-btn" data-event="⏸ Medio tiempo" aria-label="Registrar medio tiempo">⏸ MEDIO TIEMPO</button>
-            <button class="operator-btn" style="grid-column:1/-1" data-event="🏁 Final" aria-label="Registrar final del partido">🏁 FINAL</button>
+            <button class="operator-btn goal" data-event="âš½ Gol" aria-label="Registrar gol">âš½ GOL</button>
+            <button class="operator-btn yellow" data-event="ðŸŸ¨ Amarilla" aria-label="Registrar tarjeta amarilla">ðŸŸ¨ AMARILLA</button>
+            <button class="operator-btn red" data-event="ðŸŸ¥ Roja" aria-label="Registrar tarjeta roja">ðŸŸ¥ ROJA</button>
+            <button class="operator-btn" data-event="ðŸ”„ Cambio" aria-label="Registrar cambio de jugador">ðŸ”„ CAMBIO</button>
+            <button class="operator-btn" data-event="âšª Penal" aria-label="Registrar penal">âšª PENAL</button>
+            <button class="operator-btn" data-event="â¸ Medio tiempo" aria-label="Registrar medio tiempo">â¸ MEDIO TIEMPO</button>
+            <button class="operator-btn" style="grid-column:1/-1" data-event="ðŸ Final" aria-label="Registrar final del partido">ðŸ FINAL</button>
           </div>
         </div>
 
         <!-- FIXTURE -->
         <div class="admin-panel" id="admin-fixture">
           <div class="section-title">
-            <div><h3>Generador automático de calendario</h3><span style="color:var(--muted);font-size:12px">Round robin · demo</span></div>
-            <button class="primary-btn" id="generateFixture" aria-label="Generar jornadas automáticamente">🧠 Generar jornadas</button>
+            <div><h3>Generador automÃ¡tico de calendario</h3><span style="color:var(--muted);font-size:12px">Round robin Â· demo</span></div>
+            <button class="primary-btn" id="generateFixture" aria-label="Generar jornadas automÃ¡ticamente">ðŸ§  Generar jornadas</button>
           </div>
           <div class="card">
-            <p style="color:var(--muted);font-size:13px;margin-bottom:12px">Toma los equipos registrados y arma jornadas todos-contra-todos. En producción debe respetar canchas, horarios, descansos, categorías y conflictos.</p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px">Toma los equipos registrados y arma jornadas todos-contra-todos. En producciÃ³n debe respetar canchas, horarios, descansos, categorÃ­as y conflictos.</p>
             <div id="fixtureOutput"></div>
           </div>
         </div>
 
-        <!-- ÁRBITROS -->
+        <!-- ÃRBITROS -->
         <div class="admin-panel" id="admin-officials">
           <div class="section-title">
-            <div><h3>Árbitros y oficiales</h3><span style="color:var(--muted);font-size:12px">Central · AR1 · AR2 · evaluador</span></div>
-            <button class="primary-btn" id="assignOfficials" aria-label="Asignar árbitros al partido demo">👨‍⚖️ Asignar demo</button>
+            <div><h3>Ãrbitros y oficiales</h3><span style="color:var(--muted);font-size:12px">Central Â· AR1 Â· AR2 Â· evaluador</span></div>
+            <button class="primary-btn" id="assignOfficials" aria-label="Asignar Ã¡rbitros al partido demo">ðŸ‘¨â€âš–ï¸ Asignar demo</button>
           </div>
           <div class="grid g2">
             <div class="card"><b>Partido</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Pozos FC vs Juventus</p></div>
@@ -1601,20 +1640,20 @@ body.light .bottom-nav .nav-btn.active{
         <!-- DISCIPLINA -->
         <div class="admin-panel" id="admin-disciplinepro">
           <div class="section-title">
-            <div><h3>Disciplina automática</h3><span style="color:var(--muted);font-size:12px">Acumulación y suspensiones</span></div>
-            <button class="ghost-btn" id="runDiscipline" aria-label="Evaluar disciplina automáticamente">▶ Evaluar</button>
+            <div><h3>Disciplina automÃ¡tica</h3><span style="color:var(--muted);font-size:12px">AcumulaciÃ³n y suspensiones</span></div>
+            <button class="ghost-btn" id="runDiscipline" aria-label="Evaluar disciplina automÃ¡ticamente">â–¶ Evaluar</button>
           </div>
-          <div id="disciplineResult" class="card"><p style="color:var(--muted);font-size:13px">Ejecuta la evaluación para simular detección de acumulación de tarjetas.</p></div>
+          <div id="disciplineResult" class="card"><p style="color:var(--muted);font-size:13px">Ejecuta la evaluaciÃ³n para simular detecciÃ³n de acumulaciÃ³n de tarjetas.</p></div>
         </div>
 
-        <!-- AUDITORÍA -->
+        <!-- AUDITORÃA -->
         <div class="admin-panel" id="admin-audit">
           <div class="section-title">
-            <div><h3>Auditoría de administradores</h3><span style="color:var(--muted);font-size:12px">Quién cambió qué y cuándo</span></div>
+            <div><h3>AuditorÃ­a de administradores</h3><span style="color:var(--muted);font-size:12px">QuiÃ©n cambiÃ³ quÃ© y cuÃ¡ndo</span></div>
           </div>
           <div class="table-wrap">
-            <table aria-label="Registro de auditoría">
-              <thead><tr><th>Hora</th><th>Acción</th><th>Actor</th><th>Detalle</th></tr></thead>
+            <table aria-label="Registro de auditorÃ­a">
+              <thead><tr><th>Hora</th><th>AcciÃ³n</th><th>Actor</th><th>Detalle</th></tr></thead>
               <tbody id="auditTable"></tbody>
             </table>
           </div>
@@ -1623,13 +1662,13 @@ body.light .bottom-nav .nav-btn.active{
         <!-- CAMPOS -->
         <div class="admin-panel" id="admin-venues">
           <div class="section-title">
-            <div><h3>Campos y detección de conflictos</h3><span style="color:var(--muted);font-size:12px">Evita doble programación</span></div>
-            <button class="primary-btn" id="checkConflictsBtn" aria-label="Revisar conflictos de horario">🔍 Revisar conflictos</button>
+            <div><h3>Campos y detecciÃ³n de conflictos</h3><span style="color:var(--muted);font-size:12px">Evita doble programaciÃ³n</span></div>
+            <button class="primary-btn" id="checkConflictsBtn" aria-label="Revisar conflictos de horario">ðŸ” Revisar conflictos</button>
           </div>
           <div class="grid g3">
-            <div class="card"><b>Campo Municipal</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible · demo</p></div>
-            <div class="card"><b>Campo 1</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible · demo</p></div>
-            <div class="card"><b>Campo 2</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible · demo</p></div>
+            <div class="card"><b>Campo Municipal</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible Â· demo</p></div>
+            <div class="card"><b>Campo 1</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible Â· demo</p></div>
+            <div class="card"><b>Campo 2</b><p style="color:var(--muted);font-size:13px;margin-top:4px">Disponible Â· demo</p></div>
           </div>
           <div id="conflictResult" class="section"></div>
         </div>
@@ -1637,13 +1676,13 @@ body.light .bottom-nav .nav-btn.active{
         <!-- ACTA ARBITRAL -->
         <div class="admin-panel" id="admin-refreport">
           <div class="section-title">
-            <div><h3>Acta arbitral digital</h3><span style="color:var(--muted);font-size:12px">Incidencias · oficiales · firma / PDF</span></div>
-            <button class="primary-btn" id="printRefReport" aria-label="Imprimir o generar PDF del acta">🖨️ Imprimir / PDF</button>
+            <div><h3>Acta arbitral digital</h3><span style="color:var(--muted);font-size:12px">Incidencias Â· oficiales Â· firma / PDF</span></div>
+            <button class="primary-btn" id="printRefReport" aria-label="Imprimir o generar PDF del acta">ðŸ–¨ï¸ Imprimir / PDF</button>
           </div>
           <div class="card">
             <div class="form-grid">
               <div class="field"><label>Partido</label><input value="Pozos FC vs Juventus" readonly aria-label="Partido"></div>
-              <div class="field"><label>Árbitro central</label><input id="refName" value="Ricardo Demo" aria-label="Nombre del árbitro central"></div>
+              <div class="field"><label>Ãrbitro central</label><input id="refName" value="Ricardo Demo" aria-label="Nombre del Ã¡rbitro central"></div>
               <div class="field"><label>Resultado</label><input value="2 - 1" readonly aria-label="Resultado del partido"></div>
               <div class="field"><label>Estado</label>
                 <select id="refStatus" aria-label="Estado del partido">
@@ -1652,20 +1691,20 @@ body.light .bottom-nav .nav-btn.active{
                 </select>
               </div>
             </div>
-            <div class="field section"><label>Incidencias</label><textarea id="refNotes" placeholder="Tarjetas, expulsiones, invasión, suspensión, observaciones..." aria-label="Incidencias del partido"></textarea></div>
-            <button class="primary-btn" id="saveRefReport" aria-label="Guardar acta arbitral">💾 Guardar acta</button>
+            <div class="field section"><label>Incidencias</label><textarea id="refNotes" placeholder="Tarjetas, expulsiones, invasiÃ³n, suspensiÃ³n, observaciones..." aria-label="Incidencias del partido"></textarea></div>
+            <button class="primary-btn" id="saveRefReport" aria-label="Guardar acta arbitral">ðŸ’¾ Guardar acta</button>
           </div>
         </div>
 
         <!-- ESTADOS ESPECIALES -->
         <div class="admin-panel" id="admin-competition">
           <div class="section-title">
-            <div><h3>Estados especiales de partido</h3><span style="color:var(--muted);font-size:12px">Normal · suspendido · cancelado · walkover</span></div>
+            <div><h3>Estados especiales de partido</h3><span style="color:var(--muted);font-size:12px">Normal Â· suspendido Â· cancelado Â· walkover</span></div>
           </div>
           <div class="grid g2">
             <div class="card"><b>Ejemplo normal</b><p style="margin:6px 0"><span class="status-pill status-final">FINAL</span></p><p style="color:var(--muted);font-size:13px">Resultado contabiliza goles y tabla.</p></div>
-            <div class="card"><b>Ejemplo walkover</b><p style="margin:6px 0"><span class="status-pill status-walkover">W.O.</span></p><p style="color:var(--muted);font-size:13px">Aplica marcador/regla según el reglamento de la liga.</p></div>
-            <div class="card"><b>Ejemplo suspendido</b><p style="margin:6px 0"><span class="status-pill status-suspended">SUSPENDIDO</span></p><p style="color:var(--muted);font-size:13px">Conserva minuto y eventos hasta resolución.</p></div>
+            <div class="card"><b>Ejemplo walkover</b><p style="margin:6px 0"><span class="status-pill status-walkover">W.O.</span></p><p style="color:var(--muted);font-size:13px">Aplica marcador/regla segÃºn el reglamento de la liga.</p></div>
+            <div class="card"><b>Ejemplo suspendido</b><p style="margin:6px 0"><span class="status-pill status-suspended">SUSPENDIDO</span></p><p style="color:var(--muted);font-size:13px">Conserva minuto y eventos hasta resoluciÃ³n.</p></div>
             <div class="card"><b>Ejemplo cancelado</b><p style="margin:6px 0"><span class="status-pill status-cancelled">CANCELADO</span></p><p style="color:var(--muted);font-size:13px">No debe contarse como resultado normal.</p></div>
           </div>
         </div>
@@ -1677,7 +1716,7 @@ body.light .bottom-nav .nav-btn.active{
   <section class="section">
     <div class="section-title">
       <div><div class="eyebrow">Comunidad</div><h2>Patrocinadores</h2></div>
-      <button class="ghost-btn" id="sponsorInfo" aria-label="Información sobre patrocinadores">ℹ️ Información</button>
+      <button class="ghost-btn" id="sponsorInfo" aria-label="InformaciÃ³n sobre patrocinadores">â„¹ï¸ InformaciÃ³n</button>
     </div>
     <div class="sponsor-strip">
       <div class="sponsor">PATROCINADOR 1</div>
@@ -1688,17 +1727,17 @@ body.light .bottom-nav .nav-btn.active{
   </section>
 
   <footer style="margin:36px 0 8px;text-align:center;color:var(--muted);font-size:11px">
-    Liga Juventino Rosas · MASTER V13 · JR Fútbol + JR Control · Diseño 3D Minimalista
+    Liga Juventino Rosas Â· MASTER V13 Â· JR FÃºtbol + JR Control Â· DiseÃ±o 3D Minimalista
   </footer>
 </div>
 
 <!-- BARRA INFERIOR -->
-<nav class="bottom-nav" id="bottomNav" aria-label="Navegación principal">
-  <button class="nav-btn active" data-view="home" aria-label="Inicio"><span>🏠</span>Inicio</button>
-  <button class="nav-btn" data-view="matches" aria-label="Partidos"><span>⚽</span>Partidos</button>
-  <button class="nav-btn" data-view="table" aria-label="Tabla de posiciones"><span>🏆</span>Tabla</button>
-  <button class="nav-btn" data-view="stats" aria-label="Estadísticas"><span>📊</span>Stats</button>
-  <button class="nav-btn" data-view="more" aria-label="Más opciones"><span>☰</span>Más</button>
+<nav class="bottom-nav" id="bottomNav" aria-label="NavegaciÃ³n principal">
+  <button class="nav-btn active" data-view="home" aria-label="Inicio"><span>ðŸ </span>Inicio</button>
+  <button class="nav-btn" data-view="matches" aria-label="Partidos"><span>âš½</span>Partidos</button>
+  <button class="nav-btn" data-view="table" aria-label="Tabla de posiciones"><span>ðŸ†</span>Tabla</button>
+  <button class="nav-btn" data-view="stats" aria-label="EstadÃ­sticas"><span>ðŸ“Š</span>Stats</button>
+  <button class="nav-btn" data-view="more" aria-label="MÃ¡s opciones"><span>â˜°</span>MÃ¡s</button>
 </nav>
 
 <!-- TV MODE -->
@@ -1706,27 +1745,27 @@ body.light .bottom-nav .nav-btn.active{
   <div class="tv-grid">
     <div class="tv-score">
       <div>
-        <div class="live-badge" aria-label="Partido en vivo"><div class="live-dot"></div> EN VIVO · 73'</div>
+        <div class="live-badge" aria-label="Partido en vivo"><div class="live-dot"></div> EN VIVO Â· 73'</div>
         <h1 style="margin-top:20px">Pozos FC vs Juventus</h1>
-        <div class="big" aria-label="Marcador 2 a 1">2 — 1</div>
-        <p style="font-size:24px;color:#7a9a8a">Campo Municipal · Jornada 7</p>
-        <button class="primary-btn" id="exitTvMode" aria-label="Salir del modo TV">✕ Salir de TV</button>
+        <div class="big" aria-label="Marcador 2 a 1">2 â€” 1</div>
+        <p style="font-size:24px;color:#7a9a8a">Campo Municipal Â· Jornada 7</p>
+        <button class="primary-btn" id="exitTvMode" aria-label="Salir del modo TV">âœ• Salir de TV</button>
       </div>
     </div>
     <div class="tv-side">
-      <div class="tv-card"><div class="eyebrow">Siguiente</div><h2 style="margin:6px 0">América vs Valencia</h2><p style="color:#7a9a8a">17:00 · Campo 2</p></div>
-      <div class="tv-card"><div class="eyebrow">Tabla</div><h2 style="margin:6px 0">1. Pozos FC · 22 pts</h2><p style="color:#7a9a8a">2. Juventus · 20 pts<br>3. Boavista · 18 pts</p></div>
-      <div class="tv-card"><div class="eyebrow">Goleador</div><h2 style="margin:6px 0">Jugador destacado · 9</h2><p style="color:#7a9a8a">Pozos FC</p></div>
+      <div class="tv-card"><div class="eyebrow">Siguiente</div><h2 style="margin:6px 0">AmÃ©rica vs Valencia</h2><p style="color:#7a9a8a">17:00 Â· Campo 2</p></div>
+      <div class="tv-card"><div class="eyebrow">Tabla</div><h2 style="margin:6px 0">1. Pozos FC Â· 22 pts</h2><p style="color:#7a9a8a">2. Juventus Â· 20 pts<br>3. Boavista Â· 18 pts</p></div>
+      <div class="tv-card"><div class="eyebrow">Goleador</div><h2 style="margin:6px 0">Jugador destacado Â· 9</h2><p style="color:#7a9a8a">Pozos FC</p></div>
     </div>
   </div>
 </div>
 
 <!-- PRINT SHEET -->
 <div class="print-sheet" id="printSheet">
-  <h1>Liga Juventino Rosas · Acta arbitral</h1>
+  <h1>Liga Juventino Rosas Â· Acta arbitral</h1>
   <p><strong>Partido:</strong> Pozos FC vs Juventus</p>
   <p><strong>Resultado:</strong> 2 - 1</p>
-  <p><strong>Árbitro:</strong> <span id="printRefName">Ricardo Demo</span></p>
+  <p><strong>Ãrbitro:</strong> <span id="printRefName">Ricardo Demo</span></p>
   <p><strong>Estado:</strong> <span id="printRefStatus">Final</span></p>
   <h3>Incidencias</h3>
   <p id="printRefNotes">Sin incidencias capturadas.</p>
@@ -1736,8 +1775,8 @@ body.light .bottom-nav .nav-btn.active{
 <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal">
     <div class="modal-head">
-      <h3 id="modalTitle">Acción</h3>
-      <button class="x" id="closeModal" aria-label="Cerrar modal">✕</button>
+      <h3 id="modalTitle">AcciÃ³n</h3>
+      <button class="x" id="closeModal" aria-label="Cerrar modal">âœ•</button>
     </div>
     <div id="modalBody"></div>
   </div>
@@ -1750,29 +1789,29 @@ body.light .bottom-nav .nav-btn.active{
 /* ===== DATOS BASE ===== */
 const categories=["Primera Fuerza","Intermedia","Segunda Fuerza","Veteranos 35+","Veteranos 50+"];
 const baseTeams=[
- {name:"Pozos FC",icon:"🟢",pts:22,jj:9,g:7,e:1,p:1,gf:23,gc:8,form:["G","G","E","G","G"]},
- {name:"Juventus",icon:"⚪",pts:20,jj:9,g:6,e:2,p:1,gf:20,gc:9,form:["G","P","G","G","E"]},
- {name:"Boavista",icon:"🔵",pts:18,jj:9,g:5,e:3,p:1,gf:18,gc:10,form:["E","G","G","P","G"]},
- {name:"América",icon:"🟡",pts:16,jj:9,g:5,e:1,p:3,gf:17,gc:12,form:["P","G","E","G","P"]},
- {name:"UCKA Moscú",icon:"🔴",pts:13,jj:9,g:4,e:1,p:4,gf:14,gc:14,form:["G","P","P","G","E"]},
- {name:"Cerrito de Gasca",icon:"🟤",pts:9,jj:9,g:2,e:3,p:4,gf:10,gc:16,form:["P","E","P","G","E"]}
+ {name:"Pozos FC",icon:"ðŸŸ¢",pts:22,jj:9,g:7,e:1,p:1,gf:23,gc:8,form:["G","G","E","G","G"]},
+ {name:"Juventus",icon:"âšª",pts:20,jj:9,g:6,e:2,p:1,gf:20,gc:9,form:["G","P","G","G","E"]},
+ {name:"Boavista",icon:"ðŸ”µ",pts:18,jj:9,g:5,e:3,p:1,gf:18,gc:10,form:["E","G","G","P","G"]},
+ {name:"AmÃ©rica",icon:"ðŸŸ¡",pts:16,jj:9,g:5,e:1,p:3,gf:17,gc:12,form:["P","G","E","G","P"]},
+ {name:"UCKA MoscÃº",icon:"ðŸ”´",pts:13,jj:9,g:4,e:1,p:4,gf:14,gc:14,form:["G","P","P","G","E"]},
+ {name:"Cerrito de Gasca",icon:"ðŸŸ¤",pts:9,jj:9,g:2,e:3,p:4,gf:10,gc:16,form:["P","E","P","G","E"]}
 ];
 const basePlayers=[
  {name:"Jugador destacado",team:"Pozos FC",number:10,pos:"Delantero",goals:9,assists:4,folio:"LJR-00471"},
  {name:"Segundo goleador",team:"Juventus",number:9,pos:"Delantero",goals:7,assists:3,folio:"LJR-00302"},
- {name:"Carlos Martínez",team:"Boavista",number:11,pos:"Extremo",goals:6,assists:5,folio:"LJR-00218"},
- {name:"Miguel López",team:"América",number:7,pos:"Medio",goals:5,assists:6,folio:"LJR-00189"}
+ {name:"Carlos MartÃ­nez",team:"Boavista",number:11,pos:"Extremo",goals:6,assists:5,folio:"LJR-00218"},
+ {name:"Miguel LÃ³pez",team:"AmÃ©rica",number:7,pos:"Medio",goals:5,assists:6,folio:"LJR-00189"}
 ];
 const baseMatches=[
- {status:"EN VIVO",time:"73'",home:"Pozos FC",away:"Juventus",score:"2 — 1",venue:"Campo Municipal"},
- {status:"FINAL",time:"Final",home:"Boavista",away:"Cerrito de Gasca",score:"3 — 0",venue:"Campo 1"},
- {status:"PRÓXIMO",time:"17:00",home:"América",away:"Valencia",score:"—",venue:"Campo 2"},
- {status:"PRÓXIMO",time:"19:00",home:"UCKA Moscú",away:"CSKA Moscú",score:"—",venue:"Campo Municipal"}
+ {status:"EN VIVO",time:"73'",home:"Pozos FC",away:"Juventus",score:"2 â€” 1",venue:"Campo Municipal"},
+ {status:"FINAL",time:"Final",home:"Boavista",away:"Cerrito de Gasca",score:"3 â€” 0",venue:"Campo 1"},
+ {status:"PRÃ“XIMO",time:"17:00",home:"AmÃ©rica",away:"Valencia",score:"â€”",venue:"Campo 2"},
+ {status:"PRÃ“XIMO",time:"19:00",home:"UCKA MoscÃº",away:"CSKA MoscÃº",score:"â€”",venue:"Campo Municipal"}
 ];
 const baseNews=[
  {type:"Aviso",title:"Cambios de horario y sedes",text:"Espacio para publicar comunicados oficiales de la jornada."},
- {type:"Junta",title:"Junta semanal de liga",text:"Fecha, hora, lugar y acuerdos de la reunión."},
- {type:"Disciplina",title:"Sanciones y cumplimiento",text:"Publicación controlada de suspensiones y resoluciones."}
+ {type:"Junta",title:"Junta semanal de liga",text:"Fecha, hora, lugar y acuerdos de la reuniÃ³n."},
+ {type:"Disciplina",title:"Sanciones y cumplimiento",text:"PublicaciÃ³n controlada de suspensiones y resoluciones."}
 ];
 
 /* ===== ESTADO LOCAL ===== */
@@ -1789,11 +1828,11 @@ state.prediction=state.prediction||null;
 state.polls=state.polls||{total:0,choices:{}};
 state.audit=state.audit||[];
 state.events=state.events||[
- {minute:"73'",label:"🟨 Amarilla",detail:"Juventus"},
- {minute:"64'",label:"🔄 Cambio",detail:"Pozos FC"},
- {minute:"58'",label:"⚽ Gol",detail:"Juventus"},
- {minute:"41'",label:"⚽ Gol",detail:"Pozos FC"},
- {minute:"23'",label:"⚽ Gol",detail:"Pozos FC"}
+ {minute:"73'",label:"ðŸŸ¨ Amarilla",detail:"Juventus"},
+ {minute:"64'",label:"ðŸ”„ Cambio",detail:"Pozos FC"},
+ {minute:"58'",label:"âš½ Gol",detail:"Juventus"},
+ {minute:"41'",label:"âš½ Gol",detail:"Pozos FC"},
+ {minute:"23'",label:"âš½ Gol",detail:"Pozos FC"}
 ];
 let currentCategory=localStorage.getItem("jrCategory")||"Primera Fuerza";
 let currentView="home";
@@ -1811,11 +1850,11 @@ function toast(msg,type){
   setTimeout(()=>n.remove(),3000);
 }
 
-/* ===== NAVEGACIÓN ===== */
+/* ===== NAVEGACIÃ“N ===== */
 function showView(name){
   if(!name)return;
   const el=document.getElementById("view-"+name);
-  if(!el){toast("Vista '"+name+"' no disponible aún","error");return;}
+  if(!el){toast("Vista '"+name+"' no disponible aÃºn","error");return;}
   document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
   el.classList.add("active");
   currentView=name;
@@ -1868,27 +1907,27 @@ function openPlayerWizard(){
       </div>
       <div class="wizard-page" id="wpage-sport">
         <div class="form-grid">
-          ${renderForm([{label:"Posición",name:"pos",type:"select",options:["Portero","Defensa","Medio","Delantero"]},{label:"Número de camiseta",name:"number",type:"number"}])}
+          ${renderForm([{label:"PosiciÃ³n",name:"pos",type:"select",options:["Portero","Defensa","Medio","Delantero"]},{label:"NÃºmero de camiseta",name:"number",type:"number"}])}
         </div>
       </div>
       <div class="wizard-page" id="wpage-team">
         <div class="form-grid">
-          ${renderForm([{label:"Equipo",name:"team"},{label:"Categoría",name:"category",type:"select",options:categories}])}
+          ${renderForm([{label:"Equipo",name:"team"},{label:"CategorÃ­a",name:"category",type:"select",options:categories}])}
         </div>
       </div>
       <div class="wizard-page" id="wpage-docs">
-        <p style="color:var(--muted);font-size:13px;margin-bottom:12px">En la versión de producción aquí se adjuntarán documentos de identidad de forma segura.</p>
+        <p style="color:var(--muted);font-size:13px;margin-bottom:12px">En la versiÃ³n de producciÃ³n aquÃ­ se adjuntarÃ¡n documentos de identidad de forma segura.</p>
         <div class="form-grid">
           ${renderForm([{label:"Observaciones",name:"notes",required:false,placeholder:"Opcional"}])}
         </div>
       </div>
       <div class="wizard-page" id="wpage-confirm">
         <div class="card" id="wizardSummary" style="margin-bottom:12px"><p style="color:var(--muted)">Revisa los datos antes de guardar.</p></div>
-        <button class="primary-btn" type="submit" aria-label="Guardar jugador">✅ Guardar jugador</button>
+        <button class="primary-btn" type="submit" aria-label="Guardar jugador">âœ… Guardar jugador</button>
       </div>
       <div class="wizard-nav">
-        <button type="button" class="ghost-btn" id="wizardPrev" style="display:none" aria-label="Paso anterior">← Anterior</button>
-        <button type="button" class="primary-btn" id="wizardNext" aria-label="Siguiente paso">Siguiente →</button>
+        <button type="button" class="ghost-btn" id="wizardPrev" style="display:none" aria-label="Paso anterior">â† Anterior</button>
+        <button type="button" class="primary-btn" id="wizardNext" aria-label="Siguiente paso">Siguiente â†’</button>
       </div>
     </form>`;
   openModal("Registrar jugador",html);
@@ -1907,7 +1946,7 @@ function openPlayerWizard(){
     if(n===pageIds.length-1){
       const fd=new FormData(document.getElementById("playerForm"));
       const d=Object.fromEntries(fd);
-      document.getElementById("wizardSummary").innerHTML=`<b>${d.name||"—"}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${d.team||"—"} · ${d.category||"—"} · #${d.number||"—"} · ${d.pos||"—"}<br>Folio: ${d.folio||"—"}</p>`;
+      document.getElementById("wizardSummary").innerHTML=`<b>${d.name||"â€”"}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${d.team||"â€”"} Â· ${d.category||"â€”"} Â· #${d.number||"â€”"} Â· ${d.pos||"â€”"}<br>Folio: ${d.folio||"â€”"}</p>`;
     }
     currentStep=n;
   }
@@ -1943,7 +1982,7 @@ function renderMatchdayBar(){
     return `<div class="matchday-card ${cls}" role="listitem" tabindex="0" aria-label="${m.home} vs ${m.away}, ${m.status}">
       <div class="mc-teams">${m.home} vs ${m.away}</div>
       <div class="mc-score" style="${scoreColor}">${m.score}</div>
-      <div class="mc-status">${isLive?`<span style="color:var(--live)">● ${m.time}</span>`:m.time}</div>
+      <div class="mc-status">${isLive?`<span style="color:var(--live)">â— ${m.time}</span>`:m.time}</div>
     </div>`;
   }).join("");
 }
@@ -1955,27 +1994,27 @@ function renderPlayers(){
   const grid=document.getElementById("playersGrid");
   if(!grid)return;
   if(!filtered.length){
-    grid.innerHTML=`<div class="empty"><div class="empty-icon">👤</div><div class="empty-title">Sin jugadores</div>No hay jugadores que coincidan con la búsqueda.</div>`;
+    grid.innerHTML=`<div class="empty"><div class="empty-icon">ðŸ‘¤</div><div class="empty-title">Sin jugadores</div>No hay jugadores que coincidan con la bÃºsqueda.</div>`;
     return;
   }
-  grid.innerHTML=filtered.map(p=>`<article class="card profile-card clickable" role="listitem" tabindex="0" aria-label="Ver ficha de ${p.name}" onclick="toast('Ficha pública de ${p.name.replace(/'/g,"\\'")}')"><div class="avatar" aria-hidden="true">👤</div><div class="grow"><b>#${p.number||"-"} ${p.name}</b><small>${p.team} · ${p.pos||"Jugador"}<br>${p.folio||"Sin folio"}</small></div><div class="metric">${p.goals||0}</div></article>`).join("");
+  grid.innerHTML=filtered.map(p=>`<article class="card profile-card clickable" role="listitem" tabindex="0" aria-label="Ver ficha de ${p.name}" onclick="toast('Ficha pÃºblica de ${p.name.replace(/'/g,"\\'")}')"><div class="avatar" aria-hidden="true">ðŸ‘¤</div><div class="grow"><b>#${p.number||"-"} ${p.name}</b><small>${p.team} Â· ${p.pos||"Jugador"}<br>${p.folio||"Sin folio"}</small></div><div class="metric">${p.goals||0}</div></article>`).join("");
   const adminEl=document.getElementById("adminPlayers");
-  if(adminEl)adminEl.innerHTML=state.players.length?`<div class="table-wrap"><table><thead><tr><th>Folio</th><th>Nombre</th><th>Equipo</th><th>Posición</th></tr></thead><tbody>${state.players.map(p=>`<tr><td>${p.folio||"—"}</td><td>${p.name}</td><td>${p.team}</td><td>${p.pos||"—"}</td></tr>`).join("")}</tbody></table></div>`:`<div class="empty"><div class="empty-icon">👤</div><div class="empty-title">Sin jugadores capturados</div>Usa "Registrar jugador" para agregar el primero.</div>`;
+  if(adminEl)adminEl.innerHTML=state.players.length?`<div class="table-wrap"><table><thead><tr><th>Folio</th><th>Nombre</th><th>Equipo</th><th>PosiciÃ³n</th></tr></thead><tbody>${state.players.map(p=>`<tr><td>${p.folio||"â€”"}</td><td>${p.name}</td><td>${p.team}</td><td>${p.pos||"â€”"}</td></tr>`).join("")}</tbody></table></div>`:`<div class="empty"><div class="empty-icon">ðŸ‘¤</div><div class="empty-title">Sin jugadores capturados</div>Usa "Registrar jugador" para agregar el primero.</div>`;
 }
 
 function renderTeams(){
-  const all=[...baseTeams,...state.teams.map(t=>({name:t.name,icon:"🛡️",pts:0,jj:0,g:0,e:0,p:0,gf:0,gc:0,form:[]}))];
+  const all=[...baseTeams,...state.teams.map(t=>({name:t.name,icon:"ðŸ›¡ï¸",pts:0,jj:0,g:0,e:0,p:0,gf:0,gc:0,form:[]}))];
   const q=(document.getElementById("teamSearch")?.value||"").toLowerCase();
   const filtered=all.filter(t=>t.name.toLowerCase().includes(q));
   const grid=document.getElementById("teamsGrid");
   if(!grid)return;
   if(!filtered.length){
-    grid.innerHTML=`<div class="empty"><div class="empty-icon">🛡️</div><div class="empty-title">Sin equipos</div>No hay equipos que coincidan.</div>`;
+    grid.innerHTML=`<div class="empty"><div class="empty-icon">ðŸ›¡ï¸</div><div class="empty-title">Sin equipos</div>No hay equipos que coincidan.</div>`;
     return;
   }
-  grid.innerHTML=filtered.map(t=>`<article class="card clickable" role="listitem" tabindex="0" aria-label="Ver perfil de ${t.name}" onclick="toast('Perfil de ${t.name.replace(/'/g,"\\'")}')"><div class="profile-card"><div class="avatar" aria-hidden="true">${t.icon}</div><div class="grow"><b>${t.name}</b><small>${currentCategory}<br>${t.jj||0} partidos · ${t.pts||0} pts</small></div></div></article>`).join("");
+  grid.innerHTML=filtered.map(t=>`<article class="card clickable" role="listitem" tabindex="0" aria-label="Ver perfil de ${t.name}" onclick="toast('Perfil de ${t.name.replace(/'/g,"\\'")}')"><div class="profile-card"><div class="avatar" aria-hidden="true">${t.icon}</div><div class="grow"><b>${t.name}</b><small>${currentCategory}<br>${t.jj||0} partidos Â· ${t.pts||0} pts</small></div></div></article>`).join("");
   const adminEl=document.getElementById("adminTeams");
-  if(adminEl)adminEl.innerHTML=state.teams.length?`<div class="grid g2">${state.teams.map(t=>`<div class="card"><b>🛡️ ${t.name}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${t.category} · Delegado: ${t.delegate||"—"}</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">🛡️</div><div class="empty-title">Sin equipos capturados</div>Usa "Nuevo equipo" para agregar el primero.</div>`;
+  if(adminEl)adminEl.innerHTML=state.teams.length?`<div class="grid g2">${state.teams.map(t=>`<div class="card"><b>ðŸ›¡ï¸ ${t.name}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${t.category} Â· Delegado: ${t.delegate||"â€”"}</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">ðŸ›¡ï¸</div><div class="empty-title">Sin equipos capturados</div>Usa "Nuevo equipo" para agregar el primero.</div>`;
 }
 
 function renderMatches(){
@@ -1984,13 +2023,13 @@ function renderMatches(){
   const f=document.getElementById("matchFilter")?.value||"Todos";
   const filtered=all.filter(m=>{
     const hit=(m.home+" "+m.away).toLowerCase().includes(q);
-    const ok=f==="Todos"||(f==="Próximos"&&m.status==="PRÓXIMO")||(f==="Finalizados"&&m.status==="FINAL")||(f==="En vivo"&&m.status==="EN VIVO");
+    const ok=f==="Todos"||(f==="PrÃ³ximos"&&m.status==="PRÃ“XIMO")||(f==="Finalizados"&&m.status==="FINAL")||(f==="En vivo"&&m.status==="EN VIVO");
     return hit&&ok;
   });
   const list=document.getElementById("matchesList");
   if(!list)return;
   if(!filtered.length){
-    list.innerHTML=`<div class="empty"><div class="empty-icon">⚽</div><div class="empty-title">Sin partidos</div>No hay partidos que coincidan con el filtro.</div>`;
+    list.innerHTML=`<div class="empty"><div class="empty-icon">âš½</div><div class="empty-title">Sin partidos</div>No hay partidos que coincidan con el filtro.</div>`;
     return;
   }
   list.innerHTML=filtered.map(m=>{
@@ -2012,18 +2051,18 @@ function renderMatches(){
   // Hacer clickables las match-cards
   list.querySelectorAll(".match-card[data-view]").forEach(c=>c.addEventListener("click",()=>showView(c.dataset.view)));
   const adminEl=document.getElementById("adminMatches");
-  if(adminEl)adminEl.innerHTML=state.matches.length?`<div class="grid g2">${state.matches.map(m=>`<div class="card"><b>${m.home} vs ${m.away}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${m.date||""} · ${m.time||""} · ${m.venue||""}</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">🗓️</div><div class="empty-title">Sin partidos programados</div>Usa "Programar partido" para agregar el primero.</div>`;
+  if(adminEl)adminEl.innerHTML=state.matches.length?`<div class="grid g2">${state.matches.map(m=>`<div class="card"><b>${m.home} vs ${m.away}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${m.date||""} Â· ${m.time||""} Â· ${m.venue||""}</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">ðŸ—“ï¸</div><div class="empty-title">Sin partidos programados</div>Usa "Programar partido" para agregar el primero.</div>`;
 }
 
 function renderScorers(){
   const all=[...basePlayers,...state.players].sort((a,b)=>(b.goals||0)-(a.goals||0));
-  const cards=all.map((p,i)=>`<article class="card profile-card"><div class="avatar" aria-hidden="true">${i===0?"👑":"👤"}</div><div class="grow"><b>${p.name}</b><small>${p.team} · ${p.assists||0} asistencias</small></div><div class="metric">${p.goals||0}</div></article>`).join("");
+  const cards=all.map((p,i)=>`<article class="card profile-card"><div class="avatar" aria-hidden="true">${i===0?"ðŸ‘‘":"ðŸ‘¤"}</div><div class="grow"><b>${p.name}</b><small>${p.team} Â· ${p.assists||0} asistencias</small></div><div class="metric">${p.goals||0}</div></article>`).join("");
   const sg=document.getElementById("scorersGrid");if(sg)sg.innerHTML=cards;
   const ts=document.getElementById("topScorers");
-  if(ts)ts.innerHTML=all.slice(0,2).map((p,i)=>`<div class="card profile-card"><div class="avatar" aria-hidden="true">${i===0?"👑":"👤"}</div><div class="grow"><b>${p.name}</b><small>${p.team}</small></div><div class="metric">${p.goals||0}</div></div>`).join("");
+  if(ts)ts.innerHTML=all.slice(0,2).map((p,i)=>`<div class="card profile-card"><div class="avatar" aria-hidden="true">${i===0?"ðŸ‘‘":"ðŸ‘¤"}</div><div class="grow"><b>${p.name}</b><small>${p.team}</small></div><div class="metric">${p.goals||0}</div></div>`).join("");
   const totalGoals=all.reduce((a,p)=>a+(p.goals||0),0);
   const sk=document.getElementById("statsKpis");
-  if(sk)sk.innerHTML=`<div class="card stat-card"><small>Goles registrados</small><strong>${totalGoals}</strong></div><div class="card stat-card"><small>Máximo goleador</small><strong>${all[0]?.goals||0}</strong></div><div class="card stat-card"><small>Asistencias líder</small><strong>${Math.max(...all.map(x=>x.assists||0))}</strong></div><div class="card stat-card"><small>Equipos demo</small><strong>${baseTeams.length+state.teams.length}</strong></div>`;
+  if(sk)sk.innerHTML=`<div class="card stat-card"><small>Goles registrados</small><strong>${totalGoals}</strong></div><div class="card stat-card"><small>MÃ¡ximo goleador</small><strong>${all[0]?.goals||0}</strong></div><div class="card stat-card"><small>Asistencias lÃ­der</small><strong>${Math.max(...all.map(x=>x.assists||0))}</strong></div><div class="card stat-card"><small>Equipos demo</small><strong>${baseTeams.length+state.teams.length}</strong></div>`;
 }
 
 function renderNews(){
@@ -2036,13 +2075,13 @@ function renderNews(){
 function renderTimeline(){
   const tl=document.getElementById("timeline");
   if(!tl)return;
-  tl.innerHTML=state.events.map(e=>`<div class="event"><b>${e.minute} · ${e.label}</b><small>${e.detail}</small></div>`).join("");
+  tl.innerHTML=state.events.map(e=>`<div class="event"><b>${e.minute} Â· ${e.label}</b><small>${e.detail}</small></div>`).join("");
 }
 
 function renderCalendar(){
   const cc=document.getElementById("calendarCards");
   if(!cc)return;
-  cc.innerHTML=[8,9,10,11,12,13].map(j=>`<article class="card"><div class="eyebrow">Jornada ${j}</div><h3 style="margin:8px 0 6px">${j<10?"Próxima fecha":"Fecha por programar"}</h3><p style="color:var(--muted);font-size:13px">Filtros por categoría, cancha y competencia.</p><button class="ghost-btn" data-view="matches" style="margin-top:10px" aria-label="Ver partidos de jornada ${j}">Ver partidos</button></article>`).join("");
+  cc.innerHTML=[8,9,10,11,12,13].map(j=>`<article class="card"><div class="eyebrow">Jornada ${j}</div><h3 style="margin:8px 0 6px">${j<10?"PrÃ³xima fecha":"Fecha por programar"}</h3><p style="color:var(--muted);font-size:13px">Filtros por categorÃ­a, cancha y competencia.</p><button class="ghost-btn" data-view="matches" style="margin-top:10px" aria-label="Ver partidos de jornada ${j}">Ver partidos</button></article>`).join("");
 }
 
 function renderAdmin(){
@@ -2050,9 +2089,9 @@ function renderAdmin(){
   const atc=document.getElementById("adminTeamCount");if(atc)atc.textContent=state.teams.length;
   const amc=document.getElementById("adminMatchCount");if(amc)amc.textContent=state.matches.length;
   const asc=document.getElementById("adminSanctionCount");if(asc)asc.textContent=state.sanctions.length;
-  const at=document.getElementById("activityText");if(at)at.textContent=`${state.players.length} jugadores · ${state.teams.length} equipos · ${state.matches.length} partidos · ${state.sanctions.length} sanciones guardados localmente.`;
+  const at=document.getElementById("activityText");if(at)at.textContent=`${state.players.length} jugadores Â· ${state.teams.length} equipos Â· ${state.matches.length} partidos Â· ${state.sanctions.length} sanciones guardados localmente.`;
   const as=document.getElementById("adminSanctions");
-  if(as)as.innerHTML=state.sanctions.length?`<div class="grid g2">${state.sanctions.map(s=>`<div class="card"><b>🟥 ${s.player}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${s.reason} · ${s.games} partido(s)</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">🟥</div><div class="empty-title">Sin sanciones</div>No hay sanciones registradas en esta demo.</div>`;
+  if(as)as.innerHTML=state.sanctions.length?`<div class="grid g2">${state.sanctions.map(s=>`<div class="card"><b>ðŸŸ¥ ${s.player}</b><p style="color:var(--muted);font-size:13px;margin-top:4px">${s.reason} Â· ${s.games} partido(s)</p></div>`).join("")}</div>`:`<div class="empty"><div class="empty-icon">ðŸŸ¥</div><div class="empty-title">Sin sanciones</div>No hay sanciones registradas en esta demo.</div>`;
 }
 
 function renderDynamic(){renderStandings();renderMatchdayBar();renderPlayers();renderTeams();renderMatches();renderScorers();renderNews();renderTimeline();renderCalendar()}
@@ -2069,16 +2108,16 @@ function renderShots(){
 
 /* ===== FAN ZONE ===== */
 function renderFan(){
-  const a=document.getElementById("favTeamBtn");if(a)a.innerHTML=`<span>${state.favorites.team?"✅":"⭐"}</span>${state.favorites.team?"Siguiendo Pozos FC":"Seguir Pozos FC"}`;
-  const b=document.getElementById("favMatchBtn");if(b)b.innerHTML=`<span>${state.favorites.match?"✅":"🔔"}</span>${state.favorites.match?"Partido seguido":"Seguir partido"}`;
+  const a=document.getElementById("favTeamBtn");if(a)a.innerHTML=`<span>${state.favorites.team?"âœ…":"â­"}</span>${state.favorites.team?"Siguiendo Pozos FC":"Seguir Pozos FC"}`;
+  const b=document.getElementById("favMatchBtn");if(b)b.innerHTML=`<span>${state.favorites.match?"âœ…":"ðŸ””"}</span>${state.favorites.match?"Partido seguido":"Seguir partido"}`;
   const pc=document.getElementById("pollCount");if(pc)pc.textContent=state.polls.total+" votos";
   const ps=document.getElementById("predictionScore");if(ps&&state.prediction)ps.textContent=`${state.prediction.home}-${state.prediction.away} guardado`;
 }
 
-/* ===== AUDITORÍA ===== */
+/* ===== AUDITORÃA ===== */
 function renderAudit(){
   const body=document.getElementById("auditTable");if(!body)return;
-  body.innerHTML=state.audit.length?state.audit.map(x=>`<tr><td>${x.time}</td><td>${x.action}</td><td>${x.actor}</td><td>${x.detail}</td></tr>`).join(""):`<tr><td colspan="4" style="color:var(--muted)">Sin acciones registradas todavía.</td></tr>`;
+  body.innerHTML=state.audit.length?state.audit.map(x=>`<tr><td>${x.time}</td><td>${x.action}</td><td>${x.actor}</td><td>${x.detail}</td></tr>`).join(""):`<tr><td colspan="4" style="color:var(--muted)">Sin acciones registradas todavÃ­a.</td></tr>`;
 }
 
 /* ===== QR ===== */
@@ -2092,9 +2131,9 @@ function renderV10(){renderShots();renderFan();renderAudit();renderQR()}
 /* ===== INICIALIZAR ===== */
 renderDynamic();renderAdmin();renderV10();
 
-/* ===== DELEGACIÓN DE EVENTOS GLOBAL ===== */
+/* ===== DELEGACIÃ“N DE EVENTOS GLOBAL ===== */
 document.addEventListener("click",e=>{
-  // Navegación por data-view
+  // NavegaciÃ³n por data-view
   const viewEl=e.target.closest("[data-view]");
   if(viewEl&&!viewEl.closest("[data-action]")){showView(viewEl.dataset.view);return}
 
@@ -2102,19 +2141,19 @@ document.addEventListener("click",e=>{
   const action=e.target.closest("[data-action]")?.dataset.action;
   if(action==="new-player"){openPlayerWizard();return}
   if(action==="new-team"){
-    openModal("Nuevo equipo",`<form id="teamForm"><div class="form-grid">${renderForm([{label:"Nombre del equipo",name:"name"},{label:"Categoría",name:"category",type:"select",options:categories},{label:"Delegado",name:"delegate",required:false},{label:"Entrenador",name:"coach",required:false}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Guardar equipo">🛡️ Guardar equipo</button></div></form>`);
+    openModal("Nuevo equipo",`<form id="teamForm"><div class="form-grid">${renderForm([{label:"Nombre del equipo",name:"name"},{label:"CategorÃ­a",name:"category",type:"select",options:categories},{label:"Delegado",name:"delegate",required:false},{label:"Entrenador",name:"coach",required:false}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Guardar equipo">ðŸ›¡ï¸ Guardar equipo</button></div></form>`);
     document.getElementById("teamForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.teams.push(d);audit("Equipo","Alta de "+d.name);save();closeModal();toast("Equipo agregado correctamente","success")};return
   }
   if(action==="new-match"){
-    openModal("Programar partido",`<form id="matchForm"><div class="form-grid">${renderForm([{label:"Local",name:"home"},{label:"Visitante",name:"away"},{label:"Fecha",name:"date",type:"date"},{label:"Hora",name:"time",type:"time"},{label:"Cancha",name:"venue"},{label:"Categoría",name:"category",type:"select",options:categories}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Programar partido">🗓️ Programar</button></div></form>`);
-    document.getElementById("matchForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.status="PRÓXIMO";d.score="—";state.matches.push(d);audit("Partido","Programado "+d.home+" vs "+d.away);save();closeModal();toast("Partido programado correctamente","success")};return
+    openModal("Programar partido",`<form id="matchForm"><div class="form-grid">${renderForm([{label:"Local",name:"home"},{label:"Visitante",name:"away"},{label:"Fecha",name:"date",type:"date"},{label:"Hora",name:"time",type:"time"},{label:"Cancha",name:"venue"},{label:"CategorÃ­a",name:"category",type:"select",options:categories}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Programar partido">ðŸ—“ï¸ Programar</button></div></form>`);
+    document.getElementById("matchForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));d.status="PRÃ“XIMO";d.score="â€”";state.matches.push(d);audit("Partido","Programado "+d.home+" vs "+d.away);save();closeModal();toast("Partido programado correctamente","success")};return
   }
   if(action==="new-sanction"){
-    openModal("Nueva sanción",`<form id="sanctionForm"><div class="form-grid">${renderForm([{label:"Jugador",name:"player"},{label:"Motivo",name:"reason"},{label:"Partidos de suspensión",name:"games",type:"number"}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Guardar sanción">🟥 Guardar sanción</button></div></form>`);
-    document.getElementById("sanctionForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.sanctions.push(d);audit("Sanción",d.player+" · "+d.reason);save();closeModal();toast("Sanción registrada","success")};return
+    openModal("Nueva sanciÃ³n",`<form id="sanctionForm"><div class="form-grid">${renderForm([{label:"Jugador",name:"player"},{label:"Motivo",name:"reason"},{label:"Partidos de suspensiÃ³n",name:"games",type:"number"}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Guardar sanciÃ³n">ðŸŸ¥ Guardar sanciÃ³n</button></div></form>`);
+    document.getElementById("sanctionForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.sanctions.push(d);audit("SanciÃ³n",d.player+" Â· "+d.reason);save();closeModal();toast("SanciÃ³n registrada","success")};return
   }
   if(action==="new-news"){
-    openModal("Publicar aviso",`<form id="newsForm"><div class="form-grid">${renderForm([{label:"Tipo",name:"type",type:"select",options:["Aviso","Junta","Noticia","Disciplina"]},{label:"Título",name:"title"}])}</div><div class="field section"><label>Contenido</label><textarea name="text" required aria-label="Contenido del aviso"></textarea></div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Publicar aviso">📣 Publicar</button></div></form>`);
+    openModal("Publicar aviso",`<form id="newsForm"><div class="form-grid">${renderForm([{label:"Tipo",name:"type",type:"select",options:["Aviso","Junta","Noticia","Disciplina"]},{label:"TÃ­tulo",name:"title"}])}</div><div class="field section"><label>Contenido</label><textarea name="text" required aria-label="Contenido del aviso"></textarea></div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Publicar aviso">ðŸ“£ Publicar</button></div></form>`);
     document.getElementById("newsForm").onsubmit=ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(ev.target));state.news.push(d);audit("Aviso",d.title);save();closeModal();toast("Aviso publicado","success")};return
   }
 
@@ -2122,12 +2161,12 @@ document.addEventListener("click",e=>{
   const evBtn=e.target.closest("[data-event]");
   if(evBtn){
     const label=evBtn.dataset.event;
-    openModal(label,`<form id="eventForm"><div class="form-grid">${renderForm([{label:"Minuto",name:"minute",placeholder:"74'"},{label:"Detalle / jugador",name:"detail"}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Confirmar evento">✅ Confirmar evento</button></div></form>`);
-    document.getElementById("eventForm").onsubmit=x=>{x.preventDefault();const d=Object.fromEntries(new FormData(x.target));state.events.unshift({minute:d.minute,label,detail:d.detail});audit("Evento de partido",label+" · "+d.detail);save();closeModal();toast(label+" actualizado en Match Center","success")};return
+    openModal(label,`<form id="eventForm"><div class="form-grid">${renderForm([{label:"Minuto",name:"minute",placeholder:"74'"},{label:"Detalle / jugador",name:"detail"}])}</div><div class="toolbar section"><button class="primary-btn" type="submit" aria-label="Confirmar evento">âœ… Confirmar evento</button></div></form>`);
+    document.getElementById("eventForm").onsubmit=x=>{x.preventDefault();const d=Object.fromEntries(new FormData(x.target));state.events.unshift({minute:d.minute,label,detail:d.detail});audit("Evento de partido",label+" Â· "+d.detail);save();closeModal();toast(label+" actualizado en Match Center","success")};return
   }
 });
 
-/* ===== CHIPS DE CATEGORÍA ===== */
+/* ===== CHIPS DE CATEGORÃA ===== */
 document.querySelectorAll(".chip").forEach(c=>{
   if(c.dataset.category===currentCategory)c.classList.add("active");
   else c.classList.remove("active");
@@ -2137,12 +2176,12 @@ document.querySelectorAll(".chip").forEach(c=>{
     currentCategory=c.dataset.category;
     localStorage.setItem("jrCategory",currentCategory);
     document.querySelectorAll(".categoryText").forEach(x=>x.textContent=currentCategory);
-    toast("Categoría: "+currentCategory);
+    toast("CategorÃ­a: "+currentCategory);
   };
 });
 document.querySelectorAll(".categoryText").forEach(x=>x.textContent=currentCategory);
 
-/* ===== MENÚ ADMIN (desktop) ===== */
+/* ===== MENÃš ADMIN (desktop) ===== */
 function syncAdminMenu(btn){
   const panel=btn.dataset.admin;
   document.querySelectorAll("#adminMenu button, #adminDrawer button[data-admin]").forEach(x=>x.classList.remove("active"));
@@ -2156,7 +2195,7 @@ document.getElementById("adminMenu").addEventListener("click",e=>{
   syncAdminMenu(b);
 });
 
-/* ===== DRAWER ADMIN (móvil) ===== */
+/* ===== DRAWER ADMIN (mÃ³vil) ===== */
 function openAdminDrawer(){
   document.getElementById("adminDrawer").classList.add("open");
   document.getElementById("adminDrawerOverlay").classList.add("show");
@@ -2173,7 +2212,7 @@ document.getElementById("adminDrawer").addEventListener("click",e=>{
   syncAdminMenu(b);closeAdminDrawer();
 });
 
-// Mostrar botón de menú en móvil
+// Mostrar botÃ³n de menÃº en mÃ³vil
 function checkAdminMenuVisibility(){
   const toggle=document.getElementById("adminMenuToggle");
   if(window.innerWidth<=850)toggle.style.display="";
@@ -2182,7 +2221,7 @@ function checkAdminMenuVisibility(){
 checkAdminMenuVisibility();
 window.addEventListener("resize",checkAdminMenuVisibility);
 
-/* ===== BÚSQUEDAS ===== */
+/* ===== BÃšSQUEDAS ===== */
 document.getElementById("playerSearch").addEventListener("input",renderPlayers);
 document.getElementById("teamSearch").addEventListener("input",renderTeams);
 document.getElementById("matchSearch").addEventListener("input",renderMatches);
@@ -2199,15 +2238,15 @@ document.getElementById("shareBtn").onclick=async()=>{
 document.getElementById("shareBracket").onclick=()=>document.getElementById("shareBtn").click();
 
 /* ===== MATCH CENTER ===== */
-document.getElementById("formationBtn").onclick=()=>openModal("Alineación sobre cancha",`<div style="min-height:340px;background:linear-gradient(#1a6e42,#145c35);border-radius:16px;position:relative;overflow:hidden;display:grid;place-items:center"><div style="position:absolute;inset:20px;border:2px solid rgba(255,255,255,.65);border-radius:4px"></div><div style="position:absolute;left:50%;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.6)"></div><div style="position:relative;z-index:2;font-size:40px">⚽</div></div>`);
+document.getElementById("formationBtn").onclick=()=>openModal("AlineaciÃ³n sobre cancha",`<div style="min-height:340px;background:linear-gradient(#1a6e42,#145c35);border-radius:16px;position:relative;overflow:hidden;display:grid;place-items:center"><div style="position:absolute;inset:20px;border:2px solid rgba(255,255,255,.65);border-radius:4px"></div><div style="position:absolute;left:50%;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.6)"></div><div style="position:relative;z-index:2;font-size:40px">âš½</div></div>`);
 document.getElementById("mvpBtn").onclick=()=>{audit("MVP","Voto registrado");toast("Voto MVP registrado en este navegador","success")};
 
 /* ===== INSTALAR PWA ===== */
-document.getElementById("installHint").onclick=()=>toast("Usa el menú del navegador → 'Agregar a pantalla de inicio' para instalar la app");
+document.getElementById("installHint").onclick=()=>toast("Usa el menÃº del navegador â†’ 'Agregar a pantalla de inicio' para instalar la app");
 
 /* ===== REPORTES ===== */
-document.getElementById("reportRound").onclick=()=>toast("Reporte de jornada: disponible en la versión conectada a base de datos");
-document.getElementById("reportAct").onclick=()=>toast("Acta PDF: disponible en la versión conectada a base de datos");
+document.getElementById("reportRound").onclick=()=>toast("Reporte de jornada: disponible en la versiÃ³n conectada a base de datos");
+document.getElementById("reportAct").onclick=()=>toast("Acta PDF: disponible en la versiÃ³n conectada a base de datos");
 
 /* ===== CSV ===== */
 document.getElementById("csvInput").addEventListener("change",e=>{
@@ -2215,7 +2254,7 @@ document.getElementById("csvInput").addEventListener("change",e=>{
   const r=new FileReader();
   r.onload=()=>{
     const lines=r.result.split(/\r?\n/).filter(Boolean);
-    document.getElementById("csvResult").textContent=`${Math.max(0,lines.length-1)} filas detectadas (sin guardar automáticamente).`;
+    document.getElementById("csvResult").textContent=`${Math.max(0,lines.length-1)} filas detectadas (sin guardar automÃ¡ticamente).`;
     toast(`CSV cargado: ${Math.max(0,lines.length-1)} filas detectadas`,"success");
   };
   r.readAsText(f);
@@ -2237,13 +2276,13 @@ document.getElementById("icsBtn").onclick=()=>{
 };
 
 /* ===== FAN ZONE ===== */
-document.getElementById("favTeamBtn").onclick=()=>{state.favorites.team=!state.favorites.team;audit("Favorito",state.favorites.team?"Sigue Pozos FC":"Dejó de seguir Pozos FC");save();toast(state.favorites.team?"Equipo seguido ✅":"Equipo quitado de favoritos")};
-document.getElementById("favMatchBtn").onclick=()=>{state.favorites.match=!state.favorites.match;audit("Favorito",state.favorites.match?"Sigue partido":"Dejó de seguir partido");save();toast(state.favorites.match?"Partido seguido ✅":"Seguimiento desactivado")};
+document.getElementById("favTeamBtn").onclick=()=>{state.favorites.team=!state.favorites.team;audit("Favorito",state.favorites.team?"Sigue Pozos FC":"DejÃ³ de seguir Pozos FC");save();toast(state.favorites.team?"Equipo seguido âœ…":"Equipo quitado de favoritos")};
+document.getElementById("favMatchBtn").onclick=()=>{state.favorites.match=!state.favorites.match;audit("Favorito",state.favorites.match?"Sigue partido":"DejÃ³ de seguir partido");save();toast(state.favorites.match?"Partido seguido âœ…":"Seguimiento desactivado")};
 document.getElementById("reactionBtn").onclick=()=>{
-  openModal("Reacción rápida",`<div class="fan-grid"><button class="fan-btn react" data-r="🔥" aria-label="Reacción fuego"><span>🔥</span>Fuego</button><button class="fan-btn react" data-r="⚽" aria-label="Reacción gol"><span>⚽</span>Gol</button><button class="fan-btn react" data-r="👏" aria-label="Reacción aplausos"><span>👏</span>Aplausos</button><button class="fan-btn react" data-r="😱" aria-label="Reacción sorpresa"><span>😱</span>Sorpresa</button></div>`);
-  document.querySelectorAll(".react").forEach(b=>b.onclick=()=>{audit("Reacción",b.dataset.r);closeModal();toast("Reacción "+b.dataset.r+" registrada")});
+  openModal("ReacciÃ³n rÃ¡pida",`<div class="fan-grid"><button class="fan-btn react" data-r="ðŸ”¥" aria-label="ReacciÃ³n fuego"><span>ðŸ”¥</span>Fuego</button><button class="fan-btn react" data-r="âš½" aria-label="ReacciÃ³n gol"><span>âš½</span>Gol</button><button class="fan-btn react" data-r="ðŸ‘" aria-label="ReacciÃ³n aplausos"><span>ðŸ‘</span>Aplausos</button><button class="fan-btn react" data-r="ðŸ˜±" aria-label="ReacciÃ³n sorpresa"><span>ðŸ˜±</span>Sorpresa</button></div>`);
+  document.querySelectorAll(".react").forEach(b=>b.onclick=()=>{audit("ReacciÃ³n",b.dataset.r);closeModal();toast("ReacciÃ³n "+b.dataset.r+" registrada")});
 };
-document.getElementById("predictionForm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));state.prediction={home:Number(d.home),away:Number(d.away)};audit("Pronóstico",`${d.home}-${d.away}`);save();toast("Pronóstico guardado","success")};
+document.getElementById("predictionForm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));state.prediction={home:Number(d.home),away:Number(d.away)};audit("PronÃ³stico",`${d.home}-${d.away}`);save();toast("PronÃ³stico guardado","success")};
 document.querySelectorAll(".pollBtn").forEach(b=>b.onclick=()=>{const c=b.dataset.choice;state.polls.total++;state.polls.choices[c]=(state.polls.choices[c]||0)+1;audit("Encuesta",c);save();const share=(state.polls.choices[c]/state.polls.total)*100;document.getElementById("pollProgress").style.width=share+"%";toast("Voto registrado: "+c)});
 document.getElementById("shareResultBtn").onclick=()=>downloadResultCard();
 
@@ -2253,10 +2292,10 @@ function downloadResultCard(){
   x.fillStyle="#050f0a";x.fillRect(0,0,c.width,c.height);
   x.fillStyle="#28c76f";x.fillRect(0,0,c.width,20);
   x.fillStyle="#f0f5f2";x.font="700 42px sans-serif";x.fillText("LIGA JUVENTINO ROSAS",70,110);
-  x.fillStyle="#7a9a8a";x.font="500 28px sans-serif";x.fillText("PRIMERA FUERZA · JORNADA 7",70,160);
+  x.fillStyle="#7a9a8a";x.font="500 28px sans-serif";x.fillText("PRIMERA FUERZA Â· JORNADA 7",70,160);
   x.fillStyle="#f0f5f2";x.font="800 58px sans-serif";x.fillText("POZOS FC",100,420);x.fillText("JUVENTUS",690,420);
-  x.fillStyle="#28c76f";x.font="900 120px sans-serif";x.fillText("2 — 1",365,610);
-  x.fillStyle="#7a9a8a";x.font="500 30px sans-serif";x.fillText("73' · EN VIVO · Campo Municipal",300,690);
+  x.fillStyle="#28c76f";x.font="900 120px sans-serif";x.fillText("2 â€” 1",365,610);
+  x.fillStyle="#7a9a8a";x.font="500 30px sans-serif";x.fillText("73' Â· EN VIVO Â· Campo Municipal",300,690);
   x.fillStyle="#f2c14e";x.font="700 30px sans-serif";x.fillText("JR Matchday",70,980);
   const a=document.createElement("a");a.href=c.toDataURL("image/png");a.download="liga-juventino-rosas-resultado.png";a.click();
   audit("Compartir","Tarjeta de resultado generada");
@@ -2273,7 +2312,7 @@ document.getElementById("shotPitch").addEventListener("click",e=>{
   save();toast("Tiro registrado");
 });
 document.getElementById("clearShots").onclick=()=>{state.shots=[];audit("Shot map","Limpieza");save();toast("Mapa de tiros limpiado")};
-document.getElementById("downloadShotMap").onclick=()=>toast("Para exportación exacta del mapa se integrará html2canvas en producción");
+document.getElementById("downloadShotMap").onclick=()=>toast("Para exportaciÃ³n exacta del mapa se integrarÃ¡ html2canvas en producciÃ³n");
 
 /* ===== CREDENCIAL ===== */
 document.getElementById("downloadCredential").onclick=()=>{
@@ -2282,9 +2321,9 @@ document.getElementById("downloadCredential").onclick=()=>{
   x.fillStyle="#28c76f";x.fillRect(0,0,900,14);
   x.fillStyle="#f0f5f2";x.font="700 32px sans-serif";x.fillText("LIGA MUNICIPAL JUVENTINO ROSAS",42,70);
   x.font="800 40px sans-serif";x.fillText("JUGADOR DESTACADO",42,145);
-  x.fillStyle="#7a9a8a";x.font="500 25px sans-serif";x.fillText("Folio: LJR-00471",42,195);x.fillText("Pozos FC · Primera Fuerza · #10",42,245);
+  x.fillStyle="#7a9a8a";x.font="500 25px sans-serif";x.fillText("Folio: LJR-00471",42,195);x.fillText("Pozos FC Â· Primera Fuerza Â· #10",42,245);
   x.fillStyle="#28c76f";x.font="800 28px sans-serif";x.fillText("HABILITADO",42,330);
-  x.fillStyle="#f0f5f2";x.font="600 22px sans-serif";x.fillText("Temporada 2026–27",42,385);
+  x.fillStyle="#f0f5f2";x.font="600 22px sans-serif";x.fillText("Temporada 2026â€“27",42,385);
   const a=document.createElement("a");a.href=c.toDataURL("image/png");a.download="credencial-ljr-00471.png";a.click();
   audit("Credencial","Descarga LJR-00471");
   toast("Credencial descargada","success");
@@ -2304,17 +2343,17 @@ document.getElementById("generateFixture").onclick=()=>{
   toast("Fixture generado: "+rounds.length+" jornadas","success");
 };
 
-/* ===== ÁRBITROS ===== */
+/* ===== ÃRBITROS ===== */
 document.getElementById("assignOfficials").onclick=()=>{
-  document.getElementById("officialAssignment").innerHTML="<b>Árbitro: Ricardo Demo</b><p style='color:var(--muted);font-size:13px;margin-top:4px'>AR1: Luis · AR2: Mario · Evaluador: Ana</p>";
-  audit("Oficiales","Asignación demo Pozos vs Juventus");
+  document.getElementById("officialAssignment").innerHTML="<b>Ãrbitro: Ricardo Demo</b><p style='color:var(--muted);font-size:13px;margin-top:4px'>AR1: Luis Â· AR2: Mario Â· Evaluador: Ana</p>";
+  audit("Oficiales","AsignaciÃ³n demo Pozos vs Juventus");
   toast("Oficiales asignados","success");
 };
 
 /* ===== DISCIPLINA ===== */
 document.getElementById("runDiscipline").onclick=()=>{
-  document.getElementById("disciplineResult").innerHTML="<b>⚠️ Detección demo</b><p style='color:var(--muted);font-size:13px;margin-top:4px'>Jugador #5: 3 amarillas acumuladas → revisar suspensión según reglamento. Jugador #12: 1 partido pendiente.</p>";
-  audit("Disciplina","Evaluación automática ejecutada");
+  document.getElementById("disciplineResult").innerHTML="<b>âš ï¸ DetecciÃ³n demo</b><p style='color:var(--muted);font-size:13px;margin-top:4px'>Jugador #5: 3 amarillas acumuladas â†’ revisar suspensiÃ³n segÃºn reglamento. Jugador #12: 1 partido pendiente.</p>";
+  audit("Disciplina","EvaluaciÃ³n automÃ¡tica ejecutada");
   toast("Disciplina evaluada","success");
 };
 
@@ -2338,23 +2377,23 @@ if("serviceWorker" in navigator){
 document.getElementById("tvModeBtn").onclick=()=>document.getElementById("tvMode").classList.add("show");
 document.getElementById("exitTvMode").onclick=()=>document.getElementById("tvMode").classList.remove("show");
 
-/* ===== BÚSQUEDA GLOBAL ===== */
+/* ===== BÃšSQUEDA GLOBAL ===== */
 document.getElementById("globalSearchBtn").onclick=()=>{
-  openModal("Buscar en toda la liga",`<div class="field"><label>Buscar equipo, jugador o sección</label><input id="globalSearchInput" class="search" placeholder="Ej. Pozos, jugador, sanciones..." aria-label="Búsqueda global"></div><div id="globalSearchResults" class="list-compact section"></div>`);
+  openModal("Buscar en toda la liga",`<div class="field"><label>Buscar equipo, jugador o secciÃ³n</label><input id="globalSearchInput" class="search" placeholder="Ej. Pozos, jugador, sanciones..." aria-label="BÃºsqueda global"></div><div id="globalSearchResults" class="list-compact section"></div>`);
   const input=document.getElementById("globalSearchInput"),out=document.getElementById("globalSearchResults");
   input.focus();
   input.oninput=()=>{
     const q=input.value.toLowerCase().trim();
     if(!q){out.innerHTML="";return}
     const items=[
-      ...baseTeams.map(t=>({label:"Equipo · "+t.name,view:"teams"})),
-      ...basePlayers.map(p=>({label:"Jugador · "+p.name+" · "+p.team,view:"players"})),
+      ...baseTeams.map(t=>({label:"Equipo Â· "+t.name,view:"teams"})),
+      ...basePlayers.map(p=>({label:"Jugador Â· "+p.name+" Â· "+p.team,view:"players"})),
       {label:"Tabla de posiciones",view:"table"},{label:"Match Center",view:"matchcenter"},
       {label:"Liguilla / Copa",view:"bracket"},{label:"Noticias y avisos",view:"news"},
       {label:"Sanciones / JR Control",view:"admin"},{label:"Fan Zone",view:"fanzone"},
       {label:"Mapa de tiros",view:"shotmap"},{label:"Credencial digital",view:"credential"}
     ].filter(x=>x.label.toLowerCase().includes(q)).slice(0,10);
-    out.innerHTML=items.length?items.map(x=>`<button class="row ghost-btn searchResult" data-go="${x.view}" style="width:100%;text-align:left;justify-content:space-between" aria-label="Ir a ${x.label}">${x.label}<strong>→</strong></button>`).join(""):`<div class="empty">Sin resultados para "${q}".</div>`;
+    out.innerHTML=items.length?items.map(x=>`<button class="row ghost-btn searchResult" data-go="${x.view}" style="width:100%;text-align:left;justify-content:space-between" aria-label="Ir a ${x.label}">${x.label}<strong>â†’</strong></button>`).join(""):`<div class="empty">Sin resultados para "${q}".</div>`;
     out.querySelectorAll(".searchResult").forEach(b=>b.onclick=()=>{closeModal();showView(b.dataset.go)});
   };
 };
@@ -2369,10 +2408,10 @@ document.getElementById("checkConflictsBtn").onclick=()=>{
   }
   const el=document.getElementById("conflictResult");
   if(conflicts.length){
-    el.innerHTML=`<div class="card conflict"><b>⚠️ ${conflicts.length} conflicto(s) detectado(s)</b>${conflicts.map(([a,b])=>`<p style="font-size:13px;margin-top:4px">${a.venue} · ${a.date} ${a.time}: ${a.home} vs ${a.away} / ${b.home} vs ${b.away}</p>`).join("")}</div>`;
+    el.innerHTML=`<div class="card conflict"><b>âš ï¸ ${conflicts.length} conflicto(s) detectado(s)</b>${conflicts.map(([a,b])=>`<p style="font-size:13px;margin-top:4px">${a.venue} Â· ${a.date} ${a.time}: ${a.home} vs ${a.away} / ${b.home} vs ${b.away}</p>`).join("")}</div>`;
     audit("Conflictos",conflicts.length+" detectados");
   }else{
-    el.innerHTML=`<div class="card"><b>✅ Sin conflictos exactos en la demo</b><p style="color:var(--muted);font-size:13px;margin-top:4px">En producción también debe considerar duración, margen entre juegos, categoría y disponibilidad de árbitros.</p></div>`;
+    el.innerHTML=`<div class="card"><b>âœ… Sin conflictos exactos en la demo</b><p style="color:var(--muted);font-size:13px;margin-top:4px">En producciÃ³n tambiÃ©n debe considerar duraciÃ³n, margen entre juegos, categorÃ­a y disponibilidad de Ã¡rbitros.</p></div>`;
     audit("Conflictos","Sin conflictos exactos");
   }
 };
@@ -2386,7 +2425,7 @@ document.getElementById("saveRefReport").onclick=()=>{
   document.getElementById("printRefStatus").textContent=status;
   document.getElementById("printRefNotes").textContent=notes;
   state.refReport={name,status,notes};
-  audit("Acta arbitral",status+" · "+name);
+  audit("Acta arbitral",status+" Â· "+name);
   save();
   toast("Acta guardada en la demo","success");
 };
@@ -2396,7 +2435,7 @@ document.getElementById("printRefReport").onclick=()=>{
 };
 
 /* ===== PATROCINADORES ===== */
-document.getElementById("sponsorInfo").onclick=()=>toast("En producción: logo, nombre, enlace, vigencia, categoría y posición configurable.");
+document.getElementById("sponsorInfo").onclick=()=>toast("En producciÃ³n: logo, nombre, enlace, vigencia, categorÃ­a y posiciÃ³n configurable.");
 
 /* ===== AVISO DISMISS ===== */
 document.getElementById("dismissNotice").onclick=()=>{
@@ -2411,13 +2450,19 @@ document.getElementById("themeBtn").onclick=()=>{
   document.body.classList.toggle("light");
   const isLight=document.body.classList.contains("light");
   localStorage.setItem("jrTheme",isLight?"light":"dark");
-  document.getElementById("themeBtn").textContent=isLight?"☀":"☾";
+  document.getElementById("themeBtn").textContent=isLight?"â˜€":"â˜¾";
 };
-if(theme==="light")document.getElementById("themeBtn").textContent="☀";
+if(theme==="light")document.getElementById("themeBtn").textContent="â˜€";
 
 /* ===== HASH ROUTING ===== */
 const hash=location.hash.replace("#","");
 if(hash&&document.getElementById("view-"+hash))showView(hash);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="./assets/hero3d.js"></script>
+<script src="./assets/v12-3d.js"></script>
 </body>
 </html>
+
