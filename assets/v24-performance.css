@@ -1,0 +1,39 @@
+/* MASTER V24 - performance / estabilidad */
+html.v24-ready{scroll-behavior:smooth}
+html.v24-ready img{content-visibility:auto}
+html.v24-ready .view > section,
+html.v24-ready #view-home > section{
+  contain:layout paint style;
+}
+html.v24-ready .view.hidden,
+html.v24-ready [hidden]{content-visibility:hidden}
+
+/* Offscreen sections become much cheaper to lay out. */
+@supports (content-visibility:auto){
+  html.v24-ready .view > section:not(:first-child),
+  html.v24-ready #view-home > section:not(:first-child){
+    content-visibility:auto;
+    contain-intrinsic-size:600px;
+  }
+}
+
+/* Keep visual depth but reduce expensive blur/shadow work on constrained devices. */
+html.v24-lite .v23-feature,
+html.v24-lite .card,
+html.v24-lite .team-card,
+html.v24-lite .matchday-card{
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.28)!important;
+}
+html.v24-lite .v23-ball,
+html.v24-lite .v23-event-ball{
+  animation-duration:9s!important;
+}
+html.v24-lite .v23-tilt{
+  transform:none!important;
+}
+@media(max-width:700px){
+  html.v24-ready .v23-pitch{filter:none!important}
+  html.v24-ready .v23-feature{transition:none!important}
+}

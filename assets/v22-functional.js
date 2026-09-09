@@ -53,11 +53,11 @@
       v.style.objectFit="contain";
       v.style.height="auto";
       v.removeAttribute("poster");
-      v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.controls=true;
-      v.play().catch(()=>{});
+      v.autoplay=false;v.muted=true;v.loop=false;v.playsInline=true;v.controls=true;v.preload="metadata";
+      try{v.pause()}catch(e){}
     }
     // Make copy appear under the video, not at its side.
-    q(".v21-final-copy",sec)?.querySelector("h2")?.replaceChildren(document.createTextNode("Video completo de la Gran Final"));
+    const h=q(".v21-final-copy",sec)?.querySelector("h2"); if(h && h.textContent!=="Video completo de la Gran Final") h.textContent="Video completo de la Gran Final";
   }
 
   function mediaItems(kind){
@@ -352,14 +352,7 @@
     title?.insertAdjacentElement("afterend",note);
   }
 
-  function mutationGuard(){
-    const mo=new MutationObserver(()=>{
-      q("#v21FinalVideoTeams")?.remove();
-      q("#v21FinalVideoMatches")?.remove();
-      fixMainFinalVideo();
-    });
-    mo.observe(document.body,{childList:true,subtree:true});
-  }
+  function mutationGuard(){ return; }
 
   function boot(){
     fixMainFinalVideo();

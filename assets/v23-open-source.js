@@ -198,8 +198,10 @@ function wire(){
     const g=e.target.closest("[data-v23-go]");if(g)go(g.dataset.v23Go);
   });
 }
-function boot(){insertHome();installMore();installMatchField();analytics();tilt();wire();
-  const mo=new MutationObserver(()=>{installMore();installMatchField();if(!q("#v23Analytics"))analytics();tilt()});mo.observe(document.body,{childList:true,subtree:true});
+function boot(){
+  insertHome();installMore();installMatchField();analytics();wire();
+  const later=()=>{installMore();installMatchField();if(!q("#v23Analytics"))analytics();if(!reduce())tilt();};
+  if("requestIdleCallback" in window) requestIdleCallback(later,{timeout:1400}); else setTimeout(later,900);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>setTimeout(boot,260));else setTimeout(boot,260);
 })();
