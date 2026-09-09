@@ -1,0 +1,16 @@
+CORRECCION V2
+
+Se corrigio el error:
+
+  Secuencia de escape no reconocida \Q
+
+La causa era una expresion regular no compatible con PowerShell/.NET.
+La version 2 usa comparacion literal de lineas en .gitignore.
+
+PASOS:
+1. Extrae este ZIP nuevo en una carpeta NUEVA.
+2. Ejecuta SUBIR_LIGA_A_GITHUB.cmd.
+3. Debe mostrar: Payload version: 2.0-fix-regex
+4. Continua normalmente.
+
+No necesitas editar nada manualmente.

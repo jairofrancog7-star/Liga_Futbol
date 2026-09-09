@@ -1,0 +1,18 @@
+V3 CORREGIDO
+
+Tu error demuestra que Windows sigue ejecutando el SCRIPT ANTIGUO, porque el mensaje:
+    (?m)^\Q.env\E\s*$
+solo existe en la version vieja.
+
+FORMA RECOMENDADA
+1. Cierra todas las ventanas CMD.
+2. NO uses la carpeta vieja:
+   C:\Users\Owner\Downloads\liga futbol\Nueva carpeta\Nueva carpeta\Nueva carpeta
+3. Extrae este ZIP V3 en una carpeta NUEVA, por ejemplo:
+   C:\LigaJR-V3
+4. Ejecuta SOLO:
+   SUBIR_GITHUB_V3_CORREGIDO.cmd
+5. Antes de continuar debes ver:
+   VERSION: 3.0-cmd-corregido
+
+Si no aparece esa version, sigues abriendo el archivo viejo.

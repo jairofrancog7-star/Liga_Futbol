@@ -1,0 +1,29 @@
+V6 — CORRECCIÓN DEL FALSO POSITIVO DE SECRETOS
+
+El error de V5:
+  .env.example:7:SUPABASE_SECRET_KEY=
+
+era un FALSO POSITIVO.
+
+Ese archivo solamente contiene el nombre de la variable con valor vacío.
+Eso es justamente lo correcto en un .env.example.
+
+V6 solo bloquea si detecta un valor real, por ejemplo:
+  SUPABASE_SECRET_KEY=sb_secret_ABC123...
+  SUPABASE_SERVICE_ROLE=eyJ...
+  github_pat_...
+  ghp_...
+  -----BEGIN PRIVATE KEY-----
+
+PASOS
+1. Cierra el CMD de V5.
+2. Extrae este ZIP V6 en una carpeta nueva.
+3. Ejecuta SOLO: SUBIR_GITHUB_V6.cmd
+4. Debes ver:
+   VERSION: 6.0-fix-placeholder-secret
+5. En la ruta del proyecto:
+   - ENTER = subir este paquete inicial/documentación.
+   - O pega la ruta del código real si está en otra carpeta.
+6. Presiona ENTER para el repositorio liga-juventino-rosas.
+7. El repositorio remoto YA EXISTE; V6 lo detectará.
+8. Debe continuar con commit y push.

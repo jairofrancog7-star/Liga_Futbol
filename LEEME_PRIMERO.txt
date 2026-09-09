@@ -1,0 +1,30 @@
+LIGA JUVENTINO ROSAS — PAYLOAD WINDOWS
+
+USO RAPIDO
+1. Extrae este ZIP en Windows.
+2. Ejecuta SUBIR_LIGA_A_GITHUB.cmd.
+3. Si tu codigo real esta en otra carpeta, pega su ruta cuando te la pida.
+4. El script verifica/instala Git y GitHub CLI.
+5. Inicia sesion de GitHub por navegador si hace falta.
+6. Verifica que la cuenta sea jairofrancog7-star.
+7. Crea un repositorio PRIVADO llamado liga-juventino-rosas.
+8. Agrega reglas de seguridad a .gitignore.
+9. Copia la documentacion de auditoria al proyecto (sin sobrescribir tu README si ya existe).
+10. Hace commit y push a GitHub.
+
+SEGURIDAD
+El script intenta evitar que subas:
+- .env y variantes
+- claves .pem/.key/.p12/.pfx
+- backups/ exports/ private/
+- patrones comunes de claves privadas, GitHub tokens y claves secretas de Supabase
+
+IMPORTANTE
+Este paquete incluye la documentacion y la automatizacion de carga.
+No contiene el codigo fuente completo de tu aplicacion actual si ese codigo solo existe en tu PC.
+Cuando ejecutes el CMD, selecciona la carpeta real del proyecto para que se suba esa version.
+
+RAR
+En este entorno se genero ZIP porque no hay codificador RAR disponible.
+Dentro se incluye CREAR_RAR_EN_WINDOWS.cmd: si tienes WinRAR instalado,
+te genera un RAR real en tu PC.

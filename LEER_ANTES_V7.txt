@@ -1,0 +1,23 @@
+V7 — CORRECCIÓN DE EJEMPLOS EN DOCUMENTACIÓN
+
+El error de V6 fue otro falso positivo.
+
+Estas líneas:
+  SUPABASE_SECRET_KEY=sb_secret_ABC123...
+  SUPABASE_SERVICE_ROLE=eyJ...
+  -----BEGIN PRIVATE KEY-----
+
+estaban dentro de LEER_ANTES_V6.txt únicamente como ejemplos de
+credenciales que NO deben subirse.
+
+V7 excluye del escaneo de secretos únicamente los archivos de
+instrucciones/documentación generados por este payload, pero sigue
+escaneando los archivos reales del proyecto.
+
+PASOS
+1. Extrae este ZIP V7 en una carpeta nueva.
+2. Ejecuta SOLO: SUBIR_GITHUB_V7.cmd
+3. Confirma VERSION: 7.0-fix-doc-examples
+4. Presiona ENTER para subir el payload inicial o pega la ruta del código real.
+5. Presiona ENTER para usar liga-juventino-rosas.
+6. El repositorio remoto ya existe; V7 debe continuar hasta commit y push.

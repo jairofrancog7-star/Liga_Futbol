@@ -1,0 +1,23 @@
+V5 — CORRECCIÓN DE REMOTE ORIGIN
+
+El repositorio ya fue creado correctamente:
+https://github.com/jairofrancog7-star/liga-juventino-rosas
+
+El error de V4 ocurrió porque el repositorio local todavía no tenía un
+remote llamado "origin". Eso es normal en un git init nuevo.
+
+La V4 intentaba consultar origin antes de comprobar si existía, y
+PowerShell trató el mensaje "No such remote 'origin'" como error fatal.
+
+V5 primero lista los remotes. Si origin no existe, lo agrega directamente.
+
+PASOS:
+1. Cierra el CMD anterior.
+2. Extrae este ZIP V5 en una carpeta NUEVA.
+3. Ejecuta SOLO: SUBIR_GITHUB_V5.cmd
+4. Confirma que diga VERSION: 5.0-fix-origin-check
+5. En "Ruta del proyecto":
+   - ENTER si vas a subir solo el payload/documentación.
+   - O pega la ruta del código real si está en otra carpeta.
+6. En el nombre del repositorio presiona ENTER.
+7. Como el repo ya existe, V5 lo detectará y continuará con origin, commit y push.

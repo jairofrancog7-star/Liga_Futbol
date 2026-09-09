@@ -1,0 +1,23 @@
+V4 — CORRECCIÓN DEL ERROR DE REPOSITORIO
+
+El error de V3:
+  GraphQL: Could not resolve to a Repository with the name
+  'jairofrancog7-star/liga-juventino-rosas'
+
+NO significa que tu cuenta esté mal.
+Significa que GitHub confirmó que ese repositorio todavía no existía.
+
+El problema era que PowerShell interpretaba ese mensaje esperado como
+un error fatal antes de llegar a la instrucción que debía crear el repo.
+
+V4 corrige esa comprobación.
+
+PASOS
+1. Cierra el CMD anterior.
+2. Extrae este ZIP V4 en una carpeta nueva, por ejemplo C:\LigaJR-V4
+3. Ejecuta SOLO: SUBIR_GITHUB_V4.cmd
+4. Debe mostrar: VERSION: 4.0-fix-repo-check
+5. Cuando pregunte por ruta del proyecto:
+   - ENTER = subir este paquete
+   - o pega la ruta del código real de tu Liga si lo tienes en otra carpeta.
+6. Deja ENTER en el nombre para usar liga-juventino-rosas.

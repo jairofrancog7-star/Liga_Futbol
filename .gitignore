@@ -1,0 +1,24 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+*.sqlite
+*.db
+backups/
+exports/
+private/
+tmp/
+
+# Seguridad JR / GitHub
+*.pem
+*.key
+*.p12
+*.pfx
+
