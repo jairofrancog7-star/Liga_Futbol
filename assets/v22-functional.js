@@ -374,7 +374,7 @@
     mutationGuard();
 
     if("serviceWorker" in navigator){
-      navigator.serviceWorker.register("./sw.js?v=22",{updateViaCache:"none"}).then(r=>r.update()).catch(()=>{});
+      navigator.serviceWorker.register("./sw.js?v=23",{updateViaCache:"none"}).then(r=>r.update()).catch(()=>{});
     }
   }
 
