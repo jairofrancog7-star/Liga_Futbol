@@ -1,3 +1,17 @@
+# Liga Juventino Rosas - MASTER V19
+
+Temporada actual registrada por categorias, equipos vigentes y jornadas recibidas.
+
+Estado actual:
+- Veteranos 35+: Final.
+- Veteranos 50+: Torneo de Copa J6.
+- Primera Fuerza: Torneo de Copa J5.
+- Intermedia: Torneo de Copa J5.
+- Segunda Fuerza: Torneo de Copa J5.
+
+La informacion estructurada esta en `data/temporada-actual-2026.json`.
+
+---
 # Liga Juventino Rosas · MASTER V17
 
 Plataforma unificada de la **Liga Municipal de Fútbol Juventino Rosas A.C.**

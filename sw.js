@@ -1,5 +1,5 @@
-const CACHE='liga-jr-v18';
-const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./assets/v18-clubs.css?v=18','./assets/v18-clubs.js?v=18'];
+const CACHE='liga-jr-v19';
+const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./assets/v18-clubs.css?v=18','./assets/v18-clubs.js?v=18','./data/temporada-actual-2026.json'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
@@ -30,15 +30,9 @@ async function networkFirst(request){
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const url=new URL(event.request.url);
-  if(event.request.mode==='navigate'||url.pathname.endsWith('/')||url.pathname.endsWith('/index.html')){
+  if(event.request.mode==='navigate'||url.pathname.endsWith('/')||url.pathname.endsWith('/index.html')||url.pathname.endsWith('.js')||url.pathname.endsWith('.css')||url.pathname.endsWith('.json')){
     event.respondWith(networkFirst(event.request));
     return;
   }
-  event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(async response=>{
-    if(response&&response.ok){
-      const cache=await caches.open(CACHE);
-      cache.put(event.request,response.clone()).catch(()=>undefined);
-    }
-    return response;
-  })));
+  event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request)));
 });
