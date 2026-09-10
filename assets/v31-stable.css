@@ -91,3 +91,73 @@
 #gran-final-veteranos-v16 .match-hero .team b{
   margin-top:8px;
 }
+
+
+/* V31.9 · logos estables en jornadas de todas las categorías */
+#view-matches td .jr31-teamcell,
+#view-calendar td .jr31-teamcell,
+.v21-archive-card td .jr31-teamcell,
+.v20-archive-card td .jr31-teamcell{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:10px!important;
+  vertical-align:middle;
+}
+#view-matches td .jr31-teamcell__logo,
+#view-calendar td .jr31-teamcell__logo,
+.v21-archive-card td .jr31-teamcell__logo,
+.v20-archive-card td .jr31-teamcell__logo{
+  width:24px!important;
+  height:24px!important;
+  min-width:24px!important;
+  min-height:24px!important;
+  border-radius:7px!important;
+  padding:2px!important;
+}
+.jr31-teamblock{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+}
+.jr31-team-logo-fix,
+.match-hero .team-logo,
+.live-score .team-logo,
+.match-center .team-logo,
+.fixture-team .team-logo,
+.team-card .team-logo{
+  width:52px!important;
+  height:52px!important;
+  min-width:52px!important;
+  min-height:52px!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+  margin:0 auto!important;
+  padding:4px!important;
+}
+.jr31-team-logo-fix img,
+.match-hero .team-logo img,
+.live-score .team-logo img,
+.match-center .team-logo img,
+.fixture-team .team-logo img,
+.team-card .team-logo img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  display:block!important;
+}
+.jr31-teamblock .jr31-teamname,
+.match-hero .team .jr31-teamname,
+.live-score .team .jr31-teamname,
+.match-center .team .jr31-teamname,
+.fixture-team .jr31-teamname,
+.team-card .jr31-teamname{
+  display:block!important;
+  width:auto!important;
+  max-width:100%!important;
+  margin:0!important;
+  line-height:1.15!important;
+  text-align:center!important;
+}

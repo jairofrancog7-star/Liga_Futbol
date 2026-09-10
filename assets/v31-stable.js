@@ -430,6 +430,51 @@ function dedupeScheduleLogosAllCategories(){
   });
 }
 
+function fixTeamLogoLayouts(){
+  qa('.match-hero .team, .live-score .team, .match-center .team, .fixture-team, .team-card').forEach(block=>{
+    const team=teamFromAnyText(block.textContent||'');
+    if(!team) return;
+    block.classList.add('jr31-teamblock');
+    let label=q('.jr31-teamname',block);
+    if(!label){
+      label=q('b,strong,h3,h4,h5,small,span,p',block);
+      if(label) label.classList.add('jr31-teamname');
+    }
+    const wrap=q('.team-logo,.jr31-teamcell__logo,.team-badge,.club-logo,.logo',block);
+    if(wrap) wrap.classList.add('jr31-team-logo-fix');
+  });
+}
+function refreshScheduleDecorations(){
+  replacePublicCopy();
+  fixFinalHero();
+  cleanLegacyLogoDuplicates();
+  normalizeRepeatedLogos();
+  decorateScheduleLogosAllCategories();
+  dedupeScheduleLogosAllCategories();
+  fixTeamLogoLayouts();
+}
+let jr31RefreshTimer=0;
+function queueRefresh(ms=80){
+  clearTimeout(jr31RefreshTimer);
+  jr31RefreshTimer=setTimeout(refreshScheduleDecorations, ms);
+}
+function installObservers(){
+  if(window.__jr31ObserverInstalled) return;
+  window.__jr31ObserverInstalled=true;
+  const mo=new MutationObserver(()=>queueRefresh(60));
+  mo.observe(document.body,{childList:true,subtree:true,characterData:true});
+  document.addEventListener('change',e=>{
+    const t=e.target;
+    if(t && (t.matches('select') || t.matches('input') || t.matches('[data-category]'))) queueRefresh(80);
+  },true);
+  document.addEventListener('click',e=>{
+    const t=e.target.closest('button,a,[data-category],[role="tab"],select');
+    if(t) queueRefresh(90);
+  },true);
+  window.addEventListener('hashchange',()=>queueRefresh(60));
+  window.addEventListener('pageshow',()=>queueRefresh(80));
+}
+
 function replacePublicCopy(){
   const candidates=qa('p').filter(el=>!(el.closest('#jr31Modal')) && el.children.length===0);
   candidates.forEach(el=>{
@@ -486,18 +531,14 @@ function guardAgainstOldCollapse(){
  },1600);
 }
 function boot(){
- replacePublicCopy();
- fixFinalHero();
- cleanLegacyLogoDuplicates();
- normalizeRepeatedLogos();
- decorateScheduleLogosAllCategories();
- dedupeScheduleLogosAllCategories();
+ refreshScheduleDecorations();
  decorateSafe();
+ installObservers();
  document.addEventListener('click',clickHandler,true);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateScheduleLogosAllCategories();dedupeScheduleLogosAllCategories();decorateSafe()},350);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateScheduleLogosAllCategories();dedupeScheduleLogosAllCategories();decorateSafe()},1200);
+ setTimeout(()=>{refreshScheduleDecorations();decorateSafe()},350);
+ setTimeout(()=>{refreshScheduleDecorations();decorateSafe()},1200);
  guardAgainstOldCollapse();
- window.LJR_V31={openTeam,openVenue,openCats,go,fixFinalHero,cleanLegacyLogoDuplicates};
+ window.LJR_V31={openTeam,openVenue,openCats,go,fixFinalHero,cleanLegacyLogoDuplicates,refreshScheduleDecorations};
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
