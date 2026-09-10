@@ -162,6 +162,10 @@ function clickText(words){
  if(el){el.click();return true} return false;
 }
 function go(view){
+ const target=document.getElementById('view-'+view);
+ if(target && typeof window.showView==='function'){
+   try{window.showView(view);return}catch(_){}
+ }
  const m={home:['Inicio'],matches:['Partidos','Jornada','Ver jornada'],table:['Tabla','Ver tabla'],stats:['Estadísticas','Goleo'],match:['Abrir Match Center','Match Center','LIVE Match Center'],more:['Más']};
  if(clickText(m[view]||view))return;
  const h=qa('h1,h2,h3,h4').find(x=>(m[view]||[]).some(w=>norm(x.textContent)===norm(w)));
@@ -204,7 +208,7 @@ function needsLogoCell(el){
   return !!teamFromText(txt);
 }
 async function decorateLogos(){
-  const nodes = qa('td,span,div,a,b,strong,small').filter(needsLogoCell);
+  const nodes = qa('td,span,a,b,strong,small').filter(needsLogoCell);
   for(const el of nodes){
     const label=(el.textContent||'').trim();
     const team=teamFromText(label);
@@ -218,11 +222,10 @@ async function decorateLogos(){
   }
 }
 function replacePublicCopy(){
-  const candidates=qa('p,div,span').filter(el=>!(el.closest('#jr31Modal')));
+  const candidates=qa('p').filter(el=>!(el.closest('#jr31Modal')) && el.children.length===0);
   candidates.forEach(el=>{
     const txt=(el.textContent||'').trim().replace(/\s+/g,' ');
-    if(!txt) return;
-    if(txt===HERO_TEXT_OLD || txt.includes('Jornadas, resultados, tabla, goleadores, liguilla y un Match Center pensado como una app deportiva moderna.')){
+    if(txt===HERO_TEXT_OLD){
       el.textContent=HERO_TEXT_NEW;
     }
   });
@@ -277,8 +280,6 @@ function boot(){
  document.addEventListener('click',clickHandler,true);
  setTimeout(()=>{replacePublicCopy();decorateSafe()},350);
  setTimeout(()=>{replacePublicCopy();decorateSafe()},1200);
- const obs=new MutationObserver(()=>{replacePublicCopy();decorateSafe()});
- obs.observe(document.body,{childList:true,subtree:true});
  guardAgainstOldCollapse();
  window.LJR_V31={openTeam,openVenue,openCats,go};
 }
