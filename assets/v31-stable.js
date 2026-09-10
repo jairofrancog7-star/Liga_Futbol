@@ -163,13 +163,18 @@ function clickText(words){
  if(el){el.click();return true} return false;
 }
 function go(view){
- const target=document.getElementById('view-'+view);
+ const aliases={match:'matchcenter'};
+ const targetView=aliases[view]||view;
+ const target=document.getElementById('view-'+targetView);
  if(target && typeof window.showView==='function'){
-   try{window.showView(view);return}catch(_){}
+   try{window.showView(targetView);return}catch(_){}
  }
- const m={home:['Inicio'],matches:['Partidos','Jornada','Ver jornada'],table:['Tabla','Ver tabla'],stats:['Estadísticas','Goleo'],match:['Abrir Match Center','Match Center','LIVE Match Center'],more:['Más']};
- if(clickText(m[view]||view))return;
- const h=qa('h1,h2,h3,h4').find(x=>(m[view]||[]).some(w=>norm(x.textContent)===norm(w)));
+ const byData=q(`[data-view="${targetView}"]`);
+ if(byData){byData.click();return}
+ const m={home:['Inicio'],matches:['Partidos','Jornada','Ver jornada'],table:['Tabla','Ver tabla'],stats:['Estadísticas','Goleo'],matchcenter:['Abrir Match Center','Match Center','LIVE Match Center'],more:['Más']};
+ const labels=m[targetView]||m[view]||[targetView];
+ if(clickText(labels))return;
+ const h=qa('h1,h2,h3,h4').find(x=>labels.some(w=>norm(x.textContent)===norm(w)));
  if(h)h.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function setCat(cat){localStorage.setItem('jrCategory',cat);const b=qa('[data-category],button,a').find(x=>norm(x.dataset?.category||x.textContent)===norm(cat));if(b)b.click()}
@@ -461,18 +466,28 @@ function queueRefresh(ms=80){
 function installObservers(){
   if(window.__jr31ObserverInstalled) return;
   window.__jr31ObserverInstalled=true;
-  const mo=new MutationObserver(()=>queueRefresh(60));
-  mo.observe(document.body,{childList:true,subtree:true,characterData:true});
+  const mo=new MutationObserver(mutations=>{
+    const needsRefresh=mutations.some(m=>{
+      const t=m.target;
+      if(!t || !t.isConnected) return false;
+      if(t.nodeType===1 && t.closest && t.closest('#jr31Modal')) return false;
+      return m.type==='childList' && (m.addedNodes.length>0 || m.removedNodes.length>0);
+    });
+    if(needsRefresh) queueRefresh(80);
+  });
+  window.__jr31MutationObserver=mo;
+  if(document.body) mo.observe(document.body,{childList:true,subtree:true});
   document.addEventListener('change',e=>{
     const t=e.target;
-    if(t && (t.matches('select') || t.matches('input') || t.matches('[data-category]'))) queueRefresh(80);
+    if(t && (t.matches('select') || t.matches('input') || t.matches('[data-category]'))) queueRefresh(90);
   },true);
   document.addEventListener('click',e=>{
-    const t=e.target.closest('button,a,[data-category],[role="tab"],select');
-    if(t) queueRefresh(90);
+    const t=e.target.closest('button,a,[data-category],[role="tab"],[data-view],select');
+    if(t) queueRefresh(100);
   },true);
   window.addEventListener('hashchange',()=>queueRefresh(60));
   window.addEventListener('pageshow',()=>queueRefresh(80));
+  window.addEventListener('popstate',()=>queueRefresh(80));
 }
 
 function replacePublicCopy(){
