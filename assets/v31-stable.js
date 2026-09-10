@@ -66,6 +66,8 @@ const DIRECT_LOGOS={
 };
 
 const LOGO_CACHE = new Map();
+const HERO_TEXT_OLD='Jornadas, resultados, tabla, goleadores, liguilla y un Match Center pensado como una app deportiva moderna. El 3D vive en la portada; los datos siguen siendo rápidos y legibles.';
+const HERO_TEXT_NEW='Consulta jornadas, resultados, tabla de posiciones, goleadores y liguilla oficial de la Liga Juventino Rosas. Un espacio pensado para equipos, delegados, directivos y afición, con acceso rápido y claro a la información más importante de cada categoría.';
 
 function q(s,r=document){return r.querySelector(s)}
 function qa(s,r=document){return [...r.querySelectorAll(s)]}
@@ -81,6 +83,7 @@ function slugify(s){
     .replace(/^-+|-+$/g,'')
 }
 function teamFromText(t){const n=norm(t);return TEAMS.find(x=>n===norm(x))||''}
+function teamFromAnyText(t){const n=norm(t);return TEAMS.find(x=>n===norm(x)||n.includes(norm(x)))||''}
 
 function logoCandidates(team){
   const slug = slugify(team);
@@ -186,24 +189,43 @@ function openCats(){
  qa('[data-jr31-cat]',m).forEach(b=>b.onclick=()=>{setCat(b.dataset.jr31Cat);m.classList.remove('show');go('matches')});
 }
 
+function textLeaves(el){
+  if(!el || el.closest('#jr31Modal')) return false;
+  if(el.querySelector('img')) return false;
+  const txt=(el.textContent||'').trim();
+  if(!txt || txt.length>90) return false;
+  if(el.children.length>1) return false;
+  return true;
+}
 function needsLogoCell(el){
-  if(!el || el.dataset.jr31Logo)return false;
+  if(!el || el.dataset.jr31Logo) return false;
+  if(!textLeaves(el)) return false;
   const txt=(el.textContent||'').trim();
   return !!teamFromText(txt);
 }
 async function decorateLogos(){
-  const nodes = qa('td,span,div').filter(needsLogoCell);
+  const nodes = qa('td,span,div,a,b,strong,small').filter(needsLogoCell);
   for(const el of nodes){
-    const team = teamFromText((el.textContent||'').trim());
+    const label=(el.textContent||'').trim();
+    const team=teamFromText(label);
     if(!team) continue;
-    const logo = await logoFor(team);
-    if(!logo){ el.dataset.jr31Logo='skip'; el.dataset.jr31Team=team; el.classList.add('jr31-click'); continue; }
-    const label = (el.textContent||'').trim();
-    el.innerHTML = `<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(logo)}" alt="${esc(team)}"></span><span>${esc(label)}</span></span>`;
-    el.dataset.jr31Team = team;
-    el.dataset.jr31Logo = '1';
+    el.dataset.jr31Team=team;
     el.classList.add('jr31-click');
+    const logo=await logoFor(team);
+    if(!logo){ el.dataset.jr31Logo='skip'; continue; }
+    el.innerHTML=`<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(logo)}" alt="${esc(team)}"></span><span>${esc(label)}</span></span>`;
+    el.dataset.jr31Logo='1';
   }
+}
+function replacePublicCopy(){
+  const candidates=qa('p,div,span').filter(el=>!(el.closest('#jr31Modal')));
+  candidates.forEach(el=>{
+    const txt=(el.textContent||'').trim().replace(/\s+/g,' ');
+    if(!txt) return;
+    if(txt===HERO_TEXT_OLD || txt.includes('Jornadas, resultados, tabla, goleadores, liguilla y un Match Center pensado como una app deportiva moderna.')){
+      el.textContent=HERO_TEXT_NEW;
+    }
+  });
 }
 function decorateSafe(){
  qa('button,a,span,b,strong,small,td,th').forEach(el=>{
@@ -211,7 +233,7 @@ function decorateSafe(){
    if(norm(txt)==='5 categorias'){el.dataset.jr31='cats';el.classList.add('jr31-click')}
    if(norm(txt)==='live match center'||norm(txt)==='abrir match center'){el.dataset.jr31='match';el.classList.add('jr31-click')}
    if(norm(txt)==='jr matchday'||norm(txt)==='ver jornada'){el.dataset.jr31='matches';el.classList.add('jr31-click')}
-   const team=teamFromText(txt);
+   const team=teamFromAnyText(txt);
    if(team){el.dataset.jr31Team=team;el.classList.add('jr31-click')}
    const venue=venueFromText(txt);
    if(venue && /campo|cerrito|tavera|san juan|cuenda|romerillo/i.test(txt)){el.dataset.jr31Venue=venue;el.classList.add('jr31-click')}
@@ -250,10 +272,13 @@ function guardAgainstOldCollapse(){
  },1600);
 }
 function boot(){
+ replacePublicCopy();
  decorateSafe();
  document.addEventListener('click',clickHandler,true);
- setTimeout(decorateSafe,350);
- setTimeout(decorateSafe,1200);
+ setTimeout(()=>{replacePublicCopy();decorateSafe()},350);
+ setTimeout(()=>{replacePublicCopy();decorateSafe()},1200);
+ const obs=new MutationObserver(()=>{replacePublicCopy();decorateSafe()});
+ obs.observe(document.body,{childList:true,subtree:true});
  guardAgainstOldCollapse();
  window.LJR_V31={openTeam,openVenue,openCats,go};
 }
