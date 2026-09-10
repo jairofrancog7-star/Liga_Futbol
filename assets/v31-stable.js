@@ -469,34 +469,22 @@ function installObservers() {
   if (window.__jr31ObserverInstalled) return;
   window.__jr31ObserverInstalled = true;
 
-  // Evita que las modificaciones de logos provoquen
-  // una actualización continua de toda la página.
-
   document.addEventListener('change', e => {
     const target = e.target;
     if (!(target instanceof Element)) return;
-
-    if (target.matches('select,input,[data-category]')) {
-      queueRefresh(100);
-    }
+    if (target.matches('select,input,[data-category]')) queueRefresh(100);
   }, true);
 
   document.addEventListener('click', e => {
     const target = e.target;
     if (!(target instanceof Element)) return;
     if (target.closest('#jr31Modal')) return;
-
-    if (target.closest(
-      '[data-view],[data-category],[data-admin],[role="tab"]'
-    )) {
-      queueRefresh(120);
-    }
+    if (target.closest('[data-view],[data-category],[data-admin],[role="tab"]')) queueRefresh(120);
   }, true);
 
   window.addEventListener('hashchange', () => queueRefresh(100));
   window.addEventListener('pageshow', () => queueRefresh(100));
 }
-
 function replacePublicCopy(){
   const candidates=qa('p').filter(el=>!(el.closest('#jr31Modal')) && el.children.length===0);
   candidates.forEach(el=>{

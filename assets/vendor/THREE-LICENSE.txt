@@ -1,0 +1,7 @@
+Three.js is licensed under the MIT License.
+
+Copyright © three.js authors
+
+This payload does not vendor Three.js source code. It only repairs the broken
+classic CDN reference in index.html to a compatible classic build URL, while
+the new JR football scene is independent and does not require Three.js.

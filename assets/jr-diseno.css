@@ -4,385 +4,99 @@
  * No modifica datos, resultados ni funciones JavaScript.
  */
 
-/* =====================================
-   PORTADA: composición deportiva
-   ===================================== */
-
-#v14CinematicHero {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  margin-block: 24px;
-  padding: clamp(22px, 5vw, 64px);
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 30px;
-  color: #f5f8f6;
-  background:
-    radial-gradient(
-      ellipse at 85% 25%,
-      rgba(34,224,122,.16),
-      transparent 55%
-    ),
-    linear-gradient(135deg, #101b18, #080e0c 70%);
-  box-shadow: 0 24px 60px rgba(0,0,0,.25);
+#v14CinematicHero{
+  position:relative;isolation:isolate;overflow:hidden;margin-block:24px;
+  padding:clamp(22px,5vw,64px);border:1px solid rgba(255,255,255,.14);
+  border-radius:30px;color:#f5f8f6;
+  background:radial-gradient(ellipse at 85% 25%,rgba(34,224,122,.16),transparent 55%),
+             linear-gradient(135deg,#101b18,#080e0c 70%);
+  box-shadow:0 24px 60px rgba(0,0,0,.25)
 }
+#v14CinematicHero .v14-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:clamp(20px,4vw,56px)}
+#v14CinematicHero .v14-copy,#v14CinematicHero .v14-stage{min-width:0}
+#v14CinematicHero .v14-kicker{color:#69f0a7;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+#v14CinematicHero .v14-lockup{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+#v14CinematicHero .v14-lockup img{width:62px;height:62px;object-fit:contain;flex:0 0 62px}
+#v14CinematicHero .v14-lockup b,#v14CinematicHero .v14-lockup small{display:block}
+#v14CinematicHero .v14-lockup b{font-size:12px;letter-spacing:.06em}
+#v14CinematicHero .v14-lockup small{color:#b4c5bc;font-size:11px;margin-top:4px}
+#v14CinematicHero .v14-title{margin:0;font-family:"Sora",system-ui,sans-serif;font-size:clamp(36px,5.7vw,78px);font-weight:800;line-height:1.04;letter-spacing:-.055em;color:#f5f8f6}
+#v14CinematicHero .v14-title .outline{color:#f5f8f6;-webkit-text-fill-color:#f5f8f6;-webkit-text-stroke:0}
+#v14CinematicHero .v14-title .electric{color:#45ed91;-webkit-text-fill-color:#45ed91}
+#v14CinematicHero .v14-lead{max-width:560px;margin:24px 0;color:#b4c5bc;font-size:clamp(14px,1.3vw,17px);line-height:1.8}
+#v14CinematicHero .v14-actions{display:flex;flex-wrap:wrap;gap:10px}
+#v14CinematicHero .v14-actions button{min-height:48px;white-space:normal}
+#v14CinematicHero .ghost-btn{color:#f5f8f6;background:#17271f;border-color:#385145}
+#v14CinematicHero .v14-stage{position:relative;width:100%;border-radius:28px;border:1px solid rgba(105,240,167,.16);background:radial-gradient(circle,rgba(34,224,122,.12),transparent 70%)}
+#v14CinematicHero .v14-ticker{margin-top:32px;border-top:1px solid rgba(255,255,255,.14);padding-block:16px;color:#c5d5cc}
 
-#v14CinematicHero .v14-grid {
-  display: grid;
-  grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr);
-  align-items: center;
-  gap: clamp(20px, 4vw, 56px);
+#view-matches,#view-calendar{
+  --jr-card-bg:#101a17;--jr-card-text:#f1f7f3;--jr-card-muted:#b3c4ba;
+  --jr-card-line:#30483b;--jr-card-accent:#61efa0
 }
-
-#v14CinematicHero .v14-copy,
-#v14CinematicHero .v14-stage {
-  min-width: 0;
+body.light #view-matches,body.light #view-calendar{
+  --jr-card-bg:#fff;--jr-card-text:#13251b;--jr-card-muted:#52675a;
+  --jr-card-line:#ceded3;--jr-card-accent:#08793e
 }
-
-#v14CinematicHero .v14-kicker {
-  color: #69f0a7;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  margin-bottom: 22px;
+:is(#view-matches,#view-calendar) .v20-calendar-sheet{
+  margin-block:24px;padding:clamp(14px,2.5vw,26px);border:1px solid var(--jr-card-line);
+  border-radius:24px;color:var(--jr-card-text);background:var(--jr-card-bg);
+  box-shadow:0 14px 36px rgba(0,0,0,.12)
 }
-
-#v14CinematicHero .v14-lockup {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 26px;
+:is(#view-matches,#view-calendar) .v20-sheet-head{
+  display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;
+  padding-bottom:20px;border-bottom:1px solid var(--jr-card-line)
 }
-
-#v14CinematicHero .v14-lockup img {
-  width: 62px;
-  height: 62px;
-  object-fit: contain;
-  flex: 0 0 62px;
+:is(#view-matches,#view-calendar) .v20-sheet-head h3{margin-block:8px;color:var(--jr-card-text);line-height:1.2}
+:is(#view-matches,#view-calendar) .v20-sheet-head p{color:var(--jr-card-muted)}
+:is(#view-matches,#view-calendar) .v20-group-head{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+  padding:18px 0;color:var(--jr-card-text);background:transparent
 }
-
-#v14CinematicHero .v14-lockup b,
-#v14CinematicHero .v14-lockup small {
-  display: block;
+:is(#view-matches,#view-calendar) .v20-game-head{display:none}
+:is(#view-matches,#view-calendar) .v20-game{
+  display:grid!important;grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr)!important;
+  align-items:center;gap:12px!important;margin-bottom:12px;padding:18px!important;
+  border:1px solid var(--jr-card-line);border-radius:18px;background:var(--jr-card-bg);
+  color:var(--jr-card-text);transition:border-color .18s ease,box-shadow .18s ease
 }
-
-#v14CinematicHero .v14-lockup b {
-  font-size: 12px;
-  letter-spacing: .06em;
+:is(#view-matches,#view-calendar) .v20-game>b{text-align:center;font-size:11px;letter-spacing:.08em;color:var(--jr-card-muted)}
+:is(#view-matches,#view-calendar) .v20-team-name{min-width:0!important;color:var(--jr-card-text)}
+:is(#view-matches,#view-calendar) .v32-team-inline{width:100%;font-size:14px;font-weight:800}
+:is(#view-matches,#view-calendar) .v20-team-name:nth-child(3) .v32-team-inline{justify-content:flex-end;text-align:right}
+:is(#view-matches,#view-calendar) .v32-team-inline>span{
+  white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
+  overflow-wrap:anywhere;line-height:1.35
 }
-
-#v14CinematicHero .v14-lockup small {
-  color: #b4c5bc;
-  font-size: 11px;
-  margin-top: 4px;
+:is(#view-matches,#view-calendar) .v20-time{grid-column:1;grid-row:2;color:var(--jr-card-accent);font-size:13px;font-weight:800}
+:is(#view-matches,#view-calendar) .v20-field{grid-column:2/4;grid-row:2;text-align:right;color:var(--jr-card-muted);font-size:12px;overflow-wrap:anywhere}
+:is(#view-matches,#view-calendar) .v20-game>small{grid-column:1/-1;padding-top:10px;border-top:1px solid var(--jr-card-line);color:var(--jr-card-muted)}
+:is(#view-matches,#view-calendar) .v20-game[data-v21-state="En vivo"]{border-color:#ed5366}
+:is(#view-matches,#view-calendar) .v20-game[data-v21-state="Finalizados"]{border-left:3px solid var(--jr-card-accent)}
+:is(#view-matches,#view-calendar) .v21-category-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-block:18px}
+:is(#view-matches,#view-calendar) .v21-category-tabs button{
+  min-height:44px;padding:10px 15px;border:1px solid var(--jr-card-line);border-radius:999px;
+  color:var(--jr-card-text);background:var(--jr-card-bg);font-weight:700
 }
-
-#v14CinematicHero .v14-title {
-  margin: 0;
-  font-family: "Sora", system-ui, sans-serif;
-  font-size: clamp(36px, 5.7vw, 78px);
-  font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -.055em;
-  color: #f5f8f6;
+:is(#view-matches,#view-calendar) .v21-category-tabs button.active{background:#45ed91;border-color:#45ed91;color:#062616}
+.v21-toolbar-actions,.v21-group-head-right{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+:is(#view-matches,#view-calendar) :is(.v21-download-btn,.v21-group-download){
+  min-height:44px;padding:10px 14px;border:1px solid var(--jr-card-line);border-radius:12px;
+  color:var(--jr-card-accent);background:var(--jr-card-bg);font-weight:800
 }
-
-#v14CinematicHero .v14-title .outline {
-  color: #f5f8f6;
-  -webkit-text-fill-color: #f5f8f6;
-  -webkit-text-stroke: 0;
+@media(hover:hover) and (pointer:fine){
+  :is(#view-matches,#view-calendar) .v20-game:hover{border-color:var(--jr-card-accent);box-shadow:0 8px 24px rgba(0,0,0,.16)}
 }
-
-#v14CinematicHero .v14-title .electric {
-  color: #45ed91;
-  -webkit-text-fill-color: #45ed91;
+:is(#v14CinematicHero,#view-matches,#view-calendar) :is(button,a,input,select):focus-visible{outline:3px solid #22e07a;outline-offset:4px}
+@media(max-width:760px){
+  #v14CinematicHero{padding:24px 18px;border-radius:22px}
+  #v14CinematicHero .v14-grid{grid-template-columns:minmax(0,1fr)}
+  #v14CinematicHero .v14-title{font-size:clamp(32px,8.5vw,60px)}
+  :is(#view-matches,#view-calendar) .v20-game{padding:14px!important;gap:10px!important}
+  :is(#view-matches,#view-calendar) .v32-team-inline{font-size:12px}
+  :is(#view-matches,#view-calendar) .v20-sheet-head{flex-direction:column}
 }
-
-#v14CinematicHero .v14-lead {
-  max-width: 560px;
-  margin: 24px 0;
-  color: #b4c5bc;
-  font-size: clamp(14px, 1.3vw, 17px);
-  line-height: 1.8;
-}
-
-#v14CinematicHero .v14-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-#v14CinematicHero .v14-actions button {
-  min-height: 48px;
-  white-space: normal;
-}
-
-#v14CinematicHero .ghost-btn {
-  color: #f5f8f6;
-  background: #17271f;
-  border-color: #385145;
-}
-
-#v14CinematicHero .v14-stage {
-  position: relative;
-  width: 100%;
-  border-radius: 28px;
-  border: 1px solid rgba(105,240,167,.16);
-  background:
-    radial-gradient(circle, rgba(34,224,122,.12), transparent 70%);
-}
-
-#v14CinematicHero .v14-ticker {
-  margin-top: 32px;
-  border-top: 1px solid rgba(255,255,255,.14);
-  padding-block: 16px;
-  color: #c5d5cc;
-}
-
-/* =====================================
-   PARTIDOS: tarjetas tipo dashboard
-   Usa el calendario V21 existente.
-   ===================================== */
-
-#view-matches,
-#view-calendar {
-  --jr-card-bg: #101a17;
-  --jr-card-text: #f1f7f3;
-  --jr-card-muted: #b3c4ba;
-  --jr-card-line: #30483b;
-  --jr-card-accent: #61efa0;
-}
-
-body.light #view-matches,
-body.light #view-calendar {
-  --jr-card-bg: #ffffff;
-  --jr-card-text: #13251b;
-  --jr-card-muted: #52675a;
-  --jr-card-line: #ceded3;
-  --jr-card-accent: #08793e;
-}
-
-:is(#view-matches, #view-calendar) .v20-calendar-sheet {
-  margin-block: 24px;
-  padding: clamp(14px, 2.5vw, 26px);
-  border: 1px solid var(--jr-card-line);
-  border-radius: 24px;
-  color: var(--jr-card-text);
-  background: var(--jr-card-bg);
-  box-shadow: 0 14px 36px rgba(0,0,0,.12);
-}
-
-:is(#view-matches, #view-calendar) .v20-sheet-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--jr-card-line);
-}
-
-:is(#view-matches, #view-calendar) .v20-sheet-head h3 {
-  margin-block: 8px;
-  color: var(--jr-card-text);
-  line-height: 1.2;
-}
-
-:is(#view-matches, #view-calendar) .v20-sheet-head p {
-  color: var(--jr-card-muted);
-}
-
-:is(#view-matches, #view-calendar) .v20-group-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 18px 0;
-  color: var(--jr-card-text);
-  background: transparent;
-}
-
-:is(#view-matches, #view-calendar) .v20-game-head {
-  display: none;
-}
-
-:is(#view-matches, #view-calendar) .v20-game {
-  display: grid !important;
-  grid-template-columns: minmax(0,1fr) 32px minmax(0,1fr) !important;
-  align-items: center;
-  gap: 12px !important;
-  margin-bottom: 12px;
-  padding: 18px !important;
-  border: 1px solid var(--jr-card-line);
-  border-radius: 18px;
-  background: var(--jr-card-bg);
-  color: var(--jr-card-text);
-  transition: border-color .18s ease, box-shadow .18s ease;
-}
-
-:is(#view-matches, #view-calendar) .v20-game > b {
-  text-align: center;
-  font-size: 11px;
-  letter-spacing: .08em;
-  color: var(--jr-card-muted);
-}
-
-:is(#view-matches, #view-calendar) .v20-team-name {
-  min-width: 0 !important;
-  color: var(--jr-card-text);
-}
-
-:is(#view-matches, #view-calendar) .v32-team-inline {
-  width: 100%;
-  font-size: 14px;
-  font-weight: 800;
-}
-
-:is(#view-matches, #view-calendar) .v20-team-name:nth-child(3)
-.v32-team-inline {
-  justify-content: flex-end;
-  text-align: right;
-}
-
-/* Mostrar nombres completos, no recortarlos con puntos suspensivos */
-:is(#view-matches, #view-calendar) .v32-team-inline > span {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-  overflow-wrap: anywhere;
-  line-height: 1.35;
-}
-
-:is(#view-matches, #view-calendar) .v20-time {
-  grid-column: 1;
-  grid-row: 2;
-  color: var(--jr-card-accent);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-:is(#view-matches, #view-calendar) .v20-field {
-  grid-column: 2 / 4;
-  grid-row: 2;
-  text-align: right;
-  color: var(--jr-card-muted);
-  font-size: 12px;
-  overflow-wrap: anywhere;
-}
-
-:is(#view-matches, #view-calendar) .v20-game > small {
-  grid-column: 1 / -1;
-  padding-top: 10px;
-  border-top: 1px solid var(--jr-card-line);
-  color: var(--jr-card-muted);
-}
-
-/* Solo se destaca LIVE cuando el dato ya lo indica */
-:is(#view-matches, #view-calendar)
-.v20-game[data-v21-state="En vivo"] {
-  border-color: #ed5366;
-}
-
-:is(#view-matches, #view-calendar)
-.v20-game[data-v21-state="Finalizados"] {
-  border-left: 3px solid var(--jr-card-accent);
-}
-
-:is(#view-matches, #view-calendar) .v21-category-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-block: 18px;
-}
-
-:is(#view-matches, #view-calendar) .v21-category-tabs button {
-  min-height: 44px;
-  padding: 10px 15px;
-  border: 1px solid var(--jr-card-line);
-  border-radius: 999px;
-  color: var(--jr-card-text);
-  background: var(--jr-card-bg);
-  font-weight: 700;
-}
-
-:is(#view-matches, #view-calendar) .v21-category-tabs button.active {
-  background: #45ed91;
-  border-color: #45ed91;
-  color: #062616;
-}
-
-.v21-toolbar-actions,
-.v21-group-head-right {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
-:is(#view-matches, #view-calendar)
-:is(.v21-download-btn, .v21-group-download) {
-  min-height: 44px;
-  padding: 10px 14px;
-  border: 1px solid var(--jr-card-line);
-  border-radius: 12px;
-  color: var(--jr-card-accent);
-  background: var(--jr-card-bg);
-  font-weight: 800;
-}
-
-/* =====================================
-   INTERACCIÓN Y ACCESIBILIDAD
-   ===================================== */
-
-@media (hover:hover) and (pointer:fine) {
-  :is(#view-matches, #view-calendar) .v20-game:hover {
-    border-color: var(--jr-card-accent);
-    box-shadow: 0 8px 24px rgba(0,0,0,.16);
-  }
-}
-
-:is(#v14CinematicHero, #view-matches, #view-calendar)
-:is(button, a, input, select):focus-visible {
-  outline: 3px solid #22e07a;
-  outline-offset: 4px;
-}
-
-@media (max-width:760px) {
-  #v14CinematicHero {
-    padding: 24px 18px;
-    border-radius: 22px;
-  }
-
-  #v14CinematicHero .v14-grid {
-    grid-template-columns: minmax(0,1fr);
-  }
-
-  #v14CinematicHero .v14-title {
-    font-size: clamp(32px, 8.5vw, 60px);
-  }
-
-  :is(#view-matches, #view-calendar) .v20-game {
-    padding: 14px !important;
-    gap: 10px !important;
-  }
-
-  :is(#view-matches, #view-calendar) .v32-team-inline {
-    font-size: 12px;
-  }
-
-  :is(#view-matches, #view-calendar) .v20-sheet-head {
-    flex-direction: column;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  :is(#view-matches, #view-calendar) .v20-game {
-    transition: none;
-  }
-
-  #v14CinematicHero .v14-track {
-    animation: none !important;
-  }
+@media(prefers-reduced-motion:reduce){
+  :is(#view-matches,#view-calendar) .v20-game{transition:none}
+  #v14CinematicHero .v14-track{animation:none!important}
 }

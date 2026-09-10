@@ -1,0 +1,34 @@
+:root{
+  --jr34-bg:#07100c;--jr34-surface:#0d1813;--jr34-surface2:#12221a;
+  --jr34-line:rgba(117,255,178,.16);--jr34-accent:#45ed91;
+  --jr34-text:#f3fff8;--jr34-muted:#9db5a8;--jr34-gold:#f2c14e
+}
+body.light{--jr34-bg:#f4f7f5;--jr34-surface:#fff;--jr34-surface2:#eef5f0;--jr34-line:rgba(10,80,45,.16);--jr34-accent:#08793e;--jr34-text:#12231a;--jr34-muted:#607568}
+#jr34ExperienceStrip{position:relative;isolation:isolate;margin:20px 0 28px;padding:16px;border:1px solid var(--jr34-line);border-radius:24px;background:linear-gradient(135deg,rgba(69,237,145,.08),transparent 42%),var(--jr34-surface);box-shadow:0 18px 42px rgba(0,0,0,.15);overflow:hidden}
+#jr34ExperienceStrip:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-90px;top:-110px;background:radial-gradient(circle,rgba(69,237,145,.16),transparent 70%);pointer-events:none}
+.jr34-kicker{color:var(--jr34-accent);font-size:11px;letter-spacing:.16em;font-weight:900;text-transform:uppercase}
+.jr34-strip-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:8px 0 14px}
+.jr34-strip-head h2{margin:0;color:var(--jr34-text);font-size:clamp(21px,3vw,34px)}
+.jr34-strip-head p{max-width:620px;margin:0;color:var(--jr34-muted);font-size:13px;line-height:1.6}
+.jr34-quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.jr34-card{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0;min-height:116px;padding:16px;border:1px solid var(--jr34-line);border-radius:18px;color:var(--jr34-text);background:linear-gradient(180deg,var(--jr34-surface2),var(--jr34-surface));box-shadow:inset 0 1px rgba(255,255,255,.04),0 8px 20px rgba(0,0,0,.12);text-align:left;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.jr34-card img{width:24px;height:24px;object-fit:contain}.jr34-card b{font-size:13px;line-height:1.3}.jr34-card small{color:var(--jr34-muted);line-height:1.45}
+.jr34-tools{margin:22px 0;padding:18px;border:1px solid var(--jr34-line);border-radius:22px;background:var(--jr34-surface)}
+.jr34-tools h3{margin:0 0 6px;color:var(--jr34-text)}.jr34-tools>p{margin:0 0 14px;color:var(--jr34-muted);font-size:13px}
+.jr34-tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.jr34-tool{min-height:94px;padding:14px;border:1px solid var(--jr34-line);border-radius:16px;background:var(--jr34-surface2);color:var(--jr34-text);text-align:left}.jr34-tool strong,.jr34-tool small{display:block}.jr34-tool small{margin-top:5px;color:var(--jr34-muted);line-height:1.45}
+.jr34-modal-bg{position:fixed;inset:0;z-index:100000;display:none;place-items:center;padding:16px;background:rgba(0,0,0,.72);backdrop-filter:blur(14px)}.jr34-modal-bg.show{display:grid}
+.jr34-modal{width:min(980px,100%);max-height:min(88dvh,900px);overflow:auto;border:1px solid var(--jr34-line);border-radius:24px;background:var(--jr34-bg);color:var(--jr34-text);box-shadow:0 30px 90px rgba(0,0,0,.5)}
+.jr34-modal-head{position:sticky;top:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--jr34-line);background:var(--jr34-bg)}
+.jr34-modal-head h3{margin:0}.jr34-close{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--jr34-line);border-radius:13px;background:var(--jr34-surface2);color:var(--jr34-text);font-size:24px}.jr34-modal-body{padding:16px}
+.jr34-install-state{display:inline-flex;align-items:center;gap:7px;margin-top:10px;padding:7px 10px;border-radius:999px;background:rgba(69,237,145,.1);color:var(--jr34-accent);font-size:11px;font-weight:800}
+.jr34-install-list{display:grid;gap:10px;margin-top:12px}.jr34-install-step{padding:12px;border:1px solid var(--jr34-line);border-radius:14px;background:var(--jr34-surface2);color:var(--jr34-text)}.jr34-install-step b{display:block;margin-bottom:4px}.jr34-install-step p{margin:0;color:var(--jr34-muted);font-size:12px;line-height:1.55}
+.jr34-sim-note{margin:0 0 14px;padding:12px 14px;border:1px solid rgba(242,193,78,.3);border-radius:14px;background:rgba(242,193,78,.08);color:var(--jr34-text);font-size:12px}
+.jr34-sim-list{display:grid;gap:9px}.jr34-sim-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center;padding:12px;border:1px solid var(--jr34-line);border-radius:15px;background:var(--jr34-surface)}.jr34-sim-row .away{text-align:right}.jr34-pred{min-width:60px;padding:7px 9px;border-radius:11px;background:rgba(69,237,145,.12);color:var(--jr34-accent);font-weight:900;text-align:center}
+.jr34-tactics-shell{display:grid;gap:12px}.jr34-tactics-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.jr34-tactics-toolbar select,.jr34-tactics-toolbar button{min-height:42px;padding:8px 11px;border:1px solid var(--jr34-line);border-radius:12px;background:var(--jr34-surface2);color:var(--jr34-text)}.jr34-tactics-toolbar button.active{border-color:var(--jr34-accent);color:var(--jr34-accent)}
+.jr34-pitch-wrap{width:100%;overflow:hidden;border:1px solid var(--jr34-line);border-radius:18px;background:#0b2a18;touch-action:none}#jr34TacticsCanvas{display:block;width:100%;aspect-ratio:16/10;touch-action:none}.jr34-tactics-help{margin:0;color:var(--jr34-muted);font-size:12px;line-height:1.5}
+#v14CinematicHero .v14-stage{min-height:420px}#jrAstraFootballScene{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:auto;border-radius:inherit}
+@media(hover:hover) and (pointer:fine){.jr34-card:hover{transform:translateY(-3px);border-color:var(--jr34-accent);box-shadow:0 14px 28px rgba(0,0,0,.18)}}
+@media(max-width:900px){.jr34-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jr34-tool-grid{grid-template-columns:1fr}.jr34-strip-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){#jr34ExperienceStrip{padding:13px;border-radius:19px}.jr34-card{min-height:106px;padding:13px}.jr34-modal-bg{padding:8px}.jr34-modal{border-radius:18px}.jr34-modal-body{padding:10px}.jr34-sim-row{grid-template-columns:minmax(0,1fr) 52px minmax(0,1fr);font-size:12px}#v14CinematicHero .v14-stage{min-height:330px}}
+@media(prefers-reduced-motion:reduce){.jr34-card{transition:none}}

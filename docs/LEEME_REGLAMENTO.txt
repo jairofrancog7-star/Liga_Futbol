@@ -1,0 +1,7 @@
+REGLAMENTO PÚBLICO
+===================
+Incluye el Reglamento de la Liga Municipal de Fútbol "Juventino Rosas A. C.",
+2026-2027, recuperado del archivo que el usuario había subido previamente.
+
+Ruta después de aplicar:
+./docs/Reglamento_Liga_Juventino_Rosas_2026-2027.pdf
