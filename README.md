@@ -1,3 +1,7 @@
+# Liga Juventino Rosas · MASTER V31.6
+
+Corrección de logos duplicados en portada, Match Center, tabla y goleadores.
+
 # Liga Juventino Rosas
 
 Plataforma de la **Liga Municipal de Fútbol Juventino Rosas A.C.**

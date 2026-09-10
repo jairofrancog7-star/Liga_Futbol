@@ -256,7 +256,7 @@ function cleanLegacyLogoDuplicates(){
 
   // Si algún render previo dejó más de una imagen dentro de una misma celda de equipo,
   // conserva sólo la primera. No toca otros elementos de la fila.
-  qa('#view-home td,#view-table td').forEach(cell=>{
+  qa('#view-home td,#view-table td,#view-stats .jr31-click,#view-home .team,#view-match .team,#gran-final-veteranos-v16 .team').forEach(cell=>{
     const text=(cell.textContent||'').trim();
     const team=teamFromAnyText(text);
     if(!team) return;
@@ -267,6 +267,98 @@ function cleanLegacyLogoDuplicates(){
       if(logoWrap) logoWrap.remove();
       else img.remove();
     });
+  });
+}
+
+
+function firstTextNode(el){
+  for(const node of el.childNodes){
+    if(node.nodeType===Node.TEXT_NODE && node.textContent.trim()) return node;
+  }
+  return null;
+}
+function setSingleLogoInBlock(block, team){
+  if(!block || !team) return;
+  logoFor(team).then(logo=>{
+    if(!logo) return;
+    const imgs=qa('img',block);
+    const unique=[];
+    const seen=new Set();
+    imgs.forEach(img=>{
+      const key=(img.currentSrc||img.src||'').split('?')[0];
+      if(!key) return;
+      if(seen.has(key)) img.remove();
+      else { seen.add(key); unique.push(img); }
+    });
+    let wrap=q('.team-logo,.jr31-teamcell__logo,.team-badge,.club-logo,.logo',block);
+    if(!wrap){
+      wrap=document.createElement('div');
+      wrap.className='team-logo';
+      const first=block.firstElementChild;
+      if(first) block.insertBefore(wrap, first); else block.prepend(wrap);
+    }
+    wrap.innerHTML=`<img src="${esc(logo)}" alt="${esc(team)}">`;
+    // Remove any other inline logo wrappers in this block.
+    qa('.jr31-teamcell__logo,.team-badge,.club-logo,.logo',block).forEach(node=>{ if(node!==wrap) node.remove(); });
+    qa('img',block).forEach((img,i)=>{ if(!wrap.contains(img)) img.remove(); });
+    // Clean orphan initial placeholders when a real logo exists.
+    block.childNodes.forEach(node=>{
+      if(node.nodeType===Node.TEXT_NODE && /^[A-Z]{1,2}$/.test(node.textContent.trim())) node.textContent='';
+    });
+  }).catch(()=>{});
+}
+
+function normalizeRepeatedLogos(){
+  // Hero / match-center teams: replace placeholders by one real logo and remove mini duplicate logos.
+  qa('.match-hero .team, .live-score .team, .match-center .team, .team-card, .fixture-team').forEach(block=>{
+    const team=teamFromAnyText(block.textContent||'');
+    if(team) setSingleLogoInBlock(block, team);
+  });
+
+  // Tables and cards: if a team cell or card has multiple logos, keep a single unique logo.
+  qa('td, th, .player-card, .scorer-card, .table-team, .team-row, .fixture-row').forEach(cell=>{
+    const team=teamFromAnyText(cell.textContent||'');
+    if(!team) return;
+    const imgs=qa('img',cell);
+    if(!imgs.length) return;
+    const seen=new Set();
+    let keep=null;
+    imgs.forEach(img=>{
+      const key=(img.currentSrc||img.src||'').split('?')[0];
+      if(!key) return;
+      if(!keep){ keep=img; seen.add(key); return; }
+      if(seen.has(key) || imgs.length>1) img.remove();
+    });
+    if(keep){
+      const wrappers=qa('.jr31-teamcell__logo',cell);
+      wrappers.forEach((w,i)=>{ if(i>0) w.remove(); });
+    }
+  });
+
+  // Top scorers: separate player name and team label neatly.
+  qa('#view-stats .jr31-click, #view-stats .top-scorer-item, #view-stats .scorer-card, #view-stats li').forEach(card=>{
+    const txt=(card.textContent||'').trim();
+    const team=teamFromAnyText(txt);
+    if(!team) return;
+    const logoImgs=qa('img',card);
+    const logoSrc=logoImgs[0]?.src||'';
+    // If team name is jammed into a heading, add a small sublabel instead of duplicating text.
+    const heading=q('h3,h4,b,strong',card);
+    if(heading){
+      const teamNorm=norm(team);
+      const raw=heading.textContent||'';
+      if(norm(raw).includes(teamNorm)){
+        const cleaned=raw.replace(new RegExp(team.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'i'),'').replace(/\s{2,}/g,' ').trim();
+        if(cleaned) heading.textContent=cleaned;
+      }
+      let sub=q('.jr31-team-sub',card);
+      if(!sub){
+        sub=document.createElement('small');
+        sub.className='jr31-team-sub';
+        heading.insertAdjacentElement('afterend', sub);
+      }
+      sub.innerHTML=(logoSrc?`<img src="${esc(logoSrc)}" alt="${esc(team)}"> `:'')+esc(team);
+    }
   });
 }
 
@@ -329,8 +421,8 @@ function boot(){
  cleanLegacyLogoDuplicates();
  decorateSafe();
  document.addEventListener('click',clickHandler,true);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();decorateSafe()},350);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();decorateSafe()},1200);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateSafe()},350);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateSafe()},1200);
  guardAgainstOldCollapse();
  window.LJR_V31={openTeam,openVenue,openCats,go,fixFinalHero,cleanLegacyLogoDuplicates};
 }
