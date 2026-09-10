@@ -1,4 +1,4 @@
-(function(){
+﻿(function(){
 'use strict';
 
 const CATS=['Primera Fuerza','Intermedia','Segunda Fuerza','Veteranos 35+','Veteranos 50+'];
@@ -530,6 +530,11 @@ function guardAgainstOldCollapse(){
    }
  },1600);
 }
+  /* MASTER V32.1 DESACTIVA LOGOS LEGACY START */
+  async function decorateLogos(){ return; }
+  async function decorateScheduleLogosAllCategories(){ return; }
+  function dedupeScheduleLogosAllCategories(){ return; }
+  /* MASTER V32.1 DESACTIVA LOGOS LEGACY END */
 function boot(){
  refreshScheduleDecorations();
  decorateSafe();

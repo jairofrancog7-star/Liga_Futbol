@@ -115,8 +115,8 @@
       el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();activate(el)}};
     });
   }
-
-  const TEAM_LOGOS_V32={
+  /* MASTER V32.1 LOGOS START */
+  const TEAM_LOGOS_V321={
     "c. de gasca":"./assets/teams/deportivo-cg.webp",
     "pozos fc":"./assets/teams/pozos-fc.webp",
     "juventus":"./assets/teams/juventus.webp",
@@ -124,40 +124,74 @@
     "psv":"./assets/teams/psv.webp",
     "a. santiago":"./assets/teams/atletico-santiago.webp",
     "f. tavera":"./assets/teams/franco-tavera-jr-veteranos.webp",
+
     "hermanos":"./assets/teams/club-deportivo-hermanos.webp",
     "linces":"./assets/teams/linces.webp",
     "lobos cdg":"./assets/teams/lobos-cdg.webp",
-    "franco fc":"./assets/teams/franco-fc.webp",
     "terricolas":"./assets/teams/terricolas-fc.webp",
     "galacticos":"./assets/teams/galacticos-pozos.webp",
+    "franco fc":"./assets/teams/franco-fc.webp",
     "herreras fc":"./assets/teams/herrera-fc.webp",
+
+    "la canchita deportes":"./assets/teams/la-canchita.webp",
     "galeana":"./assets/teams/atletico-galeana.webp",
     "aldama fc":"./assets/teams/aldama.webp",
-    "la canchita deportes":"./assets/teams/la-canchita.webp",
-    "la huerta":"./assets/teams/la-huerta-cuenda.webp",
     "san antonio jrs":"./assets/teams/san-antonio-jr.webp",
     "promesas fc":"./assets/teams/promesas-fc-pozos.webp",
+    "la huerta":"./assets/teams/la-huerta-cuenda.webp",
+
+    "tavera fc":"./assets/teams/tavera-fc.webp",
     "san jose jrs":"./assets/teams/san-jose-jr.webp",
     "san jose fc":"./assets/teams/san-jose.webp",
     "san julian":"./assets/teams/san-julian-fc.webp",
-    "tavera fc":"./assets/teams/tavera-fc.webp",
     "dep. nopalero":"./assets/teams/deportivo-nopalero.webp",
+
     "la esperanza":"./assets/teams/la-esperanza-fc.webp",
     "manchester":"./assets/teams/manchester-united.webp",
     "toros de cuenda":"./assets/teams/tc-cuenda.webp"
   };
 
-  function teamLogoSrcV32(name,category){
-    const key=norm(name);
-    if(key==="pozos fc" && category==="Veteranos 35+") return "./assets/teams/veteranos-pozos-fc.webp";
-    return TEAM_LOGOS_V32[key]||"";
+  const TEAM_ALIASES_V321={
+    "c de gasca":"c. de gasca",
+    "cd gasca":"c. de gasca",
+    "cerrito de gasca":"c. de gasca",
+    "pozos":"pozos fc",
+    "juve":"juventus",
+    "atletico santiago":"a. santiago",
+    "franco tavera":"f. tavera",
+    "deportivo nopalero":"dep. nopalero",
+    "dep nopalero":"dep. nopalero",
+    "san jose jr":"san jose jrs",
+    "san antonio jr":"san antonio jrs",
+    "la esperanza fc":"la esperanza",
+    "toros cuenda":"toros de cuenda"
+  };
+
+  function teamKeyV321(name){
+    const key=norm(name)
+      .replace(/[^\w\s.]/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+    return TEAM_ALIASES_V321[key]||key;
   }
 
-  function teamBadgeV32(name,category){
-    const src=teamLogoSrcV32(name,category);
-    if(!src) return `<span class="v32-team-inline" data-jr31-team="${esc(name)}"><span>${esc(name)}</span></span>`;
-    return `<span class="v32-team-inline" data-jr31-team="${esc(name)}"><img class="v32-team-logo" src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()"><span>${esc(name)}</span></span>`;
+  function teamLogoSrcV321(name,category){
+    const key=teamKeyV321(name);
+    if(key==="pozos fc" && category==="Veteranos 35+"){
+      return "./assets/teams/veteranos-pozos-fc.webp";
+    }
+    return TEAM_LOGOS_V321[key]||"";
   }
+
+  function teamBadgeV321(name,category){
+    const safe=esc(name);
+    const src=teamLogoSrcV321(name,category);
+    if(!src){
+      return `<span class="v32-team-inline" data-jr31-team="${safe}"><span>${safe}</span></span>`;
+    }
+    return `<span class="v32-team-inline" data-jr31-team="${safe}"><img class="v32-team-logo" src="${esc(src)}" alt="${safe}" loading="lazy" onerror="this.remove()"><span>${safe}</span></span>`;
+  }
+  /* MASTER V32.1 LOGOS END */
   function gameState(g){
     if(g.live===true) return "En vivo";
     if(g.note && /^gana\b/i.test(g.note.trim())) return "Finalizados";
@@ -192,8 +226,8 @@
     if(g.rest) return `<div class="v20-rest">DESCANSA: <b>${esc(g.rest)}</b></div>`;
     const state=gameState(g);
     return `<div class="v20-game" data-v21-state="${esc(state)}">
-      <span class="v20-team-name">${teamBadgeV32(g.home,category)}</span><b>VS</b>
-      <span class="v20-team-name">${teamBadgeV32(g.away,category)}</span>
+      <span class="v20-team-name">${teamBadgeV321(g.home,category)}</span><b>VS</b>
+      <span class="v20-team-name">${teamBadgeV321(g.away,category)}</span>
       <span class="v20-time">${esc(g.time||"—")}</span>
       <span class="v20-field">${esc(g.field||g.note||"—")}</span>
       ${g.note?`<small>${esc(g.note)}</small>`:""}

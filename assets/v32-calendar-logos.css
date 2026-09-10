@@ -1,11 +1,16 @@
-/* MASTER V32 · logos generados directamente por v21-functional.js */
+/* MASTER V32.1 · logos verificados, sin duplicados */
+
+.v20-game .v20-team-name{
+  min-width:0 !important;
+  overflow:visible !important;
+}
 
 .v20-game .v32-team-inline{
   display:inline-flex !important;
   align-items:center !important;
   gap:8px !important;
-  min-width:0 !important;
   max-width:100% !important;
+  min-width:0 !important;
   vertical-align:middle !important;
 }
 
@@ -17,44 +22,42 @@
 }
 
 .v20-game .v32-team-logo{
-  width:22px !important;
-  height:22px !important;
-  min-width:22px !important;
-  min-height:22px !important;
-  max-width:22px !important;
-  max-height:22px !important;
+  width:24px !important;
+  height:24px !important;
+  min-width:24px !important;
+  min-height:24px !important;
+  max-width:24px !important;
+  max-height:24px !important;
+  flex:0 0 24px !important;
   object-fit:contain !important;
   display:block !important;
-  flex:0 0 22px !important;
-  padding:1px !important;
   border-radius:6px !important;
+  padding:1px !important;
   background:rgba(255,255,255,.04) !important;
   border:1px solid rgba(255,255,255,.08) !important;
 }
 
-/* El logo nunca debe tapar el nombre en portada / Match Center. */
-.match-hero .team,
-.live-score .team,
-.match-center .team,
-.fixture-team{
-  min-width:0 !important;
+/* Nunca mostrar dos logos V32 en la misma celda */
+.v20-team-name .v32-team-logo ~ .v32-team-logo{
+  display:none !important;
 }
 
+/* Evita que logos grandes tapen nombres en portada / Match Center */
 .match-hero .team-logo,
 .live-score .team-logo,
 .match-center .team-logo,
 .fixture-team .team-logo{
   width:56px !important;
   height:56px !important;
-  max-width:56px !important;
-  max-height:56px !important;
   min-width:56px !important;
   min-height:56px !important;
-  margin:0 auto 8px !important;
-  padding:4px !important;
+  max-width:56px !important;
+  max-height:56px !important;
   display:grid !important;
   place-items:center !important;
   overflow:hidden !important;
+  margin:0 auto 8px !important;
+  padding:4px !important;
 }
 
 .match-hero .team-logo img,
@@ -85,14 +88,14 @@
 }
 
 @media(max-width:720px){
-  .v20-game .v32-team-logo{
-    width:20px !important;
-    height:20px !important;
-    min-width:20px !important;
-    min-height:20px !important;
-    max-width:20px !important;
-    max-height:20px !important;
-    flex-basis:20px !important;
-  }
   .v20-game .v32-team-inline{gap:6px !important}
+  .v20-game .v32-team-logo{
+    width:21px !important;
+    height:21px !important;
+    min-width:21px !important;
+    min-height:21px !important;
+    max-width:21px !important;
+    max-height:21px !important;
+    flex-basis:21px !important;
+  }
 }
