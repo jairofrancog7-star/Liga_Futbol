@@ -1,31 +1,27 @@
 # Liga Juventino Rosas
 
-Plataforma unificada para la **Liga Municipal de Futbol Juventino Rosas A.C.**
+Plataforma de la **Liga Municipal de Fútbol Juventino Rosas A.C.**
 
-## Abrir pagina
+## Página en vivo
 
-**Pagina en vivo:**  
 https://jairofrancog7-star.github.io/Liga_Futbol/
 
-**Repositorio:**  
-https://github.com/jairofrancog7-star/Liga_Futbol
+## Qué incluye
 
-## Funciones actuales
-
-- Jornadas y resultados.
+- Jornadas y resultados por categoría.
 - Tabla de posiciones.
-- Estadisticas y goleadores.
-- Equipos y fichas interactivas.
-- Campos y sedes con Google Maps.
+- Estadísticas y goleadores.
+- Equipos y fichas.
+- Campos / sedes con acceso a Google Maps.
 - Copa / liguilla.
 - Match Center.
-- JR Control para administracion.
-- Cinco categorias: Primera Fuerza, Intermedia, Segunda Fuerza, Veteranos 35+ y Veteranos 50+.
+- JR Control.
+- Cinco categorías: Primera Fuerza, Intermedia, Segunda Fuerza, Veteranos 35+ y Veteranos 50+.
 
-## Seguridad
+## Estado
 
-No subir datos personales reales como INE, CURP, contrasenas, tokens o archivos privados al repositorio publico.
+**MASTER V31 · Recuperación del checkpoint estable**
 
-## Version actual
+Esta versión prioriza estabilidad multiplataforma, elimina cachés viejas que podían dejar la página mostrando únicamente una tarjeta de jugador y evita volver a modificar contenedores grandes del DOM.
 
-**MASTER V30.4**
+> No publiques INE, CURP, contraseñas, tokens ni archivos privados en este repositorio público.
