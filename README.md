@@ -1,43 +1,31 @@
 # Liga Juventino Rosas
 
-Plataforma unificada para la **Liga Municipal de Fútbol Juventino Rosas A.C.**
+Plataforma unificada para la **Liga Municipal de Futbol Juventino Rosas A.C.**
 
-## Qué incluye esta versión
+## Abrir pagina
 
-- Inicio con acceso rápido a Match Center, jornadas y liguilla.
-- Calendario clasificado por categorías.
-- Tabla de posiciones por categoría.
-- Estadísticas y goleadores.
-- Fichas interactivas de equipos.
-- Sedes y canchas con acceso a Google Maps.
-- Panel **JR Control** para operación y administración.
-- Base preparada para registro de jugadores, credenciales, sanciones y reportes.
+**Pagina en vivo:**  
+https://jairofrancog7-star.github.io/Liga_Futbol/
 
-## Categorías actuales
+**Repositorio:**  
+https://github.com/jairofrancog7-star/Liga_Futbol
 
-- Primera Fuerza
-- Intermedia
-- Segunda Fuerza
-- Veteranos 35+
-- Veteranos 50+
+## Funciones actuales
 
-## Estructura general
+- Jornadas y resultados.
+- Tabla de posiciones.
+- Estadisticas y goleadores.
+- Equipos y fichas interactivas.
+- Campos y sedes con Google Maps.
+- Copa / liguilla.
+- Match Center.
+- JR Control para administracion.
+- Cinco categorias: Primera Fuerza, Intermedia, Segunda Fuerza, Veteranos 35+ y Veteranos 50+.
 
-- `index.html` — entrada principal de la app
-- `assets/` — estilos, scripts, logos y recursos visuales
-- `data/` — calendarios, tablas y datos cargados
-- `docs/` — notas internas y guía del proyecto
+## Seguridad
 
-## Objetivo del proyecto
+No subir datos personales reales como INE, CURP, contrasenas, tokens o archivos privados al repositorio publico.
 
-Tener una página moderna, rápida e interactiva para que la liga pueda:
+## Version actual
 
-- publicar jornadas;
-- consultar resultados;
-- organizar equipos y jugadores;
-- ubicar canchas;
-- compartir información con delegados, jugadores y afición.
-
-## Nota
-
-Este README quedó limpiado para dejar **solo la versión actual del proyecto**, sin enlaces ni bloques viejos de versiones anteriores.
+**MASTER V30.4**

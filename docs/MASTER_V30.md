@@ -1,14 +1,17 @@
-# MASTER V30 · Ajustes finales directos
+# MASTER V30.4
 
-Esta versión corrige y refuerza lo pedido por el usuario:
+Correccion de estabilidad.
 
-- LIVE Match Center y JR Matchday quedan clicables.
-- “5 categorías” abre selector funcional.
-- El rótulo técnico “MASTER V14…” se sustituye por un texto de la liga.
-- El bracket muestra **Campeón por definir / Por determinar**.
-- Los equipos abren ficha con descripción, categoría y acceso a partidos/tabla.
-- Los campos y sedes abren descripción con acceso a Google Maps.
-- El pulso de la afición admite un voto por dispositivo.
-- Goleadores y jugadores destacados abren ficha funcional.
-- Se intentan mostrar logos de equipos en partidos cuando el logo ya existe en la página.
-- El README se limpia para dejar solo la versión actual del proyecto.
+La causa del colapso visual no estaba ya en V30.3. La capa `v28-functional.js`
+seguia siendo cargada desde `v27-intelligent.js`.
+
+V28 contiene una rutina `fixPlayerCards()` que busca `.card, article, div`
+con nombres de goleadores y reescribe `innerHTML`. Un contenedor grande puede
+coincidir y terminar convertido en una sola tarjeta de jugador.
+
+V30.4 elimina esa capa antigua:
+- quita el loader de V28 de V27;
+- elimina los assets V28;
+- elimina V28 del cache del Service Worker;
+- conserva V30 estable;
+- restaura el enlace de la pagina en README.
