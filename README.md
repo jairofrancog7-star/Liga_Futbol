@@ -20,7 +20,7 @@ https://jairofrancog7-star.github.io/Liga_Futbol/
 
 ## Estado
 
-**MASTER V31 · Recuperación del checkpoint estable**
+**MASTER V31.1 · Logos en partidos**
 
 Esta versión prioriza estabilidad multiplataforma, elimina cachés viejas que podían dejar la página mostrando únicamente una tarjeta de jugador y evita volver a modificar contenedores grandes del DOM.
 

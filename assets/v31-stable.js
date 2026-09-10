@@ -39,13 +39,107 @@ const VENUES={
  'san antonio de romerillo':['San Antonio de Romerillo','San Antonio de Romerillo, Juventino Rosas, Guanajuato','https://www.google.com/maps/dir/?api=1&destination=San+Antonio+de+Romerillo%2C+Juventino+Rosas%2C+Guanajuato']
 };
 
+
+const DIRECT_LOGOS={
+  'pozos fc':'./assets/teams/veteranos-pozos-fc.webp',
+  'juventus':'./assets/teams/juventus.webp',
+  'boavista':'./assets/teams/boavista-fc.webp',
+  'psv':'./assets/teams/psv.webp',
+  'a. santiago':'./assets/teams/atletico-santiago.webp',
+  'f. tavera':'./assets/teams/franco-tavera-jr-veteranos.webp',
+  'hermanos':'./assets/teams/club-deportivo-hermanos.webp',
+  'linces':'./assets/teams/linces.webp',
+  'lobos cdg':'./assets/teams/lobos-cdg.webp',
+  'franco fc':'./assets/teams/franco-fc.webp',
+  'terricolas':'./assets/teams/terricolas-fc.webp',
+  'la canchita deportes':'./assets/teams/la-canchita.webp',
+  'aldama fc':'./assets/teams/aldama.webp',
+  'la huerta':'./assets/teams/la-huerta-cuenda.webp',
+  'san antonio jrs':'./assets/teams/san-antonio-jr.webp',
+  'san jose jrs':'./assets/teams/san-jose-jr.webp',
+  'san jose fc':'./assets/teams/san-jose.webp',
+  'san julian':'./assets/teams/san-julian-fc.webp',
+  'tavera fc':'./assets/teams/tavera-fc.webp',
+  'dep. nopalero':'./assets/teams/deportivo-nopalero.webp',
+  'la esperanza':'./assets/teams/la-esperanza-fc.webp',
+  'manchester':'./assets/teams/manchester-united.webp'
+};
+
+const LOGO_CACHE = new Map();
+
 function q(s,r=document){return r.querySelector(s)}
 function qa(s,r=document){return [...r.querySelectorAll(s)]}
 function norm(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim()}
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function initials(s){return String(s||'').split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()}
+function slugify(s){
+  return norm(s)
+    .replace(/\bc\.\s*de\b/g,'cerrito-de')
+    .replace(/\bdep\.\s*/g,'deportivo-')
+    .replace(/\bf\.\s*/g,'f-')
+    .replace(/[^a-z0-9]+/g,'-')
+    .replace(/^-+|-+$/g,'')
+}
 function teamFromText(t){const n=norm(t);return TEAMS.find(x=>n===norm(x))||''}
-function logoFor(team){const n=norm(team);const img=qa('img').find(i=>norm(i.alt||'')===n||norm(i.title||'')===n);return img?img.src:''}
+
+function logoCandidates(team){
+  const slug = slugify(team);
+  const alt = [...new Set([
+    slug,
+    slug.replace(/^cerrito-de-gasca$/,'c-de-gasca'),
+    slug.replace(/^deportivo-zapata$/,'dep-zapata'),
+    slug.replace(/^deportivo-maravillas$/,'dep-maravillas'),
+    slug.replace(/^f-tavera$/,'f-tavera'),
+    slug.replace(/^san-jose-jrs$/,'san-jose-jrs'),
+    slug.replace(/^san-antonio-jrs$/,'san-antonio-jrs')
+  ])];
+  const dirs = [
+    './assets/logos/','./assets/escudos/','./assets/equipos/','./assets/teams/',
+    './img/logos/','./img/escudos/','./img/equipos/','./images/logos/','./logos/','./escudos/'
+  ];
+  const exts = ['png','webp','jpg','jpeg','svg'];
+  const out = [];
+  for(const d of dirs){ for(const a of alt){ for(const e of exts){ out.push(`${d}${a}.${e}`) }}}
+  return out;
+}
+function probeImage(url){
+  return new Promise(resolve=>{
+    const img = new Image();
+    img.onload = ()=>resolve(url);
+    img.onerror = ()=>resolve('');
+    img.src = url;
+  });
+}
+async function logoFor(team){
+  const key = norm(team);
+  if(LOGO_CACHE.has(key)) return LOGO_CACHE.get(key);
+
+  const direct = DIRECT_LOGOS[key];
+  if(direct){
+    const found = await probeImage(direct);
+    if(found){
+      LOGO_CACHE.set(key, found);
+      return found;
+    }
+  }
+
+  const dom = qa('img').find(i=>norm(i.alt||'')===key || norm(i.title||'')===key);
+  if(dom && dom.src){
+    LOGO_CACHE.set(key, dom.src);
+    return dom.src;
+  }
+
+  for(const candidate of logoCandidates(team)){
+    const found = await probeImage(candidate);
+    if(found){
+      LOGO_CACHE.set(key, found);
+      return found;
+    }
+  }
+
+  LOGO_CACHE.set(key, '');
+  return '';
+}
 
 function modal(){
  let m=q('#jr31Modal'); if(m)return m;
@@ -58,9 +152,6 @@ function modal(){
 }
 function openModal(title,html){
  const m=modal(); q('h3',m).textContent=title; q('.jr31-modal__body',m).innerHTML=html; m.classList.add('show'); return m;
-}
-function toast(msg){
- q('.jr31-toast')?.remove(); const t=document.createElement('div'); t.className='jr31-toast'; t.textContent=msg; document.body.appendChild(t); setTimeout(()=>t.remove(),1800);
 }
 function clickText(words){
  const arr=Array.isArray(words)?words:[words];
@@ -75,9 +166,9 @@ function go(view){
 }
 function setCat(cat){localStorage.setItem('jrCategory',cat);const b=qa('[data-category],button,a').find(x=>norm(x.dataset?.category||x.textContent)===norm(cat));if(b)b.click()}
 
-function openTeam(team){
+async function openTeam(team){
  const key=norm(team), meta=META[key]||[localStorage.getItem('jrCategory')||'Liga','Juventino Rosas, Guanajuato'];
- const logo=logoFor(team);
+ const logo=await logoFor(team);
  const m=openModal(team,`<div class="jr31-hero"><div class="jr31-avatar">${logo?`<img src="${esc(logo)}" alt="${esc(team)}">`:esc(initials(team))}</div><div><div class="jr31-chip">${esc(meta[0])}</div><h4>${esc(team)}</h4><p>Equipo registrado en la Liga Municipal de Fútbol Juventino Rosas.</p></div></div><div class="jr31-grid"><div class="jr31-card"><small>Origen / zona</small>${esc(meta[1])}</div><div class="jr31-card"><small>Acciones</small>Consulta sus partidos y la tabla de su categoría.</div></div><div class="jr31-actions"><button class="jr31-btn primary" id="jr31Matches">Ver partidos</button><button class="jr31-btn" id="jr31Table">Ver tabla</button><a class="jr31-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(meta[1])}">Ver zona en Maps</a></div>`);
  q('#jr31Matches',m).onclick=()=>{setCat(meta[0]);m.classList.remove('show');go('matches')};
  q('#jr31Table',m).onclick=()=>{setCat(meta[0]);m.classList.remove('show');go('table')};
@@ -95,8 +186,26 @@ function openCats(){
  qa('[data-jr31-cat]',m).forEach(b=>b.onclick=()=>{setCat(b.dataset.jr31Cat);m.classList.remove('show');go('matches')});
 }
 
+function needsLogoCell(el){
+  if(!el || el.dataset.jr31Logo)return false;
+  const txt=(el.textContent||'').trim();
+  return !!teamFromText(txt);
+}
+async function decorateLogos(){
+  const nodes = qa('td,span,div').filter(needsLogoCell);
+  for(const el of nodes){
+    const team = teamFromText((el.textContent||'').trim());
+    if(!team) continue;
+    const logo = await logoFor(team);
+    if(!logo){ el.dataset.jr31Logo='skip'; el.dataset.jr31Team=team; el.classList.add('jr31-click'); continue; }
+    const label = (el.textContent||'').trim();
+    el.innerHTML = `<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(logo)}" alt="${esc(team)}"></span><span>${esc(label)}</span></span>`;
+    el.dataset.jr31Team = team;
+    el.dataset.jr31Logo = '1';
+    el.classList.add('jr31-click');
+  }
+}
 function decorateSafe(){
- // IMPORTANT: sólo elementos pequeños. Nunca reescribir DIV/ARTICLE grandes.
  qa('button,a,span,b,strong,small,td,th').forEach(el=>{
    const txt=(el.textContent||'').trim(); if(!txt || txt.length>80)return;
    if(norm(txt)==='5 categorias'){el.dataset.jr31='cats';el.classList.add('jr31-click')}
@@ -107,15 +216,7 @@ function decorateSafe(){
    const venue=venueFromText(txt);
    if(venue && /campo|cerrito|tavera|san juan|cuenda|romerillo/i.test(txt)){el.dataset.jr31Venue=venue;el.classList.add('jr31-click')}
  });
- // Logos sólo en TD exactos de equipos.
- qa('td').forEach(td=>{
-   if(td.dataset.jr31Logo)return;
-   const team=teamFromText((td.textContent||'').trim()); if(!team)return;
-   const logo=logoFor(team); if(!logo){td.dataset.jr31Logo='skip';return}
-   const label=(td.textContent||'').trim();
-   td.innerHTML=`<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(logo)}" alt="${esc(team)}"></span><span>${esc(label)}</span></span>`;
-   td.dataset.jr31Team=team; td.dataset.jr31Logo='1'; td.classList.add('jr31-click');
- });
+ decorateLogos();
 }
 function clickHandler(e){
  const el=e.target.closest('[data-jr31],[data-jr31-team],[data-jr31-venue]');
@@ -151,7 +252,8 @@ function guardAgainstOldCollapse(){
 function boot(){
  decorateSafe();
  document.addEventListener('click',clickHandler,true);
- setTimeout(decorateSafe,350); // una sola pasada segura
+ setTimeout(decorateSafe,350);
+ setTimeout(decorateSafe,1200);
  guardAgainstOldCollapse();
  window.LJR_V31={openTeam,openVenue,openCats,go};
 }
