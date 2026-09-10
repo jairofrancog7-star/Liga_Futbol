@@ -1,0 +1,98 @@
+/* MASTER V32 · logos generados directamente por v21-functional.js */
+
+.v20-game .v32-team-inline{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  vertical-align:middle !important;
+}
+
+.v20-game .v32-team-inline > span{
+  min-width:0 !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  white-space:nowrap !important;
+}
+
+.v20-game .v32-team-logo{
+  width:22px !important;
+  height:22px !important;
+  min-width:22px !important;
+  min-height:22px !important;
+  max-width:22px !important;
+  max-height:22px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 22px !important;
+  padding:1px !important;
+  border-radius:6px !important;
+  background:rgba(255,255,255,.04) !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+}
+
+/* El logo nunca debe tapar el nombre en portada / Match Center. */
+.match-hero .team,
+.live-score .team,
+.match-center .team,
+.fixture-team{
+  min-width:0 !important;
+}
+
+.match-hero .team-logo,
+.live-score .team-logo,
+.match-center .team-logo,
+.fixture-team .team-logo{
+  width:56px !important;
+  height:56px !important;
+  max-width:56px !important;
+  max-height:56px !important;
+  min-width:56px !important;
+  min-height:56px !important;
+  margin:0 auto 8px !important;
+  padding:4px !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:hidden !important;
+}
+
+.match-hero .team-logo img,
+.live-score .team-logo img,
+.match-center .team-logo img,
+.fixture-team .team-logo img{
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  display:block !important;
+}
+
+.match-hero .team b,
+.match-hero .team strong,
+.live-score .team b,
+.live-score .team strong,
+.match-center .team b,
+.match-center .team strong,
+.fixture-team b,
+.fixture-team strong{
+  position:relative !important;
+  z-index:2 !important;
+  display:block !important;
+  margin-top:4px !important;
+  line-height:1.15 !important;
+}
+
+@media(max-width:720px){
+  .v20-game .v32-team-logo{
+    width:20px !important;
+    height:20px !important;
+    min-width:20px !important;
+    min-height:20px !important;
+    max-width:20px !important;
+    max-height:20px !important;
+    flex-basis:20px !important;
+  }
+  .v20-game .v32-team-inline{gap:6px !important}
+}

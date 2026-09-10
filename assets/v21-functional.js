@@ -1,4 +1,4 @@
-/* MASTER V21 - botones funcionales + calendario PNG + video de final */
+﻿/* MASTER V21 - botones funcionales + calendario PNG + video de final */
 (function(){
   "use strict";
 
@@ -116,6 +116,48 @@
     });
   }
 
+  const TEAM_LOGOS_V32={
+    "c. de gasca":"./assets/teams/deportivo-cg.webp",
+    "pozos fc":"./assets/teams/pozos-fc.webp",
+    "juventus":"./assets/teams/juventus.webp",
+    "boavista":"./assets/teams/boavista-fc.webp",
+    "psv":"./assets/teams/psv.webp",
+    "a. santiago":"./assets/teams/atletico-santiago.webp",
+    "f. tavera":"./assets/teams/franco-tavera-jr-veteranos.webp",
+    "hermanos":"./assets/teams/club-deportivo-hermanos.webp",
+    "linces":"./assets/teams/linces.webp",
+    "lobos cdg":"./assets/teams/lobos-cdg.webp",
+    "franco fc":"./assets/teams/franco-fc.webp",
+    "terricolas":"./assets/teams/terricolas-fc.webp",
+    "galacticos":"./assets/teams/galacticos-pozos.webp",
+    "herreras fc":"./assets/teams/herrera-fc.webp",
+    "galeana":"./assets/teams/atletico-galeana.webp",
+    "aldama fc":"./assets/teams/aldama.webp",
+    "la canchita deportes":"./assets/teams/la-canchita.webp",
+    "la huerta":"./assets/teams/la-huerta-cuenda.webp",
+    "san antonio jrs":"./assets/teams/san-antonio-jr.webp",
+    "promesas fc":"./assets/teams/promesas-fc-pozos.webp",
+    "san jose jrs":"./assets/teams/san-jose-jr.webp",
+    "san jose fc":"./assets/teams/san-jose.webp",
+    "san julian":"./assets/teams/san-julian-fc.webp",
+    "tavera fc":"./assets/teams/tavera-fc.webp",
+    "dep. nopalero":"./assets/teams/deportivo-nopalero.webp",
+    "la esperanza":"./assets/teams/la-esperanza-fc.webp",
+    "manchester":"./assets/teams/manchester-united.webp",
+    "toros de cuenda":"./assets/teams/tc-cuenda.webp"
+  };
+
+  function teamLogoSrcV32(name,category){
+    const key=norm(name);
+    if(key==="pozos fc" && category==="Veteranos 35+") return "./assets/teams/veteranos-pozos-fc.webp";
+    return TEAM_LOGOS_V32[key]||"";
+  }
+
+  function teamBadgeV32(name,category){
+    const src=teamLogoSrcV32(name,category);
+    if(!src) return `<span class="v32-team-inline" data-jr31-team="${esc(name)}"><span>${esc(name)}</span></span>`;
+    return `<span class="v32-team-inline" data-jr31-team="${esc(name)}"><img class="v32-team-logo" src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()"><span>${esc(name)}</span></span>`;
+  }
   function gameState(g){
     if(g.live===true) return "En vivo";
     if(g.note && /^gana\b/i.test(g.note.trim())) return "Finalizados";
@@ -146,12 +188,12 @@
     }).filter(Boolean);
   }
 
-  function gameRow(g){
+  function gameRow(g,category){
     if(g.rest) return `<div class="v20-rest">DESCANSA: <b>${esc(g.rest)}</b></div>`;
     const state=gameState(g);
     return `<div class="v20-game" data-v21-state="${esc(state)}">
-      <span class="v20-team-name">${esc(g.home)}</span><b>VS</b>
-      <span class="v20-team-name">${esc(g.away)}</span>
+      <span class="v20-team-name">${teamBadgeV32(g.home,category)}</span><b>VS</b>
+      <span class="v20-team-name">${teamBadgeV32(g.away,category)}</span>
       <span class="v20-time">${esc(g.time||"—")}</span>
       <span class="v20-field">${esc(g.field||g.note||"—")}</span>
       ${g.note?`<small>${esc(g.note)}</small>`:""}
@@ -168,7 +210,7 @@
         </div>
       </div>
       <div class="v20-game-head"><span>Local</span><span></span><span>Visitante</span><span>Hora</span><span>Campo / nota</span></div>
-      ${group.games.map(gameRow).join("")}
+      ${group.games.map(g=>gameRow(g,group.category)).join("")}
     </section>`;
   }
 
