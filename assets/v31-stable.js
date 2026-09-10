@@ -362,6 +362,74 @@ function normalizeRepeatedLogos(){
   });
 }
 
+
+function scheduleRoot(el){
+  return el?.closest('#view-matches,#view-calendar,.v21-archive-card,.v20-archive-card,.v21-group,.v20-group,.match-list,.calendar-list,.calendar-card,.match-card,.fixture-card,.fixture-list');
+}
+function textOnlyLabel(el){
+  if(!el) return '';
+  const clone=el.cloneNode(true);
+  qa('img,svg,picture,video,canvas',clone).forEach(n=>n.remove());
+  return (clone.textContent||'').replace(/\s+/g,' ').trim();
+}
+function isScheduleTeamCell(el){
+  if(!el || !scheduleRoot(el)) return false;
+  const txt=textOnlyLabel(el);
+  if(!txt || txt.length>40) return false;
+  if(/^(local|visitante|hora|campo\s*\/\s*nota|campo|nota|vs)$/i.test(txt)) return false;
+  return !!teamFromText(txt);
+}
+async function renderSingleTeamCell(el){
+  if(!isScheduleTeamCell(el)) return false;
+  const label=textOnlyLabel(el);
+  const team=teamFromText(label);
+  if(!team) return false;
+  el.dataset.jr31Team=team;
+  el.classList.add('jr31-click');
+  const logo=await logoFor(team);
+  if(!logo){
+    el.dataset.jr31Logo='skip';
+    return false;
+  }
+  el.innerHTML=`<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(logo)}" alt="${esc(team)}"></span><span>${esc(label)}</span></span>`;
+  el.dataset.jr31Logo='1';
+  return true;
+}
+async function decorateScheduleLogosAllCategories(){
+  const nodes = qa('#view-matches td,#view-matches span,#view-matches a,#view-matches b,#view-matches strong,#view-matches small,#view-calendar td,#view-calendar span,#view-calendar a,#view-calendar b,#view-calendar strong,#view-calendar small,.v21-archive-card td,.v21-archive-card span,.v21-archive-card a,.v21-archive-card b,.v21-archive-card strong,.v21-archive-card small,.v20-archive-card td,.v20-archive-card span,.v20-archive-card a,.v20-archive-card b,.v20-archive-card strong,.v20-archive-card small')
+    .filter(el=>!el.closest('.jr31-teamcell'));
+  for(const el of nodes){
+    await renderSingleTeamCell(el);
+  }
+}
+function dedupeScheduleLogosAllCategories(){
+  qa('#view-matches td,#view-calendar td,.v21-archive-card td,.v20-archive-card td,#view-matches span,#view-calendar span,.v21-archive-card span,.v20-archive-card span').forEach(el=>{
+    const label=textOnlyLabel(el);
+    const team=teamFromText(label) || teamFromAnyText(label);
+    if(!team) return;
+    const wrappers=qa('.jr31-teamcell',el);
+    if(wrappers.length>1){
+      const first=wrappers[0].cloneNode(true);
+      wrappers.forEach(w=>w.remove());
+      el.textContent='';
+      el.appendChild(first);
+    }
+    const allImgs=qa('img',el);
+    const teamWrap=q('.jr31-teamcell',el);
+    const keepImg=teamWrap ? q('img',teamWrap) : allImgs[0];
+    allImgs.forEach(img=>{ if(keepImg && img!==keepImg) img.remove(); });
+    qa('.jr31-teamcell__logo',el).forEach((logo,i)=>{ if(i>0) logo.remove(); });
+    // If the cell still has plain team text plus one kept logo, normalize exact final HTML.
+    if(keepImg){
+      const finalLabel=label || team;
+      el.innerHTML=`<span class="jr31-teamcell"><span class="jr31-teamcell__logo"><img src="${esc(keepImg.getAttribute('src')||keepImg.src)}" alt="${esc(team)}"></span><span>${esc(finalLabel)}</span></span>`;
+      el.dataset.jr31Team=team;
+      el.dataset.jr31Logo='1';
+      el.classList.add('jr31-click');
+    }
+  });
+}
+
 function replacePublicCopy(){
   const candidates=qa('p').filter(el=>!(el.closest('#jr31Modal')) && el.children.length===0);
   candidates.forEach(el=>{
@@ -383,6 +451,8 @@ function decorateSafe(){
    if(venue && /campo|cerrito|tavera|san juan|cuenda|romerillo/i.test(txt)){el.dataset.jr31Venue=venue;el.classList.add('jr31-click')}
  });
  decorateLogos();
+ decorateScheduleLogosAllCategories();
+ setTimeout(dedupeScheduleLogosAllCategories,60);
 }
 function clickHandler(e){
  const el=e.target.closest('[data-jr31],[data-jr31-team],[data-jr31-venue]');
@@ -419,10 +489,13 @@ function boot(){
  replacePublicCopy();
  fixFinalHero();
  cleanLegacyLogoDuplicates();
+ normalizeRepeatedLogos();
+ decorateScheduleLogosAllCategories();
+ dedupeScheduleLogosAllCategories();
  decorateSafe();
  document.addEventListener('click',clickHandler,true);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateSafe()},350);
- setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateSafe()},1200);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateScheduleLogosAllCategories();dedupeScheduleLogosAllCategories();decorateSafe()},350);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();normalizeRepeatedLogos();decorateScheduleLogosAllCategories();dedupeScheduleLogosAllCategories();decorateSafe()},1200);
  guardAgainstOldCollapse();
  window.LJR_V31={openTeam,openVenue,openCats,go,fixFinalHero,cleanLegacyLogoDuplicates};
 }

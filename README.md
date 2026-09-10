@@ -1,3 +1,7 @@
+# Liga Juventino Rosas · MASTER V31.7
+
+Corrección: logos en la tabla/calendario de partidos para todas las categorías, con un solo logo por equipo cuando exista escudo.
+
 # Liga Juventino Rosas · MASTER V31.6
 
 Corrección de logos duplicados en portada, Match Center, tabla y goleadores.
