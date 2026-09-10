@@ -1,4 +1,4 @@
-﻿const CACHE='liga-jr-v302';
+﻿const CACHE='liga-jr-v303';
 const CORE=[
   './','./index.html','./manifest.webmanifest','./icon.svg',
   './assets/v18-clubs.css?v=22','./assets/v18-clubs.js?v=22',
