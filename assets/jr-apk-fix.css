@@ -1,0 +1,46 @@
+/* Liga Juventino Rosas · V35.1 · APK REAL visible */
+.jr-apk-real-card{
+  position:relative;
+  overflow:hidden;
+  border-color:rgba(69,237,145,.45)!important;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(69,237,145,.16),transparent 42%),
+    linear-gradient(180deg,#14271d,#0d1813)!important;
+}
+.jr-apk-real-card::after{
+  content:"APK";
+  position:absolute;
+  right:10px;
+  top:10px;
+  padding:4px 7px;
+  border-radius:999px;
+  background:#45ed91;
+  color:#052514;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.jr-apk-real-card .jr-apk-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:7px;
+  padding:5px 8px;
+  border-radius:999px;
+  background:rgba(69,237,145,.12);
+  color:#45ed91;
+  font-size:10px;
+  font-weight:900;
+}
+.jr-apk-real-card.jr-apk-unavailable{
+  opacity:.62;
+  border-color:rgba(255,255,255,.12)!important;
+}
+.jr-apk-real-card.jr-apk-unavailable::after{
+  content:"REVISAR";
+  background:#f2c14e;
+  color:#3d2b00;
+}
+body.light .jr-apk-real-card{
+  background:linear-gradient(180deg,#f3fff7,#ffffff)!important;
+}
