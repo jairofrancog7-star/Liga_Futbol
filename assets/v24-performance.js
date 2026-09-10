@@ -1,4 +1,4 @@
-/* MASTER V24 - performance / estabilidad */
+﻿/* MASTER V24 - performance / estabilidad */
 (function(){
 "use strict";
 const doc=document.documentElement;
@@ -62,7 +62,7 @@ else boot();
   l.rel='stylesheet';l.href='./assets/v25-ambitious.css?v=25.0';
   document.head.appendChild(l);
   var s=document.createElement('script');
-  s.src='./assets/v25-ambitious.js?v=25.0';
+  s.src='./assets/v25-ambitious.js?v=33-text';
   s.defer=true;s.dataset.v25Loader='1';
   document.body.appendChild(s);
 })();

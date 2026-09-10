@@ -162,15 +162,22 @@ function clickText(words){
  const el=qa('button,a,[data-view]').find(x=>arr.some(w=>norm(x.textContent)===norm(w)));
  if(el){el.click();return true} return false;
 }
-function go(view){
- const target=document.getElementById('view-'+view);
- if(target && typeof window.showView==='function'){
-   try{window.showView(view);return}catch(_){}
- }
- const m={home:['Inicio'],matches:['Partidos','Jornada','Ver jornada'],table:['Tabla','Ver tabla'],stats:['Estadísticas','Goleo'],match:['Abrir Match Center','Match Center','LIVE Match Center'],more:['Más']};
- if(clickText(m[view]||view))return;
- const h=qa('h1,h2,h3,h4').find(x=>(m[view]||[]).some(w=>norm(x.textContent)===norm(w)));
- if(h)h.scrollIntoView({behavior:'smooth',block:'start'});
+function go(view) {
+  const destination = view === 'match' ? 'matchcenter' : view;
+  const target = document.getElementById('view-' + destination);
+
+  if (!target) {
+    console.warn('[Liga JR] Vista inexistente:', destination);
+    return false;
+  }
+
+  if (typeof window.showView !== 'function') {
+    console.warn('[Liga JR] Navegación principal no disponible.');
+    return false;
+  }
+
+  window.showView(destination);
+  return true;
 }
 function setCat(cat){localStorage.setItem('jrCategory',cat);const b=qa('[data-category],button,a').find(x=>norm(x.dataset?.category||x.textContent)===norm(cat));if(b)b.click()}
 
@@ -458,21 +465,36 @@ function queueRefresh(ms=80){
   clearTimeout(jr31RefreshTimer);
   jr31RefreshTimer=setTimeout(refreshScheduleDecorations, ms);
 }
-function installObservers(){
-  if(window.__jr31ObserverInstalled) return;
-  window.__jr31ObserverInstalled=true;
-  const mo=new MutationObserver(()=>queueRefresh(60));
-  mo.observe(document.body,{childList:true,subtree:true,characterData:true});
-  document.addEventListener('change',e=>{
-    const t=e.target;
-    if(t && (t.matches('select') || t.matches('input') || t.matches('[data-category]'))) queueRefresh(80);
-  },true);
-  document.addEventListener('click',e=>{
-    const t=e.target.closest('button,a,[data-category],[role="tab"],select');
-    if(t) queueRefresh(90);
-  },true);
-  window.addEventListener('hashchange',()=>queueRefresh(60));
-  window.addEventListener('pageshow',()=>queueRefresh(80));
+function installObservers() {
+  if (window.__jr31ObserverInstalled) return;
+  window.__jr31ObserverInstalled = true;
+
+  // Evita que las modificaciones de logos provoquen
+  // una actualización continua de toda la página.
+
+  document.addEventListener('change', e => {
+    const target = e.target;
+    if (!(target instanceof Element)) return;
+
+    if (target.matches('select,input,[data-category]')) {
+      queueRefresh(100);
+    }
+  }, true);
+
+  document.addEventListener('click', e => {
+    const target = e.target;
+    if (!(target instanceof Element)) return;
+    if (target.closest('#jr31Modal')) return;
+
+    if (target.closest(
+      '[data-view],[data-category],[data-admin],[role="tab"]'
+    )) {
+      queueRefresh(120);
+    }
+  }, true);
+
+  window.addEventListener('hashchange', () => queueRefresh(100));
+  window.addEventListener('pageshow', () => queueRefresh(100));
 }
 
 function replacePublicCopy(){

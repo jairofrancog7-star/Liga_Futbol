@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>Liga JR · actualizar V33</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#08100c;color:#f4fff8;font-family:system-ui}
+main{max-width:620px;text-align:center;padding:30px}.ball{font-size:52px;animation:r .9s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}p{color:#a9bcb0}
+</style>
+</head>
+<body>
+<main><div class="ball">⚽</div><h1>Actualizando Liga Juventino Rosas</h1><p>Limpiando caché anterior y cargando MASTER V33.</p></main>
+<script>
+(async()=>{
+  try{
+    if('serviceWorker' in navigator){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r=>r.unregister()));
+    }
+    if('caches' in window){
+      const keys=await caches.keys();
+      await Promise.all(keys.map(k=>caches.delete(k)));
+    }
+  }catch(e){}
+  setTimeout(()=>location.replace('./?v=33-design-'+Date.now()),900);
+})();
+</script>
+</body>
+</html>

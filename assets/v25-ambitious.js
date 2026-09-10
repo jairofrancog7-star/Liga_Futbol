@@ -1,4 +1,4 @@
-
+﻿
 /* MASTER V25 — Liga Juventino Rosas: experiencia pública + operación real de liga.
    Código propio. Usa patrones, no copia archivos de terceros. */
 (function(){
@@ -117,7 +117,7 @@ function openModal(title,html){
 function replaceOldCopy(){
   const lead=q(".v14-lead");
   if(lead){
-    lead.textContent="La Liga Municipal de Fútbol Juventino Rosas vive aquí: jornadas, resultados, tablas, equipos, jugadores, sanciones, finales y un Match Center pensado para seguir cada categoría desde el celular.";
+    lead.textContent="El fútbol de Juventino Rosas, en un solo lugar. Consulta jornadas, descubre a los equipos y sigue los resultados de tu categoría. Nuestra cancha, nuestra gente, nuestra liga.";
   }
   const p=q("#v23FootballOS .v23-copy");
   if(p){
