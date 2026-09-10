@@ -41,6 +41,7 @@ const VENUES={
 
 
 const DIRECT_LOGOS={
+  'c. de gasca':'./assets/teams/deportivo-cg.webp',
   'pozos fc':'./assets/teams/veteranos-pozos-fc.webp',
   'juventus':'./assets/teams/juventus.webp',
   'boavista':'./assets/teams/boavista-fc.webp',
@@ -204,6 +205,8 @@ function textLeaves(el){
 function needsLogoCell(el){
   if(!el || el.dataset.jr31Logo) return false;
   if(!textLeaves(el)) return false;
+  const matchArea=el.closest('#view-matches,#view-calendar,.v21-archive-card,.v20-archive-card,.v21-group,.v20-group');
+  if(!matchArea) return false;
   const txt=(el.textContent||'').trim();
   return !!teamFromText(txt);
 }
@@ -221,6 +224,52 @@ async function decorateLogos(){
     el.dataset.jr31Logo='1';
   }
 }
+
+function fixFinalHero(){
+  const section=q('#gran-final-veteranos-v16');
+  if(!section) return;
+  const teams=qa('.match-hero .team',section);
+  if(teams.length<2) return;
+
+  teams[0].innerHTML='<div class="team-logo"><img src="./assets/teams/deportivo-cg.webp" alt="C. de Gasca"></div><b data-jr31-team="C. de Gasca">C. de Gasca</b>';
+  teams[1].innerHTML='<div class="team-logo"><img src="./assets/teams/veteranos-pozos-fc.webp" alt="Pozos FC"></div><b data-jr31-team="Pozos FC">Pozos FC</b>';
+
+  teams.forEach(t=>t.classList.add('jr31-click'));
+}
+
+function cleanLegacyLogoDuplicates(){
+  // V31.2/V31.3 podían agregar logos también en Inicio/Tabla.
+  // En esas zonas dejamos el render nativo y retiramos sólo envolturas JR31 antiguas.
+  qa('#view-home .jr31-teamcell__logo,#view-table .jr31-teamcell__logo,#view-stats .jr31-teamcell__logo').forEach(logo=>{
+    const wrap=logo.closest('.jr31-teamcell');
+    if(!wrap) return;
+    const label=wrap.querySelector(':scope > span:last-child');
+    const text=(label?.textContent||wrap.textContent||'').trim();
+    const parent=wrap.parentElement;
+    if(parent){
+      parent.textContent=text;
+      parent.dataset.jr31Logo='native';
+      const team=teamFromText(text);
+      if(team){parent.dataset.jr31Team=team;parent.classList.add('jr31-click')}
+    }
+  });
+
+  // Si algún render previo dejó más de una imagen dentro de una misma celda de equipo,
+  // conserva sólo la primera. No toca otros elementos de la fila.
+  qa('#view-home td,#view-table td').forEach(cell=>{
+    const text=(cell.textContent||'').trim();
+    const team=teamFromAnyText(text);
+    if(!team) return;
+    const imgs=qa('img',cell);
+    if(imgs.length<=1) return;
+    imgs.slice(1).forEach(img=>{
+      const logoWrap=img.closest('.jr31-teamcell__logo');
+      if(logoWrap) logoWrap.remove();
+      else img.remove();
+    });
+  });
+}
+
 function replacePublicCopy(){
   const candidates=qa('p').filter(el=>!(el.closest('#jr31Modal')) && el.children.length===0);
   candidates.forEach(el=>{
@@ -276,12 +325,14 @@ function guardAgainstOldCollapse(){
 }
 function boot(){
  replacePublicCopy();
+ fixFinalHero();
+ cleanLegacyLogoDuplicates();
  decorateSafe();
  document.addEventListener('click',clickHandler,true);
- setTimeout(()=>{replacePublicCopy();decorateSafe()},350);
- setTimeout(()=>{replacePublicCopy();decorateSafe()},1200);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();decorateSafe()},350);
+ setTimeout(()=>{replacePublicCopy();fixFinalHero();cleanLegacyLogoDuplicates();decorateSafe()},1200);
  guardAgainstOldCollapse();
- window.LJR_V31={openTeam,openVenue,openCats,go};
+ window.LJR_V31={openTeam,openVenue,openCats,go,fixFinalHero,cleanLegacyLogoDuplicates};
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();

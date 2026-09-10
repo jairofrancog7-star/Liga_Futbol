@@ -71,3 +71,23 @@
   .jr31-modal{border-radius:24px 24px 0 0;max-height:94vh}
   .jr31-grid{grid-template-columns:1fr}
 }
+
+
+/* V31.5 · Final oficial con un solo escudo por equipo */
+#gran-final-veteranos-v16 .match-hero .team-logo{
+  width:72px;
+  height:72px;
+  padding:8px;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+}
+#gran-final-veteranos-v16 .match-hero .team-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+#gran-final-veteranos-v16 .match-hero .team b{
+  margin-top:8px;
+}
