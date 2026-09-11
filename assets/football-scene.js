@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 
-const VERSION="36.4";
+const VERSION="36.5";
 const CATS=[
   "Primera Fuerza",
   "Intermedia",
@@ -93,21 +93,21 @@ function activateCategory(cat){
 }
 
 function categoriesModal(){
-  let bg=q("#jrV364Categories");
+  let bg=q("#jrV365Categories");
 
   if(!bg){
     bg=document.createElement("div");
-    bg.id="jrV364Categories";
-    bg.className="jr-v364-cat-bg";
+    bg.id="jrV365Categories";
+    bg.className="jr-v365-cat-bg";
     bg.innerHTML=`
-      <section class="jr-v364-cat-modal" role="dialog" aria-modal="true" aria-labelledby="jrV364CatTitle">
-        <div class="jr-v364-cat-head">
-          <h3 id="jrV364CatTitle">5 categorías</h3>
-          <button class="jr-v364-close" type="button" aria-label="Cerrar">×</button>
+      <section class="jr-v365-cat-modal" role="dialog" aria-modal="true" aria-labelledby="jrV365CatTitle">
+        <div class="jr-v365-cat-head">
+          <h3 id="jrV365CatTitle">5 categorías</h3>
+          <button class="jr-v365-close" type="button" aria-label="Cerrar">×</button>
         </div>
-        <div class="jr-v364-cat-list">
+        <div class="jr-v365-cat-list">
           ${CATS.map(c=>`
-            <button type="button" class="jr-v364-cat" data-jr-v364-cat="${c}">
+            <button type="button" class="jr-v365-cat" data-jr-v365-cat="${c}">
               ${c}
               <small>Abrir partidos de esta categoría</small>
             </button>`).join("")}
@@ -115,13 +115,13 @@ function categoriesModal(){
       </section>`;
 
     document.body.appendChild(bg);
-    q(".jr-v364-close",bg).onclick=()=>bg.classList.remove("show");
+    q(".jr-v365-close",bg).onclick=()=>bg.classList.remove("show");
     bg.onclick=e=>{if(e.target===bg)bg.classList.remove("show")};
 
-    qa("[data-jr-v364-cat]",bg).forEach(btn=>{
+    qa("[data-jr-v365-cat]",bg).forEach(btn=>{
       btn.onclick=()=>{
         bg.classList.remove("show");
-        activateCategory(btn.dataset.jrV364Cat);
+        activateCategory(btn.dataset.jrV365Cat);
       };
     });
   }
@@ -141,11 +141,19 @@ function openLiguilla(){
   toast("La liguilla no está disponible en esta vista.");
 }
 
-function cleanOldBalls(){
+function removeOldThirdBall(){
+  /* Este era el hero viejo que aparece como tercer balón blanco. */
+  const v12=q("#v12CinematicHero");
+  if(v12){
+    v12.setAttribute("aria-hidden","true");
+    v12.hidden=true;
+  }
+
   [
     "#jrV362SecondBall",
     "#jrV363SecondBall",
     "#jrV364SecondSection",
+    "#jrV365SecondSection",
     "#jrV36BallCanvas",
     "#jrV362TopBall",
     "#jrV362BottomBall",
@@ -154,37 +162,52 @@ function cleanOldBalls(){
   ].forEach(sel=>qa(sel).forEach(el=>el.remove()));
 }
 
-function heroMarkup(){
+function movingBallMarkup(source,kind){
+  const klass=kind==="gold"?"jr-v365-gold-ball":"jr-v365-top-ball";
   return `
-    <div id="jrV364HeroArt" aria-label="Portada Liga Juventino Rosas">
+    <div class="jr-v365-ball-window ${klass}" data-jr-v365-ball="${kind}" aria-hidden="true">
+      <div class="jr-v365-ball-rotor">
+        <img class="jr-v365-ball-source" src="${source}" alt="" draggable="false">
+      </div>
+    </div>`;
+}
+
+function heroMarkup(){
+  const source="./assets/hero-v36-4.png?v=36-5";
+  return `
+    <div id="jrV365HeroArt" aria-label="Portada Liga Juventino Rosas">
       <img
-        class="jr-v364-image"
-        src="./assets/hero-v36-4.png?v=36-4"
-        alt="Liga Juventino Rosas: La liga se vive en tiempo real, con un balón de fútbol realista."
+        class="jr-v365-image"
+        src="${source}"
+        alt="Liga Juventino Rosas: La liga se vive en tiempo real."
         draggable="false">
 
-      <div class="jr-v364-glow" aria-hidden="true"></div>
+      <div class="jr-v365-orbit top" aria-hidden="true"></div>
+      ${movingBallMarkup(source,"top")}
 
-      <button class="jr-v364-hotspot jr-v364-match" data-jr-v364="match" aria-label="Abrir Match Center">Match Center</button>
-      <button class="jr-v364-hotspot jr-v364-jornada" data-jr-v364="jornada" aria-label="Abrir Jornada">Jornada</button>
-      <button class="jr-v364-hotspot jr-v364-liguilla" data-jr-v364="cup" aria-label="Abrir Liguilla">Liguilla</button>
-      <button class="jr-v364-hotspot jr-v364-categorias" data-jr-v364="cats" aria-label="Elegir una de las 5 categorías">5 categorías</button>
-      <button class="jr-v364-hotspot jr-v364-live" data-jr-v364="match" aria-label="Abrir LIVE Match Center">LIVE Match Center</button>
-      <button class="jr-v364-hotspot jr-v364-matchday" data-jr-v364="matchday" aria-label="Abrir JR Matchday">JR Matchday</button>
+      <button class="jr-v365-hotspot jr-v365-match" data-jr-v365="match" aria-label="Abrir Match Center">Match Center</button>
+      <button class="jr-v365-hotspot jr-v365-jornada" data-jr-v365="jornada" aria-label="Abrir Jornada">Jornada</button>
+      <button class="jr-v365-hotspot jr-v365-liguilla" data-jr-v365="cup" aria-label="Abrir Liguilla">Liguilla</button>
+      <button class="jr-v365-hotspot jr-v365-categorias" data-jr-v365="cats" aria-label="Elegir una de las 5 categorías">5 categorías</button>
+      <button class="jr-v365-hotspot jr-v365-live" data-jr-v365="match" aria-label="Abrir LIVE Match Center">LIVE Match Center</button>
+      <button class="jr-v365-hotspot jr-v365-matchday" data-jr-v365="matchday" aria-label="Abrir JR Matchday">JR Matchday</button>
     </div>`;
 }
 
 function secondMarkup(){
+  const source="./assets/segundo-balon-v36-4.png?v=36-5";
   const section=document.createElement("section");
-  section.id="jrV364SecondSection";
+  section.id="jrV365SecondSection";
   section.innerHTML=`
-    <div id="jrV364SecondArt" aria-label="Segundo diseño de balón de Liga Juventino Rosas">
+    <div id="jrV365SecondArt" aria-label="Segundo diseño de Liga Juventino Rosas">
       <img
-        class="jr-v364-image"
-        src="./assets/segundo-balon-v36-4.png?v=36-4"
-        alt="Segundo diseño: balón de fútbol grafito y dorado."
+        class="jr-v365-image"
+        src="${source}"
+        alt="Segundo diseño con balón grafito y dorado."
         draggable="false">
-      <div class="jr-v364-glow" aria-hidden="true"></div>
+
+      <div class="jr-v365-orbit gold" aria-hidden="true"></div>
+      ${movingBallMarkup(source,"gold")}
     </div>`;
   return section;
 }
@@ -193,25 +216,26 @@ function mountExactlyTwo(){
   const hero=q("#v14CinematicHero");
   if(!hero) return;
 
-  cleanOldBalls();
+  removeOldThirdBall();
 
-  /* Sustituye TODO el hero anterior: elimina los balones estrella/3D defectuosos. */
+  /* Primer diseño: imagen completa + el MISMO balón animado encima. */
   hero.innerHTML=heroMarkup();
 
-  /* Segundo y último balón: una sola sección debajo. */
+  /* Segundo y último diseño. */
   const second=secondMarkup();
   hero.insertAdjacentElement("afterend",second);
 }
 
 function bindActions(){
   document.addEventListener("click",e=>{
-    const btn=e.target.closest("[data-jr-v364]");
+    const btn=e.target.closest("[data-jr-v365]");
     if(!btn) return;
 
     e.preventDefault();
     e.stopPropagation();
 
-    const action=btn.dataset.jrV364;
+    const action=btn.dataset.jrV365;
+
     if(action==="cats") categoriesModal();
     else if(action==="match") go("matchcenter");
     else if(action==="matchday"||action==="jornada") go("matches");
@@ -219,50 +243,90 @@ function bindActions(){
   },true);
 }
 
-function parallax(){
-  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  if(matchMedia("(max-width:760px)").matches) return;
+function spinRotor(rotor,direction,index){
+  if(!rotor) return;
 
-  qa("#jrV364HeroArt,#jrV364SecondArt").forEach(card=>{
-    const img=q(".jr-v364-image",card);
-    if(!img) return;
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){
+    rotor.style.transform="rotate(0deg)";
+    return;
+  }
 
-    card.addEventListener("pointermove",e=>{
-      const r=card.getBoundingClientRect();
-      const x=((e.clientX-r.left)/r.width-.5)*5;
-      const y=((e.clientY-r.top)/r.height-.5)*4;
-      img.style.setProperty("--jr-mx",x.toFixed(2)+"px");
-      img.style.setProperty("--jr-my",y.toFixed(2)+"px");
-    });
+  /* Giro fuerte al abrir: 920 grados, tal como se pidió. */
+  const introDegrees=direction*920;
+  const introDuration=index===0?4300:4900;
 
-    card.addEventListener("pointerleave",()=>{
-      img.style.setProperty("--jr-mx","0px");
-      img.style.setProperty("--jr-my","0px");
-    });
-  });
+  const intro=rotor.animate(
+    [
+      {transform:"rotate(0deg) scale(1)"},
+      {transform:`rotate(${introDegrees}deg) scale(1.018)`}
+    ],
+    {
+      duration:introDuration,
+      easing:"cubic-bezier(.18,.76,.22,1)",
+      fill:"forwards"
+    }
+  );
+
+  intro.onfinish=()=>{
+    rotor.style.transform=`rotate(${introDegrees}deg)`;
+
+    /*
+     * Después del giro inicial no se queda quieto:
+     * continúa girando despacio de forma infinita.
+     */
+    rotor.animate(
+      [
+        {transform:`rotate(${introDegrees}deg)`},
+        {transform:`rotate(${introDegrees + direction*360}deg)`}
+      ],
+      {
+        duration:index===0?14500:17200,
+        easing:"linear",
+        iterations:Infinity
+      }
+    );
+  };
 }
 
-function verifyOnlyTwo(){
-  const images=qa("#jrV364HeroArt .jr-v364-image,#jrV364SecondArt .jr-v364-image");
-  if(images.length!==2){
-    console.warn("[Liga JR V36.4] Se esperaban exactamente 2 diseños, encontrados:",images.length);
+function startMotion(){
+  const top=q('[data-jr-v365-ball="top"] .jr-v365-ball-rotor');
+  const gold=q('[data-jr-v365-ball="gold"] .jr-v365-ball-rotor');
+
+  spinRotor(top,1,0);
+  spinRotor(gold,-1,1);
+}
+
+function verifyExactlyTwo(){
+  const cards=qa("#jrV365HeroArt,#jrV365SecondArt");
+  const windows=qa("[data-jr-v365-ball]");
+
+  if(cards.length!==2||windows.length!==2){
+    console.warn(
+      "[Liga JR V36.5] Se esperaban exactamente 2 diseños y 2 balones.",
+      {cards:cards.length,balls:windows.length}
+    );
   }
 }
 
 function boot(){
   mountExactlyTwo();
   bindActions();
-  parallax();
-  verifyOnlyTwo();
 
-  window.LJR_V364={
+  /* Esperar a que el navegador pinte las imágenes antes de comenzar el giro. */
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      startMotion();
+      verifyExactlyTwo();
+    });
+  });
+
+  window.LJR_V365={
     version:VERSION,
     categoriesModal,
     go,
     remount:()=>{
       mountExactlyTwo();
-      parallax();
-      verifyOnlyTwo();
+      requestAnimationFrame(startMotion);
     }
   };
 }

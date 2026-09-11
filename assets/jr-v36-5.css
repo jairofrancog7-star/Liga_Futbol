@@ -1,0 +1,289 @@
+/*
+ * Liga Juventino Rosas · MASTER V36.5
+ * EXACTAMENTE DOS BALONES.
+ * Mantiene las dos imágenes V36.4 completas y anima únicamente el balón
+ * mediante una copia circular alineada sobre el balón dibujado en cada imagen.
+ */
+
+/* El tercer hero antiguo era V12: ocultarlo definitivamente. */
+#v12CinematicHero{
+  display:none!important;
+  visibility:hidden!important;
+  height:0!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+
+/* Hero principal V36.5: conserva la imagen COMPLETA. */
+#v14CinematicHero{
+  margin:24px 0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+  min-height:0!important;
+}
+
+#v14CinematicHero #jrV14Canvas,
+#v14CinematicHero #jrAstraFootballScene,
+#v14CinematicHero #jrV36BallCanvas,
+#v14CinematicHero #jrV362TopBall,
+#v14CinematicHero #jrV363TopBall,
+#v14CinematicHero .v14-fallback{
+  display:none!important;
+}
+
+#jrV365HeroArt,
+#jrV365SecondArt{
+  position:relative;
+  width:100%;
+  aspect-ratio:1672 / 941;
+  overflow:hidden;
+  border-radius:30px;
+  background:#07100c;
+  isolation:isolate;
+  box-shadow:0 26px 70px rgba(0,0,0,.34);
+}
+
+#jrV365HeroArt{
+  border:1px solid rgba(69,237,145,.20);
+}
+
+#jrV365SecondArt{
+  margin:26px 0;
+  border:1px solid rgba(242,193,78,.21);
+}
+
+/* Imagen de fondo completa: nunca cover, nunca crop. */
+.jr-v365-image{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain!important;
+  object-position:center;
+  max-width:none!important;
+  user-select:none;
+  -webkit-user-drag:none;
+  pointer-events:none;
+}
+
+/*
+ * Círculo animado que reutiliza exactamente la parte del balón de la imagen.
+ * Queda alineado encima del balón estático y por eso visualmente sigue siendo
+ * UN solo balón por sección.
+ */
+.jr-v365-ball-window{
+  position:absolute;
+  z-index:4;
+  overflow:hidden;
+  border-radius:50%;
+  pointer-events:none;
+  transform:translateZ(0);
+  filter:drop-shadow(0 18px 25px rgba(0,0,0,.18));
+  -webkit-mask-image:radial-gradient(circle at center,#000 0 88%,rgba(0,0,0,.98) 92%,transparent 99%);
+  mask-image:radial-gradient(circle at center,#000 0 88%,rgba(0,0,0,.98) 92%,transparent 99%);
+}
+
+.jr-v365-ball-rotor{
+  position:absolute;
+  inset:0;
+  transform-origin:50% 50%;
+  will-change:transform;
+}
+
+.jr-v365-ball-source{
+  position:absolute;
+  display:block;
+  max-width:none!important;
+  user-select:none;
+  -webkit-user-drag:none;
+  pointer-events:none;
+}
+
+/* Balón 1 (verde/cian) — coordenadas sobre imagen 1672×941. */
+.jr-v365-top-ball{
+  left:55.8%;
+  top:23.0%;
+  width:29.6%;
+  height:51.8%;
+}
+.jr-v365-top-ball .jr-v365-ball-source{
+  width:337.84%;
+  height:193.05%;
+  left:-188.51%;
+  top:-44.40%;
+}
+
+/* Balón 2 (grafito/oro) — coordenadas sobre imagen 1672×941. */
+.jr-v365-gold-ball{
+  left:54.7%;
+  top:18.8%;
+  width:31.6%;
+  height:56.8%;
+}
+.jr-v365-gold-ball .jr-v365-ball-source{
+  width:316.46%;
+  height:176.06%;
+  left:-173.10%;
+  top:-33.10%;
+}
+
+/* Halo suave separado del balón para reforzar sensación de movimiento. */
+.jr-v365-orbit{
+  position:absolute;
+  z-index:3;
+  border-radius:50%;
+  pointer-events:none;
+  border:1px solid rgba(69,237,145,.24);
+  box-shadow:
+    0 0 30px rgba(69,237,145,.10),
+    inset 0 0 24px rgba(69,237,145,.06);
+  animation:jrV365Orbit 9s linear infinite;
+}
+
+.jr-v365-orbit.top{
+  left:53.8%;
+  top:18.8%;
+  width:34.0%;
+  aspect-ratio:1;
+  transform:rotateX(68deg) rotateZ(18deg);
+}
+
+.jr-v365-orbit.gold{
+  left:52.7%;
+  top:14.2%;
+  width:35.5%;
+  aspect-ratio:1;
+  border-color:rgba(242,193,78,.24);
+  box-shadow:
+    0 0 30px rgba(242,193,78,.10),
+    inset 0 0 24px rgba(242,193,78,.05);
+  animation-direction:reverse;
+  animation-duration:11s;
+}
+
+@keyframes jrV365Orbit{
+  to{rotate:360deg}
+}
+
+/* Hotspots de la primera imagen: siguen siendo funcionales sin duplicar texto. */
+.jr-v365-hotspot{
+  position:absolute;
+  z-index:9;
+  display:block;
+  border:0;
+  border-radius:999px;
+  background:transparent;
+  color:transparent;
+  cursor:pointer;
+  touch-action:manipulation;
+}
+
+.jr-v365-hotspot:focus-visible{
+  outline:3px solid #45ed91;
+  outline-offset:3px;
+  background:rgba(69,237,145,.07);
+}
+
+/* Posiciones sobre la imagen 1672×941 */
+.jr-v365-match{left:7.2%;top:70.1%;width:14.5%;height:8.4%}
+.jr-v365-jornada{left:22.0%;top:70.2%;width:11.2%;height:8.2%}
+.jr-v365-liguilla{left:33.6%;top:70.2%;width:10.6%;height:8.2%}
+.jr-v365-categorias{left:50.5%;top:18.0%;width:12.2%;height:8.2%}
+.jr-v365-live{left:83.0%;top:36.0%;width:14.2%;height:8.5%}
+.jr-v365-matchday{left:51.0%;top:63.1%;width:13.2%;height:8.4%}
+
+#jrV365SecondSection{
+  margin:0;
+  padding:0;
+}
+
+/* Modal de categorías. */
+.jr-v365-cat-bg{
+  position:fixed;
+  inset:0;
+  z-index:160000;
+  display:none;
+  place-items:center;
+  padding:14px;
+  background:rgba(0,0,0,.78);
+  backdrop-filter:blur(14px);
+}
+.jr-v365-cat-bg.show{display:grid}
+
+.jr-v365-cat-modal{
+  width:min(540px,100%);
+  border:1px solid rgba(69,237,145,.22);
+  border-radius:24px;
+  padding:18px;
+  color:#f3fff8;
+  background:#07100c;
+  box-shadow:0 30px 90px rgba(0,0,0,.52);
+}
+.jr-v365-cat-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:14px;
+}
+.jr-v365-cat-head h3{
+  margin:0;
+  font:800 22px/1.1 Sora,system-ui;
+}
+.jr-v365-close{
+  width:42px;
+  height:42px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:13px;
+  color:#fff;
+  background:#142019;
+  font-size:25px;
+}
+.jr-v365-cat-list{display:grid;gap:9px}
+.jr-v365-cat{
+  min-height:50px;
+  padding:11px 14px;
+  border:1px solid rgba(69,237,145,.16);
+  border-radius:14px;
+  color:#eefaf2;
+  background:linear-gradient(180deg,#14261c,#0d1813);
+  text-align:left;
+  font-weight:850;
+}
+.jr-v365-cat small{
+  display:block;
+  margin-top:3px;
+  color:#8ea99a;
+  font-size:10px;
+  font-weight:700;
+}
+
+/* Móvil: imagen completa y animación de balón conservada. */
+@media(max-width:760px){
+  #jrV365HeroArt,
+  #jrV365SecondArt{
+    width:100%;
+    aspect-ratio:1672 / 941;
+    border-radius:18px;
+  }
+
+  .jr-v365-ball-window{
+    filter:drop-shadow(0 10px 16px rgba(0,0,0,.16));
+  }
+
+  .jr-v365-orbit{
+    opacity:.68;
+  }
+}
+
+/* Si el usuario pide reducir movimiento, mantener las imágenes limpias. */
+@media(prefers-reduced-motion:reduce){
+  .jr-v365-orbit{animation:none}
+}
