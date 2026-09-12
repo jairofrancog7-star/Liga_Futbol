@@ -1,0 +1,69 @@
+/*
+ * Liga Juventino Rosas · V36.24
+ * CORRECCION REAL DE ORBITAS DE FONDO.
+ *
+ * El recorte que seguia viendose NO venia solo del Torus de Three.js.
+ * Tambien habia orbitas dibujadas por ::before con inset negativo (-4% / -8%)
+ * dentro de un stage con overflow:hidden.
+ * Esta capa, cargada al final, mete esas orbitas COMPLETAS dentro del cuadro.
+ */
+
+/* HERO VERDE: las dos elipses quedan enteras dentro del stage. */
+#v14CinematicHero .v14-stage::before{
+  inset:8% 9% 8% 7%!important;
+  border-radius:50%!important;
+  transform-origin:50% 50%!important;
+  animation:jrV3624OrbitSpin 16s linear infinite!important;
+}
+
+/* SEGUNDO BALON: misma protección para sus orbitas doradas. */
+#jrV369SecondStage::before{
+  inset:7% 7%!important;
+  border-radius:50%!important;
+  transform-origin:50% 50%!important;
+  animation:jrV3624OrbitSpinReverse 18s linear infinite!important;
+}
+
+/*
+ * Importante: sin scale(1.04). Esa escala era otra causa del corte
+ * al tocar izquierda/derecha durante la rotación.
+ */
+@keyframes jrV3624OrbitSpin{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+@keyframes jrV3624OrbitSpinReverse{
+  from{transform:rotate(360deg)}
+  to{transform:rotate(0deg)}
+}
+
+/* No dejar que reglas anteriores vuelvan a sacar el pseudo-elemento del cuadro. */
+#v14CinematicHero .v14-stage,
+#jrV369SecondStage{
+  overflow:hidden!important;
+}
+
+/* Canvas ocupa el cuadro, pero no altera las orbitas CSS. */
+#v14CinematicHero .v14-stage > .jr-v369-canvas,
+#jrV369SecondStage > .jr-v369-canvas{
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  transform:none!important;
+}
+
+@media(max-width:760px){
+  #v14CinematicHero .v14-stage::before{
+    inset:9% 10% 9% 8%!important;
+  }
+  #jrV369SecondStage::before{
+    inset:8% 8%!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  #v14CinematicHero .v14-stage::before,
+  #jrV369SecondStage::before{
+    animation:none!important;
+  }
+}
