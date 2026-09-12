@@ -1,6 +1,6 @@
-﻿(function(){
+(function(){
 "use strict";
-const VERSION="36.25",LOGO="./assets/liga-logo.webp?v=36-25",CATS=["Primera Fuerza","Intermedia","Segunda Fuerza","Veteranos 35+","Veteranos 50+"];
+const VERSION="36.26",LOGO="./assets/liga-logo.webp?v=36-26",CATS=["Primera Fuerza","Intermedia","Segunda Fuerza","Veteranos 35+","Veteranos 50+"];
 const q=(s,r=document)=>r.querySelector(s),qa=(s,r=document)=>Array.from(r.querySelectorAll(s)),norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\s+/g," ").trim();
 function toast(t){if(typeof window.showToast==="function"){try{window.showToast(t);return}catch(_){}}const e=document.createElement("div");e.textContent=t;Object.assign(e.style,{position:"fixed",left:"50%",bottom:"110px",transform:"translateX(-50%)",zIndex:190000,padding:"10px 13px",borderRadius:"12px",background:"#132219",color:"#fff",font:"700 12px system-ui"});document.body.appendChild(e);setTimeout(()=>e.remove(),1600)}
 function go(v){const d=v==="match"?"matchcenter":v,t=document.getElementById("view-"+d);if(!t){toast("Sección no disponible.");return false}if(typeof window.showView==="function"){try{window.showView(d);return true}catch(_){}}const c=qa("[data-view]").find(x=>norm(x.dataset.view)===norm(d));if(c){try{c.click();return true}catch(_){}}t.scrollIntoView({behavior:"smooth",block:"start"});return true}
@@ -33,7 +33,29 @@ function ensureSideRail(h){
     });
   });
 }
-function wire(){const h=q("#v14CinematicHero");if(!h)return;ensureSideRail(h);const li=q(".v14-lockup img",h);if(li){li.src=LOGO;li.alt="Liga Municipal de Fútbol Juventino Rosas"}qa(".v14-chip,button,a,[role='button']",h).forEach(e=>{const a=fromText(e.textContent||"");if(!a||e.dataset.jrV369Bound)return;e.dataset.jrV369Bound="1";if(!["BUTTON","A"].includes(e.tagName)){e.setAttribute("role","button");e.tabIndex=0}e.addEventListener("click",x=>{x.preventDefault();x.stopPropagation();action(a)});e.addEventListener("keydown",x=>{if(x.key==="Enter"||x.key===" "){x.preventDefault();action(a)}})})}
+function ensureV3626HeroOrbits(h){
+  if(!h)return;
+  const stage=q(".v14-stage",h);
+  if(!stage||q("#jrV3626HeroOrbits",stage))return;
+  const wrap=document.createElement("div");
+  wrap.id="jrV3626HeroOrbits";
+  wrap.className="jr-v3626-orbits";
+  wrap.setAttribute("aria-hidden","true");
+  wrap.innerHTML=`
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <filter id="jrV3626Glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation=".55" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <ellipse class="o o1" cx="50" cy="50" rx="47" ry="35" pathLength="100"/>
+      <ellipse class="o o2" cx="50" cy="50" rx="43" ry="46" transform="rotate(31 50 50)" pathLength="100"/>
+      <ellipse class="o o3" cx="50" cy="50" rx="46" ry="28" transform="rotate(-17 50 50)" pathLength="100"/>
+    </svg>`;
+  stage.insertBefore(wrap,stage.firstChild);
+}
+function wire(){const h=q("#v14CinematicHero");if(!h)return;ensureSideRail(h);ensureV3626HeroOrbits(h);const li=q(".v14-lockup img",h);if(li){li.src=LOGO;li.alt="Liga Municipal de Fútbol Juventino Rosas"}qa(".v14-chip,button,a,[role='button']",h).forEach(e=>{const a=fromText(e.textContent||"");if(!a||e.dataset.jrV369Bound)return;e.dataset.jrV369Bound="1";if(!["BUTTON","A"].includes(e.tagName)){e.setAttribute("role","button");e.tabIndex=0}e.addEventListener("click",x=>{x.preventDefault();x.stopPropagation();action(a)});e.addEventListener("keydown",x=>{if(x.key==="Enter"||x.key===" "){x.preventDefault();action(a)}})})}
 function cleanup(){["#jrV365SecondSection","#jrV364SecondSection","#jrV367SecondSection","#jrV366HeroArt","#jrV365HeroArt","#jrV365SecondArt","#jrV362SecondBall","#jrV363SecondBall","#jrV36SecondBall","#jrV365GoldBall","#jrV369SecondSection"].forEach(s=>qa(s).forEach(e=>e.remove()));const h=q("#v14CinematicHero");if(h){qa(".jr-v367-canvas,.jr-v367-tip,.jr-v369-canvas,.jr-v369-tip",h).forEach(e=>e.remove());const st=q(".v14-stage",h);if(st)delete st.dataset.jrV369Ready}}
 function second(){const h=q("#v14CinematicHero");if(!h||q("#jrV369SecondSection"))return;const s=document.createElement("section");s.id="jrV369SecondSection";s.innerHTML=`<div class="jr-v369-second-grid"><div class="jr-v369-second-copy"><div class="jr-v369-second-lockup"><img src="${LOGO}" alt="Logo Liga Municipal de Fútbol Juventino Rosas"><span><b>LIGA MUNICIPAL DE FÚTBOL</b><small>JUVENTINO ROSAS A.C.</small></span></div><div class="jr-v369-eyebrow">SEGUNDO UNIVERSO DE LA LIGA</div><h3>EL FÚTBOL <span>TAMBIÉN BRILLA</span> FUERA DE LA CANCHA.</h3><p>Explora equipos, jornadas, historias y reglamento en una segunda experiencia visual. El balón dorado es independiente del balón principal y conserva accesos funcionales.</p><div class="jr-v369-second-actions"><button class="primary" data-jr-v369-action="teams">Equipos</button><button data-jr-v369-action="jornada">Partidos</button><button data-jr-v369-action="more">Historias</button><button data-jr-v369-action="rules">Reglamento</button></div><div class="jr-v369-second-stats"><div class="jr-v369-stat"><b>5 categorías</b><small>Primera, Intermedia, Segunda y Veteranos</small></div><div class="jr-v369-stat"><b>JR Matchday</b><small>Jornadas y resultados</small></div><div class="jr-v369-stat"><b>Match Center</b><small>Seguimiento de la liga</small></div></div></div><div id="jrV369SecondStage" aria-label="Balón dorado 3D interactivo"></div></div>`;h.insertAdjacentElement("afterend",s);qa("[data-jr-v369-action]",s).forEach(b=>b.onclick=()=>action(b.dataset.jrV369Action))}
 function loadThree(){if(window.THREE&&window.THREE.WebGLRenderer)return Promise.resolve(window.THREE);return new Promise((res,rej)=>{let s=q('script[data-jr-v369-three]');if(s){s.addEventListener("load",()=>res(window.THREE),{once:true});s.addEventListener("error",rej,{once:true});return}s=document.createElement("script");s.dataset.jrV369Three="1";s.src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js";s.async=true;s.onload=()=>window.THREE?res(window.THREE):rej();s.onerror=rej;document.head.appendChild(s)})}
@@ -299,7 +321,7 @@ B.add(shell);
 
   const desiredDiameter=isSecond
         ? Math.min(h*(mob?.84:.86), w*(mob?.92:.94))
-        : Math.min(h*(mob?.84:.86), w*(mob?.78:.80)),
+        : Math.min(h*(mob?.84:.86), w*(mob?.92:.94)),
         targetRadiusPx=Math.max(135,desiredDiameter*.5),
         effectiveBallRadius=1.52*sc,
         zForPixels=(effectiveBallRadius*(h*.5))/(targetRadiusPx*hf),
@@ -315,8 +337,8 @@ B.add(shell);
         leftPad=mob?14:18,
         rightRailStart=w-(mob?82:90),
         minCenter=leftPad+ballRadiusPx,
-        maxCenter=rightRailStart-ballRadiusPx,
-        naturalCenter=isHero?w*(mob?.40:.42):w*.5,
+        maxCenter=w-leftPad-ballRadiusPx,
+        naturalCenter=isHero?w*(mob?.46:.47):w*.5,
         targetCenterPx=isHero
           ? Math.max(minCenter,Math.min(maxCenter,naturalCenter))
           : w*.5,
