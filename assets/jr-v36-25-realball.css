@@ -1,0 +1,254 @@
+/*
+ * Liga Juventino Rosas · MASTER V36.25
+ * RESTAURA HERO + BALÓN MODERNO
+ *
+ * Mantiene la arquitectura actual.
+ * No reconstruye la liga, no cambia datos, resultados ni permisos.
+ */
+
+/* =========================================================
+   HERO PRINCIPAL: recuperar identidad que ya gustaba
+   ========================================================= */
+
+#v14CinematicHero .v14-title{
+  position:relative!important;
+  z-index:40!important;
+  overflow:visible!important;
+}
+
+#v14CinematicHero .v14-title .outline{
+  color:#f6fbf8!important;
+  -webkit-text-fill-color:#f6fbf8!important;
+  -webkit-text-stroke:0!important;
+}
+
+#v14CinematicHero .v14-title .electric{
+  color:#35ef91!important;
+  -webkit-text-fill-color:#35ef91!important;
+  text-shadow:0 0 26px rgba(53,239,145,.12)!important;
+}
+
+/* Firma recuperada del diseño anterior: FÚTBOL / QUE SE SIENTE / EN VIVO. */
+#jrV3625Heritage{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  flex-wrap:wrap;
+  margin:17px 0 18px;
+  padding:10px 12px;
+  width:max-content;
+  max-width:100%;
+  border-left:2px solid rgba(69,237,145,.55);
+  background:linear-gradient(90deg,rgba(69,237,145,.07),transparent);
+}
+
+#jrV3625Heritage .football{
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:1px rgba(248,255,251,.72);
+  font-family:"Sora",system-ui,sans-serif;
+  font-size:clamp(13px,1.4vw,18px);
+  font-weight:900;
+  letter-spacing:.08em;
+}
+
+#jrV3625Heritage .feel{
+  color:#45ed91;
+  font-family:"Sora",system-ui,sans-serif;
+  font-size:clamp(13px,1.4vw,18px);
+  font-weight:900;
+  letter-spacing:.04em;
+}
+
+#jrV3625Heritage .live{
+  color:#fff;
+  font-family:"Sora",system-ui,sans-serif;
+  font-size:clamp(13px,1.4vw,18px);
+  font-weight:900;
+  letter-spacing:.04em;
+}
+
+/* Recuperar los 3 botones principales. */
+#v14CinematicHero .v14-actions{
+  position:relative!important;
+  z-index:70!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr)!important;
+  gap:10px!important;
+  max-width:590px!important;
+  margin-top:4px!important;
+}
+
+#v14CinematicHero .v14-actions > button,
+#v14CinematicHero .v14-actions > a{
+  min-height:48px!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+
+/* La botonera lateral se conserva, pero no debe dominar el diseño. */
+#jrV3610SideRail{
+  z-index:90!important;
+  filter:drop-shadow(0 12px 22px rgba(0,0,0,.24));
+}
+
+/* =========================================================
+   ESCENA VERDE: líneas modernas alrededor del balón
+   ========================================================= */
+
+#v14CinematicHero .v14-stage{
+  isolation:isolate!important;
+}
+
+#v14CinematicHero .v14-stage::after{
+  content:"";
+  position:absolute;
+  inset:5% 4% 5% 3%;
+  z-index:2;
+  pointer-events:none;
+  opacity:.48;
+  border-radius:50%;
+  background:
+    radial-gradient(ellipse at 50% 50%,transparent 57%,rgba(45,208,255,.18) 57.6%,transparent 58.5%),
+    radial-gradient(ellipse at 50% 50%,transparent 68%,rgba(69,237,145,.22) 68.6%,transparent 69.5%),
+    conic-gradient(from 10deg,
+      transparent 0 12%,
+      rgba(69,237,145,.0) 12%,
+      rgba(69,237,145,.40) 13%,
+      transparent 14% 39%,
+      rgba(46,198,255,.34) 40%,
+      transparent 41% 72%,
+      rgba(69,237,145,.34) 73%,
+      transparent 74% 100%);
+  animation:jrV3625OrbitGreen 12s linear infinite;
+  mix-blend-mode:screen;
+}
+
+@keyframes jrV3625OrbitGreen{
+  from{transform:rotate(0deg) scale(.96)}
+  50%{transform:rotate(180deg) scale(1.01)}
+  to{transform:rotate(360deg) scale(.96)}
+}
+
+/* =========================================================
+   ESCENA DORADA: misma energía/movimiento, otro color
+   ========================================================= */
+
+#jrV369SecondSection{
+  isolation:isolate!important;
+}
+
+#jrV369SecondStage{
+  isolation:isolate!important;
+}
+
+#jrV369SecondStage::after{
+  content:"";
+  position:absolute;
+  inset:5% 4%;
+  z-index:2;
+  pointer-events:none;
+  opacity:.50;
+  border-radius:50%;
+  background:
+    radial-gradient(ellipse at 50% 50%,transparent 57%,rgba(255,125,34,.17) 57.6%,transparent 58.5%),
+    radial-gradient(ellipse at 50% 50%,transparent 68%,rgba(242,193,78,.24) 68.6%,transparent 69.5%),
+    conic-gradient(from 210deg,
+      transparent 0 11%,
+      rgba(242,193,78,.42) 12%,
+      transparent 13% 34%,
+      rgba(255,123,36,.36) 35%,
+      transparent 36% 66%,
+      rgba(255,224,128,.34) 67%,
+      transparent 68% 100%);
+  animation:jrV3625OrbitGold 14s linear infinite reverse;
+  mix-blend-mode:screen;
+}
+
+@keyframes jrV3625OrbitGold{
+  from{transform:rotate(0deg) scale(.96)}
+  50%{transform:rotate(180deg) scale(1.01)}
+  to{transform:rotate(360deg) scale(.96)}
+}
+
+/* Una línea luminosa que viaja por el cuadro dorado. */
+#jrV369SecondSection::after{
+  content:"";
+  position:absolute;
+  left:-18%;
+  right:-18%;
+  top:48%;
+  height:2px;
+  z-index:1;
+  pointer-events:none;
+  opacity:.35;
+  background:linear-gradient(90deg,
+    transparent,
+    rgba(242,193,78,.1) 16%,
+    rgba(255,227,146,.9) 48%,
+    rgba(255,123,36,.52) 66%,
+    transparent);
+  box-shadow:
+    0 0 12px rgba(242,193,78,.42),
+    0 0 34px rgba(255,123,36,.20);
+  animation:jrV3625GoldSweep 5.8s ease-in-out infinite alternate;
+  transform:rotate(-7deg);
+}
+
+@keyframes jrV3625GoldSweep{
+  from{translate:-8% -18px;opacity:.18}
+  to{translate:8% 22px;opacity:.62}
+}
+
+/* =========================================================
+   BALÓN: el canvas queda limpio y sin marca/cuadro negro
+   ========================================================= */
+
+#v14CinematicHero .jr-v369-canvas,
+#jrV369SecondStage .jr-v369-canvas{
+  z-index:5!important;
+  filter:
+    drop-shadow(0 22px 34px rgba(0,0,0,.24))
+    drop-shadow(0 0 14px rgba(255,255,255,.04))!important;
+}
+
+#v14CinematicHero .jr-v369-tip,
+#jrV369SecondStage .jr-v369-tip{
+  z-index:95!important;
+}
+
+/* Móvil: conservar 3 botones, compactos, sin ocultar el título. */
+@media(max-width:620px){
+  #jrV3625Heritage{
+    gap:6px;
+    margin:12px 0 14px;
+    padding:8px 10px;
+  }
+
+  #v14CinematicHero .v14-actions{
+    grid-template-columns:1fr 1fr!important;
+  }
+
+  #v14CinematicHero .v14-actions > :first-child{
+    grid-column:1/-1;
+  }
+
+  #v14CinematicHero .v14-actions > button,
+  #v14CinematicHero .v14-actions > a{
+    min-height:45px!important;
+    padding-inline:10px!important;
+  }
+
+  #v14CinematicHero .v14-stage::after,
+  #jrV369SecondStage::after{
+    inset:8% 5%!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  #v14CinematicHero .v14-stage::after,
+  #jrV369SecondStage::after,
+  #jrV369SecondSection::after{
+    animation:none!important;
+  }
+}

@@ -1,6 +1,6 @@
-(function(){
+﻿(function(){
 "use strict";
-const VERSION="36.24",LOGO="./assets/liga-logo.webp?v=36-24",CATS=["Primera Fuerza","Intermedia","Segunda Fuerza","Veteranos 35+","Veteranos 50+"];
+const VERSION="36.25",LOGO="./assets/liga-logo.webp?v=36-25",CATS=["Primera Fuerza","Intermedia","Segunda Fuerza","Veteranos 35+","Veteranos 50+"];
 const q=(s,r=document)=>r.querySelector(s),qa=(s,r=document)=>Array.from(r.querySelectorAll(s)),norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\s+/g," ").trim();
 function toast(t){if(typeof window.showToast==="function"){try{window.showToast(t);return}catch(_){}}const e=document.createElement("div");e.textContent=t;Object.assign(e.style,{position:"fixed",left:"50%",bottom:"110px",transform:"translateX(-50%)",zIndex:190000,padding:"10px 13px",borderRadius:"12px",background:"#132219",color:"#fff",font:"700 12px system-ui"});document.body.appendChild(e);setTimeout(()=>e.remove(),1600)}
 function go(v){const d=v==="match"?"matchcenter":v,t=document.getElementById("view-"+d);if(!t){toast("Sección no disponible.");return false}if(typeof window.showView==="function"){try{window.showView(d);return true}catch(_){}}const c=qa("[data-view]").find(x=>norm(x.dataset.view)===norm(d));if(c){try{c.click();return true}catch(_){}}t.scrollIntoView({behavior:"smooth",block:"start"});return true}
@@ -38,7 +38,238 @@ function cleanup(){["#jrV365SecondSection","#jrV364SecondSection","#jrV367Second
 function second(){const h=q("#v14CinematicHero");if(!h||q("#jrV369SecondSection"))return;const s=document.createElement("section");s.id="jrV369SecondSection";s.innerHTML=`<div class="jr-v369-second-grid"><div class="jr-v369-second-copy"><div class="jr-v369-second-lockup"><img src="${LOGO}" alt="Logo Liga Municipal de Fútbol Juventino Rosas"><span><b>LIGA MUNICIPAL DE FÚTBOL</b><small>JUVENTINO ROSAS A.C.</small></span></div><div class="jr-v369-eyebrow">SEGUNDO UNIVERSO DE LA LIGA</div><h3>EL FÚTBOL <span>TAMBIÉN BRILLA</span> FUERA DE LA CANCHA.</h3><p>Explora equipos, jornadas, historias y reglamento en una segunda experiencia visual. El balón dorado es independiente del balón principal y conserva accesos funcionales.</p><div class="jr-v369-second-actions"><button class="primary" data-jr-v369-action="teams">Equipos</button><button data-jr-v369-action="jornada">Partidos</button><button data-jr-v369-action="more">Historias</button><button data-jr-v369-action="rules">Reglamento</button></div><div class="jr-v369-second-stats"><div class="jr-v369-stat"><b>5 categorías</b><small>Primera, Intermedia, Segunda y Veteranos</small></div><div class="jr-v369-stat"><b>JR Matchday</b><small>Jornadas y resultados</small></div><div class="jr-v369-stat"><b>Match Center</b><small>Seguimiento de la liga</small></div></div></div><div id="jrV369SecondStage" aria-label="Balón dorado 3D interactivo"></div></div>`;h.insertAdjacentElement("afterend",s);qa("[data-jr-v369-action]",s).forEach(b=>b.onclick=()=>action(b.dataset.jrV369Action))}
 function loadThree(){if(window.THREE&&window.THREE.WebGLRenderer)return Promise.resolve(window.THREE);return new Promise((res,rej)=>{let s=q('script[data-jr-v369-three]');if(s){s.addEventListener("load",()=>res(window.THREE),{once:true});s.addEventListener("error",rej,{once:true});return}s=document.createElement("script");s.dataset.jrV369Three="1";s.src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js";s.async=true;s.onload=()=>window.THREE?res(window.THREE):rej();s.onerror=rej;document.head.appendChild(s)})}
 function dirs(T){const p=(1+Math.sqrt(5))/2;return [[0,1,p],[0,-1,p],[0,1,-p],[0,-1,-p],[1,p,0],[-1,p,0],[1,-p,0],[-1,-p,0],[p,0,1],[-p,0,1],[p,0,-1],[-p,0,-1]].map(v=>new T.Vector3(...v).normalize())}
-async function makeBall(stage,o){if(!stage||stage.dataset.jrV369Ready)return;stage.dataset.jrV369Ready="1";let T;try{T=await loadThree()}catch(_){toast("No se pudo cargar el motor 3D.");return}const c=document.createElement("canvas");c.className="jr-v369-canvas";stage.appendChild(c);const tip=document.createElement("div");tip.className="jr-v369-tip";tip.textContent="Arrastra · giro 960° · toca para patear";stage.appendChild(tip);let R;try{R=new T.WebGLRenderer({canvas:c,alpha:true,antialias:true,powerPreference:"high-performance"})}catch(_){toast("WebGL no está disponible.");return}R.setClearColor(0,0);R.shadowMap.enabled=true;if("outputEncoding" in R&&T.sRGBEncoding)R.outputEncoding=T.sRGBEncoding;const S=new T.Scene(),C=new T.PerspectiveCamera(30,1,.1,100),W=new T.Group(),M=new T.Group(),B=new T.Group(),O=new T.Group();S.add(W);W.add(M);M.add(B);M.add(O);const shell=new T.Mesh(new T.SphereGeometry(1.52,72,56),new T.MeshPhysicalMaterial({color:o.shell,roughness:.24,metalness:.02,clearcoat:.62,clearcoatRoughness:.23}));B.add(shell);const z=new T.Vector3(0,0,1),pm=new T.MeshStandardMaterial({color:o.panel,roughness:.42,side:T.DoubleSide});dirs(T).forEach((d,i)=>{const g=new T.CircleGeometry(.305,5);g.rotateZ((i%5)*.19);const p=new T.Mesh(g,pm);p.position.copy(d).multiplyScalar(1.526);p.quaternion.setFromUnitVectors(z,d);B.add(p)});B.add(new T.LineSegments(new T.WireframeGeometry(new T.IcosahedronGeometry(1.536,2)),new T.LineBasicMaterial({color:o.seam,transparent:true,opacity:.11})));try{const tx=await new T.TextureLoader().loadAsync(LOGO);if(T.sRGBEncoding)tx.encoding=T.sRGBEncoding;const l=new T.Mesh(new T.PlaneGeometry(.58,.58),new T.MeshBasicMaterial({map:tx,transparent:true,depthWrite:false,side:T.DoubleSide}));l.position.z=1.548;B.add(l)}catch(_){}[[1.92,.018,o.o1,.38,1.20,.20],[1.74,.013,o.o2,.26,.90,-.32],[2.10,.010,o.o3,.18,1.44,.48]].forEach(v=>{const t=new T.Mesh(new T.TorusGeometry(v[0],v[1],8,128),new T.MeshBasicMaterial({color:v[2],transparent:true,opacity:v[3]}));t.rotation.x=v[4];t.rotation.z=v[5];O.add(t)});const pg=new T.BufferGeometry(),n=96,a=new Float32Array(n*3);for(let i=0;i<n;i++){const an=Math.random()*Math.PI*2,r=1.55+Math.random()*.26;a[i*3]=Math.cos(an)*r;a[i*3+1]=(Math.random()-.5)*2.4;a[i*3+2]=Math.sin(an)*r*.5}pg.setAttribute("position",new T.BufferAttribute(a,3));O.add(new T.Points(pg,new T.PointsMaterial({color:o.part,size:.028,transparent:true,opacity:.76})));S.add(new T.HemisphereLight(0xffffff,0x07100c,1.20));const k=new T.DirectionalLight(o.key,2.45);k.position.set(-3.2,4.8,5.2);S.add(k);const ac=new T.PointLight(o.accent,1.75,12);ac.position.set(3.2,-.9,3.5);S.add(ac);const rim=new T.PointLight(o.rim,.95,12);rim.position.set(-3,1.4,-2.2);S.add(rim);let drag=false,downX=0,downY=0,lastX=0,lastY=0,yaw=0,pitch=0,kick=0,last=performance.now(),visible=true,orbitScale=1;const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches,RAD960=T.MathUtils.degToRad(960);function size(){
+/* V36.25 REAL BALL SURFACE START */
+function jrV3625Surface(T,o){
+  const W=2048,H=1024;
+  const mapCanvas=document.createElement("canvas");
+  const bumpCanvas=document.createElement("canvas");
+  mapCanvas.width=bumpCanvas.width=W;
+  mapCanvas.height=bumpCanvas.height=H;
+
+  const ctx=mapCanvas.getContext("2d");
+  const bctx=bumpCanvas.getContext("2d");
+
+  const gold=(
+    o.accent===0xffb52e ||
+    o.o1===0xffce55 ||
+    o.key===0xfff3cf
+  );
+
+  const base=gold?"#eee7d8":"#f4f4ef";
+  const base2=gold?"#ded4bd":"#e5ebe7";
+  const dark=gold?"#3b3020":"#0d2521";
+  const dark2=gold?"#6f5b35":"#163d35";
+  const accent=gold?"#e6b53f":"#18c982";
+  const accent2=gold?"#ff7b24":"#28bff0";
+  const seam=gold?"rgba(63,50,31,.42)":"rgba(23,42,36,.35)";
+
+  const grad=ctx.createLinearGradient(0,0,W,H);
+  grad.addColorStop(0,base);
+  grad.addColorStop(.55,"#ffffff");
+  grad.addColorStop(1,base2);
+  ctx.fillStyle=grad;
+  ctx.fillRect(0,0,W,H);
+
+  bctx.fillStyle="#bdbdbd";
+  bctx.fillRect(0,0,W,H);
+
+  /* textura tipo cuero, muy sutil */
+  for(let y=3;y<H;y+=9){
+    for(let x=3;x<W;x+=9){
+      const k=((x*13+y*7)%17)/17;
+      ctx.fillStyle=`rgba(30,40,34,${0.012+k*.018})`;
+      ctx.fillRect(x+(y%18?1:0),y,1.2,1.2);
+    }
+  }
+
+  const R=112;
+  const DX=Math.sqrt(3)*R;
+  const DY=1.5*R;
+
+  function polyPath(c,cx,cy,r,sides,rot){
+    c.beginPath();
+    for(let i=0;i<sides;i++){
+      const a=rot+i*Math.PI*2/sides;
+      const px=cx+Math.cos(a)*r;
+      const py=cy+Math.sin(a)*r;
+      if(i===0)c.moveTo(px,py);else c.lineTo(px,py);
+    }
+    c.closePath();
+  }
+
+  function seamHex(cx,cy,rot){
+    ctx.save();
+    ctx.strokeStyle=seam;
+    ctx.lineWidth=3.1;
+    polyPath(ctx,cx,cy,R,6,rot);
+    ctx.stroke();
+
+    bctx.save();
+    bctx.strokeStyle="#717171";
+    bctx.lineWidth=7;
+    polyPath(bctx,cx,cy,R,6,rot);
+    bctx.stroke();
+    bctx.restore();
+    ctx.restore();
+  }
+
+  function modernPanel(cx,cy,rot,variant){
+    ctx.save();
+    ctx.translate(cx,cy);
+    ctx.rotate(rot);
+
+    /* panel oscuro principal con forma moderna, sin logos de terceros */
+    const g=ctx.createLinearGradient(-90,-90,90,90);
+    g.addColorStop(0,dark2);
+    g.addColorStop(1,dark);
+    ctx.fillStyle=g;
+    ctx.strokeStyle=gold?"rgba(255,237,181,.26)":"rgba(161,255,214,.23)";
+    ctx.lineWidth=4;
+
+    ctx.beginPath();
+    ctx.moveTo(-88,-25);
+    ctx.quadraticCurveTo(-46,-86,15,-76);
+    ctx.quadraticCurveTo(73,-64,90,-6);
+    ctx.quadraticCurveTo(54,16,32,79);
+    ctx.quadraticCurveTo(-26,86,-71,44);
+    ctx.quadraticCurveTo(-87,18,-88,-25);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    /* ala/pétalo secundario */
+    ctx.fillStyle=variant%2?dark:dark2;
+    ctx.beginPath();
+    ctx.moveTo(-50,-66);
+    ctx.quadraticCurveTo(-15,-24,4,0);
+    ctx.quadraticCurveTo(36,-20,72,-52);
+    ctx.quadraticCurveTo(46,-4,28,34);
+    ctx.quadraticCurveTo(-12,18,-50,-66);
+    ctx.closePath();
+    ctx.fill();
+
+    /* líneas de acento como balón moderno */
+    ctx.lineCap="round";
+    ctx.lineJoin="round";
+
+    ctx.strokeStyle=accent;
+    ctx.lineWidth=10;
+    ctx.beginPath();
+    ctx.moveTo(-83,42);
+    ctx.bezierCurveTo(-30,12,4,-14,75,-64);
+    ctx.stroke();
+
+    ctx.strokeStyle=accent2;
+    ctx.lineWidth=4;
+    ctx.beginPath();
+    ctx.moveTo(-78,55);
+    ctx.bezierCurveTo(-20,18,18,-13,78,-52);
+    ctx.stroke();
+
+    ctx.strokeStyle="rgba(255,255,255,.62)";
+    ctx.lineWidth=2;
+    ctx.beginPath();
+    ctx.moveTo(-70,31);
+    ctx.bezierCurveTo(-25,7,8,-18,63,-55);
+    ctx.stroke();
+
+    ctx.restore();
+
+    /* relieve del panel y sus costuras */
+    bctx.save();
+    bctx.translate(cx,cy);
+    bctx.rotate(rot);
+    bctx.fillStyle="#8e8e8e";
+    bctx.beginPath();
+    bctx.moveTo(-88,-25);
+    bctx.quadraticCurveTo(-46,-86,15,-76);
+    bctx.quadraticCurveTo(73,-64,90,-6);
+    bctx.quadraticCurveTo(54,16,32,79);
+    bctx.quadraticCurveTo(-26,86,-71,44);
+    bctx.quadraticCurveTo(-87,18,-88,-25);
+    bctx.closePath();
+    bctx.fill();
+    bctx.strokeStyle="#5c5c5c";
+    bctx.lineWidth=8;
+    bctx.stroke();
+    bctx.restore();
+  }
+
+  let idx=0;
+  for(let row=-1;row<7;row++){
+    for(let col=-1;col<13;col++){
+      const cx=col*DX+(row&1?DX*.5:0)+65;
+      const cy=row*DY+75;
+      seamHex(cx,cy,Math.PI/6);
+
+      /* repartir paneles oscuros, sin llenar todo de "cuadritos" */
+      if(((row*7+col*3+19)%5===0) || ((row+col)%9===0)){
+        modernPanel(cx,cy,(idx%7)*.23,idx++);
+      }
+    }
+  }
+
+  /* arcos largos adicionales, parecidos a costuras/paneles modernos */
+  ctx.save();
+  ctx.globalAlpha=.55;
+  ctx.strokeStyle=accent;
+  ctx.lineWidth=4;
+  for(let i=0;i<5;i++){
+    ctx.beginPath();
+    ctx.moveTo(-120,H*(.12+i*.19));
+    ctx.bezierCurveTo(
+      W*.28,H*(.02+i*.20),
+      W*.66,H*(.26+i*.11),
+      W+130,H*(.11+i*.18)
+    );
+    ctx.stroke();
+  }
+  ctx.strokeStyle=accent2;
+  ctx.lineWidth=2;
+  for(let i=0;i<4;i++){
+    ctx.beginPath();
+    ctx.moveTo(W*(.05+i*.26),-80);
+    ctx.bezierCurveTo(
+      W*(.18+i*.22),H*.30,
+      W*(.08+i*.26),H*.68,
+      W*(.23+i*.24),H+80
+    );
+    ctx.stroke();
+  }
+  ctx.restore();
+
+  const map=new T.CanvasTexture(mapCanvas);
+  const bump=new T.CanvasTexture(bumpCanvas);
+  if(T.sRGBEncoding)map.encoding=T.sRGBEncoding;
+  map.wrapS=T.RepeatWrapping;
+  map.wrapT=T.ClampToEdgeWrapping;
+  bump.wrapS=T.RepeatWrapping;
+  bump.wrapT=T.ClampToEdgeWrapping;
+  map.anisotropy=4;
+  bump.anisotropy=2;
+
+  return {map,bump};
+}
+/* V36.25 REAL BALL SURFACE END */
+async function makeBall(stage,o){if(!stage||stage.dataset.jrV369Ready)return;stage.dataset.jrV369Ready="1";let T;try{T=await loadThree()}catch(_){toast("No se pudo cargar el motor 3D.");return}const c=document.createElement("canvas");c.className="jr-v369-canvas";stage.appendChild(c);const tip=document.createElement("div");tip.className="jr-v369-tip";tip.textContent="Arrastra · giro 960° · toca para patear";stage.appendChild(tip);let R;try{R=new T.WebGLRenderer({canvas:c,alpha:true,antialias:true,powerPreference:"high-performance"})}catch(_){toast("WebGL no está disponible.");return}R.setClearColor(0,0);R.shadowMap.enabled=true;if("outputEncoding" in R&&T.sRGBEncoding)R.outputEncoding=T.sRGBEncoding;const S=new T.Scene(),C=new T.PerspectiveCamera(30,1,.1,100),W=new T.Group(),M=new T.Group(),B=new T.Group(),O=new T.Group();S.add(W);W.add(M);M.add(B);M.add(O);/* V36.25 REAL BALL MESH START */
+const jrSurface=jrV3625Surface(T,o);
+const shell=new T.Mesh(
+  new T.SphereGeometry(1.52,96,72),
+  new T.MeshPhysicalMaterial({
+    color:0xffffff,
+    map:jrSurface.map,
+    bumpMap:jrSurface.bump,
+    bumpScale:.038,
+    roughness:.34,
+    metalness:.015,
+    clearcoat:.40,
+    clearcoatRoughness:.34
+  })
+);
+shell.castShadow=true;
+shell.receiveShadow=true;
+B.add(shell);
+/* V36.25 REAL BALL MESH END */[[1.92,.018,o.o1,.38,1.20,.20],[1.74,.013,o.o2,.26,.90,-.32],[2.10,.010,o.o3,.18,1.44,.48]].forEach(v=>{const t=new T.Mesh(new T.TorusGeometry(v[0],v[1],8,128),new T.MeshBasicMaterial({color:v[2],transparent:true,opacity:v[3]}));t.rotation.x=v[4];t.rotation.z=v[5];O.add(t)});const pg=new T.BufferGeometry(),n=96,a=new Float32Array(n*3);for(let i=0;i<n;i++){const an=Math.random()*Math.PI*2,r=1.55+Math.random()*.26;a[i*3]=Math.cos(an)*r;a[i*3+1]=(Math.random()-.5)*2.4;a[i*3+2]=Math.sin(an)*r*.5}pg.setAttribute("position",new T.BufferAttribute(a,3));O.add(new T.Points(pg,new T.PointsMaterial({color:o.part,size:.028,transparent:true,opacity:.76})));S.add(new T.HemisphereLight(0xffffff,0x07100c,1.20));const k=new T.DirectionalLight(o.key,2.45);k.position.set(-3.2,4.8,5.2);S.add(k);const ac=new T.PointLight(o.accent,1.75,12);ac.position.set(3.2,-.9,3.5);S.add(ac);const rim=new T.PointLight(o.rim,.95,12);rim.position.set(-3,1.4,-2.2);S.add(rim);let drag=false,downX=0,downY=0,lastX=0,lastY=0,yaw=0,pitch=0,kick=0,last=performance.now(),visible=true,orbitScale=1;const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches,RAD960=T.MathUtils.degToRad(960);function size(){
   const b=stage.getBoundingClientRect(),
         mob=matchMedia("(max-width:760px)").matches,
         w=Math.max(280,b.width),

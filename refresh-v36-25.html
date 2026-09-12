@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate,max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Liga JR · V36.25</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#06100b;color:#fff;font-family:system-ui}
+main{max-width:620px;padding:28px;text-align:center}.b{font-size:60px;animation:r .85s linear infinite}@keyframes r{to{transform:rotate(960deg)}}p{color:#9fb4a8;line-height:1.6}
+</style>
+</head>
+<body>
+<main>
+<div class="b">⚽</div>
+<h1>V36.25 · BALÓN REAL</h1>
+<p>Limpiando la versión anterior y cargando el nuevo panelado, líneas y hero restaurado.</p>
+</main>
+<script>
+(async()=>{
+ try{
+  if("serviceWorker" in navigator){
+   const regs=await navigator.serviceWorker.getRegistrations();
+   await Promise.all(regs.map(r=>r.unregister().catch(()=>{})));
+  }
+  if("caches" in window){
+   const keys=await caches.keys();
+   await Promise.all(keys.map(k=>caches.delete(k)));
+  }
+ }catch(e){}
+ setTimeout(()=>location.replace("./?v=36-25-"+Date.now()),900);
+})();
+</script>
+</body>
+</html>
