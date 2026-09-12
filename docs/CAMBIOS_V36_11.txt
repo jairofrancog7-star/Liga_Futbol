@@ -1,0 +1,23 @@
+LIGA JUVENTINO ROSAS - MASTER V36.11
+=====================================
+
+OBJETIVO
+--------
+Hacer que los DOS balones llenen mucho mas sus cuadros.
+
+CAMBIOS
+-------
+- Balon principal: + zoom + escala.
+- Balon principal desplazado un poco a la izquierda para respetar botones.
+- Botones laterales mas pequenos.
+- Segundo balon: + zoom + escala.
+- Ambos canvas usan todo el ancho/alto del stage.
+- Se conserva giro automatico 960 grados.
+- Se conserva arrastre tactil/mouse.
+- Se conserva toque para patear.
+- Se conservan botones funcionales.
+- No toca resultados, tablas, equipos, jugadores ni APK.
+
+REFRESH DIRECTO
+---------------
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v36-11.html
