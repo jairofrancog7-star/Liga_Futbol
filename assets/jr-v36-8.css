@@ -1,0 +1,96 @@
+/*
+ * Liga Juventino Rosas · MASTER V36.8
+ * Ajuste del balón principal: ocupa casi todo el cuadro derecho,
+ * permanece completo y nunca invade la columna de texto.
+ */
+
+/* Mantener dos columnas bien separadas en escritorio. */
+@media (min-width: 761px){
+  #v14CinematicHero .v14-grid{
+    grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr)!important;
+    gap:clamp(24px,4vw,54px)!important;
+    align-items:center!important;
+  }
+
+  #v14CinematicHero .v14-copy{
+    position:relative!important;
+    z-index:30!important;
+    min-width:0!important;
+    overflow:visible!important;
+  }
+
+  #v14CinematicHero .v14-stage{
+    position:relative!important;
+    z-index:5!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    min-height:clamp(430px,40vw,570px)!important;
+    margin-left:auto!important;
+    overflow:hidden!important;
+    border-radius:28px!important;
+    isolation:isolate!important;
+  }
+}
+
+/* El canvas llena el cuadro, pero el WebGL calcula el balón para no cortarlo. */
+#v14CinematicHero .jr-v367-canvas{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  display:block!important;
+  z-index:2!important;
+  pointer-events:auto!important;
+  touch-action:none!important;
+}
+
+/* Texto y botones siempre encima del balón, sin moverse con él. */
+#v14CinematicHero .v14-chip{
+  z-index:20!important;
+  pointer-events:auto!important;
+}
+#v14CinematicHero .v14-copy,
+#v14CinematicHero .v14-copy *{
+  pointer-events:auto;
+}
+
+/* El diseño luminoso puede llegar hasta el borde del cuadro. */
+#v14CinematicHero .v14-stage::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 52% 48%,rgba(69,237,145,.15),transparent 37%),
+    radial-gradient(circle at 82% 23%,rgba(38,199,255,.08),transparent 28%),
+    linear-gradient(115deg,transparent 30%,rgba(69,237,145,.025),transparent 68%);
+}
+
+/* Móvil: el balón llena el ancho disponible pero queda completo. */
+@media (max-width:760px){
+  #v14CinematicHero .v14-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+
+  #v14CinematicHero .v14-copy{
+    z-index:30!important;
+  }
+
+  #v14CinematicHero .v14-stage{
+    width:100%!important;
+    min-height:430px!important;
+    overflow:hidden!important;
+    border-radius:24px!important;
+  }
+}
+
+/* Pantallas muy angostas: un poco más de alto para que no se recorte. */
+@media (max-width:430px){
+  #v14CinematicHero .v14-stage{
+    min-height:455px!important;
+  }
+}
