@@ -1,0 +1,259 @@
+/*
+ * Liga Juventino Rosas · MASTER V36.13
+ * FULL BLEED:
+ * - elimina el "cuadro dentro del cuadro";
+ * - el balón ocupa toda la parte visual de cada tarjeta;
+ * - en móvil, texto/botones arriba y balón abajo;
+ * - conserva los dos balones 3D y sus controles.
+ */
+
+/* =========================================================
+   REGLA GENERAL: quitar el marco interno visible
+   ========================================================= */
+
+#v14CinematicHero .v14-stage,
+#jrV369SecondStage{
+  border:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  background:transparent!important;
+}
+
+/* El canvas llena completamente la zona asignada. */
+#v14CinematicHero .v14-stage > .jr-v369-canvas,
+#jrV369SecondStage > .jr-v369-canvas{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  display:block!important;
+}
+
+/* Mantener el movimiento de luces/orbitas pero sin "marco interno". */
+#v14CinematicHero .v14-stage::before,
+#jrV369SecondStage::before{
+  inset:-4%!important;
+  border-radius:0!important;
+}
+
+/* La ayuda queda pegada abajo y no crea otro bloque visual. */
+#v14CinematicHero .jr-v369-tip,
+#jrV369SecondStage .jr-v369-tip{
+  bottom:8px!important;
+  z-index:60!important;
+  opacity:.72!important;
+  border-color:rgba(255,255,255,.08)!important;
+  background:rgba(3,10,7,.48)!important;
+}
+
+/* =========================================================
+   ESCRITORIO / TABLET GRANDE
+   Mantener composición premium: texto + balón,
+   pero SIN tarjeta interna alrededor del balón.
+   ========================================================= */
+
+@media (min-width:761px){
+  #v14CinematicHero .v14-stage{
+    min-height:clamp(460px,42vw,620px)!important;
+    border-radius:0!important;
+  }
+
+  #jrV369SecondStage{
+    min-height:clamp(450px,40vw,600px)!important;
+    border-radius:0!important;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   El usuario pidió: texto arriba y balón abajo,
+   usando TODO el ancho de la tarjeta exterior.
+   ========================================================= */
+
+@media (max-width:760px){
+
+  /* ---------- HERO PRINCIPAL ---------- */
+
+  #v14CinematicHero{
+    padding:0!important;
+    overflow:hidden!important;
+    border-radius:22px!important;
+  }
+
+  #v14CinematicHero .v14-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:0!important;
+    align-items:stretch!important;
+  }
+
+  /* Toda la información queda arriba y fija. */
+  #v14CinematicHero .v14-copy{
+    position:relative!important;
+    z-index:70!important;
+    padding:20px 16px 12px!important;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(6,16,11,.96) 0%,
+        rgba(6,16,11,.91) 74%,
+        rgba(6,16,11,.52) 100%
+      )!important;
+  }
+
+  /*
+   * El stage ya NO parece otra tarjeta.
+   * Se convierte en la mitad inferior completa del cuadro exterior.
+   */
+  #v14CinematicHero .v14-stage{
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    min-height:560px!important;
+    height:68vh!important;
+    max-height:650px!important;
+
+    margin:0!important;
+    padding:0!important;
+
+    border:0!important;
+    border-radius:0 0 22px 22px!important;
+
+    overflow:hidden!important;
+    background:
+      radial-gradient(circle at 50% 44%,rgba(69,237,145,.16),transparent 39%),
+      radial-gradient(circle at 76% 22%,rgba(39,193,255,.08),transparent 30%),
+      linear-gradient(180deg,rgba(6,16,11,.42),rgba(4,12,8,.96))!important;
+  }
+
+  /* Que el canvas llegue realmente a los cuatro bordes. */
+  #v14CinematicHero .v14-stage > .jr-v369-canvas{
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+  }
+
+  /* Botonera lateral más limpia: flota sobre el área del balón. */
+  #jrV3610SideRail{
+    right:8px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:58px!important;
+    z-index:80!important;
+  }
+
+  #jrV3610SideRail::before{
+    inset:-8px -5px!important;
+    border-radius:18px!important;
+    background:rgba(4,14,9,.46)!important;
+    backdrop-filter:blur(10px)!important;
+  }
+
+  #jrV3610SideRail button{
+    width:58px!important;
+    min-height:42px!important;
+    border-radius:11px!important;
+  }
+
+  /* El ticker conserva espacio visual después del balón. */
+  #v14CinematicHero .v14-ticker{
+    margin:0!important;
+    padding:14px 16px 16px!important;
+    border-top:1px solid rgba(255,255,255,.08)!important;
+  }
+
+  /* ---------- SEGUNDA SECCIÓN / BALÓN DORADO ---------- */
+
+  #jrV369SecondSection{
+    padding:0!important;
+    overflow:hidden!important;
+    border-radius:22px!important;
+  }
+
+  .jr-v369-second-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:0!important;
+    min-height:0!important;
+    padding:0!important;
+  }
+
+  .jr-v369-second-copy{
+    position:relative!important;
+    z-index:70!important;
+    padding:20px 16px 12px!important;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,15,7,.97) 0%,
+        rgba(20,15,7,.91) 76%,
+        rgba(20,15,7,.48) 100%
+      )!important;
+  }
+
+  /*
+   * Segundo balón también queda full-bleed.
+   * Ya no hay rectángulo/redondeado dentro del rectángulo grande.
+   */
+  #jrV369SecondStage{
+    position:relative!important;
+    grid-row:auto!important;
+
+    width:100%!important;
+    max-width:none!important;
+
+    min-height:550px!important;
+    height:66vh!important;
+    max-height:630px!important;
+
+    margin:0!important;
+    padding:0!important;
+
+    border:0!important;
+    border-radius:0 0 22px 22px!important;
+
+    overflow:hidden!important;
+    background:
+      radial-gradient(circle at 50% 44%,rgba(242,193,78,.17),transparent 39%),
+      radial-gradient(circle at 76% 22%,rgba(255,113,31,.09),transparent 30%),
+      linear-gradient(180deg,rgba(20,15,7,.42),rgba(10,9,6,.97))!important;
+  }
+
+  #jrV369SecondStage > .jr-v369-canvas{
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+  }
+
+  .jr-v369-second-stats{
+    max-width:none!important;
+  }
+}
+
+/* Teléfonos angostos: mantener el balón grande pero completo. */
+@media (max-width:430px){
+  #v14CinematicHero .v14-stage{
+    min-height:535px!important;
+    height:67vh!important;
+    max-height:610px!important;
+  }
+
+  #jrV369SecondStage{
+    min-height:525px!important;
+    height:65vh!important;
+    max-height:600px!important;
+  }
+
+  #jrV3610SideRail{
+    right:5px!important;
+    width:55px!important;
+  }
+
+  #jrV3610SideRail button{
+    width:55px!important;
+    min-height:40px!important;
+  }
+}
