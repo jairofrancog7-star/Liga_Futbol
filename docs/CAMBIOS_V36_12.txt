@@ -1,0 +1,19 @@
+LIGA JUVENTINO ROSAS - MASTER V36.12
+=====================================
+
+OBJETIVO:
+Que los DOS balones llenen casi todo su cuadro, sin huecos grandes.
+
+CAMBIOS:
+- Balon principal: zoom mucho mas fuerte.
+- Balon principal: desplazado a la izquierda para no chocar con botones.
+- Botonera derecha: aun mas pequena.
+- Segundo balon: zoom fuerte de borde a borde.
+- Cuadros mas compactos para eliminar espacio vacio.
+- Se conserva giro 960 grados.
+- Se conserva arrastre con dedo/mouse.
+- Se conserva toque para patear.
+- Se conserva el segundo universo y sus botones.
+
+REFRESH DIRECTO:
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v36-12.html
