@@ -19,17 +19,11 @@ function restoreHero(){
 
   const title=q(".v14-title",hero);
   if(title){
-    title.innerHTML='<span class="outline">LA LIGA</span><br><span class="electric">SE VIVE</span><br>EN TIEMPO REAL.';
+    title.innerHTML='<span class="outline">FÚTBOL</span><br><span class="electric">QUE SE<br>SIENTE</span><br><span class="jr37-live">EN VIVO.</span>';
   }
 
   const lead=q(".v14-lead",hero);
-  if(lead && !q("#jrV3625Heritage",hero)){
-    const sig=document.createElement("div");
-    sig.id="jrV3625Heritage";
-    sig.setAttribute("aria-label","Fútbol que se siente en vivo");
-    sig.innerHTML='<span class="football">FÚTBOL</span><span class="feel">QUE SE SIENTE</span><span class="live">EN VIVO.</span>';
-    lead.insertAdjacentElement("afterend",sig);
-  }
+  q("#jrV3625Heritage",hero)?.remove();
 
   let actions=q(".v14-actions",hero);
   if(!actions){
@@ -42,7 +36,7 @@ function restoreHero(){
   actions.innerHTML=`
     <button type="button" class="primary-btn" data-jr-v3625-view="matchcenter">🔴 Match Center</button>
     <button type="button" class="ghost-btn" data-jr-v3625-view="matches">⚽ Jornada</button>
-    <button type="button" class="ghost-btn" data-jr-v3625-view="cup">🏆 Liguilla</button>`;
+    <button type="button" class="ghost-btn" data-jr-v3625-view="bracket">🏆 Liguilla</button>`;
 
   actions.querySelectorAll("[data-jr-v3625-view]").forEach(btn=>{
     btn.addEventListener("click",e=>{

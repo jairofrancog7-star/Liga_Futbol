@@ -222,10 +222,10 @@
     }).filter(Boolean);
   }
 
-  function gameRow(g,category){
+  function gameRow(g,category,bulletinId){
     if(g.rest) return `<div class="v20-rest">DESCANSA: <b>${esc(g.rest)}</b></div>`;
     const state=gameState(g);
-    return `<div class="v20-game" data-v21-state="${esc(state)}">
+    return `<div class="v20-game" data-v21-state="${esc(state)}" data-jr37-current="${bulletinId==="actual-final-j6-j5"}" data-jr37-field="${esc(g.field||"")}" data-jr37-match="${esc([category,g.home,g.away].map(x=>String(x||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim().replace(/[^a-z0-9]+/g,"-")).join("__"))}">
       <span class="v20-team-name">${teamBadgeV321(g.home,category)}</span><b>VS</b>
       <span class="v20-team-name">${teamBadgeV321(g.away,category)}</span>
       <span class="v20-time">${esc(g.time||"—")}</span>
@@ -244,7 +244,7 @@
         </div>
       </div>
       <div class="v20-game-head"><span>Local</span><span></span><span>Visitante</span><span>Hora</span><span>Campo / nota</span></div>
-      ${group.games.map(g=>gameRow(g,group.category)).join("")}
+      ${group.games.map(g=>gameRow(g,group.category,bulletinId)).join("")}
     </section>`;
   }
 
@@ -311,6 +311,7 @@
     const calendar=document.getElementById("v20CalendarArchive");
     renderArchiveHost(matches,"matches");
     renderArchiveHost(calendar,"calendar");
+    document.dispatchEvent(new Event("jr:calendar-rendered"));
   }
 
   function wireMatchFilters(){

@@ -1,7 +1,7 @@
 .env
 .env.*
 !.env.example
-node_modules/
+node_modules
 .next/
 dist/
 build/
@@ -22,3 +22,6 @@ tmp/
 *.p12
 *.pfx
 
+# V37 standalone tactical editor dependencies
+node_modules
+tools/tactics-3d-source/dist/

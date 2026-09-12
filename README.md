@@ -1,35 +1,34 @@
-# Liga Juventino Rosas · MASTER V31.7
+# Liga Juventino Rosas · V37
 
-Corrección: logos en la tabla/calendario de partidos para todas las categorías, con un solo logo por equipo cuando exista escudo.
+Plataforma de la Liga Municipal de Fútbol Juventino Rosas A.C.
 
-# Liga Juventino Rosas · MASTER V31.6
+Sitio: https://jairofrancog7-star.github.io/Liga_Futbol/
 
-Corrección de logos duplicados en portada, Match Center, tabla y goleadores.
+Esta actualización parte de V36.26 (`2631d38925b4f85e8947e90cabc43d2108b75410`). La publicación depende de integrar los cambios en GitHub y completar GitHub Pages.
 
-# Liga Juventino Rosas
+## Novedades
 
-Plataforma de la **Liga Municipal de Fútbol Juventino Rosas A.C.**
+- Portada FÚTBOL / QUE SE SIENTE / EN VIVO., contorno blanco, verde y blanco.
+- Balones esféricos con 32 paneles y costuras; órbitas con margen de cámara, marco dorado y letras en movimiento.
+- Pronóstico regional por hora y revisión manual de 14 campos. Los datos ausentes no se presentan como buen tiempo.
+- Borradores de campo y partido en JR Control, exportación JSON y publicación mediante GitHub.
+- Descarga de partidos con fecha confirmada al calendario (.ics), adaptada de World Cup Dashboard.
+- Editor de alineaciones con geometría de Campos: cuatro formaciones, nombres, borrador y descarga SVG.
+- Estudio táctico realmente 3D basado en Soccer Tactics Studio, abierto a petición del usuario.
+- Comparación de equipos y simulación de un partido adicional con ordenación de MatchOra. La tabla oficial no se modifica.
 
-## Página en vivo
+Se conservan jornadas, resultados, equipos, goleadores, liguilla y las cinco categorías existentes.
 
-https://jairofrancog7-star.github.io/Liga_Futbol/
+## Uso y validación
 
-## Qué incluye
+El sitio principal sigue siendo HTML/CSS/JavaScript estático. Se puede alojar directamente en GitHub Pages; no hay instalación para visitantes. Para ejecutarlo localmente usa un servidor HTTP, por ejemplo `python -m http.server 8000`.
 
-- Jornadas y resultados por categoría.
-- Tabla de posiciones.
-- Estadísticas y goleadores.
-- Equipos y fichas.
-- Campos / sedes con acceso a Google Maps.
-- Copa / liguilla.
-- Match Center.
-- JR Control.
-- Cinco categorías: Primera Fuerza, Intermedia, Segunda Fuerza, Veteranos 35+ y Veteranos 50+.
+`node scripts/test-v37.cjs` comprueba la geometría, reportes, fechas y calendario. El estudio 3D incluye su código TypeScript y distribución ya compilada.
 
-## Estado
+Consulta [la implementación V37](docs/V37_IMPLEMENTACION.md) para las licencias, reconstrucción y publicación de reportes. El informe de investigación se entrega también como PDF.
 
-**MASTER V31.1 · Logos en partidos**
+La API pública gratuita de Open-Meteo permite uso no comercial bajo sus términos. Antes de activar publicidad real hay que utilizar un proveedor o plan compatible. El estado del terreno nunca se deduce de la lluvia ni se suspende automáticamente un partido.
 
-Esta versión prioriza estabilidad multiplataforma, elimina cachés viejas que podían dejar la página mostrando únicamente una tarjeta de jugador y evita volver a modificar contenedores grandes del DOM.
+Los borradores no son reportes publicados. La edición desde el celular con publicación automática requiere conectar un backend autenticado.
 
 > No publiques INE, CURP, contraseñas, tokens ni archivos privados en este repositorio público.
