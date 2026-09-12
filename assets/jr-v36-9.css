@@ -24,3 +24,151 @@
 @media(max-width:760px){#v14CinematicHero{padding:18px 14px!important;border-radius:22px!important}#v14CinematicHero .v14-grid{grid-template-columns:1fr!important}#v14CinematicHero .v14-stage{min-height:430px!important}#jrV369SecondSection{border-radius:22px}.jr-v369-second-grid{grid-template-columns:1fr;padding:18px 14px}#jrV369SecondStage{min-height:430px;grid-row:2}.jr-v369-second-stats{grid-template-columns:1fr 1fr}.jr-v369-stat:last-child{grid-column:1/-1}}
 @media(max-width:430px){#v14CinematicHero .v14-stage,#jrV369SecondStage{min-height:455px!important}}
 @media(prefers-reduced-motion:reduce){#v14CinematicHero .v14-stage::before,#jrV369SecondStage::before{animation:none!important}}
+
+
+/* ============================================================
+   MASTER V36.10 · balón grande + botones laterales
+   ============================================================ */
+
+/* El balón ocupa el cuadro; los chips viejos ya no cruzan por encima. */
+#v14CinematicHero .v14-stage{
+  min-height:clamp(520px,54vw,680px)!important;
+  overflow:hidden!important;
+  padding:0!important;
+}
+
+/* Ocultar solamente los 3 chips originales del stage.
+   Sus funciones se conservan en la nueva barra lateral. */
+#v14CinematicHero .v14-stage > .v14-chip{
+  display:none!important;
+}
+
+/* Canvas completo dentro del cuadro. */
+#v14CinematicHero .v14-stage > .jr-v369-canvas{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  z-index:4!important;
+}
+
+/* Barra lateral compacta: nunca cruza horizontalmente el balón. */
+#jrV3610SideRail{
+  position:absolute;
+  right:8px;
+  top:50%;
+  z-index:40;
+  transform:translateY(-50%);
+  width:76px;
+  display:grid;
+  gap:8px;
+  pointer-events:auto;
+}
+
+#jrV3610SideRail::before{
+  content:"";
+  position:absolute;
+  inset:-14px -8px;
+  z-index:-1;
+  border-radius:20px;
+  background:linear-gradient(90deg,rgba(5,14,10,0),rgba(5,14,10,.58) 30%,rgba(5,14,10,.88));
+  backdrop-filter:blur(5px);
+  pointer-events:none;
+}
+
+#jrV3610SideRail button{
+  min-height:46px;
+  width:76px;
+  padding:6px 5px;
+  display:grid;
+  place-items:center;
+  gap:2px;
+  border:1px solid rgba(69,237,145,.18);
+  border-radius:13px;
+  background:rgba(10,22,15,.88);
+  color:#f3fff8;
+  box-shadow:0 8px 18px rgba(0,0,0,.24);
+  backdrop-filter:blur(12px);
+  cursor:pointer;
+  touch-action:manipulation;
+}
+
+#jrV3610SideRail button span{
+  display:block;
+  font-size:14px;
+  line-height:1;
+  font-weight:900;
+}
+
+#jrV3610SideRail button small{
+  display:block;
+  max-width:66px;
+  color:#cbe0d4;
+  font-size:8px;
+  line-height:1.05;
+  font-weight:900;
+  text-align:center;
+  overflow-wrap:anywhere;
+}
+
+#jrV3610SideRail button:active{
+  transform:translateY(1px) scale(.98);
+}
+
+#jrV3610SideRail button:focus-visible{
+  outline:2px solid #45ed91;
+  outline-offset:2px;
+}
+
+/* La indicación queda abajo y no encima del balón. */
+#v14CinematicHero .jr-v369-tip{
+  left:calc(50% - 34px)!important;
+  bottom:10px!important;
+  z-index:30!important;
+  font-size:8px!important;
+  padding:5px 8px!important;
+}
+
+/* Más altura y balón dominante en móvil. */
+@media(max-width:760px){
+  #v14CinematicHero .v14-stage{
+    min-height:540px!important;
+  }
+
+  #jrV3610SideRail{
+    right:6px;
+    width:70px;
+    gap:7px;
+  }
+
+  #jrV3610SideRail button{
+    width:70px;
+    min-height:43px;
+    border-radius:12px;
+  }
+
+  #jrV3610SideRail button small{
+    max-width:60px;
+    font-size:7.5px;
+  }
+
+  #v14CinematicHero .jr-v369-tip{
+    left:calc(50% - 32px)!important;
+  }
+}
+
+@media(max-width:430px){
+  #v14CinematicHero .v14-stage{
+    min-height:565px!important;
+  }
+
+  #jrV3610SideRail{
+    width:66px;
+  }
+
+  #jrV3610SideRail button{
+    width:66px;
+    min-height:42px;
+    padding-inline:3px;
+  }
+}

@@ -1,0 +1,21 @@
+MASTER V36.10
+================
+
+CORRIGE EL CUADRO PRINCIPAL DEL BALON:
+
+- El balon ocupa mucho mas del cuadro grande.
+- Se mantiene completo dentro del marco.
+- Los botones ya NO atraviesan el balon.
+- Los botones ahora son pequenos y verticales al costado derecho.
+- Son funcionales:
+  * 5 Categorias
+  * LIVE / Match Center
+  * JR Matchday
+  * Jornada
+  * Liguilla
+- Se conserva el giro 960 grados, arrastre y toque para patear.
+- Se conserva el segundo balon/seccion de V36.9.1.
+- No toca resultados, tablas, jugadores ni APK.
+
+REFRESH DIRECTO:
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v36-10.html
