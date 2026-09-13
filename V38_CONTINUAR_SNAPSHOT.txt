@@ -1,0 +1,30 @@
+V38 CONTINUAR EXACTO SNAPSHOT
+Rama: feature/v38-home-clima-campos
+Repo: C:/Users/Owner/Desktop/LIGA_V38/Liga_Futbol_V38_631_10619
+
+===== STATUS =====
+ M assets/football-scene.js
+ M assets/jr-v36-25-ui.js
+?? PAYLOAD_V38_IMPLEMENTACION.txt
+?? V38_CONTINUAR_SNAPSHOT.txt
+?? assets/jr-ball-model-v38.js
+?? assets/jr-calendar-v38.js
+?? assets/jr-home-v38.css
+?? assets/jr-lineup-v38.js
+?? assets/jr-simulator-v38.js
+?? assets/jr-weather-fields-v38.css
+?? assets/jr-weather-fields-v38.js
+?? data/field-status-v38.json
+?? docs/CLIMA_CAMPOS_V38.md
+?? scripts/test-scene-v38.cjs
+?? scripts/test-weather-v38.cjs
+?? tools/
+?? vendor/
+
+===== DIFF STAT =====
+ assets/football-scene.js | 508 +++++++++++++++--------------------------------
+ assets/jr-v36-25-ui.js   | 104 ++++------
+ 2 files changed, 200 insertions(+), 412 deletions(-)
+
+===== HEAD =====
+2631d38 V36.26: verde igual al amarillo y orbitas SVG completas

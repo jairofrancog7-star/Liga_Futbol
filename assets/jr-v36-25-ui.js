@@ -1,66 +1,42 @@
-(function(){
-"use strict";
-
-const q=(s,r=document)=>r.querySelector(s);
-
-function showView(name){
-  const dest=name==="match"?"matchcenter":name;
-  if(typeof window.showView==="function"){
-    try{window.showView(dest);return true}catch(_){}
+/* Legacy entry point retained for cached integrations; V38 hero presentation. */
+(function () {
+  'use strict';
+  function restoreHero() {
+    const hero = document.getElementById('v14CinematicHero');
+    if (!hero) return;
+    const title = hero.querySelector('.v14-title');
+    if (title && !title.dataset.jr38) {
+      title.innerHTML = '<span class="outline">FÚTBOL</span><span class="electric">QUE SE SIENTE</span><span class="live">EN VIVO.</span>';
+      title.dataset.jr38 = '1';
+      const fitTitle = () => {
+        title.style.removeProperty('font-size');
+        const available = title.clientWidth;
+        if (!available) return;
+        const widest = Math.max(...Array.from(title.children, line => line.scrollWidth));
+        if (widest > available) title.style.setProperty('font-size', (parseFloat(getComputedStyle(title).fontSize) * available / widest * .98) + 'px', 'important');
+      };
+      window.addEventListener('resize', fitTitle, { passive: true });
+      document.fonts?.ready.then(fitTitle);
+      fitTitle();
+    }
+    document.getElementById('jrV3625Heritage')?.remove();
+    const actions = hero.querySelector('.v14-actions');
+    if (actions && !actions.dataset.jr38) {
+      actions.dataset.jr38 = '1';
+      actions.innerHTML = '<button type="button" class="primary-btn" data-jr38-view="matches">Ver jornada <span aria-hidden="true">↗</span></button>';
+      const shortcuts = document.createElement('nav'); shortcuts.className = 'jr38-hero-shortcuts'; shortcuts.setAttribute('aria-label', 'Accesos de la liga');
+      shortcuts.innerHTML = '<button type="button" data-jr38-view="matchcenter"><span class="jr38-live-dot" aria-hidden="true"></span> LIVE</button><button type="button" data-jr38-view="matches">JORNADA</button><button type="button" data-jr38-fields>CAMPOS</button>';
+      actions.insertAdjacentElement('afterend', shortcuts);
+      hero.addEventListener('click', event => {
+        const button = event.target.closest('[data-jr38-view],[data-jr38-fields]');
+        if (!button) return;
+        event.preventDefault();
+        if (button.hasAttribute('data-jr38-fields')) window.JRFieldsV38?.navigate();
+        else window.showView?.(button.dataset.jr38View);
+      });
+    }
   }
-  const t=document.getElementById("view-"+dest);
-  if(t){t.scrollIntoView({behavior:"smooth",block:"start"});return true}
-  return false;
-}
-
-function restoreHero(){
-  const hero=q("#v14CinematicHero");
-  if(!hero)return;
-
-  const title=q(".v14-title",hero);
-  if(title){
-    title.innerHTML='<span class="outline">LA LIGA</span><br><span class="electric">SE VIVE</span><br>EN TIEMPO REAL.';
-  }
-
-  const lead=q(".v14-lead",hero);
-  if(lead && !q("#jrV3625Heritage",hero)){
-    const sig=document.createElement("div");
-    sig.id="jrV3625Heritage";
-    sig.setAttribute("aria-label","Fútbol que se siente en vivo");
-    sig.innerHTML='<span class="football">FÚTBOL</span><span class="feel">QUE SE SIENTE</span><span class="live">EN VIVO.</span>';
-    lead.insertAdjacentElement("afterend",sig);
-  }
-
-  let actions=q(".v14-actions",hero);
-  if(!actions){
-    actions=document.createElement("div");
-    actions.className="v14-actions";
-    const sig=q("#jrV3625Heritage",hero);
-    (sig||lead||title).insertAdjacentElement("afterend",actions);
-  }
-
-  actions.innerHTML=`
-    <button type="button" class="primary-btn" data-jr-v3625-view="matchcenter">🔴 Match Center</button>
-    <button type="button" class="ghost-btn" data-jr-v3625-view="matches">⚽ Jornada</button>
-    <button type="button" class="ghost-btn" data-jr-v3625-view="cup">🏆 Liguilla</button>`;
-
-  actions.querySelectorAll("[data-jr-v3625-view]").forEach(btn=>{
-    btn.addEventListener("click",e=>{
-      e.preventDefault();
-      e.stopPropagation();
-      showView(btn.dataset.jrV3625View);
-    });
-  });
-}
-
-function boot(){
-  restoreHero();
-  window.addEventListener("pageshow",()=>setTimeout(restoreHero,100));
-}
-
-if(document.readyState==="loading"){
-  document.addEventListener("DOMContentLoaded",boot,{once:true});
-}else{
-  boot();
-}
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', restoreHero, { once: true });
+  else restoreHero();
+  window.addEventListener('pageshow', restoreHero);
 })();

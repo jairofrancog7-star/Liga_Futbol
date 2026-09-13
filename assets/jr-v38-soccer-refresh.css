@@ -1,0 +1,244 @@
+
+/* ==========================================================
+   LIGA JUVENTINO ROSAS V38 — SOCCER-ONLY HIGGSFIELD REFRESH
+   Association football only. No American-football visual language.
+   ========================================================== */
+:root{
+  --jr39-bg:#050b09;
+  --jr39-panel:#0c1512;
+  --jr39-panel-2:#101a17;
+  --jr39-green:#22e07a;
+  --jr39-gold:#f2c14e;
+  --jr39-white:#f7f7f2;
+  --jr39-muted:rgba(247,247,242,.66);
+  --jr39-line:rgba(255,255,255,.10);
+  --jr39-ease:cubic-bezier(.2,.74,.22,1);
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 12% 8%,rgba(34,224,122,.055),transparent 30rem),
+    radial-gradient(circle at 88% 34%,rgba(242,193,78,.035),transparent 28rem),
+    var(--jr39-bg);
+}
+
+/* Navigation / header */
+header,nav,.topbar,.nav-wrap{
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+}
+.nav-btn,.tab-btn,button[data-view],.primary-btn,.ghost-btn,.btn-primary,.btn-ghost{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  transition:transform .22s var(--jr39-ease),border-color .22s ease,box-shadow .22s ease,background .22s ease,color .22s ease;
+}
+.nav-btn::after,.tab-btn::after,button[data-view]::after,.primary-btn::after,.ghost-btn::after,.btn-primary::after,.btn-ghost::after{
+  content:"";
+  position:absolute;inset:-2px;z-index:-1;opacity:0;
+  background:radial-gradient(circle at var(--jr39-x,50%) var(--jr39-y,50%),rgba(255,255,255,.20),transparent 32%);
+  transition:opacity .2s ease;
+}
+@media (hover:hover) and (pointer:fine){
+  .nav-btn:hover,.tab-btn:hover,button[data-view]:hover,.primary-btn:hover,.ghost-btn:hover,.btn-primary:hover,.btn-ghost:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 34px rgba(0,0,0,.22);
+  }
+  .nav-btn:hover::after,.tab-btn:hover::after,button[data-view]:hover::after,.primary-btn:hover::after,.ghost-btn:hover::after,.btn-primary:hover::after,.btn-ghost:hover::after{opacity:.8}
+}
+.nav-btn:active,.tab-btn:active,button[data-view]:active,.primary-btn:active,.ghost-btn:active,.btn-primary:active,.btn-ghost:active{transform:translateY(1px) scale(.985)}
+.nav-btn:focus-visible,.tab-btn:focus-visible,button[data-view]:focus-visible,.primary-btn:focus-visible,.ghost-btn:focus-visible,.btn-primary:focus-visible,.btn-ghost:focus-visible{
+  outline:2px solid var(--jr39-green);outline-offset:3px;
+}
+
+/* Primary Home hero */
+body.jr39-ready #v12CinematicHero{display:none!important}
+#v14CinematicHero{
+  position:relative;isolation:isolate;overflow:hidden;
+  border-radius:clamp(22px,3vw,40px);
+  border:1px solid rgba(255,255,255,.09);
+  background:linear-gradient(145deg,#050b09,#07100d 50%,#050706);
+  box-shadow:0 32px 100px rgba(0,0,0,.42);
+}
+#v14CinematicHero::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(5,11,9,.98) 0%,rgba(5,11,9,.90) 40%,rgba(5,11,9,.36) 70%,rgba(5,11,9,.72) 100%),
+    radial-gradient(circle at 78% 30%,rgba(34,224,122,.15),transparent 32%);
+}
+#v14CinematicHero .v14-grid{
+  position:relative;z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  gap:clamp(18px,4vw,64px);
+  align-items:center;
+  padding:clamp(22px,4vw,58px);
+  min-height:min(760px,78vw);
+}
+#v14CinematicHero .v14-copy{position:relative;z-index:4;min-width:0}
+#v14CinematicHero .v14-title{
+  max-width:8.5ch;
+  margin:.18em 0 .22em;
+  font-family:'Bebas Neue','Sora',system-ui,sans-serif;
+  font-size:clamp(56px,8.1vw,130px);
+  line-height:.80;
+  letter-spacing:-.026em;
+}
+#v14CinematicHero .v14-title .outline{
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  -webkit-text-stroke:1.55px rgba(247,247,242,.94);
+}
+#v14CinematicHero .v14-title .electric{
+  color:var(--jr39-green)!important;
+  -webkit-text-fill-color:var(--jr39-green)!important;
+  text-shadow:0 0 38px rgba(34,224,122,.16);
+}
+#v14CinematicHero .v14-title .jr37-live{
+  color:var(--jr39-white)!important;
+  -webkit-text-fill-color:var(--jr39-white)!important;
+}
+#v14CinematicHero .v14-lead{max-width:62ch;color:var(--jr39-muted)}
+#v14CinematicHero .v14-stage{
+  --jr39-px:0px;--jr39-py:0px;
+  position:relative;overflow:hidden;aspect-ratio:1/1;min-height:320px;
+  border-radius:clamp(22px,3vw,36px);
+  border:1px solid rgba(255,255,255,.09);
+  background:radial-gradient(circle at 50% 48%,rgba(34,224,122,.09),transparent 50%),rgba(255,255,255,.025);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 24px 70px rgba(0,0,0,.26);
+}
+#v14CinematicHero .v14-stage::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(circle at 50% 45%,transparent 0 30%,rgba(5,11,9,.16) 58%,rgba(5,11,9,.74) 100%);
+}
+.jr39-home-video{
+  position:absolute;inset:-3%;width:106%;height:106%;object-fit:cover;z-index:0;
+  opacity:.62;filter:saturate(1.07) contrast(1.06) brightness(.72);
+  transform:translate3d(var(--jr39-px),var(--jr39-py),0) scale(1.055);
+  pointer-events:none;
+}
+#v14CinematicHero canvas,#v14CinematicHero .v14-fallback{position:relative;z-index:2}
+#v14CinematicHero .v14-chip{
+  z-index:4;
+  background:rgba(5,11,9,.70);
+  border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:0 14px 40px rgba(0,0,0,.25);
+}
+
+/* Cinematic banners for every major page */
+.jr39-view-banner{
+  position:relative;isolation:isolate;overflow:hidden;
+  min-height:clamp(260px,36vw,460px);
+  margin:0 0 clamp(18px,3vw,34px);
+  border-radius:clamp(22px,2.7vw,34px);
+  border:1px solid rgba(255,255,255,.09);
+  background:#07100d;
+  box-shadow:0 26px 76px rgba(0,0,0,.28);
+}
+.jr39-view-banner video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  opacity:.58;filter:saturate(.96) contrast(1.07) brightness(.64);
+}
+.jr39-view-banner::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(5,11,9,.97) 0%,rgba(5,11,9,.87) 44%,rgba(5,11,9,.36) 80%,rgba(5,11,9,.70) 100%),
+    linear-gradient(180deg,transparent 55%,rgba(5,11,9,.46));
+}
+.jr39-banner-inner{
+  min-height:inherit;
+  display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;
+  padding:clamp(24px,4vw,54px);
+  max-width:75ch;
+}
+.jr39-banner-kicker{
+  color:var(--jr39-green);
+  letter-spacing:.14em;text-transform:uppercase;
+  font-weight:800;font-size:11px;
+}
+.jr39-view-banner h1,.jr39-view-banner h2{
+  margin:8px 0 10px;
+  font-family:'Bebas Neue','Sora',system-ui,sans-serif;
+  font-size:clamp(42px,7vw,92px);
+  line-height:.88;letter-spacing:-.035em;
+}
+.jr39-view-banner p{margin:0;color:rgba(247,247,242,.74);max-width:60ch}
+.jr39-banner-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.jr39-banner-pills span{
+  padding:8px 11px;border-radius:999px;
+  background:rgba(5,11,9,.64);border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+  color:rgba(247,247,242,.78);font-size:12px;font-weight:700;
+}
+
+/* Operational clarity */
+#jr39Ops{
+  margin:clamp(22px,4vw,42px) 0;
+  padding:clamp(18px,2.7vw,30px);
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,.09);
+  background:linear-gradient(145deg,rgba(16,26,23,.96),rgba(7,14,12,.97));
+  box-shadow:0 24px 72px rgba(0,0,0,.24);
+}
+.jr39-ops-head{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.jr39-ops-head h2{margin:0}
+.jr39-ops-head p{margin:6px 0 0;color:var(--jr39-muted);max-width:70ch}
+.jr39-ops-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.jr39-op{
+  padding:18px;border-radius:20px;border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.035);
+}
+.jr39-op small{display:block;color:rgba(247,247,242,.58);font-weight:800;letter-spacing:.10em;text-transform:uppercase}
+.jr39-op strong{display:block;margin:8px 0 5px;font-size:clamp(18px,2vw,25px)}
+.jr39-op p{margin:0;color:var(--jr39-muted);font-size:13px}
+.jr39-op.weather{border-color:rgba(94,168,255,.20)}
+.jr39-op.field{border-color:rgba(242,193,78,.22)}
+.jr39-op.official{border-color:rgba(34,224,122,.24)}
+.jr39-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+/* Cards/tables */
+.card,.table-wrap,.matchday-bar,.section{
+  transition:border-color .28s ease,box-shadow .28s ease,transform .28s var(--jr39-ease);
+}
+@media (hover:hover) and (pointer:fine){
+  .card:hover,.table-wrap:hover{
+    border-color:rgba(34,224,122,.16);
+    box-shadow:0 18px 50px rgba(0,0,0,.18);
+  }
+}
+
+/* Progressive reveal */
+html.jr39-js .jr39-reveal{opacity:0;transform:translateY(18px);filter:blur(2px)}
+html.jr39-js .jr39-reveal.jr39-visible{
+  opacity:1;transform:none;filter:none;
+  transition:opacity .62s var(--jr39-ease),transform .62s var(--jr39-ease),filter .62s ease;
+}
+.jr39-motion-toggle[aria-pressed="false"]{opacity:.72}
+
+@media (max-width:820px){
+  #v14CinematicHero .v14-grid{grid-template-columns:1fr;min-height:0;padding:22px}
+  #v14CinematicHero .v14-title{font-size:clamp(52px,16vw,88px);max-width:7.8ch}
+  #v14CinematicHero .v14-stage{min-height:280px;aspect-ratio:1.18/1}
+  .jr39-home-video{opacity:.48}
+  .jr39-view-banner{min-height:340px}
+  .jr39-view-banner::after{background:linear-gradient(180deg,rgba(5,11,9,.82),rgba(5,11,9,.78) 45%,rgba(5,11,9,.96))}
+  .jr39-ops-grid{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  #v14CinematicHero .v14-grid{padding:18px}
+  #v14CinematicHero .v14-stage{min-height:250px}
+  .jr39-banner-inner{padding:20px}
+  #jr39Ops{padding:16px}
+}
+
+/* Accessibility and data-saving */
+@media (prefers-reduced-motion:reduce){
+  html.jr39-js .jr39-reveal{opacity:1!important;transform:none!important;filter:none!important}
+  .jr39-home-video,.jr39-view-banner video{display:none!important}
+  .card,.table-wrap,.matchday-bar,.section,
+  .nav-btn,.tab-btn,button[data-view],.primary-btn,.ghost-btn,.btn-primary,.btn-ghost{
+    transition:none!important;animation:none!important;
+  }
+}
