@@ -1,0 +1,46 @@
+{
+  "version": "38.3-soccer-only",
+  "expected_branch": "feature/v38-home-clima-campos",
+  "brand_kit_id": "705ef92a-baec-40b8-a989-3a4939d10fd2",
+  "sport": "association football / soccer",
+  "forbidden_visuals": [
+    "American football",
+    "oval football",
+    "helmet",
+    "shoulder pads",
+    "yard lines",
+    "American-football goalposts"
+  ],
+  "videos": {
+    "hero": {
+      "job_id": "d0f2d94f-a68e-4c8d-b7e5-957ce92567cb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034109_d0f2d94f-a68e-4c8d-b7e5-957ce92567cb.mp4",
+      "file": "v38-soccer-hero.mp4"
+    },
+    "matchday": {
+      "job_id": "6118777d-151f-41d2-aeb6-e49065f35600",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034108_6118777d-151f-41d2-aeb6-e49065f35600.mp4",
+      "file": "v38-soccer-matchday.mp4"
+    },
+    "fields": {
+      "job_id": "1574daeb-9ee1-4693-815c-0bf52f6a10d8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034108_1574daeb-9ee1-4693-815c-0bf52f6a10d8.mp4",
+      "file": "v38-soccer-fields-rain.mp4"
+    },
+    "teams": {
+      "job_id": "e052f20a-1823-4f82-95fd-46c7b833661e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034108_e052f20a-1823-4f82-95fd-46c7b833661e.mp4",
+      "file": "v38-soccer-teams.mp4"
+    },
+    "bracket": {
+      "job_id": "0b4ed023-84ea-4d3b-9bb4-4c8ac1e0e91b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034108_0b4ed023-84ea-4d3b-9bb4-4c8ac1e0e91b.mp4",
+      "file": "v38-soccer-liguilla.mp4"
+    },
+    "stats": {
+      "job_id": "2cadd220-8c6a-4af8-a42c-425fd115d05f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/hf_20260913_034108_2cadd220-8c6a-4af8-a42c-425fd115d05f.mp4",
+      "file": "v38-soccer-stats.mp4"
+    }
+  }
+}

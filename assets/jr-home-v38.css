@@ -1,0 +1,87 @@
+/* V38 final presentation layer: bounded artwork, exact heading and accessible controls. */
+#v14CinematicHero {
+  --jr38-green: #22e07a;
+  --jr38-gold: #f2c14e;
+  min-height: 0 !important;
+  margin: 20px 0 26px !important;
+  padding: 0 !important;
+  border: 1px solid #ffffff14 !important;
+  border-radius: 24px !important;
+  background: radial-gradient(ellipse at 80% 25%, #22e07a0b, transparent 40%), radial-gradient(ellipse at 78% 85%, #f2c14e09, transparent 35%), #060908 !important;
+  color: #fff;
+}
+#v14CinematicHero::before { opacity: .16; }
+#v14CinematicHero .v14-grid {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr) !important;
+  min-height: 0 !important;
+  gap: 0 16px !important;
+  padding: clamp(24px, 3.4vw, 48px) !important;
+  align-items: center !important;
+}
+#v14CinematicHero .v14-copy { grid-column: 1; grid-row: 1 / 3; padding: 0 !important; background: transparent !important; min-width: 0; }
+#v14CinematicHero .v14-kicker { padding: 0; border: 0; border-radius: 0; color: #c0d3c8; background: transparent; font-size: 10px; letter-spacing: .13em; }
+#v14CinematicHero .v14-lockup { margin: 24px 0 28px; }
+#v14CinematicHero .v14-lockup img { width: 56px; height: 56px; border-radius: 14px; }
+#v14CinematicHero .v14-lockup b { font-size: 11px; letter-spacing: .04em; }
+#v14CinematicHero .v14-lockup small { color: #b1bfb7; font-size: 12px; }
+#v14CinematicHero .v14-title {
+  font-family: 'Bebas Neue', 'Sora', sans-serif !important;
+  font-size: clamp(38px, 5.4vw, 78px) !important;
+  font-weight: 900 !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.015em !important;
+  color: #fff !important;
+  margin: 0 0 24px !important;
+  text-wrap: nowrap !important;
+}
+#v14CinematicHero .v14-title > span { display: block; white-space: nowrap; }
+#v14CinematicHero .v14-title .outline { color: transparent !important; -webkit-text-fill-color: transparent !important; -webkit-text-stroke: 1.5px #fff !important; text-shadow: none !important; }
+#v14CinematicHero .v14-title .electric { color: #22e07a !important; -webkit-text-fill-color: #22e07a !important; text-shadow: none !important; }
+#v14CinematicHero .v14-title .live { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+#v14CinematicHero .v14-lead { max-width: 430px; color: #bdc8c0; font-family: 'Manrope', sans-serif; font-size: 14px; line-height: 1.8; }
+#v14CinematicHero .v14-actions { display: flex !important; max-width: 100% !important; margin: 26px 0 18px !important; }
+#v14CinematicHero .v14-actions > .primary-btn { min-height: 48px !important; padding: 12px 22px !important; border: 1px solid #22e07a; border-radius: 8px; background: #22e07a !important; color: #062013 !important; display: inline-flex; gap: 28px; font-weight: 800; }
+#v14CinematicHero .jr38-hero-shortcuts { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 10px; }
+#v14CinematicHero .jr38-hero-shortcuts button { display: inline-flex; gap: 7px; align-items: center; padding: 8px 12px; min-height: 44px; min-width: 44px; font: 800 10px 'Sora', sans-serif; letter-spacing: .08em; color: #e1e9e4; border: 1px solid #ffffff18; border-radius: 6px; background: #ffffff04; cursor: pointer; }
+.jr38-live-dot { width: 6px; height: 6px; border-radius: 50%; background: #22e07a; }
+#v14CinematicHero .v14-stage {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative !important;
+  height: clamp(430px, 43vw, 600px) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  transform: none !important;
+  touch-action: pan-y;
+}
+#v14CinematicHero .v14-stage::before, #v14CinematicHero .v14-stage::after { display: none !important; content: none !important; }
+#v14CinematicHero .jr38-ball-canvas, #v14CinematicHero .jr38-ball-fallback { position: absolute; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
+#v14CinematicHero .jr38-ball-canvas[hidden], #v14CinematicHero .jr38-ball-fallback[hidden] { display: none !important; }
+#v14CinematicHero .jr38-scene-controls { grid-column: 2; grid-row: 2; display: flex; justify-content: center; padding-top: 0; }
+#v14CinematicHero #jr38MotionToggle { min-height: 44px; max-width: 100%; padding: 8px 14px; background: transparent; color: #bec8c1; border: 1px solid #ffffff24; border-radius: 7px; font: 600 11px 'Manrope', sans-serif; cursor: pointer; }
+#v14CinematicHero #jr38MotionToggle:disabled { color: #b0bbb4; cursor: default; }
+#v14CinematicHero button:focus-visible, #v14CinematicHero a:focus-visible { outline: 2px solid #f2c14e !important; outline-offset: 4px !important; }
+#v14CinematicHero .v14-ticker, #jrV3625Heritage, #jrV3610SideRail, #jrV3626HeroOrbits { display: none !important; }
+/* Art never overlays copy or controls, including when font downloads are blocked. */
+@media (max-width: 1100px) and (min-width: 761px) {
+  #v14CinematicHero .v14-title { font-size: clamp(31px, 4.6vw, 52px) !important; }
+}
+@media (max-width: 760px) {
+  #v14CinematicHero .v14-grid { grid-template-columns: minmax(0, 1fr) !important; padding: 24px 20px !important; }
+  #v14CinematicHero .v14-copy { grid-column: 1; grid-row: 1; }
+  #v14CinematicHero .v14-title { font-size: clamp(29px, 8.8vw, 62px) !important; }
+  #v14CinematicHero .v14-lockup { margin: 20px 0 24px; }
+  #v14CinematicHero .v14-stage { grid-column: 1; grid-row: 2; height: clamp(370px, 113vw, 520px) !important; }
+  #v14CinematicHero .jr38-scene-controls { grid-column: 1; grid-row: 3; }
+  #v14CinematicHero .v14-kicker { font-size: 9px; letter-spacing: .07em; }
+}
+@media (prefers-reduced-motion: reduce) { #v14CinematicHero *, #v14CinematicHero *::before, #v14CinematicHero *::after { animation: none !important; transition: none !important; } }

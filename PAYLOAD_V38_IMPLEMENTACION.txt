@@ -1,0 +1,48 @@
+LIGA JUVENTINO ROSAS — V38
+Payload reconstruido a partir de las instrucciones proporcionadas por Jairo. No es un parche implementado ni una copia byte por byte del archivo anterior.
+
+OBJETIVO
+Implementa y verifica la evolución del proyecto existente Liga_Futbol. No te limites a dar un plan. Conserva datos reales, rutas, categorías, administración y funciones existentes. Lee AGENTS.md y las instrucciones del repositorio antes de editar.
+Repositorio: https://github.com/jairofrancog7-star/Liga_Futbol
+Sitio: https://jairofrancog7-star.github.io/Liga_Futbol/
+
+GIT
+Trabaja exclusivamente en feature/v38-home-clima-campos, dentro de esta copia separada. Revisa git status y el historial antes de editar. Compara origin/main con origin/feature/v37-futbol-clima-campos si existe. Recupera las funciones V37 faltantes sin revertir mejoras posteriores ni aplicar a ciegas el parche antiguo. No hagas reset --hard, clean, force push, merge a main ni despliegue automático. Conserva los cambios del usuario. Al terminar entrega diff, pruebas y pasos concretos para revisar y publicar; no afirmes que el sitio cambió sin evidencia de despliegue.
+
+PORTADA EXACTA
+FÚTBOL: contorno blanco con interior transparente.
+QUE SE SIENTE: verde eléctrico #22e07a.
+EN VIVO.: blanco.
+Mantén las tres líneas completas y legibles, fondo casi negro y acentos dorados #f2c14e; conserva Sora/Bebas Neue/Manrope cuando estén disponibles. Dos balones tridimensionales verde y dorado del mismo diámetro perceptual, con paneles, costuras, iluminación y órbitas completas sin recortes. Mantén una instancia persistente de la escena al navegar: conservar rotación al volver a Inicio. Movimiento por scroll reversible y respuesta sutil al cursor. No tapar el texto ni controles.
+Header: escudo existente, Inicio, Partidos, Tabla, Equipos, Match Center; búsqueda, avisos y JR Control solo con funcionalidad real. CTA Ver jornada. Accesos LIVE, JORNADA y CAMPOS. Orden bajo portada: partidos de hoy, estado de campos, tabla, goleadores. No añadir elementos de tienda ni datos inventados.
+
+PRIORIDAD: CLIMA Y CAMPOS RURALES
+Separar tres entidades: pronóstico meteorológico, reporte del terreno y decisión oficial del partido. La lluvia nunca cancela automáticamente un encuentro.
+Pronóstico por coordenadas verificadas del campo y hora del partido; mostrar fuente, cobertura regional si aplica, actualización, probabilidad de lluvia, temperatura y viento con unidades. Verificar condiciones del proveedor antes de integrar. Gestionar timeout, error, datos ausentes y caché caducada; null no equivale a 0. No inventar coordenadas ni horarios. Zona IANA America/Mexico_City.
+Terreno: APTO, REVISIÓN, PESADO, NO APTO y SIN REPORTE. Mostrar responsable y fecha del reporte, notas y evidencia cuando exista. Reportes viejos deben señalarse como desactualizados, nunca garantizar que un campo sigue apto. Distinguir borrador local de reporte público. Conservar el flujo de exportación existente si no hay backend autenticado; no simular publicación compartida con localStorage. No permitir escrituras públicas sin autenticación/autorización.
+Partido: programado, en revisión, suspendido o reprogramado solo según fuente oficial. Mostrar alerta de condiciones adversas sin afirmar suspensión. Usar sedes y partidos del repositorio, nunca el ejemplo Pozos/Juventus o porcentajes de la conversación como datos actuales.
+
+FUNCIONES
+Conservar jornadas, filtros de categoría, equipos, jugadores, clasificación, goleadores, Copa/liguilla y JR Control. Integrar calendario ICS solo para fechas y horas confirmadas, con escape y zona horaria correctos. Alineaciones editables y estudio táctico 3D; simulador de clasificación aislado de datos oficiales y claramente hipotético. No inventar xG, mapas de calor ni eventos si no existen datos.
+
+REFERENCIAS, SIN PEGAR PLANTILLAS ENTERAS
+Estudiar las partes pertinentes y verificar LICENSE del commit usado antes de copiar código. Conservar atribuciones y registrar origen; no asumir que toda la lista es MIT.
+Emirates / portada: https://github.com/tahsinmert/emirates-sport-club
+Dashboard / jornadas: https://github.com/zehan12/world-cup-2026-dashboard
+Competición: https://github.com/daniyal-h/soccer-tournament-dashboard
+Simulación: https://github.com/ikarolaborda/matchora
+Cancha: https://github.com/withqwerty/campos
+Táctica 3D: https://github.com/in-c0/soccer-tactics-studio
+Movimiento: https://github.com/tsogjavklann/awwwards-3d
+Scroll 3D: https://github.com/14islands/r3f-scroll-rig
+Estadísticas: https://github.com/roni-altshuler/soccer_predictor
+Ambiente: https://github.com/makerjackie/the-other-half
+No incorporar GPL/AGPL ni recursos comerciales sin resolver compatibilidad y derechos. No migrar a React o WordPress solo por una referencia. PULP y CORVID son referencias de técnica de movimiento, no contenido para esta liga.
+
+HIGGSFIELD
+Si está conectado y se requieren imágenes nuevas, usar sus herramientas para originales deportivos acordes a la marca. Mostrar propuesta estática antes de generar videos. No comprar planes ni asegurar generación si hay bloqueo. Conservar assets válidos o crear geometría procedural para los balones si falta acceso. Nunca presentar imágenes generadas como fotografías reales de los campos. No crear un sitio Higgsfield aparte ni cambiar hosting para resolver este trabajo de GitHub Pages.
+
+CALIDAD Y ENTREGA
+Un motor 3D, carga diferida, DPR limitado en móvil, pausa fuera de pantalla y pestaña oculta, fallback sin WebGL, modo ahorro de datos, reduced-motion y control de movimiento persistente. Sin scroll horizontal a 360/390/768/1440 px. Foco visible, teclado, botones táctiles de 44 px y contraste suficiente.
+Ejecutar pruebas existentes y pruebas pertinentes de clima ausente vs cero, zona horaria/ICS, separación de simulador, borradores y datos oficiales. Revisar visualmente portada y navegación en escritorio y móvil; comprobar persistencia del balón y órbitas. No afirmar una revisión visual si no se pudo ejecutar.
+Entregar implementación real, documentación de fuentes/licencias, diff, pruebas ejecutadas y limitaciones. Si falta un dato indispensable, mostrar estado honesto y documentarlo. No publicar hasta revisión de los cambios.
