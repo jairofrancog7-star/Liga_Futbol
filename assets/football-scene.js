@@ -88,7 +88,7 @@
       }
       balls.forEach((ball, index) => {
         if (moving) {
-          ball.body.rotation.set(.2 + smoothY * .07 + scrollAmount * .3, elapsed * (index ? -.19 : .22) + index * .7 + scrollAmount * 1.4 + smoothX * .10, index ? -.14 : .10);
+          ball.body.rotation.set(.2 + smoothY * .07 + scrollAmount * .3, elapsed * (index ? -1.18 : 1.34) + index * .7 + scrollAmount * 1.4 + smoothX * .10, index ? -.14 : .10);
           ball.orbits.rotation.set(.08 * Math.sin(elapsed * .3), elapsed * (index ? .07 : -.08), scrollAmount * .12);
           ball.group.position.y = model.CENTERS[index][1] + Math.sin(elapsed * .65 + index * 2) * .06;
         }
