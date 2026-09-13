@@ -1,0 +1,238 @@
+
+/* ============================================================
+   V38 FIX15 — ANTI-FREEZE / MOTION ESTABLE
+   Un solo video global activo + tarjetas translúcidas.
+   Sin canvas por tarjeta. Sin MutationObserver.
+   ============================================================ */
+:root{
+  --jr47-green:#22e07a;
+  --jr47-gold:#f2c14e;
+  --jr47-black:#020806;
+  --jr47-ease:cubic-bezier(.16,1,.3,1);
+}
+body.jr47-stable{
+  background:#020806!important;
+  isolation:isolate;
+}
+
+/* Apagar visualmente capas pesadas de FIX12/FIX13/FIX14. */
+#jr44AmbientCanvas,#jr44AmbientShade,#jr44VideoSources,
+#jr45PageBg,#jr45PageShade,#jr45AtlasHost,
+#jr46PageCanvas,#jr46PageShade,#jr46AtlasHost,
+.jr44-motion-canvas,.jr44-motion-shade,.jr44-stage-motion,.jr44-stage-shade,
+.jr45-motion-canvas,.jr45-motion-shade,
+.jr46-canvas,.jr46-shade{
+  display:none!important;
+}
+
+/* Único video de fondo activo. */
+#jr47StableVideo{
+  position:fixed!important;
+  inset:-2%!important;
+  width:104%!important;
+  height:104%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  z-index:-20!important;
+  pointer-events:none!important;
+  opacity:.28!important;
+  filter:saturate(.92) contrast(1.08) brightness(.50)!important;
+  transform:scale(1.02);
+}
+#jr47StableShade{
+  position:fixed;
+  inset:0;
+  z-index:-19;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(2,8,6,.24),rgba(2,8,6,.78)),
+    radial-gradient(circle at 50% 18%,rgba(34,224,122,.05),transparent 42%);
+}
+
+/* Todos los cuadros dejan ver el motion sin crear videos/canvas propios. */
+.jr47-glass{
+  background:rgba(7,13,11,.72)!important;
+  border-color:rgba(34,224,122,.18)!important;
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  transition:
+    transform .18s var(--jr47-ease),
+    border-color .2s ease,
+    background .2s ease!important;
+}
+.jr47-glass.jr47-big{
+  background:
+    linear-gradient(112deg,rgba(4,11,8,.80),rgba(5,12,9,.62) 58%,rgba(5,10,8,.72))!important;
+}
+@media(hover:hover) and (pointer:fine){
+  .jr47-glass:hover{
+    border-color:rgba(34,224,122,.32)!important;
+    background:rgba(7,13,11,.64)!important;
+  }
+}
+
+/* Tablas translúcidas: movimiento visible por debajo, datos legibles. */
+.jr47-table table,.jr47-table thead,.jr47-table tbody{
+  background:transparent!important;
+}
+.jr47-table tr{
+  background:rgba(8,12,11,.73)!important;
+}
+.jr47-table tr:nth-child(even){
+  background:rgba(8,12,11,.64)!important;
+}
+.jr47-table th,.jr47-table td{
+  background:transparent!important;
+}
+.jr47-table tr:hover{
+  background:rgba(34,224,122,.11)!important;
+}
+
+/* Mantener videos grandes de vista por encima del fondo y debajo del texto. */
+.jr39-view-banner{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.jr39-view-banner>video{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  z-index:0!important;
+  opacity:.62!important;
+  filter:saturate(.94) contrast(1.08) brightness(.52)!important;
+}
+.jr39-view-banner .jr39-banner-inner{
+  position:relative!important;
+  z-index:2!important;
+}
+.jr39-view-banner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(2,8,6,.90),rgba(2,8,6,.34) 62%,rgba(2,8,6,.66));
+}
+
+/* Tabla y Estadísticas con películas distintas. */
+#view-table .jr39-view-banner>video{
+  filter:saturate(.96) contrast(1.10) brightness(.54)!important;
+}
+#view-stats .jr39-view-banner>video{
+  filter:saturate(.76) contrast(1.18) brightness(.48) hue-rotate(14deg)!important;
+}
+
+/* Hero: balón completo, sin recorte. */
+#v14CinematicHero .v14-stage{
+  overflow:hidden!important;
+  display:grid!important;
+  place-items:center!important;
+}
+#v14CinematicHero .jr39-home-video{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none!important;
+  opacity:.34!important;
+}
+#v14CinematicHero .jr38-ball-canvas,
+#v14CinematicHero .jr38-ball-fallback{
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+}
+
+/* Botones ligeros: sólo transform/opacity; nada de filtros caros en bucle. */
+body.jr47-stable button,
+body.jr47-stable .btn-primary,
+body.jr47-stable .primary-btn,
+body.jr47-stable .btn-ghost,
+body.jr47-stable .ghost-btn,
+body.jr47-stable .nav-btn,
+body.jr47-stable .tab-btn{
+  position:relative!important;
+  overflow:hidden!important;
+  transition:transform .16s var(--jr47-ease),box-shadow .18s ease!important;
+}
+body.jr47-stable button::after,
+body.jr47-stable .btn-primary::after,
+body.jr47-stable .primary-btn::after,
+body.jr47-stable .btn-ghost::after,
+body.jr47-stable .ghost-btn::after,
+body.jr47-stable .nav-btn::after,
+body.jr47-stable .tab-btn::after{
+  content:"";
+  position:absolute;
+  top:-40%;bottom:-40%;
+  left:-55%;
+  width:38%;
+  pointer-events:none;
+  opacity:0;
+  transform:skewX(-16deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+}
+@media(hover:hover) and (pointer:fine){
+  body.jr47-stable button:hover,
+  body.jr47-stable .btn-primary:hover,
+  body.jr47-stable .primary-btn:hover,
+  body.jr47-stable .btn-ghost:hover,
+  body.jr47-stable .ghost-btn:hover,
+  body.jr47-stable .nav-btn:hover,
+  body.jr47-stable .tab-btn:hover{
+    transform:translateY(-2px) scale(1.015)!important;
+    box-shadow:0 12px 28px rgba(0,0,0,.28)!important;
+  }
+  body.jr47-stable button:hover::after,
+  body.jr47-stable .btn-primary:hover::after,
+  body.jr47-stable .primary-btn:hover::after,
+  body.jr47-stable .btn-ghost:hover::after,
+  body.jr47-stable .ghost-btn:hover::after,
+  body.jr47-stable .nav-btn:hover::after,
+  body.jr47-stable .tab-btn:hover::after{
+    opacity:1;
+    animation:jr47-sweep .52s ease-out 1;
+  }
+}
+@keyframes jr47-sweep{
+  from{left:-55%}
+  to{left:120%}
+}
+body.jr47-stable .jr47-pop{
+  animation:jr47-pop .24s var(--jr47-ease);
+}
+@keyframes jr47-pop{
+  0%{transform:scale(1)}
+  45%{transform:scale(.965)}
+  100%{transform:scale(1)}
+}
+
+@media(max-width:760px){
+  #jr47StableVideo{opacity:.20!important}
+  .jr47-glass{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  #v14CinematicHero .v14-stage{
+    min-height:300px!important;
+    height:min(52svh,420px)!important;
+  }
+  #v14CinematicHero .jr38-ball-canvas,
+  #v14CinematicHero .jr38-ball-fallback{
+    transform:scale(.80)!important;
+    transform-origin:center!important;
+  }
+}
+
+/* Ahorro de datos o movimiento reducido: motion apagado de verdad. */
+body.jr47-save #jr47StableVideo,
+body.jr47-save .jr39-view-banner>video{
+  display:none!important;
+}
+@media(prefers-reduced-motion:reduce){
+  #jr47StableVideo,.jr39-view-banner>video{display:none!important}
+  .jr47-glass{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  body.jr47-stable button::after{display:none!important}
+}

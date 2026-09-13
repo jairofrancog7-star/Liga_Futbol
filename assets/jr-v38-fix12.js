@@ -35,7 +35,7 @@ function refreshBuild(){
 }
 
 /* ---------- shared-video compositor ---------- */
-function initSources(){
+function initSources(){if(window.__JR47DisableLegacyMotion)return;
  if(reduced.matches||saveData)return;
  const host=document.createElement('div');host.id='jr44VideoSources';document.body.appendChild(host);
  for(let i=0;i<sourceCount;i++){
@@ -88,7 +88,7 @@ function render(t){
   drawCover(c.getContext('2d',{alpha:false}),sources[idx],c.width,c.height,seed,t);
  });
 }
-function addMotion(el,stage=false,index=0){
+function addMotion(el,stage=false,index=0){if(window.__JR47DisableLegacyMotion)return;
  if(!el||el.dataset.jr44Motion)return;
  const r=el.getBoundingClientRect();
  if(!stage && (r.width<145||r.height<58))return;
@@ -106,7 +106,7 @@ function addMotion(el,stage=false,index=0){
  }
  if(cardObserver)cardObserver.observe(el);
 }
-function decorateAll(){
+function decorateAll(){if(window.__JR47DisableLegacyMotion)return;
  if(reduced.matches||saveData)return;
  let i=0;
  const selectors=[
