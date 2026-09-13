@@ -1,0 +1,311 @@
+/* ==========================================================
+   LIGA JUVENTINO ROSAS — V38 EMIRATES MOTION FIX7
+   Video-centric, GSAP/Lenis-friendly, association football only.
+   Inspired by the interaction language of Emirates Sport Club,
+   adapted to the league's own identity and existing architecture.
+   ========================================================== */
+
+:root{
+  --jr40-bg:#050b09;
+  --jr40-panel:#0b1512;
+  --jr40-green:#22e07a;
+  --jr40-gold:#f2c14e;
+  --jr40-white:#f7f7f2;
+  --jr40-muted:rgba(247,247,242,.66);
+  --jr40-line:rgba(255,255,255,.10);
+  --jr40-ease:cubic-bezier(.16,1,.3,1);
+}
+
+/* Previous V38 banners stay in DOM for compatibility but no longer render. */
+body.jr40-emirates .jr39-view-banner{display:none!important}
+
+/* Scroll progress like premium editorial/sport sites. */
+#jr40Progress{
+  position:fixed;
+  left:0;top:0;
+  z-index:2147480000;
+  width:100%;height:2px;
+  pointer-events:none;
+  background:rgba(255,255,255,.03);
+}
+#jr40Progress > i{
+  display:block;
+  width:100%;height:100%;
+  transform:scaleX(0);
+  transform-origin:left center;
+  background:linear-gradient(90deg,var(--jr40-green),var(--jr40-gold));
+  box-shadow:0 0 16px rgba(34,224,122,.42);
+}
+
+/* Cinematic page headers */
+.jr40-view-banner{
+  --jr40-media-y:0px;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:clamp(360px,58vw,720px);
+  margin:0 0 clamp(24px,4vw,56px);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:clamp(24px,3vw,42px);
+  background:
+    radial-gradient(circle at 76% 26%,rgba(34,224,122,.12),transparent 34%),
+    #050b09;
+  box-shadow:0 40px 110px rgba(0,0,0,.40);
+}
+.jr40-view-banner::before{
+  content:"";
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(5,11,9,.98) 0%,rgba(5,11,9,.86) 42%,rgba(5,11,9,.24) 76%,rgba(5,11,9,.64) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.03),rgba(0,0,0,.40));
+}
+.jr40-view-banner::after{
+  content:"";
+  position:absolute;left:0;right:0;bottom:0;height:1px;z-index:4;
+  background:linear-gradient(90deg,transparent,var(--jr40-green),var(--jr40-gold),transparent);
+  opacity:.6;
+}
+.jr40-view-banner video{
+  position:absolute;
+  inset:-6% -2%;
+  width:104%;height:112%;
+  object-fit:cover;
+  z-index:0;
+  opacity:.78;
+  filter:saturate(.98) contrast(1.08) brightness(.68);
+  transform:translate3d(0,var(--jr40-media-y),0) scale(1.035);
+  will-change:transform;
+}
+.jr40-banner-inner{
+  position:relative;z-index:3;
+  min-height:inherit;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  padding:clamp(26px,5vw,72px);
+  max-width:min(920px,80%);
+}
+.jr40-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  margin-bottom:14px;
+  color:var(--jr40-green);
+  font-weight:900;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.jr40-kicker::before{
+  content:"";
+  width:22px;height:2px;border-radius:999px;
+  background:linear-gradient(90deg,var(--jr40-green),var(--jr40-gold));
+}
+.jr40-view-banner h2{
+  margin:0;
+  max-width:10ch;
+  font-family:'Bebas Neue','Sora',system-ui,sans-serif;
+  font-size:clamp(58px,10vw,150px);
+  line-height:.78;
+  letter-spacing:-.035em;
+  text-wrap:balance;
+  color:var(--jr40-white);
+  text-shadow:0 20px 60px rgba(0,0,0,.46);
+}
+.jr40-view-banner p{
+  max-width:62ch;
+  margin:18px 0 0;
+  color:rgba(247,247,242,.73);
+  font-size:clamp(13px,1.18vw,17px);
+}
+.jr40-banner-meta{
+  display:flex;gap:9px;flex-wrap:wrap;
+  margin-top:22px;
+}
+.jr40-banner-meta span{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 12px;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:999px;
+  background:rgba(5,11,9,.60);
+  color:rgba(247,247,242,.78);
+  font-size:11px;
+  font-weight:800;
+  backdrop-filter:blur(12px);
+}
+
+/* Home cinematic film rail: every tile uses a different film. */
+#jr40FilmRail{
+  position:relative;
+  margin:clamp(30px,5vw,70px) 0;
+}
+.jr40-film-heading{
+  display:flex;align-items:end;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;
+  margin-bottom:18px;
+}
+.jr40-film-heading h2{
+  margin:0;
+  max-width:11ch;
+  font-family:'Bebas Neue','Sora',system-ui,sans-serif;
+  font-size:clamp(40px,7vw,90px);
+  line-height:.84;
+  letter-spacing:-.035em;
+}
+.jr40-film-heading p{
+  margin:0;max-width:54ch;color:var(--jr40-muted);
+}
+.jr40-film-grid{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:12px;
+}
+.jr40-film-card{
+  --jr40-card-x:0deg;
+  --jr40-card-y:0deg;
+  position:relative;
+  min-height:clamp(300px,42vw,560px);
+  overflow:hidden;
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,.09);
+  background:#07100d;
+  box-shadow:0 28px 72px rgba(0,0,0,.30);
+  transform:perspective(1000px) rotateX(var(--jr40-card-x)) rotateY(var(--jr40-card-y));
+  transform-style:preserve-3d;
+  transition:transform .34s var(--jr40-ease),border-color .3s ease,box-shadow .3s ease;
+}
+.jr40-film-card:nth-child(1){grid-column:span 7}
+.jr40-film-card:nth-child(2){grid-column:span 5}
+.jr40-film-card:nth-child(3){grid-column:span 5}
+.jr40-film-card:nth-child(4){grid-column:span 7}
+.jr40-film-card video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:.72;
+  filter:saturate(.96) contrast(1.08) brightness(.66);
+  transform:scale(1.04);
+  transition:transform .8s var(--jr40-ease),filter .5s ease;
+}
+.jr40-film-card::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(5,11,9,.05) 30%,rgba(5,11,9,.92) 100%);
+}
+.jr40-film-copy{
+  position:absolute;z-index:2;left:0;right:0;bottom:0;
+  padding:clamp(18px,3vw,34px);
+  transform:translateZ(40px);
+}
+.jr40-film-copy small{
+  color:var(--jr40-green);font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+}
+.jr40-film-copy h3{
+  margin:7px 0 7px;
+  font-family:'Bebas Neue','Sora',system-ui,sans-serif;
+  font-size:clamp(30px,4vw,58px);
+  line-height:.9;letter-spacing:-.025em;
+}
+.jr40-film-copy p{margin:0 0 15px;color:rgba(247,247,242,.68);max-width:48ch}
+@media (hover:hover) and (pointer:fine){
+  .jr40-film-card:hover{
+    border-color:rgba(34,224,122,.28);
+    box-shadow:0 38px 96px rgba(0,0,0,.40);
+  }
+  .jr40-film-card:hover video{
+    transform:scale(1.085);
+    filter:saturate(1.08) contrast(1.08) brightness(.74);
+  }
+}
+
+/* Magnetic / luminous controls */
+.jr40-magnetic{
+  --jr40-tx:0px;
+  --jr40-ty:0px;
+  transform:translate3d(var(--jr40-tx),var(--jr40-ty),0);
+  will-change:transform;
+}
+.jr40-magnetic::before{
+  content:"";
+  position:absolute;
+  inset:-40%;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(34,224,122,.22),transparent 62%);
+  opacity:0;
+  transform:scale(.55);
+  transition:opacity .25s ease,transform .35s var(--jr40-ease);
+  pointer-events:none;
+}
+.jr40-magnetic:hover::before{opacity:1;transform:scale(1)}
+.jr40-ripple{
+  position:absolute;
+  width:12px;height:12px;
+  margin:-6px 0 0 -6px;
+  border-radius:50%;
+  background:rgba(255,255,255,.38);
+  pointer-events:none;
+  animation:jr40-ripple .65s ease-out forwards;
+}
+@keyframes jr40-ripple{
+  to{transform:scale(15);opacity:0}
+}
+
+/* Slightly more editorial spacing / separation. */
+body.jr40-emirates #view-home > .section,
+body.jr40-emirates #view-home > .card{
+  scroll-margin-top:110px;
+}
+body.jr40-emirates .card,
+body.jr40-emirates .table-wrap{
+  background-image:linear-gradient(145deg,rgba(255,255,255,.018),transparent 42%);
+}
+body.jr40-emirates .card:hover{
+  border-color:rgba(34,224,122,.20);
+}
+
+/* Cinematic reveal baseline */
+html.jr40-js .jr40-reveal{
+  opacity:0;
+  transform:translateY(28px);
+  clip-path:inset(10% 0 0 0 round 22px);
+}
+html.jr40-js .jr40-reveal.jr40-visible{
+  opacity:1;
+  transform:none;
+  clip-path:inset(0 0 0 0 round 22px);
+  transition:
+    opacity .7s var(--jr40-ease),
+    transform .7s var(--jr40-ease),
+    clip-path .8s var(--jr40-ease);
+}
+
+/* Lenis basic CSS, applied only when library loads. */
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+.lenis.lenis-smooth iframe{pointer-events:none}
+
+@media (max-width:900px){
+  .jr40-view-banner{min-height:440px}
+  .jr40-view-banner::before{
+    background:linear-gradient(180deg,rgba(5,11,9,.40),rgba(5,11,9,.94) 78%);
+  }
+  .jr40-banner-inner{max-width:100%;padding:24px}
+  .jr40-view-banner h2{font-size:clamp(52px,15vw,96px)}
+  .jr40-film-grid{grid-template-columns:1fr}
+  .jr40-film-card,
+  .jr40-film-card:nth-child(n){grid-column:auto;min-height:380px}
+}
+@media (max-width:520px){
+  .jr40-view-banner{min-height:390px;border-radius:24px}
+  .jr40-banner-inner{padding:20px}
+  .jr40-film-card,
+  .jr40-film-card:nth-child(n){min-height:330px;border-radius:22px}
+  .jr40-film-copy{padding:20px}
+}
+
+/* Performance and accessibility */
+@media (prefers-reduced-motion:reduce){
+  #jr40Progress{display:none!important}
+  .jr40-view-banner video,.jr40-film-card video{display:none!important}
+  html.jr40-js .jr40-reveal{opacity:1!important;transform:none!important;clip-path:none!important}
+  .jr40-magnetic{transform:none!important}
+  .jr40-ripple{display:none!important}
+}
