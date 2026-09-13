@@ -1,0 +1,1 @@
+FIX11 elimina las capas de motion duplicadas y evita un video por tarjeta. Conserva OCR, clima y balones 3D.
