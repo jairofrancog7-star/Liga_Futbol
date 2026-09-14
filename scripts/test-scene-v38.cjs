@@ -19,6 +19,7 @@ class Node {
   constructor() { this.children = []; this.dataset = {}; this.events = {}; this.rotation = { x: 0, y: 0, z: 0, set(x, y, z) { Object.assign(this, { x, y, z }); } }; this.position = { set(x, y, z) { Object.assign(this, { x, y, z }); } }; this.isConnected = true; }
   add(...nodes) { this.children.push(...nodes); }
   appendChild(node) { this.children.push(node); }
+  querySelectorAll() { return []; }
   replaceChildren(...nodes) { this.children = nodes; }
   insertAdjacentElement(_, node) { this.adjacent = node; }
   setAttribute(key, value) { this[key] = value; }

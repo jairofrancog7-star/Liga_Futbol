@@ -1,0 +1,26 @@
+/* Original league utilities. Local drafts are never represented as official data. */
+(()=>{'use strict';
+const KEY='jr57-matchday-draft';
+const $=s=>document.querySelector(s);
+function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function init(){
+ document.querySelector('.v14-ticker')?.removeAttribute('aria-hidden');
+ document.querySelectorAll('.v21-ticker-link').forEach(e=>e.setAttribute('role','button'));
+ const host=$('#view-matches');if(!host||$('#jr57Tools'))return;
+ const box=document.createElement('section');box.id='jr57Tools';
+ box.innerHTML=`<h2>Preparar mi jornada</h2><p>Agenda y lista de revisión guardadas en este dispositivo. Son borradores; no modifican partidos ni resultados oficiales.</p><form id="jr57Form"><div class="jr57-grid"><label>Equipo local<input name="home" required maxlength="100"></label><label>Equipo visitante<input name="away" required maxlength="100"></label><label>Campo<input name="venue" required maxlength="100"></label><label>Inicio · hora de Juventino Rosas<input name="start" type="datetime-local" required></label><label>Duración reservada (minutos)<input name="minutes" type="number" min="30" max="300" value="120" required></label></div><div class="jr57-actions"><button type="submit">Agregar y revisar cruces</button><button type="button" id="jr57Export">Exportar agenda JSON</button><button type="button" id="jr57Share">Compartir agenda</button><button type="button" id="jr57Refresh">Buscar actualización</button></div></form><div id="jr57Status" role="status" aria-live="polite"></div><ul id="jr57List"></ul><details><summary>Lista de revisión antes del partido</summary><div id="jr57Checklist"></div></details>`;
+ host.appendChild(box);
+ let draft={matches:[],checks:{}};
+ try{const d=JSON.parse(localStorage.getItem(KEY));if(d&&Array.isArray(d.matches)&&d.matches.every(x=>typeof x.home==='string'&&typeof x.away==='string'&&typeof x.venue==='string'&&Number.isFinite(x.begin)&&Number.isFinite(x.end)))draft={matches:d.matches,checks:d.checks||{}}}catch(_){}
+ const status=t=>$('#jr57Status').textContent=t;
+ function save(){try{localStorage.setItem(KEY,JSON.stringify(draft));return true}catch(_){status('No se pudo guardar en este dispositivo. Exporta la agenda para conservarla.');return false}}
+ function render(){const list=$('#jr57List');list.replaceChildren();draft.matches.forEach((m,i)=>{const li=document.createElement('li');li.append(document.createTextNode(`${m.home} — ${m.away} · ${m.venue} · ${m.start.replace('T',' ')} `));const b=document.createElement('button');b.type='button';b.textContent='Quitar';b.setAttribute('aria-label',`Quitar ${m.home} contra ${m.away}`);b.onclick=()=>{draft.matches.splice(i,1);save();render()};li.append(b);list.append(li)})}
+ ['Campo confirmado por responsable','Árbitro confirmado','Credenciales revisadas','Sanciones revisadas','Equipos avisados del horario','Botiquín y contacto de emergencia disponibles'].forEach((text,i)=>{const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.checked=!!draft.checks[i];input.onchange=()=>{draft.checks[i]=input.checked;save()};label.append(input,document.createTextNode(text));$('#jr57Checklist').append(label)});
+ $('#jr57Form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),m={home:f.get('home').trim(),away:f.get('away').trim(),venue:f.get('venue').trim(),start:f.get('start')};m.begin=Date.parse(m.start+'-06:00');m.end=m.begin+Number(f.get('minutes'))*60000;const norm=s=>s.toLocaleLowerCase('es').trim();if(!m.home||!m.away||!m.venue||!Number.isFinite(m.begin)||norm(m.home)===norm(m.away)){status('Revisa fecha, campo y dos equipos diferentes.');return}const conflicts=draft.matches.filter(x=>m.begin<x.end&&m.end>x.begin&&(norm(x.venue)===norm(m.venue)||[x.home,x.away].some(t=>[m.home,m.away].some(u=>norm(t)===norm(u)))));if(conflicts.length){status('Cruce de campo o equipo: '+conflicts.map(x=>`${x.home} — ${x.away}`).join(', ')+'. Cambia el horario antes de agregar.');return}draft.matches.push(m);draft.matches.sort((a,b)=>a.begin-b.begin);if(save())status('Borrador guardado. Sin cruces con tu agenda local.');render()};
+ $('#jr57Export').onclick=()=>download('Liga_JR_agenda_borrador.json',JSON.stringify({type:'borrador-local',timezone:'America/Mexico_City',...draft},null,2),'application/json');
+ $('#jr57Share').onclick=async()=>{const text='Liga JR · Agenda borrador (pendiente de confirmación)\n'+draft.matches.map(m=>`${m.home} vs ${m.away} · ${m.start.replace('T',' ')} · ${m.venue}`).join('\n');if(!draft.matches.length){status('Agrega un partido primero.');return}try{if(navigator.share)await navigator.share({title:'Mi jornada · Liga JR',text});else if(navigator.clipboard){await navigator.clipboard.writeText(text);status('Agenda copiada para compartir.')}else download('Liga_JR_agenda.txt',text,'text/plain')}catch(e){if(e.name!=='AbortError')status('No se pudo compartir. Usa Exportar agenda JSON.')}};
+ $('#jr57Refresh').onclick=()=>window.JRMobileRefresh?.check(true);
+ render();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();

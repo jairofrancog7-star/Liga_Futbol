@@ -32,8 +32,8 @@
     const model = window.JRBallModelV38;
     if (!stage || !model) return null;
     // Remove obsolete presentation nodes only; the league's views remain mounted.
-    document.getElementById('jrV369SecondSection')?.remove();
-    stage.replaceChildren();
+    // Preserve existing sections and motion backgrounds.
+    stage.querySelectorAll('#jrV14Canvas,.v14-fallback,.v14-chip').forEach(el => el.remove());
     stage.setAttribute('role', 'img');
     stage.setAttribute('aria-label', 'Dos balones de fútbol, verde y dorado, con paneles y órbitas completas');
     const fallback = model.fallback(stage);

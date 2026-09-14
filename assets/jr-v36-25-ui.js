@@ -31,7 +31,7 @@
         const button = event.target.closest('[data-jr38-view],[data-jr38-fields]');
         if (!button) return;
         event.preventDefault();
-        if (button.hasAttribute('data-jr38-fields')) window.JRFieldsV38?.navigate();
+        if (button.hasAttribute('data-jr38-fields')) window.showView?.('fields');
         else window.showView?.(button.dataset.jr38View);
       });
     }

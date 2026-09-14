@@ -1,11 +1,14 @@
 {
-  "build": "38-24",
-  "webVersion": "38.24",
-  "androidVersionName": "1.2.2",
-  "androidVersionCode": 5,
-  "generated": "2026-09-13",
-  "cachePolicy": "network-first-no-service-worker-cache",
-  "weatherUi": "compact-single-match",
-  "weatherDecisionEngine": "explainable-local-score",
-  "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png"
+    "build":  "38-25",
+    "webVersion":  "38.25",
+    "androidVersionName":  "1.2.3",
+    "androidVersionCode":  6,
+    "generated":  "2026-09-14",
+    "cachePolicy":  "network-first-no-service-worker-cache",
+    "weatherUi":  "compact-single-match",
+    "weatherDecisionEngine":  "explainable-local-score",
+    "primeraFuerzaLogo":  "assets/branding/primera-fuerza-hd.png",
+    "apkStatus":  "source-prepared-binary-not-rebuilt",
+    "downloadableAndroidVersionName":  "1.2.2",
+    "downloadableAndroidVersionCode":  5
 }
