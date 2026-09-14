@@ -1,0 +1,39 @@
+PAYLOAD V38 FIX32 — PRIMERA FUERZA / TARJETAS DE CATEGORÍA
+
+OBJETIVO
+- Quitar del cuadro de Primera Fuerza el logo viejo de Liga Juventino Rosas.
+- Dejar únicamente el logo HD de Primera Fuerza.
+- Reacomodar texto y métricas del botón/tarjeta de Primera Fuerza.
+- Aplicar el mismo orden visual a los demás botones de categorías.
+- Conservar FIX31: tarjetas de equipos uniformes, un logo grande y un mini logo.
+
+BUILD
+- Web/PWA: 38-32 / 38.32
+- Android: sin recompilar en este hotfix; sigue 1.4.0 / code 9.
+
+PRIMERA FUERZA
+- Logo único: assets/branding/primera-fuerza-hd.png
+- 11 equipos
+- 291 jugadores
+- 20 partidos jugados
+- 35 pendientes
+- Torneo de Copa J5
+
+OTRAS CATEGORÍAS
+- Veteranos 50+: 6 equipos / 109 jugadores / 15 jugados / 30 pendientes / J6
+- Intermedia: 13 equipos / 332 jugadores / 22 jugados / 54 pendientes / J5
+- Segunda Fuerza: 12 equipos / 312 jugadores / 23 jugados / 42 pendientes / J5
+- Veteranos 35+: conserva sus datos/fase disponible y no inventa conteos faltantes.
+
+REFRESH
+- refresh-v32.html elimina Cache Storage y desregistra service workers.
+- build-v38.json y manifest.webmanifest suben a 38-32.
+- jr-v38-mobile-sync.js compara contra 38-32.
+
+ARCHIVOS PRINCIPALES
+- assets/jr-v38-primera-logo.js
+- assets/jr-v38-primera-logo.css
+- assets/jr-v38-mobile-sync.js
+- build-v38.json
+- manifest.webmanifest
+- refresh-v32.html

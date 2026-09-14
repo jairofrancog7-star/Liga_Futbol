@@ -1,6 +1,6 @@
 {
-  "build": "38-31",
-  "webVersion": "38.31",
+  "build": "38-32",
+  "webVersion": "38.32",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -21,5 +21,6 @@
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
   "fix31": "uniform-team-card-height-single-main-logo-single-mini-logo-no-empty-duplicate-boxes-all-categories",
+  "fix32": "category-buttons-clean-layout-remove-league-logo-from-primera-force-single-logo",
   "apkStatus": "unchanged-existing-binary"
 }
