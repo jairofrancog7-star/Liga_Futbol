@@ -1,6 +1,6 @@
 (()=>{'use strict';
 if(window.JRMobileRefresh)return;
-const BUILD='38-28',INTERVAL=300000;let last=0,busy=false;
+const BUILD='38-30',INTERVAL=300000;let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
