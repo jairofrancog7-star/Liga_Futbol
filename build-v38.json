@@ -1,0 +1,8 @@
+{
+  "build": "38-22",
+  "webVersion": "38.22",
+  "androidVersionName": "1.2.0",
+  "androidVersionCode": 3,
+  "generated": "2026-09-13",
+  "cachePolicy": "network-first-no-service-worker-cache"
+}

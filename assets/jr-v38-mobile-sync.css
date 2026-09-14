@@ -1,0 +1,12 @@
+
+/* V38 FIX22 — paridad móvil sin cambiar el diseño de PC */
+html{-webkit-text-size-adjust:100%}
+body{overscroll-behavior-y:auto}
+@media(max-width:760px){
+  .app{width:100%!important;max-width:1280px!important;padding-left:12px!important;padding-right:12px!important}
+  .topbar{padding-left:max(12px,env(safe-area-inset-left))!important;padding-right:max(12px,env(safe-area-inset-right))!important}
+  .bottom-nav{padding-bottom:max(7px,env(safe-area-inset-bottom))!important}
+  table{max-width:100%}
+  .table-wrap,[class*="table-wrap"]{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  video,canvas,img{max-width:100%}
+}
