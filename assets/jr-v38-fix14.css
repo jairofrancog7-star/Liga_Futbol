@@ -1,0 +1,232 @@
+
+/* ============================================================
+   LIGA JUVENTINO ROSAS V38 FIX14
+   MOTION TOTAL + BALON COMPLETO + BOTONES ANIMADOS
+   ============================================================ */
+:root{
+  --jr46-green:#22e07a;
+  --jr46-gold:#f2c14e;
+  --jr46-black:#020806;
+  --jr46-radius:22px;
+  --jr46-ease:cubic-bezier(.16,1,.3,1);
+}
+body.jr46-fix14{
+  background:#020806!important;
+  isolation:isolate;
+}
+
+/* Apaga visualmente capas motion genéricas anteriores.
+   NO elimina OCR, clima, tablas, datos ni funcionalidades. */
+#jr45PageBg,#jr45PageShade,#jr45AtlasHost,
+.jr45-motion-canvas,.jr45-motion-shade,
+#jr44AmbientCanvas,#jr44AmbientShade,
+.jr44-motion-canvas,.jr44-motion-shade,
+.jr44-stage-motion,.jr44-stage-shade{
+  display:none!important;
+}
+
+/* Un solo decoder oculto para el atlas 36 escenas. */
+#jr46AtlasHost{
+  position:fixed!important;
+  left:-8px!important;top:-8px!important;
+  width:1px!important;height:1px!important;
+  opacity:.001!important;overflow:hidden!important;
+  pointer-events:none!important;z-index:-99999!important;
+}
+#jr46Atlas{width:1px!important;height:1px!important}
+
+/* Fondo general en movimiento: usa el mismo atlas, dibujado a canvas. */
+#jr46PageCanvas{
+  position:fixed!important;inset:0!important;
+  width:100vw!important;height:100vh!important;
+  z-index:-12!important;pointer-events:none!important;
+  opacity:.30!important;
+  filter:saturate(.92) contrast(1.10) brightness(.62);
+}
+#jr46PageShade{
+  position:fixed;inset:0;z-index:-11;pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(2,8,6,.20),rgba(2,8,6,.77)),
+    radial-gradient(circle at 50% 20%,rgba(34,224,122,.04),transparent 40%);
+}
+
+/* Motion real debajo del texto. */
+.jr46-motion{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  background:rgba(5,13,10,.78)!important;
+  border-color:rgba(34,224,122,.20)!important;
+}
+.jr46-motion>.jr46-canvas{
+  position:absolute!important;inset:0!important;
+  width:100%!important;height:100%!important;
+  z-index:0!important;pointer-events:none!important;
+  opacity:.49!important;
+  filter:saturate(1.02) contrast(1.08) brightness(.72);
+}
+.jr46-motion>.jr46-shade{
+  position:absolute!important;inset:0!important;
+  z-index:1!important;pointer-events:none!important;
+  background:
+    linear-gradient(106deg,rgba(2,8,6,.91),rgba(2,8,6,.63) 55%,rgba(2,8,6,.75)),
+    radial-gradient(circle at 80% 18%,rgba(34,224,122,.07),transparent 34%);
+}
+.jr46-motion>:not(.jr46-canvas):not(.jr46-shade){
+  position:relative;z-index:2;
+}
+.jr46-motion.jr46-large>.jr46-canvas{opacity:.55!important}
+.jr46-motion.jr46-large>.jr46-shade{
+  background:
+    linear-gradient(90deg,rgba(2,8,6,.92),rgba(2,8,6,.54) 58%,rgba(2,8,6,.73)),
+    linear-gradient(180deg,transparent 55%,rgba(2,8,6,.38))!important;
+}
+
+/* Tabla y Estadísticas: el video específico no puede volver a ser el mismo. */
+#view-table .jr39-view-banner>video{
+  object-fit:cover!important;
+  filter:saturate(.94) contrast(1.10) brightness(.55)!important;
+}
+#view-stats .jr39-view-banner>video{
+  object-fit:cover!important;
+  filter:saturate(.82) contrast(1.18) brightness(.49) hue-rotate(13deg)!important;
+}
+#view-table .jr39-view-banner::after,
+#view-stats .jr39-view-banner::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(2,8,6,.90),rgba(2,8,6,.32) 60%,rgba(2,8,6,.58));
+}
+#view-table .jr39-banner-inner,
+#view-stats .jr39-banner-inner{position:relative!important;z-index:2!important}
+
+/* Tablas: dejar pasar el film pero conservar contraste del dato. */
+.jr46-table table,.jr46-table thead,.jr46-table tbody{background:transparent!important}
+.jr46-table tr{
+  background:rgba(8,12,11,.72)!important;
+  backdrop-filter:blur(1.5px);
+}
+.jr46-table tr:nth-child(even){background:rgba(8,12,11,.62)!important}
+.jr46-table th,.jr46-table td{background:transparent!important}
+.jr46-table tr:hover{background:rgba(34,224,122,.12)!important}
+
+/* HERO: no recortar el balón/video. */
+#v14CinematicHero .v14-stage{
+  overflow:hidden!important;
+  display:grid!important;
+  place-items:center!important;
+}
+#v14CinematicHero .v14-stage video,
+#v14CinematicHero .jr39-home-video{
+  width:100%!important;height:100%!important;
+  inset:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none!important;
+  max-width:100%!important;max-height:100%!important;
+}
+#v14CinematicHero .jr38-ball-canvas,
+#v14CinematicHero .jr38-ball-fallback{
+  width:100%!important;height:100%!important;
+  max-width:100%!important;max-height:100%!important;
+  object-fit:contain!important;
+}
+
+/* Evita que el motion de tarjeta tape los balones 3D del hero. */
+#v14CinematicHero .v14-stage>.jr46-canvas{z-index:0!important;opacity:.28!important}
+#v14CinematicHero .v14-stage>.jr46-shade{z-index:1!important}
+#v14CinematicHero .v14-stage>.jr39-home-video{z-index:2!important;opacity:.30!important}
+#v14CinematicHero .v14-stage>.jr38-ball-canvas,
+#v14CinematicHero .v14-stage>.jr38-ball-fallback{position:relative!important;z-index:4!important}
+#v14CinematicHero .v14-stage>*:not(.jr46-canvas):not(.jr46-shade):not(.jr39-home-video){
+  z-index:4;
+}
+
+/* Botones: brillo en reposo + hover magnético + pulso de clic. */
+body.jr46-fix14 button,
+body.jr46-fix14 .btn-primary,
+body.jr46-fix14 .primary-btn,
+body.jr46-fix14 .btn-ghost,
+body.jr46-fix14 .ghost-btn,
+body.jr46-fix14 .nav-btn,
+body.jr46-fix14 .tab-btn{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate;
+  transition:
+    transform .22s var(--jr46-ease),
+    box-shadow .22s ease,
+    filter .22s ease!important;
+}
+body.jr46-fix14 button::after,
+body.jr46-fix14 .btn-primary::after,
+body.jr46-fix14 .primary-btn::after,
+body.jr46-fix14 .btn-ghost::after,
+body.jr46-fix14 .ghost-btn::after,
+body.jr46-fix14 .nav-btn::after,
+body.jr46-fix14 .tab-btn::after{
+  content:"";
+  position:absolute;
+  top:-35%;bottom:-35%;
+  width:44%;
+  left:-60%;
+  z-index:-1;
+  pointer-events:none;
+  transform:skewX(-18deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.17),transparent);
+  animation:jr46-shine 4.2s ease-in-out infinite;
+}
+@keyframes jr46-shine{
+  0%,66%{left:-60%;opacity:0}
+  70%{opacity:1}
+  86%{left:125%;opacity:.75}
+  100%{left:125%;opacity:0}
+}
+@media(hover:hover) and (pointer:fine){
+  body.jr46-fix14 button:hover,
+  body.jr46-fix14 .btn-primary:hover,
+  body.jr46-fix14 .primary-btn:hover,
+  body.jr46-fix14 .btn-ghost:hover,
+  body.jr46-fix14 .ghost-btn:hover,
+  body.jr46-fix14 .nav-btn:hover,
+  body.jr46-fix14 .tab-btn:hover{
+    transform:translate3d(var(--jr46-mx,0),var(--jr46-my,-2px),0) scale(1.025)!important;
+    filter:brightness(1.08);
+    box-shadow:0 14px 34px rgba(0,0,0,.34),0 0 0 1px rgba(34,224,122,.14)!important;
+  }
+}
+body.jr46-fix14 button.jr46-pop{animation:jr46-pop .30s var(--jr46-ease)}
+@keyframes jr46-pop{
+  0%{transform:scale(1)}
+  40%{transform:scale(.94)}
+  100%{transform:scale(1)}
+}
+
+/* Tarjetas de patrocinadores también reciben film visible. */
+[id*="sponsor" i] .jr46-canvas,
+[class*="sponsor" i].jr46-motion>.jr46-canvas{opacity:.43!important}
+
+/* Mobile. */
+@media(max-width:760px){
+  #jr46PageCanvas{opacity:.22!important}
+  .jr46-motion>.jr46-canvas{opacity:.41!important}
+  #v14CinematicHero .v14-stage{
+    min-height:300px!important;
+    height:min(54svh,430px)!important;
+  }
+  #v14CinematicHero .jr38-ball-canvas,
+  #v14CinematicHero .jr38-ball-fallback{
+    transform:scale(.82)!important;
+    transform-origin:center!important;
+  }
+}
+
+/* Ahorro de datos y accesibilidad. */
+body.jr46-save-data #jr46PageCanvas,
+body.jr46-save-data .jr46-canvas,
+body.jr46-save-data .jr39-view-banner>video{display:none!important}
+
+@media(prefers-reduced-motion:reduce){
+  #jr46PageCanvas,.jr46-canvas{display:none!important}
+  body.jr46-fix14 button::after{animation:none!important;display:none!important}
+  .jr46-motion{background:rgba(5,13,10,.94)!important}
+}

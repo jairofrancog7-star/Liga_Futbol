@@ -1,12 +1,12 @@
-﻿Liga Juventino Rosas APK
+Liga Juventino Rosas APK
 ========================
 Archivo: Liga_Juventino_Rosas.apk
-Origen: Android Studio :app:assembleDebug
-VersionName: 1.1
-VersionCode: 2
+VersionName: 1.2.0
+VersionCode: 3
+Web build: 38-22
 Tipo: DEBUG / prueba
-SHA256: 5f5b1d447be3d08f61ab8d31d9ea16fce2092de11530750b59efe7e0bcdcb730
-Fecha: 2026-09-10 13:59:21
+TamanoMB: 3.01
+SHA256: e9d530b3496dcd9d6ab005994fe93ee0184c353d2d372fc21889ccb3f9fbf1b8
+Fecha: 2026-09-13 18:27:46
 
-Para distribución formal conviene crear una versión RELEASE firmada.
-Nunca subas el keystore privado a GitHub.
+Chrome/PWA/APK apuntan al build web 38-22.
