@@ -1,6 +1,6 @@
 {
-  "build": "38-30",
-  "webVersion": "38.30",
+  "build": "38-31",
+  "webVersion": "38.31",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -20,6 +20,6 @@
   "weatherUi": "match-field-hourly-risk-plus-full-hub",
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
-  "fix30": "large-primary-small-secondary-team-logos-plus-compact-primera-category-logo",
+  "fix31": "uniform-team-card-height-single-main-logo-single-mini-logo-no-empty-duplicate-boxes-all-categories",
   "apkStatus": "unchanged-existing-binary"
 }

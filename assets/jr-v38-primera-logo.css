@@ -1,114 +1,151 @@
-/* V38 FIX30 — escudo principal grande + segundo escudo pequeño */
-.jr62-fixed-team-card{
-  position:relative!important;
+/* V38 FIX31 — TODOS los cuadros de equipos con la misma geometría.
+   Objetivo: 1 cuadro de escudo + 1 mini escudo. Cero cajas vacías/duplicadas. */
+
+#teamsGrid{
+  align-items:stretch!important;
+  grid-auto-rows:332px!important;
+}
+#teamsGrid > .jr63-grid-team-card{
+  height:332px!important;
+  min-height:332px!important;
+  max-height:332px!important;
+  align-self:stretch!important;
   overflow:hidden!important;
   display:flex!important;
   flex-direction:column!important;
   align-items:stretch!important;
-  gap:8px!important;
+  gap:7px!important;
+  padding:14px!important;
 }
-.jr62-team-hero-logo{
+.jr63-fixed-team-card{position:relative!important;overflow:hidden!important}
+
+/* ÚNICO cuadro grande del escudo */
+.jr63-team-hero-logo{
   position:relative!important;
-  z-index:4!important;
+  z-index:5!important;
+  flex:0 0 164px!important;
   width:100%!important;
-  height:clamp(132px,14vw,172px)!important;
-  min-height:132px!important;
+  height:164px!important;
+  min-height:164px!important;
+  max-height:164px!important;
   display:grid!important;
   place-items:center!important;
-  margin:0 0 4px!important;
-  padding:10px!important;
-  border:1px solid rgba(49,103,82,.45)!important;
-  border-radius:15px!important;
+  padding:12px!important;
+  margin:0 0 3px!important;
   overflow:hidden!important;
-  background:radial-gradient(circle at 50% 42%,rgba(32,232,161,.10),rgba(3,12,9,.82) 70%)!important;
+  border:1px solid rgba(49,103,82,.55)!important;
+  border-radius:16px!important;
+  background:radial-gradient(circle at 50% 42%,rgba(32,232,161,.09),rgba(3,12,9,.84) 72%)!important;
+  box-shadow:none!important;
 }
-.jr62-team-hero-logo>img{
-  width:88%!important;
-  height:88%!important;
-  max-width:230px!important;
-  max-height:150px!important;
+.jr63-team-hero-logo>img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:215px!important;
+  max-height:140px!important;
   object-fit:contain!important;
   object-position:center!important;
-  padding:0!important;
   margin:0!important;
+  padding:0!important;
   border:0!important;
   border-radius:10px!important;
   background:transparent!important;
   box-shadow:none!important;
 }
-.jr62-secondary-team-logo-wrap{
-  width:34px!important;
-  height:34px!important;
-  min-width:34px!important;
-  min-height:34px!important;
-  max-width:34px!important;
-  max-height:34px!important;
-  flex:0 0 34px!important;
-  display:inline-grid!important;
+
+/* ÚNICO logo pequeño debajo del cuadro grande */
+.jr63-mini-logo{
+  position:relative!important;
+  z-index:6!important;
+  flex:0 0 30px!important;
+  width:30px!important;
+  height:30px!important;
+  min-width:30px!important;
+  min-height:30px!important;
+  max-width:30px!important;
+  max-height:30px!important;
+  display:grid!important;
   place-items:center!important;
   padding:2px!important;
-  margin:0 0 2px!important;
-  border-radius:9px!important;
-  overflow:hidden!important;
-  background:rgba(255,255,255,.035)!important;
-  border:1px solid rgba(46,236,164,.18)!important;
-}
-.jr62-secondary-team-logo{
-  width:28px!important;
-  height:28px!important;
-  min-width:28px!important;
-  min-height:28px!important;
-  max-width:28px!important;
-  max-height:28px!important;
-  object-fit:contain!important;
-  object-position:center!important;
-  padding:0!important;
   margin:0!important;
-  border:0!important;
-  border-radius:7px!important;
-  background:transparent!important;
+  overflow:hidden!important;
+  border-radius:8px!important;
+  border:1px solid rgba(46,236,164,.24)!important;
+  background:rgba(4,15,11,.90)!important;
   box-shadow:none!important;
 }
-.jr62-extra-team-logo,.jr62-extra-team-logo-wrap{display:none!important}
-
-/* Primera Fuerza: logo de categoría compacto, nunca ocupa la tarjeta. */
-.jr62-pf-category-wrap{
-  width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
-  max-width:40px!important;max-height:40px!important;flex:0 0 40px!important;
-  display:inline-grid!important;place-items:center!important;overflow:hidden!important;
-  border-radius:10px!important;background:#030806!important;
+.jr63-mini-logo>img{
+  display:block!important;
+  width:24px!important;height:24px!important;min-width:24px!important;min-height:24px!important;
+  max-width:24px!important;max-height:24px!important;
+  object-fit:contain!important;object-position:center!important;
+  margin:0!important;padding:0!important;border:0!important;border-radius:6px!important;
+  background:transparent!important;box-shadow:none!important;
 }
-.jr62-pf-category-logo{
-  width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;
-  max-width:36px!important;max-height:36px!important;object-fit:contain!important;
-  object-position:center!important;padding:0!important;margin:0!important;border-radius:8px!important;
-  background:#030806!important;box-shadow:none!important;
+.jr63-logo-fallback{
+  display:grid!important;place-items:center!important;width:100%!important;height:100%!important;
+  color:#20e8a1!important;font-weight:900!important;font-size:32px!important;letter-spacing:.02em!important;
+  border:0!important;background:transparent!important;
+}
+.jr63-logo-fallback.small{font-size:10px!important}
+
+/* Todo logo/caja visual heredada queda fuera: evita Napoli/Abejas con dos cuadros. */
+.jr63-fixed-team-card .jr63-legacy-visual,
+.jr63-fixed-team-card .jr63-legacy-initial-box,
+.jr63-fixed-team-card > .jr62-team-hero-logo,
+.jr63-fixed-team-card > .jr62-secondary-team-logo-wrap,
+.jr63-fixed-team-card .jr62-extra-team-logo,
+.jr63-fixed-team-card .jr62-extra-team-logo-wrap{
+  display:none!important;
+  width:0!important;height:0!important;min-width:0!important;min-height:0!important;
+  max-width:0!important;max-height:0!important;margin:0!important;padding:0!important;border:0!important;
+  overflow:hidden!important;
 }
 
-/* Evita que reglas antiguas vuelvan a agrandar el logo de Primera Fuerza. */
+/* Neutraliza dimensiones viejas que estiraban algunas tarjetas. */
+#teamsGrid > .jr63-grid-team-card .team-logo:not(.jr63-mini-logo),
+#teamsGrid > .jr63-grid-team-card .club-logo,
+#teamsGrid > .jr63-grid-team-card .team-badge,
+#teamsGrid > .jr63-grid-team-card .club-badge,
+#teamsGrid > .jr63-grid-team-card [class*="team-logo"]:not(.jr63-team-hero-logo):not(.jr63-mini-logo),
+#teamsGrid > .jr63-grid-team-card [class*="club-logo"]{
+  display:none!important;
+}
+#teamsGrid > .jr63-grid-team-card > *{min-width:0!important}
+#teamsGrid > .jr63-grid-team-card b,
+#teamsGrid > .jr63-grid-team-card strong,
+#teamsGrid > .jr63-grid-team-card h3,
+#teamsGrid > .jr63-grid-team-card h4{
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+
+/* Primera Fuerza: logo de categoría pequeño; nunca invade el cuadro. */
+.jr63-pf-category-wrap,
 .jr59-primera-logo-wrap,.jr56-primera-logo-wrap{
-  width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
-  max-width:40px!important;max-height:40px!important;flex:0 0 40px!important;
-  border-radius:10px!important;overflow:hidden!important;display:inline-grid!important;place-items:center!important;
+  width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;
+  max-width:38px!important;max-height:38px!important;flex:0 0 38px!important;
+  display:inline-grid!important;place-items:center!important;overflow:hidden!important;
+  border-radius:10px!important;background:#030806!important;margin:0!important;padding:2px!important;
 }
+.jr63-pf-category-logo,
 .jr59-primera-logo-img,.jr56-primera-logo-img{
-  width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;
-  max-width:36px!important;max-height:36px!important;object-fit:contain!important;padding:0!important;margin:0!important;
+  display:block!important;width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;
+  max-width:32px!important;max-height:32px!important;object-fit:contain!important;object-position:center!important;
+  margin:0!important;padding:0!important;border:0!important;border-radius:7px!important;background:#030806!important;box-shadow:none!important;
 }
+.jr63-old-category-logo{display:none!important}
 
-/* FIX28 official team cards: uno grande arriba + mini abajo. */
-#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr62-team-hero-logo{height:145px!important;min-height:145px!important}
-#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr60-crest,
-#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr60-crest-fallback{
-  width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;
-  max-width:28px!important;max-height:28px!important;flex-basis:28px!important;padding:1px!important;
-}
+/* FIX28 hub: sólo deduplicación; no se fuerza altura de la rejilla principal. */
+#jr60OfficialHub .jr63-fixed-team-card>.jr63-team-hero-logo{height:138px!important;min-height:138px!important;max-height:138px!important;flex-basis:138px!important}
 
 @media(max-width:760px){
-  .jr62-team-hero-logo{height:132px!important;min-height:132px!important;padding:8px!important}
-  .jr62-team-hero-logo>img{max-height:116px!important}
-  .jr62-secondary-team-logo-wrap{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;max-width:32px!important;max-height:32px!important;flex-basis:32px!important}
-  .jr62-secondary-team-logo{width:26px!important;height:26px!important;min-width:26px!important;min-height:26px!important;max-width:26px!important;max-height:26px!important}
-  .jr62-pf-category-wrap,.jr59-primera-logo-wrap,.jr56-primera-logo-wrap{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;max-width:36px!important;max-height:36px!important;flex-basis:36px!important}
-  .jr62-pf-category-logo,.jr59-primera-logo-img,.jr56-primera-logo-img{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;max-width:32px!important;max-height:32px!important}
+  #teamsGrid{grid-auto-rows:300px!important}
+  #teamsGrid > .jr63-grid-team-card{height:300px!important;min-height:300px!important;max-height:300px!important;padding:11px!important;gap:6px!important}
+  .jr63-team-hero-logo{height:140px!important;min-height:140px!important;max-height:140px!important;flex-basis:140px!important;padding:9px!important}
+  .jr63-team-hero-logo>img{max-width:185px!important;max-height:120px!important}
+  .jr63-mini-logo{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;max-width:28px!important;max-height:28px!important;flex-basis:28px!important}
+  .jr63-mini-logo>img{width:22px!important;height:22px!important;min-width:22px!important;min-height:22px!important;max-width:22px!important;max-height:22px!important}
+  .jr63-pf-category-wrap,.jr59-primera-logo-wrap,.jr56-primera-logo-wrap{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;max-width:34px!important;max-height:34px!important;flex-basis:34px!important}
+  .jr63-pf-category-logo,.jr59-primera-logo-img,.jr56-primera-logo-img{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;max-width:28px!important;max-height:28px!important}
 }
