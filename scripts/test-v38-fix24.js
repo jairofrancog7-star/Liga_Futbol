@@ -1,0 +1,56 @@
+const fs=require('fs'),path=require('path');
+const root=process.argv[2]||process.cwd();
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const exists=p=>fs.existsSync(path.join(root,p));
+let n=0,fail=0;
+function ok(name,cond){n++;if(cond)console.log('OK - '+name);else{fail++;console.error('FAIL - '+name)}}
+
+const idx=read('index.html');
+const logo=read('assets/jr-v38-primera-logo.js');
+const css=read('assets/jr-v38-primera-logo.css');
+const wx=read('assets/jr-v38-weather-fields-sync.js');
+const engine=read('assets/jr-v38-weather-engine.js');
+const mobile=read('assets/jr-v38-mobile-sync.js');
+const build=JSON.parse(read('build-v38.json'));
+const gradle=read('android-wrapper/app/build.gradle');
+const main=read('android-wrapper/app/src/main/java/com/ligajuventinorosas/app/MainActivity.java');
+
+ok('build 38-24',build.build==='38-24');
+ok('web 38.24',build.webVersion==='38.24');
+ok('APK 1.2.2',build.androidVersionName==='1.2.2');
+ok('APK code 5',build.androidVersionCode===5);
+ok('logo PNG existe',exists('assets/branding/primera-fuerza-hd.png'));
+ok('logo PNG no vacío',fs.statSync(path.join(root,'assets/branding/primera-fuerza-hd.png')).size>100000);
+ok('logo JS conectado',idx.includes('jr-v38-primera-logo.js?v=38-24'));
+ok('logo CSS conectado',idx.includes('jr-v38-primera-logo.css?v=38-24'));
+ok('logo asset referenciado',logo.includes('primera-fuerza-hd.png?v=38-24'));
+ok('sólo Primera Fuerza',logo.includes("const NAME='Primera Fuerza'")||logo.includes('primera fuerza'));
+ok('no toca team-card logos',logo.includes('team-card|club-card'));
+ok('data-category soportado',logo.includes('[data-category="Primera Fuerza"]'));
+ok('data-v21-cat soportado',logo.includes('[data-v21-cat="Primera Fuerza"]'));
+ok('patrón equipos/torneo',logo.includes("t.includes('equipos')"));
+ok('sin MutationObserver',!logo.includes('MutationObserver'));
+ok('reescaneo navegación',logo.includes('hookShowView'));
+ok('reescaneo hash',logo.includes('hashchange'));
+ok('API refresh logo',logo.includes('JRPrimeraLogoV3824'));
+ok('CSS object contain',css.includes('object-fit:contain'));
+ok('CSS HD responsive',css.includes('--jr56-logo-size'));
+ok('FIX23 clima acumulado',wx.includes("past_days:'2'"));
+ok('FIX23 clima 16 días',wx.includes("forecast_days:'16'"));
+ok('FIX23 selector categoría',wx.includes('jr55CategorySelect'));
+ok('FIX23 selector partido',wx.includes('jr55MatchSelect'));
+ok('FIX23 revisar campos funcional',wx.includes('openFields'));
+ok('FIX23 motor presente',engine.includes('scorePlayability'));
+ok('weather build 38-24',wx.includes("BUILD='38-24'"));
+ok('mobile build 38-24',mobile.includes('38-24'));
+ok('index weather 38-24',idx.includes('jr-v38-weather-fields-sync.js?v=38-24'));
+ok('index mobile 38-24',idx.includes('jr-v38-mobile-sync.js?v=38-24'));
+ok('meta FIX24',idx.includes('jr-build-fix24'));
+ok('APK versionName 1.2.2',/versionName\s+['"]1\.2\.2['"]/.test(gradle));
+ok('APK versionCode 5',/versionCode\s+5\b/.test(gradle));
+ok('APK apunta 38-24',main.includes('38-24'));
+ok('sin videos nuevos logo',!logo.includes('.mp4'));
+ok('documentación FIX24',exists('docs/V38_FIX24_LOGO_PRIMERA_FUERZA.md'));
+
+console.log(`\n${n} pruebas FIX24; ${fail} fallos.`);
+process.exit(fail?1:0);

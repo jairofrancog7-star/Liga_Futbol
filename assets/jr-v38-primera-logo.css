@@ -1,0 +1,38 @@
+/* V38 FIX24 — emblema HD Primera Fuerza */
+.jr56-primera-category-card{
+  --jr56-logo-size:52px;
+}
+.jr56-primera-logo-wrap{
+  width:var(--jr56-logo-size);
+  height:var(--jr56-logo-size);
+  min-width:var(--jr56-logo-size);
+  border-radius:16px;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  background:#000;
+  border:1px solid rgba(255,199,42,.35);
+  box-shadow:0 7px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.025) inset;
+  position:relative;
+  z-index:3;
+}
+.jr56-primera-logo-img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:14px!important;
+  background:#000!important;
+  image-rendering:auto!important;
+}
+.jr56-primera-logo-bg{
+  background-color:#000!important;
+  border-radius:14px!important;
+}
+@media(max-width:700px){
+  .jr56-primera-category-card{--jr56-logo-size:48px}
+}
+@media(min-width:1100px){
+  .jr56-primera-category-card{--jr56-logo-size:56px}
+}

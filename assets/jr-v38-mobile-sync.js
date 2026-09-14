@@ -3,7 +3,7 @@
 'use strict';
 if(window.__JR54MobileSync)return;
 window.__JR54MobileSync=true;
-const BUILD='38-22', CHECK_EVERY=5*60*1000;
+const BUILD='38-24', CHECK_EVERY=5*60*1000;
 let lastCheck=0;
 document.documentElement.dataset.jrBuild=BUILD;
 async function clearOld(){
