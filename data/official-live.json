@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-14T21:45:21Z",
+  "captured_at_utc": "2026-09-14T22:48:09Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -8138,8 +8138,8 @@
             "near_text": "P - PROMESAS FC Nestor Huitzache Alvarado 2 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
-            "near_text": "P - PROMESAS FC Jonathan Brian Rico Gamez 1 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Aldama_mqm3r1",
+            "near_text": "A - ALDAMA FC Daniel Yañez Rangel 1 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioJR_jzmfka",
@@ -8254,6 +8254,18 @@
             ],
             [
               "5",
+              "ALDAMA FC",
+              "3",
+              "2",
+              "0",
+              "1",
+              "6",
+              "6",
+              "0",
+              "6"
+            ],
+            [
+              "6",
               "MALVINAS",
               "4",
               "1",
@@ -8265,7 +8277,7 @@
               "4"
             ],
             [
-              "6",
+              "7",
               "SAN ANTONIO JRS",
               "3",
               "1",
@@ -8274,18 +8286,6 @@
               "6",
               "7",
               "-1",
-              "3"
-            ],
-            [
-              "7",
-              "ALDAMA FC",
-              "3",
-              "1",
-              "0",
-              "2",
-              "5",
-              "7",
-              "-2",
               "3"
             ],
             [
@@ -8314,18 +8314,6 @@
             ],
             [
               "10",
-              "MAZACOTES FC",
-              "4",
-              "1",
-              "0",
-              "3",
-              "5",
-              "13",
-              "-8",
-              "3"
-            ],
-            [
-              "11",
               "LA HUERTA",
               "4",
               "1",
@@ -8337,7 +8325,7 @@
               "2"
             ],
             [
-              "12",
+              "11",
               "DEP. MARAVILLAS",
               "3",
               "0",
@@ -8347,6 +8335,18 @@
               "6",
               "-5",
               "1"
+            ],
+            [
+              "12",
+              "MAZACOTES FC",
+              "4",
+              "0",
+              "0",
+              "4",
+              "4",
+              "14",
+              "-10",
+              "0"
             ],
             [
               "13",
@@ -8398,18 +8398,24 @@
             ],
             [
               "5",
+              "Daniel Yañez Rangel",
+              "ALDAMA FC",
+              "1"
+            ],
+            [
+              "6",
               "Jonathan Brian Rico Gamez",
               "PROMESAS FC",
               "1"
             ],
             [
-              "6",
+              "7",
               "Emiliano Centeno Gamez",
               "PROMESAS FC",
               "1"
             ],
             [
-              "7",
+              "8",
               "Matias Armenta Lara",
               "PROMESAS FC",
               "1"
@@ -8465,24 +8471,24 @@
             [
               "1",
               "1",
-              "ALDAMA FC",
-              "-",
-              "vs",
-              "-",
-              "GALEANA",
-              "Campo 4",
-              "26/07/2026 08:00",
-              "---"
-            ],
-            [
-              "2",
-              "1",
               "POPULARES",
               "2",
               "vs",
               "1",
               "MALVINAS",
               "Campo 2",
+              "26/07/2026 08:00",
+              "---"
+            ],
+            [
+              "2",
+              "1",
+              "ALDAMA FC",
+              "-",
+              "vs",
+              "-",
+              "GALEANA",
+              "Campo 4",
               "26/07/2026 08:00",
               "---"
             ],
@@ -8537,18 +8543,6 @@
             [
               "7",
               "2",
-              "LA CUADRILLA",
-              "3",
-              "vs",
-              "1",
-              "POPULARES",
-              "Campo 1 (Empastado)",
-              "09/08/2026 08:00",
-              "---"
-            ],
-            [
-              "8",
-              "2",
               "GALEANA",
               "2",
               "vs",
@@ -8559,19 +8553,19 @@
               "---"
             ],
             [
-              "9",
+              "8",
               "2",
-              "DEP. MARAVILLAS",
-              "1",
+              "LA CUADRILLA",
+              "3",
               "vs",
               "1",
-              "LA HUERTA",
+              "POPULARES",
               "Campo 1 (Empastado)",
-              "09/08/2026 10:00",
+              "09/08/2026 08:00",
               "---"
             ],
             [
-              "10",
+              "9",
               "2",
               "MALVINAS",
               "5",
@@ -8583,19 +8577,19 @@
               "---"
             ],
             [
-              "11",
+              "10",
               "2",
-              "MAZACOTES FC",
+              "DEP. MARAVILLAS",
               "1",
               "vs",
-              "-",
-              "ALDAMA FC",
-              "Campo 2",
-              "09/08/2026 12:00",
+              "1",
+              "LA HUERTA",
+              "Campo 1 (Empastado)",
+              "09/08/2026 10:00",
               "---"
             ],
             [
-              "12",
+              "11",
               "2",
               "LA CANCHITA DEPORTES",
               "5",
@@ -8603,6 +8597,18 @@
               "-",
               "CAPIBARAS",
               "Campo 1 (Empastado)",
+              "09/08/2026 12:00",
+              "---"
+            ],
+            [
+              "12",
+              "2",
+              "MAZACOTES FC",
+              "-",
+              "vs",
+              "1",
+              "ALDAMA FC",
+              "Campo 2",
               "09/08/2026 12:00",
               "---"
             ],
@@ -8633,24 +8639,24 @@
             [
               "15",
               "3",
-              "OSASUNA",
-              "-",
-              "vs",
-              "1",
-              "LA CUADRILLA",
-              "",
-              "30/08/2026 10:00",
-              "---"
-            ],
-            [
-              "16",
-              "3",
               "CAPIBARAS",
               "3",
               "vs",
               "-",
               "DEP. MARAVILLAS",
               "Tavera",
+              "30/08/2026 10:00",
+              "---"
+            ],
+            [
+              "16",
+              "3",
+              "OSASUNA",
+              "-",
+              "vs",
+              "1",
+              "LA CUADRILLA",
+              "",
               "30/08/2026 10:00",
               "---"
             ],
@@ -8705,18 +8711,6 @@
             [
               "21",
               "4",
-              "DEP. MARAVILLAS",
-              "-",
-              "vs",
-              "2",
-              "ALDAMA FC",
-              "Fraccionamiento",
-              "06/09/2026 10:00",
-              "---"
-            ],
-            [
-              "22",
-              "4",
               "GALEANA",
               "7",
               "vs",
@@ -8727,19 +8721,19 @@
               "---"
             ],
             [
-              "23",
+              "22",
               "4",
-              "SAN ANTONIO JRS",
-              "2",
+              "DEP. MARAVILLAS",
+              "-",
               "vs",
-              "1",
-              "POPULARES",
-              "Romerillo",
-              "06/09/2026 12:00",
+              "2",
+              "ALDAMA FC",
+              "Fraccionamiento",
+              "06/09/2026 10:00",
               "---"
             ],
             [
-              "24",
+              "23",
               "4",
               "MALVINAS",
               "1",
@@ -8747,6 +8741,18 @@
               "7",
               "CAPIBARAS",
               "Campo 2",
+              "06/09/2026 12:00",
+              "---"
+            ],
+            [
+              "24",
+              "4",
+              "SAN ANTONIO JRS",
+              "2",
+              "vs",
+              "1",
+              "POPULARES",
+              "Romerillo",
               "06/09/2026 12:00",
               "---"
             ],
@@ -8777,18 +8783,6 @@
             [
               "27",
               "5",
-              "ALDAMA FC",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Campo 1 (Empastado)",
-              "20/09/2026 10:00",
-              "---"
-            ],
-            [
-              "28",
-              "5",
               "LA CANCHITA DEPORTES",
               "-",
               "vs",
@@ -8799,7 +8793,7 @@
               "---"
             ],
             [
-              "29",
+              "28",
               "5",
               "CAPIBARAS",
               "-",
@@ -8807,6 +8801,18 @@
               "-",
               "LA CUADRILLA",
               "Tavera",
+              "20/09/2026 10:00",
+              "---"
+            ],
+            [
+              "29",
+              "5",
+              "ALDAMA FC",
+              "-",
+              "vs",
+              "-",
+              "MALVINAS",
+              "Campo 1 (Empastado)",
               "20/09/2026 10:00",
               "---"
             ],
@@ -8825,24 +8831,24 @@
             [
               "31",
               "6",
-              "POPULARES",
-              "-",
-              "vs",
-              "-",
-              "DEP. MARAVILLAS",
-              "Campo 3",
-              "27/09/2026 08:00",
-              "---"
-            ],
-            [
-              "32",
-              "6",
               "ALDAMA FC",
               "-",
               "vs",
               "-",
               "OSASUNA",
               "Campo 2",
+              "27/09/2026 08:00",
+              "---"
+            ],
+            [
+              "32",
+              "6",
+              "POPULARES",
+              "-",
+              "vs",
+              "-",
+              "DEP. MARAVILLAS",
+              "Campo 3",
               "27/09/2026 08:00",
               "---"
             ],
@@ -8873,24 +8879,24 @@
             [
               "35",
               "6",
-              "LA CUADRILLA",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Rincón de Centeno",
-              "27/09/2026 12:00",
-              "---"
-            ],
-            [
-              "36",
-              "6",
               "CAPIBARAS",
               "-",
               "vs",
               "-",
               "PROMESAS FC",
               "Campo 2",
+              "27/09/2026 12:00",
+              "---"
+            ],
+            [
+              "36",
+              "6",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "MALVINAS",
+              "Rincón de Centeno",
               "27/09/2026 12:00",
               "---"
             ],
@@ -8921,24 +8927,24 @@
             [
               "39",
               "7",
-              "PROMESAS FC",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Campo 1 (Empastado)",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "40",
-              "7",
               "OSASUNA",
               "-",
               "vs",
               "-",
               "LA CANCHITA DEPORTES",
               "Campo 3",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "40",
+              "7",
+              "PROMESAS FC",
+              "-",
+              "vs",
+              "-",
+              "MALVINAS",
+              "Campo 1 (Empastado)",
               "04/10/2026 10:00",
               "---"
             ],
@@ -9137,18 +9143,6 @@
             [
               "57",
               "10",
-              "PROMESAS FC",
-              "-",
-              "vs",
-              "-",
-              "MAZACOTES FC",
-              "Campo 3",
-              "25/10/2026 10:00",
-              "---"
-            ],
-            [
-              "58",
-              "10",
               "OSASUNA",
               "-",
               "vs",
@@ -9159,19 +9153,19 @@
               "---"
             ],
             [
-              "59",
+              "58",
               "10",
-              "LA CUADRILLA",
+              "PROMESAS FC",
               "-",
               "vs",
               "-",
-              "GALEANA",
-              "Rincón de Centeno",
-              "25/10/2026 12:00",
+              "MAZACOTES FC",
+              "Campo 3",
+              "25/10/2026 10:00",
               "---"
             ],
             [
-              "60",
+              "59",
               "10",
               "LA CANCHITA DEPORTES",
               "-",
@@ -9179,6 +9173,18 @@
               "-",
               "DEP. MARAVILLAS",
               "Campo 1 (Empastado)",
+              "25/10/2026 12:00",
+              "---"
+            ],
+            [
+              "60",
+              "10",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "GALEANA",
+              "Rincón de Centeno",
               "25/10/2026 12:00",
               "---"
             ],
@@ -9209,24 +9215,24 @@
             [
               "63",
               "11",
-              "MAZACOTES FC",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Fraccionamiento",
-              "01/11/2026 10:00",
-              "---"
-            ],
-            [
-              "64",
-              "11",
               "CAPIBARAS",
               "-",
               "vs",
               "-",
               "OSASUNA",
               "Campo 1 (Empastado)",
+              "01/11/2026 10:00",
+              "---"
+            ],
+            [
+              "64",
+              "11",
+              "MAZACOTES FC",
+              "-",
+              "vs",
+              "-",
+              "MALVINAS",
+              "Fraccionamiento",
               "01/11/2026 10:00",
               "---"
             ],
@@ -9257,24 +9263,24 @@
             [
               "67",
               "12",
-              "ALDAMA FC",
-              "-",
-              "vs",
-              "-",
-              "CAPIBARAS",
-              "Campo 2",
-              "08/11/2026 08:00",
-              "---"
-            ],
-            [
-              "68",
-              "12",
               "OSASUNA",
               "-",
               "vs",
               "-",
               "POPULARES",
               "Campo 3",
+              "08/11/2026 08:00",
+              "---"
+            ],
+            [
+              "68",
+              "12",
+              "ALDAMA FC",
+              "-",
+              "vs",
+              "-",
+              "CAPIBARAS",
+              "Campo 2",
               "08/11/2026 08:00",
               "---"
             ],
@@ -9305,18 +9311,6 @@
             [
               "71",
               "12",
-              "LA HUERTA",
-              "-",
-              "vs",
-              "-",
-              "SAN ANTONIO JRS",
-              "Campo 3",
-              "08/11/2026 12:00",
-              "---"
-            ],
-            [
-              "72",
-              "12",
               "PROMESAS FC",
               "-",
               "vs",
@@ -9327,19 +9321,19 @@
               "---"
             ],
             [
-              "73",
-              "13",
-              "POPULARES",
+              "72",
+              "12",
+              "LA HUERTA",
               "-",
               "vs",
               "-",
-              "LA CANCHITA DEPORTES",
-              "Campo 4",
-              "15/11/2026 08:00",
+              "SAN ANTONIO JRS",
+              "Campo 3",
+              "08/11/2026 12:00",
               "---"
             ],
             [
-              "74",
+              "73",
               "13",
               "OSASUNA",
               "-",
@@ -9347,6 +9341,18 @@
               "-",
               "MAZACOTES FC",
               "Campo 2",
+              "15/11/2026 08:00",
+              "---"
+            ],
+            [
+              "74",
+              "13",
+              "POPULARES",
+              "-",
+              "vs",
+              "-",
+              "LA CANCHITA DEPORTES",
+              "Campo 4",
               "15/11/2026 08:00",
               "---"
             ],
@@ -9377,24 +9383,24 @@
             [
               "77",
               "13",
-              "CAPIBARAS",
-              "-",
-              "vs",
-              "-",
-              "GALEANA",
-              "Campo 3",
-              "15/11/2026 12:00",
-              "---"
-            ],
-            [
-              "78",
-              "13",
               "MALVINAS",
               "-",
               "vs",
               "-",
               "DEP. MARAVILLAS",
               "Campo 4",
+              "15/11/2026 12:00",
+              "---"
+            ],
+            [
+              "78",
+              "13",
+              "CAPIBARAS",
+              "-",
+              "vs",
+              "-",
+              "GALEANA",
+              "Campo 3",
               "15/11/2026 12:00",
               "---"
             ]
