@@ -16,7 +16,7 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String WEB_BUILD = "38-22";
+    private static final String WEB_BUILD = "38-24";
     private static final String BASE_URL = "https://jairofrancog7-star.github.io/Liga_Futbol/";
     private static final int FILE_CHOOSER_REQUEST = 19022;
 
