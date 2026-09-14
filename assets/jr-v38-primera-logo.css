@@ -1,38 +1,114 @@
-/* V38 FIX24 — emblema HD Primera Fuerza */
-.jr56-primera-category-card{
-  --jr56-logo-size:52px;
+/* V38 FIX30 — escudo principal grande + segundo escudo pequeño */
+.jr62-fixed-team-card{
+  position:relative!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  gap:8px!important;
 }
-.jr56-primera-logo-wrap{
-  width:var(--jr56-logo-size);
-  height:var(--jr56-logo-size);
-  min-width:var(--jr56-logo-size);
-  border-radius:16px;
-  overflow:hidden;
-  display:grid;
-  place-items:center;
-  background:#000;
-  border:1px solid rgba(255,199,42,.35);
-  box-shadow:0 7px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.025) inset;
-  position:relative;
-  z-index:3;
-}
-.jr56-primera-logo-img{
+.jr62-team-hero-logo{
+  position:relative!important;
+  z-index:4!important;
   width:100%!important;
-  height:100%!important;
-  max-width:none!important;
+  height:clamp(132px,14vw,172px)!important;
+  min-height:132px!important;
+  display:grid!important;
+  place-items:center!important;
+  margin:0 0 4px!important;
+  padding:10px!important;
+  border:1px solid rgba(49,103,82,.45)!important;
+  border-radius:15px!important;
+  overflow:hidden!important;
+  background:radial-gradient(circle at 50% 42%,rgba(32,232,161,.10),rgba(3,12,9,.82) 70%)!important;
+}
+.jr62-team-hero-logo>img{
+  width:88%!important;
+  height:88%!important;
+  max-width:230px!important;
+  max-height:150px!important;
   object-fit:contain!important;
   object-position:center!important;
-  border-radius:14px!important;
-  background:#000!important;
-  image-rendering:auto!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:10px!important;
+  background:transparent!important;
+  box-shadow:none!important;
 }
-.jr56-primera-logo-bg{
-  background-color:#000!important;
-  border-radius:14px!important;
+.jr62-secondary-team-logo-wrap{
+  width:34px!important;
+  height:34px!important;
+  min-width:34px!important;
+  min-height:34px!important;
+  max-width:34px!important;
+  max-height:34px!important;
+  flex:0 0 34px!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  padding:2px!important;
+  margin:0 0 2px!important;
+  border-radius:9px!important;
+  overflow:hidden!important;
+  background:rgba(255,255,255,.035)!important;
+  border:1px solid rgba(46,236,164,.18)!important;
 }
-@media(max-width:700px){
-  .jr56-primera-category-card{--jr56-logo-size:48px}
+.jr62-secondary-team-logo{
+  width:28px!important;
+  height:28px!important;
+  min-width:28px!important;
+  min-height:28px!important;
+  max-width:28px!important;
+  max-height:28px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:transparent!important;
+  box-shadow:none!important;
 }
-@media(min-width:1100px){
-  .jr56-primera-category-card{--jr56-logo-size:56px}
+.jr62-extra-team-logo,.jr62-extra-team-logo-wrap{display:none!important}
+
+/* Primera Fuerza: logo de categoría compacto, nunca ocupa la tarjeta. */
+.jr62-pf-category-wrap{
+  width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
+  max-width:40px!important;max-height:40px!important;flex:0 0 40px!important;
+  display:inline-grid!important;place-items:center!important;overflow:hidden!important;
+  border-radius:10px!important;background:#030806!important;
+}
+.jr62-pf-category-logo{
+  width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;
+  max-width:36px!important;max-height:36px!important;object-fit:contain!important;
+  object-position:center!important;padding:0!important;margin:0!important;border-radius:8px!important;
+  background:#030806!important;box-shadow:none!important;
+}
+
+/* Evita que reglas antiguas vuelvan a agrandar el logo de Primera Fuerza. */
+.jr59-primera-logo-wrap,.jr56-primera-logo-wrap{
+  width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
+  max-width:40px!important;max-height:40px!important;flex:0 0 40px!important;
+  border-radius:10px!important;overflow:hidden!important;display:inline-grid!important;place-items:center!important;
+}
+.jr59-primera-logo-img,.jr56-primera-logo-img{
+  width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;
+  max-width:36px!important;max-height:36px!important;object-fit:contain!important;padding:0!important;margin:0!important;
+}
+
+/* FIX28 official team cards: uno grande arriba + mini abajo. */
+#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr62-team-hero-logo{height:145px!important;min-height:145px!important}
+#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr60-crest,
+#jr60OfficialHub .jr60-team-card.jr62-fixed-team-card>.jr60-crest-fallback{
+  width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;
+  max-width:28px!important;max-height:28px!important;flex-basis:28px!important;padding:1px!important;
+}
+
+@media(max-width:760px){
+  .jr62-team-hero-logo{height:132px!important;min-height:132px!important;padding:8px!important}
+  .jr62-team-hero-logo>img{max-height:116px!important}
+  .jr62-secondary-team-logo-wrap{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;max-width:32px!important;max-height:32px!important;flex-basis:32px!important}
+  .jr62-secondary-team-logo{width:26px!important;height:26px!important;min-width:26px!important;min-height:26px!important;max-width:26px!important;max-height:26px!important}
+  .jr62-pf-category-wrap,.jr59-primera-logo-wrap,.jr56-primera-logo-wrap{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;max-width:36px!important;max-height:36px!important;flex-basis:36px!important}
+  .jr62-pf-category-logo,.jr59-primera-logo-img,.jr56-primera-logo-img{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;max-width:32px!important;max-height:32px!important}
 }
