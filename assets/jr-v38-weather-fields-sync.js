@@ -7,7 +7,7 @@
 if(window.__JR55WeatherSmart)return;
 window.__JR55WeatherSmart=true;
 
-const BUILD='38-25';
+const BUILD='38-28';
 const TZ='America/Mexico_City';
 const CACHE_TTL=20*60*1000;
 const ALERT_KEY='jr55-smart-alerts';

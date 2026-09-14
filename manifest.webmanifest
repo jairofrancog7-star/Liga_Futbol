@@ -3,7 +3,7 @@
   "name": "Liga Municipal de Fútbol Juventino Rosas",
   "short_name": "Liga JR",
   "description": "Plataforma oficial de la Liga Municipal de Fútbol Juventino Rosas",
-  "start_url": "./?app=pwa&build=38-25",
+  "start_url": "./?app=pwa&build=38-28",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0a0a0c",
@@ -25,22 +25,22 @@
     {
       "name": "Inicio",
       "short_name": "Inicio",
-      "url": "./?app=pwa&build=38-25#home"
+      "url": "./?app=pwa&build=38-28#home"
     },
     {
       "name": "Partidos",
       "short_name": "Partidos",
-      "url": "./?app=pwa&build=38-25#matches"
+      "url": "./?app=pwa&build=38-28#matches"
     },
     {
       "name": "Tabla",
       "short_name": "Tabla",
-      "url": "./?app=pwa&build=38-25#table"
+      "url": "./?app=pwa&build=38-28#table"
     },
     {
       "name": "Campos y clima",
       "short_name": "Campos",
-      "url": "./?app=pwa&build=38-25#home"
+      "url": "./?app=pwa&build=38-28#home"
     }
   ]
 }
