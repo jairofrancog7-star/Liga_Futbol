@@ -1,14 +1,44 @@
 {
-    "build":  "38-25",
-    "webVersion":  "38.25",
-    "androidVersionName":  "1.2.3",
-    "androidVersionCode":  6,
-    "generated":  "2026-09-14",
-    "cachePolicy":  "network-first-no-service-worker-cache",
-    "weatherUi":  "compact-single-match",
-    "weatherDecisionEngine":  "explainable-local-score",
-    "primeraFuerzaLogo":  "assets/branding/primera-fuerza-hd.png",
-    "apkStatus":  "source-prepared-binary-not-rebuilt",
-    "downloadableAndroidVersionName":  "1.2.2",
-    "downloadableAndroidVersionCode":  5
+  "build": "38-28",
+  "webVersion": "38.28",
+  "androidVersionName": "1.4.0",
+  "androidVersionCode": 9,
+  "generated": "2026-09-14",
+  "cachePolicy": "network-first-no-service-worker-cache",
+  "officialData": "data/official-live.json",
+  "officialDataSource": "https://www.juventinorosasliga.com/",
+  "officialDataFallback": "public-snapshot-2026-09-14",
+  "officialDataSync": "github-actions-30min-fast-weekly-full",
+  "categoryCounts": {
+    "Veteranos 50+": {
+      "teams": 6,
+      "played": 15,
+      "pending": 30,
+      "players": 109
+    },
+    "Primera Fuerza": {
+      "teams": 11,
+      "played": 20,
+      "pending": 35,
+      "players": 291
+    },
+    "Intermedia": {
+      "teams": 13,
+      "played": 22,
+      "pending": 54,
+      "players": 332
+    },
+    "Segunda Fuerza": {
+      "teams": 12,
+      "played": 23,
+      "pending": 42,
+      "players": 312
+    }
+  },
+  "officialLogos": "40 published image files + neutral placeholders where source has no image",
+  "credentials": "digital-public-card-plus-private-ocr-registration",
+  "weatherUi": "match-field-hourly-risk-plus-full-hub",
+  "weatherDecisionEngine": "forecast-never-equals-official-suspension",
+  "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
+  "apkStatus": "source-prepared-local-build"
 }
