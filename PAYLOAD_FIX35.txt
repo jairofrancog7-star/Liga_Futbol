@@ -1,0 +1,41 @@
+============================================================
+ V38 FIX35 - PADRON COMPLETO + AMERICA 35+ + PUBLICACIONES
+============================================================
+
+BUILD WEB/PWA: 38-35
+APK: sin recompilar; continúa 1.4.0 / code 9.
+
+CAMBIOS
+- Jugadores: elimina el límite visual de 200.
+- Muestra todos los nombres deportivos públicos encontrados en cédulas.
+- Filtro por categoría, equipo y buscador.
+- Lista todas las cédulas públicas escaneadas y enlaza a AdminFut.
+- Auditoría amplia de cédulas públicas IDs 1..650.
+- No publica CURP, INE, domicilio ni imágenes de documentos.
+- América Veteranos 35+: usa el escudo propio en su tarjeta.
+- Publicaciones modernas automáticas en publicaciones/latest/.
+- PNG por categoría: tabla + próxima jornada.
+- PNG resumen: tablas + jornada.
+- PNG comunicado América Veteranos 35+.
+- GitHub Actions regenera datos e imágenes.
+- Viernes puede enviar por WhatsApp/Facebook si existen secrets privados de Meta.
+- El número de teléfono NO se guarda en GitHub público.
+- Canva: diseño editable de 9 páginas creado para tablas, jornadas y comunicado.
+
+COBERTURA PÚBLICA VERIFICADA
+- Primera Fuerza: 291/291 nombres públicos.
+- Segunda Fuerza: 312/312.
+- Intermedia: 331/332; existe 1 registrado cuyo nombre no está visible en las cédulas públicas actuales.
+- Veteranos 50+: 109/109 tras unificar la variante pública documentada de Gumersindo Granados Ramirez.
+- Veteranos 35+: la fuente pública actual reporta 0 jugadores y no expone cédulas actuales.
+
+REFRESH
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v35.html
+
+WHATSAPP/FACEBOOK AUTOMÁTICOS
+Requieren credenciales privadas de Meta configuradas como GitHub Actions Secrets.
+No se escriben tokens ni teléfonos en el código público.
+
+CMD FIX35
+El nuevo CMD acepta BUILD 38-35 o una versión posterior, abre el refresh y descarga las imágenes sociales en Descargas.
+No se queda esperando un build antiguo como ocurrió con FIX33/FIX34.
