@@ -24,7 +24,7 @@ jobs:
           import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
-          V='38-67-r1'
+          V='38-67-r2'
           s=re.sub(r'\./assets/jr-v38-fix54\.js\?v=[^"\']+','./assets/jr-v38-fix54.js?v='+V,s)
           s=re.sub(r'\./assets/jr-v38-restore64-exact\.css\?v=[^"\']+','./assets/jr-v38-restore64-exact.css?v='+V,s)
           s=re.sub(r'\./assets/jr-v38-restore64-exact\.js\?v=[^"\']+','./assets/jr-v38-restore64-exact.js?v='+V,s)
@@ -54,5 +54,5 @@ jobs:
           git config user.name 'Liga JR Restore Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add index.html
-          git commit -m 'restore67: regenerate logos swipe cedulas and table hero'
+          git commit -m 'restore67-r2: stabilize logos swipe cedulas and table motion'
           git push origin HEAD:main
