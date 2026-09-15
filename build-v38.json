@@ -1,6 +1,6 @@
 {
-  "build": "38-36",
-  "webVersion": "38.36",
+  "build": "38-37",
+  "webVersion": "38.37",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -30,12 +30,13 @@
   "weatherUi": "match-field-hourly-risk-plus-full-hub",
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
-  "americaVeteranos35Logo": "assets/branding/america-veteranos-35.svg",
+  "americaVeteranos35Logo": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/e472c275-02fa-4c45-a8f7-7bd4d7bbb5be.png",
   "socialCards": "publicaciones/latest/",
   "socialAutomation": "GitHub Actions generates modern tables and fixtures; WhatsApp/Facebook auto-send activates only when private Meta secrets are configured",
   "fix33": "public-roster-coverage-america-v35-branding-social-publication-center-whatsapp-facebook-share",
   "fix34": "category-buttons-cleanup-remove-league-logo-keep-only-primera-fuerza-logo-fix-text-layout",
   "fix35": "full-public-roster-no-limit-all-public-cedulas-america-v35-social-card-automation",
   "fix36": "compact-category-and-more-buttons-functional-stats-pills-publication-hub-champions-style-team-logos-fields-credential-redesign-local-whatsapp-target",
+  "fix37": "exact-user-america-logo-compact-category-buttons-compact-more-buttons-compact-functional-pills-cache-refresh",
   "apkStatus": "unchanged-existing-binary"
 }
