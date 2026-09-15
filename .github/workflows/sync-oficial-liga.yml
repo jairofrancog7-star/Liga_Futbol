@@ -77,7 +77,7 @@ jobs:
       - name: Instalar logo exacto América Veteranos 35+
         run: python scripts/sync_america_logo_v37.py
 
-      - name: Activar FIX47 directo en GitHub Pages
+      - name: Activar FIX48 directo en GitHub Pages
         shell: python
         run: |
           from pathlib import Path
@@ -85,52 +85,47 @@ jobs:
           p=Path("index.html")
           s=p.read_text(encoding="utf-8")
 
-          # El loader principal debe llevar la misma versión que build-v38.json.
-          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-47', s)
-
-          # Mantener capas previas necesarias.
+          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-48', s)
           s=re.sub(r'jr-v38-fix43-category-row\.css\?v=[^"\']+', 'jr-v38-fix43-category-row.css?v=38-43-r2', s)
           s=re.sub(r'jr-v38-fix43-category-row\.js\?v=[^"\']+', 'jr-v38-fix43-category-row.js?v=38-43-r2', s)
+
           marker43='<!-- JR_V38_FIX43_DIRECT -->'
           if marker43 not in s:
               direct43='''\n<!-- JR_V38_FIX43_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix43-category-row.css?v=38-43-r2">\n<script defer src="./assets/jr-v38-fix43-category-row.js?v=38-43-r2"></script>\n'''
               s=s.replace('</body>',direct43+'\n</body>')
 
           marker44='<!-- JR_V38_FIX44_DIRECT -->'
-          direct44='''\n<!-- JR_V38_FIX44_DIRECT -->\n<script defer src="./assets/jr-v38-fix44-category-replace.js?v=38-44-r1"></script>\n'''
           if marker44 not in s:
+              direct44='''\n<!-- JR_V38_FIX44_DIRECT -->\n<script defer src="./assets/jr-v38-fix44-category-replace.js?v=38-44-r1"></script>\n'''
               s=s.replace('</body>',direct44+'\n</body>')
           else:
               s=re.sub(r'jr-v38-fix44-category-replace\.js\?v=[^"\']+', 'jr-v38-fix44-category-replace.js?v=38-44-r1', s)
 
-          # FIX45/FIX46 con cache nuevo para no reutilizar copias viejas del navegador/CDN.
           marker45='<!-- JR_V38_FIX45_DIRECT -->'
-          direct45='''\n<!-- JR_V38_FIX45_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix45-stability.css?v=38-47-r1">\n<script defer src="./assets/jr-v38-fix45-stability.js?v=38-47-r1"></script>\n'''
+          direct45='''\n<!-- JR_V38_FIX45_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix45-stability.css?v=38-48-r1">\n<script defer src="./assets/jr-v38-fix45-stability.js?v=38-48-r1"></script>\n'''
           if marker45 not in s:
               s=s.replace('</body>',direct45+'\n</body>')
           else:
-              s=re.sub(r'jr-v38-fix45-stability\.css\?v=[^"\']+', 'jr-v38-fix45-stability.css?v=38-47-r1', s)
-              s=re.sub(r'jr-v38-fix45-stability\.js\?v=[^"\']+', 'jr-v38-fix45-stability.js?v=38-47-r1', s)
+              s=re.sub(r'jr-v38-fix45-stability\.css\?v=[^"\']+', 'jr-v38-fix45-stability.css?v=38-48-r1', s)
+              s=re.sub(r'jr-v38-fix45-stability\.js\?v=[^"\']+', 'jr-v38-fix45-stability.js?v=38-48-r1', s)
 
-          marker46='<!-- JR_V38_FIX46_DIRECT -->'
-          direct46='''\n<!-- JR_V38_FIX46_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix46-america-logo.css?v=38-47-r1">\n<script defer src="./assets/jr-v38-fix46-america-logo.js?v=38-47-r1"></script>\n'''
-          if marker46 not in s:
-              s=s.replace('</body>',direct46+'\n</body>')
-          else:
-              s=re.sub(r'jr-v38-fix46-america-logo\.css\?v=[^"\']+', 'jr-v38-fix46-america-logo.css?v=38-47-r1', s)
-              s=re.sub(r'jr-v38-fix46-america-logo\.js\?v=[^"\']+', 'jr-v38-fix46-america-logo.js?v=38-47-r1', s)
+          # Retirar por completo FIX46 y FIX47: ambos mutaban América y producían el cuadro duplicado.
+          for n in ('46','47'):
+              s=re.sub(r'\n?<!-- JR_V38_FIX'+n+r'_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
+          s=re.sub(r'\n?<link[^>]+jr-v38-fix46-america-logo\.css[^>]*>','',s)
+          s=re.sub(r'\n?<script[^>]+jr-v38-fix46-america-logo\.js[^>]*></script>','',s)
+          s=re.sub(r'\n?<link[^>]+jr-v38-fix47-final\.css[^>]*>','',s)
+          s=re.sub(r'\n?<script[^>]+jr-v38-fix47-final\.js[^>]*></script>','',s)
 
-          # FIX47 SIEMPRE al final: repara América después de las rutinas legacy.
-          marker47='<!-- JR_V38_FIX47_DIRECT -->'
-          direct47='''\n<!-- JR_V38_FIX47_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix47-final.css?v=38-47-r1">\n<script defer src="./assets/jr-v38-fix47-final.js?v=38-47-r1"></script>\n'''
-          if marker47 not in s:
-              s=s.replace('</body>',direct47+'\n</body>')
-          else:
-              s=re.sub(r'jr-v38-fix47-final\.css\?v=[^"\']+', 'jr-v38-fix47-final.css?v=38-47-r1', s)
-              s=re.sub(r'jr-v38-fix47-final\.js\?v=[^"\']+', 'jr-v38-fix47-final.js?v=38-47-r1', s)
+          # Reemplazar cualquier FIX48 previo y dejarlo como última capa antes de </body>.
+          s=re.sub(r'\n?<!-- JR_V38_FIX48_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
+          s=re.sub(r'\n?<link[^>]+jr-v38-fix48-america-card\.css[^>]*>','',s)
+          s=re.sub(r'\n?<script[^>]+jr-v38-fix48-america-card\.js[^>]*></script>','',s)
+          direct48='''\n<!-- JR_V38_FIX48_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-48-r1">\n<script defer src="./assets/jr-v38-fix48-america-card.js?v=38-48-r1"></script>\n'''
+          s=s.replace('</body>',direct48+'\n</body>')
 
           p.write_text(s,encoding="utf-8",newline="\n")
-          print('FIX47 loader activo en index.html')
+          print('FIX48 activo: FIX46/FIX47 retirados y América queda en una sola capa')
 
       - name: Generar tablas, resultados y jornadas premium
         run: python scripts/generate_social_cards_v36.py
@@ -152,7 +147,7 @@ jobs:
           print("Veteranos 50:",v50.get("public_player_count_scraped"),"/",v50c.get("Jugadores"))
           print("Auditoría:",d.get("cedula_audit",{}))
 
-      - name: Guardar datos, FIX47 y publicaciones sólo si cambiaron
+      - name: Guardar datos, FIX48 y publicaciones sólo si cambiaron
         shell: bash
         run: |
           git config user.name "Liga JR Data Bot"
@@ -162,7 +157,7 @@ jobs:
             echo "Sin cambios públicos."
             exit 0
           fi
-          git commit -m "Data: sync cedulas + keep FIX47 loader"
+          git commit -m "Data: sync cedulas + keep FIX48 loader"
           git pull --rebase origin main || true
           git push origin HEAD:main
 
