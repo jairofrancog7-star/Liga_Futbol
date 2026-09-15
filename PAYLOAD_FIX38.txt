@@ -1,0 +1,29 @@
+V38 FIX38 — AMÉRICA EXACTO + BOTONES COMPACTOS
+
+WEB/PWA: 38-38
+APK: 1.4.0 / code 9 (sin recompilar)
+
+CORRECCIONES
+- Se deja de usar el logo incorrecto anterior de América Veteranos 35+.
+- La tarjeta América usa directamente la PRIMERA imagen entregada por el usuario el 14/09/2026.
+- Se sustituyen tanto el logo grande como el mini logo de la tarjeta América.
+- Se ocultan restos del logo anterior para impedir duplicados.
+- Se corrige el error de FIX37 que aplicaba una cuadrícula al padre individual de cada categoría y podía convertir cada botón en una barra enorme.
+- Las cinco categorías vuelven a mostrarse compactas en una fila en PC.
+- En tablet/móvil se muestran compactas con desplazamiento horizontal cuando haga falta.
+- Los botones de Más / Explora la liga y Tabla / Goleadores / Rendimiento se mantienen compactos y funcionales.
+- Se fuerza cache-bust BUILD 38-38.
+
+ARCHIVOS
+assets/jr-v38-fix37.js
+assets/jr-v38-fix37.css
+assets/jr-v38-mobile-sync.js
+build-v38.json
+manifest.webmanifest
+refresh-fix38.html
+
+REFRESH
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-fix38.html
+
+NOTA
+El CMD del paquete no vuelve a modificar GitHub. Los cambios ya se publicaron directamente en main; el CMD verifica la versión, abre el refresh y se queda abierto hasta escribir SALIR.
