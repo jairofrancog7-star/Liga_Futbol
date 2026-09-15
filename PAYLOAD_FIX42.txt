@@ -1,0 +1,29 @@
+PAYLOAD V38 FIX42 — CATEGORÍAS WEB SIN TARJETA GIGANTE / SIN CORTE LATERAL
+BUILD WEB/PWA: 38-42
+FECHA: 2026-09-15
+
+PROBLEMA CORREGIDO
+- En escritorio, la tarjeta "Primera Fuerza" podía ocupar casi todo el ancho.
+- La siguiente categoría quedaba cortada en el borde derecho.
+- El fallo aparecía cuando existían varias copias de los botones de categoría en distintas vistas: FIX39 intentaba encontrar un único ancestro para todas ellas y a veces no marcaba el contenedor correcto.
+
+CORRECCIÓN
+- Cada grupo local de categorías se detecta por separado.
+- Escritorio: 5 columnas completas.
+- Tablet: 3 columnas.
+- Móvil: 2 columnas.
+- Se elimina el carrusel horizontal accidental en escritorio.
+- No se cambian datos, logos, botones funcionales, credenciales, publicaciones ni navegación.
+- Se incluye respaldo CSS con :has() para corregir también el DOM antiguo de FIX37/FIX39.
+
+ARCHIVOS
+- assets/jr-v38-fix42-layout.css
+- assets/jr-v38-fix42-layout.js
+- assets/jr-v38-mobile-sync.js
+- build-v38.json
+
+URL DE PRUEBA
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-42&n=1#more
+
+NOTA DE CACHE
+El index.html todavía referencia jr-v38-mobile-sync.js con un query anterior. El ZIP FIX42 incluye un CMD/PowerShell que cambia ese cache-bust y agrega la carga directa FIX42. Mientras tanto, Ctrl+F5 fuerza la descarga del mobile-sync nuevo.
