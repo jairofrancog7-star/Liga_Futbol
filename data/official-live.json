@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-15T01:05:03Z",
+  "captured_at_utc": "2026-09-15T01:08:33Z",
   "mode": "full",
   "categories": {
     "1": {
@@ -1013,8 +1013,7 @@
           "Miguel Velazquez Vargas",
           "Alejandro Velazquez Vargas",
           "Miguel ANgel Lopez Zarazua",
-          "Antonio Guerrero Rico",
-          "Gumersindo Granados Ramirez S"
+          "Antonio Guerrero Rico"
         ]
       },
       "player_usage": {
@@ -1521,7 +1520,7 @@
         "GUMERSINDO GRANADOS RAMIREZ": {
           "name": "Gumersindo Granados Ramirez",
           "team": "LA ESPERANZA",
-          "cedulas": 4
+          "cedulas": 5
         },
         "MIGUEL MERINO PENA": {
           "name": "Miguel Merino Peña",
@@ -1562,11 +1561,6 @@
           "name": "Antonio Guerrero Rico",
           "team": "LA ESPERANZA",
           "cedulas": 5
-        },
-        "GUMERSINDO GRANADOS RAMIREZ S": {
-          "name": "Gumersindo Granados Ramirez S",
-          "team": "LA ESPERANZA",
-          "cedulas": 1
         }
       },
       "cedulas": [
@@ -1693,7 +1687,7 @@
         14,
         15
       ],
-      "public_player_count_scraped": 110
+      "public_player_count_scraped": 109
     },
     "2": {
       "id": 2,
@@ -11799,7 +11793,7 @@
     "summary": {
       "Veteranos 50+": {
         "cedulas": 15,
-        "public_names": 110,
+        "public_names": 109,
         "kept_previous": false
       },
       "Veteranos 35+": {
