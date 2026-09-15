@@ -1,18 +1,1 @@
-{
-  "build": "38-53",
-  "webVersion": "38.53",
-  "androidVersionName": "1.2.2",
-  "androidVersionCode": 5,
-  "generated": "2026-09-15",
-  "cachePolicy": "network-first-no-service-worker-cache",
-  "weatherUi": "compact-single-match",
-  "weatherDecisionEngine": "explainable-local-score",
-  "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
-  "americaVeteranos35Logo": "./assets/branding/america-veteranos-35-user.png",
-  "fix51": "single authoritative America card with official logo at top and cache bust",
-  "headerLogo": "./assets/liga-logo.webp",
-  "americaCardLogo": "./assets/branding/america-veteranos-35.svg",
-  "headerButtons": "visible-functional",
-  "fix52": "legacy header layer retained for compatibility",
-  "fix53": "restore Liga Juventino Rosas logo in header and promote five-category row to top"
-}
+cat: build-v38.json: No such file or directory
