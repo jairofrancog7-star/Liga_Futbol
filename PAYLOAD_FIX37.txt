@@ -1,0 +1,24 @@
+V38 FIX37 — LOGO AMÉRICA EXACTO + BOTONES COMPACTOS
+
+WEB/PWA: 38-37
+APK: 1.4.0 / code 9 (sin recompilar)
+
+CAMBIOS
+- Club América Veteranos 35+: se usa EXACTAMENTE la imagen PNG que el usuario subió en el chat.
+- Se fuerza ese PNG tanto en el logo grande como en el logo pequeño de la tarjeta América.
+- No se vuelve a generar ni redibujar ese escudo con IA.
+- Botones/cuadros de categorías: regresan a tamaño compacto y se muestran 5 en fila en PC.
+- En tablet pasan a 3 columnas; en móvil a 2 columnas.
+- Explora la liga / Más: botones de 78 px y más columnas para que no tapen otras opciones.
+- Tabla / Goleadores / Rendimiento: botones tipo píldora pequeños y funcionales.
+- Se mantiene la sección Publicaciones para tablas/resultados/calendarios PNG.
+- Refresh FIX37 elimina Service Workers/cachés anteriores y abre la vista Equipos.
+
+LOGO AMÉRICA
+La imagen exacta proporcionada por el usuario se conserva como medio de referencia; el ZIP incluye respaldo local del PNG original.
+
+REFRESH
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v37.html
+
+PRIVACIDAD
+No se publica ningún número telefónico ni credenciales privadas en GitHub.
