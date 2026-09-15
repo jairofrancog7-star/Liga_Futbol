@@ -68,6 +68,9 @@ jobs:
         if: steps.mode.outputs.full == 'true'
         run: python scripts/audit_all_cedulas_v35.py --root . --max-id 650 --workers 8
 
+      - name: Normalizar variantes públicas documentadas
+        run: python scripts/normalize_public_rosters_v35.py
+
       - name: Generar tablas y jornadas modernas
         run: python scripts/generate_social_cards_v35.py
 
@@ -81,7 +84,11 @@ jobs:
           assert int(counts["Jugadores"]) >= 1
           assert "fixtures" in p
           assert int(p.get("public_player_count_scraped") or 0) >= 1
+          v50=d["categories"]["1"]
+          v50c=v50.get("counts") or v50.get("dashboard",{}).get("counts",{})
+          assert int(v50.get("public_player_count_scraped") or 0) == int(v50c.get("Jugadores") or 0)
           print("Primera:",counts,"nombres públicos:",p.get("public_player_count_scraped"))
+          print("Veteranos 50:",v50.get("public_player_count_scraped"),"/",v50c.get("Jugadores"))
           print("Auditoría:",d.get("cedula_audit",{}))
 
       - name: Guardar datos y publicaciones sólo si cambiaron
