@@ -64,9 +64,12 @@ jobs:
             exit 0
           fi
           git commit -m 'build: publish Android APK 1.5.1 V38.60'
-          # Android/Gradle may touch tracked local files. The APK commit is already safe,
-          # so discard only remaining uncommitted build-time changes before rebasing.
-          git reset --hard HEAD
+
+          echo 'Estado antes de sincronizar:'
+          git status --porcelain=v1 || true
+          # Android/Gradle puede volver a tocar archivos rastreados después del commit.
+          # Guardamos TODO el ruido de build, rebasamos contra main y no restauramos ese stash.
+          git stash push --all -m 'apk-build-noise' || true
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
