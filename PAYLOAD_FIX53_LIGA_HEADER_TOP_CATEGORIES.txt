@@ -1,0 +1,43 @@
+============================================================
+ V38 FIX53 - LOGO DE LIGA ARRIBA + CATEGORIAS ARRIBA
+============================================================
+
+Repositorio:
+https://github.com/jairofrancog7-star/Liga_Futbol
+
+Ramas actualizadas:
+main
+feature/v38-home-clima-campos
+
+Correcciones:
+- Se restaura en el encabezado el logo de Liga Juventino Rosas:
+  ./assets/liga-logo.webp
+- El escudo del América ya no reemplaza el logo de la Liga en la parte superior.
+- El escudo del América se conserva únicamente en su tarjeta/equipo correspondiente.
+- La fila de cinco categorías queda arriba, debajo del aviso y de los chips,
+  antes del contenido principal.
+- Los botones superiores Tema, Avisos, Buscar, TV y JR Control quedan visibles
+  y conservan sus acciones.
+- Se agrega cache-busting V38 FIX53 para forzar la actualización.
+
+Enlace público corregido:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-53&fix=liga-header-top-20260915#home
+
+Enlace de categorías:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-53&fix=liga-header-top-20260915#more
+
+Archivos principales del ZIP:
+index.html
+build-v38.json
+assets/jr-v38-fix52-header.css
+assets/jr-v38-fix52-header.js
+assets/jr-v38-fix53-category-top.css
+assets/jr-v38-fix53-category-top.js
+scripts/README_FIX53.txt
+V38_FIX53_LIGA_HEADER_TOP_CATEGORIES_REFRESH.cmd
+
+Uso:
+1. Extrae el ZIP en la carpeta raíz del proyecto.
+2. Conserva la estructura assets/ y scripts/.
+3. Abre V38_FIX53_LIGA_HEADER_TOP_CATEGORIES_REFRESH.cmd.
+4. Si el navegador mantiene la versión anterior, usa Ctrl+F5.

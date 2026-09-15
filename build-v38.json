@@ -1,6 +1,6 @@
 {
-  "build": "38-52",
-  "webVersion": "38.52",
+  "build": "38-53",
+  "webVersion": "38.53",
   "androidVersionName": "1.2.2",
   "androidVersionCode": 5,
   "generated": "2026-09-15",
@@ -10,7 +10,9 @@
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
   "americaVeteranos35Logo": "./assets/branding/america-veteranos-35-user.png",
   "fix51": "single authoritative America card with official logo at top and cache bust",
-  "headerAmericaLogo": "./assets/branding/america-veteranos-35.svg",
+  "headerLogo": "./assets/liga-logo.webp",
+  "americaCardLogo": "./assets/branding/america-veteranos-35.svg",
   "headerButtons": "visible-functional",
-  "fix52": "restore America crest in top header and keep upper buttons visible"
+  "fix52": "legacy header layer retained for compatibility",
+  "fix53": "restore Liga Juventino Rosas logo in header and promote five-category row to top"
 }

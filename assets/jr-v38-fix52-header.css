@@ -1,5 +1,5 @@
-/* V38 FIX52 — escudo de América fijo arriba + botones superiores visibles */
-.topbar .logo.logo-america{
+/* V38 FIX53 — logo de la Liga arriba + botones superiores visibles */
+.topbar .logo.logo-league{
   display:grid!important;
   place-items:center!important;
   width:44px!important;
@@ -12,7 +12,7 @@
   border-radius:14px!important;
   box-shadow:0 0 0 1px rgba(34,224,122,.22),0 5px 18px rgba(0,0,0,.45)!important;
 }
-.topbar .logo.logo-america img{
+.topbar .logo.logo-league img{
   display:block!important;
   width:100%!important;
   height:100%!important;
