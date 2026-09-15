@@ -1,12 +1,11 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-46')return;
-const BUILD='38-46',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-47')return;
+const BUILD='38-47',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
 function injectFixes(){
- addCss('./assets/jr-v38-fix46-america-logo.css?v=38-46-r1','jr77'); addJs('./assets/jr-v38-fix46-america-logo.js?v=38-46-r1','jr77');
- addCss('./assets/jr-v38-fix45-stability.css?v=38-45-r1','jr76'); addJs('./assets/jr-v38-fix45-stability.js?v=38-45-r1','jr76');
+ /* Primero las capas antiguas. Las correcciones finales deben cargarse al final para que no sean sobrescritas. */
  addCss('./assets/jr-v38-fix33-social.css?v='+BUILD,'jr65'); addJs('./assets/jr-v38-fix33-social.js?v='+BUILD,'jr65');
  addCss('./assets/jr-v38-fix34-category-cleanup.css?v='+BUILD,'jr66'); addJs('./assets/jr-v38-fix34-category-cleanup.js?v='+BUILD,'jr66');
  addCss('./assets/jr-v38-fix35-roster-social.css?v='+BUILD,'jr67'); addJs('./assets/jr-v38-fix35-roster-social.js?v='+BUILD,'jr67');
@@ -16,7 +15,11 @@ function injectFixes(){
  addCss('./assets/jr-v38-fix40.css?v='+BUILD,'jr73'); addJs('./assets/jr-v38-fix40.js?v='+BUILD,'jr73');
  addCss('./assets/jr-v38-fix42-layout.css?v='+FIX42REV,'jr74'); addJs('./assets/jr-v38-fix42-layout.js?v='+FIX42REV,'jr74');
  addCss('./assets/jr-v38-fix43-category-row.css?v='+FIX43REV,'jr75'); addJs('./assets/jr-v38-fix43-category-row.js?v='+FIX43REV,'jr75');
- addJs('./assets/jr-v38-fix44-category-replace.js?v='+FIX44REV,'jr76');
+ addJs('./assets/jr-v38-fix44-category-replace.js?v='+FIX44REV,'jr75x');
+ /* Correcciones finales, después de todo lo anterior. */
+ addCss('./assets/jr-v38-fix45-stability.css?v=38-47-r1','jr76'); addJs('./assets/jr-v38-fix45-stability.js?v=38-47-r1','jr76');
+ addCss('./assets/jr-v38-fix46-america-logo.css?v=38-47-r1','jr77'); addJs('./assets/jr-v38-fix46-america-logo.js?v=38-47-r1','jr77');
+ addCss('./assets/jr-v38-fix47-final.css?v=38-47-r1','jr78'); addJs('./assets/jr-v38-fix47-final.js?v=38-47-r1','jr78');
 }
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
