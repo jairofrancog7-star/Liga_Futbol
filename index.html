@@ -907,7 +907,7 @@ body.light .bottom-nav{
   .more-grid{grid-template-columns:repeat(2,1fr)}
   .modal-backdrop{padding:8px}
   .modal{border-radius:20px}
-  .top-actions .hide-mobile{display:none}
+  .top-actions .hide-mobile{display:inline-flex}
   .wizard-step .step-label{display:none}
 }
 
@@ -1022,7 +1022,7 @@ body.light .bottom-nav .nav-btn.active{
   <!-- TOPBAR -->
   <header class="topbar">
     <div class="brand">
-      <div class="logo" aria-hidden="true">⚽</div>
+      <div class="logo logo-america" aria-label="Club América Veteranos Juventino Rosas"><img src="./assets/branding/america-veteranos-35.svg?v=38-52" alt="Club América Veteranos Juventino Rosas" width="44" height="44"></div>
       <div class="brand-copy">
         <b>Liga Juventino Rosas</b>
         <small id="seasonLabel">Torneo de Liga · 2026–27</small>
@@ -1030,9 +1030,9 @@ body.light .bottom-nav .nav-btn.active{
     </div>
     <div class="top-actions">
       <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">Tema</button>
-      <button class="ghost-btn hide-mobile" data-view="notifications" aria-label="Ver avisos">Avisos</button>
-      <button class="ghost-btn hide-mobile" id="globalSearchBtn" aria-label="Búsqueda global">Buscar</button>
-      <button class="ghost-btn hide-mobile" id="tvModeBtn" aria-label="Activar modo TV">TV</button>
+      <button class="ghost-btn top-action-btn" data-view="notifications" aria-label="Ver avisos">Avisos</button>
+      <button class="ghost-btn top-action-btn" id="globalSearchBtn" aria-label="Búsqueda global">Buscar</button>
+      <button class="ghost-btn top-action-btn" id="tvModeBtn" aria-label="Activar modo TV">TV</button>
       <button class="primary-btn" data-view="admin" aria-label="Abrir panel administrativo">JR Control</button>
     </div>
   </header>
@@ -2690,6 +2690,10 @@ if(hash&&document.getElementById("view-"+hash))showView(hash);
 <link rel="stylesheet" href="./assets/jr-v38-fix50-buttons.css?v=38-50-r1">
 <script defer src="./assets/jr-v38-fix50-buttons.js?v=38-50-r1"></script>
 
+
+<!-- JR_V38_FIX52_HEADER_DIRECT -->
+<link rel="stylesheet" href="./assets/jr-v38-fix52-header.css?v=38-52-r1">
+<script defer src="./assets/jr-v38-fix52-header.js?v=38-52-r1"></script>
 </body>
 </html>
 

@@ -1,6 +1,6 @@
 {
-  "build": "38-51",
-  "webVersion": "38.51",
+  "build": "38-52",
+  "webVersion": "38.52",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-15",
@@ -93,5 +93,8 @@
   "fix49": "retired-wrong-target-only-more-view",
   "fix50": "authoritative-category-buttons-in-teams-and-more-plus-restore-more-grid",
   "apkStatus": "unchanged-existing-binary",
-  "fix51": "single authoritative America card with official logo at top and cache bust"
+  "fix51": "single authoritative America card with official logo at top and cache bust",
+  "headerAmericaLogo": "./assets/branding/america-veteranos-35.svg",
+  "headerButtons": "visible-functional",
+  "fix52": "restore America crest in top header and keep upper buttons visible"
 }

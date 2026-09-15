@@ -1,0 +1,22 @@
+============================================================
+ V38 FIX52 - ESCUDO AMERICA ARRIBA + BOTONES RESTAURADOS
+============================================================
+
+Repositorio:
+https://github.com/jairofrancog7-star/Liga_Futbol
+
+Rama corregida:
+feature/v38-home-clima-campos
+
+Correcciones:
+- El escudo de Club América Veteranos Juventino Rosas queda fijo en el encabezado superior.
+- Los botones Tema, Avisos, Buscar, TV y JR Control vuelven a mostrarse y conservan sus acciones.
+- En móvil los botones superiores se pueden deslizar horizontalmente sin desaparecer.
+- Se sincroniza también la barra de categorías de Equipos y Más.
+- Se agrega cache-busting V38 FIX52.
+
+Enlace directo:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-52&fix=america-top-20260915#home
+
+Archivo de apertura para Windows:
+V38_FIX52_AMERICA_TOP_BUTTONS_REFRESH.cmd
