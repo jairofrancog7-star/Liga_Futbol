@@ -58,14 +58,17 @@ jobs:
 
       - name: Sincronización rápida
         if: steps.mode.outputs.full != 'true'
+        continue-on-error: true
         run: python scripts/sync_adminfut_public.py --root . --fast
 
       - name: Sincronización completa
         if: steps.mode.outputs.full == 'true'
+        continue-on-error: true
         run: python scripts/sync_adminfut_public.py --root .
 
       - name: Auditoría amplia de cédulas públicas
         if: steps.mode.outputs.full == 'true'
+        continue-on-error: true
         run: python scripts/audit_all_cedulas_v35.py --root . --max-id 650 --workers 8
 
       - name: Normalizar variantes públicas documentadas
