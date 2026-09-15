@@ -17,10 +17,10 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.68 loader — Tabla, Estadísticas, Partidos, Cédulas, forma reciente y hero en movimiento. */
+/* V38.69 loader — correcciones finales de Tabla/Estadísticas y hero animado. */
 (()=>{'use strict';
-if(window.__JR68_LOADER)return;window.__JR68_LOADER=true;
-const V='38-68-r1';
+if(window.__JR69_LOADER)return;window.__JR69_LOADER=true;
+const V='38-69-r1';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
@@ -34,6 +34,8 @@ function ensure(){
  addJs('jr67-regenerate','./assets/jr-v38-restore67-regenerate.js?v='+V);
  addCss('jr68-table-motion','./assets/jr-v38-restore68-table-motion.css?v='+V);
  addJs('jr68-table-motion','./assets/jr-v38-restore68-table-motion.js?v='+V);
+ addCss('jr69-final','./assets/jr-v38-restore69-final.css?v='+V);
+ addJs('jr69-final','./assets/jr-v38-restore69-final.js?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
