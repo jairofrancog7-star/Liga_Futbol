@@ -3,9 +3,10 @@
 
 /* TABLA — hero tipo video usando un solo clip ligero, con poster de respaldo. */
 #view-table .jr64-hero.table{background-image:linear-gradient(90deg,rgba(3,10,8,.94) 0%,rgba(3,10,8,.76) 45%,rgba(3,10,8,.30) 78%,rgba(3,10,8,.58) 100%),url('./motion/v38-fix10-field.jpg')!important;isolation:isolate}
-#view-table .jr67-hero-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;z-index:-3!important;opacity:.48!important;filter:saturate(.84) contrast(1.08) brightness(.72)!important;pointer-events:none!important}
-#view-table .jr64-hero.table:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(2,9,7,.96) 0%,rgba(2,9,7,.74) 48%,rgba(2,9,7,.27) 78%,rgba(2,9,7,.66) 100%);pointer-events:none}
-#view-table .jr67-moving-ball{position:absolute;right:11%;bottom:18%;z-index:-1;width:74px;height:74px;border-radius:50%;opacity:.34;pointer-events:none;background:radial-gradient(circle at 38% 32%,#e8fff5 0 9%,#7fd4ad 10% 17%,#0b1d17 18% 25%,#d7f7e7 26% 34%,#10261d 35% 47%,#cfe8da 48% 58%,#0b1713 59% 68%,#b8d6c8 69% 100%);box-shadow:0 0 32px rgba(72,227,170,.26);animation:jr67BallTravel 8s cubic-bezier(.45,0,.25,1) infinite alternate,jr67BallSpin 4s linear infinite}
+#view-table .jr67-hero-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;z-index:0!important;opacity:.48!important;filter:saturate(.84) contrast(1.08) brightness(.72)!important;pointer-events:none!important}
+#view-table .jr64-hero.table:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(2,9,7,.96) 0%,rgba(2,9,7,.74) 48%,rgba(2,9,7,.27) 78%,rgba(2,9,7,.66) 100%);pointer-events:none}
+#view-table .jr64-hero.table .jr64-hero-copy{z-index:3!important}
+#view-table .jr67-moving-ball{position:absolute;right:11%;bottom:18%;z-index:2;width:74px;height:74px;border-radius:50%;opacity:.34;pointer-events:none;background:radial-gradient(circle at 38% 32%,#e8fff5 0 9%,#7fd4ad 10% 17%,#0b1d17 18% 25%,#d7f7e7 26% 34%,#10261d 35% 47%,#cfe8da 48% 58%,#0b1713 59% 68%,#b8d6c8 69% 100%);box-shadow:0 0 32px rgba(72,227,170,.26);animation:jr67BallTravel 8s cubic-bezier(.45,0,.25,1) infinite alternate,jr67BallSpin 4s linear infinite}
 @keyframes jr67BallTravel{0%{transform:translate(-12vw,14px) scale(.78)}45%{transform:translate(-1vw,-38px) scale(1)}100%{transform:translate(8vw,4px) scale(.86)}}
 @keyframes jr67BallSpin{to{rotate:360deg}}
 @media(prefers-reduced-motion:reduce){#view-table .jr67-hero-video{display:none!important}#view-table .jr67-moving-ball{animation:none!important;opacity:.22!important}}
