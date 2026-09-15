@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-15T01:13:49Z",
+  "captured_at_utc": "2026-09-15T01:44:23Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -8098,20 +8098,20 @@
             "near_text": "LA CUADRILLA"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
-            "near_text": "LA CANCHITA DEPORTES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "GALEANA"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Aldama_mqm3r1",
             "near_text": "ALDAMA FC"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Malvinas_wdiwk9",
             "near_text": "MALVINAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
+            "near_text": "LA CANCHITA DEPORTES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
+            "near_text": "ATL. GALEANA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Osasuna_lv6rsa",
@@ -8123,15 +8123,15 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "G - GALEANA Jose Guadalupe Valencia Luna 3 GOLES"
+            "near_text": "A - ATL. GALEANA Jose Guadalupe Valencia Luna 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "G - GALEANA Luis Gerardo Gonzalez Ruiz 2 GOLES"
+            "near_text": "A - ATL. GALEANA Luis Gerardo Gonzalez Ruiz 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "G - GALEANA Juan Pablo Rangel Toledo 2 GOLES"
+            "near_text": "A - ATL. GALEANA Juan Pablo Rangel Toledo 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
@@ -8159,7 +8159,7 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "GALEANA"
+            "near_text": "ATL. GALEANA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
@@ -8242,7 +8242,7 @@
             ],
             [
               "4",
-              "GALEANA",
+              "ATL. GALEANA",
               "3",
               "3",
               "0",
@@ -8375,19 +8375,19 @@
             [
               "1",
               "Jose Guadalupe Valencia Luna",
-              "GALEANA",
+              "ATL. GALEANA",
               "3"
             ],
             [
               "2",
               "Luis Gerardo Gonzalez Ruiz",
-              "GALEANA",
+              "ATL. GALEANA",
               "2"
             ],
             [
               "3",
               "Juan Pablo Rangel Toledo",
-              "GALEANA",
+              "ATL. GALEANA",
               "2"
             ],
             [
@@ -8487,7 +8487,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Campo 4",
               "26/07/2026 08:00",
               "---"
@@ -8543,7 +8543,7 @@
             [
               "7",
               "2",
-              "GALEANA",
+              "ATL. GALEANA",
               "2",
               "vs",
               "1",
@@ -8619,7 +8619,7 @@
               "2",
               "vs",
               "3",
-              "GALEANA",
+              "ATL. GALEANA",
               "Campo 2",
               "30/08/2026 08:00",
               "---"
@@ -8711,7 +8711,7 @@
             [
               "21",
               "4",
-              "GALEANA",
+              "ATL. GALEANA",
               "7",
               "vs",
               "5",
@@ -8787,7 +8787,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Campo 2",
               "20/09/2026 10:00",
               "---"
@@ -8855,7 +8855,7 @@
             [
               "33",
               "6",
-              "GALEANA",
+              "ATL. GALEANA",
               "-",
               "vs",
               "-",
@@ -8915,7 +8915,7 @@
             [
               "38",
               "7",
-              "GALEANA",
+              "ATL. GALEANA",
               "-",
               "vs",
               "-",
@@ -8991,7 +8991,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Campo 4",
               "11/10/2026 08:00",
               "---"
@@ -9183,7 +9183,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Rincón de Centeno",
               "25/10/2026 12:00",
               "---"
@@ -9195,7 +9195,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Maravillas",
               "01/11/2026 08:00",
               "---"
@@ -9299,7 +9299,7 @@
             [
               "70",
               "12",
-              "GALEANA",
+              "ATL. GALEANA",
               "-",
               "vs",
               "-",
@@ -9399,7 +9399,7 @@
               "-",
               "vs",
               "-",
-              "GALEANA",
+              "ATL. GALEANA",
               "Campo 3",
               "15/11/2026 12:00",
               "---"
