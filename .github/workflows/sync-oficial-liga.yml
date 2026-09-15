@@ -77,6 +77,21 @@ jobs:
       - name: Instalar logo exacto América Veteranos 35+
         run: python scripts/sync_america_logo_v37.py
 
+      - name: Activar FIX43 directo en GitHub Pages
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          p=Path("index.html")
+          s=p.read_text(encoding="utf-8")
+          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-43', s)
+          marker='<!-- JR_V38_FIX43_DIRECT -->'
+          if marker not in s:
+              direct='''\n<!-- JR_V38_FIX43_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix43-category-row.css?v=38-43-r1">\n<script defer src="./assets/jr-v38-fix43-category-row.js?v=38-43-r1"></script>\n'''
+              s=s.replace('</body>',direct+'\n</body>')
+          p.write_text(s,encoding="utf-8",newline="\n")
+          print('FIX43 loader activo en index.html')
+
       - name: Generar tablas, resultados y jornadas premium
         run: python scripts/generate_social_cards_v36.py
 
@@ -97,17 +112,18 @@ jobs:
           print("Veteranos 50:",v50.get("public_player_count_scraped"),"/",v50c.get("Jugadores"))
           print("Auditoría:",d.get("cedula_audit",{}))
 
-      - name: Guardar datos y publicaciones sólo si cambiaron
+      - name: Guardar datos, FIX43 y publicaciones sólo si cambiaron
         shell: bash
         run: |
           git config user.name "Liga JR Data Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png publicaciones/latest/ 2>/dev/null || true
+          git add index.html data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png publicaciones/latest/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sin cambios públicos."
             exit 0
           fi
-          git commit -m "Data: sync cedulas and FIX37 America logo"
+          git commit -m "Data: sync cedulas + keep FIX43 loader"
+          git pull --rebase origin main || true
           git push origin HEAD:main
 
       - name: Envío opcional WhatsApp y Facebook
