@@ -131,11 +131,19 @@ jobs:
           direct50='''\n<!-- JR_V38_FIX50_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix50-buttons.css?v=38-50-r1">\n<script defer src="./assets/jr-v38-fix50-buttons.js?v=38-50-r1"></script>\n'''
           s=s.replace('</body>',direct50+'\n</body>')
 
+          # Preserve the current UI after legacy loader rewrites.
+          s=re.sub(r'\n?<!-- JR_V38_FIX59_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
+          s=re.sub(r'\n?<link[^>]+jr-v38-fix59\.css[^>]*>','',s)
+          s=re.sub(r'\n?<script[^>]+jr-v38-fix59\.js[^>]*></script>','',s)
+          s=s.replace('</body>', '\n<!-- JR_V38_FIX59_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix59.css?v=38-59">\n<script defer src="./assets/jr-v38-fix59.js?v=38-59"></script>\n</body>')
           p.write_text(s,encoding="utf-8",newline="\n")
           print('FIX50 activo: categorías en Equipos y Más; FIX49 retirado')
 
       - name: Generar tablas, resultados y jornadas premium
         run: python scripts/generate_social_cards_v36.py
+
+      - name: Publicaciones completas por categoría
+        run: python tools/export_liga.py
 
       - name: Validar snapshot
         shell: python
@@ -159,7 +167,7 @@ jobs:
         run: |
           git config user.name "Liga JR Data Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png assets/jr-v38-fix50-buttons.css assets/jr-v38-fix50-buttons.js publicaciones/latest/ 2>/dev/null || true
+          git add index.html data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png assets/jr-v38-fix50-buttons.css assets/jr-v38-fix50-buttons.js publicaciones/latest/ downloads/publicaciones/ downloads/Publicaciones_Liga_JR_38-59.zip 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sin cambios públicos."
             exit 0
