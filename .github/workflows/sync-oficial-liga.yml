@@ -49,7 +49,6 @@ jobs:
         run: |
           FULL=false
           SEND=false
-          if [[ "${{ github.event_name }}" == "push" ]]; then FULL=true; fi
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.full }}" == "true" ]]; then FULL=true; fi
           if [[ "${{ github.event_name }}" == "schedule" && "${{ github.event.schedule }}" == "23 18 * * 0" ]]; then FULL=true; fi
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.send_social }}" == "true" ]]; then SEND=true; fi
