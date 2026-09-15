@@ -14,7 +14,7 @@
   display:grid!important;
   grid-template-columns:112px minmax(0,1fr)!important;
   gap:14px!important;
-  align-items:center!important;
+  align-items:start!important;
   min-height:150px!important;
   padding:14px!important;
 }
