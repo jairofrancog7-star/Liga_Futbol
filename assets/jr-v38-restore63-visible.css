@@ -1,0 +1,56 @@
+/* V38.63 — fuerza visibles las vistas restauradas de Tabla/Estadísticas sin reactivar overlays viejos. */
+html body #view-table[data-jr59-official] > .jr39-view-banner,
+html body #view-table[data-jr59-official] > #jr62TableRestore.jr62-panel,
+html body #view-stats[data-jr59-official] > .jr39-view-banner,
+html body #view-stats[data-jr59-official] > #jr62StatsRestore.jr62-panel{
+  display:block!important;
+}
+
+/* Mantener ocultas las tarjetas azules antiguas de FIX59 para no duplicar la clasificación. */
+html body #view-table #jr59Table,
+html body #view-stats #jr59Stats{
+  display:none!important;
+}
+
+/* Tabla restaurada: top 3 + tabla física siempre en el mismo bloque. */
+html body #jr62TableRestore,
+html body #jr62StatsRestore{
+  visibility:visible!important;
+  opacity:1!important;
+  transform:none!important;
+  filter:none!important;
+  position:relative!important;
+  z-index:2!important;
+}
+
+/* El banner restaurado debe usar imagen fija, no video. */
+html body #view-table .jr39-view-banner.jr62-static-banner video,
+html body #view-stats .jr39-view-banner.jr62-static-banner video{
+  display:none!important;
+}
+html body #view-table .jr39-view-banner.jr62-static-banner .jr62-banner-still,
+html body #view-stats .jr39-view-banner.jr62-static-banner .jr62-banner-still{
+  display:block!important;
+  visibility:visible!important;
+  opacity:.88!important;
+}
+
+/* Móvil: conservar tarjetas de rendimiento y tabla física desplazable debajo. */
+@media(max-width:650px){
+  html body #jr62TableRestore .jr62-podium,
+  html body #jr62StatsRestore .jr62-performance,
+  html body #jr62StatsRestore .jr62-kpis{
+    display:grid!important;
+  }
+  html body #jr62TableRestore .jr62-table-wrap,
+  html body #jr62StatsRestore .jr62-table-wrap{
+    display:block!important;
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  html body #jr62TableRestore .jr62-table,
+  html body #jr62StatsRestore .jr62-table{
+    display:table!important;
+    min-width:980px!important;
+  }
+}
