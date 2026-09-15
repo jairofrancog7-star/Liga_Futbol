@@ -44,11 +44,13 @@ function teamLogo(name){
 }
 
 function patchCategoryCards(){
+ // borrar chips pequeños SOLO en Inicio
  const home=$('#view-home');
  if(home){
    const small=$('#categoryBar',home); if(small)small.style.setProperty('display','none','important');
    $$('.v21-category-tabs',home).forEach(el=>el.style.setProperty('display','none','important'));
  }
+ // corregir logo único de cada categoría en tarjetas grandes
  $$('.jr81-cat-btn,[data-jr81-category]').forEach(card=>{
    const cat=card.dataset.category||card.dataset.jr81Category||'';
    const src=CATEGORY_LOGOS[norm(cat)];
@@ -80,18 +82,21 @@ function decorateTeamElement(el,name){
 }
 function patchStandings(){
  const view=$('#view-table'); if(!view)return;
+ // tabla clásica
  $$('tbody tr',view).forEach(tr=>{
    const tds=$$('td',tr); if(tds.length<2)return;
    const cell=tds[1], name=getTeamNameFromCell(cell);
    const strong=$('strong',cell)||cell;
    if(teamLogo(name))decorateTeamElement(strong,name);
  });
+ // tarjetas/resúmenes móviles y top 3
  $$('strong,b,h3,h4,.team-name,[data-team],.v25-summary-team',view).forEach(el=>{
    if(el.closest('table'))return;
    const text=el.dataset.team||el.textContent||'';
    const clean=text.replace(/[🟢⚪🔵🟡🟠🔴🟣⚫🟤]/g,'').trim();
    if(teamLogo(clean))decorateTeamElement(el,clean);
  });
+ // quitar círculos/emoji sueltos solo si el mismo bloque tiene un equipo conocido
  $$('*',view).forEach(el=>{
    if(el.children.length===0 && /^[\s🟢⚪🔵🟡🟠🔴🟣⚫🟤]+$/.test(el.textContent||'')){
      const p=el.parentElement; const txt=p?.textContent||'';
