@@ -2,8 +2,8 @@
 (()=>{'use strict';
 if(window.__JR79Fix48)return;window.__JR79Fix48=true;
 const BUILD='38-51-r1';
-const PNG='https://jairofrancog7-star.github.io/Liga_Futbol/assets/branding/america-veteranos-35-user.png?v='+BUILD;
-const SVG='https://jairofrancog7-star.github.io/Liga_Futbol/assets/branding/america-veteranos-35.svg?v='+BUILD;
+const PNG='./assets/branding/america-veteranos-35-user.png?v='+BUILD;
+const SVG='./assets/branding/america-veteranos-35.svg?v='+BUILD;
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const norm=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9+]+/g,' ').trim();
 let timer=0;
