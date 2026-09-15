@@ -1,11 +1,13 @@
 {
-  "build": "38-58",
-  "webVersion": "38.58",
-  "androidVersionName": "1.4.0",
-  "androidVersionCode": 9,
+  "build": "38-60",
+  "webVersion": "38.60",
+  "androidVersionName": "1.5.1",
+  "androidVersionCode": 11,
   "generated": "2026-09-15",
   "cachePolicy": "network-first-no-service-worker-cache",
   "officialData": "data/official-live.json",
   "fix57": "restore-internal-cedulas-digital-credential-single-category-rail-unique-logos-mobile-nav",
-  "fix58": "official-category-logos-all-crosses-category-round-filters"
+  "fix58": "official-category-logos-all-crosses-category-round-filters",
+  "fix59": "official-standings-performance-search-light-mode-png-tools",
+  "fix60": "responsive-category-cards-official-matches-whatsapp-helper-apk-1.5.1"
 }
