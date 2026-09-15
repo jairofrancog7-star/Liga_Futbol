@@ -17,10 +17,10 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.66 loader — Tabla, Estadísticas y Partidos restaurados + pulido visual. */
+/* V38.67 loader — regeneración estable de Tabla, Estadísticas, Partidos y Cédulas. */
 (()=>{'use strict';
-if(window.__JR66_LOADER)return;window.__JR66_LOADER=true;
-const V='38-66-r1';
+if(window.__JR67_LOADER)return;window.__JR67_LOADER=true;
+const V='38-67-r1';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
@@ -30,6 +30,8 @@ function ensure(){
  addJs('jr65-partidos','./assets/jr-v38-restore65-partidos.js?v='+V);
  addCss('jr66-polish','./assets/jr-v38-restore66-polish.css?v='+V);
  addJs('jr66-polish','./assets/jr-v38-restore66-polish.js?v='+V);
+ addCss('jr67-regenerate','./assets/jr-v38-restore67-regenerate.css?v='+V);
+ addJs('jr67-regenerate','./assets/jr-v38-restore67-regenerate.js?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
