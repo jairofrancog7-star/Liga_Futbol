@@ -1,0 +1,88 @@
+/* V38 FIX46 — restaurar logo e información de América sin romper otros módulos */
+.jr77-america-fixed-card{
+  display:grid!important;
+  grid-template-columns:130px minmax(0,1fr)!important;
+  gap:14px!important;
+  align-items:start!important;
+}
+.jr77-america-logo-wrap{
+  width:130px!important;
+  min-width:130px!important;
+  height:130px!important;
+  border-radius:18px!important;
+  border:1px solid rgba(34,224,122,.22)!important;
+  background:#05080a!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+}
+.jr77-america-logo-wrap img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.jr77-america-info{
+  min-width:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:8px!important;
+  color:#f3f5f7!important;
+}
+.jr77-america-name{
+  font-size:18px!important;
+  line-height:1.1!important;
+  font-weight:900!important;
+  color:#fff!important;
+}
+.jr77-america-sub{
+  font-size:12px!important;
+  line-height:1.2!important;
+  color:#d6dce6!important;
+  font-weight:700!important;
+}
+.jr77-america-meta{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:6px 12px!important;
+}
+.jr77-america-meta div{
+  font-size:12px!important;
+  line-height:1.2!important;
+  color:#ecf0f4!important;
+}
+.jr77-america-meta b{color:#fff!important}
+.jr77-force-visible{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.jr77-hide-bad-america{
+  display:none!important;
+}
+.jr77-mini-america{
+  display:inline-grid!important;
+  place-items:center!important;
+  width:40px!important;
+  height:40px!important;
+  border-radius:10px!important;
+  overflow:hidden!important;
+}
+.jr77-mini-america img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  display:block!important;
+}
+@media(max-width:860px){
+  .jr77-america-fixed-card{
+    grid-template-columns:1fr!important;
+  }
+  .jr77-america-logo-wrap{
+    width:100%!important;
+    min-width:0!important;
+    height:220px!important;
+  }
+}

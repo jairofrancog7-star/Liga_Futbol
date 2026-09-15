@@ -1,6 +1,6 @@
 {
-    "build":  "38-45",
-    "webVersion":  "38.45",
+    "build":  "38-46",
+    "webVersion":  "38.46",
     "androidVersionName":  "1.4.0",
     "androidVersionCode":  9,
     "generated":  "2026-09-15",
@@ -62,7 +62,7 @@
                                  "Veteranos 35+":  {
                                                        "registered":  0,
                                                        "publicNames":  0,
-                                                       "note":  "La fuente pÃºblica actual reporta 0 jugadores y no expone cÃ©dulas para esta categorÃ­a."
+                                                       "note":  "La fuente pÃƒÂºblica actual reporta 0 jugadores y no expone cÃƒÂ©dulas para esta categorÃƒÂ­a."
                                                    }
                              },
     "publicRosterUi":  "all-visible-public-names-no-200-row-limit-plus-cedula-links",
@@ -87,5 +87,6 @@
     "fix43":  "replace-broken-legacy-category-rail-with-canonical-five-card-row-in-more-view",
     "fix44":  "hard-detect-real-category-rail-by-content-hide-it-and-replace-with-five-card-grid-inline-styles",
     "apkStatus":  "unchanged-existing-binary",
-    "fix45":  "stable-category-buttons-and-america-card-info-logo"
+    "fix45":  "stable-category-buttons-and-america-card-info-logo",
+    "fix46":  "restore-america-logo-and-team-info"
 }
