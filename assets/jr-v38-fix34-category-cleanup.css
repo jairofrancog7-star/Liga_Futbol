@@ -1,0 +1,36 @@
+/* V38 FIX34 — botones/cuadros de categoría limpios y sin logo genérico de la liga */
+.jr66-category-clean{box-sizing:border-box!important;min-width:0!important;overflow:hidden!important;white-space:normal!important}
+.jr66-category-clean img[src*="liga-logo"],
+.jr66-category-clean img[src*="liga_juventino"],
+.jr66-category-clean img[src*="icon-192"],
+.jr66-category-clean img[src*="icon-512"]{display:none!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important}
+.jr66-category-clean[data-jr66-category="Primera Fuerza"] img:not([src*="primera-fuerza-hd"]){display:none!important}
+.jr66-category-summary{display:grid!important;grid-template-columns:50px minmax(0,1fr)!important;grid-template-rows:auto!important;align-items:center!important;gap:12px!important;width:100%!important;min-height:116px!important;height:auto!important;padding:13px 14px!important;text-align:left!important;line-height:1.15!important}
+.jr66-category-summary.jr66-no-icon{grid-template-columns:minmax(0,1fr)!important}
+.jr66-category-summary>*{min-width:0!important}
+.jr66-cat-icon,.jr66-simple-icon{display:grid!important;place-items:center!important;overflow:hidden!important;background:#020806!important;border:1px solid rgba(46,236,164,.18)!important;border-radius:12px!important;box-shadow:none!important}
+.jr66-cat-icon{width:50px!important;height:50px!important;min-width:50px!important;min-height:50px!important;max-width:50px!important;max-height:50px!important;padding:4px!important}
+.jr66-cat-icon>img{display:block!important;width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important;object-fit:contain!important;object-position:center!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
+.jr66-cat-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;width:100%!important;min-width:0!important}
+.jr66-cat-title{display:block!important;width:100%!important;margin:0!important;color:#f5f7f6!important;font-size:13px!important;line-height:1.18!important;font-weight:900!important;letter-spacing:0!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;word-break:normal!important;overflow-wrap:normal!important}
+.jr66-cat-phase{display:block!important;width:100%!important;margin:0!important;color:#8f9f97!important;font-size:9.5px!important;line-height:1.22!important;font-weight:700!important;white-space:normal!important;overflow:visible!important}
+.jr66-cat-stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:3px 10px!important;width:100%!important;margin-top:3px!important;color:#d4ded9!important;font-size:9.5px!important;line-height:1.28!important;font-weight:700!important}
+.jr66-cat-stats>span{display:block!important;min-width:0!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.jr66-cat-stats strong{display:inline!important;color:#fff!important;font-size:10px!important;font-weight:900!important}
+.jr66-simple-icon{width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important;flex:0 0 42px!important;padding:3px!important;margin-right:8px!important}
+.jr66-simple-icon>img{display:block!important;width:36px!important;height:36px!important;object-fit:contain!important;border:0!important;background:transparent!important;margin:0!important;padding:0!important}
+button.jr66-category-clean,a.jr66-category-clean,[role="button"].jr66-category-clean{align-items:center!important;text-align:left!important;line-height:1.2!important}
+@media(max-width:760px){
+ .jr66-category-summary{grid-template-columns:46px minmax(0,1fr)!important;gap:10px!important;min-height:108px!important;padding:11px 12px!important}
+ .jr66-category-summary.jr66-no-icon{grid-template-columns:1fr!important}
+ .jr66-cat-icon{width:46px!important;height:46px!important;min-width:46px!important;min-height:46px!important;max-width:46px!important;max-height:46px!important}
+ .jr66-cat-icon>img{width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;max-width:38px!important;max-height:38px!important}
+ .jr66-cat-title{font-size:12px!important}.jr66-cat-phase{font-size:9px!important}.jr66-cat-stats,.jr66-cat-stats strong{font-size:9px!important}
+}
+@media(max-width:430px){
+ .jr66-category-summary{grid-template-columns:42px minmax(0,1fr)!important;gap:9px!important;padding:10px!important;min-height:104px!important}
+ .jr66-category-summary.jr66-no-icon{grid-template-columns:1fr!important}
+ .jr66-cat-icon{width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important}
+ .jr66-cat-icon>img{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;max-width:34px!important;max-height:34px!important}
+ .jr66-cat-stats{grid-template-columns:1fr 1fr!important;gap:3px 6px!important}
+}
