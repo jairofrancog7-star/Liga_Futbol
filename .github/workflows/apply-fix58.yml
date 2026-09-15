@@ -1,4 +1,4 @@
-name: Apply V38 FIX58 direct
+name: Restore previous cards UI
 
 on:
   push:
@@ -11,67 +11,83 @@ permissions:
   contents: write
 
 concurrency:
-  group: liga-jr-fix58
+  group: liga-jr-restore-legacy-cards
   cancel-in-progress: true
 
 jobs:
-  apply:
+  restore:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Instalar logos oficiales aportados por el usuario
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p assets/categories
-          curl -fL --retry 3 --retry-delay 2 \
-            'https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/1c7da512-5529-4da3-afb6-008c20f599ec.png' \
-            -o assets/categories/segunda-fuerza-user.png
-          curl -fL --retry 3 --retry-delay 2 \
-            'https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/be5a48b7-b293-4e6e-a0ae-e965dbf7d2bc.png' \
-            -o assets/categories/veteranos-35-user.png
-          test -s assets/categories/segunda-fuerza-user.png
-          test -s assets/categories/veteranos-35-user.png
-
-      - name: Activar FIX58 y romper cache
+      - name: Restaurar tarjetas anteriores y quitar overrides FIX58/FIX60
         shell: python
         run: |
           from pathlib import Path
-          import json,re
-          p=Path('index.html')
-          s=p.read_text(encoding='utf-8')
-          s=re.sub(r'\n?<!-- JR_V38_FIX58_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
-          s=re.sub(r'\n?<link[^>]+jr-v38-fix58\.css[^>]*>','',s)
-          s=re.sub(r'\n?<script[^>]+jr-v38-fix58\.js[^>]*></script>','',s)
-          block='''\n<!-- JR_V38_FIX58_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix58.css?v=38-58-r1">\n<script defer src="./assets/jr-v38-fix58.js?v=38-58-r1"></script>\n'''
-          s=s.replace('</body>',block+'\n</body>')
-          p.write_text(s,encoding='utf-8',newline='\n')
+          import re, json
 
-          build={
-            'build':'38-58','webVersion':'38.58','androidVersionName':'1.4.0','androidVersionCode':9,
-            'generated':'2026-09-15','cachePolicy':'network-first-no-service-worker-cache',
-            'officialData':'data/official-live.json',
-            'fix58':'official-category-logos-all-crosses-category-round-filters-internal-cedulas'
-          }
-          Path('build-v38.json').write_text(json.dumps(build,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          index = Path('index.html')
+          s = index.read_text(encoding='utf-8')
 
-      - name: Validar JavaScript FIX58
-        run: node --check assets/jr-v38-fix58.js
+          # Quitar inyecciones directas de FIX58/FIX60 sin tocar el resto del proyecto.
+          s = re.sub(r'\n?<!-- JR_V38_FIX58_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)', '', s, flags=re.S)
+          s = re.sub(r'\n?<!-- JR_V38_FIX60_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)', '', s, flags=re.S)
+          s = re.sub(r'\n?<link[^>]+jr-v38-fix58\.css[^>]*>', '', s)
+          s = re.sub(r'\n?<script[^>]+jr-v38-fix58\.js[^>]*></script>', '', s)
+          s = re.sub(r'\n?<link[^>]+jr-v38-fix60\.css[^>]*>', '', s)
+          s = re.sub(r'\n?<script[^>]+jr-v38-fix60\.js[^>]*></script>', '', s)
 
-      - name: Publicar FIX58
+          # Romper caché del loader que conserva el diseño anterior.
+          s = re.sub(r'(jr-v38-fix54\.js\?v=)[^"\']+', r'\g<1>38-61-restore', s)
+          index.write_text(s, encoding='utf-8', newline='\n')
+
+          # FIX54 queda solo con sus funciones previas: categorías + cédulas internas.
+          legacy = r'''/* V38 FIX54 restored — category cards remain functional and all cedulas stay inside Liga Juventino Rosas */
+          (()=>{'use strict';
+          const host=document.getElementById('jr53TopCategoryHost');
+          host?.addEventListener('click',e=>{
+           const b=e.target.closest('button[data-category]');if(!b)return;
+           const chip=Array.from(document.querySelectorAll('#categoryBar [data-category]')).find(x=>x.dataset.category===b.dataset.category);
+           if(chip)chip.click();
+           host.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('active',on);x.setAttribute('aria-pressed',String(on))});
+          });
+          window.addEventListener('click',e=>{
+           const a=e.target.closest?.('a[href*="cedula-arbitral/"]');if(!a)return;
+           e.preventDefault();e.stopImmediatePropagation();
+           const id=(a.getAttribute('href')||'').match(/cedula-arbitral\\/(\\d+)/)?.[1]||'';
+           location.href='./cedulas.html'+(id?'?cedula='+encodeURIComponent(id):'');
+          },true);
+          const actions=document.querySelector('.top-actions');
+          if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
+          })();
+          '''
+          Path('assets/jr-v38-fix54.js').write_text(legacy, encoding='utf-8', newline='\n')
+
+          # Marcar restauración para evitar confusión de versiones.
+          p = Path('build-v38.json')
+          if p.exists():
+              try:
+                  data = json.loads(p.read_text(encoding='utf-8'))
+              except Exception:
+                  data = {}
+              data['build'] = '38-61-restore'
+              data['webVersion'] = '38.61-restore'
+              data['restore'] = 'previous-match-and-table-cards'
+              p.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+
+      - name: Publicar restauración
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html build-v38.json assets/categories/segunda-fuerza-user.png assets/categories/veteranos-35-user.png
+          git add index.html assets/jr-v38-fix54.js build-v38.json
           if git diff --cached --quiet; then
-            echo 'FIX58 ya estaba aplicado.'
+            echo 'La restauración ya estaba aplicada.'
             exit 0
           fi
-          git commit -m 'fix: activate V38 FIX58 official logos and match crosses'
+          git commit -m 'restore: previous match and table cards, remove FIX58/FIX60 overrides'
           git pull --rebase origin main
           git push origin HEAD:main
