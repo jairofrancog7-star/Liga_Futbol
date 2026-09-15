@@ -64,10 +64,16 @@ jobs:
             exit 0
           fi
           git commit -m 'build: publish Android APK 1.5.1 V38.60'
-          git pull --rebase origin main
+          # Android/Gradle may touch tracked local files. The APK commit is already safe,
+          # so discard only remaining uncommitted build-time changes before rebasing.
+          git reset --hard HEAD
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
 
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: Liga_Juventino_Rosas-1.5.1
           path: downloads/Liga_Juventino_Rosas.apk
+          if-no-files-found: error
