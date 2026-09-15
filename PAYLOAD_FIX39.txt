@@ -1,0 +1,29 @@
+V38 FIX39 — LOGO AMÉRICA + BOTONES + PUBLICACIONES + CREDENCIAL
+
+WEB/PWA: 38-39
+APK: 1.4.0 / code 9 (sin recompilar)
+
+CAMBIOS PUBLICADOS DIRECTAMENTE EN GITHUB MAIN
+- América Veteranos 35+: se usa exactamente la imagen que el usuario adjuntó en este turno.
+- Se corrige el logo grande y mini del equipo América.
+- Botones/cuadros de categorías vuelven a tamaño compacto.
+- La barra inferior Inicio / Partidos / Tabla / Estadísticas / Más conserva botones del mismo tamaño; Tabla ya no se transforma en chip.
+- Tabla / Goleadores / Rendimiento siguen siendo funcionales, pero solo como chips de contenido; nunca alteran la barra inferior.
+- Más / Explora la liga: se asegura botón Publicaciones con PNG / WhatsApp.
+- Publicaciones sigue generando tabla, próxima jornada/calendario y resultados con logo de Liga, fecha, nombres de equipos, escudos y campo.
+- WhatsApp se guarda solo en el navegador/localStorage; el número no se publica en GitHub.
+- Credencial reconstruida siguiendo la referencia documentada: foto, QR, nombre, folio, equipo, categoría, posición, número, nacimiento/edad, lugar, temporada y HABILITADO.
+- Credencial pública nunca muestra CURP, INE ni documentos privados.
+
+REFRESH
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v39.html
+
+ARCHIVOS PRINCIPALES
+assets/jr-v38-fix37.js
+assets/jr-v38-fix37.css
+assets/jr-v38-fix39-credential.js
+assets/jr-v38-fix39-credential.css
+assets/jr-v38-mobile-sync.js
+build-v38.json
+manifest.webmanifest
+refresh-v39.html
