@@ -1,0 +1,83 @@
+/* V38.66 — pulido visual solicitado: estrella libre, logos uniformes, scroll horizontal e iconos modernos. */
+:root{--jr66-accent:#48e3aa;--jr66-line:rgba(103,227,177,.22)}
+
+/* PARTIDOS — estrella sin cuadro ni fondo */
+#view-matches .jr65-star{
+  width:auto!important;height:auto!important;min-width:0!important;min-height:0!important;
+  padding:0!important;margin:0!important;border:0!important;border-radius:0!important;
+  background:transparent!important;box-shadow:none!important;outline:none!important;
+  color:#fff!important;font-size:36px!important;line-height:1!important;
+  display:inline-grid!important;place-items:center!important;
+  text-shadow:0 1px 10px rgba(255,255,255,.12);
+}
+#view-matches .jr65-star.on{color:var(--jr66-accent)!important;border:0!important;background:transparent!important;box-shadow:none!important}
+
+/* PARTIDOS — escudos siempre del mismo tamaño visual */
+#view-matches .jr65-team img,
+#view-matches .jr65-fallback{
+  width:62px!important;height:62px!important;min-width:62px!important;max-width:62px!important;
+  min-height:62px!important;max-height:62px!important;flex:0 0 62px!important;
+  aspect-ratio:1/1!important;object-fit:contain!important;object-position:center!important;
+  box-sizing:border-box!important;padding:5px!important;border-radius:13px!important;
+  background:#07110e!important;border:1px solid rgba(255,255,255,.08)!important;
+}
+
+/* Iconos de acción */
+.jr66-action-icon{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 20px;margin-right:8px;color:currentColor}
+.jr66-action-icon svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#view-matches .jr65-actions a,#view-matches .jr65-actions button,
+#view-table .jr64-actions button,#view-table .jr64-actions a{
+  gap:7px!important;
+}
+
+/* TABLA — scroll horizontal táctil real en Android/iOS */
+#view-table .jr64-table-wrap{
+  display:block!important;width:100%!important;max-width:100%!important;
+  overflow-x:scroll!important;overflow-y:hidden!important;
+  -webkit-overflow-scrolling:touch!important;overscroll-behavior-x:contain!important;
+  touch-action:pan-x pan-y!important;pointer-events:auto!important;
+  position:relative!important;z-index:12!important;
+  scrollbar-width:thin!important;scrollbar-color:rgba(72,227,170,.65) rgba(255,255,255,.06)!important;
+}
+#view-table .jr64-table-wrap::-webkit-scrollbar{height:9px!important}
+#view-table .jr64-table-wrap::-webkit-scrollbar-track{background:rgba(255,255,255,.05)!important;border-radius:999px!important}
+#view-table .jr64-table-wrap::-webkit-scrollbar-thumb{background:rgba(72,227,170,.62)!important;border-radius:999px!important}
+#view-table .jr64-table{min-width:1080px!important;width:1080px!important;table-layout:auto!important}
+#view-table .jr64-table th,#view-table .jr64-table td{white-space:nowrap!important}
+#view-table .jr64-table th:nth-child(2),#view-table .jr64-table td:nth-child(2){position:sticky!important;left:44px!important;z-index:2!important;background:#06100d!important}
+#view-table .jr64-table th:first-child,#view-table .jr64-table td:first-child{position:sticky!important;left:0!important;z-index:3!important;background:#06100d!important}
+
+/* TABLA — un solo escudo por tarjeta y dimensiones uniformes */
+#view-table .jr64-podium-card .jr64-crest,
+#view-table .jr64-team .jr64-crest,
+#view-stats .jr64-performance .jr64-crest{
+  width:42px!important;height:42px!important;min-width:42px!important;max-width:42px!important;
+  min-height:42px!important;max-height:42px!important;object-fit:contain!important;object-position:center!important;
+  box-sizing:border-box!important;padding:3px!important;border-radius:10px!important;
+  background:#07110e!important;border:1px solid rgba(72,227,170,.18)!important;
+}
+#view-table .jr64-podium-card .jr64-crest:nth-of-type(n+2){display:none!important}
+
+/* RENDIMIENTO — escudo junto al nombre */
+#view-stats .jr64-performance article{grid-template-columns:auto auto minmax(0,1fr) auto!important;gap:11px!important}
+#view-stats .jr66-performance-crest{width:42px;height:42px;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+#view-stats .jr66-performance-crest .jr64-crest{margin:0!important}
+
+/* Controles y botones con icono sin amontonar texto */
+#view-matches .jr65-actions a,#view-matches .jr65-actions button,#view-table .jr64-actions button{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
+}
+
+@media(max-width:650px){
+  #view-matches .jr65-team img,#view-matches .jr65-fallback{
+    width:58px!important;height:58px!important;min-width:58px!important;max-width:58px!important;
+    min-height:58px!important;max-height:58px!important;flex-basis:58px!important;
+  }
+  #view-matches .jr65-star{font-size:34px!important}
+  #view-table .jr64-table{min-width:1080px!important;width:1080px!important}
+  #view-table .jr64-table-wrap{margin-bottom:8px!important}
+  #view-table .jr64-table-wrap:before{position:sticky!important;left:0!important;z-index:5!important}
+  #view-stats .jr64-performance article{grid-template-columns:auto auto minmax(0,1fr) auto!important}
+  .jr66-action-icon{width:18px;height:18px;flex-basis:18px;margin-right:6px}.jr66-action-icon svg{width:18px;height:18px}
+}
