@@ -1,6 +1,6 @@
 {
-  "build": "38-33",
-  "webVersion": "38.33",
+  "build": "38-34",
+  "webVersion": "38.34",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -30,5 +30,6 @@
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
   "americaVeteranos35Logo": "assets/branding/america-veteranos-35.svg",
   "fix33": "public-roster-coverage-america-v35-branding-social-publication-center-whatsapp-facebook-share",
+  "fix34": "category-buttons-cleanup-remove-league-logo-keep-only-primera-fuerza-logo-fix-text-layout",
   "apkStatus": "unchanged-existing-binary"
 }
