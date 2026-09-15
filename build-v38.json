@@ -1,1 +1,10 @@
-cat: build-v38.json: No such file or directory
+{
+  "build": "38-56",
+  "webVersion": "38.56",
+  "androidVersionName": "1.4.0",
+  "androidVersionCode": 9,
+  "generated": "2026-09-15",
+  "cachePolicy": "network-first-no-service-worker-cache",
+  "officialData": "data/official-live.json",
+  "fix56": "credentials-team-logos-category-logos-match-cedulas-bottom-nav"
+}
