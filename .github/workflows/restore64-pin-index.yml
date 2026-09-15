@@ -1,4 +1,4 @@
-name: Restore68 pin regenerated views
+name: Restore69 pin final views
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Pin restore68 directly in index
+      - name: Pin restore69 directly in index
         shell: bash
         run: |
           python - <<'PY'
@@ -24,27 +24,37 @@ jobs:
           import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
-          V='38-68-r1'
-          s=re.sub(r'\./assets/jr-v38-fix54\.js\?v=[^"\']+','./assets/jr-v38-fix54.js?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore64-exact\.css\?v=[^"\']+','./assets/jr-v38-restore64-exact.css?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore64-exact\.js\?v=[^"\']+','./assets/jr-v38-restore64-exact.js?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore65-partidos\.css\?v=[^"\']+','./assets/jr-v38-restore65-partidos.css?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore65-partidos\.js\?v=[^"\']+','./assets/jr-v38-restore65-partidos.js?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore66-polish\.css\?v=[^"\']+','./assets/jr-v38-restore66-polish.css?v='+V,s)
-          s=re.sub(r'\./assets/jr-v38-restore66-polish\.js\?v=[^"\']+','./assets/jr-v38-restore66-polish.js?v='+V,s)
-          css67='<link rel="stylesheet" href="./assets/jr-v38-restore67-regenerate.css?v='+V+'" data-jr67-direct="1">'
-          js67='<script defer src="./assets/jr-v38-restore67-regenerate.js?v='+V+'" data-jr67-direct="1"></script>'
-          css68='<link rel="stylesheet" href="./assets/jr-v38-restore68-table-motion.css?v='+V+'" data-jr68-direct="1">'
-          js68='<script defer src="./assets/jr-v38-restore68-table-motion.js?v='+V+'" data-jr68-direct="1"></script>'
-          if 'jr-v38-restore67-regenerate.css' not in s:s=s.replace('</head>',css67+'\n</head>',1)
-          else:s=re.sub(r'<link[^>]+jr-v38-restore67-regenerate\.css\?v=[^"\']+[^>]*>',css67,s)
-          if 'jr-v38-restore68-table-motion.css' not in s:s=s.replace('</head>',css68+'\n</head>',1)
-          else:s=re.sub(r'<link[^>]+jr-v38-restore68-table-motion\.css\?v=[^"\']+[^>]*>',css68,s)
-          if 'jr-v38-restore67-regenerate.js' not in s:s=s.replace('</body>',js67+'\n</body>',1)
-          else:s=re.sub(r'<script[^>]+jr-v38-restore67-regenerate\.js\?v=[^"\']+[^>]*></script>',js67,s)
-          if 'jr-v38-restore68-table-motion.js' not in s:s.replace('</body>',js68+'\n</body>',1)
-          if 'jr-v38-restore68-table-motion.js' not in s:s=s.replace('</body>',js68+'\n</body>',1)
-          else:s=re.sub(r'<script[^>]+jr-v38-restore68-table-motion\.js\?v=[^"\']+[^>]*></script>',js68,s)
+          V='38-69-r1'
+          files=[
+            ('jr-v38-fix54.js','script','jr54-direct'),
+            ('jr-v38-restore64-exact.css','link','jr64-direct'),
+            ('jr-v38-restore64-exact.js','script','jr64-direct'),
+            ('jr-v38-restore65-partidos.css','link','jr65-direct'),
+            ('jr-v38-restore65-partidos.js','script','jr65-direct'),
+            ('jr-v38-restore66-polish.css','link','jr66-direct'),
+            ('jr-v38-restore66-polish.js','script','jr66-direct'),
+            ('jr-v38-restore67-regenerate.css','link','jr67-direct'),
+            ('jr-v38-restore67-regenerate.js','script','jr67-direct'),
+            ('jr-v38-restore68-table-motion.css','link','jr68-direct'),
+            ('jr-v38-restore68-table-motion.js','script','jr68-direct'),
+          ]
+          for fn,kind,key in files:
+            if kind=='link':
+              tag=f'<link rel="stylesheet" href="./assets/{fn}?v={V}" data-{key}="1">'
+              pat=rf'<link[^>]+{re.escape(fn)}\?v=[^"\']+[^>]*>'
+              if fn in s:s=re.sub(pat,tag,s)
+              else:s=s.replace('</head>',tag+'\n</head>',1)
+            else:
+              tag=f'<script defer src="./assets/{fn}?v={V}" data-{key}="1"></script>'
+              pat=rf'<script[^>]+{re.escape(fn)}\?v=[^"\']+[^>]*></script>'
+              if fn in s:s=re.sub(pat,tag,s)
+              else:s=s.replace('</body>',tag+'\n</body>',1)
+          css69=f'<link rel="stylesheet" href="./assets/jr-v38-restore69-final.css?v={V}" data-jr69-direct="1">'
+          js69=f'<script defer src="./assets/jr-v38-restore69-final.js?v={V}" data-jr69-direct="1"></script>'
+          if 'jr-v38-restore69-final.css' not in s:s=s.replace('</head>',css69+'\n</head>',1)
+          else:s=re.sub(r'<link[^>]+jr-v38-restore69-final\.css\?v=[^"\']+[^>]*>',css69,s)
+          if 'jr-v38-restore69-final.js' not in s:s=s.replace('</body>',js69+'\n</body>',1)
+          else:s=re.sub(r'<script[^>]+jr-v38-restore69-final\.js\?v=[^"\']+[^>]*></script>',js69,s)
           p.write_text(s,encoding='utf-8')
           PY
       - name: Commit index pin
@@ -57,5 +67,5 @@ jobs:
           git config user.name 'Liga JR Restore Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add index.html
-          git commit -m 'restore68: pin complete logos form badges and hero edge motion'
+          git commit -m 'restore69: pin final table stats and moving hero'
           git push origin HEAD:main
