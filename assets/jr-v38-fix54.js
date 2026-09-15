@@ -17,17 +17,19 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.65 loader — conserva Tabla/Estadísticas restauradas y vuelve a restaurar Partidos/Jornada. */
+/* V38.66 loader — Tabla, Estadísticas y Partidos restaurados + pulido visual. */
 (()=>{'use strict';
-if(window.__JR65_LOADER)return;window.__JR65_LOADER=true;
-const V64='38-64-r1',V65='38-65-r1';
+if(window.__JR66_LOADER)return;window.__JR66_LOADER=true;
+const V='38-66-r1';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
- addCss('jr64-exact','./assets/jr-v38-restore64-exact.css?v='+V64);
- addJs('jr64-exact','./assets/jr-v38-restore64-exact.js?v='+V64);
- addCss('jr65-partidos','./assets/jr-v38-restore65-partidos.css?v='+V65);
- addJs('jr65-partidos','./assets/jr-v38-restore65-partidos.js?v='+V65);
+ addCss('jr64-exact','./assets/jr-v38-restore64-exact.css?v='+V);
+ addJs('jr64-exact','./assets/jr-v38-restore64-exact.js?v='+V);
+ addCss('jr65-partidos','./assets/jr-v38-restore65-partidos.css?v='+V);
+ addJs('jr65-partidos','./assets/jr-v38-restore65-partidos.js?v='+V);
+ addCss('jr66-polish','./assets/jr-v38-restore66-polish.css?v='+V);
+ addJs('jr66-polish','./assets/jr-v38-restore66-polish.js?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
