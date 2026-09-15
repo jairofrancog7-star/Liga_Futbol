@@ -1,6 +1,6 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-40')return;
-const BUILD='38-40',INTERVAL=300000;let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-42')return;
+const BUILD='38-42',INTERVAL=300000;let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
@@ -19,6 +19,8 @@ function injectFixes(){
  addJs('./assets/jr-v38-fix39-credential.js?v='+BUILD,'jr72');
  addCss('./assets/jr-v38-fix40.css?v='+BUILD,'jr73');
  addJs('./assets/jr-v38-fix40.js?v='+BUILD,'jr73');
+ addCss('./assets/jr-v38-fix42-layout.css?v='+BUILD,'jr74');
+ addJs('./assets/jr-v38-fix42-layout.js?v='+BUILD,'jr74');
 }
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
