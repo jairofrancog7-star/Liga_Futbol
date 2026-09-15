@@ -1,0 +1,46 @@
+/* V38.68 — forma reciente, PTS fijo al extremo y hero con puntos luminosos. */
+:root{--jr68-green:#20e487;--jr68-panel:#06110e;--jr68-line:rgba(32,228,135,.25)}
+
+/* Hero: movimiento visible y puntos laterales que brillan y se apagan. */
+#view-table .jr64-hero.table{isolation:isolate}
+#view-table .jr67-hero-video{transform-origin:72% 56%;animation:jr68HeroDrift 10s ease-in-out infinite alternate!important;will-change:transform,filter}
+@keyframes jr68HeroDrift{0%{transform:scale(1.035) translate3d(-.8%,.2%,0)}55%{transform:scale(1.065) translate3d(.4%,-.6%,0)}100%{transform:scale(1.045) translate3d(1.1%,.3%,0)}}
+#view-table .jr68-edge-dots{position:absolute;right:13px;top:28%;bottom:12%;z-index:4;width:12px;display:flex;flex-direction:column;align-items:center;justify-content:space-around;pointer-events:none;filter:drop-shadow(0 0 6px rgba(53,255,167,.35))}
+#view-table .jr68-edge-dots:before{content:'';position:absolute;top:0;bottom:0;left:50%;width:1px;transform:translateX(-50%);background:linear-gradient(180deg,transparent,rgba(52,244,151,.15) 20%,rgba(52,244,151,.34) 50%,rgba(52,244,151,.12) 82%,transparent)}
+#view-table .jr68-edge-dots i{position:relative;width:5px;height:5px;border-radius:50%;background:#58ffb0;opacity:.16;box-shadow:0 0 0 0 rgba(76,255,177,0);animation:jr68DotPulse 2.45s ease-in-out infinite}
+#view-table .jr68-edge-dots i:nth-child(2){animation-delay:.18s}#view-table .jr68-edge-dots i:nth-child(3){animation-delay:.36s}#view-table .jr68-edge-dots i:nth-child(4){animation-delay:.54s}#view-table .jr68-edge-dots i:nth-child(5){animation-delay:.72s}#view-table .jr68-edge-dots i:nth-child(6){animation-delay:.90s}#view-table .jr68-edge-dots i:nth-child(7){animation-delay:1.08s}
+@keyframes jr68DotPulse{0%,100%{opacity:.12;transform:scale(.72);box-shadow:0 0 0 0 rgba(76,255,177,0)}42%{opacity:1;transform:scale(1.22);box-shadow:0 0 10px 3px rgba(76,255,177,.46)}68%{opacity:.36;transform:scale(.9);box-shadow:0 0 4px 1px rgba(76,255,177,.18)}}
+#view-table .jr68-radar{position:absolute;right:4.4%;bottom:13%;z-index:3;width:58px;height:58px;border-radius:50%;pointer-events:none;opacity:.58}
+#view-table .jr68-radar i,#view-table .jr68-radar b{position:absolute;inset:50% auto auto 50%;border:1px solid rgba(86,255,183,.46);border-radius:50%;transform:translate(-50%,-50%);animation:jr68Radar 3.2s ease-out infinite}
+#view-table .jr68-radar i:first-child{width:20px;height:20px}#view-table .jr68-radar i:nth-child(2){width:36px;height:36px;animation-delay:.55s}#view-table .jr68-radar b{width:52px;height:52px;animation-delay:1.1s}
+@keyframes jr68Radar{0%{opacity:.95;filter:drop-shadow(0 0 5px rgba(63,255,171,.5))}70%{opacity:.22}100%{opacity:0;transform:translate(-50%,-50%) scale(1.12)}}
+
+/* Logos de tabla y podio. */
+#view-table .jr64-team .jr64-crest{width:34px!important;height:34px!important;min-width:34px!important;object-fit:contain!important;padding:2px!important;border-radius:9px!important;background:#07110e!important;border:1px solid rgba(32,228,135,.14)!important;box-sizing:border-box!important}
+#view-table .jr64-podium-card>.jr64-crest{object-fit:contain!important}
+
+/* FORMA como la referencia: G verde, P rojo, E gris. */
+#view-table .jr64-table th:nth-child(10),#view-table .jr64-table td:nth-child(10){min-width:205px!important;width:205px!important}
+#view-table .jr64-form,#view-table .jr68-form{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;min-width:172px}
+#view-table .jr64-form i,#view-table .jr68-form i{width:29px!important;height:29px!important;display:grid!important;place-items:center!important;border-radius:999px!important;font-style:normal!important;font-size:11px!important;font-weight:950!important;color:#fff!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18),0 4px 12px rgba(0,0,0,.22)!important}
+#view-table .jr64-form .g,#view-table .jr68-form .g{background:linear-gradient(180deg,#0fbc68,#087b47)!important;box-shadow:0 0 12px rgba(16,205,113,.18)!important}
+#view-table .jr64-form .p,#view-table .jr68-form .p{background:linear-gradient(180deg,#db454c,#a5262d)!important;box-shadow:0 0 12px rgba(219,69,76,.15)!important}
+#view-table .jr64-form .e,#view-table .jr68-form .e{background:linear-gradient(180deg,#68737a,#444c51)!important}
+
+/* PTS siempre al extremo derecho, como la referencia. */
+#view-table .jr64-table{min-width:1160px!important;width:1160px!important}
+#view-table .jr64-table th:last-child,#view-table .jr64-table td:last-child{position:sticky!important;right:0!important;z-index:8!important;width:84px!important;min-width:84px!important;text-align:center!important;background:#06100d!important;box-shadow:-12px 0 18px rgba(0,0,0,.18)!important}
+#view-table .jr64-table td:last-child{font-size:20px!important;font-weight:950!important;color:#20e487!important}
+#view-table .jr64-table th:last-child{color:#aebbb5!important}
+#view-table .jr64-table tbody tr:nth-child(even) td:last-child{background:#07130f!important}
+#view-table .jr64-table tbody tr:first-child td:last-child{background:#07160f!important}
+
+@media(max-width:650px){
+ #view-table .jr68-edge-dots{right:8px;top:25%;bottom:10%}
+ #view-table .jr68-radar{right:2.8%;bottom:12%;width:48px;height:48px}
+ #view-table .jr64-table{min-width:1120px!important;width:1120px!important}
+ #view-table .jr64-table th:nth-child(10),#view-table .jr64-table td:nth-child(10){min-width:190px!important;width:190px!important}
+ #view-table .jr64-form i,#view-table .jr68-form i{width:27px!important;height:27px!important}
+ #view-table .jr64-form,#view-table .jr68-form{gap:6px!important;min-width:160px}
+}
+@media(prefers-reduced-motion:reduce){#view-table .jr67-hero-video,#view-table .jr68-edge-dots i,#view-table .jr68-radar i,#view-table .jr68-radar b{animation:none!important}#view-table .jr68-edge-dots i{opacity:.45!important}}
