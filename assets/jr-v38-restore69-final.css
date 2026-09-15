@@ -1,0 +1,51 @@
+/* V38.69 — corrección final: un solo logo, sin podio duplicado y hero de imagen en movimiento. */
+:root{--jr69-accent:#49e7ad;--jr69-panel:#06110e}
+
+/* Oculta bloques viejos detectados por JS, sin tocar la tabla restaurada. */
+#view-table .jr69-hide-duplicate{display:none!important}
+
+/* HERO TABLA: una sola imagen animada. Se apaga el video anterior para evitar doble fondo. */
+#view-table .jr64-hero.table{background:#020906!important;isolation:isolate!important}
+#view-table .jr64-hero.table .jr67-hero-video,
+#view-table .jr64-hero.table>video{display:none!important;visibility:hidden!important;opacity:0!important}
+#view-table .jr64-hero.table:before,
+#view-table .jr64-hero.table:after{content:none!important;display:none!important}
+#view-table .jr69-hero-motion{position:absolute;inset:-8%;z-index:0;pointer-events:none;background-image:linear-gradient(90deg,rgba(2,9,7,.96) 0%,rgba(2,9,7,.78) 44%,rgba(2,9,7,.28) 76%,rgba(2,9,7,.58) 100%),url('./motion/v38-fix10-field.jpg');background-position:center;background-size:cover;background-repeat:no-repeat;transform:scale(1.05);animation:jr69HeroPan 12s ease-in-out infinite alternate;will-change:transform,background-position,filter;filter:saturate(.92) contrast(1.06) brightness(.86)}
+#view-table .jr69-hero-shade{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(circle at 82% 46%,rgba(73,231,173,.18),transparent 28%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.28))}
+#view-table .jr64-hero.table .jr64-hero-copy{position:relative!important;z-index:4!important}
+@keyframes jr69HeroPan{0%{transform:scale(1.05) translate3d(-1.5%,1%,0);background-position:46% 52%;filter:saturate(.88) contrast(1.05) brightness(.82)}50%{transform:scale(1.10) translate3d(1%,-1%,0);background-position:53% 48%;filter:saturate(.98) contrast(1.08) brightness(.88)}100%{transform:scale(1.07) translate3d(2.2%,.5%,0);background-position:58% 51%;filter:saturate(.92) contrast(1.07) brightness(.84)}}
+
+/* Puntitos luminosos laterales. */
+#view-table .jr69-edge-dots{position:absolute;right:17px;top:20%;bottom:20%;z-index:3;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+#view-table .jr69-edge-dots i{display:block;width:7px;height:7px;border-radius:50%;background:var(--jr69-accent);box-shadow:0 0 10px rgba(73,231,173,.9),0 0 24px rgba(73,231,173,.4);animation:jr69DotPulse 2.2s ease-in-out infinite;opacity:.28}
+#view-table .jr69-edge-dots i:nth-child(2){animation-delay:.32s}#view-table .jr69-edge-dots i:nth-child(3){animation-delay:.64s}#view-table .jr69-edge-dots i:nth-child(4){animation-delay:.96s}#view-table .jr69-edge-dots i:nth-child(5){animation-delay:1.28s}
+@keyframes jr69DotPulse{0%,100%{opacity:.18;transform:scale(.72)}45%{opacity:1;transform:scale(1.18)}70%{opacity:.42;transform:scale(.9)}}
+
+/* TABLA: un solo escudo por tarjeta del podio y San Juan FC visible. */
+#view-table .jr64-podium-card>.jr69-single-crest{display:block!important;width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;object-fit:contain!important;object-position:center!important;padding:4px!important;box-sizing:border-box!important;border-radius:12px!important;background:#07110e!important;border:1px solid rgba(73,231,173,.22)!important;position:relative!important;z-index:2!important}
+#view-table .jr64-podium-card>img:not(.jr69-single-crest),
+#view-table .jr64-podium-card>.jr64-crest:not(.jr69-single-crest),
+#view-table .jr64-podium-card>.jr67-podium-crest:not(.jr69-single-crest){display:none!important}
+
+/* Estadísticas: exactamente un escudo junto al nombre. */
+#view-stats .jr64-performance article{grid-template-columns:auto auto minmax(0,1fr) auto!important;align-items:center!important;column-gap:12px!important}
+#view-stats .jr69-performance-crest{display:flex!important;align-items:center!important;justify-content:center!important;width:46px!important;height:46px!important;min-width:46px!important;max-width:46px!important;overflow:hidden!important;border-radius:11px!important;background:#07110e!important;border:1px solid rgba(73,231,173,.22)!important;box-sizing:border-box!important}
+#view-stats .jr69-performance-crest img{display:block!important;width:42px!important;height:42px!important;object-fit:contain!important;object-position:center!important;padding:3px!important;box-sizing:border-box!important}
+#view-stats .jr64-performance article>.jr67-performance-crest,
+#view-stats .jr64-performance article>.jr66-performance-crest,
+#view-stats .jr64-performance article>img.jr64-crest{display:none!important}
+
+/* Tabla horizontal: conserva el gesto táctil y PTS al extremo derecho. */
+#view-table .jr64-table-wrap{overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-x pan-y!important}
+#view-table .jr64-table{min-width:1080px!important}
+#view-table .jr64-table th:last-child,#view-table .jr64-table td:last-child{position:sticky!important;right:0!important;z-index:7!important;background:#06100d!important}
+
+@media(max-width:650px){
+ #view-table .jr69-hero-motion{inset:-11%;animation-duration:10s}
+ #view-table .jr69-edge-dots{right:10px;top:18%;bottom:18%}
+ #view-table .jr69-edge-dots i{width:6px;height:6px}
+ #view-table .jr64-podium-card>.jr69-single-crest{width:44px!important;height:44px!important;min-width:44px!important;max-width:44px!important}
+ #view-stats .jr69-performance-crest{width:42px!important;height:42px!important;min-width:42px!important;max-width:42px!important}
+ #view-stats .jr69-performance-crest img{width:38px!important;height:38px!important}
+}
+@media(prefers-reduced-motion:reduce){#view-table .jr69-hero-motion,#view-table .jr69-edge-dots i{animation:none!important}}
