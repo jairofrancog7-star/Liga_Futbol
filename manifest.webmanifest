@@ -3,7 +3,7 @@
   "name": "Liga Municipal de Fútbol Juventino Rosas",
   "short_name": "Liga JR",
   "description": "Plataforma oficial de la Liga Municipal de Fútbol Juventino Rosas",
-  "start_url": "./?app=pwa&build=38-34",
+  "start_url": "./?app=pwa&build=38-35",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0a0a0c",
@@ -14,10 +14,10 @@
     {"src":"./icon-512.png","sizes":"512x512","type":"image/png"}
   ],
   "shortcuts": [
-    {"name":"Inicio","short_name":"Inicio","url":"./?app=pwa&build=38-34#home"},
-    {"name":"Partidos","short_name":"Partidos","url":"./?app=pwa&build=38-34#matches"},
-    {"name":"Tabla","short_name":"Tabla","url":"./?app=pwa&build=38-34#table"},
-    {"name":"Jugadores","short_name":"Jugadores","url":"./?app=pwa&build=38-34#players"},
-    {"name":"JR Control","short_name":"JR Control","url":"./?app=pwa&build=38-34#admin"}
+    {"name":"Inicio","short_name":"Inicio","url":"./?app=pwa&build=38-35#home"},
+    {"name":"Partidos","short_name":"Partidos","url":"./?app=pwa&build=38-35#matches"},
+    {"name":"Tabla","short_name":"Tabla","url":"./?app=pwa&build=38-35#table"},
+    {"name":"Jugadores","short_name":"Jugadores","url":"./?app=pwa&build=38-35#players"},
+    {"name":"JR Control","short_name":"JR Control","url":"./?app=pwa&build=38-35#admin"}
   ]
 }
