@@ -1,6 +1,6 @@
 {
-  "build": "38-39",
-  "webVersion": "38.39",
+  "build": "38-40",
+  "webVersion": "38.40",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -25,14 +25,14 @@
   },
   "publicRosterUi": "all-visible-public-names-no-200-row-limit-plus-cedula-links",
   "officialLogos": "team_logos snapshot + neutral placeholders where source has no image",
-  "credentials": "player-selector-photo-folio-team-category-season-status-public-validation-qr",
+  "credentials": "historic-horizontal-league-card-player-photo-team-category-season-folio",
   "privacy": "public GitHub Pages never stores CURP/INE/address/document images or private messaging credentials",
   "weatherUi": "match-field-hourly-risk-plus-full-hub",
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
   "americaVeteranos35Logo": "exact-user-upload-higgsfield-media-a33fddca-ab75-40eb-95de-5387ae52f1f9",
   "socialCards": "publicaciones/latest/",
-  "socialAutomation": "GitHub Actions generates modern tables and fixtures; WhatsApp/Facebook auto-send activates only when private Meta secrets are configured",
+  "socialAutomation": "GitHub Actions generates modern tables and fixtures; direct local share targets WhatsApp 4121715599; fully automatic media sending still requires private Meta API credentials",
   "fix33": "public-roster-coverage-america-v35-branding-social-publication-center-whatsapp-facebook-share",
   "fix34": "category-buttons-cleanup-remove-league-logo-keep-only-primera-fuerza-logo-fix-text-layout",
   "fix35": "full-public-roster-no-limit-all-public-cedulas-america-v35-social-card-automation",
@@ -40,5 +40,6 @@
   "fix37": "initial-america-logo-and-compact-buttons-pass",
   "fix38": "replace-wrong-america-logo-with-exact-first-user-image-and-restore-compact-category-row-with-cache-bust",
   "fix39": "exact-current-upload-america-logo-compact-category-and-more-buttons-bottom-nav-safe-functional-chips-publications-visible",
+  "fix40": "historic-credential-layout-category-buttons-5-3-2-direct-publication-upload-whatsapp-4121715599",
   "apkStatus": "unchanged-existing-binary"
 }
