@@ -9,7 +9,7 @@ const CAT_ORDER=['3','5','4','2','1'];
 const CAT_META={
  '3':{name:'Primera Fuerza',logo:'./assets/branding/primera-fuerza-hd.png'},
  '5':{name:'Intermedia',logo:'./assets/categories/intermedia.webp'},
- '4':{name:'Segunda Fuerza',logo:'./assets/categories/segunda-fuerza-user.png'},
+ '4':{name:'Segunda Fuerza',logo:'./assets/categories/segunda-fuerza.webp'},
  '2':{name:'Veteranos 35+',logo:'./assets/categories/veteranos-35-user.png'},
  '1':{name:'Veteranos 50+',logo:'./assets/categories/veteranos-50.webp'}
 };

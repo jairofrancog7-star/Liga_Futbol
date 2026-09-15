@@ -1,0 +1,48 @@
+/* Shared readable layout for desktop, mobile and Android WebView. */
+html body .topbar{flex-wrap:wrap!important;gap:12px!important;height:auto!important;position:relative!important}
+html body .top-actions{display:flex!important;flex-wrap:wrap!important;overflow:visible!important;width:auto!important;gap:8px!important}
+html body .top-actions button,html body .top-actions a{width:auto!important;min-width:44px!important;min-height:44px!important;height:auto!important;white-space:normal!important;padding:10px 14px!important;color:var(--text)!important;background:var(--surface2)!important}
+html body .brand-copy b{white-space:normal!important;line-height:1.3!important}
+html body #jr53TopCategoryHost .jr81-cat-btn{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"icon" "title" "phase" "stats"!important;gap:10px!important;height:auto!important;min-height:0!important;justify-items:start!important;align-content:start!important;overflow:visible!important}
+html body #jr53TopCategoryHost .jr81-cat-title{width:100%!important;min-width:0!important;font-size:16px!important;line-height:1.35!important;overflow-wrap:anywhere!important}
+html body #jr53TopCategoryHost .jr81-cat-phase{font-size:14px!important;line-height:1.4!important}
+html body #jr53TopCategoryHost .jr81-cat-stats{font-size:14px!important;gap:8px!important;width:100%!important}
+html body #jr53TopCategoryHost .jr81-cat-stats span{font-size:14px!important;line-height:1.4!important}
+html body #jr53TopCategoryHost .jr81-cat-btn>small,html body #jr53TopCategoryHost .jr81-cat-btn>.jr81-cat-summary{display:none!important}
+html body .section-title{gap:16px!important;flex-wrap:wrap!important;align-items:center!important;height:auto!important}
+html body .section-title h2,html body .section-title h3{line-height:1.35!important;flex:1 1 180px!important}
+html body .section-title button,html body .section-title a{position:relative!important;white-space:normal!important;height:auto!important;min-height:44px!important;line-height:1.4!important;padding:10px 14px!important;flex-shrink:0!important}
+html body .player-card,html body .player-row,html body .scorer-row{gap:14px!important;min-height:80px!important}
+html body #scorersList .row,html body #topScorers .row{gap:14px!important;flex-wrap:wrap!important}
+html body .player-info small,html body .player-info b,html body .scorer-info small{display:block!important;line-height:1.5!important;margin:5px 0!important}
+html body .bottom-nav{width:calc(100% - 16px)!important;max-width:650px!important;display:grid!important;gap:3px!important;padding:8px 4px!important}
+html body .bottom-nav .nav-btn{font-size:12px!important;letter-spacing:-.2px!important;white-space:normal!important;overflow-wrap:normal!important;line-height:1.4!important;padding:10px 1px!important;min-height:48px!important;color:var(--text)!important;background:var(--surface2)!important;height:auto!important;overflow:visible!important}
+html body .bottom-nav .nav-btn[data-view="stats"]{font-size:11px!important}
+html body.light{--bg:#eef3f7;--bg2:#fff;--surface:#fff;--surface2:#e5eef3;--text:#112735;--text2:#294455;--muted:#466172;background:#eef3f7!important;color:#112735!important}
+html body.light .card,html body.light .section.card,html body.light .row,html body.light .more-link,html body.light #jr53TopCategoryHost .jr81-cat-btn{background:#fff!important;color:#112735!important;border-color:#c5d5dd!important}
+html body.light #jr53TopCategoryHost .jr81-cat-title,html body.light #jr53TopCategoryHost .jr81-cat-phase,html body.light #jr53TopCategoryHost .jr81-cat-stats span{color:#112735!important}
+html body.light .topbar,html body.light .bottom-nav{background:#f3f7fa!important}
+html body.light .ghost-btn,html body.light .nav-btn{background:#e5eef3!important;color:#183546!important}
+html body.light .jr-motion-video,html body.light .jr-surface-video{opacity:.08!important}
+html body [data-jr59-official]>:not(.jr59-official){display:none!important}
+html body .jr59-official{display:block!important;margin:20px 0!important;padding:clamp(12px,3vw,28px)!important;background:linear-gradient(130deg,#040b35,#102680)!important;border:1px solid #3652ac!important;border-radius:20px!important;color:#fff!important;min-width:0!important}
+.jr59-official h2,.jr59-official h3{color:#fff!important;line-height:1.35!important;margin:8px 0 16px!important}
+.jr59-official p{color:#c5d7ff!important;line-height:1.6!important;margin:10px 0!important}
+.jr59-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;align-items:center}
+html body .jr59-toolbar button,html body .jr59-toolbar a{background:#e2f5ff!important;color:#09214b!important;border:1px solid #7ae9f5!important;border-radius:10px!important;padding:12px 16px!important;min-height:44px!important;white-space:normal!important;font-weight:800!important;text-decoration:none!important}
+.jr59-table-scroll{overflow-x:auto!important;width:100%!important;max-height:none!important}
+html body .jr59-official table{width:100%!important;min-width:700px!important;table-layout:auto!important;border-collapse:collapse!important;display:table!important;color:#fff!important}
+html body .jr59-official th,html body .jr59-official td{padding:12px 8px!important;height:auto!important;white-space:normal!important;color:#fff!important;display:table-cell!important;border-bottom:1px solid #33519a!important;font-size:14px!important}
+html body .jr59-official tbody tr{display:table-row!important;background:#101d59!important}
+html body .jr59-official tbody tr:nth-child(even){background:#172e77!important}
+.jr59-team{display:flex!important;gap:10px!important;align-items:center!important;min-width:145px!important;text-align:left!important}
+.jr59-crest{width:34px!important;height:34px!important;object-fit:contain!important;flex-shrink:0!important}
+.jr59-head{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.jr59-head img{width:64px;height:64px;object-fit:contain}.jr59-head div{flex:1;min-width:130px}
+.jr59-performance{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.jr59-performance article{padding:16px;border:1px solid #4563a5;border-radius:12px;background:#111c51}.jr59-performance progress{width:100%;accent-color:#46deee}
+.jr59-official label{display:grid;gap:7px;color:#fff}.jr59-official select,.jr59-official input{color:#10274d;background:white;border:1px solid #b7c9e5;padding:10px;max-width:100%;border-radius:8px}
+.jr59-dialog{width:min(680px,94vw);max-height:88vh;overflow:auto;padding:24px;border:1px solid #7ca5d3;border-radius:18px;background:var(--surface);color:var(--text);margin:auto}.jr59-dialog::backdrop{background:#000a}.jr59-dialog input{width:100%;padding:14px;margin:12px 0;background:var(--surface2);border:1px solid #789;border-radius:8px}.jr59-dialog button{padding:12px;min-height:44px}.jr59-dialog .jr59-result{display:block;width:100%;text-align:left;border-bottom:1px solid #789}
+html body #jr58MatchCenter .jr58-versus{grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr)!important}
+html body #jr58MatchCenter .jr58-team strong{white-space:normal!important;overflow:visible!important;line-height:1.4!important;overflow-wrap:anywhere!important}
+@media(max-width:650px){html body #jr53TopCategoryHost .jr81-cat-stats{grid-template-columns:1fr!important}html body .app{padding-left:12px!important;padding-right:12px!important}.jr59-table-scroll::before{content:'Desliza para ver todas las columnas →';display:block;font-size:13px;color:#b9dcff;padding:8px}.jr59-head img{width:48px;height:48px}}
+
+html body #topScorers b,html body #topScorers small{display:block!important;line-height:1.5!important;margin:4px 0!important}html body #topScorers .row>div{min-width:0!important}html body #topScorers .row{gap:14px!important}

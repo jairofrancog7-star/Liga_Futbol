@@ -1103,7 +1103,7 @@ window.__JR54OwnAmerica=true;
     <div style="display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap">
       <div>
         <div class="eyebrow">EVENTO PRINCIPAL</div>
-        <h2 style="margin:4px 0 0">Gran Final de Veteranos</h2>
+        <h2 style="margin:4px 0 0;display:flex;gap:12px;align-items:center"><img src="./assets/categories/torneo-veteranos-user.png" alt="Torneo Veteranos" style="width:56px;height:56px;object-fit:contain">Gran Final de Veteranos</h2>
         <p style="color:var(--muted);margin:8px 0 0">Torneo de Liga &middot; Sabado 12 de septiembre de 2026 &middot; 4:00 pm</p>
       </div>
       <span class="chip active">Campo 1 &middot; Unidad Deportiva Sur</span>
@@ -1615,7 +1615,7 @@ window.__JR54OwnAmerica=true;
         <div class="list-compact">
           <div class="row"><span style="font-size:13px">15:00 · Boavista vs Cerrito</span><strong style="color:var(--accent)">3–0 FINAL</strong></div>
           <div class="row"><span style="font-size:13px">Pozos vs Juventus</span><strong style="color:var(--live)">2–1 · 73'</strong></div>
-          <div class="row"><span style="font-size:13px">19:00 · América vs UCKA</span><strong style="color:var(--muted)">Próximo</strong></div>
+          <div class="row"><span style="font-size:13px">Consulta los partidos por categoría</span><strong style="color:var(--muted)">Próximo</strong></div>
         </div>
       </div>
     </div>
@@ -1968,7 +1968,7 @@ const baseTeams=[
  {name:"Juventus",icon:"⚪",pts:20,jj:9,g:6,e:2,p:1,gf:20,gc:9,form:["G","P","G","G","E"]},
  {name:"Boavista",icon:"🔵",pts:18,jj:9,g:5,e:3,p:1,gf:18,gc:10,form:["E","G","G","P","G"]},
  {name:"América",icon:"🟡",pts:16,jj:9,g:5,e:1,p:3,gf:17,gc:12,form:["P","G","E","G","P"]},
- {name:"UCKA Moscú",icon:"🔴",pts:13,jj:9,g:4,e:1,p:4,gf:14,gc:14,form:["G","P","P","G","E"]},
+ 
  {name:"Cerrito de Gasca",icon:"🟤",pts:9,jj:9,g:2,e:3,p:4,gf:10,gc:16,form:["P","E","P","G","E"]}
 ];
 const basePlayers=[
@@ -1981,7 +1981,6 @@ const baseMatches=[
  {status:"EN VIVO",time:"73'",home:"Pozos FC",away:"Juventus",score:"2 — 1",venue:"Campo Municipal"},
  {status:"FINAL",time:"Final",home:"Boavista",away:"Cerrito de Gasca",score:"3 — 0",venue:"Campo 1"},
  {status:"PRÓXIMO",time:"17:00",home:"América",away:"Valencia",score:"—",venue:"Campo 2"},
- {status:"PRÓXIMO",time:"19:00",home:"UCKA Moscú",away:"CSKA Moscú",score:"—",venue:"Campo Municipal"}
 ];
 const baseNews=[
  {type:"Aviso",title:"Cambios de horario y sedes",text:"Espacio para publicar comunicados oficiales de la jornada."},
@@ -2749,5 +2748,7 @@ if(hash&&document.getElementById("view-"+hash))showView(hash);
 <link rel="stylesheet" href="./assets/jr-v38-fix50-buttons.css?v=38-50-r1">
 <script defer src="./assets/jr-v38-fix50-buttons.js?v=38-50-r1"></script>
 
+<link rel="stylesheet" href="./assets/jr-v38-fix59.css?v=38-59">
+<script defer src="./assets/jr-v38-fix59.js?v=38-59"></script>
 </body>
 </html>

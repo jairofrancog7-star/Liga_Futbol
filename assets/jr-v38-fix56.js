@@ -10,8 +10,8 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const CATEGORY_LOGOS={
  'primera fuerza':'./assets/branding/primera-fuerza-hd.png?v='+BUILD,
  'intermedia':'./assets/categories/intermedia.webp?v='+BUILD,
- 'segunda fuerza':'./assets/categories/segunda-fuerza-v57.svg?v='+BUILD,
- 'veteranos 35+':'./assets/categories/veteranos-35-v57.svg?v='+BUILD,
+ 'segunda fuerza':'./assets/categories/segunda-fuerza.webp',
+ 'veteranos 35+':'./assets/categories/veteranos-35-user.png',
  'veteranos 50+':'./assets/categories/veteranos-50.webp?v='+BUILD
 };
 const TEAM_LOGOS={
@@ -135,8 +135,8 @@ function ensureCedulas(){
 }
 function patchBottomNav(){
  $$('.nav-btn').forEach(b=>{
-   if(norm(b.dataset.view)==='stats')b.textContent='Estadísticas';
-   if(norm(b.dataset.view)==='more')b.textContent='Más';
+   if(norm(b.dataset.view)==='stats' && b.textContent!=='Estadísticas')b.textContent='Estadísticas';
+   if(norm(b.dataset.view)==='more' && b.textContent!=='Más')b.textContent='Más';
  });
 }
 function run(){
