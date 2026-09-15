@@ -1,6 +1,6 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-38')return;
-const BUILD='38-38',INTERVAL=300000;let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-39')return;
+const BUILD='38-39',INTERVAL=300000;let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
