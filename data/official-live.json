@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-15T01:08:33Z",
-  "mode": "full",
+  "captured_at_utc": "2026-09-15T01:10:34Z",
+  "mode": "fast",
   "categories": {
     "1": {
       "id": 1,
@@ -11782,41 +11782,5 @@
     "primera_roster_unique": 291,
     "team_logos_known": 40,
     "categories": 5
-  },
-  "cedula_audit": {
-    "build": "38-35",
-    "range": [
-      1,
-      650
-    ],
-    "valid_public_cedulas": 80,
-    "summary": {
-      "Veteranos 50+": {
-        "cedulas": 15,
-        "public_names": 109,
-        "kept_previous": false
-      },
-      "Veteranos 35+": {
-        "cedulas": 0,
-        "public_names": 0,
-        "kept_previous": true
-      },
-      "Primera Fuerza": {
-        "cedulas": 20,
-        "public_names": 291,
-        "kept_previous": false
-      },
-      "Segunda Fuerza": {
-        "cedulas": 23,
-        "public_names": 312,
-        "kept_previous": false
-      },
-      "Intermedia": {
-        "cedulas": 22,
-        "public_names": 331,
-        "kept_previous": false
-      }
-    },
-    "privacy": "public sports data only; no CURP/INE/address/document images"
   }
 }
