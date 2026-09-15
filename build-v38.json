@@ -1,6 +1,6 @@
 {
-  "build": "38-47",
-  "webVersion": "38.47",
+  "build": "38-48",
+  "webVersion": "38.48",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-15",
@@ -44,8 +44,9 @@
   "fix42": "desktop-category-rail-local-group-detection-no-giant-card-no-right-cut-5-3-2-grid-cache-bust",
   "fix43": "replace-broken-legacy-category-rail-with-canonical-five-card-row-in-more-view",
   "fix44": "hard-detect-real-category-rail-by-content-hide-it-and-replace-with-five-card-grid-inline-styles",
-  "fix45": "stable-category-buttons-and-america-card-info-logo",
-  "fix46": "restore-america-logo-and-team-info",
-  "fix47": "fix-cache-version-drift-load-final-layer-last-and-repair-america-after-legacy-mutations",
+  "fix45": "category-buttons-only-no-america-mutation",
+  "fix46": "retired-from-loader-duplicate-america-layer",
+  "fix47": "retired-from-loader-duplicate-america-layer",
+  "fix48": "single-authoritative-america-card-replace-not-append-plus-cache-bust",
   "apkStatus": "unchanged-existing-binary"
 }
