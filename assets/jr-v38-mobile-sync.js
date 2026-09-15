@@ -1,6 +1,6 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-48')return;
-const BUILD='38-48',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-49')return;
+const BUILD='38-49',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
@@ -19,6 +19,8 @@ function injectFixes(){
  addCss('./assets/jr-v38-fix45-stability.css?v=38-48-r1','jr76'); addJs('./assets/jr-v38-fix45-stability.js?v=38-48-r1','jr76');
  /* FIX48 es la única capa que toca la tarjeta de América y se carga al final. */
  addCss('./assets/jr-v38-fix48-america-card.css?v=38-48-r1','jr79'); addJs('./assets/jr-v38-fix48-america-card.js?v=38-48-r1','jr79');
+ /* FIX49: botones en su lugar, al final. */
+ addCss('./assets/jr-v38-fix49-category-buttons.css?v=38-49-r1','jr80'); addJs('./assets/jr-v38-fix49-category-buttons.js?v=38-49-r1','jr80');
 }
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;

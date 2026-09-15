@@ -85,7 +85,7 @@ jobs:
           p=Path("index.html")
           s=p.read_text(encoding="utf-8")
 
-          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-48', s)
+          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-49', s)
           s=re.sub(r'jr-v38-fix43-category-row\.css\?v=[^"\']+', 'jr-v38-fix43-category-row.css?v=38-43-r2', s)
           s=re.sub(r'jr-v38-fix43-category-row\.js\?v=[^"\']+', 'jr-v38-fix43-category-row.js?v=38-43-r2', s)
 
@@ -102,12 +102,12 @@ jobs:
               s=re.sub(r'jr-v38-fix44-category-replace\.js\?v=[^"\']+', 'jr-v38-fix44-category-replace.js?v=38-44-r1', s)
 
           marker45='<!-- JR_V38_FIX45_DIRECT -->'
-          direct45='''\n<!-- JR_V38_FIX45_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix45-stability.css?v=38-48-r1">\n<script defer src="./assets/jr-v38-fix45-stability.js?v=38-48-r1"></script>\n'''
+          direct45='''\n<!-- JR_V38_FIX45_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix45-stability.css?v=38-49-r1">\n<script defer src="./assets/jr-v38-fix45-stability.js?v=38-49-r1"></script>\n'''
           if marker45 not in s:
               s=s.replace('</body>',direct45+'\n</body>')
           else:
-              s=re.sub(r'jr-v38-fix45-stability\.css\?v=[^"\']+', 'jr-v38-fix45-stability.css?v=38-48-r1', s)
-              s=re.sub(r'jr-v38-fix45-stability\.js\?v=[^"\']+', 'jr-v38-fix45-stability.js?v=38-48-r1', s)
+              s=re.sub(r'jr-v38-fix45-stability\.css\?v=[^"\']+', 'jr-v38-fix45-stability.css?v=38-49-r1', s)
+              s=re.sub(r'jr-v38-fix45-stability\.js\?v=[^"\']+', 'jr-v38-fix45-stability.js?v=38-49-r1', s)
 
           # Retirar por completo FIX46 y FIX47: ambos mutaban América y producían el cuadro duplicado.
           for n in ('46','47'):
@@ -121,9 +121,20 @@ jobs:
           s=re.sub(r'\n?<!-- JR_V38_FIX48_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
           s=re.sub(r'\n?<link[^>]+jr-v38-fix48-america-card\.css[^>]*>','',s)
           s=re.sub(r'\n?<script[^>]+jr-v38-fix48-america-card\.js[^>]*></script>','',s)
-          direct48='''\n<!-- JR_V38_FIX48_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-48-r1">\n<script defer src="./assets/jr-v38-fix48-america-card.js?v=38-48-r1"></script>\n'''
+          direct48='''\n<!-- JR_V38_FIX48_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-49-r1">\n<script defer src="./assets/jr-v38-fix48-america-card.js?v=38-49-r1"></script>\n'''
           s=s.replace('</body>',direct48+'\n</body>')
 
+          marker49='<!-- JR_V38_FIX49_DIRECT -->'
+          direct49='''
+<!-- JR_V38_FIX49_DIRECT -->
+<link rel="stylesheet" href="./assets/jr-v38-fix49-category-buttons.css?v=38-49-r1">
+<script defer src="./assets/jr-v38-fix49-category-buttons.js?v=38-49-r1"></script>
+'''
+          if marker49 not in s:
+              s=s.replace('</body>',direct49+'\n</body>')
+          else:
+              s=re.sub(r'jr-v38-fix49-category-buttons\.css\?v=[^"\']+', 'jr-v38-fix49-category-buttons.css?v=38-49-r1', s)
+              s=re.sub(r'jr-v38-fix49-category-buttons\.js\?v=[^"\']+', 'jr-v38-fix49-category-buttons.js?v=38-49-r1', s)
           p.write_text(s,encoding="utf-8",newline="\n")
           print('FIX48 activo: FIX46/FIX47 retirados y América queda en una sola capa')
 
@@ -152,7 +163,7 @@ jobs:
         run: |
           git config user.name "Liga JR Data Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png publicaciones/latest/ 2>/dev/null || true
+          git add index.html data/official-live.json assets/official-logos/ assets/branding/america-veteranos-35-user.png assets/jr-v38-fix49-category-buttons.css assets/jr-v38-fix49-category-buttons.js publicaciones/latest/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sin cambios públicos."
             exit 0
