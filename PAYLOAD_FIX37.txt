@@ -1,0 +1,24 @@
+V38 FIX37 — BOTONES RESTAURADOS + CREDENCIAL FÍSICA REAL
+
+BUILD WEB/PWA: 38-37
+APK: sin recompilar en este fix
+RAMA: feature/v38-fix37-buttons-real-credentials
+
+CAMBIOS
+- Corrige el tamaño de los botones de categorías: 5 por fila en PC; carrusel compacto en móvil.
+- Corrige Explora la liga para volver al tamaño pequeño previo a FIX36: hasta 12 accesos por fila en escritorio.
+- Tabla / Goleadores / Rendimiento siguen siendo botones funcionales.
+- Rediseña Credencial de jugador tomando como referencia directa las credenciales físicas compartidas por el usuario:
+  * Liga Municipal De Futbol / Juventino Rosas, A.C. arriba.
+  * categoría a la izquierda.
+  * foto del jugador a la derecha.
+  * escudo de la Liga abajo a la izquierda.
+  * equipo y nombre en la zona inferior.
+  * fondo tipo cancha o atardecer según categoría.
+- El QR y el folio digital quedan fuera del frente físico, en validación separada.
+- Reemplaza la tarjeta demo Jugador destacado / Pozos FC / LJR-00471 cuando aparece.
+- La foto seleccionada queda sólo en memoria del navegador y no se guarda en GitHub ni localStorage.
+- Las fotos privadas de referencia NO se incluyen en el repositorio ni en el payload.
+
+REFRESH AL PUBLICAR
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v37.html
