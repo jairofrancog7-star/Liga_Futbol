@@ -1,0 +1,44 @@
+PAYLOAD V38 FIX34 — BOTONES DE CATEGORÍA / PRIMERA FUERZA / REFRESH
+
+BUILD WEB/PWA: 38-34
+ANDROID APK: sin recompilar; continúa 1.4.0 / code 9.
+
+OBJETIVO
+- Corregir el cuadro/botón de Primera Fuerza.
+- Quitar el logo genérico “Liga Juventino Rosas” del botón de Primera Fuerza.
+- Dejar SOLO el logo oficial de Primera Fuerza en ese botón.
+- Quitar el logo genérico de Liga Juventino Rosas de los demás botones de categoría.
+- Reacomodar título, fase y métricas para que no se encimen, no se corten y se lean bien en PC y móvil.
+- No modificar las tarjetas de equipos ni los escudos de los clubes.
+
+ARCHIVOS PUBLICADOS
+- assets/jr-v38-fix34-category-cleanup.js
+- assets/jr-v38-fix34-category-cleanup.css
+- assets/jr-v38-mobile-sync.js
+- build-v38.json
+- manifest.webmanifest
+- refresh-v34.html
+- refresh-v33.html (redirige a la actualización nueva)
+- PAYLOAD_FIX34.txt
+- V38_FIX34_REFRESH.cmd
+
+CACHE / PWA
+refresh-v34.html:
+- desregistra Service Workers anteriores;
+- borra Cache Storage;
+- vuelve a pedir los archivos FIX34 con cache: reload;
+- NO borra localStorage del usuario;
+- abre la página con refresh=38-34 y un nocache único;
+- entra a JR Control para revisar inmediatamente los botones.
+
+COMPATIBILIDAD
+- El FIX34 se ejecuta después de los parches anteriores y vuelve a aplicar la limpieza después de los eventos de navegación/categoría para evitar que una versión vieja vuelva a insertar el logo genérico.
+- Primera Fuerza usa assets/branding/primera-fuerza-hd.png.
+- Los demás botones conservan únicamente un icono propio si ya existe; si solo tenían el logo de la liga, ese logo se elimina y el texto ocupa correctamente el espacio.
+
+CMD
+El CMD FIX33 anterior terminaba después de “Presione una tecla para continuar” porque el comando PAUSE funciona así: al pulsar una tecla, el script continúa y finaliza.
+El nuevo V38_FIX34_REFRESH.cmd NO se cierra con una tecla cualquiera. Al final permanece abierto y solamente se cierra cuando se escribe SALIR.
+
+PUBLICACIÓN
+Los archivos de este FIX34 se escribieron directamente en la rama main de GitHub, según solicitud del usuario. GitHub Pages puede tardar unos minutos en reflejar cada commit.
