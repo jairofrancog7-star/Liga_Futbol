@@ -85,12 +85,14 @@ jobs:
           p=Path("index.html")
           s=p.read_text(encoding="utf-8")
           s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-43', s)
+          s=re.sub(r'jr-v38-fix43-category-row\.css\?v=[^"\']+', 'jr-v38-fix43-category-row.css?v=38-43-r2', s)
+          s=re.sub(r'jr-v38-fix43-category-row\.js\?v=[^"\']+', 'jr-v38-fix43-category-row.js?v=38-43-r2', s)
           marker='<!-- JR_V38_FIX43_DIRECT -->'
           if marker not in s:
-              direct='''\n<!-- JR_V38_FIX43_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix43-category-row.css?v=38-43-r1">\n<script defer src="./assets/jr-v38-fix43-category-row.js?v=38-43-r1"></script>\n'''
+              direct='''\n<!-- JR_V38_FIX43_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix43-category-row.css?v=38-43-r2">\n<script defer src="./assets/jr-v38-fix43-category-row.js?v=38-43-r2"></script>\n'''
               s=s.replace('</body>',direct+'\n</body>')
           p.write_text(s,encoding="utf-8",newline="\n")
-          print('FIX43 loader activo en index.html')
+          print('FIX43 R2 loader activo en index.html')
 
       - name: Generar tablas, resultados y jornadas premium
         run: python scripts/generate_social_cards_v36.py
