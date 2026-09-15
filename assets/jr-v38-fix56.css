@@ -1,0 +1,63 @@
+/* V38 FIX56 — credenciales reales de referencia, logos de tabla, categorías y cédulas */
+:root{--jr56-green:#2fe39a;--jr56-panel:#12141a;--jr56-border:rgba(94,255,180,.22)}
+/* 1) En Inicio: quitar la fila de chips pequeños y dejar las tarjetas grandes */
+#view-home #categoryBar,
+#view-home .v21-category-tabs,
+#view-home #v25TableCats,
+#view-home .jr53-small-category-row{display:none!important}
+#jr53TopCategoryHost,
+#jr81MoreCategoryHost,
+#jr81TeamsCategoryHost{display:block!important;visibility:visible!important;opacity:1!important}
+#jr53TopCategoryHost .jr81-cat-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important}
+#jr53TopCategoryHost .jr81-cat-btn{min-width:0!important;overflow:hidden!important}
+#jr53TopCategoryHost .jr81-cat-icon img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;opacity:1!important;visibility:visible!important}
+
+/* 2) Logos reales en Tabla */
+#view-table .jr56-team-name{display:inline-flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
+#view-table .jr56-team-logo{width:34px!important;height:34px!important;object-fit:contain!important;flex:0 0 34px!important;border-radius:9px!important;background:#050908!important;border:1px solid rgba(71,255,169,.18)!important;padding:2px!important}
+#view-table .jr56-team-name>span{min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important}
+#view-table .jr56-rank-logo{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:9px!important}
+
+/* 3) Barra inferior: texto completo y botones funcionales */
+.bottom-nav,.mobile-nav,.bottom-tabs,nav.bottom{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+.nav-btn{min-width:0!important;padding:10px 6px!important;font-size:clamp(11px,3.4vw,15px)!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important}
+@media(max-width:390px){.nav-btn{font-size:11px!important;letter-spacing:-.2px!important;padding-inline:3px!important}}
+
+/* 4) Credenciales: usar las imágenes reales aportadas por el usuario */
+#jr56CredentialGallery{margin-top:14px}
+.jr56-cred-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.jr56-cred-head h3{margin:0;font-size:clamp(18px,4.2vw,28px)}
+.jr56-cred-head p{margin:4px 0 0;color:var(--muted,#9aa2ad);font-size:12px}
+.jr56-cred-filters{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:thin}
+.jr56-cred-filter{appearance:none;border:1px solid var(--jr56-border);background:#0d1013;color:#fff;border-radius:999px;padding:9px 13px;font-weight:800;white-space:nowrap;cursor:pointer}
+.jr56-cred-filter.active{border-color:var(--jr56-green);box-shadow:0 0 0 1px rgba(47,227,154,.2) inset}
+.jr56-cred-groups{display:grid;gap:18px}
+.jr56-cred-group{min-width:0}
+.jr56-cred-group h4{margin:0 0 8px;color:#fff;font-size:15px}
+.jr56-cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.jr56-cred-card{display:block;border:1px solid var(--jr56-border);border-radius:16px;overflow:hidden;background:#050807;text-decoration:none!important;color:#fff!important}
+.jr56-cred-card img{display:block;width:100%;aspect-ratio:1.56/1;object-fit:cover;background:#07100c}
+.jr56-cred-meta{padding:10px 12px;display:grid;gap:2px}
+.jr56-cred-meta b{font-size:14px}
+.jr56-cred-meta span{font-size:11px;color:#b8c3bd}
+
+/* 5) Cédulas oficiales en Partidos */
+#jr56CedulaToolbar{display:flex!important;gap:8px!important;flex-wrap:wrap!important;align-items:center!important;margin:8px 0 14px!important}
+#jr56CedulaToolbar button{appearance:none;border:1px solid rgba(47,227,154,.42);background:#0a1510;color:#fff;border-radius:13px;padding:11px 14px;font-weight:900;cursor:pointer}
+#jr56CedulaPanel{display:none;margin:10px 0 18px;border:1px solid var(--jr56-border);background:rgba(4,10,7,.86);border-radius:18px;padding:14px}
+#jr56CedulaPanel.open{display:block}
+.jr56-cedula-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+.jr56-cedula-title h3{margin:0;font-size:18px}
+.jr56-cedula-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:9px}
+.jr56-cedula-item{display:grid;gap:4px;border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:10px;background:#101319;color:#fff;text-decoration:none!important}
+.jr56-cedula-item strong{font-size:13px}
+.jr56-cedula-item span{font-size:11px;color:#aeb9b3}
+.jr56-cedula-item em{font-size:11px;color:var(--jr56-green);font-style:normal}
+
+/* Mobile */
+@media(max-width:800px){
+ #jr53TopCategoryHost .jr81-cat-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #jr53TopCategoryHost .jr81-cat-btn{min-height:132px!important}
+ #view-table .jr56-team-logo{width:30px!important;height:30px!important;flex-basis:30px!important}
+ .jr56-cred-grid{grid-template-columns:1fr!important}
+}
