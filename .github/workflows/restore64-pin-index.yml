@@ -1,4 +1,4 @@
-name: Restore67 pin regenerated views
+name: Restore68 pin regenerated views
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Pin restore67 directly in index
+      - name: Pin restore68 directly in index
         shell: bash
         run: |
           python - <<'PY'
@@ -24,7 +24,7 @@ jobs:
           import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
-          V='38-67-r2'
+          V='38-68-r1'
           s=re.sub(r'\./assets/jr-v38-fix54\.js\?v=[^"\']+','./assets/jr-v38-fix54.js?v='+V,s)
           s=re.sub(r'\./assets/jr-v38-restore64-exact\.css\?v=[^"\']+','./assets/jr-v38-restore64-exact.css?v='+V,s)
           s=re.sub(r'\./assets/jr-v38-restore64-exact\.js\?v=[^"\']+','./assets/jr-v38-restore64-exact.js?v='+V,s)
@@ -34,14 +34,17 @@ jobs:
           s=re.sub(r'\./assets/jr-v38-restore66-polish\.js\?v=[^"\']+','./assets/jr-v38-restore66-polish.js?v='+V,s)
           css67='<link rel="stylesheet" href="./assets/jr-v38-restore67-regenerate.css?v='+V+'" data-jr67-direct="1">'
           js67='<script defer src="./assets/jr-v38-restore67-regenerate.js?v='+V+'" data-jr67-direct="1"></script>'
-          if 'jr-v38-restore67-regenerate.css' not in s:
-              s=s.replace('</head>',css67+'\n</head>',1)
-          else:
-              s=re.sub(r'<link[^>]+jr-v38-restore67-regenerate\.css\?v=[^"\']+[^>]*>',css67,s)
-          if 'jr-v38-restore67-regenerate.js' not in s:
-              s=s.replace('</body>',js67+'\n</body>',1)
-          else:
-              s=re.sub(r'<script[^>]+jr-v38-restore67-regenerate\.js\?v=[^"\']+[^>]*></script>',js67,s)
+          css68='<link rel="stylesheet" href="./assets/jr-v38-restore68-table-motion.css?v='+V+'" data-jr68-direct="1">'
+          js68='<script defer src="./assets/jr-v38-restore68-table-motion.js?v='+V+'" data-jr68-direct="1"></script>'
+          if 'jr-v38-restore67-regenerate.css' not in s:s=s.replace('</head>',css67+'\n</head>',1)
+          else:s=re.sub(r'<link[^>]+jr-v38-restore67-regenerate\.css\?v=[^"\']+[^>]*>',css67,s)
+          if 'jr-v38-restore68-table-motion.css' not in s:s=s.replace('</head>',css68+'\n</head>',1)
+          else:s=re.sub(r'<link[^>]+jr-v38-restore68-table-motion\.css\?v=[^"\']+[^>]*>',css68,s)
+          if 'jr-v38-restore67-regenerate.js' not in s:s=s.replace('</body>',js67+'\n</body>',1)
+          else:s=re.sub(r'<script[^>]+jr-v38-restore67-regenerate\.js\?v=[^"\']+[^>]*></script>',js67,s)
+          if 'jr-v38-restore68-table-motion.js' not in s:s.replace('</body>',js68+'\n</body>',1)
+          if 'jr-v38-restore68-table-motion.js' not in s:s=s.replace('</body>',js68+'\n</body>',1)
+          else:s=re.sub(r'<script[^>]+jr-v38-restore68-table-motion\.js\?v=[^"\']+[^>]*></script>',js68,s)
           p.write_text(s,encoding='utf-8')
           PY
       - name: Commit index pin
@@ -54,5 +57,5 @@ jobs:
           git config user.name 'Liga JR Restore Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add index.html
-          git commit -m 'restore67-r2: stabilize logos swipe cedulas and table motion'
+          git commit -m 'restore68: pin complete logos form badges and hero edge motion'
           git push origin HEAD:main
