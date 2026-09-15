@@ -1,7 +1,11 @@
 (()=>{'use strict';
 if(window.JRMobileRefresh)return;
-const BUILD='38-32',INTERVAL=300000;let last=0,busy=false;
+const BUILD='38-33',INTERVAL=300000;let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
+function injectFix33(){
+ if(!document.querySelector('link[data-jr65]')){const l=document.createElement('link');l.rel='stylesheet';l.href='./assets/jr-v38-fix33-social.css?v='+BUILD;l.dataset.jr65='1';document.head.appendChild(l)}
+ if(!document.querySelector('script[data-jr65]')){const s=document.createElement('script');s.src='./assets/jr-v38-fix33-social.js?v='+BUILD;s.defer=true;s.dataset.jr65='1';document.head.appendChild(s)}
+}
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
  busy=true;last=Date.now();const status=document.getElementById('jr57Status');
@@ -12,6 +16,6 @@ async function check(manual=false){
  }else if(manual&&status)status.textContent='Versión '+BUILD+' actualizada.';
  }catch(_){if(manual&&status)status.textContent='No se pudo comprobar la versión. Revisa tu conexión.'}finally{busy=false}
 }
-window.JRMobileRefresh={check,build:BUILD};check();
+window.JRMobileRefresh={check,build:BUILD};injectFix33();check();
 addEventListener('focus',()=>check());document.addEventListener('visibilitychange',()=>{if(!document.hidden)check()});
 })();
