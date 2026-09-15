@@ -15,6 +15,8 @@ function injectFixes(){
  addJs('./assets/jr-v38-fix36.js?v='+BUILD,'jr68');
  addCss('./assets/jr-v38-fix37.css?v='+BUILD,'jr70');
  addJs('./assets/jr-v38-fix37.js?v='+BUILD,'jr70');
+ addCss('./assets/jr-v38-fix39-credential.css?v='+BUILD,'jr72');
+ addJs('./assets/jr-v38-fix39-credential.js?v='+BUILD,'jr72');
 }
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
