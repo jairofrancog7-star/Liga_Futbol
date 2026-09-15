@@ -1,10 +1,11 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-44')return;
-const BUILD='38-44',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-45')return;
+const BUILD='38-45',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
 function injectFixes(){
+ addCss('./assets/jr-v38-fix45-stability.css?v=38-45-r1','jr76'); addJs('./assets/jr-v38-fix45-stability.js?v=38-45-r1','jr76');
  addCss('./assets/jr-v38-fix33-social.css?v='+BUILD,'jr65'); addJs('./assets/jr-v38-fix33-social.js?v='+BUILD,'jr65');
  addCss('./assets/jr-v38-fix34-category-cleanup.css?v='+BUILD,'jr66'); addJs('./assets/jr-v38-fix34-category-cleanup.js?v='+BUILD,'jr66');
  addCss('./assets/jr-v38-fix35-roster-social.css?v='+BUILD,'jr67'); addJs('./assets/jr-v38-fix35-roster-social.js?v='+BUILD,'jr67');
