@@ -85,7 +85,7 @@ jobs:
           p=Path("index.html")
           s=p.read_text(encoding="utf-8")
 
-          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-50', s)
+          s=re.sub(r'jr-v38-mobile-sync\.js\?v=[^"\']+', 'jr-v38-mobile-sync.js?v=38-55', s)
           s=re.sub(r'jr-v38-fix43-category-row\.css\?v=[^"\']+', 'jr-v38-fix43-category-row.css?v=38-43-r2', s)
           s=re.sub(r'jr-v38-fix43-category-row\.js\?v=[^"\']+', 'jr-v38-fix43-category-row.js?v=38-43-r2', s)
 
@@ -116,7 +116,7 @@ jobs:
           s=re.sub(r'\n?<!-- JR_V38_FIX48_DIRECT -->.*?(?=\n<!-- JR_V38_FIX|\n</body>)','',s,flags=re.S)
           s=re.sub(r'\n?<link[^>]+jr-v38-fix48-america-card\.css[^>]*>','',s)
           s=re.sub(r'\n?<script[^>]+jr-v38-fix48-america-card\.js[^>]*></script>','',s)
-          direct48='''\n<!-- JR_V38_FIX48_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-51-r1">\n<script defer src="./assets/jr-v38-fix48-america-card.js?v=38-51-r1"></script>\n'''
+          direct48='''\n<!-- JR_V38_FIX48_DIRECT -->\n<link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-51-r1">\n<script defer src="./assets/jr-v38-fix48-america-card.js?v=38-54"></script>\n'''
           s=s.replace('</body>',direct48+'\n</body>')
 
           # FIX49 apuntaba sólo a Más. Se retira del loader.
