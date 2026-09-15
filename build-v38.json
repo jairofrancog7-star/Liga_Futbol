@@ -30,7 +30,7 @@
   "weatherUi": "match-field-hourly-risk-plus-full-hub",
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
-  "americaVeteranos35Logo": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/e472c275-02fa-4c45-a8f7-7bd4d7bbb5be.png",
+  "americaVeteranos35Logo": "assets/branding/america-veteranos-35-user.png",
   "socialCards": "publicaciones/latest/",
   "socialAutomation": "GitHub Actions generates modern tables and fixtures; WhatsApp/Facebook auto-send activates only when private Meta secrets are configured",
   "fix33": "public-roster-coverage-america-v35-branding-social-publication-center-whatsapp-facebook-share",
