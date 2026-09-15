@@ -14,8 +14,11 @@ Correccion unica:
 - Se elimina el cuadro vacio y no se modifican tablas, botones ni otros equipos.
 - Se agrega cache-busting V38 FIX51 para que el cambio se vea.
 
-Enlace directo:
-https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-51#more
+Enlace directo para limpiar cache y abrir la tarjeta:
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v51.html?force=2026091501#refresh
+
+Despues de limpiar cache abre automaticamente:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-51#teams
 
 Archivo de apertura para Windows:
 V38_FIX51_AMERICA_LOGO_REFRESH.cmd

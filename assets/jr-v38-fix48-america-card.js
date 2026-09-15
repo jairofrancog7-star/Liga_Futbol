@@ -1,7 +1,7 @@
 /* V38 FIX48 — tarjeta canónica de América. Reemplaza el contenido viejo, no lo apila. */
 (()=>{'use strict';
 if(window.__JR79Fix48)return;window.__JR79Fix48=true;
-const BUILD='38-48-r1';
+const BUILD='38-51-r1';
 const PNG='https://jairofrancog7-star.github.io/Liga_Futbol/assets/branding/america-veteranos-35-user.png?v='+BUILD;
 const SVG='https://jairofrancog7-star.github.io/Liga_Futbol/assets/branding/america-veteranos-35.svg?v='+BUILD;
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
