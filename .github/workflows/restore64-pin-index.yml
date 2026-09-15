@@ -1,4 +1,4 @@
-name: Restore65 pin exact table and partidos views
+name: Restore66 pin table partidos and polish views
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Pin restore65 directly in index
+      - name: Pin restore66 directly in index
         shell: bash
         run: |
           python - <<'PY'
@@ -24,19 +24,17 @@ jobs:
           import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
-          s=re.sub(r'\./assets/jr-v38-fix54\.js\?v=[^"\']+','./assets/jr-v38-fix54.js?v=38-65-r1',s)
-          css64='<link rel="stylesheet" href="./assets/jr-v38-restore64-exact.css?v=38-64-r1" data-jr64-direct="1">'
-          js64='<script defer src="./assets/jr-v38-restore64-exact.js?v=38-64-r1" data-jr64-direct="1"></script>'
-          css65='<link rel="stylesheet" href="./assets/jr-v38-restore65-partidos.css?v=38-65-r1" data-jr65-direct="1">'
-          js65='<script defer src="./assets/jr-v38-restore65-partidos.js?v=38-65-r1" data-jr65-direct="1"></script>'
-          if 'jr-v38-restore64-exact.css?v=38-64-r1' not in s:
-              s=s.replace('</head>',css64+'\n</head>',1)
-          if 'jr-v38-restore65-partidos.css?v=38-65-r1' not in s:
-              s=s.replace('</head>',css65+'\n</head>',1)
-          if 'jr-v38-restore64-exact.js?v=38-64-r1' not in s:
-              s=s.replace('</body>',js64+'\n</body>',1)
-          if 'jr-v38-restore65-partidos.js?v=38-65-r1' not in s:
-              s=s.replace('</body>',js65+'\n</body>',1)
+          s=re.sub(r'\./assets/jr-v38-fix54\.js\?v=[^"\']+','./assets/jr-v38-fix54.js?v=38-66-r1',s)
+          s=re.sub(r'\./assets/jr-v38-restore64-exact\.css\?v=[^"\']+','./assets/jr-v38-restore64-exact.css?v=38-66-r1',s)
+          s=re.sub(r'\./assets/jr-v38-restore64-exact\.js\?v=[^"\']+','./assets/jr-v38-restore64-exact.js?v=38-66-r1',s)
+          s=re.sub(r'\./assets/jr-v38-restore65-partidos\.css\?v=[^"\']+','./assets/jr-v38-restore65-partidos.css?v=38-66-r1',s)
+          s=re.sub(r'\./assets/jr-v38-restore65-partidos\.js\?v=[^"\']+','./assets/jr-v38-restore65-partidos.js?v=38-66-r1',s)
+          css66='<link rel="stylesheet" href="./assets/jr-v38-restore66-polish.css?v=38-66-r1" data-jr66-direct="1">'
+          js66='<script defer src="./assets/jr-v38-restore66-polish.js?v=38-66-r1" data-jr66-direct="1"></script>'
+          if 'jr-v38-restore66-polish.css?v=38-66-r1' not in s:
+              s=s.replace('</head>',css66+'\n</head>',1)
+          if 'jr-v38-restore66-polish.js?v=38-66-r1' not in s:
+              s=s.replace('</body>',js66+'\n</body>',1)
           p.write_text(s,encoding='utf-8')
           PY
       - name: Commit index pin
@@ -49,5 +47,5 @@ jobs:
           git config user.name 'Liga JR Restore Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add index.html
-          git commit -m 'restore65: pin partidos jornada cards in index'
+          git commit -m 'restore66: polish stars logos icons and table swipe'
           git push origin HEAD:main
