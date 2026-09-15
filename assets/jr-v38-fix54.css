@@ -1,4 +1,5 @@
 /* One top category rail; no legacy category decorators. */
+html body .jr60-category-meta{display:none!important}
 html body #jr53TopCategoryHost{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;inset:auto!important;width:100%!important;max-width:100%!important;height:auto!important;min-width:0!important;transform:none!important;overflow:visible!important;margin:12px 0 20px!important}
 html body #jr53TopCategoryHost>div{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;width:100%!important;gap:10px!important}
 html body #jr53TopCategoryHost button{display:flex!important;flex-direction:column!important;align-items:flex-start!important;position:relative!important;inset:auto!important;width:100%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:100px!important;transform:none!important;overflow:visible!important;padding:12px!important;white-space:normal!important;border-radius:16px!important;background:#14191b!important;color:#fff!important}
