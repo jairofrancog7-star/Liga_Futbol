@@ -1,6 +1,6 @@
 {
-  "build": "38-43",
-  "webVersion": "38.43",
+  "build": "38-44",
+  "webVersion": "38.44",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-15",
@@ -43,5 +43,6 @@
   "fix40": "historic-credential-layout-category-buttons-5-3-2-direct-publication-upload-whatsapp-4121715599",
   "fix42": "desktop-category-rail-local-group-detection-no-giant-card-no-right-cut-5-3-2-grid-cache-bust",
   "fix43": "replace-broken-legacy-category-rail-with-canonical-five-card-row-in-more-view",
+  "fix44": "hard-detect-real-category-rail-by-content-hide-it-and-replace-with-five-card-grid-inline-styles",
   "apkStatus": "unchanged-existing-binary"
 }
