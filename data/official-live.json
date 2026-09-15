@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-15T01:03:18Z",
-  "mode": "fast",
+  "captured_at_utc": "2026-09-15T01:05:03Z",
+  "mode": "full",
   "categories": {
     "1": {
       "id": 1,
@@ -1013,7 +1013,8 @@
           "Miguel Velazquez Vargas",
           "Alejandro Velazquez Vargas",
           "Miguel ANgel Lopez Zarazua",
-          "Antonio Guerrero Rico"
+          "Antonio Guerrero Rico",
+          "Gumersindo Granados Ramirez S"
         ]
       },
       "player_usage": {
@@ -1520,7 +1521,7 @@
         "GUMERSINDO GRANADOS RAMIREZ": {
           "name": "Gumersindo Granados Ramirez",
           "team": "LA ESPERANZA",
-          "cedulas": 5
+          "cedulas": 4
         },
         "MIGUEL MERINO PENA": {
           "name": "Miguel Merino Peña",
@@ -1561,6 +1562,11 @@
           "name": "Antonio Guerrero Rico",
           "team": "LA ESPERANZA",
           "cedulas": 5
+        },
+        "GUMERSINDO GRANADOS RAMIREZ S": {
+          "name": "Gumersindo Granados Ramirez S",
+          "team": "LA ESPERANZA",
+          "cedulas": 1
         }
       },
       "cedulas": [
@@ -1687,7 +1693,7 @@
         14,
         15
       ],
-      "public_player_count_scraped": 109
+      "public_player_count_scraped": 110
     },
     "2": {
       "id": 2,
@@ -11782,5 +11788,41 @@
     "primera_roster_unique": 291,
     "team_logos_known": 40,
     "categories": 5
+  },
+  "cedula_audit": {
+    "build": "38-35",
+    "range": [
+      1,
+      650
+    ],
+    "valid_public_cedulas": 80,
+    "summary": {
+      "Veteranos 50+": {
+        "cedulas": 15,
+        "public_names": 110,
+        "kept_previous": false
+      },
+      "Veteranos 35+": {
+        "cedulas": 0,
+        "public_names": 0,
+        "kept_previous": true
+      },
+      "Primera Fuerza": {
+        "cedulas": 20,
+        "public_names": 291,
+        "kept_previous": false
+      },
+      "Segunda Fuerza": {
+        "cedulas": 23,
+        "public_names": 312,
+        "kept_previous": false
+      },
+      "Intermedia": {
+        "cedulas": 22,
+        "public_names": 331,
+        "kept_previous": false
+      }
+    },
+    "privacy": "public sports data only; no CURP/INE/address/document images"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "build": "38-35",
+  "generated_at": "2026-09-15T01:06:04.891386+00:00",
+  "files": [
+    "publicaciones/latest/tabla-veteranos-50.png",
+    "publicaciones/latest/jornada-veteranos-50.png",
+    "publicaciones/latest/tabla-primera-fuerza.png",
+    "publicaciones/latest/jornada-primera-fuerza.png",
+    "publicaciones/latest/tabla-segunda-fuerza.png",
+    "publicaciones/latest/jornada-segunda-fuerza.png",
+    "publicaciones/latest/tabla-intermedia.png",
+    "publicaciones/latest/jornada-intermedia.png",
+    "publicaciones/latest/resumen-tablas.png",
+    "publicaciones/latest/resumen-jornada.png",
+    "publicaciones/latest/comunicado-america-veteranos-35.png"
+  ],
+  "source": "data/official-live.json"
+}
