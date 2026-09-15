@@ -17,13 +17,16 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.62 loader — restaura tabla física, estadísticas y banners estáticos; NO carga FIX58. */
+/* V38.63 loader — restaura tabla física, estadísticas y banners estáticos; NO carga FIX58. */
 (()=>{'use strict';
-if(window.__JR62_LOADER)return;window.__JR62_LOADER=true;
-const VERSION='38-62-r1';
+if(window.__JR63_LOADER)return;window.__JR63_LOADER=true;
+const VERSION='38-63-r1';
 function ensure(){
  if(!document.querySelector('link[data-jr62-loader]')){
    const l=document.createElement('link');l.rel='stylesheet';l.href='./assets/jr-v38-restore62.css?v='+VERSION;l.dataset.jr62Loader='1';document.head.append(l);
+ }
+ if(!document.querySelector('link[data-jr63-visible]')){
+   const l=document.createElement('link');l.rel='stylesheet';l.href='./assets/jr-v38-restore63-visible.css?v='+VERSION;l.dataset.jr63Visible='1';document.head.append(l);
  }
  if(!document.querySelector('script[data-jr62-loader]')){
    const s=document.createElement('script');s.src='./assets/jr-v38-restore62.js?v='+VERSION;s.defer=true;s.dataset.jr62Loader='1';document.body.append(s);
