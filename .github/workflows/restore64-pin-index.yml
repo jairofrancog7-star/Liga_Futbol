@@ -1,0 +1,46 @@
+name: Restore64 pin exact table views
+
+on:
+  push:
+    paths:
+      - '.github/workflows/restore64-pin-index.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Pin restore64 directly in index
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('./assets/jr-v38-fix54.js?v=38-55','./assets/jr-v38-fix54.js?v=38-64-r1')
+          css='<link rel="stylesheet" href="./assets/jr-v38-restore64-exact.css?v=38-64-r1" data-jr64-direct="1">'
+          js='<script defer src="./assets/jr-v38-restore64-exact.js?v=38-64-r1" data-jr64-direct="1"></script>'
+          if 'jr-v38-restore64-exact.css?v=38-64-r1' not in s:
+              s=s.replace('</head>',css+'\n</head>',1)
+          if 'jr-v38-restore64-exact.js?v=38-64-r1' not in s:
+              s=s.replace('</body>',js+'\n</body>',1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit index pin
+        shell: bash
+        run: |
+          if git diff --quiet -- index.html; then
+            echo 'index already pinned'
+            exit 0
+          fi
+          git config user.name 'Liga JR Restore Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          git commit -m 'restore64: pin exact table and stats views in index'
+          git push origin HEAD:main
