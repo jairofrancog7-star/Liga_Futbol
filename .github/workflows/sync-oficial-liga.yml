@@ -74,8 +74,8 @@ jobs:
       - name: Normalizar variantes públicas documentadas
         run: python scripts/normalize_public_rosters_v35.py
 
-      - name: Generar tablas y jornadas modernas
-        run: python scripts/generate_social_cards_v35.py
+      - name: Generar tablas, resultados y jornadas premium
+        run: python scripts/generate_social_cards_v36.py
 
       - name: Validar snapshot
         shell: python
@@ -104,7 +104,7 @@ jobs:
             echo "Sin cambios públicos."
             exit 0
           fi
-          git commit -m "Data: sync cedulas and social cards"
+          git commit -m "Data: sync cedulas and FIX36 social cards"
           git push origin HEAD:main
 
       - name: Envío opcional WhatsApp y Facebook
@@ -122,6 +122,7 @@ jobs:
           GRAPH="${META_GRAPH_VERSION:-v23.0}"
           send_wa(){
             FILE="$1"; CAP="$2"
+            [[ ! -f "$FILE" ]] && { echo "WhatsApp: archivo no existe $FILE"; return; }
             RESP=$(curl -sS -X POST "https://graph.facebook.com/$GRAPH/$WHATSAPP_PHONE_NUMBER_ID/media" -H "Authorization: Bearer $WHATSAPP_TOKEN" -F "messaging_product=whatsapp" -F "file=@$FILE")
             MID=$(python -c "import json,sys;print(json.loads(sys.argv[1]).get('id',''))" "$RESP" 2>/dev/null)
             [[ -z "$MID" ]] && { echo "WhatsApp: no se pudo subir $FILE"; return; }
@@ -131,12 +132,15 @@ jobs:
           if [[ -n "$WHATSAPP_TOKEN" && -n "$WHATSAPP_PHONE_NUMBER_ID" && -n "$WHATSAPP_TO" ]]; then
             send_wa publicaciones/latest/resumen-jornada.png "Liga Juventino Rosas · próxima jornada"
             send_wa publicaciones/latest/resumen-tablas.png "Liga Juventino Rosas · tablas actualizadas"
+            send_wa publicaciones/latest/resumen-resultados.png "Liga Juventino Rosas · resultados"
           else
             echo "WhatsApp automático pendiente: faltan secrets privados."
           fi
           if [[ -n "$FACEBOOK_PAGE_ID" && -n "$FACEBOOK_PAGE_TOKEN" ]]; then
-            curl -sS -X POST "https://graph.facebook.com/$GRAPH/$FACEBOOK_PAGE_ID/photos" -F "source=@publicaciones/latest/resumen-jornada.png" -F "caption=Liga Juventino Rosas · próxima jornada" -F "access_token=$FACEBOOK_PAGE_TOKEN" >/dev/null
-            curl -sS -X POST "https://graph.facebook.com/$GRAPH/$FACEBOOK_PAGE_ID/photos" -F "source=@publicaciones/latest/resumen-tablas.png" -F "caption=Liga Juventino Rosas · tablas actualizadas" -F "access_token=$FACEBOOK_PAGE_TOKEN" >/dev/null
+            for ITEM in "resumen-jornada.png|Liga Juventino Rosas · próxima jornada" "resumen-tablas.png|Liga Juventino Rosas · tablas actualizadas" "resumen-resultados.png|Liga Juventino Rosas · resultados"; do
+              FILE="${ITEM%%|*}"; CAP="${ITEM#*|}"
+              [[ -f "publicaciones/latest/$FILE" ]] && curl -sS -X POST "https://graph.facebook.com/$GRAPH/$FACEBOOK_PAGE_ID/photos" -F "source=@publicaciones/latest/$FILE" -F "caption=$CAP" -F "access_token=$FACEBOOK_PAGE_TOKEN" >/dev/null
+            done
             echo "Facebook: publicaciones enviadas."
           else
             echo "Facebook automático pendiente: faltan secrets privados."
