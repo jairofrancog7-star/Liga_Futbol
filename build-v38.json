@@ -1,6 +1,6 @@
 {
-  "build": "38-36",
-  "webVersion": "38.36",
+  "build": "38-37",
+  "webVersion": "38.37",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-14",
@@ -25,8 +25,8 @@
   },
   "publicRosterUi": "all-visible-public-names-no-200-row-limit-plus-cedula-links",
   "officialLogos": "team_logos snapshot + neutral placeholders where source has no image",
-  "credentials": "player-selector-photo-folio-team-category-season-status-public-validation-qr",
-  "privacy": "public GitHub Pages never stores CURP/INE/address/document images or private messaging credentials",
+  "credentials": "physical-reference-front-player-photo-team-category-name-season-plus-separate-public-qr",
+  "privacy": "public GitHub Pages never stores CURP/INE/address/document images or user-selected credential photos",
   "weatherUi": "match-field-hourly-risk-plus-full-hub",
   "weatherDecisionEngine": "forecast-never-equals-official-suspension",
   "primeraFuerzaLogo": "assets/branding/primera-fuerza-hd.png",
@@ -36,6 +36,7 @@
   "fix33": "public-roster-coverage-america-v35-branding-social-publication-center-whatsapp-facebook-share",
   "fix34": "category-buttons-cleanup-remove-league-logo-keep-only-primera-fuerza-logo-fix-text-layout",
   "fix35": "full-public-roster-no-limit-all-public-cedulas-america-v35-social-card-automation",
-  "fix36": "compact-category-and-more-buttons-functional-stats-pills-publication-hub-champions-style-team-logos-fields-credential-redesign-local-whatsapp-target",
+  "fix36": "publication-hub-tables-results-calendars-credential-builder",
+  "fix37": "restore-pre-fix36-button-scale-five-category-buttons-twelve-more-links-physical-credential-reference-layout-separate-qr",
   "apkStatus": "unchanged-existing-binary"
 }
