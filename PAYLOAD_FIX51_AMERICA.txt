@@ -1,0 +1,21 @@
+============================================================
+ V38 FIX51 - RESTAURAR LOGO DEL AMERICA
+============================================================
+
+Repositorio:
+https://github.com/jairofrancog7-star/Liga_Futbol
+
+Rama corregida:
+feature/v38-home-clima-campos
+
+Correccion unica:
+- Se restaura el escudo oficial de America Veteranos 35+.
+- Se coloca como primer elemento, en la parte superior de la tarjeta.
+- Se elimina el cuadro vacio y no se modifican tablas, botones ni otros equipos.
+- Se agrega cache-busting V38 FIX51 para que el cambio se vea.
+
+Enlace directo:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-51#more
+
+Archivo de apertura para Windows:
+V38_FIX51_AMERICA_LOGO_REFRESH.cmd
