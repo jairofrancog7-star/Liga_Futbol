@@ -1,6 +1,4 @@
-Liga Juventino Rosas APK
-VersionName: 1.4.0
-VersionCode: 9
-Web build: 38-28
-TamanoMB: 3.01
-SHA256: 6deadaacb128ad994882c4cff39f54053bcba595a7c1c1beff1a8f091989abba
+Liga Juventino Rosas Android
+Version 1.5.1 · Web build 38-60
+APK: Liga_Juventino_Rosas.apk
+Este APK abre la versión oficial de GitHub Pages y limpia la caché al detectar un nuevo WEB_BUILD.
