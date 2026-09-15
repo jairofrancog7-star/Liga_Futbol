@@ -75,7 +75,7 @@ def main():
             ced.append({q:v for q,v in x.items() if q not in ('local_players','away_players')})
             for t,pkey in ((x['local'],'local_players'),(x['away'],'away_players')):
                 for p in x[pkey]:
-                    if norm(c.get('name'))=='VETERANOS 50+' and norm(t)=='LA ESPERANZA' and norm(p)=='GUMERSINDO GRANADOS RAMIREZ S': p='Gumersindo Granados Ramirez'
+                    if norm(c.get('name'))=='VETERANOS 50' and norm(t)=='LA ESPERANZA' and norm(p)=='GUMERSINDO GRANADOS RAMIREZ S': p='Gumersindo Granados Ramirez'
                     rosters.setdefault(t,[]).append(p)
                     nk=norm(p);u=usage.setdefault(nk,{'name':p,'team':t,'cedulas':0});u['cedulas']+=1
         rosters={t:unique(ps) for t,ps in rosters.items()}
