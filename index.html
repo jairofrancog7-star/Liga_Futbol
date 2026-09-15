@@ -1022,7 +1022,7 @@ body.light .bottom-nav .nav-btn.active{
   <!-- TOPBAR -->
   <header class="topbar">
     <div class="brand">
-      <div class="logo logo-america" aria-label="Club América Veteranos Juventino Rosas"><img src="./assets/branding/america-veteranos-35.svg?v=38-52" alt="Club América Veteranos Juventino Rosas" width="44" height="44"></div>
+      <div class="logo logo-league" aria-label="Logo Liga Municipal de Fútbol Juventino Rosas"><img data-jr53-league-logo src="./assets/liga-logo.webp?v=38-53-r2" alt="Logo Liga Municipal de Fútbol Juventino Rosas" width="44" height="44"></div>
       <div class="brand-copy">
         <b>Liga Juventino Rosas</b>
         <small id="seasonLabel">Torneo de Liga · 2026–27</small>
@@ -1051,6 +1051,42 @@ body.light .bottom-nav .nav-btn.active{
     <button class="chip" data-category="Veteranos 35+">Veteranos 35+</button>
     <button class="chip" data-category="Veteranos 50+">Veteranos 50+</button>
   </nav>
+
+  <!-- JR_V38_FIX53: categorías arriba, debajo del aviso y antes del contenido -->
+  <section id="jr53TopCategoryHost" class="jr53-top-category-host" aria-label="Categorías de la liga">
+    <div class="jr81-cat-row jr53-static-category-row">
+      <button type="button" class="jr81-cat-btn active" data-category="Primera Fuerza" data-jr81-category="Primera Fuerza">
+        <span class="jr81-cat-icon"><img src="./assets/branding/primera-fuerza-hd.png?v=38-53-r2" alt="Primera Fuerza"></span>
+        <span class="jr81-cat-title">Primera Fuerza</span>
+        <span class="jr81-cat-phase">Torneo de Copa J5</span>
+        <span class="jr81-cat-stats"><span>11 equipos</span><span>291 jugadores</span><span>20 jugados</span><span>35 pendientes</span></span>
+      </button>
+      <button type="button" class="jr81-cat-btn" data-category="Intermedia" data-jr81-category="Intermedia">
+        <span class="jr81-cat-icon" aria-hidden="true"></span>
+        <span class="jr81-cat-title">Intermedia</span>
+        <span class="jr81-cat-phase">Torneo de Copa J5</span>
+        <span class="jr81-cat-stats"><span>13 equipos</span><span>332 jugadores</span><span>22 jugados</span><span>54 pendientes</span></span>
+      </button>
+      <button type="button" class="jr81-cat-btn" data-category="Segunda Fuerza" data-jr81-category="Segunda Fuerza">
+        <span class="jr81-cat-icon" aria-hidden="true"></span>
+        <span class="jr81-cat-title">Segunda Fuerza</span>
+        <span class="jr81-cat-phase">Torneo de Copa J5</span>
+        <span class="jr81-cat-stats"><span>12 equipos</span><span>312 jugadores</span><span>23 jugados</span><span>42 pendientes</span></span>
+      </button>
+      <button type="button" class="jr81-cat-btn" data-category="Veteranos 35+" data-jr81-category="Veteranos 35+">
+        <span class="jr81-cat-icon" aria-hidden="true"></span>
+        <span class="jr81-cat-title">Veteranos 35+</span>
+        <span class="jr81-cat-phase">FINAL</span>
+        <span class="jr81-cat-stats"><span>10 equipos</span><span>0 jugadores</span><span>0 jugados</span><span>0 pendientes</span></span>
+      </button>
+      <button type="button" class="jr81-cat-btn" data-category="Veteranos 50+" data-jr81-category="Veteranos 50+">
+        <span class="jr81-cat-icon" aria-hidden="true"></span>
+        <span class="jr81-cat-title">Veteranos 50+</span>
+        <span class="jr81-cat-phase">Torneo de Copa J6</span>
+        <span class="jr81-cat-stats"><span>6 equipos</span><span>109 jugadores</span><span>15 jugados</span><span>30 pendientes</span></span>
+      </button>
+    </div>
+  </section>
 
   <!-- ===== VISTA: INICIO ===== -->
   <section class="view active" id="view-home" aria-label="Inicio">
@@ -2682,8 +2718,8 @@ if(hash&&document.getElementById("view-"+hash))showView(hash);
 
 
 <!-- JR_V38_FIX52_HEADER_DIRECT -->
-<link rel="stylesheet" href="./assets/jr-v38-fix52-header.css?v=38-52-r1">
-<script defer src="./assets/jr-v38-fix52-header.js?v=38-52-r1"></script>
+<link rel="stylesheet" href="./assets/jr-v38-fix52-header.css?v=38-53-r2">
+<script defer src="./assets/jr-v38-fix52-header.js?v=38-53-r2"></script>
 
 <!-- JR_V38_FIX48_DIRECT -->
 <link rel="stylesheet" href="./assets/jr-v38-fix48-america-card.css?v=38-51-r1">
@@ -2693,6 +2729,10 @@ if(hash&&document.getElementById("view-"+hash))showView(hash);
 <!-- JR_V38_FIX50_DIRECT -->
 <link rel="stylesheet" href="./assets/jr-v38-fix50-buttons.css?v=38-50-r1">
 <script defer src="./assets/jr-v38-fix50-buttons.js?v=38-50-r1"></script>
+
+<!-- JR_V38_FIX53_DIRECT -->
+<link rel="stylesheet" href="./assets/jr-v38-fix53-category-top.css?v=38-53-r2">
+<script defer src="./assets/jr-v38-fix53-category-top.js?v=38-53-r2"></script>
 
 </body>
 </html>

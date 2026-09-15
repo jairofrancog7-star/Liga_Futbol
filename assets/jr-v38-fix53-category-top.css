@@ -1,0 +1,137 @@
+/* V38 FIX53 — fila compacta de categorías en la parte superior */
+#jr53TopCategoryHost{
+  display:block!important;
+  position:relative!important;
+  z-index:30!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:0 0 18px!important;
+  padding:0!important;
+}
+#jr53TopCategoryHost > .jr81-cat-row{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:9px!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+}
+#jr53TopCategoryHost .jr81-cat-btn{
+  appearance:none!important;
+  display:grid!important;
+  grid-template-columns:40px minmax(0,1fr)!important;
+  grid-template-areas:"icon title" "icon phase" "icon stats"!important;
+  align-items:center!important;
+  gap:2px 10px!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:76px!important;
+  padding:10px 12px!important;
+  margin:0!important;
+  border:1px solid rgba(255,255,255,.10)!important;
+  border-radius:15px!important;
+  background:linear-gradient(180deg,#17181d 0%,#111217 100%)!important;
+  color:#f4f6f8!important;
+  text-align:left!important;
+  visibility:visible!important;
+  opacity:1!important;
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  overflow:hidden!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+#jr53TopCategoryHost .jr81-cat-btn:hover{
+  border-color:rgba(34,224,122,.38)!important;
+}
+#jr53TopCategoryHost .jr81-cat-btn.active,
+#jr53TopCategoryHost .jr81-cat-btn.is-active{
+  border-color:rgba(34,224,122,.66)!important;
+  box-shadow:0 0 0 1px rgba(34,224,122,.18) inset!important;
+}
+#jr53TopCategoryHost .jr81-cat-icon{
+  grid-area:icon!important;
+  display:grid!important;
+  place-items:center!important;
+  width:40px!important;
+  height:40px!important;
+  min-width:40px!important;
+  border:1px solid rgba(34,224,122,.20)!important;
+  border-radius:11px!important;
+  background:#030706!important;
+  overflow:hidden!important;
+}
+#jr53TopCategoryHost .jr81-cat-icon img{
+  display:block!important;
+  width:34px!important;
+  height:34px!important;
+  object-fit:contain!important;
+}
+#jr53TopCategoryHost .jr81-cat-title{
+  grid-area:title!important;
+  display:block!important;
+  min-width:0!important;
+  font-size:11px!important;
+  line-height:1.1!important;
+  font-weight:900!important;
+  color:#fff!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+#jr53TopCategoryHost .jr81-cat-phase{
+  grid-area:phase!important;
+  display:block!important;
+  min-width:0!important;
+  font-size:8px!important;
+  line-height:1.1!important;
+  font-weight:750!important;
+  color:#cbd4d0!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+#jr53TopCategoryHost .jr81-cat-stats{
+  grid-area:stats!important;
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:1px 8px!important;
+  min-width:0!important;
+  margin-top:2px!important;
+}
+#jr53TopCategoryHost .jr81-cat-stats span{
+  display:block!important;
+  min-width:0!important;
+  font-size:7.5px!important;
+  line-height:1.1!important;
+  font-weight:800!important;
+  color:#eef3f0!important;
+  white-space:nowrap!important;
+}
+#categoryBar + #jr76CategoryRow,
+#categoryBar + #jr75CategoryRow{
+  margin:0 0 18px!important;
+  position:relative!important;
+  z-index:30!important;
+}
+#view-teams > .jr81-cat-host,
+#view-more > .jr81-cat-host,
+#view-more > #jr75CategoryRow,
+#view-more > #jr76CategoryRow,
+#view-more > .jr76-category-host,
+#view-more .jr75-category-row,
+#view-more .jr76-category-row{
+  display:none!important;
+  visibility:hidden!important;
+}
+@media(max-width:1050px){
+  #jr53TopCategoryHost > .jr81-cat-row{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:650px){
+  #jr53TopCategoryHost > .jr81-cat-row{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+  #jr53TopCategoryHost .jr81-cat-btn{min-height:72px!important;padding:9px 10px!important}
+}
