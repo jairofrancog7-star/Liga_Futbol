@@ -1,9 +1,9 @@
 {
-  "build": "38-40",
-  "webVersion": "38.40",
+  "build": "38-42",
+  "webVersion": "38.42",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
-  "generated": "2026-09-14",
+  "generated": "2026-09-15",
   "cachePolicy": "network-first-no-service-worker-cache",
   "officialData": "data/official-live.json",
   "officialDataSource": "https://www.juventinorosasliga.com/",
@@ -41,5 +41,6 @@
   "fix38": "replace-wrong-america-logo-with-exact-first-user-image-and-restore-compact-category-row-with-cache-bust",
   "fix39": "exact-current-upload-america-logo-compact-category-and-more-buttons-bottom-nav-safe-functional-chips-publications-visible",
   "fix40": "historic-credential-layout-category-buttons-5-3-2-direct-publication-upload-whatsapp-4121715599",
+  "fix42": "desktop-category-rail-local-group-detection-no-giant-card-no-right-cut-5-3-2-grid-cache-bust",
   "apkStatus": "unchanged-existing-binary"
 }
