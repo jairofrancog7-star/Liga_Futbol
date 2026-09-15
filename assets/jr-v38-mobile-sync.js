@@ -1,6 +1,6 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-37')return;
-const BUILD='38-37',INTERVAL=300000;let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-38')return;
+const BUILD='38-38',INTERVAL=300000;let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
@@ -13,8 +13,8 @@ function injectFixes(){
  addJs('./assets/jr-v38-fix35-roster-social.js?v='+BUILD,'jr67');
  addCss('./assets/jr-v38-fix36.css?v='+BUILD,'jr68');
  addJs('./assets/jr-v38-fix36.js?v='+BUILD,'jr68');
- addCss('./assets/jr-v38-fix37.css?v='+BUILD,'jr69');
- addJs('./assets/jr-v38-fix37.js?v='+BUILD,'jr69');
+ addCss('./assets/jr-v38-fix37.css?v='+BUILD,'jr70');
+ addJs('./assets/jr-v38-fix37.js?v='+BUILD,'jr70');
 }
 async function check(manual=false){
  if(busy||(!manual&&Date.now()-last<INTERVAL))return;
