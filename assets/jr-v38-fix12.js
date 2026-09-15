@@ -447,7 +447,8 @@ const LOCS=[
  {id:'rincon',label:'Rincón de Centeno',query:'Rincón de Centeno, Guanajuato, Mexico'},
  {id:'jaralillo',label:'Jaralillo',query:'Jaralillo, Guanajuato, Mexico'},
  {id:'cuenda',label:'Cuenda',query:'Cuenda, Guanajuato, Mexico'},
- {id:'jr',label:'Juventino Rosas (regional)',lat:20.64337,lon:-100.99286}
+ {id:'jr',label:'Juventino Rosas (regional)',lat:20.64337,lon:-100.99286},
+ ...['Cerrito de Gasca','Pozos','Tavera','Romerillo','San Juan de la Cruz','San Julián','San José'].map((label,i)=>({id:'campo-'+i,label,query:label+', Santa Cruz de Juventino Rosas, Guanajuato, Mexico'}))
 ],WXKEY='jr44-wx-cache';
 function wxLoad(){try{return JSON.parse(localStorage.getItem(WXKEY)||'{}')}catch(_){return{}}}
 function wxSave(x){try{localStorage.setItem(WXKEY,JSON.stringify(x))}catch(_){}}

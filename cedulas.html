@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cédulas · Liga Juventino Rosas</title><link rel="stylesheet" href="./assets/cedulas.css?v=38-54"></head>
+<body><header><img src="./assets/liga-logo.webp" alt="Logo de la Liga"><div><h1>Cédulas de la Liga Juventino Rosas</h1><p>Generador de plantillas y cédulas arbitrales</p></div></header>
+<main><nav><a href="./?refresh=38-54#home">← Volver a la liga</a></nav>
+<section class="controls"><p>Datos deportivos públicos. La cédula generada queda pendiente de revisión y firma de la liga; no acredita por sí sola la habilitación de jugadores.</p>
+<div class="filters"><label>Categoría<select id="cat" disabled></select></label><label>Equipo local<select id="home" disabled></select></label><label>Visitante<select id="away" disabled></select></label><label>Fecha<input id="date" type="date"></label><label>Campo<input id="field" placeholder="Por confirmar"></label><label>Árbitro<input id="referee" placeholder="Por asignar"></label></div>
+<div class="buttons"><button id="generate" disabled>Generar cédula del partido</button><button id="all" disabled>Generar plantillas de todos los equipos</button><button id="print" disabled>Imprimir / guardar PDF</button></div>
+<p id="status" role="status">Cargando datos públicos…</p></section><div id="sheets"></div></main><script src="./assets/cedulas.js?v=38-54"></script></body></html>

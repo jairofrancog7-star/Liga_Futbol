@@ -1,7 +1,7 @@
 /* V38 FIX48 — tarjeta canónica de América. Reemplaza el contenido viejo, no lo apila. */
 (()=>{'use strict';
 if(window.__JR79Fix48)return;window.__JR79Fix48=true;
-const BUILD='38-51-r1';
+const BUILD='38-54';
 const PNG='./assets/branding/america-veteranos-35-user.png?v='+BUILD;
 const SVG='./assets/branding/america-veteranos-35.svg?v='+BUILD;
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
@@ -37,16 +37,16 @@ function wireImage(root){
 function replaceCard(card){
   if(!card)return;
   card.classList.add('jr79-america-card');
-  card.dataset.v27TeamCard='América';
+  // Keep original renderer team data.
   card.dataset.jr79='48';
   card.setAttribute('role','button');card.setAttribute('tabindex','0');card.setAttribute('aria-label','Abrir perfil de América');
   if(!$(':scope > .jr79-america-layout',card) || card.children.length!==1){card.innerHTML=markup()}
-  wireImage(card);
+  if(!card.querySelector('[data-jr79-logo]')?.getAttribute('src'))wireImage(card);
 }
 function repairCards(){
   const cards=new Set();
   $$('#teamsGrid > *').forEach(c=>{if(america(c))cards.add(c)});
-  $$('#view-teams [data-v27-team-card],#view-teams [data-team],#view-teams .team-card,#view-teams .club-card').forEach(c=>{if(america(c))cards.add(c)});
+  $$('#view-teams [data-v27-team-card],#view-teams [data-team],#view-teams .team-card,#view-teams .club-card,.jr60-team-card,.jr63-team-card,.jr64-team-card,.jr65-team-card,.jr63-fixed-team-card').forEach(c=>{if(america(c))cards.add(c)});
   cards.forEach(replaceCard);
 }
 function repairModal(){

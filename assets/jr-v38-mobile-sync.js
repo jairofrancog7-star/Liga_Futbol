@@ -1,6 +1,6 @@
 (()=>{'use strict';
-if(window.JRMobileRefresh?.build==='38-50')return;
-const BUILD='38-50',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
+if(window.JRMobileRefresh?.build==='38-54')return;
+const BUILD='38-54',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2',FIX44REV='38-44-r1';let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
@@ -16,7 +16,7 @@ function injectFixes(){
  addCss('./assets/jr-v38-fix43-category-row.css?v='+FIX43REV,'jr75'); addJs('./assets/jr-v38-fix43-category-row.js?v='+FIX43REV,'jr75');
  addJs('./assets/jr-v38-fix44-category-replace.js?v='+FIX44REV,'jr75x');
  addCss('./assets/jr-v38-fix45-stability.css?v=38-48-r1','jr76'); addJs('./assets/jr-v38-fix45-stability.js?v=38-48-r1','jr76');
- addCss('./assets/jr-v38-fix48-america-card.css?v=38-48-r1','jr79'); addJs('./assets/jr-v38-fix48-america-card.js?v=38-48-r1','jr79');
+ addCss('./assets/jr-v38-fix48-america-card.css?v=38-48-r1','jr79'); addJs('./assets/jr-v38-fix48-america-card.js?v=38-54','jr79');
  /* FIX50 es la capa final de botones y se monta tanto en Equipos como en Más. */
  addCss('./assets/jr-v38-fix50-buttons.css?v=38-50-r1','jr81'); addJs('./assets/jr-v38-fix50-buttons.js?v=38-50-r1','jr81');
 }

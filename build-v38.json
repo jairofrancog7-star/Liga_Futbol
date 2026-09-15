@@ -1,6 +1,6 @@
 {
-  "build": "38-53",
-  "webVersion": "38.53",
+  "build": "38-54",
+  "webVersion": "38.54",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-15",
@@ -98,5 +98,6 @@
   "americaCardLogo": "./assets/branding/america-veteranos-35.svg",
   "headerButtons": "visible-functional",
   "fix52": "legacy header layer retained for compatibility",
-  "fix53": "restore Liga Juventino Rosas logo in header and promote five-category row to top"
+  "fix53": "restore Liga Juventino Rosas logo in header and promote five-category row to top",
+  "fix54": "Single top category rail; America stacked card; local cedula generator; match locality choices"
 }

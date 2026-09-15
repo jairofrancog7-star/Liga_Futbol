@@ -115,6 +115,7 @@ function logoMarkup(team,src,small=false){
 function patchTeamCard(card){
   const resolved=resolveTeam(card);if(!resolved)return false;
   const {team,src}=resolved;
+  if(window.__JR54OwnAmerica && /AMERICA/.test(norm(team)))return false;
   removeOldFixNodes(card);
   card.classList.add('jr63-fixed-team-card');
   if(card.parentElement?.id==='teamsGrid')card.classList.add('jr63-grid-team-card');
@@ -128,7 +129,7 @@ function patchTeamCard(card){
 function categoryCards(){
   const set=new Set();
   ['[data-category]','[data-v20-cat]','[data-v21-cat]','[data-v22-cat]','[data-v23-cat]','[data-v24-cat]','[data-v25-cat]','[data-v26-cat]','[data-v27-cat]','[data-v30-cat]','[data-v31-cat]','.category-card','[class*="category-card"]','[class*="categoria-card"]','[class*="cat-card"]'].forEach(s=>$$(s).forEach(x=>set.add(x)));
-  return [...set].filter(x=>!x.closest('#teamsGrid,.team-card,.club-card,[data-v27-team-card],[data-team-card],.jr60-team-card'));
+  return [...set].filter(x=>!x.closest('#jr53TopCategoryHost,#teamsGrid,.team-card,.club-card,[data-v27-team-card],[data-team-card],.jr60-team-card'));
 }
 function catKey(card){
   const raw=[card?.dataset?.category,card?.dataset?.v20Cat,card?.dataset?.v21Cat,card?.dataset?.v22Cat,card?.dataset?.v25Cat,card?.textContent].filter(Boolean).join(' ');
