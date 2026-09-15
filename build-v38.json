@@ -1,10 +1,11 @@
 {
-  "build": "38-57",
-  "webVersion": "38.57",
+  "build": "38-58",
+  "webVersion": "38.58",
   "androidVersionName": "1.4.0",
   "androidVersionCode": 9,
   "generated": "2026-09-15",
   "cachePolicy": "network-first-no-service-worker-cache",
   "officialData": "data/official-live.json",
-  "fix57": "restore-internal-cedulas-digital-credential-single-category-rail-unique-logos-mobile-nav"
+  "fix57": "restore-internal-cedulas-digital-credential-single-category-rail-unique-logos-mobile-nav",
+  "fix58": "official-category-logos-all-crosses-category-round-filters"
 }
