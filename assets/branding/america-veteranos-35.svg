@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="t d">
+<title id="t">Club América Veteranos Juventino Rosas</title><desc id="d">Escudo circular azul marino y crema para Veteranos 35+, 1916-2026.</desc>
+<defs><radialGradient id="bg" cx="45%" cy="35%" r="75%"><stop offset="0" stop-color="#0f477e"/><stop offset="1" stop-color="#002a57"/></radialGradient><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000" flood-opacity=".35"/></filter></defs>
+<circle cx="500" cy="500" r="458" fill="#fff6a8" filter="url(#s)"/><circle cx="500" cy="500" r="360" fill="url(#bg)"/>
+<path d="M150 382a365 365 0 0 1 700 0" fill="none" stroke="#003369" stroke-width="8"/>
+<path d="M150 655a365 365 0 0 0 700 0" fill="none" stroke="#003369" stroke-width="8"/>
+<g fill="#003369" font-family="Arial,Helvetica,sans-serif" font-weight="800" text-anchor="middle">
+<text x="500" y="168" font-size="73" letter-spacing="16">CLUB AMÉRICA</text>
+<text x="500" y="790" font-size="55" letter-spacing="4">VETERANOS JUVENTINO ROSAS</text>
+<text x="500" y="865" font-size="64" letter-spacing="5">1916-2026</text>
+</g>
+<g fill="none" stroke="#fff6a8" stroke-width="30" stroke-linecap="square" stroke-linejoin="round">
+<path d="M302 665V337l188-123 190 123-61 63"/>
+<path d="M697 367c-49-52-118-84-194-84-145 0-263 117-263 261s118 261 263 261c79 0 150-34 198-89"/>
+<path d="M346 383c80 65 92 148 70 242-8 35-25 70-52 104"/>
+<path d="M654 382c-80 65-92 148-70 242 8 35 25 70 52 104"/>
+<path d="M417 588c54-28 111-28 166 0"/>
+</g>
+</svg>
