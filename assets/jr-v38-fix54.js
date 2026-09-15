@@ -20,7 +20,7 @@ if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElem
 /* V38.67 loader — regeneración estable de Tabla, Estadísticas, Partidos y Cédulas. */
 (()=>{'use strict';
 if(window.__JR67_LOADER)return;window.__JR67_LOADER=true;
-const V='38-67-r1';
+const V='38-67-r2';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
