@@ -1,0 +1,28 @@
+LIGA JUVENTINO ROSAS — V38.60 / ANDROID 1.5.1
+
+WEB DIRECTO:
+https://jairofrancog7-star.github.io/Liga_Futbol/?refresh=38-60
+
+APK DIRECTO:
+https://raw.githubusercontent.com/jairofrancog7-star/Liga_Futbol/main/downloads/Liga_Juventino_Rosas.apk
+
+CAMBIOS PRINCIPALES:
+- Tarjetas superiores de categorías responsivas y texto completo.
+- Logos de Primera Fuerza, Intermedia, Segunda Fuerza, Veteranos 35+ y Veteranos 50+.
+- Logo Torneo de Veteranos en su categoría.
+- Centro de partidos oficiales con filtro por categoría y jornada.
+- Equipos y escudos tomados de data/official-live.json cuando existen.
+- Fallbacks de escudos locales para Cuenda, Pozos FC, Boavista, Juventus, C. de Gasca y América.
+- No se inventa escudo para equipos que no tengan archivo oficial.
+- Eliminación visual de entradas falsas tipo Moscú/CSKA heredadas.
+- Rendimiento, tabla y herramientas para todas las categorías mediante la capa oficial V38.59/V38.60.
+- Mejoras para modo claro, móvil, PC, botones, textos largos y tablas completas con scroll horizontal en pantallas pequeñas.
+- Botón de WhatsApp configurado para abrir el chat de 4121715599 (E.164 MX: 524121715599).
+- Publicaciones y liguilla enlazadas a publicaciones.html.
+- Cédulas y PDF enlazados a cedulas.html.
+- OCR existente del proyecto basado en Tesseract.js; no se anuncia Google Lens si no hay una API de Google configurada.
+- APK Android versionName 1.5.1, versionCode 11, WEB_BUILD 38-60.
+- Service Worker sin caché persistente y con limpieza de caches viejos.
+
+NOTA WHATSAPP:
+El botón web puede abrir WhatsApp con texto y facilitar compartir PNG. El envío automático de PNG sin intervención requiere credenciales privadas de WhatsApp Business/Meta (WHATSAPP_TOKEN, WHATSAPP_PHONE_NUMBER_ID, WHATSAPP_TO) en GitHub Actions o backend.
