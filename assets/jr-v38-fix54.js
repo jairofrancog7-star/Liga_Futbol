@@ -44,11 +44,3 @@ let timer=0;function schedule(){clearTimeout(timer);timer=setTimeout(()=>{ensure
 function start(){ensureAssets();forceOfficialLogos();[250,700,1500,3000,6000,10000].forEach(t=>setTimeout(forceOfficialLogos,t));new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true});addEventListener('hashchange',schedule);addEventListener('pageshow',schedule)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
-
-/* V38 FIX60 loader — late finishing layer with official matches, responsive cards and WhatsApp helper. */
-(()=>{'use strict';
-if(window.__JR60_LOADER)return;window.__JR60_LOADER=true;
-const V='38-60-r1';
-const css=document.createElement('link');css.rel='stylesheet';css.href='./assets/jr-v38-fix60.css?v='+V;css.dataset.jr60Loader='1';document.head.append(css);
-const js=document.createElement('script');js.src='./assets/jr-v38-fix60.js?v='+V;js.async=false;js.dataset.jr60Loader='1';document.body.append(js);
-})();
