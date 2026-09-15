@@ -1,48 +1,20 @@
-/* V38 FIX38 — logo América EXACTO de la imagen del usuario + categorías compactas como antes */
+/* V38 FIX39 — América exacto del archivo del usuario + botones compactos sin tocar navegación inferior */
 (()=>{'use strict';
-if(window.__JR70Fix38)return;window.__JR70Fix38=true;
-const BUILD='38-38';
-const AMERICA='https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/6d030b5d-8fc1-4520-83eb-0b523228ff65.png';
-const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+if(window.__JR71Fix39)return;window.__JR71Fix39=true;
+const BUILD='38-39';
+const AMERICA='https://d2ol7oe51mr4n9.cloudfront.net/user_3JFWXON60GMBOz1CiR5CypSau9I/a33fddca-ab75-40eb-95de-5387ae52f1f9.png';
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const norm=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9+]+/g,' ').trim();
-function setAmericaImage(im){if(!im)return;im.dataset.jr70America='1';im.onerror=null;im.src=AMERICA;im.removeAttribute('srcset');im.loading='eager';im.decoding='async';im.alt='Club América Veteranos 35+ Juventino Rosas 1916-2026'}
-function isAmerica(card){const text=norm([card?.dataset?.team,card?.dataset?.jr64Team,card?.getAttribute?.('aria-label'),card?.textContent].filter(Boolean).join(' '));return /(^| )AMERICA( |$)/.test(text)&&(/VETERANOS 35/.test(text)||/FINAL/.test(text))}
-function patchAmerica(){
- const set=new Set();
- ['#teamsGrid > *','.team-card','[data-team-card]','[data-v27-team-card]','.jr60-team-card','.club-card','.jr63-team-card','.jr64-team-card','.jr65-team-card','.jr63-fixed-team-card'].forEach(s=>$$(s).forEach(x=>set.add(x)));
- [...set].filter(isAmerica).forEach(card=>{
-   card.dataset.jr70America='1';card.classList.add('jr70-america-card');
-   let hero=$('.jr65-america-hero,.jr69-america-hero,.jr70-america-hero',card);
-   if(!hero){hero=document.createElement('div');hero.className='jr65-america-hero jr70-america-hero';const im=document.createElement('img');hero.appendChild(im);card.insertBefore(hero,card.firstChild)}
-   hero.classList.add('jr70-america-hero');setAmericaImage($('img',hero));
-   let mini=$('.jr65-america-mini,.jr70-america-mini',card);
-   if(!mini){mini=document.createElement('span');mini.className='jr65-america-mini jr70-america-mini';mini.innerHTML='<img alt="">';hero.insertAdjacentElement('afterend',mini)}
-   mini.classList.add('jr70-america-mini');setAmericaImage($('img',mini));
-   $$('img',card).forEach(im=>{if(im.closest('.category-badge,.jr66-cat-badge,.jr68-cat-badge'))return;if(im.closest('.jr70-america-hero,.jr70-america-mini'))return;const sig=norm([im.alt,im.title,im.getAttribute('src')].filter(Boolean).join(' '));if(sig.includes('AMERICA')||String(im.src).includes('america-veteranos-35'))setAmericaImage(im)});
-   $$('.jr63-team-hero-logo,.jr63-mini-logo,.jr62-team-hero-logo,.jr62-secondary-team-logo-wrap',card).forEach(x=>{if(!x.closest('.jr70-america-hero,.jr70-america-mini'))x.classList.add('jr70-hide-old-america')});
- });
-}
-function nearestCategoryRoot(card){let p=card.parentElement,depth=0;while(p&&p!==document.body&&depth<6){if(p.querySelectorAll('.jr66-category-summary').length>=3)return p;p=p.parentElement;depth++}return null}
-function patchCategoryButtons(){
- const cards=$$('.jr66-category-summary');
- // FIX37 anterior ponía grid en cada padre individual; eso hacía un botón enorme por fila.
- $$('.jr69-category-grid').forEach(p=>p.classList.remove('jr69-category-grid'));
- $$('.jr69-category-card').forEach(c=>c.classList.remove('jr69-category-card'));
- $$('.jr70-category-row,.jr70-category-slot').forEach(x=>x.classList.remove('jr70-category-row','jr70-category-slot'));
- const roots=new Set();
- cards.forEach(card=>{card.classList.add('jr70-category-card');const root=nearestCategoryRoot(card);if(root)roots.add(root)});
- roots.forEach(root=>{
-   root.classList.add('jr70-category-row');
-   $$('.jr66-category-summary',root).forEach(card=>{if(card.parentElement!==root)card.parentElement?.classList.add('jr70-category-slot')});
- });
-}
-function patchMoreButtons(){const view=$('#view-more');if(!view)return;const grid=$('.more-grid',view);if(grid)grid.classList.add('jr70-more-grid');$$('.more-link',view).forEach(x=>x.classList.add('jr70-more-button'))}
-function patchFunctionalPills(){const map={'TABLA':'table','GOLEADORES':'stats','RENDIMIENTO':'stats'};$$('button,.chip,[role="button"]').forEach(el=>{const t=norm(el.textContent);if(!map[t])return;el.classList.add('jr70-functional-pill');if(el.dataset.jr70Wired)return;el.dataset.jr70Wired='1';el.tabIndex=0;el.addEventListener('click',e=>{const target=map[t];const b=$$(`[data-view="${target}"]`).find(x=>x.offsetParent!==null)||$(`[data-view="${target}"]`);if(b&&b!==el){e.preventDefault();b.click()}else location.hash=target})})}
-function patchPublicationTile(){const view=$('#view-more'),grid=view&&$('.more-grid',view);if(!grid)return;const b=$('.jr68-publications-link',grid);if(b){b.classList.add('jr70-more-button');b.innerHTML='<span>📣</span><b>Publicaciones</b><small>Tablas · resultados · calendario</small>'}}
-function patchAll(){patchAmerica();patchCategoryButtons();patchMoreButtons();patchFunctionalPills();patchPublicationTile();document.documentElement.dataset.jr70='ready'}
-[0,60,160,360,760,1500,3000,5600,9000].forEach(ms=>setTimeout(patchAll,ms));
-document.addEventListener('click',e=>{if(e.target.closest('[data-view],[data-category],button,a,.team-card'))[35,130,330,720].forEach(ms=>setTimeout(patchAll,ms))},true);
-addEventListener('hashchange',()=>setTimeout(patchAll,100));addEventListener('pageshow',()=>setTimeout(patchAll,80));addEventListener('focus',()=>setTimeout(patchAll,120));
-window.JRFix38={build:BUILD,refresh:patchAll,americaLogo:AMERICA};
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',patchAll,{once:true});else patchAll();
+const CAT_ORDER=['VETERANOS 35+','VETERANOS 50+','PRIMERA FUERZA','INTERMEDIA','SEGUNDA FUERZA'];
+function setAmericaImage(im){if(!im)return;im.dataset.jr71America='1';im.onerror=null;im.src=AMERICA;im.removeAttribute('srcset');im.loading='eager';im.decoding='async';im.alt='Club América Veteranos 35+ Juventino Rosas 1916-2026'}
+function isAmerica(card){const t=norm([card?.dataset?.team,card?.dataset?.jr64Team,card?.getAttribute?.('aria-label'),card?.textContent].filter(Boolean).join(' '));return /(^| )AMERICA( |$)/.test(t)&&(/VETERANOS 35/.test(t)||/FINAL/.test(t))}
+function patchAmerica(){const set=new Set();['#teamsGrid > *','.team-card','[data-team-card]','[data-v27-team-card]','.jr60-team-card','.club-card','.jr63-team-card','.jr64-team-card','.jr65-team-card','.jr63-fixed-team-card'].forEach(s=>$$(s).forEach(x=>set.add(x)));[...set].filter(isAmerica).forEach(card=>{card.classList.add('jr71-america-card');let hero=$('.jr65-america-hero,.jr69-america-hero,.jr70-america-hero,.jr71-america-hero',card);if(!hero){hero=document.createElement('div');hero.className='jr65-america-hero jr71-america-hero';hero.innerHTML='<img alt="">';card.insertBefore(hero,card.firstChild)}hero.classList.add('jr71-america-hero');setAmericaImage($('img',hero));let mini=$('.jr65-america-mini,.jr70-america-mini,.jr71-america-mini',card);if(!mini){mini=document.createElement('span');mini.className='jr65-america-mini jr71-america-mini';mini.innerHTML='<img alt="">';hero.insertAdjacentElement('afterend',mini)}mini.classList.add('jr71-america-mini');setAmericaImage($('img',mini));$$('img',card).forEach(im=>{if(im.closest('.category-badge,.jr66-cat-badge,.jr68-cat-badge'))return;if(im.closest('.jr71-america-hero,.jr71-america-mini'))return;const sig=norm([im.alt,im.title,im.getAttribute('src')].filter(Boolean).join(' '));if(sig.includes('AMERICA')||String(im.src).includes('america-veteranos-35')||String(im.src).includes('6d030b5d'))setAmericaImage(im)});$$('.jr63-team-hero-logo,.jr63-mini-logo,.jr62-team-hero-logo,.jr62-secondary-team-logo-wrap',card).forEach(x=>{if(!x.closest('.jr71-america-hero,.jr71-america-mini'))x.classList.add('jr71-hide-old-america')})})}
+function catName(card){return norm(card?.dataset?.jr66Category||card?.dataset?.jr64Category||card?.dataset?.category||card?.textContent||'')}
+function findRailRoot(cards){if(cards.length<2)return null;let p=cards[0].parentElement;while(p&&p!==document.body){const found=cards.filter(c=>p.contains(c));if(found.length===cards.length){const carriers=[...p.children].filter(ch=>cards.some(c=>ch===c||ch.contains(c)));if(carriers.length>=2&&carriers.length<=8)return p}p=p.parentElement}return null}
+function patchCategoryButtons(){const raw=$$('.jr66-category-summary').filter(x=>!x.closest('#jr71HiddenDuplicates'));const byName=new Map();raw.forEach(c=>{const n=catName(c);const key=CAT_ORDER.find(k=>n.includes(k));if(key&&!byName.has(key))byName.set(key,c)});const cards=CAT_ORDER.map(k=>byName.get(k)).filter(Boolean);cards.forEach(c=>{c.classList.remove('jr69-category-card');c.classList.add('jr71-category-card')});$$('.jr69-category-grid,.jr70-category-row').forEach(x=>x.classList.remove('jr69-category-grid','jr70-category-row'));$$('.jr70-category-slot').forEach(x=>x.classList.remove('jr70-category-slot'));const root=findRailRoot(cards);if(root){root.classList.add('jr71-category-rail');[...root.children].forEach(ch=>{if(cards.some(c=>ch===c||ch.contains(c)))ch.classList.add('jr71-category-slot')})}cards.forEach(c=>{const p=c.parentElement;if(p&&!p.classList.contains('jr71-category-rail'))p.classList.add('jr71-category-slot')})}
+function restoreBottomNav(){$$('.bottom-nav [data-view],nav.bottom-nav button,.bottom-nav button').forEach(el=>el.classList.remove('jr68-functional-pill','jr69-functional-pill','jr70-functional-pill','jr71-functional-chip'))}
+function patchFunctionalChips(){restoreBottomNav();const map={'TABLA':'table','GOLEADORES':'stats','RENDIMIENTO':'stats'};$$('button,.chip,[role="button"]').forEach(el=>{if(el.matches('[data-view]')||el.closest('.bottom-nav,.topbar,nav'))return;const t=norm(el.textContent);if(!map[t])return;el.classList.add('jr71-functional-chip');if(el.dataset.jr71Wired)return;el.dataset.jr71Wired='1';el.tabIndex=0;el.addEventListener('click',e=>{e.preventDefault();const target=map[t],b=$$(`[data-view="${target}"]`).find(x=>x.offsetParent!==null)||$(`[data-view="${target}"]`);if(b&&b!==el)b.click();else location.hash=target})})}
+function patchMore(){const view=$('#view-more');if(!view)return;const grid=$('.more-grid',view);if(grid)grid.classList.add('jr71-more-grid');$$('.more-link',view).forEach(x=>x.classList.add('jr71-more-button'));let pub=$('.jr68-publications-link',view);if(!pub&&grid){pub=document.createElement('button');pub.type='button';pub.className='more-link jr68-publications-link jr71-more-button';pub.innerHTML='<span>📣</span><b>Publicaciones</b><small>PNG · WhatsApp</small>';grid.appendChild(pub)}if(pub&&!pub.dataset.jr71Pub){pub.dataset.jr71Pub='1';pub.onclick=()=>{window.JRFix36?.refresh?.();setTimeout(()=>$('#jr68PublishHub')?.scrollIntoView({behavior:'smooth',block:'start'}),120)}}}
+function patchAll(){patchAmerica();patchCategoryButtons();patchFunctionalChips();patchMore();document.documentElement.dataset.jr71='ready'}
+[0,60,160,360,760,1500,3000,5600,9000,12000].forEach(ms=>setTimeout(patchAll,ms));document.addEventListener('click',e=>{if(e.target.closest('[data-view],[data-category],button,a,.team-card'))[35,130,330,720,1300].forEach(ms=>setTimeout(patchAll,ms))},true);addEventListener('hashchange',()=>setTimeout(patchAll,90));addEventListener('pageshow',()=>setTimeout(patchAll,80));addEventListener('focus',()=>setTimeout(patchAll,120));window.JRFix39={build:BUILD,refresh:patchAll,americaLogo:AMERICA};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',patchAll,{once:true});else patchAll();
 })();
