@@ -1,18 +1,24 @@
 {
-  "build": "38-35",
-  "generated_at": "2026-09-15T01:46:19.796194+00:00",
+  "build": "38-36",
+  "generated_at": "2026-09-15T01:47:45.980196+00:00",
   "files": [
     "publicaciones/latest/tabla-veteranos-50.png",
     "publicaciones/latest/jornada-veteranos-50.png",
+    "publicaciones/latest/resultados-veteranos-50.png",
     "publicaciones/latest/tabla-primera-fuerza.png",
     "publicaciones/latest/jornada-primera-fuerza.png",
+    "publicaciones/latest/resultados-primera-fuerza.png",
     "publicaciones/latest/tabla-segunda-fuerza.png",
     "publicaciones/latest/jornada-segunda-fuerza.png",
+    "publicaciones/latest/resultados-segunda-fuerza.png",
     "publicaciones/latest/tabla-intermedia.png",
     "publicaciones/latest/jornada-intermedia.png",
+    "publicaciones/latest/resultados-intermedia.png",
     "publicaciones/latest/resumen-tablas.png",
     "publicaciones/latest/resumen-jornada.png",
+    "publicaciones/latest/resumen-resultados.png",
     "publicaciones/latest/comunicado-america-veteranos-35.png"
   ],
-  "source": "data/official-live.json"
+  "source": "data/official-live.json",
+  "style": "premium-night-tournament-team-logos-fields"
 }
