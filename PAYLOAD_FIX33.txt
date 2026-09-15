@@ -1,0 +1,32 @@
+PAYLOAD V38 FIX33 — PADRÓN PÚBLICO + AMÉRICA 35+ + PUBLICACIONES
+
+Build web/PWA: 38-33
+APK: sin recompilar; continúa 1.4.0 / code 9.
+
+CAMBIOS
+- Club América Veteranos 35+: nuevo branding integrado en las tarjetas del equipo.
+- Padrón público visible con todos los nombres deportivos que la fuente pública expone.
+- Cobertura verificada al 14-09-2026:
+  * Veteranos 50+: 109/109 nombres públicos.
+  * Primera Fuerza: 291/291.
+  * Segunda Fuerza: 312/312.
+  * Intermedia: 331/332; existe 1 registro cuyo nombre no aparece públicamente en las cédulas actuales.
+  * Veteranos 35+: la fuente pública actual reporta 0 y no expone cédulas actuales.
+- GitHub Pages NO publica CURP, INE, domicilio ni imágenes de documentos.
+- Centro de publicaciones dentro de JR Control:
+  * tabla actual;
+  * próxima jornada;
+  * comunicado;
+  * comunicado Club América Veteranos 35+.
+- Diseños 1080x1350 con logo de la liga, fecha y datos oficiales.
+- Descargar PNG.
+- Compartir por WhatsApp usando Web Share cuando el teléfono lo permite; si no, descarga PNG y abre WhatsApp con texto preparado.
+- El número de WhatsApp se guarda únicamente en localStorage del dispositivo y NO se sube a GitHub.
+- Facebook: descarga PNG y abre compartir; la publicación final requiere autorización del usuario en Facebook.
+- refresh-v33.html limpia cachés/Service Workers y fuerza la actualización de los archivos FIX33.
+
+PRIVACIDAD
+Este repositorio es público. La capa pública usa únicamente nombres y datos deportivos ya visibles en la fuente. No se almacenan ni publican documentos de identidad ni datos privados.
+
+AUTOMATIZACIÓN
+La sincronización deportiva pública existente continúa a través de data/official-live.json y GitHub Actions. Para envío totalmente desatendido a WhatsApp o publicación automática en Facebook se requiere una integración autorizada de mensajería/Meta; FIX33 no simula esa autorización.
