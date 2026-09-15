@@ -1,6 +1,6 @@
 (()=>{'use strict';
 if(window.JRMobileRefresh?.build==='38-43')return;
-const BUILD='38-43',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r1';let last=0,busy=false;
+const BUILD='38-43',INTERVAL=300000,FIX42REV='38-42-r2',FIX43REV='38-43-r2';let last=0,busy=false;
 document.documentElement.dataset.jrBuild=BUILD;
 function addCss(href,key){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.appendChild(l)}
 function addJs(src,key){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.head.appendChild(s)}
