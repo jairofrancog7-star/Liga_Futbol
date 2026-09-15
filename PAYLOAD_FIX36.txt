@@ -1,0 +1,34 @@
+V38 FIX36 — BOTONES + PUBLICACIONES + CREDENCIAL
+
+WEB/PWA: 38-36
+APK: 1.4.0 / code 9 (sin recompilar)
+
+CAMBIOS
+- Botones de categorías compactos y uniformes.
+- Botones de Explora la liga compactos; se agrega Publicaciones.
+- Tabla / Goleadores / Rendimiento quedan clicables y llevan a sus vistas.
+- Centro Publicaciones dentro de Más / Explora la liga.
+- Genera PNG 1080x1350 de:
+  * tabla de posiciones,
+  * próxima jornada / calendario,
+  * resultados.
+- Diseño original premium nocturno tipo gran torneo: logo de la Liga arriba, fecha, nombres, escudos, hora y campo.
+- WhatsApp: el destino se guarda únicamente en localStorage; no se publica el número en GitHub.
+- En teléfono usa Web Share para compartir el PNG; en PC descarga PNG y abre el chat de WhatsApp preparado.
+- La automatización de GitHub genera tabla, resultados y jornada por categoría y resúmenes.
+- WhatsApp/Facebook 100% automáticos por GitHub Actions quedan listos para funcionar cuando existan los secretos privados oficiales de Meta.
+- Credencial rediseñada con:
+  * logo Liga,
+  * CREDENCIAL DE JUGADOR,
+  * foto local,
+  * nombre,
+  * folio,
+  * equipo,
+  * categoría,
+  * temporada 2026–2027,
+  * estado HABILITADO,
+  * QR de validación pública limitada.
+- Nunca publica CURP, INE, domicilio ni imágenes privadas.
+
+REFRESH
+https://jairofrancog7-star.github.io/Liga_Futbol/refresh-v36.html
