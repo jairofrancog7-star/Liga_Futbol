@@ -1,63 +1,54 @@
-/* V38 FIX56 — credenciales reales de referencia, logos de tabla, categorías y cédulas */
-:root{--jr56-green:#2fe39a;--jr56-panel:#12141a;--jr56-border:rgba(94,255,180,.22)}
-/* 1) En Inicio: quitar la fila de chips pequeños y dejar las tarjetas grandes */
-#view-home #categoryBar,
-#view-home .v21-category-tabs,
-#view-home #v25TableCats,
-#view-home .jr53-small-category-row{display:none!important}
-#jr53TopCategoryHost,
-#jr81MoreCategoryHost,
-#jr81TeamsCategoryHost{display:block!important;visibility:visible!important;opacity:1!important}
-#jr53TopCategoryHost .jr81-cat-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important}
-#jr53TopCategoryHost .jr81-cat-btn{min-width:0!important;overflow:hidden!important}
-#jr53TopCategoryHost .jr81-cat-icon img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;opacity:1!important;visibility:visible!important}
+/* V38 FIX57 — no scanned credential photos; internal cedulas; one category rail */
+:root{--jr57-green:#35e59c;--jr57-panel:#0c1210;--jr57-line:rgba(88,255,181,.24)}
+html body #categoryBar,
+html body .v21-category-tabs,
+html body .jr53-small-category-row{display:none!important;visibility:hidden!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;overflow:hidden!important}
+html body #jr53TopCategoryHost{display:block!important;visibility:visible!important;opacity:1!important;margin:10px 0 18px!important}
+html body #jr53TopCategoryHost>.jr81-cat-row{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important}
+html body #jr53TopCategoryHost .jr81-cat-btn{display:grid!important;grid-template-columns:62px minmax(0,1fr)!important;grid-template-areas:"icon title" "icon phase" "stats stats"!important;gap:3px 12px!important;align-items:center!important;min-height:126px!important;width:100%!important;padding:14px!important;border-radius:18px!important;overflow:hidden!important;background:linear-gradient(155deg,#171a20,#0f1215)!important}
+html body #jr53TopCategoryHost .jr81-cat-icon{grid-area:icon!important;display:grid!important;place-items:center!important;width:62px!important;height:62px!important;min-width:62px!important;border-radius:15px!important;background:#07100c!important;border:1px solid rgba(63,231,157,.25)!important;overflow:hidden!important}
+html body #jr53TopCategoryHost .jr81-cat-icon img{display:block!important;width:54px!important;height:54px!important;object-fit:contain!important}
+html body #jr53TopCategoryHost .jr81-cat-title{grid-area:title!important;display:block!important;font-size:clamp(13px,1.2vw,17px)!important;line-height:1.15!important;font-weight:900!important;color:#fff!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+html body #jr53TopCategoryHost .jr81-cat-phase{grid-area:phase!important;display:block!important;font-size:11px!important;color:#dce6e1!important;white-space:normal!important;overflow:visible!important}
+html body #jr53TopCategoryHost .jr81-cat-stats{grid-area:stats!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:3px 10px!important;margin-top:8px!important}
+html body #jr53TopCategoryHost .jr81-cat-stats span{font-size:11px!important;line-height:1.25!important;white-space:normal!important;overflow:visible!important;color:#f4f7f5!important}
+html body #jr53TopCategoryHost .jr81-cat-btn.active,
+html body #jr53TopCategoryHost .jr81-cat-btn.is-active{border-color:rgba(53,229,156,.72)!important;box-shadow:0 0 0 1px rgba(53,229,156,.24) inset,0 12px 30px rgba(0,0,0,.18)!important}
 
-/* 2) Logos reales en Tabla */
-#view-table .jr56-team-name{display:inline-flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
-#view-table .jr56-team-logo{width:34px!important;height:34px!important;object-fit:contain!important;flex:0 0 34px!important;border-radius:9px!important;background:#050908!important;border:1px solid rgba(71,255,169,.18)!important;padding:2px!important}
-#view-table .jr56-team-name>span{min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important}
-#view-table .jr56-rank-logo{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:9px!important}
+#jr56CredentialGallery{display:none!important}
+#credentialCard.jr57-credential,#credentialCard[data-jr57="1"]{padding:0!important;overflow:hidden!important;border:1px solid rgba(53,229,156,.42)!important;border-radius:24px!important;background:linear-gradient(145deg,#06130d 0%,#0b2418 48%,#07100d 100%)!important;box-shadow:0 20px 50px rgba(0,0,0,.35)!important}
+.jr57-id-top{display:grid!important;grid-template-columns:74px 1fr 64px!important;gap:14px!important;align-items:center!important;padding:18px 20px!important;border-bottom:1px solid rgba(255,255,255,.12)!important;background:linear-gradient(90deg,rgba(53,229,156,.12),rgba(255,255,255,.02))!important}
+.jr57-league-logo,.jr57-cat-logo{width:64px!important;height:64px!important;object-fit:contain!important;border-radius:14px!important;background:#030807!important;padding:5px!important;border:1px solid rgba(255,255,255,.12)!important}
+.jr57-id-top small{display:block!important;color:#a8beb3!important;font-size:10px!important;font-weight:800!important;letter-spacing:.14em!important}
+.jr57-id-top strong{display:block!important;color:#fff!important;font-size:clamp(18px,4vw,30px)!important;line-height:1!important;margin:3px 0!important}
+.jr57-id-top span{display:block!important;color:var(--jr57-green)!important;font-size:11px!important;font-weight:900!important}
+.jr57-id-body{display:grid!important;grid-template-columns:130px minmax(0,1fr) 92px!important;gap:18px!important;align-items:stretch!important;padding:20px!important}
+.jr57-photo{min-height:160px!important;border-radius:18px!important;border:1px solid rgba(255,255,255,.12)!important;background:radial-gradient(circle at 50% 30%,rgba(53,229,156,.16),transparent 55%),#09100d!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:8px!important;color:#94a69d!important}
+.jr57-photo>span{font-size:58px!important;filter:grayscale(1)!important}.jr57-photo small{font-size:9px!important;font-weight:900!important;letter-spacing:.08em!important}
+.jr57-fields{display:grid!important;gap:9px!important}.jr57-fields label{display:grid!important;gap:2px!important;color:#88a197!important;font-size:9px!important;font-weight:900!important;letter-spacing:.09em!important;text-transform:uppercase!important}
+.jr57-fields label b{font-size:15px!important;line-height:1.2!important;color:#fff!important;letter-spacing:0!important;text-transform:none!important}.jr57-two{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important}.jr57-enabled{color:var(--jr57-green)!important}
+.jr57-qr{min-height:92px!important;border:8px solid #eef6f2!important;border-radius:12px!important;background:repeating-conic-gradient(#07100c 0 25%,#eef6f2 0 50%) 50%/16px 16px!important;align-self:end!important}
+.jr57-id-foot{display:flex!important;justify-content:space-between!important;gap:12px!important;padding:11px 20px!important;background:#030705!important;border-top:1px solid rgba(255,255,255,.1)!important;color:#9db0a7!important;font-size:10px!important}.jr57-id-foot b{color:var(--jr57-green)!important}
 
-/* 3) Barra inferior: texto completo y botones funcionales */
+#view-table .jr57-team-name{display:inline-flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
+#view-table .jr57-team-logo,#view-table .jr56-team-logo{width:34px!important;height:34px!important;object-fit:contain!important;flex:0 0 34px!important;border-radius:9px!important;background:#050908!important;border:1px solid rgba(71,255,169,.18)!important;padding:2px!important}
+
+#jr56CedulaToolbar,#jr56CedulaPanel{display:none!important}
+#jr57CedulaToolbar{display:flex!important;gap:8px!important;flex-wrap:wrap!important;align-items:center!important;margin:8px 0 14px!important}
+#jr57CedulaToolbar button,#jr57CedulaToolbar a{appearance:none!important;border:1px solid rgba(53,229,156,.42)!important;background:#0a1510!important;color:#fff!important;border-radius:13px!important;padding:11px 14px!important;font-weight:900!important;text-decoration:none!important;cursor:pointer!important}
+#jr57CedulaToolbar .jr57-generate{background:linear-gradient(180deg,#49f1ae,#24bd78)!important;color:#052015!important}
+#jr57CedulaPanel{display:none!important;margin:10px 0 18px!important;border:1px solid var(--jr57-line)!important;background:rgba(4,10,7,.92)!important;border-radius:18px!important;padding:14px!important}
+#jr57CedulaPanel.open{display:block!important}.jr57-cedula-title{display:flex!important;justify-content:space-between!important;gap:12px!important;align-items:end!important;margin-bottom:10px!important}.jr57-cedula-title small{color:var(--jr57-green)!important;font-weight:900!important;letter-spacing:.08em!important}.jr57-cedula-title h3{margin:2px 0 0!important}.jr57-cedula-title>span{font-size:11px!important;color:#aeb9b3!important}
+.jr57-cedula-list{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))!important;gap:9px!important}.jr57-cedula-item{display:grid!important;gap:4px!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:13px!important;padding:11px!important;background:#101319!important;color:#fff!important;text-decoration:none!important}.jr57-cedula-item strong{font-size:13px!important}.jr57-cedula-item span{font-size:11px!important;color:#aeb9b3!important}.jr57-cedula-item b{font-size:12px!important}.jr57-cedula-item em{font-size:11px!important;color:var(--jr57-green)!important;font-style:normal!important}
+
 .bottom-nav,.mobile-nav,.bottom-tabs,nav.bottom{grid-template-columns:repeat(5,minmax(0,1fr))!important}
-.nav-btn{min-width:0!important;padding:10px 6px!important;font-size:clamp(11px,3.4vw,15px)!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important}
-@media(max-width:390px){.nav-btn{font-size:11px!important;letter-spacing:-.2px!important;padding-inline:3px!important}}
-
-/* 4) Credenciales: usar las imágenes reales aportadas por el usuario */
-#jr56CredentialGallery{margin-top:14px}
-.jr56-cred-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
-.jr56-cred-head h3{margin:0;font-size:clamp(18px,4.2vw,28px)}
-.jr56-cred-head p{margin:4px 0 0;color:var(--muted,#9aa2ad);font-size:12px}
-.jr56-cred-filters{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:thin}
-.jr56-cred-filter{appearance:none;border:1px solid var(--jr56-border);background:#0d1013;color:#fff;border-radius:999px;padding:9px 13px;font-weight:800;white-space:nowrap;cursor:pointer}
-.jr56-cred-filter.active{border-color:var(--jr56-green);box-shadow:0 0 0 1px rgba(47,227,154,.2) inset}
-.jr56-cred-groups{display:grid;gap:18px}
-.jr56-cred-group{min-width:0}
-.jr56-cred-group h4{margin:0 0 8px;color:#fff;font-size:15px}
-.jr56-cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-.jr56-cred-card{display:block;border:1px solid var(--jr56-border);border-radius:16px;overflow:hidden;background:#050807;text-decoration:none!important;color:#fff!important}
-.jr56-cred-card img{display:block;width:100%;aspect-ratio:1.56/1;object-fit:cover;background:#07100c}
-.jr56-cred-meta{padding:10px 12px;display:grid;gap:2px}
-.jr56-cred-meta b{font-size:14px}
-.jr56-cred-meta span{font-size:11px;color:#b8c3bd}
-
-/* 5) Cédulas oficiales en Partidos */
-#jr56CedulaToolbar{display:flex!important;gap:8px!important;flex-wrap:wrap!important;align-items:center!important;margin:8px 0 14px!important}
-#jr56CedulaToolbar button{appearance:none;border:1px solid rgba(47,227,154,.42);background:#0a1510;color:#fff;border-radius:13px;padding:11px 14px;font-weight:900;cursor:pointer}
-#jr56CedulaPanel{display:none;margin:10px 0 18px;border:1px solid var(--jr56-border);background:rgba(4,10,7,.86);border-radius:18px;padding:14px}
-#jr56CedulaPanel.open{display:block}
-.jr56-cedula-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
-.jr56-cedula-title h3{margin:0;font-size:18px}
-.jr56-cedula-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:9px}
-.jr56-cedula-item{display:grid;gap:4px;border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:10px;background:#101319;color:#fff;text-decoration:none!important}
-.jr56-cedula-item strong{font-size:13px}
-.jr56-cedula-item span{font-size:11px;color:#aeb9b3}
-.jr56-cedula-item em{font-size:11px;color:var(--jr56-green);font-style:normal}
-
-/* Mobile */
-@media(max-width:800px){
- #jr53TopCategoryHost .jr81-cat-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
- #jr53TopCategoryHost .jr81-cat-btn{min-height:132px!important}
- #view-table .jr56-team-logo{width:30px!important;height:30px!important;flex-basis:30px!important}
- .jr56-cred-grid{grid-template-columns:1fr!important}
+.nav-btn{min-width:0!important;padding:10px 2px!important;font-size:clamp(10px,2.75vw,14px)!important;letter-spacing:-.35px!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important}
+@media(max-width:1050px){html body #jr53TopCategoryHost>.jr81-cat-row{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:650px){
+ html body #jr53TopCategoryHost>.jr81-cat-row{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ html body #jr53TopCategoryHost .jr81-cat-btn{min-height:150px!important;grid-template-columns:72px minmax(0,1fr)!important;padding:12px!important}
+ html body #jr53TopCategoryHost .jr81-cat-icon{width:72px!important;height:72px!important}html body #jr53TopCategoryHost .jr81-cat-icon img{width:64px!important;height:64px!important}
+ .jr57-id-top{grid-template-columns:58px 1fr 52px!important;padding:14px!important;gap:10px!important}.jr57-league-logo,.jr57-cat-logo{width:52px!important;height:52px!important}.jr57-id-top strong{font-size:18px!important}
+ .jr57-id-body{grid-template-columns:100px minmax(0,1fr)!important;padding:14px!important;gap:12px!important}.jr57-photo{min-height:145px!important}.jr57-qr{grid-column:1/-1!important;width:92px!important;min-height:92px!important;justify-self:end!important}.jr57-two{grid-template-columns:1fr!important;gap:8px!important}
+ .jr57-id-foot{padding:10px 14px!important}.nav-btn{font-size:10.5px!important}
 }

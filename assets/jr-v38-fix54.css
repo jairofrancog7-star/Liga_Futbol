@@ -1,1 +1,3 @@
-cat: assets/jr-v38-fix54.css: No such file or directory
+/* V38 FIX54 restored safely. FIX56/FIX57 owns the final visual layer. */
+#jr53TopCategoryHost{position:relative;z-index:30}
+#jr54Cedulas{white-space:nowrap}
