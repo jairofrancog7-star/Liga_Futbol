@@ -1,0 +1,36 @@
+name: Patch index for V38.79
+
+on:
+  push:
+    paths:
+      - '.v79-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index with direct V38.79 assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('./assets/jr-v38-fix54.js?v=38-70','./assets/jr-v38-fix54.js?v=38-79')
+          css='<link rel="stylesheet" href="./assets/jr-mobile-79.css?v=38-79" data-jr79-direct="1">'
+          js='<script defer src="./assets/jr-mobile-79.js?v=38-79" data-jr79-direct="1"></script>'
+          if 'data-jr79-direct="1"' not in s:
+              s=s.replace('</head>', css+'\n</head>', 1)
+              s=s.replace('</body>', js+'\n</body>', 1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "fix: load V38.79 category repair directly"
+          git push
