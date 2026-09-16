@@ -1,0 +1,76 @@
+/* V38.75 · corrección definitiva de categorías + centro interactivo tipo app. Aditivo. */
+
+/* === CATEGORÍAS NUEVAS: el host viejo se conserva funcional pero queda oculto visualmente === */
+#jr53TopCategoryHost.jr75-hidden-source{display:none!important}
+#jr75CategoryStrip{
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  margin:8px 0 14px!important;padding:2px 0 8px!important;
+  display:flex!important;flex-flow:row nowrap!important;gap:9px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x proximity!important;
+  -webkit-overflow-scrolling:touch!important;scrollbar-width:none!important;
+}
+#jr75CategoryStrip::-webkit-scrollbar{display:none!important}
+#jr75CategoryStrip .jr75-cat{
+  all:unset;box-sizing:border-box!important;cursor:pointer!important;
+  flex:0 0 154px!important;width:154px!important;min-width:154px!important;max-width:154px!important;
+  height:68px!important;min-height:68px!important;max-height:68px!important;
+  display:flex!important;align-items:center!important;gap:9px!important;
+  padding:8px 10px!important;border:1px solid rgba(255,255,255,.11)!important;border-radius:17px!important;
+  background:linear-gradient(180deg,#171b1e,#0e1315)!important;color:#f7fff9!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035)!important;scroll-snap-align:start!important;
+  writing-mode:horizontal-tb!important;text-orientation:mixed!important;overflow:hidden!important;
+}
+#jr75CategoryStrip .jr75-cat[aria-pressed="true"]{border-color:#40e99a!important;background:linear-gradient(180deg,#153024,#0a1911)!important;box-shadow:0 0 0 1px rgba(64,233,154,.15) inset!important}
+#jr75CategoryStrip .jr75-cat-logo{
+  flex:0 0 48px!important;width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;
+  border-radius:13px!important;border:1px solid rgba(62,226,148,.25)!important;background:#030806!important;
+  display:grid!important;place-items:center!important;overflow:hidden!important;font-size:23px!important;
+}
+#jr75CategoryStrip .jr75-cat-logo img{display:block!important;width:43px!important;height:43px!important;max-width:43px!important;max-height:43px!important;object-fit:contain!important;margin:0!important;position:static!important;transform:none!important}
+#jr75CategoryStrip .jr75-cat-copy{display:flex!important;flex-direction:column!important;justify-content:center!important;min-width:0!important;max-width:84px!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}
+#jr75CategoryStrip .jr75-cat-copy strong{
+  display:block!important;width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;
+  font:900 11.5px/1.12 'Manrope',system-ui,sans-serif!important;letter-spacing:0!important;text-align:left!important;
+  white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  writing-mode:horizontal-tb!important;text-orientation:mixed!important;color:#fff!important;
+}
+#jr75CategoryStrip .jr75-cat-copy small{
+  display:block!important;margin-top:4px!important;font:800 9.5px/1.1 'Manrope',system-ui,sans-serif!important;color:#8fdcb2!important;
+  white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;writing-mode:horizontal-tb!important;
+}
+@media(max-width:390px){#jr75CategoryStrip .jr75-cat{flex-basis:145px!important;width:145px!important;min-width:145px!important;max-width:145px!important}.jr75-cat-copy{max-width:76px!important}}
+
+/* === ARREGLA LA BARRA DE COMPETENCIA EXISTENTE === */
+#jr74CompetitionNav{
+  box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  display:flex!important;flex-flow:row nowrap!important;justify-content:flex-start!important;align-items:center!important;
+  overflow-x:auto!important;overflow-y:hidden!important;gap:6px!important;padding:6px!important;scrollbar-width:none!important;
+}
+#jr74CompetitionNav::-webkit-scrollbar{display:none!important}
+#jr74CompetitionNav button{flex:0 0 auto!important;width:auto!important;min-width:max-content!important;max-width:none!important;white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;font-size:11px!important;padding:8px 11px!important}
+
+/* === CENTRO JR / HOME CARDS === */
+#jr75Center{margin:16px 0 22px;padding:15px;border:1px solid rgba(72,227,170,.19);border-radius:22px;background:linear-gradient(145deg,rgba(5,23,16,.96),rgba(2,13,9,.98));overflow:hidden}
+.jr75-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px}.jr75-head small{display:block;color:#66e8a4;font-size:10px;font-weight:900;letter-spacing:.12em}.jr75-head h3{margin:3px 0 0!important;font-size:21px!important}.jr75-head .jr75-status{color:#8aa898;font-size:10px;white-space:nowrap}
+.jr75-mainmatch{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center;padding:14px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(0,0,0,.18)}
+.jr75-team{text-align:center;min-width:0}.jr75-team img,.jr75-team .jr75-crest-fallback{width:48px;height:48px;margin:0 auto 6px;border-radius:13px;object-fit:contain;background:#06120c;display:grid;place-items:center}.jr75-team b{display:block;font-size:12px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.jr75-score{text-align:center;min-width:70px}.jr75-score strong{display:block;font:900 24px/1 'Sora',system-ui,sans-serif}.jr75-score small{display:block;margin-top:5px;color:#8ea799;font-size:9px}.jr75-matchmeta{grid-column:1/-1;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;color:#98ad9f;font-size:10px}.jr75-match-actions{grid-column:1/-1;display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}.jr75-match-actions button{flex:1 0 96px;min-height:38px;border:1px solid rgba(72,227,170,.18);border-radius:10px;background:#0c261b;color:#ebfff3;font-size:10px;font-weight:850;padding:7px 10px}
+.jr75-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}.jr75-tool{min-width:0;min-height:72px;border:1px solid rgba(255,255,255,.08);border-radius:15px;background:#111a16;color:#f5fff8;padding:9px 6px;text-align:center;font-weight:850;font-size:10px;line-height:1.15}.jr75-tool span{display:block;font-size:21px;margin-bottom:5px}.jr75-tool em{display:block;margin-top:3px;color:#72dca5;font-style:normal;font-size:8px}
+@media(max-width:520px){.jr75-tools{grid-template-columns:repeat(2,minmax(0,1fr))}.jr75-mainmatch{grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr)}}
+
+/* === FEED / FAN ZONE === */
+#jr75FanZone{margin:18px 0 24px;padding:15px;border:1px solid rgba(72,227,170,.18);border-radius:22px;background:rgba(5,19,14,.94)}
+.jr75-tabs{display:flex;gap:6px;overflow-x:auto;padding:4px;margin:10px 0 12px;border:1px solid rgba(72,227,170,.13);border-radius:13px;background:rgba(0,0,0,.18);scrollbar-width:none}.jr75-tabs::-webkit-scrollbar{display:none}.jr75-tabs button{flex:0 0 auto;min-height:38px;border:0;border-radius:9px;background:transparent;color:#9fb3a7;padding:7px 12px;font-size:10px;font-weight:850;white-space:nowrap}.jr75-tabs button.active{background:#2de093;color:#03150d}.jr75-pane{display:none}.jr75-pane.active{display:block}.jr75-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.jr75-card{padding:11px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#111a16;min-width:0}.jr75-card b{display:block;font-size:12px}.jr75-card small{display:block;margin-top:4px;color:#8ca497;font-size:9px;line-height:1.35}.jr75-card button{margin-top:9px;min-height:34px;width:100%;border:1px solid rgba(72,227,170,.18);border-radius:9px;background:#0c261b;color:#eafff2;font-size:9px;font-weight:850}.jr75-list{display:grid;gap:7px}.jr75-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:9px;align-items:center;padding:9px 10px;border:1px solid rgba(255,255,255,.07);border-radius:12px;background:#101914}.jr75-row .num{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:#173426;font-weight:900}.jr75-row b,.jr75-row small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.jr75-row small{color:#88a091;font-size:9px}.jr75-row strong{color:#4ce7a0;font-size:16px}
+@media(max-width:430px){.jr75-grid{grid-template-columns:1fr}}
+
+/* === DIALOGS === */
+.jr75-dialog{width:min(94vw,620px);max-height:90vh;border:1px solid rgba(72,227,170,.28);border-radius:22px;background:#07140f;color:#f4fff8;padding:0;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.65)}
+.jr75-dialog::backdrop{background:rgba(0,0,0,.76);backdrop-filter:blur(10px)}
+.jr75-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08)}.jr75-dialog-head h3{margin:0!important;font-size:18px!important}.jr75-dialog-head button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:#111a16;color:#fff;font-size:22px}.jr75-dialog-body{padding:15px;max-height:75vh;overflow:auto}.jr75-form{display:grid;gap:11px}.jr75-form label{display:grid;gap:5px;font-size:10px;color:#9bb1a4;font-weight:800}.jr75-form select,.jr75-form input,.jr75-form textarea{box-sizing:border-box;width:100%;min-height:44px;border:1px solid #587863;border-radius:11px;background:#f7fff8;color:#173b26;padding:9px 11px;font-size:14px}.jr75-form textarea{min-height:90px}.jr75-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.jr75-actions button{flex:1 1 120px;min-height:40px;border-radius:10px;border:1px solid rgba(72,227,170,.2);background:#0c261b;color:#ecfff4;font-weight:850;font-size:10px}.jr75-actions .primary{background:#2de093;color:#04170e}.jr75-note{padding:10px 12px;border:1px dashed rgba(72,227,170,.2);border-radius:11px;color:#91a99a;font-size:10px;line-height:1.4}.jr75-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}.jr75-kpi{padding:11px;border-radius:13px;border:1px solid rgba(255,255,255,.07);background:#111a16;text-align:center}.jr75-kpi b{display:block;font-size:20px}.jr75-kpi small{color:#8da496;font-size:9px}.jr75-compare{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:start}.jr75-compare-card{padding:11px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#101914;text-align:center}.jr75-compare-card b{display:block;font-size:12px}.jr75-compare-card strong{display:block;margin-top:8px;font-size:28px;color:#4ce7a0}.jr75-vs{align-self:center;font-weight:900;color:#6edfa5}.jr75-notif{padding:10px;border:1px solid rgba(255,255,255,.07);border-radius:12px;background:#101914;margin-bottom:7px}.jr75-notif b{display:block;font-size:11px}.jr75-notif small{display:block;margin-top:3px;color:#8da497;font-size:9px}
+
+/* === PUNTO DE NOTIFICACIONES EN AVISOS === */
+#jr75NotifBadge{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#e8304a;color:#fff;font-size:9px;font-weight:900;margin-left:4px;vertical-align:middle}
+
+/* === MODO CLARO === */
+body.light #jr75CategoryStrip .jr75-cat{background:#fff!important;color:#153b26!important;border-color:#bed2c4!important}body.light #jr75CategoryStrip .jr75-cat-copy strong{color:#153b26!important}body.light #jr75CategoryStrip .jr75-cat-copy small{color:#47735a!important}body.light #jr75Center,body.light #jr75FanZone{background:#fff!important;color:#153b26!important;border-color:#bdd2c3!important}body.light .jr75-mainmatch,body.light .jr75-card,body.light .jr75-row,body.light .jr75-tool,body.light .jr75-kpi,body.light .jr75-compare-card,body.light .jr75-notif{background:#f6faf7!important;color:#153b26!important;border-color:#d1dfd5!important}body.light .jr75-match-actions button,body.light .jr75-card button,body.light .jr75-actions button{background:#eef7f1!important;color:#1e5134!important;border-color:#c7dacd!important}body.light .jr75-dialog{background:#fff!important;color:#153b26!important;border-color:#b9d2c0!important}body.light .jr75-dialog-head button{background:#eef4f0!important;color:#153b26!important;border-color:#c8d8cc!important}body.light .jr75-note{color:#4d6e59!important;border-color:#c8d9cd!important}
+
+@media(prefers-reduced-motion:reduce){#jr75CategoryStrip,.jr75-tabs,.jr75-match-actions{scroll-behavior:auto!important}}
