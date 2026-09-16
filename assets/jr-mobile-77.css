@@ -1,0 +1,109 @@
+/* V38.77 · hotfix móvil: categorías legibles + tablas/partidos con desplazamiento horizontal. */
+
+/* La barra 38.76 se reemplaza por el host original reparado para evitar duplicados. */
+#jr75CategoryStrip,[id^="jr75CategoryStrip"][hidden]{display:none!important}
+#jr53TopCategoryHost.jr75-hidden-source,#jr53TopCategoryHost.jr77-category-host{
+  display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  margin:8px 0 14px!important;padding:0!important;overflow:visible!important;
+}
+#jr53TopCategoryHost .jr53-static-category-row,
+#jr53TopCategoryHost .jr81-cat-row,
+#jr53TopCategoryHost .jr77-category-rail{
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  display:flex!important;flex-flow:row nowrap!important;grid-template-columns:none!important;
+  gap:9px!important;align-items:stretch!important;justify-content:flex-start!important;
+  overflow-x:auto!important;overflow-y:hidden!important;padding:3px 2px 9px!important;
+  scroll-snap-type:x proximity!important;-webkit-overflow-scrolling:touch!important;
+  scrollbar-width:none!important;touch-action:pan-x pan-y!important;
+}
+#jr53TopCategoryHost .jr53-static-category-row::-webkit-scrollbar,
+#jr53TopCategoryHost .jr81-cat-row::-webkit-scrollbar{display:none!important}
+#jr53TopCategoryHost button[data-category]{
+  all:unset;box-sizing:border-box!important;cursor:pointer!important;
+  flex:0 0 160px!important;width:160px!important;min-width:160px!important;max-width:160px!important;
+  height:68px!important;min-height:68px!important;max-height:68px!important;
+  display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;
+  gap:9px!important;padding:8px 10px!important;margin:0!important;
+  border:1px solid rgba(255,255,255,.11)!important;border-radius:18px!important;
+  background:linear-gradient(180deg,#171b1e,#0d1214)!important;color:#f8fff9!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;
+  overflow:hidden!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;
+  word-break:normal!important;overflow-wrap:normal!important;white-space:normal!important;scroll-snap-align:start!important;
+}
+#jr53TopCategoryHost button[data-category].active,
+#jr53TopCategoryHost button[data-category][aria-pressed="true"]{
+  border-color:#43eaa0!important;background:linear-gradient(180deg,#153126,#0a1a12)!important;
+  box-shadow:0 0 0 1px rgba(67,234,160,.12) inset!important;
+}
+#jr53TopCategoryHost .jr77-cat-logo{
+  flex:0 0 46px!important;width:46px!important;height:46px!important;min-width:46px!important;max-width:46px!important;
+  display:grid!important;place-items:center!important;border-radius:13px!important;overflow:hidden!important;
+  border:1px solid rgba(67,234,160,.24)!important;background:#030806!important;font-size:22px!important;
+}
+#jr53TopCategoryHost .jr77-cat-logo img{
+  display:block!important;width:41px!important;height:41px!important;max-width:41px!important;max-height:41px!important;
+  object-fit:contain!important;position:static!important;margin:0!important;transform:none!important;
+}
+#jr53TopCategoryHost .jr77-cat-copy{
+  min-width:0!important;max-width:86px!important;display:flex!important;flex-direction:column!important;
+  align-items:flex-start!important;justify-content:center!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;
+}
+#jr53TopCategoryHost .jr77-cat-copy strong{
+  display:block!important;width:100%!important;margin:0!important;padding:0!important;
+  font:900 12px/1.08 'Manrope',system-ui,sans-serif!important;color:#fff!important;text-align:left!important;
+  white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important;
+  writing-mode:horizontal-tb!important;text-orientation:mixed!important;max-height:2.2em!important;overflow:hidden!important;
+}
+#jr53TopCategoryHost .jr77-cat-copy small{
+  display:block!important;width:100%!important;margin-top:4px!important;
+  font:800 9px/1.1 'Manrope',system-ui,sans-serif!important;color:#87ddb0!important;
+  white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+}
+/* Fallback mientras JS termina de normalizar el contenido anterior. */
+#jr53TopCategoryHost .jr81-cat-title{writing-mode:horizontal-tb!important;text-orientation:mixed!important;word-break:normal!important;overflow-wrap:normal!important;white-space:normal!important}
+
+/* Desplazamiento horizontal real para tablas y calendarios largos en móvil. */
+#view-table .jr77-scrollbox,#view-matches .jr77-scrollbox,
+#view-table .table-wrap,#view-matches .table-wrap,
+#view-table [class*="table-wrap"],#view-matches [class*="table-wrap"]{
+  display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  overflow-x:auto!important;overflow-y:visible!important;-webkit-overflow-scrolling:touch!important;
+  touch-action:pan-x pan-y!important;overscroll-behavior-inline:contain!important;scrollbar-width:thin!important;
+}
+#view-table table.jr77-wide-table,#view-table .jr77-scrollbox>table{min-width:760px!important;width:max-content!important;max-width:none!important}
+#view-matches table.jr77-wide-table,#view-matches .jr77-scrollbox>table{min-width:720px!important;width:max-content!important;max-width:none!important}
+#view-matches .jr77-match-rail{
+  width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;overflow-y:visible!important;
+  -webkit-overflow-scrolling:touch!important;touch-action:pan-x pan-y!important;overscroll-behavior-inline:contain!important;
+  scrollbar-width:thin!important;
+}
+#view-matches .jr77-match-wide{box-sizing:border-box!important;min-width:680px!important;max-width:none!important}
+#view-matches.jr77-compact .jr77-match-wide{min-width:560px!important}
+
+/* Indicador visible para que en móvil quede claro que se puede deslizar. */
+.jr77-swipe-hint{
+  display:flex!important;align-items:center!important;gap:8px!important;width:100%!important;box-sizing:border-box!important;
+  margin:8px 0 10px!important;padding:8px 9px!important;border:1px solid rgba(67,234,160,.18)!important;
+  border-radius:13px!important;background:rgba(9,28,19,.78)!important;color:#dffff0!important;
+  font-size:10px!important;line-height:1.25!important;overflow:hidden!important;
+}
+.jr77-swipe-hint>span{font-size:19px!important;color:#4ce7a0!important;flex:0 0 auto!important}
+.jr77-swipe-hint>b{min-width:0!important;flex:1 1 auto!important;font-size:10px!important}
+.jr77-swipe-hint>button{
+  flex:0 0 auto!important;min-height:34px!important;border:1px solid rgba(67,234,160,.22)!important;border-radius:9px!important;
+  background:#0d2a1d!important;color:#effff5!important;padding:6px 9px!important;font-size:9px!important;font-weight:850!important;white-space:nowrap!important;
+}
+.jr77-quick-tools{display:flex!important;gap:7px!important;overflow-x:auto!important;margin:0 0 10px!important;padding:0 0 3px!important;scrollbar-width:none!important}
+.jr77-quick-tools::-webkit-scrollbar{display:none!important}.jr77-quick-tools button{flex:0 0 auto!important;min-height:36px!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:10px!important;background:#121a16!important;color:#f1fff6!important;padding:7px 11px!important;font-size:9px!important;font-weight:850!important;white-space:nowrap!important}
+
+/* No permitir que barras inferiores o contenedores superiores recorten la tabla por reglas viejas. */
+#view-table,#view-matches{min-width:0!important;max-width:100%!important;overflow-x:visible!important}
+#view-table .card,#view-matches .card,#view-table .panel,#view-matches .panel{max-width:100%!important;min-width:0!important}
+
+/* Modo claro. */
+body.light #jr53TopCategoryHost button[data-category]{background:#fff!important;color:#163b27!important;border-color:#c7d8cc!important}
+body.light #jr53TopCategoryHost .jr77-cat-copy strong{color:#163b27!important}body.light #jr53TopCategoryHost .jr77-cat-copy small{color:#4b755d!important}
+body.light .jr77-swipe-hint{background:#f5faf7!important;color:#315f45!important;border-color:#c6dacd!important}body.light .jr77-quick-tools button,body.light .jr77-swipe-hint>button{background:#eef7f1!important;color:#245139!important;border-color:#c7d9cd!important}
+
+@media(max-width:390px){#jr53TopCategoryHost button[data-category]{flex-basis:148px!important;width:148px!important;min-width:148px!important;max-width:148px!important}.jr77-cat-copy{max-width:75px!important}}
+@media(prefers-reduced-motion:reduce){#jr53TopCategoryHost .jr81-cat-row,.jr77-scrollbox,.jr77-match-rail{scroll-behavior:auto!important}}
