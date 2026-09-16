@@ -17,10 +17,10 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.77 loader — conserva todas las capas anteriores y añade el hotfix móvil 77. */
+/* V38.78 loader — conserva todas las capas anteriores y añade la reparación definitiva de categorías móviles. */
 (()=>{'use strict';
 if(window.__JR69_LOADER)return;window.__JR69_LOADER=true;
-const V='38-77';
+const V='38-78';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
@@ -47,6 +47,8 @@ function ensure(){
  addJs('jr76-mobile','./assets/jr-mobile-76.js?v='+V);
  addCss('jr77-mobile','./assets/jr-mobile-77.css?v='+V);
  addJs('jr77-mobile','./assets/jr-mobile-77.js?v='+V);
+ addCss('jr78-mobile','./assets/jr-mobile-78.css?v='+V);
+ addJs('jr78-mobile','./assets/jr-mobile-78.js?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
