@@ -1,0 +1,191 @@
+/* V38.71 · ajustes móviles aditivos para Partidos/Jornadas. No elimina vistas ni acciones existentes. */
+
+/* Contención: evita que tarjetas y publicaciones empujen la vista fuera del ancho del teléfono. */
+#view-matches,
+#view-matches #jr65PartidosRestore,
+#view-matches .jr65-shell,
+#view-matches .v20-calendar-sheet,
+#view-matches .v21-archive-card,
+#view-matches .v20-archive-card{
+  min-width:0!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+}
+#view-matches #jr65PartidosRestore,
+#view-matches .jr65-shell{width:100%!important}
+#view-matches .jr65-shell{overflow:hidden!important}
+
+/* Selector de jornadas: botones compactos, legibles y desplazamiento horizontal táctil real. */
+#view-matches .jr65-rounds{
+  display:flex!important;
+  align-items:center!important;
+  gap:9px!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  padding:6px 4px 13px!important;
+  scroll-padding-inline:4px!important;
+  scroll-snap-type:x proximity!important;
+  overscroll-behavior-inline:contain!important;
+  -webkit-overflow-scrolling:touch!important;
+  touch-action:pan-x!important;
+  scrollbar-width:none!important;
+}
+#view-matches .jr65-rounds::-webkit-scrollbar{display:none!important}
+#view-matches .jr65-rounds button{
+  flex:0 0 auto!important;
+  width:auto!important;
+  min-width:62px!important;
+  max-width:none!important;
+  min-height:50px!important;
+  height:50px!important;
+  padding:0 15px!important;
+  margin:0!important;
+  border-radius:18px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  font-size:15px!important;
+  line-height:1!important;
+  letter-spacing:0!important;
+  scroll-snap-align:center!important;
+  scroll-snap-stop:normal!important;
+}
+#view-matches .jr65-rounds button:first-child{min-width:86px!important}
+#view-matches .jr65-rounds button.active{
+  border-color:#48e3aa!important;
+  box-shadow:0 0 0 2px rgba(72,227,170,.16),0 8px 24px rgba(0,0,0,.18)!important;
+}
+
+/* Las tarjetas de publicaciones de Partidos se adaptan antes de cortar texto/botones. */
+#view-matches .v20-calendar-sheet{
+  width:100%!important;
+  overflow:hidden!important;
+}
+#view-matches .v20-sheet-head{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+}
+#view-matches .v20-sheet-head>*{min-width:0!important;max-width:100%!important}
+#view-matches .v20-sheet-head h3,
+#view-matches .v20-sheet-head p{
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+#view-matches .v21-toolbar-actions{
+  min-width:0!important;
+  max-width:100%!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:10px!important;
+  flex-wrap:wrap!important;
+}
+#view-matches .v21-toolbar-actions :is(button,a){
+  min-width:0!important;
+  max-width:100%!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+
+/* Cualquier tabla que aparezca dentro de Partidos queda dentro de un scroller local. */
+#view-matches .jr71-table-scroll,
+#view-matches :is(.jr59-table-scroll,.v20-table-scroll,.v21-table-scroll,.table-scroll,.table-wrap){
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  -webkit-overflow-scrolling:touch!important;
+  overscroll-behavior-inline:contain!important;
+  touch-action:pan-x pan-y!important;
+  scrollbar-width:thin!important;
+  scrollbar-color:rgba(72,227,170,.68) rgba(255,255,255,.06)!important;
+}
+#view-matches .jr71-table-scroll::-webkit-scrollbar{height:8px!important}
+#view-matches .jr71-table-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.05)!important;border-radius:999px!important}
+#view-matches .jr71-table-scroll::-webkit-scrollbar-thumb{background:rgba(72,227,170,.68)!important;border-radius:999px!important}
+#view-matches .jr71-table-scroll>table{
+  width:max-content!important;
+  min-width:100%!important;
+  max-width:none!important;
+  table-layout:auto!important;
+}
+#view-matches .jr71-table-scroll :is(th,td){white-space:nowrap!important}
+
+/* Logo junto al nombre de categoría en los selectores superiores. */
+#jr53TopCategoryHost [data-category],
+#categoryBar [data-category]{
+  min-width:0;
+}
+#jr53TopCategoryHost [data-category].jr71-category-with-logo,
+#categoryBar [data-category].jr71-category-with-logo{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+}
+.jr71-category-logo{
+  width:24px!important;
+  height:24px!important;
+  min-width:24px!important;
+  flex:0 0 24px!important;
+  object-fit:contain!important;
+  border-radius:6px!important;
+  padding:1px!important;
+  background:rgba(0,0,0,.18)!important;
+}
+
+/* Modo claro: mantiene contraste en los controles restaurados de Partidos. */
+body.light #view-matches .jr65-shell{
+  background:#f7fbf8!important;
+  color:#143421!important;
+  border-color:#b9d4c3!important;
+}
+body.light #view-matches :is(.jr65-head h3,.jr65-team strong,.jr65-score){color:#143421!important}
+body.light #view-matches :is(.jr65-head p,.jr65-cardtop,.jr65-meta){color:#4b6956!important}
+body.light #view-matches .jr65-rounds button,
+body.light #view-matches .jr65-status button{
+  background:#fff!important;
+  color:#173e27!important;
+  border-color:#b4cfbd!important;
+  box-shadow:none!important;
+}
+body.light #view-matches .jr65-rounds button.active,
+body.light #view-matches .jr65-status button.active{
+  background:#c9f1d6!important;
+  color:#07552c!important;
+  border-color:#47b978!important;
+}
+body.light #view-matches .jr65-match,
+body.light #view-matches .jr65-cat{
+  background:#fff!important;
+  color:#143421!important;
+  border-color:#c2d9c9!important;
+}
+body.light #view-matches .jr65-team :is(img,.jr65-fallback){background:#f1f6f2!important;border-color:#c6d9cc!important}
+body.light #view-matches .v20-calendar-sheet{color:#143421!important}
+body.light #view-matches .jr71-table-scroll{scrollbar-color:#188d55 #e9f2ec!important}
+
+/* Móvil estrecho: la cabecera de la publicación baja acciones a otra línea y la navegación inferior conserva el texto completo. */
+@media(max-width:650px){
+  #view-matches .v20-sheet-head{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:12px!important}
+  #view-matches .v21-toolbar-actions{width:100%!important;justify-content:space-between!important}
+  #view-matches .v21-toolbar-actions :is(button,a){flex:1 1 180px!important;min-height:46px!important}
+  #view-matches .jr65-rounds button{min-width:60px!important;height:48px!important;min-height:48px!important;padding-inline:14px!important;font-size:14px!important;border-radius:17px!important}
+  #view-matches .jr65-rounds button:first-child{min-width:82px!important}
+  body .bottom-nav .nav-btn{overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere!important;word-break:normal!important}
+}
+@media(max-width:390px){
+  body .bottom-nav .nav-btn{font-size:9px!important;line-height:1.15!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  #view-matches .jr65-rounds{scroll-behavior:auto!important}
+}
