@@ -1,0 +1,77 @@
+/* V38.73 · restauración móvil + historias/momentos + ranking + cuenta. Aditivo. */
+
+/* === RESTAURA TARJETAS DE CATEGORÍA SUPERIORES === */
+#jr53TopCategoryHost{min-width:0!important;max-width:100%!important;overflow:hidden!important}
+#jr53TopCategoryHost>.jr81-cat-row{width:100%!important;max-width:100%!important;min-width:0!important}
+#jr53TopCategoryHost .jr81-cat-btn{
+  box-sizing:border-box!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;
+  min-width:0!important;max-width:100%!important;width:100%!important;height:auto!important;min-height:92px!important;
+  display:grid!important;grid-template-columns:58px minmax(0,1fr)!important;
+  grid-template-areas:"icon title" "icon phase" "icon stats"!important;
+  align-items:center!important;column-gap:12px!important;row-gap:4px!important;
+  padding:12px!important;overflow:hidden!important;white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;
+}
+#jr53TopCategoryHost .jr81-cat-btn>*{writing-mode:horizontal-tb!important;text-orientation:mixed!important;word-break:normal!important;overflow-wrap:normal!important}
+#jr53TopCategoryHost .jr81-cat-btn>img{display:none!important}
+#jr53TopCategoryHost .jr81-cat-icon{grid-area:icon!important;width:58px!important;height:58px!important;min-width:58px!important;display:grid!important;place-items:center!important;border-radius:14px!important;overflow:hidden!important}
+#jr53TopCategoryHost .jr81-cat-icon img{display:block!important;width:50px!important;height:50px!important;max-width:50px!important;max-height:50px!important;object-fit:contain!important;margin:0!important;position:static!important;transform:none!important}
+#jr53TopCategoryHost .jr81-cat-title{grid-area:title!important;display:block!important;font-size:14px!important;line-height:1.15!important;font-weight:900!important;letter-spacing:0!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+#jr53TopCategoryHost .jr81-cat-phase{grid-area:phase!important;display:block!important;font-size:10px!important;line-height:1.2!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+#jr53TopCategoryHost .jr81-cat-stats{grid-area:stats!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:3px 8px!important;min-width:0!important;margin:0!important}
+#jr53TopCategoryHost .jr81-cat-stats span{display:block!important;font-size:9px!important;line-height:1.15!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+@media(max-width:650px){
+  #jr53TopCategoryHost{overflow:visible!important}
+  #jr53TopCategoryHost>.jr81-cat-row{display:flex!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto!important;overflow-y:hidden!important;padding:2px 2px 8px!important;scroll-snap-type:x proximity!important;-webkit-overflow-scrolling:touch!important;scrollbar-width:none!important}
+  #jr53TopCategoryHost>.jr81-cat-row::-webkit-scrollbar{display:none!important}
+  #jr53TopCategoryHost .jr81-cat-btn{flex:0 0 min(82vw,300px)!important;min-width:min(82vw,300px)!important;max-width:min(82vw,300px)!important;scroll-snap-align:start!important;min-height:106px!important}
+}
+
+/* === ESCUDOS SIEMPRE VISIBLES EN TABLA === */
+#view-table .jr64-podium-card{grid-template-columns:auto auto minmax(0,1fr) auto!important}
+#view-table .jr64-podium-card .jr64-crest,
+#view-table .jr64-team .jr64-crest{display:block!important;visibility:visible!important;opacity:1!important;object-fit:contain!important;flex:0 0 auto!important}
+#view-table .jr64-podium-card .jr64-crest{width:42px!important;height:42px!important;min-width:42px!important}
+#view-table .jr64-team .jr64-crest{width:32px!important;height:32px!important;min-width:32px!important}
+#view-table .jr64-team{display:flex!important;align-items:center!important;gap:10px!important;min-width:180px!important}
+
+/* === CUENTA === */
+#jr73AccountButton{width:42px!important;height:42px!important;min-width:42px!important;border-radius:50%!important;display:grid!important;place-items:center!important;padding:0!important;font-size:20px!important}
+#jr73AccountPanel{width:min(92vw,430px);border:1px solid rgba(72,227,170,.32);border-radius:22px;background:#07140f;color:#f4fff8;padding:0;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+#jr73AccountPanel::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(10px)}
+.jr73-account-head{display:flex;align-items:center;gap:12px;padding:18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.jr73-account-avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#143b2a;border:1px solid #3edb91;font-weight:900;font-size:20px}
+.jr73-account-copy{min-width:0;flex:1}.jr73-account-copy b,.jr73-account-copy small{display:block}.jr73-account-copy small{color:#9db8a8;margin-top:3px}.jr73-account-body{padding:18px;display:grid;gap:10px}.jr73-account-body button{min-height:46px}
+
+/* === HISTORIAS / MOMENTOS === */
+#jr73MomentsSection{margin:18px 0 22px;padding:16px;border:1px solid rgba(72,227,170,.18);border-radius:20px;background:linear-gradient(145deg,rgba(8,31,22,.9),rgba(4,16,11,.94));overflow:hidden}
+.jr73-section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:12px}.jr73-section-head h3{margin:0!important;font-size:20px!important}.jr73-section-head small{color:#7fe5af}
+.jr73-moments{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.jr73-moments::-webkit-scrollbar{display:none}
+.jr73-story{flex:0 0 76px;border:0;background:none;color:inherit;padding:0;text-align:center;cursor:pointer}.jr73-story-ring{width:68px;height:68px;margin:0 auto 7px;padding:3px;border-radius:50%;background:linear-gradient(135deg,#28ec96,#1b8cf5,#d63cff);display:grid;place-items:center}.jr73-story-ring>span,.jr73-story-ring img{width:60px;height:60px;border-radius:50%;object-fit:cover;background:#08130f;border:3px solid #08130f;display:grid;place-items:center;box-sizing:border-box}.jr73-story b{display:block;font-size:11px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.jr73-story-add .jr73-story-ring{background:transparent;border:2px dashed #45dc94;padding:2px}.jr73-story-add .jr73-story-ring>span{font-size:28px;color:#53e5a0}
+#jr73MomentDialog,#jr73MomentViewer{width:min(94vw,560px);max-height:90vh;border:1px solid rgba(72,227,170,.3);border-radius:22px;background:#07140f;color:#f4fff8;padding:18px;overflow:auto}
+#jr73MomentDialog::backdrop,#jr73MomentViewer::backdrop{background:rgba(0,0,0,.78);backdrop-filter:blur(10px)}
+.jr73-form-grid{display:grid;gap:12px}.jr73-form-grid input,.jr73-form-grid select,.jr73-form-grid textarea{box-sizing:border-box;width:100%;min-height:46px;border:1px solid #567c67;border-radius:12px;background:#f8fff9;color:#173c26;padding:11px 12px;font:16px system-ui}.jr73-form-grid textarea{min-height:90px;resize:vertical}.jr73-dialog-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.jr73-dialog-actions>*{flex:1 1 140px}.jr73-view-media{width:100%;max-height:68vh;object-fit:contain;border-radius:16px;background:#000}.jr73-moment-caption{margin:12px 0 0;color:#dcebe2}
+
+/* === RANKING DE JUGADORES === */
+#jr73PlayerRanking{margin:22px 0;padding:18px;border:1px solid rgba(72,227,170,.2);border-radius:22px;background:rgba(5,20,14,.92)}
+.jr73-ranking-tabs{display:flex;gap:6px;padding:5px;border:1px solid rgba(72,227,170,.18);border-radius:14px;background:rgba(0,0,0,.18);margin:12px 0}.jr73-ranking-tabs button{flex:1;min-height:42px;border:0;border-radius:10px;background:transparent;color:#aebfb5;font-weight:850}.jr73-ranking-tabs button.active{background:#2cde90;color:#06170f}.jr73-ranking-list{display:grid;gap:8px}.jr73-rank-row{display:grid;grid-template-columns:34px 42px minmax(0,1fr) auto;align-items:center;gap:10px;padding:10px 12px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#111a16}.jr73-rank-row>strong{font-size:20px}.jr73-rank-row img,.jr73-rank-avatar{width:42px;height:42px;border-radius:12px;object-fit:cover;background:#173426;display:grid;place-items:center}.jr73-rank-copy{min-width:0}.jr73-rank-copy b,.jr73-rank-copy small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.jr73-rank-copy small{color:#87a595;font-size:11px}.jr73-rank-value{text-align:right;font-size:22px;font-weight:900;color:#4ce7a0}.jr73-empty{padding:14px;border:1px dashed rgba(72,227,170,.24);border-radius:12px;color:#9ab0a3;font-size:13px}
+
+/* === ATAJOS DE COMPETICIÓN === */
+#jr73CompetitionTools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 22px}
+#jr73CompetitionTools button{min-width:0;min-height:72px;border-radius:16px;border:1px solid rgba(72,227,170,.22);background:#0a2017;color:#ecfff5;font-weight:850;padding:10px;white-space:normal}
+#jr73CompetitionTools button span{display:block;font-size:22px;margin-bottom:5px}
+
+/* === SELECT DE EQUIPO EN CREDENCIAL === */
+.jr73-team-select{display:block!important;width:100%!important;min-width:0!important;min-height:48px!important;box-sizing:border-box!important;padding:11px 12px!important;border-radius:12px!important;border:1px solid #6e8c7b!important;background:#f7fff9!important;color:#173b26!important;font:16px system-ui!important}
+.jr73-team-hidden{display:none!important}
+
+/* === MODO CLARO === */
+body.light #jr73MomentsSection,body.light #jr73PlayerRanking,body.light #jr73CompetitionTools button{background:#fff!important;color:#153b26!important;border-color:#bad3c2!important}
+body.light .jr73-rank-row{background:#f7fbf8!important;color:#173b26!important;border-color:#d0e1d5!important}
+body.light .jr73-rank-copy small,body.light .jr73-empty{color:#486b55!important}
+body.light #jr73AccountPanel,body.light #jr73MomentDialog,body.light #jr73MomentViewer{background:#fff!important;color:#173b26!important;border-color:#b8d3c1!important}
+body.light .jr73-account-copy small{color:#4c6e58!important}
+body.light #jr53TopCategoryHost .jr81-cat-btn{background:#fff!important;background-image:none!important;color:#173b26!important;border-color:#bdd3c5!important}
+body.light #jr53TopCategoryHost .jr81-cat-title,body.light #jr53TopCategoryHost .jr81-cat-stats span{color:#173b26!important}
+body.light #jr53TopCategoryHost .jr81-cat-phase{color:#557160!important}
+@media(max-width:520px){#jr73CompetitionTools{grid-template-columns:1fr 1fr}#jr73CompetitionTools button:last-child{grid-column:1/-1}.jr73-rank-row{grid-template-columns:30px 38px minmax(0,1fr) auto;gap:8px}}
+@media(prefers-reduced-motion:reduce){.jr73-story-ring,#jr73CompetitionTools button{transition:none!important;animation:none!important}}
