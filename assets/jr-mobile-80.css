@@ -1,0 +1,263 @@
+/* V38.80 · reparación definitiva de categorías.
+   Objetivo: impedir texto vertical/superpuesto y neutralizar FIX53/estilos heredados. */
+
+/* Oculta barras duplicadas antiguas. */
+#categoryBar,
+#jr75CategoryStrip,
+[id^="jr75CategoryStrip"]{
+  display:none!important;
+}
+
+/* El host nunca debe crecer fuera del viewport. */
+html body #jr53TopCategoryHost.jr53-top-category-host{
+  display:block!important;
+  position:relative!important;
+  z-index:30!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:8px 0 18px!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+
+/* Esta regla es deliberadamente más específica que FIX53 y además se carga al final. */
+html body #jr53TopCategoryHost > .jr81-cat-row,
+html body #jr53TopCategoryHost > .jr53-static-category-row,
+html body #jr53TopCategoryHost > .jr80-category-rail{
+  display:flex!important;
+  flex-flow:row nowrap!important;
+  grid-template-columns:none!important;
+  align-items:stretch!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:4px 4px 10px!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  scroll-snap-type:x proximity!important;
+  -webkit-overflow-scrolling:touch!important;
+  overscroll-behavior-inline:contain!important;
+  touch-action:pan-x pan-y!important;
+  scrollbar-width:none!important;
+}
+html body #jr53TopCategoryHost > .jr81-cat-row::-webkit-scrollbar,
+html body #jr53TopCategoryHost > .jr53-static-category-row::-webkit-scrollbar,
+html body #jr53TopCategoryHost > .jr80-category-rail::-webkit-scrollbar{
+  display:none!important;
+}
+
+/* Botón: solo logo + nombre, todo horizontal y contenido dentro de la tarjeta. */
+html body #jr53TopCategoryHost button.jr81-cat-btn[data-category],
+html body #jr53TopCategoryHost button.jr80-cat-btn[data-category],
+html body #jr53TopCategoryHost button[data-jr81-category]{
+  appearance:none!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+  inset:auto!important;
+  float:none!important;
+  clear:none!important;
+  transform:none!important;
+  writing-mode:horizontal-tb!important;
+  text-orientation:mixed!important;
+  flex:0 0 174px!important;
+  width:174px!important;
+  min-width:174px!important;
+  max-width:174px!important;
+  height:80px!important;
+  min-height:80px!important;
+  max-height:80px!important;
+  display:grid!important;
+  grid-template-columns:52px minmax(0,1fr)!important;
+  grid-template-rows:1fr!important;
+  grid-template-areas:"icon title"!important;
+  align-items:center!important;
+  align-content:center!important;
+  justify-items:stretch!important;
+  gap:10px!important;
+  margin:0!important;
+  padding:9px 10px!important;
+  border:1px solid rgba(255,255,255,.13)!important;
+  border-radius:18px!important;
+  background:linear-gradient(180deg,#171b19 0%,#09110d 100%)!important;
+  color:#f8fff9!important;
+  text-align:left!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 6px 18px rgba(0,0,0,.20)!important;
+  overflow:hidden!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  cursor:pointer!important;
+  scroll-snap-align:start!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+}
+
+html body #jr53TopCategoryHost button.jr81-cat-btn[data-category].active,
+html body #jr53TopCategoryHost button.jr81-cat-btn[data-category].is-active,
+html body #jr53TopCategoryHost button.jr81-cat-btn[data-category][aria-pressed="true"],
+html body #jr53TopCategoryHost button.jr80-cat-btn[data-category].active,
+html body #jr53TopCategoryHost button.jr80-cat-btn[data-category][aria-pressed="true"]{
+  border-color:#35e98f!important;
+  background:linear-gradient(180deg,#12392a 0%,#081b12 100%)!important;
+  box-shadow:0 0 0 1px rgba(53,233,143,.16) inset,0 7px 20px rgba(0,0,0,.22)!important;
+}
+
+/* Oculta SIEMPRE estadísticas/fase dentro de la barra superior.
+   FIX53 las mostraba después y era la causa visual de las letras encimadas. */
+html body #jr53TopCategoryHost .jr81-cat-phase,
+html body #jr53TopCategoryHost .jr81-cat-stats,
+html body #jr53TopCategoryHost .jr53-cat-phase,
+html body #jr53TopCategoryHost .jr53-cat-stats,
+html body #jr53TopCategoryHost [class*="cat-phase"],
+html body #jr53TopCategoryHost [class*="cat-stats"],
+html body #jr53TopCategoryHost small{
+  display:none!important;
+  visibility:hidden!important;
+  width:0!important;
+  height:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+
+/* Logo. */
+html body #jr53TopCategoryHost .jr81-cat-icon,
+html body #jr53TopCategoryHost .jr79-cat-logo,
+html body #jr53TopCategoryHost .jr80-cat-logo{
+  box-sizing:border-box!important;
+  grid-area:icon!important;
+  grid-column:1!important;
+  grid-row:1!important;
+  display:grid!important;
+  place-items:center!important;
+  position:static!important;
+  transform:none!important;
+  float:none!important;
+  width:52px!important;
+  height:52px!important;
+  min-width:52px!important;
+  max-width:52px!important;
+  min-height:52px!important;
+  max-height:52px!important;
+  margin:0!important;
+  padding:3px!important;
+  border:1px solid rgba(53,233,143,.25)!important;
+  border-radius:14px!important;
+  background:#030806!important;
+  overflow:hidden!important;
+}
+html body #jr53TopCategoryHost .jr81-cat-icon img,
+html body #jr53TopCategoryHost .jr79-cat-logo img,
+html body #jr53TopCategoryHost .jr80-cat-logo img{
+  box-sizing:border-box!important;
+  display:block!important;
+  position:static!important;
+  transform:none!important;
+  float:none!important;
+  width:46px!important;
+  height:46px!important;
+  min-width:0!important;
+  max-width:46px!important;
+  min-height:0!important;
+  max-height:46px!important;
+  margin:0!important;
+  object-fit:contain!important;
+}
+
+/* Nombre: jamás carácter por carácter. */
+html body #jr53TopCategoryHost .jr81-cat-title,
+html body #jr53TopCategoryHost .jr79-cat-title,
+html body #jr53TopCategoryHost .jr80-cat-title{
+  box-sizing:border-box!important;
+  grid-area:title!important;
+  grid-column:2!important;
+  grid-row:1!important;
+  display:block!important;
+  position:static!important;
+  transform:none!important;
+  float:none!important;
+  min-width:0!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  color:#fff!important;
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif!important;
+  font-size:13px!important;
+  line-height:1.15!important;
+  font-weight:900!important;
+  letter-spacing:-.01em!important;
+  text-align:left!important;
+  writing-mode:horizontal-tb!important;
+  text-orientation:mixed!important;
+  white-space:normal!important;
+  word-break:keep-all!important;
+  overflow-wrap:normal!important;
+  hyphens:none!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  max-height:2.35em!important;
+}
+
+body.light #jr53TopCategoryHost button.jr81-cat-btn[data-category],
+body.light #jr53TopCategoryHost button.jr80-cat-btn[data-category]{
+  background:#fff!important;
+  color:#173b28!important;
+  border-color:#cbd9d0!important;
+}
+body.light #jr53TopCategoryHost .jr81-cat-title,
+body.light #jr53TopCategoryHost .jr79-cat-title,
+body.light #jr53TopCategoryHost .jr80-cat-title{
+  color:#173b28!important;
+}
+
+@media(max-width:420px){
+  html body #jr53TopCategoryHost button.jr81-cat-btn[data-category],
+  html body #jr53TopCategoryHost button.jr80-cat-btn[data-category],
+  html body #jr53TopCategoryHost button[data-jr81-category]{
+    flex-basis:158px!important;
+    width:158px!important;
+    min-width:158px!important;
+    max-width:158px!important;
+    grid-template-columns:48px minmax(0,1fr)!important;
+    gap:9px!important;
+    padding:8px 9px!important;
+  }
+  html body #jr53TopCategoryHost .jr81-cat-icon,
+  html body #jr53TopCategoryHost .jr79-cat-logo,
+  html body #jr53TopCategoryHost .jr80-cat-logo{
+    width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;
+    min-height:48px!important;max-height:48px!important;
+  }
+  html body #jr53TopCategoryHost .jr81-cat-icon img,
+  html body #jr53TopCategoryHost .jr79-cat-logo img,
+  html body #jr53TopCategoryHost .jr80-cat-logo img{
+    width:42px!important;height:42px!important;max-width:42px!important;max-height:42px!important;
+  }
+  html body #jr53TopCategoryHost .jr81-cat-title,
+  html body #jr53TopCategoryHost .jr79-cat-title,
+  html body #jr53TopCategoryHost .jr80-cat-title{font-size:12px!important}
+}
+
+@media(min-width:1050px){
+  html body #jr53TopCategoryHost > .jr81-cat-row,
+  html body #jr53TopCategoryHost > .jr53-static-category-row,
+  html body #jr53TopCategoryHost > .jr80-category-rail{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    overflow:visible!important;
+  }
+  html body #jr53TopCategoryHost button.jr81-cat-btn[data-category],
+  html body #jr53TopCategoryHost button.jr80-cat-btn[data-category],
+  html body #jr53TopCategoryHost button[data-jr81-category]{
+    width:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+    flex:none!important;
+  }
+}
