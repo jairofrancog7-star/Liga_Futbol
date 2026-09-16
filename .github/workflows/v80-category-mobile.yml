@@ -1,0 +1,47 @@
+name: Patch index for V38.80 category repair
+
+on:
+  push:
+    paths:
+      - '.v80-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load V38.80 after all legacy category styles
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+
+          # V38.79 and V38.80 both normalize the same buttons. Remove V38.79 to
+          # prevent competing MutationObservers from rewriting the DOM forever.
+          s = re.sub(r'\s*<link[^>]*data-jr79-direct="1"[^>]*>\s*', '\n', s, flags=re.I)
+          s = re.sub(r'\s*<script[^>]*data-jr79-direct="1"[^>]*>\s*</script>\s*', '\n', s, flags=re.I)
+
+          # Idempotent cleanup for reruns.
+          s = re.sub(r'\s*<!-- JR_V38_80_FINAL_CATEGORY_FIX -->\s*', '\n', s)
+          s = re.sub(r'\s*<link[^>]*data-jr80-direct="1"[^>]*>\s*', '\n', s, flags=re.I)
+          s = re.sub(r'\s*<script[^>]*data-jr80-direct="1"[^>]*>\s*</script>\s*', '\n', s, flags=re.I)
+
+          block = '''\n<!-- JR_V38_80_FINAL_CATEGORY_FIX -->\n<link rel="stylesheet" href="./assets/jr-mobile-80.css?v=38-80-1" data-jr80-direct="1">\n<script src="./assets/jr-mobile-80.js?v=38-80-1" data-jr80-direct="1"></script>\n'''
+          if '</body>' not in s:
+              raise SystemExit('index.html has no </body> marker')
+          s = s.replace('</body>', block + '</body>', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit index patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "fix: activate V38.80 mobile category repair"
+          git push
