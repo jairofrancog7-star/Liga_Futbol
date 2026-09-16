@@ -1,0 +1,197 @@
+/* V38.79 · reparación fuerte de botones de categorías en móvil.
+   Mantiene la lógica/clicks existentes y simplifica la presentación a logo + nombre. */
+
+#categoryBar,
+#jr75CategoryStrip,
+[id^="jr75CategoryStrip"]{display:none!important}
+
+#jr53TopCategoryHost{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:10px 0 16px!important;
+  padding:0!important;
+  overflow:hidden!important;
+  position:relative!important;
+}
+
+#jr53TopCategoryHost .jr53-static-category-row,
+#jr53TopCategoryHost .jr81-cat-row,
+#jr53TopCategoryHost .jr77-category-rail,
+#jr53TopCategoryHost .jr78-category-rail,
+#jr53TopCategoryHost .jr79-category-rail{
+  display:flex!important;
+  flex-flow:row nowrap!important;
+  align-items:stretch!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:4px 3px 10px!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  -webkit-overflow-scrolling:touch!important;
+  touch-action:pan-x pan-y!important;
+  scroll-snap-type:x proximity!important;
+  overscroll-behavior-inline:contain!important;
+  scrollbar-width:none!important;
+}
+#jr53TopCategoryHost .jr53-static-category-row::-webkit-scrollbar,
+#jr53TopCategoryHost .jr81-cat-row::-webkit-scrollbar,
+#jr53TopCategoryHost .jr79-category-rail::-webkit-scrollbar{display:none!important}
+
+/* Elimina cualquier layout viejo que hacía letras verticales, texto gigante o superpuesto. */
+#jr53TopCategoryHost button[data-category],
+#jr53TopCategoryHost .jr81-cat-btn,
+#jr53TopCategoryHost .jr79-cat-btn{
+  all:unset!important;
+  box-sizing:border-box!important;
+  cursor:pointer!important;
+  position:relative!important;
+  inset:auto!important;
+  transform:none!important;
+  float:none!important;
+  clear:none!important;
+  flex:0 0 158px!important;
+  width:158px!important;
+  min-width:158px!important;
+  max-width:158px!important;
+  height:72px!important;
+  min-height:72px!important;
+  max-height:72px!important;
+  display:grid!important;
+  grid-template-columns:48px minmax(0,1fr)!important;
+  grid-template-rows:1fr!important;
+  gap:10px!important;
+  align-items:center!important;
+  align-content:center!important;
+  justify-items:stretch!important;
+  margin:0!important;
+  padding:9px 10px!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  border-radius:18px!important;
+  background:linear-gradient(180deg,#151a18 0%,#09110d 100%)!important;
+  color:#f7fff9!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 5px 15px rgba(0,0,0,.20)!important;
+  overflow:hidden!important;
+  scroll-snap-align:start!important;
+  writing-mode:horizontal-tb!important;
+  text-orientation:mixed!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+}
+
+#jr53TopCategoryHost button[data-category].active,
+#jr53TopCategoryHost button[data-category][aria-pressed="true"],
+#jr53TopCategoryHost .jr81-cat-btn.active{
+  border-color:#35e98f!important;
+  background:linear-gradient(180deg,#123427 0%,#081a12 100%)!important;
+  box-shadow:0 0 0 1px rgba(53,233,143,.14) inset,0 6px 18px rgba(0,0,0,.20)!important;
+}
+
+/* Solo mostramos logo + nombre. Todo el texto estadístico viejo queda oculto dentro de esta barra. */
+#jr53TopCategoryHost .jr81-cat-phase,
+#jr53TopCategoryHost .jr81-cat-stats,
+#jr53TopCategoryHost .jr77-cat-copy small,
+#jr53TopCategoryHost [class*="cat-phase"],
+#jr53TopCategoryHost [class*="cat-stats"]{
+  display:none!important;
+}
+
+#jr53TopCategoryHost .jr81-cat-icon,
+#jr53TopCategoryHost .jr77-cat-logo,
+#jr53TopCategoryHost .jr78-cat-logo,
+#jr53TopCategoryHost .jr79-cat-logo{
+  all:unset!important;
+  box-sizing:border-box!important;
+  grid-column:1!important;
+  width:48px!important;
+  height:48px!important;
+  min-width:48px!important;
+  max-width:48px!important;
+  min-height:48px!important;
+  max-height:48px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:13px!important;
+  overflow:hidden!important;
+  border:1px solid rgba(53,233,143,.24)!important;
+  background:#030806!important;
+  position:static!important;
+  transform:none!important;
+  margin:0!important;
+  padding:3px!important;
+}
+#jr53TopCategoryHost .jr81-cat-icon img,
+#jr53TopCategoryHost .jr77-cat-logo img,
+#jr53TopCategoryHost .jr78-cat-logo img,
+#jr53TopCategoryHost .jr79-cat-logo img{
+  all:unset!important;
+  box-sizing:border-box!important;
+  display:block!important;
+  width:42px!important;
+  height:42px!important;
+  max-width:42px!important;
+  max-height:42px!important;
+  object-fit:contain!important;
+  position:static!important;
+  transform:none!important;
+  margin:0!important;
+}
+
+#jr53TopCategoryHost .jr81-cat-title,
+#jr53TopCategoryHost .jr77-cat-copy strong,
+#jr53TopCategoryHost .jr78-cat-title,
+#jr53TopCategoryHost .jr79-cat-title{
+  all:unset!important;
+  box-sizing:border-box!important;
+  grid-column:2!important;
+  display:block!important;
+  min-width:0!important;
+  width:100%!important;
+  max-width:100%!important;
+  color:#fff!important;
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif!important;
+  font-size:13px!important;
+  line-height:1.12!important;
+  font-weight:900!important;
+  letter-spacing:-.01em!important;
+  text-align:left!important;
+  writing-mode:horizontal-tb!important;
+  text-orientation:mixed!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  hyphens:none!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  max-height:2.35em!important;
+}
+
+body.light #jr53TopCategoryHost button[data-category],
+body.light #jr53TopCategoryHost .jr81-cat-btn{
+  background:#fff!important;
+  color:#173b28!important;
+  border-color:#cad9cf!important;
+}
+body.light #jr53TopCategoryHost .jr81-cat-title,
+body.light #jr53TopCategoryHost .jr79-cat-title{color:#173b28!important}
+
+@media(max-width:390px){
+  #jr53TopCategoryHost button[data-category],
+  #jr53TopCategoryHost .jr81-cat-btn,
+  #jr53TopCategoryHost .jr79-cat-btn{
+    flex-basis:150px!important;
+    width:150px!important;
+    min-width:150px!important;
+    max-width:150px!important;
+    grid-template-columns:46px minmax(0,1fr)!important;
+    padding:8px 9px!important;
+  }
+  #jr53TopCategoryHost .jr81-cat-title,
+  #jr53TopCategoryHost .jr79-cat-title{font-size:12px!important}
+}
