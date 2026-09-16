@@ -17,10 +17,10 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.74 loader — conserva todo V38.64–73 y añade reparación fuerte de móvil + navegación tipo app. */
+/* V38.76 loader — conserva capas 38.64–74, añade CSS75 y ejecuta la capa móvil 76 validada. */
 (()=>{'use strict';
 if(window.__JR69_LOADER)return;window.__JR69_LOADER=true;
-const V='38-74';
+const V='38-76';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
@@ -43,6 +43,8 @@ function ensure(){
  addJs('jr73-mobile','./assets/jr-mobile-73.js?v='+V);
  addCss('jr74-mobile','./assets/jr-mobile-74.css?v='+V);
  addJs('jr74-mobile','./assets/jr-mobile-74.js?v='+V);
+ addCss('jr75-mobile','./assets/jr-mobile-75.css?v='+V);
+ addJs('jr76-mobile','./assets/jr-mobile-76.js?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
