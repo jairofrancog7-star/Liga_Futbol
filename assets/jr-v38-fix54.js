@@ -17,10 +17,10 @@ const actions=document.querySelector('.top-actions');
 if(actions&&!document.getElementById('jr54Cedulas')){const a=document.createElement('a');a.id='jr54Cedulas';a.href='./cedulas.html';a.className='ghost-btn';a.textContent='Cédulas';actions.append(a)}
 })();
 
-/* V38.71 loader — conserva restauraciones 64-69 y añade correcciones móviles de Partidos. */
+/* V38.72 loader — conserva restauraciones y añade pulido móvil tipo app sin quitar funciones. */
 (()=>{'use strict';
 if(window.__JR69_LOADER)return;window.__JR69_LOADER=true;
-const V='38-71';
+const V='38-72';
 function addCss(key,href){if(document.querySelector(`link[data-${key}]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.setAttribute(`data-${key}`,'1');document.head.append(l)}
 function addJs(key,src){if(document.querySelector(`script[data-${key}]`))return;const s=document.createElement('script');s.src=src;s.defer=true;s.setAttribute(`data-${key}`,'1');document.body.append(s)}
 function ensure(){
@@ -38,6 +38,7 @@ function ensure(){
  addJs('jr69-final','./assets/jr-v38-restore69-final.js?v='+V);
  addCss('jr71-mobile','./assets/jr-mobile-71.css?v='+V);
  addJs('jr71-mobile','./assets/jr-mobile-71.js?v='+V);
+ addCss('jr72-mobile','./assets/jr-mobile-72.css?v='+V);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();
