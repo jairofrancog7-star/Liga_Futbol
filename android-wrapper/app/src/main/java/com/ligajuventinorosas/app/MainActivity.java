@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -44,9 +45,19 @@ public class MainActivity extends AppCompatActivity {
         s.setBuiltInZoomControls(false);
         s.setDisplayZoomControls(false);
 
+        // Puente mínimo y seguro para que la misma interfaz verde pueda saber
+        // cuándo se ejecuta dentro del APK y reutilizar las funciones web/PWA.
+        web.addJavascriptInterface(new NativeBridge(), "LigaAndroid");
+
         web.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
+                view.evaluateJavascript(
+                    "document.documentElement.dataset.jrRuntime='apk';" +
+                    "window.dispatchEvent(new CustomEvent('jr:native-ready',{detail:{mode:'apk',build:'" + WEB_BUILD + "'}}));",
+                    null
+                );
+
                 Uri u = Uri.parse(url);
                 if (pendingImage != null && "https".equals(u.getScheme()) &&
                     "jairofrancog7-star.github.io".equals(u.getHost()) &&
@@ -124,6 +135,45 @@ public class MainActivity extends AppCompatActivity {
             if (!receiveSharedImage(getIntent())) web.loadUrl(BASE_URL + "?app=android&build=" + WEB_BUILD);
         } else {
             web.restoreState(savedInstanceState);
+        }
+    }
+
+    private final class NativeBridge {
+        @JavascriptInterface
+        public String getMode() {
+            return "apk";
+        }
+
+        @JavascriptInterface
+        public String getBuild() {
+            return WEB_BUILD;
+        }
+
+        @JavascriptInterface
+        public void openBrowser(String url) {
+            runOnUiThread(() -> {
+                try {
+                    Uri uri = Uri.parse(url);
+                    String scheme = uri.getScheme();
+                    if (!("https".equalsIgnoreCase(scheme) || "http".equalsIgnoreCase(scheme))) return;
+                    startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                } catch (Exception ignored) {
+                }
+            });
+        }
+
+        @JavascriptInterface
+        public void shareText(String text) {
+            final String safeText = text == null ? "" : text;
+            runOnUiThread(() -> {
+                try {
+                    Intent send = new Intent(Intent.ACTION_SEND);
+                    send.setType("text/plain");
+                    send.putExtra(Intent.EXTRA_TEXT, safeText);
+                    startActivity(Intent.createChooser(send, "Compartir Liga Juventino Rosas"));
+                } catch (Exception ignored) {
+                }
+            });
         }
     }
 
