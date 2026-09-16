@@ -1,0 +1,71 @@
+/* V38.74 · reparación fuerte de categorías + navegación tipo app. Aditivo. */
+
+/* === CATEGORÍAS: SIEMPRE COMPACTAS, HORIZONTALES Y SIN TEXTO VERTICAL === */
+#jr53TopCategoryHost{
+  display:block!important;position:relative!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  margin:0 0 14px!important;padding:0!important;overflow:hidden!important;contain:layout paint!important;
+}
+#jr53TopCategoryHost>.jr81-cat-row,
+#jr53TopCategoryHost .jr53-js-category-row{
+  display:flex!important;flex-flow:row nowrap!important;align-items:stretch!important;justify-content:flex-start!important;
+  gap:8px!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:2px 2px 7px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x proximity!important;scroll-padding-inline:2px!important;
+  -webkit-overflow-scrolling:touch!important;scrollbar-width:none!important;
+}
+#jr53TopCategoryHost>.jr81-cat-row::-webkit-scrollbar,
+#jr53TopCategoryHost .jr53-js-category-row::-webkit-scrollbar{display:none!important}
+#jr53TopCategoryHost .jr81-cat-btn{
+  appearance:none!important;box-sizing:border-box!important;position:relative!important;flex:0 0 158px!important;
+  width:158px!important;min-width:158px!important;max-width:158px!important;height:72px!important;min-height:72px!important;max-height:72px!important;
+  display:grid!important;grid-template-columns:46px minmax(0,1fr)!important;grid-template-rows:auto auto!important;
+  grid-template-areas:"icon title" "icon meta"!important;align-items:center!important;column-gap:9px!important;row-gap:2px!important;
+  margin:0!important;padding:9px 10px!important;border:1px solid rgba(255,255,255,.10)!important;border-radius:15px!important;
+  background:linear-gradient(180deg,#171a1d 0%,#0f1315 100%)!important;color:#f6fff9!important;text-align:left!important;
+  overflow:hidden!important;white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;writing-mode:horizontal-tb!important;
+  text-orientation:mixed!important;box-shadow:none!important;transform:none!important;scroll-snap-align:start!important;cursor:pointer!important;
+}
+#jr53TopCategoryHost .jr81-cat-btn.active,
+#jr53TopCategoryHost .jr81-cat-btn.is-active,
+#jr53TopCategoryHost .jr81-cat-btn[aria-pressed="true"]{border-color:#3fe79b!important;box-shadow:0 0 0 1px rgba(63,231,155,.18) inset!important;background:linear-gradient(180deg,#13261d,#0b1711)!important}
+#jr53TopCategoryHost .jr81-cat-btn>*{writing-mode:horizontal-tb!important;text-orientation:mixed!important;word-break:normal!important;overflow-wrap:normal!important;min-width:0!important}
+#jr53TopCategoryHost .jr81-cat-btn>img{display:none!important}
+#jr53TopCategoryHost .jr81-cat-icon{
+  grid-area:icon!important;display:grid!important;place-items:center!important;width:46px!important;height:46px!important;min-width:46px!important;
+  border:1px solid rgba(63,231,155,.24)!important;border-radius:12px!important;background:#020705!important;overflow:hidden!important;margin:0!important;
+}
+#jr53TopCategoryHost .jr81-cat-icon img{display:block!important;width:40px!important;height:40px!important;max-width:40px!important;max-height:40px!important;object-fit:contain!important;margin:0!important;position:static!important;transform:none!important}
+#jr53TopCategoryHost .jr81-cat-title{
+  grid-area:title!important;display:-webkit-box!important;-webkit-line-clamp:2!important;-webkit-box-orient:vertical!important;
+  margin:0!important;padding:0!important;font-size:12px!important;line-height:1.05!important;font-weight:900!important;letter-spacing:0!important;
+  color:#fff!important;white-space:normal!important;overflow:hidden!important;text-overflow:ellipsis!important;word-break:keep-all!important;overflow-wrap:normal!important;
+}
+#jr53TopCategoryHost .jr74-cat-meta{grid-area:meta!important;display:block!important;font-size:9.5px!important;line-height:1.1!important;font-weight:800!important;color:#9fd7b9!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+#jr53TopCategoryHost .jr81-cat-phase,#jr53TopCategoryHost .jr81-cat-stats{display:none!important}
+@media(max-width:390px){#jr53TopCategoryHost .jr81-cat-btn{flex-basis:146px!important;width:146px!important;min-width:146px!important;max-width:146px!important}}
+
+/* === CABECERA: acciones compactas para que Cuenta/Buscar no rompan layout === */
+.top-actions{min-width:0!important;gap:7px!important;align-items:center!important;flex-wrap:nowrap!important}
+#jr74SearchButton,#jr73AccountButton{width:40px!important;height:40px!important;min-width:40px!important;max-width:40px!important;border-radius:50%!important;padding:0!important;display:grid!important;place-items:center!important;font-size:18px!important}
+
+/* === NAVEGACIÓN DE COMPETENCIA INSPIRADA EN APPS DE FÚTBOL === */
+#jr74CompetitionNav{margin:14px 0 18px;padding:6px;border:1px solid rgba(72,227,170,.18);border-radius:16px;background:rgba(3,15,10,.76);display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+#jr74CompetitionNav::-webkit-scrollbar{display:none}
+#jr74CompetitionNav button{flex:0 0 auto;min-height:42px;border:0;border-radius:11px;background:transparent;color:#b9c9c0;padding:9px 13px;font-size:12px;font-weight:850;white-space:nowrap}
+#jr74CompetitionNav button.active{background:#2ee094;color:#04170e}
+
+/* === MI EQUIPO / FAVORITOS === */
+#jr74FavoriteHub{margin:16px 0 20px;padding:16px;border:1px solid rgba(72,227,170,.20);border-radius:20px;background:linear-gradient(145deg,rgba(7,29,20,.94),rgba(4,16,11,.96));overflow:hidden}
+.jr74-hub-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px}.jr74-hub-head small{color:#70e4a7;font-weight:850}.jr74-hub-head h3{margin:2px 0 0!important;font-size:20px!important}.jr74-fav-form{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end}.jr74-fav-form label{display:grid;gap:5px;font-size:11px;color:#9db6a7;font-weight:800}.jr74-fav-form select{width:100%;min-width:0;min-height:44px;border-radius:11px;border:1px solid #506f5d;background:#f8fff9;color:#173b26;padding:8px 10px;font-size:14px}.jr74-fav-form button{min-height:44px;border-radius:11px;white-space:nowrap}.jr74-favorite-card{display:grid;grid-template-columns:52px minmax(0,1fr);gap:11px;align-items:center;margin-top:12px;padding:12px;border:1px solid rgba(255,255,255,.08);border-radius:15px;background:rgba(0,0,0,.16)}.jr74-favorite-logo{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;background:#06110c;border:1px solid rgba(72,227,170,.2);overflow:hidden;font-size:24px}.jr74-favorite-logo img{width:46px;height:46px;object-fit:contain}.jr74-favorite-copy{min-width:0}.jr74-favorite-copy b,.jr74-favorite-copy small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.jr74-favorite-copy small{color:#8ca99a;margin-top:3px}.jr74-favorite-actions{grid-column:1/-1;display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}.jr74-favorite-actions button{flex:1 0 92px;min-height:40px;border-radius:10px;border:1px solid rgba(72,227,170,.18);background:#0b2419;color:#eafff2;font-weight:800;font-size:11px}
+@media(max-width:560px){.jr74-fav-form{grid-template-columns:1fr 1fr}.jr74-fav-form button{grid-column:1/-1}.jr74-favorite-card{grid-template-columns:46px minmax(0,1fr)}.jr74-favorite-logo{width:46px;height:46px}.jr74-favorite-logo img{width:40px;height:40px}}
+
+/* === BUSCADOR GLOBAL === */
+#jr74SearchDialog{width:min(94vw,620px);max-height:88vh;border:1px solid rgba(72,227,170,.30);border-radius:22px;background:#07140f;color:#f4fff8;padding:0;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.6)}
+#jr74SearchDialog::backdrop{background:rgba(0,0,0,.76);backdrop-filter:blur(10px)}
+.jr74-search-head{display:flex;align-items:center;gap:9px;padding:14px;border-bottom:1px solid rgba(255,255,255,.08)}.jr74-search-head input{flex:1;min-width:0;height:46px;border-radius:13px;border:1px solid #5d7e6a;background:#f8fff9;color:#143b25;padding:0 13px;font-size:16px}.jr74-search-head button{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:#111a16;color:#fff;font-size:22px}.jr74-search-results{display:grid;gap:7px;padding:12px;max-height:65vh;overflow:auto}.jr74-search-result{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;padding:10px;border:1px solid rgba(255,255,255,.08);border-radius:13px;background:#0d1c15;color:#effff5;text-align:left}.jr74-search-result .ico{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:#153b2a;overflow:hidden}.jr74-search-result img{width:36px;height:36px;object-fit:contain}.jr74-search-result b,.jr74-search-result small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.jr74-search-result small{color:#8ba697;font-size:11px}.jr74-search-result .go{font-size:18px;color:#55e5a1}
+
+/* === ATAJOS DE FILTRO EN PARTIDOS === */
+#jr74MatchQuickFilters{display:flex;gap:6px;overflow-x:auto;padding:5px;margin:0 0 12px;border:1px solid rgba(72,227,170,.16);border-radius:14px;background:rgba(3,15,10,.64);scrollbar-width:none}
+#jr74MatchQuickFilters::-webkit-scrollbar{display:none}#jr74MatchQuickFilters button{flex:0 0 auto;min-height:38px;border:0;border-radius:10px;background:transparent;color:#b7c8be;font-weight:820;font-size:11px;padding:8px 12px;white-space:nowrap}#jr74MatchQuickFilters button.active{background:#2bde90;color:#04170e}
+
+/* === MODO CLARO === */
+body.light #jr53TopCategoryHost .jr81-cat-btn{background:#fff!important;color:#153a25!important;border-color:#bfd2c4!important}body.light #jr53TopCategoryHost .jr81-cat-title{color:#153a25!important}body.light #jr53TopCategoryHost .jr74-cat-meta{color:#46725a!important}body.light #jr74CompetitionNav,body.light #jr74MatchQuickFilters{background:#eef6f1!important;border-color:#bcd1c2!important}body.light #jr74CompetitionNav button,body.light #jr74MatchQuickFilters button{color:#315b42!important}body.light #jr74FavoriteHub{background:#fff!important;color:#153a25!important;border-color:#bfd2c4!important}body.light .jr74-favorite-card{background:#f6faf7!important;color:#153a25!important;border-color:#d4e0d7!important}body.light .jr74-favorite-actions button{background:#eef7f1!important;color:#1e5134!important;border-color:#c8dccd!important}body.light #jr74SearchDialog{background:#fff!important;color:#153a25!important;border-color:#b8d1c0!important}body.light .jr74-search-result{background:#f7fbf8!important;color:#153a25!important;border-color:#d0ded4!important}
