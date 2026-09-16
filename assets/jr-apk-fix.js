@@ -102,7 +102,6 @@ function renamePwa(){
     const s=el.querySelector("small");
     if(b) b.textContent="Acceso directo (PWA)";
     if(s) s.textContent="Instala el acceso directo en Android, iPhone o PC.";
-    el.dataset.platformAction=el.dataset.platformAction||"install";
   });
 }
 
