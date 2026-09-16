@@ -16,11 +16,13 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String WEB_BUILD = "38-59";
+    private static final String WEB_BUILD = "38-70";
     private static final String BASE_URL = "https://jairofrancog7-star.github.io/Liga_Futbol/";
     private static final int FILE_CHOOSER_REQUEST = 19022;
 
     private WebView web;
+    private String pendingImage;
+    private int shareRevision;
     private ValueCallback<Uri[]> filePathCallback;
 
     @Override
@@ -43,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
         s.setDisplayZoomControls(false);
 
         web.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                Uri u = Uri.parse(url);
+                if (pendingImage != null && "https".equals(u.getScheme()) &&
+                    "jairofrancog7-star.github.io".equals(u.getHost()) &&
+                    "/Liga_Futbol/publicaciones.html".equals(u.getPath())) {
+                    String value = pendingImage;
+                    pendingImage = null;
+                    view.evaluateJavascript("window.JRReceiveImage && window.JRReceiveImage(" + org.json.JSONObject.quote(value) + ")", null);
+                }
+            }
+
             private boolean openExternal(Uri uri) {
                 String host = uri.getHost();
                 if (host == null) return false;
@@ -107,10 +121,52 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (savedInstanceState == null) {
-            web.loadUrl(BASE_URL + "?app=android&build=" + WEB_BUILD);
+            if (!receiveSharedImage(getIntent())) web.loadUrl(BASE_URL + "?app=android&build=" + WEB_BUILD);
         } else {
             web.restoreState(savedInstanceState);
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        receiveSharedImage(intent);
+    }
+
+    @SuppressWarnings("deprecation")
+    private boolean receiveSharedImage(Intent intent) {
+        if (!Intent.ACTION_SEND.equals(intent.getAction())) return false;
+        Uri image = intent.getParcelableExtra(Intent.EXTRA_STREAM);
+        String mime = intent.getType();
+        if (image == null || !"content".equals(image.getScheme()) ||
+            !("image/jpeg".equals(mime) || "image/png".equals(mime) || "image/webp".equals(mime))) return false;
+        final int request = ++shareRevision;
+        new Thread(() -> {
+            try (java.io.InputStream in = getContentResolver().openInputStream(image);
+                 java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream()) {
+                if (in == null) throw new java.io.IOException();
+                byte[] buffer = new byte[8192];
+                int read;
+                while ((read = in.read(buffer)) != -1) {
+                    if (out.size() + read > 10 * 1024 * 1024) throw new java.io.IOException("size");
+                    out.write(buffer, 0, read);
+                }
+                String data = "data:" + mime + ";base64," + android.util.Base64.encodeToString(out.toByteArray(), android.util.Base64.NO_WRAP);
+                runOnUiThread(() -> {
+                    if (isDestroyed() || request != shareRevision) return;
+                    pendingImage = data;
+                    web.loadUrl(BASE_URL + "publicaciones.html?mode=credential&app=android&build=" + WEB_BUILD + "#registro");
+                });
+            } catch (Exception error) {
+                runOnUiThread(() -> {
+                    if (isDestroyed() || request != shareRevision) return;
+                    android.widget.Toast.makeText(this, "No se pudo abrir la imagen. Usa JPG, PNG o WebP de hasta 10 MB.", android.widget.Toast.LENGTH_LONG).show();
+                    web.loadUrl(BASE_URL + "publicaciones.html?mode=credential&build=" + WEB_BUILD);
+                });
+            }
+        }).start();
+        return true;
     }
 
     @Override

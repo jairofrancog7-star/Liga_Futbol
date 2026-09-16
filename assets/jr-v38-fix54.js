@@ -35,7 +35,7 @@ function ensure(){
  addCss('jr68-table-motion','./assets/jr-v38-restore68-table-motion.css?v='+V);
  addJs('jr68-table-motion','./assets/jr-v38-restore68-table-motion.js?v='+V);
  addCss('jr69-final','./assets/jr-v38-restore69-final.css?v='+V);
- addJs('jr69-final','./assets/jr-v38-restore69-final.js?v='+V);
+ addJs('jr69-final','./assets/jr-v38-restore69-final.js?v=38-70');
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensure,{once:true});else ensure();
 })();

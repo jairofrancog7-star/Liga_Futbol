@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const parser=require('../assets/credential-parser.js');
+assert.equal(parser.age('2000-09-17',new Date(2026,8,16)),'25');
+assert.equal(parser.age('2000-09-16',new Date(2026,8,16)),'26');
+assert.equal(parser.age('2027-01-01',new Date(2026,8,16)),'');
+assert.equal(parser.age('2000-02-31'),'');
+const sample='NOMBRE\nPEREZ\nLOPEZ\nJUAN\nDOMICILIO\nCALLE 1\nJUVENTINO ROSAS, GTO.\nCURP\nPELJ900101HGTRPN09';
+const result=parser.parse(sample);
+assert.equal(result.name,'PEREZ LOPEZ JUAN');
+assert.equal(result.birth,'1990-01-01');
+assert.equal(result.city,'JUVENTINO ROSAS, GTO.');
+assert.equal(result.curp,'PELJ900101HGTRPN09');
+assert.equal(result.team,'');
+assert.equal(result.position,'');
+assert.equal(parser.parse('NOMBRE: MARIA PEREZ\nCURP: PEMM010203MGTXXXA1').birth,'2001-02-03');
+console.log('OCR field parser: 11 checks passed');

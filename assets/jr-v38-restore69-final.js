@@ -2,7 +2,7 @@
 (()=>{'use strict';
 if(window.__JR69_FINAL)return;window.__JR69_FINAL=true;
 const BUILD='38-69-r1';
-const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const $=(s,r=document)=>r?.querySelector(s)||null, $$=(s,r=document)=>Array.from(r?.querySelectorAll(s)||[]);
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const FALLBACK={
  'san juan fc':'https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf',
