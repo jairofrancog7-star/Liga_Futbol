@@ -50,6 +50,7 @@ jobs:
           FULL=false
           SEND=false
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.full }}" == "true" ]]; then FULL=true; fi
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.event.head_commit.message }}" == *"[full-cedulas]"* ]]; then FULL=true; fi
           if [[ "${{ github.event_name }}" == "schedule" && "${{ github.event.schedule }}" == "23 18 * * 0" ]]; then FULL=true; fi
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.send_social }}" == "true" ]]; then SEND=true; fi
           if [[ "${{ github.event_name }}" == "schedule" && "${{ github.event.schedule }}" == "0 18 * * 5" ]]; then SEND=true; fi
@@ -69,7 +70,7 @@ jobs:
       - name: Auditoría amplia de cédulas públicas
         if: steps.mode.outputs.full == 'true'
         continue-on-error: true
-        run: python scripts/audit_all_cedulas_v35.py --root . --max-id 650 --workers 8
+        run: python scripts/audit_all_cedulas_v35.py --root . --max-id 1200 --workers 8
 
       - name: Normalizar variantes públicas documentadas
         run: python scripts/normalize_public_rosters_v35.py
