@@ -234,6 +234,7 @@ def main():
     fast=args.fast and bool(old)
     data={'schema':1,'source':BASE,'captured_at_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
           'mode':'fast' if fast else 'full','categories':{},'team_logos':old.get('team_logos',{}) if fast else {},
+          'cedula_audit':old.get('cedula_audit',{}),
           'notes':['Datos deportivos públicos; no se recopilan CURP, INE, domicilio ni documentos.',
                    'La fuente oficial juventinorosasliga.com prevalece sobre este snapshot.',
                    'No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones.']}
