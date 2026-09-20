@@ -35,11 +35,11 @@ def fetch_cedula(i):
         if r.status_code!=200: return None
         s=BeautifulSoup(r.text,'html.parser')
         title=s.title.get_text(' ',strip=True) if s.title else ''
-        m=re.match(r'Cédula Arbitral\s*-\s*(.*?)\s*\((.*?)\)\s*vs\s*(.*?)\s*\((.*?)\)',title,re.I)
+        m=re.match(r'C[eé]dula\s+Arbitral\s*[-–—:]\s*(.*?)\s*\((.*?)\)\s*vs\.?\s*(.*?)\s*\((.*?)\)',title,re.I)
         if not m: return None
         local,cat1,away,cat2=[x.strip(' -') for x in m.groups()]
         tb=tables(s)
-        return {'id':i,'title':title,'local':local,'away':away,'category':cat1,
+        return {'id':i,'url':BASE+f'cedula-arbitral/{i}/','title':title,'local':local,'away':away,'category':cat1,
                 'local_players':players(tb[0] if len(tb)>0 else []),
                 'away_players':players(tb[1] if len(tb)>1 else [])}
     except Exception:
@@ -53,7 +53,7 @@ def unique(seq):
     return out
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--root',default='.');ap.add_argument('--max-id',type=int,default=650);ap.add_argument('--workers',type=int,default=8)
+    ap=argparse.ArgumentParser();ap.add_argument('--root',default='.');ap.add_argument('--max-id',type=int,default=1200);ap.add_argument('--workers',type=int,default=8)
     a=ap.parse_args();root=Path(a.root).resolve();target=root/'data'/'official-live.json'
     data=json.loads(target.read_text(encoding='utf-8'))
     cats=data.get('categories',{});by_name={norm(c.get('name')):str(k) for k,c in cats.items()}
