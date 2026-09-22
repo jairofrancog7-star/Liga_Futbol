@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-22T17:47:03Z",
+  "captured_at_utc": "2026-09-22T21:13:49Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -1755,7 +1755,7 @@
           "Equipos": 11,
           "Partidos Jugados": 20,
           "Partidos Pendientes": 35,
-          "Jugadores": 291
+          "Jugadores": 289
         },
         "current_cedulas": [
           91,
@@ -1843,7 +1843,7 @@
         "Equipos": 11,
         "Partidos Jugados": 20,
         "Partidos Pendientes": 35,
-        "Jugadores": 291
+        "Jugadores": 289
       },
       "standings": [
         {
@@ -4680,7 +4680,7 @@
           "Equipos": 12,
           "Partidos Jugados": 23,
           "Partidos Pendientes": 42,
-          "Jugadores": 322
+          "Jugadores": 321
         },
         "current_cedulas": [
           384,
@@ -4808,7 +4808,7 @@
         "Equipos": 12,
         "Partidos Jugados": 23,
         "Partidos Pendientes": 42,
-        "Jugadores": 322
+        "Jugadores": 321
       },
       "standings": [
         {
@@ -8192,7 +8192,7 @@
           "Equipos": 13,
           "Partidos Jugados": 22,
           "Partidos Pendientes": 54,
-          "Jugadores": 336
+          "Jugadores": 338
         },
         "current_cedulas": [
           209,
@@ -8316,7 +8316,7 @@
         "Equipos": 13,
         "Partidos Jugados": 22,
         "Partidos Pendientes": 54,
-        "Jugadores": 336
+        "Jugadores": 338
       },
       "standings": [
         {
@@ -12017,7 +12017,7 @@
     "GALACTICOS"
   ],
   "checks": {
-    "primera_dashboard_players": 291,
+    "primera_dashboard_players": 289,
     "primera_roster_unique": 291,
     "team_logos_known": 49,
     "categories": 5
