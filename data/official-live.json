@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-28T03:46:34Z",
+  "captured_at_utc": "2026-09-28T04:27:02Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -299,6 +299,42 @@
               "Jose Manuel Vargas Palacios",
               "TOROS DE CUENDA",
               "1"
+            ],
+            [
+              "1",
+              "MANCHESTER",
+              "14 goles en temporada",
+              "14"
+            ],
+            [
+              "2",
+              "DYNAMO",
+              "9 goles en temporada",
+              "9"
+            ],
+            [
+              "3",
+              "LA ESPERANZA",
+              "6 goles en temporada",
+              "6"
+            ],
+            [
+              "4",
+              "TOROS DE CUENDA",
+              "6 goles en temporada",
+              "6"
+            ],
+            [
+              "5",
+              "BOAVISTA",
+              "5 goles en temporada",
+              "5"
+            ],
+            [
+              "6",
+              "BOCA JRS",
+              "0 goles en temporada",
+              "0"
             ]
           ]
         }
@@ -540,7 +576,7 @@
               "BOCA JRS",
               "-",
               "vs",
-              "1",
+              "-",
               "TOROS DE CUENDA",
               "Campo 1 (Empastado)",
               "26/09/2026 13:30",
@@ -2151,6 +2187,72 @@
               "Juan Esteban Montecillo Solache",
               "NAPOLI",
               "1"
+            ],
+            [
+              "1",
+              "JUVENTUS",
+              "22 goles en temporada",
+              "22"
+            ],
+            [
+              "2",
+              "SAN JOSE FC",
+              "16 goles en temporada",
+              "16"
+            ],
+            [
+              "3",
+              "LINCES",
+              "15 goles en temporada",
+              "15"
+            ],
+            [
+              "4",
+              "NAPOLI",
+              "11 goles en temporada",
+              "11"
+            ],
+            [
+              "5",
+              "HERMANOS",
+              "9 goles en temporada",
+              "9"
+            ],
+            [
+              "6",
+              "HERRERAS FC",
+              "9 goles en temporada",
+              "9"
+            ],
+            [
+              "7",
+              "ABEJAS",
+              "7 goles en temporada",
+              "7"
+            ],
+            [
+              "8",
+              "TERRICOLAS",
+              "5 goles en temporada",
+              "5"
+            ],
+            [
+              "9",
+              "FRANCO FC",
+              "3 goles en temporada",
+              "3"
+            ],
+            [
+              "10",
+              "LOBOS CDG",
+              "3 goles en temporada",
+              "3"
+            ],
+            [
+              "11",
+              "GALACTICOS",
+              "0 goles en temporada",
+              "0"
             ]
           ]
         }
@@ -2517,7 +2619,7 @@
               "27",
               "6",
               "HERMANOS",
-              "1",
+              "-",
               "vs",
               "-",
               "GALACTICOS",
@@ -5328,6 +5430,78 @@
               "Honorio Ochoa Aguilar",
               "TAVERA FC",
               "1"
+            ],
+            [
+              "1",
+              "SAN JUAN FC",
+              "18 goles en temporada",
+              "18"
+            ],
+            [
+              "2",
+              "SAN JULIAN",
+              "16 goles en temporada",
+              "16"
+            ],
+            [
+              "3",
+              "CELTICOS",
+              "14 goles en temporada",
+              "14"
+            ],
+            [
+              "4",
+              "SAN ANTONIO FC",
+              "13 goles en temporada",
+              "13"
+            ],
+            [
+              "5",
+              "SAN JOSE JRS",
+              "12 goles en temporada",
+              "12"
+            ],
+            [
+              "6",
+              "BARZA",
+              "11 goles en temporada",
+              "11"
+            ],
+            [
+              "7",
+              "TAVERA FC",
+              "10 goles en temporada",
+              "10"
+            ],
+            [
+              "8",
+              "DEP. NOPALERO",
+              "9 goles en temporada",
+              "9"
+            ],
+            [
+              "9",
+              "DEP. LA LUZ",
+              "7 goles en temporada",
+              "7"
+            ],
+            [
+              "10",
+              "DEP. ZAPATA",
+              "7 goles en temporada",
+              "7"
+            ],
+            [
+              "11",
+              "PACHANGAS FC",
+              "6 goles en temporada",
+              "6"
+            ],
+            [
+              "12",
+              "TAPATIO",
+              "5 goles en temporada",
+              "5"
             ]
           ]
         }
@@ -9271,6 +9445,84 @@
               "Juan Ignacio Servin Linaldi",
               "POPULARES",
               "1"
+            ],
+            [
+              "1",
+              "LA CANCHITA DEPORTES",
+              "22 goles en temporada",
+              "22"
+            ],
+            [
+              "2",
+              "CAPIBARAS",
+              "18 goles en temporada",
+              "18"
+            ],
+            [
+              "3",
+              "LA CUADRILLA",
+              "15 goles en temporada",
+              "15"
+            ],
+            [
+              "4",
+              "ALDAMA FC",
+              "12 goles en temporada",
+              "12"
+            ],
+            [
+              "5",
+              "ATL. GALEANA",
+              "12 goles en temporada",
+              "12"
+            ],
+            [
+              "6",
+              "PROMESAS FC",
+              "11 goles en temporada",
+              "11"
+            ],
+            [
+              "7",
+              "SAN ANTONIO JRS",
+              "11 goles en temporada",
+              "11"
+            ],
+            [
+              "8",
+              "MALVINAS",
+              "10 goles en temporada",
+              "10"
+            ],
+            [
+              "9",
+              "MAZACOTES FC",
+              "8 goles en temporada",
+              "8"
+            ],
+            [
+              "10",
+              "POPULARES",
+              "7 goles en temporada",
+              "7"
+            ],
+            [
+              "11",
+              "OSASUNA",
+              "6 goles en temporada",
+              "6"
+            ],
+            [
+              "12",
+              "LA HUERTA",
+              "5 goles en temporada",
+              "5"
+            ],
+            [
+              "13",
+              "DEP. MARAVILLAS",
+              "1 goles en temporada",
+              "1"
             ]
           ]
         }
@@ -12901,8 +13153,7 @@
   "notes": [
     "Datos deportivos públicos; no se recopilan CURP, INE, domicilio ni documentos.",
     "La fuente oficial juventinorosasliga.com prevalece sobre este snapshot.",
-    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones.",
-    "Jornada 6: se conservan marcas de partidos jugados ya confirmadas en la app azul; los marcadores solo se conservan cuando ya estaban documentados."
+    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones."
   ],
   "missing_official_logo": [
     "BOCA JRS",
