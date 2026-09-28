@@ -307,6 +307,13 @@ def main():
                         fresh_counts['Partidos Pendientes']=prev_counts.get('Partidos Pendientes')
                     c['counts']=fresh_counts
                     c['dashboard']['counts']=dict(fresh_counts)
+        elif fast and prev:
+            # Categorías sin temporada pública activa (hoy Veteranos 35+):
+            # no vaciar la última tabla documentada de la app.
+            for key in ('standings','scorers','cards','suspensions','fixtures'):
+                c[key]=prev.get(key,[]) or []
+            c['counts']=prev.get('counts',c['counts']) or c['counts']
+            c['dashboard']['counts']=dict(c['counts'])
         if not fast and cat in CEDULA_RANGES:
             with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
                 results=list(ex.map(cedula,CEDULA_RANGES[cat]))
