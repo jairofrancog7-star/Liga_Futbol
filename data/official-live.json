@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-27T22:58:52Z",
+  "captured_at_utc": "2026-09-28T01:35:21Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -16,8 +16,6 @@
           "Jugadores": 114
         },
         "current_cedulas": [
-          10,
-          11,
           13,
           14,
           15
@@ -84,40 +82,24 @@
             "near_text": "D - DYNAMO Roberto Perdomo Colin 2 GOLES"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
+            "near_text": "TOROS DE CUENDA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "BOAVISTA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "LA ESPERANZA"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
             "near_text": "MANCHESTER"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
             "near_text": "DYNAMO"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "TOROS DE CUENDA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "LA ESPERANZA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "TOROS DE CUENDA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "MANCHESTER"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "LA ESPERANZA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
@@ -1796,7 +1778,7 @@
       "season_id": null,
       "dashboard": {
         "counts": {
-          "Equipos": 10,
+          "Equipos": 11,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 0,
           "Jugadores": 0
@@ -1805,7 +1787,7 @@
         "logo_candidates": []
       },
       "counts": {
-        "Equipos": 10,
+        "Equipos": 11,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 0,
         "Jugadores": 0
@@ -1833,11 +1815,11 @@
           "Jugadores": 291
         },
         "current_cedulas": [
-          93,
           96,
           97,
           98,
-          99
+          99,
+          100
         ],
         "logo_candidates": [
           {
@@ -1917,20 +1899,12 @@
             "near_text": "N - NAPOLI Juan Pablo Muñoz Guerrero 1 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
-            "near_text": "LOBOS CDG"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
+            "near_text": "FRANCO FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
-            "near_text": "NAPOLI"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "HERMANOS"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
-            "near_text": "SAN JOSE FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
+            "near_text": "HERRERAS FC"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
@@ -1945,12 +1919,20 @@
             "near_text": "TERRICOLAS"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
-            "near_text": "HERRERAS FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "HERMANOS"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
-            "near_text": "LINCES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
+            "near_text": "SAN JOSE FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
+            "near_text": "LOBOS CDG"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
+            "near_text": "NAPOLI"
           }
         ]
       },
@@ -4988,7 +4970,8 @@
           390,
           391,
           392,
-          393
+          393,
+          394
         ],
         "logo_candidates": [
           {
@@ -5080,20 +5063,20 @@
             "near_text": "T - TAVERA FC Moises Gudalupe Arce Gutierrez 2 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
-            "near_text": "TAVERA FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
+            "near_text": "SAN JUAN FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pachangas_upqelg",
-            "near_text": "PACHANGAS FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
+            "near_text": "TAPATIO"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseJR_dio2dt",
-            "near_text": "SAN JOSE JRS"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
+            "near_text": "DEP. NOPALERO"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Barcelona_amoaiq",
-            "near_text": "BARZA"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dep.Zapata_a5dsaz",
+            "near_text": "DEP. ZAPATA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJulianFC_wetv0z",
@@ -5112,12 +5095,20 @@
             "near_text": "CELTICOS"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
-            "near_text": "SAN JUAN FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
+            "near_text": "TAVERA FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
-            "near_text": "TAPATIO"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pachangas_upqelg",
+            "near_text": "PACHANGAS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseJR_dio2dt",
+            "near_text": "SAN JOSE JRS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Barcelona_amoaiq",
+            "near_text": "BARZA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CelticosFC_nv4ukd",
@@ -8817,6 +8808,7 @@
           215,
           216,
           217,
+          218,
           219,
           220
         ],
@@ -8910,12 +8902,20 @@
             "near_text": "L - LA CUADRILLA Pedro Emanuel Figueroa Galvan 1 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Osasuna_lv6rsa",
-            "near_text": "OSASUNA"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Mazacotes_ko8o0w",
+            "near_text": "MAZACOTES FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioJR_jzmfka",
-            "near_text": "SAN ANTONIO JRS"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/MAravillasFC_mnmhwx",
+            "near_text": "DEP. MARAVILLAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PopularesFC_onellt",
+            "near_text": "POPULARES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
+            "near_text": "PROMESAS FC"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
@@ -8926,14 +8926,6 @@
             "near_text": "ATL. GALEANA"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Aldama_mqm3r1",
-            "near_text": "ALDAMA FC"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Malvinas_wdiwk9",
-            "near_text": "MALVINAS"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Capibara_vocmbl",
             "near_text": "CAPIBARAS"
           },
@@ -8942,12 +8934,20 @@
             "near_text": "LA CUADRILLA"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PopularesFC_onellt",
-            "near_text": "POPULARES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Aldama_mqm3r1",
+            "near_text": "ALDAMA FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
-            "near_text": "PROMESAS FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Malvinas_wdiwk9",
+            "near_text": "MALVINAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Osasuna_lv6rsa",
+            "near_text": "OSASUNA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioJR_jzmfka",
+            "near_text": "SAN ANTONIO JRS"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Capibara_vocmbl",
