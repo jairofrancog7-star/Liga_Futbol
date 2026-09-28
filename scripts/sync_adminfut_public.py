@@ -90,10 +90,15 @@ def report(path,cat,season=None):
             rank=re.search(r'#\s*(\d+)',rank_text)
             goals=re.search(r'(\d+)\s+GOLES?',badge.get_text(' ',strip=True) if badge else rank_text,re.I)
             if name and team:
+                team_txt=team.get_text(' ',strip=True)
+                # El dashboard también usa .player-card-small para el ranking
+                # de equipos por goles. Esas filas NO son goleadores.
+                if re.search(r'\\bgoles?\\s+en\\s+temporada\\b',team_txt,re.I):
+                    continue
                 rows.append([
                     rank.group(1) if rank else '',
                     name.get_text(' ',strip=True),
-                    team.get_text(' ',strip=True),
+                    team_txt,
                     goals.group(1) if goals else ''
                 ])
         if rows:
@@ -180,6 +185,38 @@ def collect_teams(category):
             if len(r)>=7: teams.update([r[2],r[6]])
     return {x for x in teams if x and x!='-'}
 
+def fixture_key(row):
+    if not isinstance(row,list) or len(row)<7:
+        return None
+    teams=sorted([norm(row[2]),norm(row[6])])
+    return (norm(row[1]),teams[0],teams[1])
+
+def carry_fixture_annotations(previous,current):
+    """Conserva estados JUGADO confirmados si una captura pública posterior
+    vuelve a publicar el mismo partido sin marcador/estado todavía."""
+    if not previous or not current:
+        return current
+    old_rows=(previous[0].get('rows',[]) if previous else [])
+    new_rows=(current[0].get('rows',[]) if current else [])
+    old_map={fixture_key(r):r for r in old_rows if fixture_key(r)}
+    for row in new_rows:
+        old=old_map.get(fixture_key(row))
+        if not old:
+            continue
+        status=str(old[10] if len(old)>10 else '')
+        if 'JUGADO' not in norm(status):
+            continue
+        current_has_num=any(re.fullmatch(r'\\d+',str(row[i] or '').strip()) for i in (3,5))
+        old_has_num=any(re.fullmatch(r'\\d+',str(old[i] or '').strip()) for i in (3,5))
+        if not current_has_num and old_has_num:
+            scores={norm(old[2]):old[3],norm(old[6]):old[5]}
+            if norm(row[2]) in scores: row[3]=scores[norm(row[2])]
+            if norm(row[6]) in scores: row[5]=scores[norm(row[6])]
+        while len(row)<11:
+            row.append('')
+        row[10]=status
+    return current
+
 def map_logos(cat_id,category,dash):
     teams=collect_teams(category)
     mapped={}
@@ -255,6 +292,21 @@ def main():
             c['cards']=report('tabla-tarjetas/',cat,season)
             c['suspensions']=report('tabla-castigados/',cat,season)
             c['fixtures']=report('reportes/jornadas/completo/',cat,season)
+            if fast:
+                c['fixtures']=carry_fixture_annotations(prev.get('fixtures',[]),c['fixtures'])
+                prev_counts=prev.get('counts',{}) or {}
+                fresh_counts=c.get('counts',{}) or {}
+                try:
+                    prev_played=int(prev_counts.get('Partidos Jugados') or 0)
+                    fresh_played=int(fresh_counts.get('Partidos Jugados') or 0)
+                except Exception:
+                    prev_played=fresh_played=0
+                if prev_played>fresh_played:
+                    fresh_counts['Partidos Jugados']=prev_counts.get('Partidos Jugados')
+                    if prev_counts.get('Partidos Pendientes') is not None:
+                        fresh_counts['Partidos Pendientes']=prev_counts.get('Partidos Pendientes')
+                    c['counts']=fresh_counts
+                    c['dashboard']['counts']=dict(fresh_counts)
         if not fast and cat in CEDULA_RANGES:
             with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
                 results=list(ex.map(cedula,CEDULA_RANGES[cat]))
