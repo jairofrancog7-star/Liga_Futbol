@@ -160,16 +160,35 @@ def cedula(i):
     m=re.match(r'Cédula Arbitral\s*-\s*(.*?)\s*\((.*?)\)\s*vs\s*(.*?)\s*\((.*?)\)',title,re.I)
     if not m: return None
     local,cat1,away,cat2=[x.strip(' -') for x in m.groups()]
+    text=s.get_text(' ',strip=True)
+    dm=re.search(r'\b(\d{1,2}/\d{1,2}/\d{4})(?:\s+(\d{1,2}:\d{2}))?',text)
+    match_date=(dm.group(1)+' '+dm.group(2)).strip() if dm and dm.group(2) else (dm.group(1) if dm else '')
     tabs=table_blocks(s)
-    def players(t):
-        ans=[]
-        if not t: return ans
+
+    def marked(v):
+        n=norm(v)
+        return bool(n and n not in {'-','NO','N A','NA','0','FALSE'})
+
+    def player_data(t):
+        players=[]; lineup=[]; bench=[]
+        if not t: return players,lineup,bench
         for r in t.get('rows',[]):
-            if len(r)>=2 and r[1] and norm(r[1])!='JUGADOR': ans.append(r[1])
-        return ans
-    return {'id':i,'title':title,'local':local,'away':away,'category':cat1,
-            'local_players':players(tabs[0] if len(tabs)>0 else None),
-            'away_players':players(tabs[1] if len(tabs)>1 else None)}
+            if len(r)<2 or not r[1] or norm(r[1])=='JUGADOR':
+                continue
+            name=r[1]
+            players.append(name)
+            # La cédula pública usa T / C para titular y cambio cuando están capturados.
+            if len(r)>=3 and marked(r[2]): lineup.append(name)
+            if len(r)>=4 and marked(r[3]): bench.append(name)
+        return unique_names(players),unique_names(lineup),unique_names(bench)
+
+    lp,ll,lb=player_data(tabs[0] if len(tabs)>0 else None)
+    ap,al,ab=player_data(tabs[1] if len(tabs)>1 else None)
+    return {'id':i,'url':urljoin(BASE,'cedula-arbitral/'+str(i)+'/'),'title':title,
+            'local':local,'away':away,'category':cat1,'date':match_date,
+            'local_players':lp,'away_players':ap,
+            'local_lineup':ll,'away_lineup':al,
+            'local_bench':lb,'away_bench':ab}
 
 def unique_names(seq):
     out=[]; seen=set()
@@ -336,6 +355,22 @@ def main():
             for x in c['cedulas']: seen_c[x['id']]=x
             c['cedulas']=[seen_c[k] for k in sorted(seen_c)]
             c['rosters']={team:unique_names(players) for team,players in c['rosters'].items()}
+        elif fast and dash.get('current_cedulas'):
+            # Refresca las cédulas visibles en el dashboard en cada ciclo rápido.
+            # Así, si la Liga captura T/C, la alineación llega al Match Center sin esperar el escaneo semanal completo.
+            try:
+                with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+                    current=list(ex.map(cedula,dash.get('current_cedulas',[])))
+                by_id={int(x.get('id')):x for x in c.get('cedulas',[]) if x and x.get('id') is not None}
+                for x in current:
+                    if not x or norm(x.get('category'))!=norm(name): continue
+                    public={k:v for k,v in x.items() if k not in ['local_players','away_players']}
+                    by_id[int(x['id'])]=public
+                    c['cedulas_scanned'].append(x['id'])
+                c['cedulas']=[by_id[k] for k in sorted(by_id)]
+                c['cedulas_scanned']=sorted(set(c['cedulas_scanned']))
+            except Exception:
+                pass
         c['public_player_count_scraped']=len({norm(p) for ps in c['rosters'].values() for p in ps})
         data['categories'][str(cat)]=c
         if not fast: all_logo_urls.update(map_logos(cat,c,dash))
