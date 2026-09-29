@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-09-29T17:17:47Z",
+  "captured_at_utc": "2026-09-29T19:57:33Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2019,7 +2019,7 @@
           "Equipos": 11,
           "Partidos Jugados": 25,
           "Partidos Pendientes": 30,
-          "Jugadores": 291
+          "Jugadores": 290
         },
         "current_cedulas": [
           96,
@@ -2147,7 +2147,7 @@
         "Equipos": 11,
         "Partidos Jugados": 25,
         "Partidos Pendientes": 30,
-        "Jugadores": 291
+        "Jugadores": 290
       },
       "standings": [
         {
@@ -13444,7 +13444,7 @@
     "GALACTICOS"
   ],
   "checks": {
-    "primera_dashboard_players": 291,
+    "primera_dashboard_players": 290,
     "primera_roster_unique": 291,
     "team_logos_known": 41,
     "categories": 5
