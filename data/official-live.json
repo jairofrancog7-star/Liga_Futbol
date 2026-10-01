@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-01T15:25:00Z",
+  "captured_at_utc": "2026-10-01T17:12:30Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -13,7 +13,7 @@
           "Equipos": 6,
           "Partidos Jugados": 18,
           "Partidos Pendientes": 27,
-          "Jugadores": 114
+          "Jugadores": 116
         },
         "current_cedulas": [
           13,
@@ -115,7 +115,7 @@
         "Equipos": 6,
         "Partidos Jugados": 18,
         "Partidos Pendientes": 27,
-        "Jugadores": 114
+        "Jugadores": 116
       },
       "standings": [
         {
@@ -465,24 +465,24 @@
             [
               "7",
               "3",
-              "DYNAMO",
-              "4",
-              "vs",
-              "1",
-              "TOROS DE CUENDA",
-              "Campo 2",
-              "22/08/2026 15:30",
-              "---"
-            ],
-            [
-              "8",
-              "3",
               "BOCA JRS",
               "-",
               "vs",
               "1",
               "BOAVISTA",
               "",
+              "22/08/2026 15:30",
+              "---"
+            ],
+            [
+              "8",
+              "3",
+              "DYNAMO",
+              "4",
+              "vs",
+              "1",
+              "TOROS DE CUENDA",
+              "Campo 2",
               "22/08/2026 15:30",
               "---"
             ],
@@ -501,11 +501,11 @@
             [
               "10",
               "4",
-              "BOAVISTA",
-              "2",
-              "vs",
+              "DYNAMO",
               "1",
-              "LA ESPERANZA",
+              "vs",
+              "-",
+              "BOCA JRS",
               "",
               "29/08/2026 15:30",
               "---"
@@ -513,11 +513,11 @@
             [
               "11",
               "4",
-              "DYNAMO",
-              "1",
+              "BOAVISTA",
+              "2",
               "vs",
-              "-",
-              "BOCA JRS",
+              "1",
+              "LA ESPERANZA",
               "",
               "29/08/2026 15:30",
               "---"
@@ -537,24 +537,24 @@
             [
               "13",
               "5",
-              "BOCA JRS",
-              "-",
-              "vs",
-              "1",
-              "LA ESPERANZA",
-              "",
-              "05/09/2026 15:30",
-              "---"
-            ],
-            [
-              "14",
-              "5",
               "TOROS DE CUENDA",
               "2",
               "vs",
               "2",
               "BOAVISTA",
               "Campo 1 (Empastado)",
+              "05/09/2026 15:30",
+              "---"
+            ],
+            [
+              "14",
+              "5",
+              "BOCA JRS",
+              "-",
+              "vs",
+              "1",
+              "LA ESPERANZA",
+              "",
               "05/09/2026 15:30",
               "---"
             ],
@@ -617,10 +617,9 @@
               "vs",
               "-",
               "BOCA JRS",
-              "",
-              "03/10/2026",
-              "---",
-              "GANA MANCHESTER"
+              "Campo 2",
+              "03/10/2026 15:30",
+              "---"
             ],
             [
               "20",
@@ -721,24 +720,24 @@
             [
               "28",
               "10",
-              "LA ESPERANZA",
-              "-",
-              "vs",
-              "-",
-              "BOCA JRS",
-              "Tavera",
-              "24/10/2026 15:30",
-              "---"
-            ],
-            [
-              "29",
-              "10",
               "BOAVISTA",
               "-",
               "vs",
               "-",
               "TOROS DE CUENDA",
               "Campo 4",
+              "24/10/2026 15:30",
+              "---"
+            ],
+            [
+              "29",
+              "10",
+              "LA ESPERANZA",
+              "-",
+              "vs",
+              "-",
+              "BOCA JRS",
+              "Tavera",
               "24/10/2026 15:30",
               "---"
             ],
@@ -793,24 +792,24 @@
             [
               "34",
               "12",
-              "LA ESPERANZA",
-              "-",
-              "vs",
-              "-",
-              "TOROS DE CUENDA",
-              "Tavera",
-              "07/11/2026 15:30",
-              "---"
-            ],
-            [
-              "35",
-              "12",
               "BOCA JRS",
               "-",
               "vs",
               "-",
               "MANCHESTER",
               "Campo 2",
+              "07/11/2026 15:30",
+              "---"
+            ],
+            [
+              "35",
+              "12",
+              "LA ESPERANZA",
+              "-",
+              "vs",
+              "-",
+              "TOROS DE CUENDA",
+              "Tavera",
               "07/11/2026 15:30",
               "---"
             ],
@@ -2887,12 +2886,12 @@
             [
               "26",
               "6",
-              "NAPOLI",
+              "FRANCO FC",
               "-",
               "vs",
               "-",
-              "ABEJAS",
-              "Campo 1 (Empastado)",
+              "JUVENTUS",
+              "Romerillo",
               "27/09/2026 08:00",
               "---",
               "JUGADO"
@@ -2913,12 +2912,12 @@
             [
               "28",
               "6",
-              "FRANCO FC",
+              "NAPOLI",
               "-",
               "vs",
               "-",
-              "JUVENTUS",
-              "Romerillo",
+              "ABEJAS",
+              "Campo 1 (Empastado)",
               "27/09/2026 08:00",
               "---",
               "JUGADO"
@@ -2952,43 +2951,6 @@
             [
               "31",
               "7",
-              "HERMANOS",
-              "-",
-              "vs",
-              "-",
-              "LOBOS CDG",
-              "Campo 3",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "32",
-              "7",
-              "HERRERAS FC",
-              "-",
-              "vs",
-              "-",
-              "ABEJAS",
-              "Pozos",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "33",
-              "7",
-              "LINCES",
-              "-",
-              "vs",
-              "-",
-              "GALACTICOS",
-              "",
-              "04/10/2026",
-              "---",
-              "GANA LINCES"
-            ],
-            [
-              "34",
-              "7",
               "TERRICOLAS",
               "-",
               "vs",
@@ -2999,31 +2961,55 @@
               "---"
             ],
             [
-              "35",
+              "32",
               "7",
-              "FRANCO FC",
+              "GALACTICOS",
               "-",
               "vs",
               "-",
+              "LINCES",
+              "Pozos",
+              "04/10/2026 09:00",
+              "---"
+            ],
+            [
+              "33",
+              "7",
+              "ABEJAS",
+              "-",
+              "vs",
+              "-",
+              "HERRERAS FC",
+              "Pozos",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "34",
+              "7",
+              "HERMANOS",
+              "-",
+              "vs",
+              "-",
+              "LOBOS CDG",
+              "Campo 3",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "35",
+              "7",
               "SAN JOSE FC",
-              "San Jose de la Montaña",
+              "-",
+              "vs",
+              "-",
+              "FRANCO FC",
+              "San Jose  de la Montaña",
               "04/10/2026 12:00",
               "---"
             ],
             [
               "36",
-              "8",
-              "TERRICOLAS",
-              "-",
-              "vs",
-              "-",
-              "LINCES",
-              "Campo 3",
-              "11/10/2026 08:00",
-              "---"
-            ],
-            [
-              "37",
               "8",
               "GALACTICOS",
               "-",
@@ -3035,19 +3021,19 @@
               "---"
             ],
             [
-              "38",
+              "37",
               "8",
-              "HERMANOS",
+              "TERRICOLAS",
               "-",
               "vs",
               "-",
-              "LOBOS CDG",
+              "LINCES",
               "Campo 3",
-              "11/10/2026 10:00",
+              "11/10/2026 08:00",
               "---"
             ],
             [
-              "39",
+              "38",
               "8",
               "JUVENTUS",
               "-",
@@ -3055,6 +3041,18 @@
               "-",
               "HERRERAS FC",
               "Campo 1 (Empastado)",
+              "11/10/2026 10:00",
+              "---"
+            ],
+            [
+              "39",
+              "8",
+              "HERMANOS",
+              "-",
+              "vs",
+              "-",
+              "LOBOS CDG",
+              "Campo 3",
               "11/10/2026 10:00",
               "---"
             ],
@@ -3097,24 +3095,24 @@
             [
               "43",
               "9",
-              "ABEJAS",
-              "-",
-              "vs",
-              "-",
-              "JUVENTUS",
-              "Pozos",
-              "18/10/2026 10:00",
-              "---"
-            ],
-            [
-              "44",
-              "9",
               "SAN JOSE FC",
               "-",
               "vs",
               "-",
               "HERRERAS FC",
               "San Jose  de la Montaña",
+              "18/10/2026 10:00",
+              "---"
+            ],
+            [
+              "44",
+              "9",
+              "ABEJAS",
+              "-",
+              "vs",
+              "-",
+              "JUVENTUS",
+              "Pozos",
               "18/10/2026 10:00",
               "---"
             ],
@@ -6463,17 +6461,29 @@
             [
               "37",
               "7",
-              "TAPATIO",
+              "PACHANGAS FC",
               "-",
               "vs",
               "-",
-              "PACHANGAS FC",
+              "TAPATIO",
               "Campo 2",
               "04/10/2026 08:00",
               "---"
             ],
             [
               "38",
+              "7",
+              "SAN JOSE JRS",
+              "-",
+              "vs",
+              "-",
+              "SAN JUAN FC",
+              "San Jose  de la Montaña",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "39",
               "7",
               "TAVERA FC",
               "-",
@@ -6485,31 +6495,31 @@
               "---"
             ],
             [
-              "39",
+              "40",
               "7",
-              "SAN JUAN FC",
+              "DEP. NOPALERO",
               "-",
               "vs",
               "-",
-              "SAN JOSE JRS",
-              "San Jose de la Montaña",
+              "SAN ANTONIO FC",
+              "Campo 2",
               "04/10/2026 10:00",
               "---"
             ],
             [
-              "40",
+              "41",
               "7",
-              "DEP. LA LUZ",
+              "CELTICOS",
               "-",
               "vs",
               "-",
-              "CELTICOS",
+              "DEP. LA LUZ",
               "Campo 1 (Empastado)",
               "04/10/2026 12:00",
               "---"
             ],
             [
-              "41",
+              "42",
               "7",
               "BARZA",
               "-",
@@ -6518,18 +6528,6 @@
               "DEP. ZAPATA",
               "Campo 2",
               "04/10/2026 12:00",
-              "---"
-            ],
-            [
-              "42",
-              "7",
-              "SAN ANTONIO FC",
-              "-",
-              "vs",
-              "-",
-              "DEP. NOPALERO",
-              "Campo 2",
-              "04/10/2026 10:00",
               "---"
             ],
             [
@@ -10112,24 +10110,24 @@
             [
               "9",
               "2",
-              "MALVINAS",
-              "5",
-              "vs",
-              "2",
-              "OSASUNA",
-              "Fraccionamiento",
-              "09/08/2026 10:00",
-              "---"
-            ],
-            [
-              "10",
-              "2",
               "DEP. MARAVILLAS",
               "1",
               "vs",
               "1",
               "LA HUERTA",
               "Campo 1 (Empastado)",
+              "09/08/2026 10:00",
+              "---"
+            ],
+            [
+              "10",
+              "2",
+              "MALVINAS",
+              "5",
+              "vs",
+              "2",
+              "OSASUNA",
+              "Fraccionamiento",
               "09/08/2026 10:00",
               "---"
             ],
@@ -10232,18 +10230,6 @@
             [
               "19",
               "4",
-              "LA CANCHITA DEPORTES",
-              "7",
-              "vs",
-              "1",
-              "MAZACOTES FC",
-              "Campo 2",
-              "06/09/2026 08:00",
-              "---"
-            ],
-            [
-              "20",
-              "4",
               "LA CUADRILLA",
               "1",
               "vs",
@@ -10254,19 +10240,19 @@
               "---"
             ],
             [
-              "21",
+              "20",
               "4",
-              "ATL. GALEANA",
+              "LA CANCHITA DEPORTES",
               "7",
               "vs",
-              "5",
-              "PROMESAS FC",
-              "Campo 4",
-              "06/09/2026 10:00",
+              "1",
+              "MAZACOTES FC",
+              "Campo 2",
+              "06/09/2026 08:00",
               "---"
             ],
             [
-              "22",
+              "21",
               "4",
               "DEP. MARAVILLAS",
               "-",
@@ -10278,19 +10264,19 @@
               "---"
             ],
             [
-              "23",
+              "22",
               "4",
-              "SAN ANTONIO JRS",
-              "2",
+              "ATL. GALEANA",
+              "7",
               "vs",
-              "1",
-              "POPULARES",
-              "Romerillo",
-              "06/09/2026 12:00",
+              "5",
+              "PROMESAS FC",
+              "Campo 4",
+              "06/09/2026 10:00",
               "---"
             ],
             [
-              "24",
+              "23",
               "4",
               "MALVINAS",
               "1",
@@ -10302,19 +10288,19 @@
               "---"
             ],
             [
-              "25",
-              "5",
-              "MAZACOTES FC",
+              "24",
               "4",
+              "SAN ANTONIO JRS",
+              "2",
               "vs",
-              "-",
-              "DEP. MARAVILLAS",
-              "Campo 1 (Empastado)",
-              "20/09/2026 08:00",
-              "RAUL GARCIA"
+              "1",
+              "POPULARES",
+              "Romerillo",
+              "06/09/2026 12:00",
+              "---"
             ],
             [
-              "26",
+              "25",
               "5",
               "POPULARES",
               "3",
@@ -10324,6 +10310,18 @@
               "Fraccionamiento",
               "20/09/2026 08:00",
               "---"
+            ],
+            [
+              "26",
+              "5",
+              "MAZACOTES FC",
+              "4",
+              "vs",
+              "-",
+              "DEP. MARAVILLAS",
+              "Campo 1 (Empastado)",
+              "20/09/2026 08:00",
+              "RAUL GARCIA"
             ],
             [
               "27",
@@ -10402,12 +10400,12 @@
             [
               "33",
               "6",
-              "OSASUNA",
+              "MAZACOTES FC",
               "-",
               "vs",
               "-",
-              "PROMESAS FC",
-              "Fraccionamiento",
+              "MALVINAS",
+              "Campo 2",
               "27/09/2026 10:00",
               "---",
               "JUGADO"
@@ -10415,12 +10413,12 @@
             [
               "34",
               "6",
-              "MAZACOTES FC",
+              "OSASUNA",
               "-",
               "vs",
               "-",
-              "MALVINAS",
-              "Campo 2",
+              "PROMESAS FC",
+              "Fraccionamiento",
               "27/09/2026 10:00",
               "---",
               "JUGADO"
@@ -10454,66 +10452,6 @@
             [
               "37",
               "7",
-              "DEP. MARAVILLAS",
-              "-",
-              "vs",
-              "-",
-              "ATL. GALEANA",
-              "Campo 3",
-              "04/10/2026 12:00",
-              "---"
-            ],
-            [
-              "38",
-              "7",
-              "LA CANCHITA DEPORTES",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Campo 1 (Empastado)",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "39",
-              "7",
-              "CAPIBARAS",
-              "-",
-              "vs",
-              "-",
-              "SAN ANTONIO JRS",
-              "Romerillo",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "40",
-              "7",
-              "LA HUERTA",
-              "-",
-              "vs",
-              "-",
-              "PROMESAS FC",
-              "Fraccionamiento",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "41",
-              "7",
-              "MAZACOTES FC",
-              "-",
-              "vs",
-              "-",
-              "LA CUADRILLA",
-              "Fraccionamiento",
-              "04/10/2026 08:00",
-              "---"
-            ],
-            [
-              "42",
-              "7",
               "OSASUNA",
               "-",
               "vs",
@@ -10521,6 +10459,66 @@
               "POPULARES",
               "Campo 1 (Empastado)",
               "04/10/2026 08:00",
+              "---"
+            ],
+            [
+              "38",
+              "7",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "MAZACOTES FC",
+              "Fraccionamiento",
+              "04/10/2026 08:00",
+              "---"
+            ],
+            [
+              "39",
+              "7",
+              "SAN ANTONIO JRS",
+              "-",
+              "vs",
+              "-",
+              "CAPIBARAS",
+              "Romerillo",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "40",
+              "7",
+              "MALVINAS",
+              "-",
+              "vs",
+              "-",
+              "LA CANCHITA DEPORTES",
+              "Campo 1 (Empastado)",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "41",
+              "7",
+              "PROMESAS FC",
+              "-",
+              "vs",
+              "-",
+              "LA HUERTA",
+              "Fraccionamiento",
+              "04/10/2026 10:00",
+              "---"
+            ],
+            [
+              "42",
+              "7",
+              "DEP. MARAVILLAS",
+              "-",
+              "vs",
+              "-",
+              "ATL. GALEANA",
+              "Campo 3",
+              "04/10/2026 12:00",
               "---"
             ],
             [
@@ -13553,8 +13551,7 @@
   "notes": [
     "Datos deportivos públicos; no se recopilan CURP, INE, domicilio ni documentos.",
     "La fuente oficial juventinorosasliga.com prevalece sobre este snapshot.",
-    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones.",
-    "Rol actualizado desde publicación oficial: Veteranos 35+ amistoso y Torneo de Copa J7 para 3–4 octubre 2026."
+    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones."
   ],
   "missing_official_logo": [
     "BOCA JRS",
@@ -13563,8 +13560,7 @@
   "checks": {
     "primera_dashboard_players": 290,
     "primera_roster_unique": 291,
-    "team_logos_known": 41,
+    "team_logos_known": 54,
     "categories": 5
-  },
-  "source_page_veteranos_35": "https://www.juventinorosasliga.com/?categoria=2"
+  }
 }
