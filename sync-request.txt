@@ -1,0 +1,5 @@
+Solicitud de sincronización pública AdminFut
+Fecha: 2026-10-01
+Alcance: todas las categorías
+Datos: equipos, logos, tabla, jornadas, partidos, resultados, goleadores, tarjetas amarillas, tarjetas rojas, sanciones/castigados y cédulas públicas.
+Fuente: https://www.juventinorosasliga.com/
