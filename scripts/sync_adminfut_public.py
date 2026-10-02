@@ -16,7 +16,7 @@ except Exception:
 BASE='https://juventinorosasliga.com/'
 UA={'User-Agent':'Mozilla/5.0 (compatible; LigaJR-FIX28/1.0; public-data-sync)'}
 CATEGORIES={1:'Veteranos 50+',2:'Veteranos 35+',3:'Primera Fuerza',4:'Segunda Fuerza',5:'Intermedia'}
-SEASONS={1:2,3:3,5:4,4:5}
+SEASONS={1:2,2:6,3:3,5:4,4:5}
 CEDULA_RANGES={1:range(1,61),3:range(70,151),5:range(185,301),4:range(355,481)}
 
 def norm(s):
