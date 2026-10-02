@@ -6355,7 +6355,8 @@
           },
           {
             "name": "JOSE ANDRES GARZA CALLEJA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 10
           },
           {
             "name": "ERICK LOPEZ RAMIREZ",
@@ -6369,7 +6370,8 @@
           },
           {
             "name": "JONATAN GABRIEL MAIDANA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 13
           },
           {
             "name": "ALEJANDRO MORENO BANDA",
@@ -6408,19 +6410,23 @@
           },
           {
             "name": "MARIO RAZO MIRANDA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 21
           },
           {
             "name": "JORGE LUIS RODRIGUEZ BAHENA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 22
           },
           {
             "name": "HAROL LENIER ROMANA MOSQUEDA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 23
           },
           {
             "name": "JUAN JESUS TORRES GARCIA",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 24
           },
           {
             "name": "CRISTIAN IVAN VARGAS RODRIGUEZ",
@@ -6434,11 +6440,13 @@
           },
           {
             "name": "ABRAHAM GUADALUPE VALENCIA FLORES",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 27
           },
           {
             "name": "JOSE DE JESUS VALENZUELA ABOYTES",
-            "position": "Defensa"
+            "position": "Defensa",
+            "sprite_index": 28
           }
         ],
         "FRANCO FC": [
