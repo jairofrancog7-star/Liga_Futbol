@@ -5,7 +5,7 @@
 import argparse, concurrent.futures, json, os, re, sys, time, unicodedata
 from pathlib import Path
 from urllib.request import Request, urlopen
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlencode
 
 try:
     from bs4 import BeautifulSoup
@@ -197,6 +197,120 @@ def unique_names(seq):
         if k and k not in seen: seen.add(k); out.append(x)
     return out
 
+def registration_profiles(cat,season):
+    """Lee el reporte público de registro sin guardar CURP/INE/domicilio.
+    Conserva solamente nombre deportivo, posición, dorsal y foto pública de adultos.
+    Si el reporte requiere sesión o cambia de HTML, falla en silencio y mantiene
+    el último snapshot válido.
+    """
+    if season is None:
+        return {}
+    endpoint='reporte-registro/'
+    try:
+        base=soup_url(endpoint+'?'+urlencode({'categoria':cat,'temporada':season}))
+    except Exception:
+        return {}
+
+    selects=base.find_all('select')
+    def select_key(token):
+        token=norm(token)
+        for sel in selects:
+            hay=norm((sel.get('name') or '')+' '+(sel.get('id') or '')+' '+(sel.get('aria-label') or ''))
+            if token in hay and sel.get('name'):
+                return sel
+        return None
+
+    team_sel=select_key('EQUIPO')
+    if team_sel is None:
+        return {}
+    cat_sel=select_key('CATEGORIA')
+    season_sel=select_key('TEMPORADA')
+    team_key=team_sel.get('name')
+    base_params={}
+    for sel in selects:
+        key=sel.get('name')
+        if not key:
+            continue
+        chosen=sel.find('option',selected=True)
+        if chosen is not None and chosen.get('value') not in (None,''):
+            base_params[key]=chosen.get('value')
+    if cat_sel is not None:
+        base_params[cat_sel.get('name')]=str(cat)
+    else:
+        base_params['categoria']=str(cat)
+    if season_sel is not None:
+        base_params[season_sel.get('name')]=str(season)
+    else:
+        base_params['temporada']=str(season)
+
+    out={}
+    for opt in team_sel.find_all('option'):
+        value=str(opt.get('value') or '').strip()
+        label=' '.join(opt.get_text(' ',strip=True).split())
+        nl=norm(label)
+        if not value or value in {'0','-1'} or not label or nl.startswith('TODOS ') or nl in {'TODOS LOS EQUIPOS','TODOS'}:
+            continue
+        params=dict(base_params)
+        params[team_key]=value
+        try:
+            page=soup_url(endpoint+'?'+urlencode(params))
+        except Exception:
+            continue
+
+        profiles=[]
+        for table in page.find_all('table'):
+            trs=table.find_all('tr')
+            if not trs:
+                continue
+            heads=[' '.join(x.get_text(' ',strip=True).split()) for x in trs[0].find_all(['th','td'])]
+            nh=[norm(x) for x in heads]
+            try:
+                player_i=next(i for i,h in enumerate(nh) if 'JUGADOR' in h)
+            except StopIteration:
+                continue
+            pos_i=next((i for i,h in enumerate(nh) if 'POSICION' in h),None)
+            dorsal_i=next((i for i,h in enumerate(nh) if 'DORSAL' in h),None)
+            age_i=next((i for i,h in enumerate(nh) if h=='EDAD' or h.endswith(' EDAD')),None)
+            for tr in trs[1:]:
+                cells=tr.find_all(['td','th'])
+                if player_i>=len(cells):
+                    continue
+                cell=cells[player_i]
+                name=' '.join(cell.get_text(' ',strip=True).split())
+                if not name or norm(name) in {'JUGADOR','SIN JUGADORES'}:
+                    continue
+                position=' '.join(cells[pos_i].get_text(' ',strip=True).split()) if pos_i is not None and pos_i<len(cells) else ''
+                dorsal=' '.join(cells[dorsal_i].get_text(' ',strip=True).split()) if dorsal_i is not None and dorsal_i<len(cells) else ''
+                age=None
+                if age_i is not None and age_i<len(cells):
+                    m=re.search(r'\d+',cells[age_i].get_text(' ',strip=True))
+                    age=int(m.group(0)) if m else None
+
+                photo=''
+                img=cell.find('img')
+                if img is not None and (age is None or age>=18):
+                    src=(img.get('src') or img.get('data-src') or '').strip()
+                    if src and '/logos/' not in src and not src.lower().startswith('data:image/svg'):
+                        photo=urljoin(BASE,src)
+
+                item={'name':name}
+                if position and position!='-':
+                    item['position']=position
+                if dorsal and dorsal!='-':
+                    item['dorsal']=dorsal
+                if photo:
+                    item['photo']=photo
+                profiles.append(item)
+        if profiles:
+            seen=set(); cleaned=[]
+            for item in profiles:
+                k=norm(item.get('name'))
+                if not k or k in seen:
+                    continue
+                seen.add(k);cleaned.append(item)
+            out[label]=cleaned
+    return out
+
 def collect_teams(category):
     teams=set(category.get('rosters',{}))
     for tab in category.get('fixtures',[]):
@@ -292,6 +406,7 @@ def main():
           'mode':'fast' if fast else 'full','categories':{},'team_logos':old.get('team_logos',{}) if fast else {},
           'cedula_audit':old.get('cedula_audit',{}),
           'notes':['Datos deportivos públicos; no se recopilan CURP, INE, domicilio ni documentos.',
+                   'El reporte de registro aporta nombre, posición, dorsal y foto pública de adultos cuando la fuente la expone.',
                    'La fuente oficial juventinorosasliga.com prevalece sobre este snapshot.',
                    'No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones.']}
     all_logo_urls={}
@@ -303,6 +418,7 @@ def main():
            'standings':[],'scorers':[],'cards':[],'suspensions':[],'fixtures':[],
            'rosters':prev.get('rosters',{}) if fast else {},
            'player_usage':prev.get('player_usage',{}) if fast else {},
+           'player_profiles':prev.get('player_profiles',{}) or {},
            'cedulas':prev.get('cedulas',[]) if fast else [],
            'cedulas_scanned':prev.get('cedulas_scanned',[]) if fast else []}
         if season:
@@ -371,6 +487,28 @@ def main():
                 c['cedulas_scanned']=sorted(set(c['cedulas_scanned']))
             except Exception:
                 pass
+        # Reporte de registro: completa nombres que todavía no aparecen en cédulas
+        # y agrega únicamente campos deportivos públicos. Nunca persiste CURP/INE.
+        try:
+            rp=registration_profiles(cat,season)
+            if rp:
+                known=list(collect_teams(c))
+                canonical={}
+                for label,items in rp.items():
+                    hit=next((x for x in known if norm(x)==norm(label)),None)
+                    if hit is None:
+                        hit=next((x for x in known if norm(x) in norm(label) or norm(label) in norm(x)),None)
+                    team=hit or label
+                    canonical.setdefault(team,[]).extend(items)
+                    for item in items:
+                        name=item.get('name')
+                        if name:
+                            c['rosters'].setdefault(team,[]).append(name)
+                c['player_profiles']={team:[dict(x) for x in items] for team,items in canonical.items()}
+                c['rosters']={team:unique_names(players) for team,players in c['rosters'].items()}
+        except Exception:
+            pass
+
         c['public_player_count_scraped']=len({norm(p) for ps in c['rosters'].values() for p in ps})
         data['categories'][str(cat)]=c
         if not fast: all_logo_urls.update(map_logos(cat,c,dash))
