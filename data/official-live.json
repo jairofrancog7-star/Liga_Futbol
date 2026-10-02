@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-02T18:24:05Z",
+  "captured_at_utc": "2026-10-02T18:47:03Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -17867,7 +17867,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 0,
+        "public_names": 30,
         "kept_previous": true
       },
       "Primera Fuerza": {
@@ -17892,9 +17892,7 @@
     "Datos deportivos públicos; no se recopilan CURP, INE, domicilio ni documentos.",
     "El reporte de registro aporta nombre, posición, dorsal y foto pública de adultos cuando la fuente la expone.",
     "La fuente oficial juventinorosasliga.com prevalece sobre este snapshot.",
-    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones.",
-    "Perfiles deportivos (nombre y posicion) completados desde el reporte de registro 2026 aportado por el administrador; CURP, nacimiento y documentos no se publican.",
-    "Las fotos de HERMANOS se muestran mediante un sprite local; no se publican documentos de identidad."
+    "No se inventan goles, alineaciones, estadísticas avanzadas ni sanciones."
   ],
   "missing_official_logo": [
     "BOCA JRS",
@@ -17905,6 +17903,5 @@
     "primera_roster_unique": 292,
     "team_logos_known": 41,
     "categories": 5
-  },
-  "registration_profiles_updated_at": "2026-10-02T18:45:00Z"
+  }
 }
