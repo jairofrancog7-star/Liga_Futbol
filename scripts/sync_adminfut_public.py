@@ -205,10 +205,21 @@ def registration_profiles(cat,season):
     """
     if season is None:
         return {}
-    endpoint='reporte-registro/'
-    try:
-        base=soup_url(endpoint+'?'+urlencode({'categoria':cat,'temporada':season}))
-    except Exception:
+    # AdminFut ha expuesto este reporte con dos rutas en distintas versiones.
+    # Probamos primero la ruta actual compartida por la Liga y conservamos
+    # compatibilidad con la ruta anterior. Sólo se extraen datos deportivos.
+    endpoint=None
+    base=None
+    for candidate in ('reportes/registro/','reporte-registro/'):
+        try:
+            page=soup_url(candidate+'?'+urlencode({'categoria':cat,'temporada':season}))
+        except Exception:
+            continue
+        if page.find('select') or page.find('table'):
+            endpoint=candidate
+            base=page
+            break
+    if endpoint is None or base is None:
         return {}
 
     selects=base.find_all('select')
@@ -287,11 +298,19 @@ def registration_profiles(cat,season):
                     age=int(m.group(0)) if m else None
 
                 photo=''
-                img=cell.find('img')
-                if img is not None and (age is None or age>=18):
-                    src=(img.get('src') or img.get('data-src') or '').strip()
-                    if src and '/logos/' not in src and not src.lower().startswith('data:image/svg'):
+                # En la vista actual la fotografía puede vivir en una celda separada
+                # del nombre. Buscamos cualquier imagen de la fila y descartamos logos,
+                # iconos y SVG. No se recopilan documentos ni identificadores privados.
+                if age is None or age>=18:
+                    for img in tr.find_all('img'):
+                        src=(img.get('src') or img.get('data-src') or img.get('data-original') or '').strip()
+                        low=src.lower()
+                        if not src or '/logos/' in low or 'logo' in low or low.startswith('data:image/svg'):
+                            continue
+                        if any(x in low for x in ('icon','favicon','escudo')):
+                            continue
                         photo=urljoin(BASE,src)
+                        break
 
                 item={'name':name}
                 if position and position!='-':
