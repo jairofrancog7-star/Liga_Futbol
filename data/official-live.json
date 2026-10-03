@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-03T12:28:37Z",
+  "captured_at_utc": "2026-10-03T16:41:48Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -7975,7 +7975,8 @@
           {
             "name": "Jose Armando Almaraz Ortega",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-02_at_5.32.27_PM_rp6cit"
           },
           {
             "name": "Jesus Salvador Flores Gallegos",
@@ -8018,7 +8019,8 @@
           {
             "name": "ANTONIO LADINO ABOYTES",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-03_at_8.12.08_AM_sgvhvm"
           },
           {
             "name": "Giovanni Lera Barbosa",
