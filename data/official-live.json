@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-06T09:23:07Z",
+  "captured_at_utc": "2026-10-06T16:14:29Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2674,7 +2674,7 @@
           "Equipos": 11,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 55,
-          "Jugadores": 14
+          "Jugadores": 24
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2724,7 +2724,7 @@
         "Equipos": 11,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 55,
-        "Jugadores": 14
+        "Jugadores": 24
       },
       "standings": [],
       "scorers": [
@@ -3489,7 +3489,21 @@
           "Cristian Jesus Gasca Rodriguez",
           "Jose Antonio Juarez Landin",
           "OSCAR LOPEZ DAMIAN",
-          "Francisco Javier Solache Franco"
+          "Francisco Javier Solache Franco",
+          "ENRIQUE ABOYTES CRUZ",
+          "LUIS FERNANDO ARREDONDO ZAVALA",
+          "MIGUEL DARIO GARCIA RODRIGUEZ",
+          "LUIS FERNANDO GARCIDUEÑAS CAMACHO",
+          "JOSE LUIS GUERRERO RODRIGUEZ",
+          "Edgar Manuel Landin Ibarra",
+          "JOSE DAVID MARTINEZ FLORES",
+          "Jose Pablo Mejia Campos",
+          "Juan Mendoza Lopez",
+          "RUBEN OLIVARES GUERRERO",
+          "JOSE LUIS ORNELAS RAMIREZ",
+          "Daniel Yañez Rangel",
+          "VICTOR HUGO ZARATE CERRITO",
+          "JOSE LUIS ZUÑIGA CERROBLANCO"
         ]
       },
       "player_usage": {},
@@ -3643,10 +3657,20 @@
         ],
         "PSV": [
           {
+            "name": "ENRIQUE ABOYTES CRUZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "FRANCISCO JESUS AGUIRRE CANO",
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-11_at_2.47.27_PM_1_ayjved"
+          },
+          {
+            "name": "LUIS FERNANDO ARREDONDO ZAVALA",
+            "position": "Defensa",
+            "dorsal": "—"
           },
           {
             "name": "Giovanni Emanuel Flores Guerrero",
@@ -3655,10 +3679,26 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Giovanni_eytheh"
           },
           {
+            "name": "MIGUEL DARIO GARCIA RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_11.28.08_PM_kxyjg6"
+          },
+          {
+            "name": "LUIS FERNANDO GARCIDUEÑAS CAMACHO",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
             "name": "OMAR GUERRERO DAMIAN",
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/OMAR_qcc35o"
+          },
+          {
+            "name": "JOSE LUIS GUERRERO RODRIGUEZ",
+            "position": "Delantero",
+            "dorsal": "—"
           },
           {
             "name": "Cristian Jesus Gasca Rodriguez",
@@ -3679,16 +3719,64 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/1000324556_drdpc7"
           },
           {
+            "name": "Edgar Manuel Landin Ibarra",
+            "position": "Delantero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Edgar_Manual_Landin_Ibarra_obvuus"
+          },
+          {
+            "name": "JOSE DAVID MARTINEZ FLORES",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Pablo Mejia Campos",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.42.52_PM_aksear"
+          },
+          {
+            "name": "Juan Mendoza Lopez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "RUBEN OLIVARES GUERRERO",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE LUIS ORNELAS RAMIREZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "Francisco Javier Solache Franco",
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_12.22.40_PM_vjmfhc"
+          },
+          {
+            "name": "Daniel Yañez Rangel",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Daniel_Yanez_Rangel_eu08hi"
+          },
+          {
+            "name": "VICTOR HUGO ZARATE CERRITO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE LUIS ZUÑIGA CERROBLANCO",
+            "position": "Mediocampista",
+            "dorsal": "—"
           }
         ]
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 31
+      "public_player_count_scraped": 45
     },
     "3": {
       "id": 3,
@@ -20720,7 +20808,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 31,
+        "public_names": 45,
         "kept_previous": true
       },
       "Primera Fuerza": {
