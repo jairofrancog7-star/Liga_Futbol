@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-05T22:34:34Z",
+  "captured_at_utc": "2026-10-06T02:29:46Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -11,14 +11,13 @@
       "dashboard": {
         "counts": {
           "Equipos": 6,
-          "Partidos Jugados": 15,
-          "Partidos Pendientes": 30,
+          "Partidos Jugados": 17,
+          "Partidos Pendientes": 28,
           "Jugadores": 117
         },
         "current_cedulas": [
-          13,
-          14,
-          15
+          49,
+          50
         ],
         "logo_candidates": [
           {
@@ -43,23 +42,23 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "MANCHESTER 14 GOLES DYNAMO 9 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES BOAVISTA 5 GOLES"
+            "near_text": "MANCHESTER 15 GOLES DYNAMO 11 GOLES BOAVISTA 6 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "MANCHESTER 14 GOLES DYNAMO 9 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES BOAVISTA 5 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "MANCHESTER 14 GOLES DYNAMO 9 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES BOAVISTA 5 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "MANCHESTER 14 GOLES DYNAMO 9 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES BOAVISTA 5 GOLES"
+            "near_text": "MANCHESTER 15 GOLES DYNAMO 11 GOLES BOAVISTA 6 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "MANCHESTER 14 GOLES DYNAMO 9 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES BOAVISTA 5 GOLES"
+            "near_text": "MANCHESTER 15 GOLES DYNAMO 11 GOLES BOAVISTA 6 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "MANCHESTER 15 GOLES DYNAMO 11 GOLES BOAVISTA 6 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
+            "near_text": "MANCHESTER 15 GOLES DYNAMO 11 GOLES BOAVISTA 6 GOLES LA ESPERANZA 6 GOLES TOROS DE CUENDA 6 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
@@ -78,20 +77,8 @@
             "near_text": "L - LA ESPERANZA Jose Mendoza Pescador 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "D - DYNAMO Roberto Perdomo Colin 2 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "TOROS DE CUENDA"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "LA ESPERANZA"
+            "near_text": "B - BOAVISTA Marco Antonio Gasca Arzate 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
@@ -102,19 +89,43 @@
             "near_text": "DYNAMO"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "Tarjetas Rojas L - LA ESPERANZA Gumersindo Granados Ramirez 1 Rojas"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "BOAVISTA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "Tarjetas Amarillas Ver todos B - BOAVISTA Jose Antonio Zarate Arellano 2 Amarillas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "B - BOAVISTA Jose Antonio Zarate Arellano 1 Rojas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
+            "near_text": "D - DYNAMO Hilario Armenta Buenavista 1 Rojas"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "Castigados Ver todos Gumersindo Granados Ramirez LA ESPERANZA 3 Jornadas BOAVISTA (Veteranos 50+) vs LA ESPERANZA (Veteranos 50+)"
+            "near_text": "L - LA ESPERANZA Gumersindo Granados Ramirez 1 Rojas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "Jose Antonio Zarate Arellano BOAVISTA 3 Jornadas DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
+            "near_text": "Hilario Armenta Buenavista DYNAMO 3 Jornadas DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "Gumersindo Granados Ramirez LA ESPERANZA 3 Jornadas BOAVISTA (Veteranos 50+) vs LA ESPERANZA (Veteranos 50+)"
           }
         ]
       },
       "counts": {
         "Equipos": 6,
-        "Partidos Jugados": 15,
-        "Partidos Pendientes": 30,
+        "Partidos Jugados": 17,
+        "Partidos Pendientes": 28,
         "Jugadores": 117
       },
       "standings": [
@@ -134,27 +145,27 @@
           "rows": [
             [
               "1",
-              "MANCHESTER",
+              "DYNAMO",
+              "6",
+              "4",
+              "1",
+              "1",
+              "11",
               "5",
-              "3",
-              "2",
-              "0",
-              "14",
-              "3",
-              "+11",
-              "11"
+              "+6",
+              "13"
             ],
             [
               "2",
-              "DYNAMO",
-              "5",
-              "3",
-              "1",
-              "1",
-              "9",
+              "MANCHESTER",
+              "6",
               "4",
-              "+5",
-              "10"
+              "2",
+              "0",
+              "15",
+              "3",
+              "+12",
+              "11"
             ],
             [
               "3",
@@ -171,13 +182,13 @@
             [
               "4",
               "BOAVISTA",
-              "5",
+              "6",
               "2",
               "1",
-              "2",
-              "5",
-              "12",
-              "-7",
+              "3",
+              "6",
+              "14",
+              "-8",
               "7"
             ],
             [
@@ -195,14 +206,14 @@
             [
               "6",
               "BOCA JRS",
-              "5",
+              "6",
               "0",
               "0",
-              "5",
+              "6",
               "0",
-              "5",
-              "-5",
-              "-15"
+              "6",
+              "-6",
+              "-18"
             ]
           ]
         }
@@ -266,69 +277,87 @@
             ],
             [
               "9",
-              "Jose Jesus Lopez Leon",
-              "DYNAMO",
-              "1"
-            ],
-            [
-              "10",
-              "Rogelio Garcia Aguirre",
-              "MANCHESTER",
-              "1"
-            ],
-            [
-              "11",
-              "Fernando Montesinos Freyre",
-              "MANCHESTER",
-              "1"
-            ],
-            [
-              "12",
-              "Florencio Franco Lerma",
-              "MANCHESTER",
-              "1"
-            ],
-            [
-              "13",
               "Alberto Ramirez Campos",
               "MANCHESTER",
               "1"
             ],
             [
-              "14",
+              "10",
               "Jose Manuel Vargas Palacios",
               "TOROS DE CUENDA",
               "1"
             ],
             [
+              "11",
+              "Jose Jesus Lopez Leon",
+              "DYNAMO",
+              "1"
+            ],
+            [
+              "12",
+              "Rogelio Garcia Aguirre",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "13",
+              "Fernando Montesinos Freyre",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "14",
+              "Octavio Ramos Espinoza",
+              "DYNAMO",
+              "1"
+            ],
+            [
+              "15",
+              "Florencio Franco Lerma",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "16",
+              "Jose Antonio Zarate Arellano",
+              "BOAVISTA",
+              "1"
+            ],
+            [
+              "17",
+              "Hilario Armenta Buenavista",
+              "DYNAMO",
+              "1"
+            ],
+            [
               "1",
               "MANCHESTER",
-              "14 goles en temporada",
-              "14"
+              "15 goles en temporada",
+              "15"
             ],
             [
               "2",
               "DYNAMO",
-              "9 goles en temporada",
-              "9"
+              "11 goles en temporada",
+              "11"
             ],
             [
               "3",
-              "LA ESPERANZA",
+              "BOAVISTA",
               "6 goles en temporada",
               "6"
             ],
             [
               "4",
-              "TOROS DE CUENDA",
+              "LA ESPERANZA",
               "6 goles en temporada",
               "6"
             ],
             [
               "5",
-              "BOAVISTA",
-              "5 goles en temporada",
-              "5"
+              "TOROS DE CUENDA",
+              "6 goles en temporada",
+              "6"
             ],
             [
               "6",
@@ -349,6 +378,24 @@
           ],
           "rows": [
             [
+              "Amarilla",
+              "Jose Antonio Zarate Arellano",
+              "BOAVISTA",
+              "2"
+            ],
+            [
+              "Roja",
+              "Jose Antonio Zarate Arellano",
+              "BOAVISTA",
+              "1"
+            ],
+            [
+              "Roja",
+              "Hilario Armenta Buenavista",
+              "DYNAMO",
+              "1"
+            ],
+            [
               "Roja",
               "Gumersindo Granados Ramirez",
               "LA ESPERANZA",
@@ -366,6 +413,18 @@
             "Pendientes"
           ],
           "rows": [
+            [
+              "Jose Antonio Zarate Arellano",
+              "BOAVISTA",
+              "3 Jornadas",
+              "3"
+            ],
+            [
+              "Hilario Armenta Buenavista",
+              "DYNAMO",
+              "3 Jornadas",
+              "3"
+            ],
             [
               "Gumersindo Granados Ramirez",
               "LA ESPERANZA",
@@ -465,24 +524,24 @@
             [
               "7",
               "3",
-              "BOCA JRS",
-              "-",
-              "vs",
-              "1",
-              "BOAVISTA",
-              "",
-              "22/08/2026 15:30",
-              "---"
-            ],
-            [
-              "8",
-              "3",
               "DYNAMO",
               "4",
               "vs",
               "1",
               "TOROS DE CUENDA",
               "Campo 2",
+              "22/08/2026 15:30",
+              "---"
+            ],
+            [
+              "8",
+              "3",
+              "BOCA JRS",
+              "-",
+              "vs",
+              "1",
+              "BOAVISTA",
+              "",
               "22/08/2026 15:30",
               "---"
             ],
@@ -501,11 +560,11 @@
             [
               "10",
               "4",
-              "DYNAMO",
-              "1",
+              "BOAVISTA",
+              "2",
               "vs",
-              "-",
-              "BOCA JRS",
+              "1",
+              "LA ESPERANZA",
               "",
               "29/08/2026 15:30",
               "---"
@@ -513,11 +572,11 @@
             [
               "11",
               "4",
-              "BOAVISTA",
-              "2",
-              "vs",
+              "DYNAMO",
               "1",
-              "LA ESPERANZA",
+              "vs",
+              "-",
+              "BOCA JRS",
               "",
               "29/08/2026 15:30",
               "---"
@@ -609,24 +668,24 @@
             [
               "19",
               "7",
-              "MANCHESTER",
-              "-",
+              "DYNAMO",
+              "2",
               "vs",
-              "-",
-              "BOCA JRS",
-              "Campo 2",
+              "1",
+              "BOAVISTA",
+              "",
               "03/10/2026 15:30",
               "---"
             ],
             [
               "20",
               "7",
-              "DYNAMO",
-              "-",
+              "MANCHESTER",
+              "1",
               "vs",
               "-",
-              "BOAVISTA",
-              "Campo 1 (Empastado)",
+              "BOCA JRS",
+              "",
               "03/10/2026 15:30",
               "---"
             ],
@@ -645,24 +704,24 @@
             [
               "22",
               "8",
-              "BOAVISTA",
-              "-",
-              "vs",
-              "-",
-              "BOCA JRS",
-              "Campo 3",
-              "10/10/2026 15:30",
-              "---"
-            ],
-            [
-              "23",
-              "8",
               "TOROS DE CUENDA",
               "-",
               "vs",
               "-",
               "DYNAMO",
               "Cuenda",
+              "10/10/2026 15:30",
+              "---"
+            ],
+            [
+              "23",
+              "8",
+              "BOAVISTA",
+              "-",
+              "vs",
+              "-",
+              "BOCA JRS",
+              "Campo 3",
               "10/10/2026 15:30",
               "---"
             ],
@@ -717,24 +776,24 @@
             [
               "28",
               "10",
-              "BOAVISTA",
-              "-",
-              "vs",
-              "-",
-              "TOROS DE CUENDA",
-              "Campo 4",
-              "24/10/2026 15:30",
-              "---"
-            ],
-            [
-              "29",
-              "10",
               "LA ESPERANZA",
               "-",
               "vs",
               "-",
               "BOCA JRS",
               "Tavera",
+              "24/10/2026 15:30",
+              "---"
+            ],
+            [
+              "29",
+              "10",
+              "BOAVISTA",
+              "-",
+              "vs",
+              "-",
+              "TOROS DE CUENDA",
+              "Campo 4",
               "24/10/2026 15:30",
               "---"
             ],
@@ -789,24 +848,24 @@
             [
               "34",
               "12",
-              "BOCA JRS",
-              "-",
-              "vs",
-              "-",
-              "MANCHESTER",
-              "Campo 2",
-              "07/11/2026 15:30",
-              "---"
-            ],
-            [
-              "35",
-              "12",
               "LA ESPERANZA",
               "-",
               "vs",
               "-",
               "TOROS DE CUENDA",
               "Tavera",
+              "07/11/2026 15:30",
+              "---"
+            ],
+            [
+              "35",
+              "12",
+              "BOCA JRS",
+              "-",
+              "vs",
+              "-",
+              "MANCHESTER",
+              "Campo 2",
               "07/11/2026 15:30",
               "---"
             ],
@@ -2462,6 +2521,32 @@
           "away_lineup": [],
           "local_bench": [],
           "away_bench": []
+        },
+        {
+          "id": 49,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/49/",
+          "title": "Cédula Arbitral - MANCHESTER (Veteranos 50+) vs BOCA JRS (Veteranos 50+)",
+          "local": "MANCHESTER",
+          "away": "BOCA JRS",
+          "category": "Veteranos 50+",
+          "date": "03/10/2026 15:30",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 50,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/50/",
+          "title": "Cédula Arbitral - DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)",
+          "local": "DYNAMO",
+          "away": "BOAVISTA",
+          "category": "Veteranos 50+",
+          "date": "03/10/2026 15:30",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -2479,7 +2564,9 @@
         12,
         13,
         14,
-        15
+        15,
+        49,
+        50
       ],
       "public_player_count_scraped": 118
     },
