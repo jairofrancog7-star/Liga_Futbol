@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-06T21:12:21Z",
+  "captured_at_utc": "2026-10-07T01:00:06Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -143,7 +143,7 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "Jose Antonio Zarate Arellano BOAVISTA 1 Jornadas DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)"
+            "near_text": "Jose Antonio Zarate Arellano BOAVISTA 3 Jornadas DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
@@ -497,8 +497,8 @@
             [
               "Jose Antonio Zarate Arellano",
               "BOAVISTA",
-              "1 Jornadas",
-              "1"
+              "3 Jornadas",
+              "3"
             ],
             [
               "Hilario Armenta Buenavista",
@@ -677,24 +677,24 @@
             [
               "13",
               "5",
-              "TOROS DE CUENDA",
-              "2",
-              "vs",
-              "2",
-              "BOAVISTA",
-              "Campo 1 (Empastado)",
-              "05/09/2026 15:30",
-              "---"
-            ],
-            [
-              "14",
-              "5",
               "BOCA JRS",
               "-",
               "vs",
               "1",
               "LA ESPERANZA",
               "",
+              "05/09/2026 15:30",
+              "---"
+            ],
+            [
+              "14",
+              "5",
+              "TOROS DE CUENDA",
+              "2",
+              "vs",
+              "2",
+              "BOAVISTA",
+              "Campo 1 (Empastado)",
               "05/09/2026 15:30",
               "---"
             ],
@@ -749,18 +749,6 @@
             [
               "19",
               "7",
-              "MANCHESTER",
-              "1",
-              "vs",
-              "-",
-              "BOCA JRS",
-              "",
-              "03/10/2026 15:30",
-              "MANUEL AGOSTADERO"
-            ],
-            [
-              "20",
-              "7",
               "DYNAMO",
               "2",
               "vs",
@@ -769,6 +757,18 @@
               "",
               "03/10/2026 15:30",
               "---"
+            ],
+            [
+              "20",
+              "7",
+              "MANCHESTER",
+              "1",
+              "vs",
+              "-",
+              "BOCA JRS",
+              "",
+              "03/10/2026 15:30",
+              "MANUEL AGOSTADERO"
             ],
             [
               "21",
@@ -785,18 +785,6 @@
             [
               "22",
               "8",
-              "TOROS DE CUENDA",
-              "-",
-              "vs",
-              "-",
-              "DYNAMO",
-              "Cuenda",
-              "10/10/2026 15:30",
-              "---"
-            ],
-            [
-              "23",
-              "8",
               "BOAVISTA",
               "-",
               "vs",
@@ -807,14 +795,26 @@
               "---"
             ],
             [
-              "24",
+              "23",
               "8",
               "LA ESPERANZA",
               "-",
               "vs",
               "-",
               "MANCHESTER",
-              "Tavera",
+              "Campo 1 (Empastado)",
+              "10/10/2026 15:30",
+              "---"
+            ],
+            [
+              "24",
+              "8",
+              "TOROS DE CUENDA",
+              "-",
+              "vs",
+              "-",
+              "DYNAMO",
+              "Campo 1 (Empastado)",
               "10/10/2026 17:00",
               "---"
             ],
@@ -1200,7 +1200,8 @@
           "Antonio Guerrero Rico",
           "Hector Arguello Gonzalez",
           "Jose Guadalupe Lopez Martinez",
-          "Feliciano Palacios Lopez"
+          "Feliciano Palacios Lopez",
+          "J. REFUGIO ZARAZUA AGOSTADERO"
         ]
       },
       "player_usage": {
@@ -2165,6 +2166,12 @@
             "dorsal": "—"
           },
           {
+            "name": "J. REFUGIO ZARAZUA AGOSTADERO",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/10_hxwjau"
+          },
+          {
             "name": "Bernardo Zarazua Agostadero",
             "position": "Defensa",
             "dorsal": "—"
@@ -2663,7 +2670,7 @@
         50,
         51
       ],
-      "public_player_count_scraped": 118
+      "public_player_count_scraped": 119
     },
     "2": {
       "id": 2,
@@ -20803,7 +20810,7 @@
     "summary": {
       "Veteranos 50+": {
         "cedulas": 15,
-        "public_names": 118,
+        "public_names": 119,
         "kept_previous": false
       },
       "Veteranos 35+": {
