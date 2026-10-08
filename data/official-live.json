@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-07T22:22:31Z",
+  "captured_at_utc": "2026-10-08T00:23:45Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -11,8 +11,8 @@
       "dashboard": {
         "counts": {
           "Equipos": 6,
-          "Partidos Jugados": 20,
-          "Partidos Pendientes": 25,
+          "Partidos Jugados": 21,
+          "Partidos Pendientes": 24,
           "Jugadores": 117
         },
         "current_cedulas": [
@@ -22,28 +22,44 @@
         ],
         "logo_candidates": [
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "BOAVISTA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "LA ESPERANZA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
+            "near_text": "MANCHESTER"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
             "near_text": "TOROS DE CUENDA"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
+            "near_text": "DYNAMO"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 6 GOLES"
+            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 7 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 6 GOLES"
+            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 7 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 6 GOLES"
+            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 7 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 6 GOLES"
+            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 7 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 6 GOLES"
+            "near_text": "MANCHESTER 17 GOLES DYNAMO 11 GOLES LA ESPERANZA 10 GOLES BOAVISTA 8 GOLES TOROS DE CUENDA 7 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
@@ -141,8 +157,8 @@
       },
       "counts": {
         "Equipos": 6,
-        "Partidos Jugados": 20,
-        "Partidos Pendientes": 25,
+        "Partidos Jugados": 21,
+        "Partidos Pendientes": 24,
         "Jugadores": 117
       },
       "standings": [
@@ -198,6 +214,18 @@
             ],
             [
               "4",
+              "TOROS DE CUENDA",
+              "7",
+              "2",
+              "2",
+              "3",
+              "7",
+              "12",
+              "-5",
+              "8"
+            ],
+            [
+              "5",
               "BOAVISTA",
               "7",
               "2",
@@ -209,28 +237,16 @@
               "8"
             ],
             [
-              "5",
-              "TOROS DE CUENDA",
-              "6",
-              "1",
-              "2",
-              "3",
-              "6",
-              "12",
-              "-6",
-              "5"
-            ],
-            [
               "6",
               "BOCA JRS",
-              "6",
+              "7",
               "0",
               "0",
-              "6",
+              "7",
               "0",
-              "6",
-              "-6",
-              "-18"
+              "7",
+              "-7",
+              "-21"
             ]
           ]
         }
@@ -421,8 +437,8 @@
             [
               "5",
               "TOROS DE CUENDA",
-              "6 goles en temporada",
-              "6"
+              "7 goles en temporada",
+              "7"
             ],
             [
               "6",
@@ -619,24 +635,24 @@
             [
               "7",
               "3",
-              "DYNAMO",
-              "4",
-              "vs",
-              "1",
-              "TOROS DE CUENDA",
-              "Campo 2",
-              "22/08/2026 15:30",
-              "---"
-            ],
-            [
-              "8",
-              "3",
               "BOCA JRS",
               "-",
               "vs",
               "1",
               "BOAVISTA",
               "",
+              "22/08/2026 15:30",
+              "---"
+            ],
+            [
+              "8",
+              "3",
+              "DYNAMO",
+              "4",
+              "vs",
+              "1",
+              "TOROS DE CUENDA",
+              "Campo 2",
               "22/08/2026 15:30",
               "---"
             ],
@@ -655,11 +671,11 @@
             [
               "10",
               "4",
-              "DYNAMO",
-              "1",
+              "BOAVISTA",
+              "2",
               "vs",
-              "-",
-              "BOCA JRS",
+              "1",
+              "LA ESPERANZA",
               "",
               "29/08/2026 15:30",
               "---"
@@ -667,11 +683,11 @@
             [
               "11",
               "4",
-              "BOAVISTA",
-              "2",
-              "vs",
+              "DYNAMO",
               "1",
-              "LA ESPERANZA",
+              "vs",
+              "-",
+              "BOCA JRS",
               "",
               "29/08/2026 15:30",
               "---"
@@ -691,24 +707,24 @@
             [
               "13",
               "5",
-              "BOCA JRS",
-              "-",
-              "vs",
-              "1",
-              "LA ESPERANZA",
-              "",
-              "05/09/2026 15:30",
-              "---"
-            ],
-            [
-              "14",
-              "5",
               "TOROS DE CUENDA",
               "2",
               "vs",
               "2",
               "BOAVISTA",
               "Campo 1 (Empastado)",
+              "05/09/2026 15:30",
+              "---"
+            ],
+            [
+              "14",
+              "5",
+              "BOCA JRS",
+              "-",
+              "vs",
+              "1",
+              "LA ESPERANZA",
+              "",
               "05/09/2026 15:30",
               "---"
             ],
@@ -730,9 +746,9 @@
               "BOCA JRS",
               "-",
               "vs",
-              "-",
+              "1",
               "TOROS DE CUENDA",
-              "Campo 1 (Empastado)",
+              "",
               "26/09/2026 13:30",
               "---"
             ],
@@ -763,18 +779,6 @@
             [
               "19",
               "7",
-              "DYNAMO",
-              "2",
-              "vs",
-              "1",
-              "BOAVISTA",
-              "",
-              "03/10/2026 15:30",
-              "---"
-            ],
-            [
-              "20",
-              "7",
               "MANCHESTER",
               "1",
               "vs",
@@ -783,6 +787,18 @@
               "",
               "03/10/2026 15:30",
               "MANUEL AGOSTADERO"
+            ],
+            [
+              "20",
+              "7",
+              "DYNAMO",
+              "2",
+              "vs",
+              "1",
+              "BOAVISTA",
+              "",
+              "03/10/2026 15:30",
+              "---"
             ],
             [
               "21",
@@ -3806,11 +3822,12 @@
       "dashboard": {
         "counts": {
           "Equipos": 11,
-          "Partidos Jugados": 29,
-          "Partidos Pendientes": 26,
+          "Partidos Jugados": 30,
+          "Partidos Pendientes": 25,
           "Jugadores": 292
         },
         "current_cedulas": [
+          161,
           162,
           163,
           164,
@@ -3818,8 +3835,40 @@
         ],
         "logo_candidates": [
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Terricolas_ltbrzy",
+            "near_text": "TERRICOLAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
+            "near_text": "NAPOLI"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
+            "near_text": "LINCES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Abejas_lxn6l9",
+            "near_text": "ABEJAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
+            "near_text": "HERRERAS FC"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
             "near_text": "HERMANOS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
+            "near_text": "LOBOS CDG"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
+            "near_text": "SAN JOSE FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
+            "near_text": "FRANCO FC"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_ntqr0b",
@@ -3878,6 +3927,10 @@
             "near_text": "ABEJAS"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "HERMANOS"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Terricolas_ltbrzy",
             "near_text": "TERRICOLAS"
           },
@@ -3917,8 +3970,8 @@
       },
       "counts": {
         "Equipos": 11,
-        "Partidos Jugados": 29,
-        "Partidos Pendientes": 26,
+        "Partidos Jugados": 30,
+        "Partidos Pendientes": 25,
         "Jugadores": 292
       },
       "standings": [
@@ -3986,6 +4039,18 @@
             ],
             [
               "5",
+              "HERMANOS",
+              "5",
+              "3",
+              "1",
+              "1",
+              "10",
+              "7",
+              "+3",
+              "10"
+            ],
+            [
+              "6",
               "FRANCO FC",
               "5",
               "3",
@@ -3995,18 +4060,6 @@
               "5",
               "0",
               "9"
-            ],
-            [
-              "6",
-              "HERMANOS",
-              "4",
-              "2",
-              "1",
-              "1",
-              "9",
-              "7",
-              "+2",
-              "7"
             ],
             [
               "7",
@@ -4059,14 +4112,14 @@
             [
               "11",
               "GALACTICOS",
-              "5",
+              "6",
               "0",
               "0",
-              "5",
+              "6",
               "0",
-              "5",
-              "-5",
-              "-15"
+              "6",
+              "-6",
+              "-18"
             ]
           ]
         }
@@ -4094,86 +4147,86 @@
             ],
             [
               "3",
-              "Jorge Luis Ramirez Conejo",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "4",
-              "Alejandro Alarcon Aguirre",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "5",
-              "Alejandro Moreno Banda",
-              "HERMANOS",
-              "1"
-            ],
-            [
-              "6",
-              "Fernando Gamez Reyes",
-              "ABEJAS",
-              "1"
-            ],
-            [
-              "7",
-              "Juan Pablo Mendoza Macias",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "8",
-              "Juan Manuel Gamez Lopez",
-              "ABEJAS",
-              "1"
-            ],
-            [
-              "9",
-              "Juan Esteban Montecillo Solache",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "10",
-              "Juan Angel Gonzalez Martinez",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "11",
-              "Gerardo Zuñiga Vega",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "12",
               "Angel Santiago Garcia",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "13",
+              "4",
               "Gustavo Guadalupe Rico Huerta",
               "ABEJAS",
               "1"
             ],
             [
-              "14",
+              "5",
               "Oswaldo Grande Valadez",
               "TERRICOLAS",
               "1"
             ],
             [
+              "6",
+              "Jose Rosas Cardenas",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "7",
+              "JORGE LUIS ALMAGUER RUIZ",
+              "LINCES",
+              "1"
+            ],
+            [
+              "8",
+              "Jose Guadalupe Guerrero Lopez",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "9",
+              "Marco Cesar Saavedra Escoto",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "10",
+              "Emiliano Rubi Campos",
+              "LOBOS CDG",
+              "1"
+            ],
+            [
+              "11",
+              "Rolando Rocha Sierra",
+              "FRANCO FC",
+              "1"
+            ],
+            [
+              "12",
+              "Mario Eduardo Cardenas Ayala",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "13",
+              "Juan Jesus Beltran Garcia",
+              "FRANCO FC",
+              "1"
+            ],
+            [
+              "14",
+              "Alejandro Moreno Banda",
+              "HERMANOS",
+              "1"
+            ],
+            [
               "15",
-              "Ivan Martinez Vasquez",
-              "TERRICOLAS",
+              "Gerardo Zuñiga Vega",
+              "NAPOLI",
               "1"
             ],
             [
               "16",
-              "Jose Rosas Cardenas",
-              "SAN JOSE FC",
+              "Ivan Martinez Vasquez",
+              "TERRICOLAS",
               "1"
             ],
             [
@@ -4196,56 +4249,56 @@
             ],
             [
               "20",
-              "JORGE LUIS ALMAGUER RUIZ",
-              "LINCES",
-              "1"
-            ],
-            [
-              "21",
-              "Jose Guadalupe Guerrero Lopez",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "22",
-              "Marco Cesar Saavedra Escoto",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "23",
-              "Emiliano Rubi Campos",
-              "LOBOS CDG",
-              "1"
-            ],
-            [
-              "24",
-              "Rolando Rocha Sierra",
-              "FRANCO FC",
-              "1"
-            ],
-            [
-              "25",
-              "Mario Eduardo Cardenas Ayala",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "26",
               "Oscar Monroy Camacho",
               "JUVENTUS",
               "1"
             ],
             [
+              "21",
+              "Jose Ramon Negrete Ruiz",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "22",
+              "Jorge Luis Ramirez Conejo",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "23",
+              "Alejandro Alarcon Aguirre",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "24",
+              "Fernando Gamez Reyes",
+              "ABEJAS",
+              "1"
+            ],
+            [
+              "25",
+              "Juan Pablo Mendoza Macias",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "26",
+              "Juan Esteban Montecillo Solache",
+              "NAPOLI",
+              "1"
+            ],
+            [
               "27",
-              "Juan Jesus Beltran Garcia",
-              "FRANCO FC",
+              "Juan Manuel Gamez Lopez",
+              "ABEJAS",
               "1"
             ],
             [
               "28",
-              "Jose Ramon Negrete Ruiz",
-              "JUVENTUS",
+              "Juan Angel Gonzalez Martinez",
+              "NAPOLI",
               "1"
             ],
             [
@@ -4281,8 +4334,8 @@
             [
               "6",
               "HERMANOS",
-              "9 goles en temporada",
-              "9"
+              "10 goles en temporada",
+              "10"
             ],
             [
               "7",
@@ -4419,24 +4472,24 @@
             [
               "3",
               "1",
-              "GALACTICOS",
-              "-",
-              "vs",
-              "1",
-              "SAN JOSE FC",
-              "",
-              "26/07/2026 10:00",
-              "---"
-            ],
-            [
-              "4",
-              "1",
               "NAPOLI",
               "3",
               "vs",
               "-",
               "HERRERAS FC",
               "Campo 2",
+              "26/07/2026 10:00",
+              "---"
+            ],
+            [
+              "4",
+              "1",
+              "GALACTICOS",
+              "-",
+              "vs",
+              "1",
+              "SAN JOSE FC",
+              "",
               "26/07/2026 10:00",
               "---"
             ],
@@ -4539,24 +4592,24 @@
             [
               "13",
               "3",
-              "NAPOLI",
-              "2",
-              "vs",
-              "3",
-              "SAN JOSE FC",
-              "San Jose  de la Montaña",
-              "30/08/2026 10:00",
-              "---"
-            ],
-            [
-              "14",
-              "3",
               "LOBOS CDG",
               "1",
               "vs",
               "-",
               "GALACTICOS",
               "",
+              "30/08/2026 10:00",
+              "---"
+            ],
+            [
+              "14",
+              "3",
+              "NAPOLI",
+              "2",
+              "vs",
+              "3",
+              "SAN JOSE FC",
+              "San Jose  de la Montaña",
               "30/08/2026 10:00",
               "---"
             ],
@@ -4575,18 +4628,6 @@
             [
               "16",
               "4",
-              "ABEJAS",
-              "2",
-              "vs",
-              "-",
-              "LOBOS CDG",
-              "Pozos",
-              "06/09/2026 08:00",
-              "---"
-            ],
-            [
-              "17",
-              "4",
               "JUVENTUS",
               "1",
               "vs",
@@ -4597,19 +4638,19 @@
               "---"
             ],
             [
-              "18",
+              "17",
               "4",
-              "SAN JOSE FC",
-              "5",
+              "ABEJAS",
+              "2",
               "vs",
-              "1",
-              "TERRICOLAS",
-              "San Jose  de la Montaña",
-              "06/09/2026 10:00",
+              "-",
+              "LOBOS CDG",
+              "Pozos",
+              "06/09/2026 08:00",
               "---"
             ],
             [
-              "19",
+              "18",
               "4",
               "GALACTICOS",
               "-",
@@ -4617,6 +4658,18 @@
               "1",
               "NAPOLI",
               "",
+              "06/09/2026 10:00",
+              "---"
+            ],
+            [
+              "19",
+              "4",
+              "SAN JOSE FC",
+              "5",
+              "vs",
+              "1",
+              "TERRICOLAS",
+              "San Jose  de la Montaña",
               "06/09/2026 10:00",
               "---"
             ],
@@ -4695,11 +4748,11 @@
             [
               "26",
               "6",
-              "HERMANOS",
-              "-",
+              "NAPOLI",
+              "3",
               "vs",
-              "-",
-              "GALACTICOS",
+              "3",
+              "ABEJAS",
               "Campo 1 (Empastado)",
               "27/09/2026 08:00",
               "---"
@@ -4707,24 +4760,24 @@
             [
               "27",
               "6",
-              "FRANCO FC",
+              "HERMANOS",
               "1",
               "vs",
-              "2",
-              "JUVENTUS",
-              "Romerillo",
+              "-",
+              "GALACTICOS",
+              "",
               "27/09/2026 08:00",
               "---"
             ],
             [
               "28",
               "6",
-              "NAPOLI",
-              "3",
+              "FRANCO FC",
+              "1",
               "vs",
-              "3",
-              "ABEJAS",
-              "Campo 1 (Empastado)",
+              "2",
+              "JUVENTUS",
+              "Romerillo",
               "27/09/2026 08:00",
               "---"
             ],
@@ -4761,7 +4814,7 @@
               "-",
               "NAPOLI",
               "Campo 3",
-              "04/10/2026 08:00",
+              "11/10/2026 08:00",
               "---"
             ],
             [
@@ -4773,23 +4826,11 @@
               "-",
               "LINCES",
               "Pozos",
-              "04/10/2026 09:00",
+              "11/10/2026 09:00",
               "---"
             ],
             [
               "33",
-              "7",
-              "ABEJAS",
-              "-",
-              "vs",
-              "-",
-              "HERRERAS FC",
-              "Pozos",
-              "04/10/2026 10:00",
-              "---"
-            ],
-            [
-              "34",
               "7",
               "HERMANOS",
               "-",
@@ -4797,7 +4838,19 @@
               "-",
               "LOBOS CDG",
               "Campo 3",
-              "04/10/2026 10:00",
+              "11/10/2026 10:00",
+              "---"
+            ],
+            [
+              "34",
+              "7",
+              "ABEJAS",
+              "-",
+              "vs",
+              "-",
+              "HERRERAS FC",
+              "Pozos",
+              "11/10/2026 10:00",
               "---"
             ],
             [
@@ -4809,23 +4862,11 @@
               "-",
               "FRANCO FC",
               "San Jose  de la Montaña",
-              "04/10/2026 12:00",
+              "11/10/2026 12:00",
               "---"
             ],
             [
               "36",
-              "8",
-              "GALACTICOS",
-              "-",
-              "vs",
-              "-",
-              "FRANCO FC",
-              "Pozos",
-              "11/10/2026 08:00",
-              "---"
-            ],
-            [
-              "37",
               "8",
               "TERRICOLAS",
               "-",
@@ -4833,23 +4874,23 @@
               "-",
               "LINCES",
               "Campo 3",
-              "11/10/2026 08:00",
+              "18/10/2026 08:00",
+              "---"
+            ],
+            [
+              "37",
+              "8",
+              "GALACTICOS",
+              "-",
+              "vs",
+              "-",
+              "FRANCO FC",
+              "Pozos",
+              "18/10/2026 08:00",
               "---"
             ],
             [
               "38",
-              "8",
-              "JUVENTUS",
-              "-",
-              "vs",
-              "-",
-              "HERRERAS FC",
-              "Campo 1 (Empastado)",
-              "11/10/2026 10:00",
-              "---"
-            ],
-            [
-              "39",
               "8",
               "HERMANOS",
               "-",
@@ -4857,7 +4898,19 @@
               "-",
               "LOBOS CDG",
               "Campo 3",
-              "11/10/2026 10:00",
+              "18/10/2026 10:00",
+              "---"
+            ],
+            [
+              "39",
+              "8",
+              "JUVENTUS",
+              "-",
+              "vs",
+              "-",
+              "HERRERAS FC",
+              "Campo 1 (Empastado)",
+              "18/10/2026 10:00",
               "---"
             ],
             [
@@ -4869,7 +4922,7 @@
               "-",
               "ABEJAS",
               "Campo 3",
-              "11/10/2026 12:00",
+              "18/10/2026 12:00",
               "---"
             ],
             [
@@ -4881,7 +4934,7 @@
               "-",
               "FRANCO FC",
               "Cerrito de Gasca",
-              "18/10/2026 08:00",
+              "25/10/2026 08:00",
               "---"
             ],
             [
@@ -4893,23 +4946,11 @@
               "-",
               "TERRICOLAS",
               "Campo 4",
-              "18/10/2026 08:00",
+              "25/10/2026 08:00",
               "---"
             ],
             [
               "43",
-              "9",
-              "SAN JOSE FC",
-              "-",
-              "vs",
-              "-",
-              "HERRERAS FC",
-              "San Jose  de la Montaña",
-              "18/10/2026 10:00",
-              "---"
-            ],
-            [
-              "44",
               "9",
               "ABEJAS",
               "-",
@@ -4917,7 +4958,19 @@
               "-",
               "JUVENTUS",
               "Pozos",
-              "18/10/2026 10:00",
+              "25/10/2026 10:00",
+              "---"
+            ],
+            [
+              "44",
+              "9",
+              "SAN JOSE FC",
+              "-",
+              "vs",
+              "-",
+              "HERRERAS FC",
+              "San Jose  de la Montaña",
+              "25/10/2026 10:00",
               "---"
             ],
             [
@@ -4929,23 +4982,11 @@
               "-",
               "LINCES",
               "Campo 4",
-              "18/10/2026 12:00",
+              "25/10/2026 12:00",
               "---"
             ],
             [
               "46",
-              "10",
-              "GALACTICOS",
-              "-",
-              "vs",
-              "-",
-              "LINCES",
-              "Pozos",
-              "25/10/2026 08:00",
-              "---"
-            ],
-            [
-              "47",
               "10",
               "ABEJAS",
               "-",
@@ -4953,23 +4994,23 @@
               "-",
               "SAN JOSE FC",
               "Campo 4",
-              "25/10/2026 08:00",
+              "01/11/2026 08:00",
+              "---"
+            ],
+            [
+              "47",
+              "10",
+              "GALACTICOS",
+              "-",
+              "vs",
+              "-",
+              "LINCES",
+              "Pozos",
+              "01/11/2026 08:00",
               "---"
             ],
             [
               "48",
-              "10",
-              "FRANCO FC",
-              "-",
-              "vs",
-              "-",
-              "JUVENTUS",
-              "Tavera",
-              "25/10/2026 10:00",
-              "---"
-            ],
-            [
-              "49",
               "10",
               "HERMANOS",
               "-",
@@ -4977,7 +5018,19 @@
               "-",
               "NAPOLI",
               "Fraccionamiento",
-              "25/10/2026 10:00",
+              "01/11/2026 10:00",
+              "---"
+            ],
+            [
+              "49",
+              "10",
+              "FRANCO FC",
+              "-",
+              "vs",
+              "-",
+              "JUVENTUS",
+              "Tavera",
+              "01/11/2026 10:00",
               "---"
             ],
             [
@@ -4989,7 +5042,7 @@
               "-",
               "TERRICOLAS",
               "Cerrito de Gasca",
-              "25/10/2026 12:00",
+              "01/11/2026 12:00",
               "---"
             ],
             [
@@ -5001,7 +5054,7 @@
               "-",
               "TERRICOLAS",
               "Campo 1 (Empastado)",
-              "01/11/2026 08:00",
+              "08/11/2026 08:00",
               "---"
             ],
             [
@@ -5013,23 +5066,11 @@
               "-",
               "SAN JOSE FC",
               "Tavera",
-              "01/11/2026 08:00",
+              "08/11/2026 08:00",
               "---"
             ],
             [
               "53",
-              "11",
-              "LOBOS CDG",
-              "-",
-              "vs",
-              "-",
-              "LINCES",
-              "Cerrito de Gasca",
-              "01/11/2026 10:00",
-              "---"
-            ],
-            [
-              "54",
               "11",
               "GALACTICOS",
               "-",
@@ -5037,7 +5078,19 @@
               "-",
               "HERMANOS",
               "Pozos",
-              "01/11/2026 10:00",
+              "08/11/2026 10:00",
+              "---"
+            ],
+            [
+              "54",
+              "11",
+              "LOBOS CDG",
+              "-",
+              "vs",
+              "-",
+              "LINCES",
+              "Cerrito de Gasca",
+              "08/11/2026 10:00",
               "---"
             ],
             [
@@ -5049,7 +5102,7 @@
               "-",
               "HERRERAS FC",
               "Pozos",
-              "01/11/2026 12:00",
+              "08/11/2026 12:00",
               "---"
             ]
           ]
@@ -8729,6 +8782,19 @@
           "away_bench": []
         },
         {
+          "id": 161,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/161/",
+          "title": "Cédula Arbitral - HERMANOS (Primera Fuerza) vs GALACTICOS (Primera Fuerza)",
+          "local": "HERMANOS",
+          "away": "GALACTICOS",
+          "category": "Primera Fuerza",
+          "date": "27/09/2026 08:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
           "id": 162,
           "url": "https://juventinorosasliga.com/cedula-arbitral/162/",
           "title": "Cédula Arbitral - NAPOLI (Primera Fuerza) vs ABEJAS (Primera Fuerza)",
@@ -8806,6 +8872,7 @@
         97,
         98,
         99,
+        161,
         162,
         163,
         164,
@@ -9164,92 +9231,92 @@
             ],
             [
               "2",
-              "JOSE EMMANUEL MARTINEZ MENDOZA",
-              "TAVERA FC",
-              "2"
-            ],
-            [
-              "3",
               "Miguel Antonio Llanos Aguirre",
               "DEP. ZAPATA",
               "2"
             ],
             [
-              "4",
+              "3",
               "Giovanni Sanchez Delgado",
               "CELTICOS",
               "2"
             ],
             [
-              "5",
-              "Moises Gudalupe Arce Gutierrez",
+              "4",
+              "JOSE EMMANUEL MARTINEZ MENDOZA",
               "TAVERA FC",
               "2"
             ],
             [
-              "6",
+              "5",
               "Francisco Javier Avila Huerta",
               "TAVERA FC",
               "2"
             ],
             [
-              "7",
-              "Juan Yasbeth Landin Ramirez",
-              "SAN JOSE JRS",
-              "1"
-            ],
-            [
-              "8",
-              "BENJAMIN FIGUEROA ARELLANO",
-              "DEP. LA LUZ",
-              "1"
-            ],
-            [
-              "9",
-              "Honorio Ochoa Aguilar",
+              "6",
+              "Moises Gudalupe Arce Gutierrez",
               "TAVERA FC",
-              "1"
+              "2"
             ],
             [
-              "10",
-              "Luis Julian Negrete Cervantes",
-              "PACHANGAS FC",
-              "1"
-            ],
-            [
-              "11",
+              "7",
               "Alejandro Tellez Campos",
               "SAN JOSE JRS",
               "1"
             ],
             [
-              "12",
-              "Gilberto Yañez Ramirez",
-              "SAN JULIAN",
-              "1"
-            ],
-            [
-              "13",
-              "Antonio Alejandro Guerrero Villegas",
-              "SAN JULIAN",
-              "1"
-            ],
-            [
-              "14",
+              "8",
               "Jose de Jesus Garcia Villafuerte",
               "SAN JULIAN",
               "1"
             ],
             [
-              "15",
-              "Bryan Doñates Zavala",
+              "9",
+              "Luis Julian Negrete Cervantes",
+              "PACHANGAS FC",
+              "1"
+            ],
+            [
+              "10",
+              "Juan Jesus Ojeda Ortega",
+              "CELTICOS",
+              "1"
+            ],
+            [
+              "11",
+              "Pablo Zavala Frias",
+              "SAN JULIAN",
+              "1"
+            ],
+            [
+              "12",
+              "Jose Guadalupe Flores Peñaloza",
+              "CELTICOS",
+              "1"
+            ],
+            [
+              "13",
+              "Juan Yasbeth Landin Ramirez",
               "SAN JOSE JRS",
               "1"
             ],
             [
+              "14",
+              "Gilberto Yañez Ramirez",
+              "SAN JULIAN",
+              "1"
+            ],
+            [
+              "15",
+              "Antonio Alejandro Guerrero Villegas",
+              "SAN JULIAN",
+              "1"
+            ],
+            [
               "16",
-              "Kevin Gustavo Ojeda Ortega",
-              "CELTICOS",
+              "Bryan Doñates Zavala",
+              "SAN JOSE JRS",
               "1"
             ],
             [
@@ -9260,25 +9327,25 @@
             ],
             [
               "18",
-              "Juan Jesus Ojeda Ortega",
+              "Alan Eduardo Meji Damian",
               "CELTICOS",
               "1"
             ],
             [
               "19",
-              "Pablo Zavala Frias",
-              "SAN JULIAN",
+              "BENJAMIN FIGUEROA ARELLANO",
+              "DEP. LA LUZ",
               "1"
             ],
             [
               "20",
-              "Jose Guadalupe Flores Peñaloza",
-              "CELTICOS",
+              "Honorio Ochoa Aguilar",
+              "TAVERA FC",
               "1"
             ],
             [
               "21",
-              "Alan Eduardo Meji Damian",
+              "Kevin Gustavo Ojeda Ortega",
               "CELTICOS",
               "1"
             ],
@@ -14632,8 +14699,8 @@
       "dashboard": {
         "counts": {
           "Equipos": 13,
-          "Partidos Jugados": 33,
-          "Partidos Pendientes": 43,
+          "Partidos Jugados": 34,
+          "Partidos Pendientes": 42,
           "Jugadores": 340
         },
         "current_cedulas": [
@@ -14641,16 +14708,57 @@
           318,
           319,
           320,
-          321
+          321,
+          322
         ],
         "logo_candidates": [
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Osasuna_lv6rsa",
+            "near_text": "OSASUNA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PopularesFC_onellt",
+            "near_text": "POPULARES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CuadrillaFC_vpfbtr",
+            "near_text": "LA CUADRILLA"
+          },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Mazacotes_ko8o0w",
             "near_text": "MAZACOTES FC"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PromesasFC_w4lwk8",
+            "near_text": "PROMESAS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaHuertaCuenda_bm4fxj",
+            "near_text": "LA HUERTA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioJR_jzmfka",
+            "near_text": "SAN ANTONIO JRS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Capibara_vocmbl",
+            "near_text": "CAPIBARAS"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Malvinas_wdiwk9",
             "near_text": "MALVINAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
+            "near_text": "LA CANCHITA DEPORTES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/MAravillasFC_mnmhwx",
+            "near_text": "DEP. MARAVILLAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
+            "near_text": "ATL. GALEANA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
@@ -14709,6 +14817,14 @@
             "near_text": "ATL. GALEANA"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Mazacotes_ko8o0w",
+            "near_text": "MAZACOTES FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Malvinas_wdiwk9",
+            "near_text": "MALVINAS"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/MAravillasFC_mnmhwx",
             "near_text": "DEP. MARAVILLAS"
           },
@@ -14764,8 +14880,8 @@
       },
       "counts": {
         "Equipos": 13,
-        "Partidos Jugados": 33,
-        "Partidos Pendientes": 43,
+        "Partidos Jugados": 34,
+        "Partidos Pendientes": 42,
         "Jugadores": 340
       },
       "standings": [
@@ -14857,6 +14973,18 @@
             ],
             [
               "7",
+              "MAZACOTES FC",
+              "6",
+              "2",
+              "0",
+              "4",
+              "14",
+              "16",
+              "-2",
+              "6"
+            ],
+            [
+              "8",
               "SAN ANTONIO JRS",
               "5",
               "2",
@@ -14868,7 +14996,7 @@
               "6"
             ],
             [
-              "8",
+              "9",
               "LA HUERTA",
               "5",
               "2",
@@ -14880,7 +15008,7 @@
               "5"
             ],
             [
-              "9",
+              "10",
               "PROMESAS FC",
               "5",
               "1",
@@ -14892,28 +15020,16 @@
               "4"
             ],
             [
-              "10",
-              "MALVINAS",
-              "5",
-              "1",
-              "1",
-              "3",
-              "10",
-              "19",
-              "-9",
-              "4"
-            ],
-            [
               "11",
-              "MAZACOTES FC",
-              "5",
+              "MALVINAS",
+              "6",
               "1",
-              "0",
+              "1",
               "4",
-              "8",
-              "14",
-              "-6",
-              "3"
+              "12",
+              "25",
+              "-13",
+              "4"
             ],
             [
               "12",
@@ -14959,8 +15075,8 @@
             ],
             [
               "2",
-              "Giovanni Emanuel Flores Guerrero",
-              "OSASUNA",
+              "Emiliano Centeno Gamez",
+              "PROMESAS FC",
               "2"
             ],
             [
@@ -14971,386 +15087,428 @@
             ],
             [
               "4",
-              "Emiliano Centeno Gamez",
-              "PROMESAS FC",
-              "2"
-            ],
-            [
-              "5",
               "Luis Gerardo Gonzalez Ruiz",
               "ATL. GALEANA",
               "2"
             ],
             [
-              "6",
-              "Juan Pablo Rangel Toledo",
-              "ATL. GALEANA",
+              "5",
+              "Gustavo Ramirez Nuñez",
+              "MAZACOTES FC",
               "2"
             ],
             [
-              "7",
+              "6",
               "Fernando Mata Morales",
               "LA CANCHITA DEPORTES",
               "2"
             ],
             [
-              "8",
+              "7",
               "Jose Luis Zuñiga Gonzalez",
               "ALDAMA FC",
               "2"
             ],
             [
+              "8",
+              "Juan Pablo Rangel Toledo",
+              "ATL. GALEANA",
+              "2"
+            ],
+            [
               "9",
+              "Giovanni Emanuel Flores Guerrero",
+              "OSASUNA",
+              "2"
+            ],
+            [
+              "10",
               "Jesus Abraham Gamez Rivera",
               "PROMESAS FC",
               "2"
             ],
             [
-              "10",
+              "11",
+              "Cristian Eduardo Mares Ramirez",
+              "POPULARES",
+              "1"
+            ],
+            [
+              "12",
               "Oswaldo Gabriel Torres Solorzano",
               "OSASUNA",
               "1"
             ],
             [
-              "11",
+              "13",
               "Alan Jesus Ramirez Vega",
               "OSASUNA",
               "1"
             ],
             [
-              "12",
+              "14",
               "Juan Pablo Rico Martinez",
               "PROMESAS FC",
               "1"
             ],
             [
-              "13",
+              "15",
               "Daniel Yañez Rangel",
               "ALDAMA FC",
               "1"
             ],
             [
-              "14",
+              "16",
               "Eric Lopez Solorzano",
               "ATL. GALEANA",
               "1"
             ],
             [
-              "15",
+              "17",
               "Daniel Franco Lerma",
               "POPULARES",
               "1"
             ],
             [
-              "16",
+              "18",
               "Aaron Aguilar Gutierrez",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "17",
-              "Gustavo Ramirez Nuñez",
-              "MAZACOTES FC",
-              "1"
-            ],
-            [
-              "18",
+              "19",
               "ISRAEL HORTELANO CERRITO",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "19",
+              "20",
               "Brandon Antwan Guerrero Lopez",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "20",
+              "21",
               "Jose Emiliano Berdin Guerrero",
               "POPULARES",
               "1"
             ],
             [
-              "21",
+              "22",
               "Iker Rodrigo Avecilla Lopez",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "22",
+              "23",
               "Javier Ivan Guerrero Jimenez",
               "ALDAMA FC",
               "1"
             ],
             [
-              "23",
+              "24",
               "Juan Leonardo Rico Ramos",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "24",
+              "25",
               "Juan Carlos Barron Cano",
               "ALDAMA FC",
               "1"
             ],
             [
-              "25",
+              "26",
               "Matias Armenta Lara",
               "PROMESAS FC",
               "1"
             ],
             [
-              "26",
+              "27",
+              "Juan Pablo Vasquez Pizano",
+              "MAZACOTES FC",
+              "1"
+            ],
+            [
+              "28",
               "Martin Ramirez Subias",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "27",
+              "29",
               "Alessandro Ortega Belman",
               "ALDAMA FC",
               "1"
             ],
             [
-              "28",
+              "30",
               "Diego Eduardo Arce Sanchez",
               "CAPIBARAS",
               "1"
             ],
             [
-              "29",
+              "31",
               "Edgar Ulises Prieto Montoya",
               "LA HUERTA",
               "1"
             ],
             [
-              "30",
+              "32",
               "Marco Antonio Sillero Zarate",
               "ATL. GALEANA",
               "1"
             ],
             [
-              "31",
+              "33",
               "Eric Fernando Dongu Guerrero",
               "MALVINAS",
               "1"
             ],
             [
-              "32",
+              "34",
               "CRISTOPHER TONATIOH VILLAGOMEZ CUEVAS",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "33",
+              "35",
               "Vladimir Hernandez Luna",
               "OSASUNA",
               "1"
             ],
             [
-              "34",
+              "36",
               "JUAN DIEGO CASTILLO CUEVAS",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "35",
+              "37",
               "Carlos Daniel Tierrablanca Salinas",
               "CAPIBARAS",
               "1"
             ],
             [
-              "36",
+              "38",
               "Miguel Alejandro Alvarez Guerrero",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "37",
+              "39",
               "VICTOR MANUEL ARGUELLO ALBERTO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "38",
+              "40",
               "Cristian Armenta Rico",
               "PROMESAS FC",
               "1"
             ],
             [
-              "39",
+              "41",
               "Rodolfo Ramirez Hernandez",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "40",
+              "42",
               "Serafin Galindo De La Cruz",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "41",
+              "43",
               "Marco Antonio Gonzalez Arriaga",
               "CAPIBARAS",
               "1"
             ],
             [
-              "42",
+              "44",
+              "Ivan Fernando Avecilla Zapatero",
+              "MAZACOTES FC",
+              "1"
+            ],
+            [
+              "45",
               "Adolfo Linares Alvarez",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "43",
+              "46",
               "Diego Tadeo Ramirez Coyote",
               "PROMESAS FC",
               "1"
             ],
             [
-              "44",
+              "47",
               "Ismael Hortelano Cerrito",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "45",
+              "48",
               "Luis Fernando Cedeño Cuellar",
               "LA HUERTA",
               "1"
             ],
             [
-              "46",
+              "49",
               "Jesus Gomez Valadez",
               "ALDAMA FC",
               "1"
             ],
             [
-              "47",
+              "50",
               "Adolfo Celedon Galvan",
               "CAPIBARAS",
               "1"
             ],
             [
-              "48",
+              "51",
               "Manuel Romero Gallardo",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "49",
+              "52",
+              "Salvador Cortes Flores",
+              "MALVINAS",
+              "1"
+            ],
+            [
+              "53",
               "Omar Hernandez Vazquez",
               "POPULARES",
               "1"
             ],
             [
-              "50",
+              "54",
               "Jose Manuel Calero Cerrito",
               "OSASUNA",
               "1"
             ],
             [
-              "51",
+              "55",
+              "Andriv Giovanni Galindo Martinez",
+              "MAZACOTES FC",
+              "1"
+            ],
+            [
+              "56",
               "Jesus Martin Hortelano Noria",
               "LA HUERTA",
               "1"
             ],
             [
-              "52",
+              "57",
+              "Josue Valentin Alvarez Rodriguez",
+              "MAZACOTES FC",
+              "1"
+            ],
+            [
+              "58",
               "Juan Jose Obrajero Rodriguez",
               "OSASUNA",
               "1"
             ],
             [
-              "53",
+              "59",
               "Adolfo Angel Alvarez Olvera",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "54",
+              "60",
               "Adrian Gonzalez Garcia",
               "POPULARES",
               "1"
             ],
             [
-              "55",
+              "61",
               "Pedro Emanuel Figueroa Galvan",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "56",
+              "62",
               "Ivan Franco Montoya",
               "CAPIBARAS",
               "1"
             ],
             [
-              "57",
+              "63",
               "VICTOR MANUEL SILVA NORIA",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "58",
+              "64",
               "Adrian Arzate Guerrero",
               "OSASUNA",
               "1"
             ],
             [
-              "59",
+              "65",
               "Jonathan Brian Rico Gamez",
               "PROMESAS FC",
               "1"
             ],
             [
-              "60",
+              "66",
               "Jesus Vera Cervantes",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "61",
+              "67",
               "Pedro Buenavista Sandoval",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "62",
+              "68",
+              "Christopher Cano Vadillo",
+              "MAZACOTES FC",
+              "1"
+            ],
+            [
+              "69",
               "Juan Manuel Arcia Calero",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "63",
+              "70",
               "Edgar Manuel Landin Ibarra",
               "ALDAMA FC",
               "1"
             ],
             [
-              "64",
+              "71",
               "Juan Ignacio Servin Linaldi",
               "POPULARES",
               "1"
             ],
             [
-              "65",
+              "72",
               "LUIS JONATHAN AGUILAR GERVACIO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "66",
-              "Miguel Angel Herrera Rico",
-              "LA CUADRILLA",
+              "73",
+              "Diego Jesus Grangeno Lopez",
+              "MALVINAS",
               "1"
             ],
             [
-              "67",
-              "Cristian Eduardo Mares Ramirez",
-              "POPULARES",
+              "74",
+              "Miguel Angel Herrera Rico",
+              "LA CUADRILLA",
               "1"
             ],
             [
@@ -15385,43 +15543,43 @@
             ],
             [
               "6",
+              "MAZACOTES FC",
+              "14 goles en temporada",
+              "14"
+            ],
+            [
+              "7",
               "ALDAMA FC",
               "13 goles en temporada",
               "13"
             ],
             [
-              "7",
+              "8",
+              "MALVINAS",
+              "12 goles en temporada",
+              "12"
+            ],
+            [
+              "9",
               "SAN ANTONIO JRS",
               "12 goles en temporada",
               "12"
             ],
             [
-              "8",
-              "MALVINAS",
-              "10 goles en temporada",
-              "10"
-            ],
-            [
-              "9",
+              "10",
               "OSASUNA",
               "10 goles en temporada",
               "10"
             ],
             [
-              "10",
+              "11",
               "POPULARES",
               "10 goles en temporada",
               "10"
             ],
             [
-              "11",
-              "LA HUERTA",
-              "8 goles en temporada",
-              "8"
-            ],
-            [
               "12",
-              "MAZACOTES FC",
+              "LA HUERTA",
               "8 goles en temporada",
               "8"
             ],
@@ -15590,24 +15748,24 @@
             [
               "1",
               "1",
-              "POPULARES",
-              "2",
-              "vs",
-              "1",
-              "MALVINAS",
-              "Campo 2",
-              "26/07/2026 08:00",
-              "---"
-            ],
-            [
-              "2",
-              "1",
               "ALDAMA FC",
               "-",
               "vs",
               "-",
               "ATL. GALEANA",
               "Campo 4",
+              "26/07/2026 08:00",
+              "---"
+            ],
+            [
+              "2",
+              "1",
+              "POPULARES",
+              "2",
+              "vs",
+              "1",
+              "MALVINAS",
+              "Campo 2",
               "26/07/2026 08:00",
               "---"
             ],
@@ -15710,24 +15868,24 @@
             [
               "11",
               "2",
-              "LA CANCHITA DEPORTES",
-              "5",
-              "vs",
-              "-",
-              "CAPIBARAS",
-              "Campo 1 (Empastado)",
-              "09/08/2026 12:00",
-              "---"
-            ],
-            [
-              "12",
-              "2",
               "MAZACOTES FC",
               "-",
               "vs",
               "1",
               "ALDAMA FC",
               "Campo 2",
+              "09/08/2026 12:00",
+              "---"
+            ],
+            [
+              "12",
+              "2",
+              "LA CANCHITA DEPORTES",
+              "5",
+              "vs",
+              "-",
+              "CAPIBARAS",
+              "Campo 1 (Empastado)",
               "09/08/2026 12:00",
               "---"
             ],
@@ -15806,11 +15964,11 @@
             [
               "19",
               "4",
-              "LA CANCHITA DEPORTES",
-              "7",
-              "vs",
+              "LA CUADRILLA",
               "1",
-              "MAZACOTES FC",
+              "vs",
+              "2",
+              "LA HUERTA",
               "Campo 2",
               "06/09/2026 08:00",
               "---"
@@ -15818,11 +15976,11 @@
             [
               "20",
               "4",
-              "LA CUADRILLA",
-              "1",
+              "LA CANCHITA DEPORTES",
+              "7",
               "vs",
-              "2",
-              "LA HUERTA",
+              "1",
+              "MAZACOTES FC",
               "Campo 2",
               "06/09/2026 08:00",
               "---"
@@ -15987,9 +16145,9 @@
               "34",
               "6",
               "MAZACOTES FC",
-              "-",
+              "6",
               "vs",
-              "-",
+              "2",
               "MALVINAS",
               "Campo 2",
               "27/09/2026 10:00",
@@ -16022,25 +16180,25 @@
             [
               "37",
               "7",
-              "LA CUADRILLA",
-              "-",
-              "vs",
-              "-",
-              "MAZACOTES FC",
-              "Fraccionamiento",
-              "04/10/2026 08:00",
-              "---"
-            ],
-            [
-              "38",
-              "7",
               "OSASUNA",
               "-",
               "vs",
               "-",
               "POPULARES",
               "Campo 1 (Empastado)",
-              "04/10/2026 08:00",
+              "11/10/2026 08:00",
+              "---"
+            ],
+            [
+              "38",
+              "7",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "MAZACOTES FC",
+              "Fraccionamiento",
+              "11/10/2026 08:00",
               "---"
             ],
             [
@@ -16052,7 +16210,7 @@
               "-",
               "LA CANCHITA DEPORTES",
               "Campo 1 (Empastado)",
-              "04/10/2026 10:00",
+              "11/10/2026 10:00",
               "---"
             ],
             [
@@ -16064,7 +16222,7 @@
               "-",
               "CAPIBARAS",
               "Romerillo",
-              "04/10/2026 10:00",
+              "11/10/2026 10:00",
               "---"
             ],
             [
@@ -16076,7 +16234,7 @@
               "-",
               "LA HUERTA",
               "Fraccionamiento",
-              "04/10/2026 10:00",
+              "11/10/2026 10:00",
               "---"
             ],
             [
@@ -16088,7 +16246,7 @@
               "-",
               "ATL. GALEANA",
               "Campo 3",
-              "04/10/2026 12:00",
+              "11/10/2026 12:00",
               "---"
             ],
             [
@@ -16100,7 +16258,7 @@
               "-",
               "ATL. GALEANA",
               "Campo 4",
-              "11/10/2026 08:00",
+              "18/10/2026 08:00",
               "---"
             ],
             [
@@ -16112,23 +16270,11 @@
               "-",
               "SAN ANTONIO JRS",
               "Campo 1 (Empastado)",
-              "11/10/2026 08:00",
+              "18/10/2026 08:00",
               "---"
             ],
             [
               "45",
-              "8",
-              "DEP. MARAVILLAS",
-              "-",
-              "vs",
-              "-",
-              "PROMESAS FC",
-              "Maravillas",
-              "11/10/2026 10:00",
-              "---"
-            ],
-            [
-              "46",
               "8",
               "LA CUADRILLA",
               "-",
@@ -16136,7 +16282,19 @@
               "-",
               "LA CANCHITA DEPORTES",
               "Rincón de Centeno",
-              "11/10/2026 10:00",
+              "18/10/2026 10:00",
+              "---"
+            ],
+            [
+              "46",
+              "8",
+              "DEP. MARAVILLAS",
+              "-",
+              "vs",
+              "-",
+              "PROMESAS FC",
+              "Maravillas",
+              "18/10/2026 10:00",
               "---"
             ],
             [
@@ -16148,7 +16306,7 @@
               "-",
               "CAPIBARAS",
               "Fraccionamiento",
-              "11/10/2026 12:00",
+              "18/10/2026 12:00",
               "---"
             ],
             [
@@ -16160,23 +16318,11 @@
               "-",
               "LA HUERTA",
               "Campo 4",
-              "11/10/2026 12:00",
+              "18/10/2026 12:00",
               "---"
             ],
             [
               "49",
-              "9",
-              "LA HUERTA",
-              "-",
-              "vs",
-              "-",
-              "ALDAMA FC",
-              "Campo 3",
-              "18/10/2026 08:00",
-              "---"
-            ],
-            [
-              "50",
               "9",
               "MAZACOTES FC",
               "-",
@@ -16184,7 +16330,19 @@
               "-",
               "POPULARES",
               "Campo 2",
-              "18/10/2026 08:00",
+              "25/10/2026 08:00",
+              "---"
+            ],
+            [
+              "50",
+              "9",
+              "LA HUERTA",
+              "-",
+              "vs",
+              "-",
+              "ALDAMA FC",
+              "Campo 3",
+              "25/10/2026 08:00",
               "---"
             ],
             [
@@ -16196,7 +16354,7 @@
               "-",
               "PROMESAS FC",
               "Fraccionamiento",
-              "18/10/2026 10:00",
+              "25/10/2026 10:00",
               "---"
             ],
             [
@@ -16208,7 +16366,7 @@
               "-",
               "DEP. MARAVILLAS",
               "Rincón de Centeno",
-              "18/10/2026 10:00",
+              "25/10/2026 10:00",
               "---"
             ],
             [
@@ -16220,7 +16378,7 @@
               "-",
               "CAPIBARAS",
               "Romerillo",
-              "18/10/2026 12:00",
+              "25/10/2026 12:00",
               "---"
             ],
             [
@@ -16232,23 +16390,11 @@
               "-",
               "MALVINAS",
               "Campo 2",
-              "18/10/2026 12:00",
+              "25/10/2026 12:00",
               "---"
             ],
             [
               "55",
-              "10",
-              "MALVINAS",
-              "-",
-              "vs",
-              "-",
-              "SAN ANTONIO JRS",
-              "Campo 3",
-              "25/10/2026 08:00",
-              "---"
-            ],
-            [
-              "56",
               "10",
               "POPULARES",
               "-",
@@ -16256,23 +16402,23 @@
               "-",
               "ALDAMA FC",
               "Campo 1 (Empastado)",
-              "25/10/2026 08:00",
+              "01/11/2026 08:00",
+              "---"
+            ],
+            [
+              "56",
+              "10",
+              "MALVINAS",
+              "-",
+              "vs",
+              "-",
+              "SAN ANTONIO JRS",
+              "Campo 3",
+              "01/11/2026 08:00",
               "---"
             ],
             [
               "57",
-              "10",
-              "PROMESAS FC",
-              "-",
-              "vs",
-              "-",
-              "MAZACOTES FC",
-              "Campo 3",
-              "25/10/2026 10:00",
-              "---"
-            ],
-            [
-              "58",
               "10",
               "OSASUNA",
               "-",
@@ -16280,7 +16426,19 @@
               "-",
               "LA HUERTA",
               "Campo 1 (Empastado)",
-              "25/10/2026 10:00",
+              "01/11/2026 10:00",
+              "---"
+            ],
+            [
+              "58",
+              "10",
+              "PROMESAS FC",
+              "-",
+              "vs",
+              "-",
+              "MAZACOTES FC",
+              "Campo 3",
+              "01/11/2026 10:00",
               "---"
             ],
             [
@@ -16292,7 +16450,7 @@
               "-",
               "ATL. GALEANA",
               "Rincón de Centeno",
-              "25/10/2026 12:00",
+              "01/11/2026 12:00",
               "---"
             ],
             [
@@ -16304,23 +16462,11 @@
               "-",
               "DEP. MARAVILLAS",
               "Campo 1 (Empastado)",
-              "25/10/2026 12:00",
+              "01/11/2026 12:00",
               "---"
             ],
             [
               "61",
-              "11",
-              "DEP. MARAVILLAS",
-              "-",
-              "vs",
-              "-",
-              "ATL. GALEANA",
-              "Maravillas",
-              "01/11/2026 08:00",
-              "---"
-            ],
-            [
-              "62",
               "11",
               "LA HUERTA",
               "-",
@@ -16328,23 +16474,23 @@
               "-",
               "POPULARES",
               "Campo 2",
-              "01/11/2026 08:00",
+              "08/11/2026 08:00",
+              "---"
+            ],
+            [
+              "62",
+              "11",
+              "DEP. MARAVILLAS",
+              "-",
+              "vs",
+              "-",
+              "ATL. GALEANA",
+              "Maravillas",
+              "08/11/2026 08:00",
               "---"
             ],
             [
               "63",
-              "11",
-              "MAZACOTES FC",
-              "-",
-              "vs",
-              "-",
-              "MALVINAS",
-              "Fraccionamiento",
-              "01/11/2026 10:00",
-              "---"
-            ],
-            [
-              "64",
               "11",
               "CAPIBARAS",
               "-",
@@ -16352,7 +16498,19 @@
               "-",
               "OSASUNA",
               "Campo 1 (Empastado)",
-              "01/11/2026 10:00",
+              "08/11/2026 10:00",
+              "---"
+            ],
+            [
+              "64",
+              "11",
+              "MAZACOTES FC",
+              "-",
+              "vs",
+              "-",
+              "MALVINAS",
+              "Fraccionamiento",
+              "08/11/2026 10:00",
               "---"
             ],
             [
@@ -16364,7 +16522,7 @@
               "-",
               "PROMESAS FC",
               "Campo 4",
-              "01/11/2026 12:00",
+              "08/11/2026 12:00",
               "---"
             ],
             [
@@ -16376,7 +16534,7 @@
               "-",
               "SAN ANTONIO JRS",
               "Fraccionamiento",
-              "01/11/2026 12:00",
+              "08/11/2026 12:00",
               "---"
             ],
             [
@@ -16388,7 +16546,7 @@
               "-",
               "CAPIBARAS",
               "Campo 2",
-              "08/11/2026 08:00",
+              "15/11/2026 08:00",
               "---"
             ],
             [
@@ -16400,23 +16558,11 @@
               "-",
               "POPULARES",
               "Campo 3",
-              "08/11/2026 08:00",
+              "15/11/2026 08:00",
               "---"
             ],
             [
               "69",
-              "12",
-              "LA CUADRILLA",
-              "-",
-              "vs",
-              "-",
-              "MAZACOTES FC",
-              "Rincón de Centeno",
-              "08/11/2026 10:00",
-              "---"
-            ],
-            [
-              "70",
               "12",
               "ATL. GALEANA",
               "-",
@@ -16424,7 +16570,19 @@
               "-",
               "MALVINAS",
               "Campo 1 (Empastado)",
-              "08/11/2026 10:00",
+              "15/11/2026 10:00",
+              "---"
+            ],
+            [
+              "70",
+              "12",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "MAZACOTES FC",
+              "Rincón de Centeno",
+              "15/11/2026 10:00",
               "---"
             ],
             [
@@ -16436,7 +16594,7 @@
               "-",
               "LA CANCHITA DEPORTES",
               "Campo 1 (Empastado)",
-              "08/11/2026 12:00",
+              "15/11/2026 12:00",
               "---"
             ],
             [
@@ -16448,23 +16606,11 @@
               "-",
               "SAN ANTONIO JRS",
               "Campo 3",
-              "08/11/2026 12:00",
+              "15/11/2026 12:00",
               "---"
             ],
             [
               "73",
-              "13",
-              "OSASUNA",
-              "-",
-              "vs",
-              "-",
-              "MAZACOTES FC",
-              "Campo 2",
-              "15/11/2026 08:00",
-              "---"
-            ],
-            [
-              "74",
               "13",
               "POPULARES",
               "-",
@@ -16472,23 +16618,23 @@
               "-",
               "LA CANCHITA DEPORTES",
               "Campo 4",
-              "15/11/2026 08:00",
+              "22/11/2026 08:00",
+              "---"
+            ],
+            [
+              "74",
+              "13",
+              "OSASUNA",
+              "-",
+              "vs",
+              "-",
+              "MAZACOTES FC",
+              "Campo 2",
+              "22/11/2026 08:00",
               "---"
             ],
             [
               "75",
-              "13",
-              "LA CUADRILLA",
-              "-",
-              "vs",
-              "-",
-              "SAN ANTONIO JRS",
-              "Rincón de Centeno",
-              "15/11/2026 10:00",
-              "---"
-            ],
-            [
-              "76",
               "13",
               "PROMESAS FC",
               "-",
@@ -16496,7 +16642,19 @@
               "-",
               "LA HUERTA",
               "Campo 4",
-              "15/11/2026 10:00",
+              "22/11/2026 10:00",
+              "---"
+            ],
+            [
+              "76",
+              "13",
+              "LA CUADRILLA",
+              "-",
+              "vs",
+              "-",
+              "SAN ANTONIO JRS",
+              "Rincón de Centeno",
+              "22/11/2026 10:00",
               "---"
             ],
             [
@@ -16508,7 +16666,7 @@
               "-",
               "ATL. GALEANA",
               "Campo 3",
-              "15/11/2026 12:00",
+              "22/11/2026 12:00",
               "---"
             ],
             [
@@ -16520,7 +16678,7 @@
               "-",
               "DEP. MARAVILLAS",
               "Campo 4",
-              "15/11/2026 12:00",
+              "22/11/2026 12:00",
               "---"
             ]
           ]
@@ -20888,6 +21046,19 @@
           "away_lineup": [],
           "local_bench": [],
           "away_bench": []
+        },
+        {
+          "id": 322,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/322/",
+          "title": "Cédula Arbitral - MAZACOTES FC (Intermedia) vs MALVINAS (Intermedia)",
+          "local": "MAZACOTES FC",
+          "away": "MALVINAS",
+          "category": "Intermedia",
+          "date": "27/09/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -20923,7 +21094,8 @@
         318,
         319,
         320,
-        321
+        321,
+        322
       ],
       "public_player_count_scraped": 340
     }
