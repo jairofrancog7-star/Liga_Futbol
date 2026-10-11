@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-11T00:12:37Z",
+  "captured_at_utc": "2026-10-11T06:23:20Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -9837,11 +9837,11 @@
             [
               "1",
               "1",
-              "DEP. ZAPATA",
-              "1",
+              "DEP. NOPALERO",
+              "4",
               "vs",
-              "1",
-              "SAN JULIAN",
+              "3",
+              "TAPATIO",
               "Campo 1 (Empastado)",
               "26/07/2026 08:00",
               "---"
@@ -9849,11 +9849,11 @@
             [
               "2",
               "1",
-              "DEP. NOPALERO",
-              "4",
+              "DEP. ZAPATA",
+              "1",
               "vs",
-              "3",
-              "TAPATIO",
+              "1",
+              "SAN JULIAN",
               "Campo 1 (Empastado)",
               "26/07/2026 08:00",
               "---"
@@ -9873,18 +9873,6 @@
             [
               "4",
               "1",
-              "SAN ANTONIO FC",
-              "-",
-              "vs",
-              "-",
-              "TAVERA FC",
-              "Romerillo",
-              "26/07/2026 10:00",
-              "---"
-            ],
-            [
-              "5",
-              "1",
               "DEP. LA LUZ",
               "-",
               "vs",
@@ -9895,7 +9883,7 @@
               "---"
             ],
             [
-              "6",
+              "5",
               "1",
               "CELTICOS",
               "3",
@@ -9904,6 +9892,18 @@
               "SAN JOSE JRS",
               "Campo 2",
               "26/07/2026 12:00",
+              "---"
+            ],
+            [
+              "6",
+              "1",
+              "SAN ANTONIO FC",
+              "-",
+              "vs",
+              "-",
+              "TAVERA FC",
+              "Campo 1 (Empastado)",
+              "10/10/2026 12:00",
               "---"
             ],
             [
@@ -16029,18 +16029,6 @@
             [
               "1",
               "1",
-              "ALDAMA FC",
-              "-",
-              "vs",
-              "-",
-              "ATL. GALEANA",
-              "Campo 4",
-              "26/07/2026 08:00",
-              "---"
-            ],
-            [
-              "2",
-              "1",
               "POPULARES",
               "2",
               "vs",
@@ -16051,7 +16039,7 @@
               "---"
             ],
             [
-              "3",
+              "2",
               "1",
               "PROMESAS FC",
               "-",
@@ -16063,7 +16051,7 @@
               "---"
             ],
             [
-              "4",
+              "3",
               "1",
               "CAPIBARAS",
               "3",
@@ -16075,19 +16063,7 @@
               "---"
             ],
             [
-              "5",
-              "1",
-              "OSASUNA",
-              "-",
-              "vs",
-              "-",
-              "DEP. MARAVILLAS",
-              "Campo 4",
-              "26/07/2026 12:00",
-              "---"
-            ],
-            [
-              "6",
+              "4",
               "1",
               "LA HUERTA",
               "-",
@@ -16099,19 +16075,31 @@
               "---"
             ],
             [
-              "7",
-              "2",
-              "ATL. GALEANA",
-              "2",
-              "vs",
+              "5",
               "1",
-              "SAN ANTONIO JRS",
-              "Campo 3",
-              "09/08/2026 08:00",
+              "ALDAMA FC",
+              "-",
+              "vs",
+              "-",
+              "ATL. GALEANA",
+              "Campo 1 (Empastado)",
+              "10/10/2026 08:00",
               "---"
             ],
             [
-              "8",
+              "6",
+              "1",
+              "OSASUNA",
+              "-",
+              "vs",
+              "-",
+              "DEP. MARAVILLAS",
+              "Campo 1 (Empastado)",
+              "10/10/2026 10:00",
+              "---"
+            ],
+            [
+              "7",
               "2",
               "LA CUADRILLA",
               "3",
@@ -16119,6 +16107,18 @@
               "1",
               "POPULARES",
               "Campo 1 (Empastado)",
+              "09/08/2026 08:00",
+              "---"
+            ],
+            [
+              "8",
+              "2",
+              "ATL. GALEANA",
+              "2",
+              "vs",
+              "1",
+              "SAN ANTONIO JRS",
+              "Campo 3",
               "09/08/2026 08:00",
               "---"
             ],
