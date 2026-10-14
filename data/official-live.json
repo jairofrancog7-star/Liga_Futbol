@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-14T19:39:38Z",
+  "captured_at_utc": "2026-10-14T23:09:45Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 51
+          "Jugadores": 52
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 51
+        "Jugadores": 52
       },
       "standings": [],
       "scorers": [
@@ -3495,7 +3495,8 @@
           "DANIEL QUEMADA BUSTAMANTE",
           "OSCAR VARGAS TOVAR",
           "DIEGO CAMPOS MONTERO",
-          "DIEGO RICO AVILA"
+          "DIEGO RICO AVILA",
+          "RENE SIERRA VIDAL"
         ],
         "HURACAN": [
           "Martin Hortelano Luna"
@@ -3740,6 +3741,12 @@
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-04_at_12.24.56_PM_oflizx"
+          },
+          {
+            "name": "RENE SIERRA VIDAL",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-14_at_1.31.57_PM_f0ihsx"
           },
           {
             "name": "Sergio Arturo Sanchez Huizache",
@@ -4223,7 +4230,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 111
+      "public_player_count_scraped": 112
     },
     "3": {
       "id": 3,
@@ -21987,7 +21994,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 111,
+        "public_names": 112,
         "kept_previous": true
       },
       "Primera Fuerza": {
