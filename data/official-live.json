@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-14T15:27:19Z",
+  "captured_at_utc": "2026-10-14T19:39:38Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 31
+          "Jugadores": 51
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 31
+        "Jugadores": 51
       },
       "standings": [],
       "scorers": [
@@ -3526,6 +3526,66 @@
           "GABRIEL RUVALCABA ALMANZA",
           "JOSE DOMINGO DOMPABLO GONZALEZ",
           "Alejandro Morales Ortega"
+        ],
+        "BOAVISTA": [
+          "DAVID ARELLANO ALVAREZ",
+          "AARON AVECLLA ROJAS",
+          "Jose Luis Aguilar Solorzano",
+          "Ivan Fernando Avecilla Zapatero",
+          "Juan Carlos Barron Cano",
+          "Gerardo Belman Navarro",
+          "Gabriel Cano Gonzalez",
+          "RAYMUNDO FLORES SILVA",
+          "LUIS GAMEZ BUENAVISTA",
+          "LUIS ENRIQUE GARCIA CONEJO",
+          "JOSE DE AGUSTIN GUTIERREZ GONZALEZ",
+          "Juan Manuel Gamez Lopez",
+          "David Guerrero Arellano",
+          "Javier Ivan Guerrero Jimenez",
+          "Jose Angel Gutierrez Enrique",
+          "EDGAR SAUL HERNANDEZ AVILA",
+          "ROGELIO LUNA GUILLEN",
+          "Enrique Lopez Aguilar",
+          "PABLO MENDOZA TOVAR",
+          "DAVID JOSUE MOSQUEDA VEJA",
+          "FRANCISCO ALEJANDRO MOSQUEDA VELA",
+          "Juan Antonio Marquez Mendoza",
+          "Alvaro Moreno Perez",
+          "AMBROCIO PESCADOR RAMIREZ",
+          "ERNESTO RODRIGUEZ MENDOZA",
+          "Cecilio Ramos Rangel",
+          "Lazaro Ruvalcaba Almanza",
+          "Francisco Vera Martinez"
+        ],
+        "JUVENTUS": [
+          "IGNACIO ABOYTES MENDOZA",
+          "EVERARDO AGUSTIN CASTRO RIVERA",
+          "JOSUE IVAN CISNEROS CHAVEZ",
+          "Armando Conteras Pizano",
+          "ROBERTO CARLOS DOMPABLO GONZALEZ",
+          "MOISES DE JESUS GARCIA GUTIERREZ",
+          "Serafin Galindo De La Cruz",
+          "Hector Hugo Gonzalez Diosdado",
+          "Rafael Guerrero Pirul",
+          "ANTONIO LADINO ABOYTES",
+          "Javier Lara Valencia",
+          "Juan Pablo Mendoza Macias",
+          "Juan Esteban Montecillo Solache",
+          "Daniel Montenegro Gutierrez",
+          "Jose Guadalupe Moreno Huerta",
+          "Adrian Moreno Razo",
+          "ALFREDO PALACIOS QUINTANILLA",
+          "GERARDO PIZANO MANCERA",
+          "Manuel Pantoja Hernandez",
+          "Jesus Yovanny Pineda Mendoza",
+          "JOSE ANTONIO RAMIREZ CERRITO",
+          "Jose Antonio Ramos Garcia",
+          "Mario Razo Miranda",
+          "Juan Carlos Rico Hernandez",
+          "Jorge Alberto Sanchez Mendoza",
+          "RICARDO VALENZUELA RANGEL",
+          "JAIME ARTURO VELASQUEZ HERNANDEZ",
+          "Salvador Fernando Valenzuela Rangel"
         ]
       },
       "player_usage": {},
@@ -3706,9 +3766,317 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/10_hxwjau"
           }
         ],
+        "BOAVISTA": [
+          {
+            "name": "DAVID ARELLANO ALVAREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "AARON AVECLLA ROJAS",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Luis Aguilar Solorzano",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-19_at_1.35.45_PM_n7bhih"
+          },
+          {
+            "name": "Ivan Fernando Avecilla Zapatero",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.05.17_PM_ez5rvc"
+          },
+          {
+            "name": "Juan Carlos Barron Cano",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Juan_Carlos_Barron_brocfb"
+          },
+          {
+            "name": "Gerardo Belman Navarro",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_12.45.12_PM_ls0zbp"
+          },
+          {
+            "name": "Gabriel Cano Gonzalez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Gabriel_Cano_Gonzalez_b9pm7v"
+          },
+          {
+            "name": "RAYMUNDO FLORES SILVA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "LUIS GAMEZ BUENAVISTA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "LUIS ENRIQUE GARCIA CONEJO",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_12.41.04_PM_tomffc"
+          },
+          {
+            "name": "JOSE DE AGUSTIN GUTIERREZ GONZALEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Juan Manuel Gamez Lopez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-24_at_4.58.40_PM_aooh5m"
+          },
+          {
+            "name": "David Guerrero Arellano",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "Javier Ivan Guerrero Jimenez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Javier_Ivan_Guerrero_nqqazp"
+          },
+          {
+            "name": "Jose Angel Gutierrez Enrique",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "EDGAR SAUL HERNANDEZ AVILA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ROGELIO LUNA GUILLEN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Enrique Lopez Aguilar",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_12.59.09_PM_nhytrp"
+          },
+          {
+            "name": "PABLO MENDOZA TOVAR",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "DAVID JOSUE MOSQUEDA VEJA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "FRANCISCO ALEJANDRO MOSQUEDA VELA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Juan Antonio Marquez Mendoza",
+            "position": "Portero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Juan_Antonio_Marquez_viyzdl"
+          },
+          {
+            "name": "Alvaro Moreno Perez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "AMBROCIO PESCADOR RAMIREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ERNESTO RODRIGUEZ MENDOZA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Cecilio Ramos Rangel",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Cecilio_Ramos_Rangel_vy7izk"
+          },
+          {
+            "name": "Lazaro Ruvalcaba Almanza",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "Francisco Vera Martinez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_1.03.02_PM_mnkapd"
+          }
+        ],
         "HURACAN": [
           {
             "name": "Martin Hortelano Luna",
+            "position": "Defensa",
+            "dorsal": "—"
+          }
+        ],
+        "JUVENTUS": [
+          {
+            "name": "IGNACIO ABOYTES MENDOZA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "EVERARDO AGUSTIN CASTRO RIVERA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSUE IVAN CISNEROS CHAVEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Armando Conteras Pizano",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_3.01.04_PM_llspec"
+          },
+          {
+            "name": "ROBERTO CARLOS DOMPABLO GONZALEZ",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_11.45.09_AM_zqbd9q"
+          },
+          {
+            "name": "MOISES DE JESUS GARCIA GUTIERREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Serafin Galindo De La Cruz",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.50.28_PM_brwbjn"
+          },
+          {
+            "name": "Hector Hugo Gonzalez Diosdado",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_10.48.38_AM_kormrg"
+          },
+          {
+            "name": "Rafael Guerrero Pirul",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ANTONIO LADINO ABOYTES",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-03_at_8.12.08_AM_sgvhvm"
+          },
+          {
+            "name": "Javier Lara Valencia",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Juan Pablo Mendoza Macias",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_9.39.45_PM_x65mpl"
+          },
+          {
+            "name": "Juan Esteban Montecillo Solache",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_10.26.20_AM_otq8i9"
+          },
+          {
+            "name": "Daniel Montenegro Gutierrez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Guadalupe Moreno Huerta",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Adrian Moreno Razo",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/AdrianMorenoRazo_cro0pu"
+          },
+          {
+            "name": "ALFREDO PALACIOS QUINTANILLA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "GERARDO PIZANO MANCERA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Manuel Pantoja Hernandez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jesus Yovanny Pineda Mendoza",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_9.20.10_PM_rm9h5p"
+          },
+          {
+            "name": "JOSE ANTONIO RAMIREZ CERRITO",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_12.41.06_PM_zveuyx"
+          },
+          {
+            "name": "Jose Antonio Ramos Garcia",
+            "position": "Portero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_9.41.49_PM_e4ihnn"
+          },
+          {
+            "name": "Mario Razo Miranda",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-12_at_1.30.37_PM_3_mq7awf"
+          },
+          {
+            "name": "Juan Carlos Rico Hernandez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jorge Alberto Sanchez Mendoza",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "RICARDO VALENZUELA RANGEL",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JAIME ARTURO VELASQUEZ HERNANDEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Salvador Fernando Valenzuela Rangel",
             "position": "Defensa",
             "dorsal": "—"
           }
@@ -3855,7 +4223,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 55
+      "public_player_count_scraped": 111
     },
     "3": {
       "id": 3,
@@ -21619,7 +21987,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 55,
+        "public_names": 111,
         "kept_previous": true
       },
       "Primera Fuerza": {
