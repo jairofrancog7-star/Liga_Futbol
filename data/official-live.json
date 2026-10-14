@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-13T21:30:53Z",
+  "captured_at_utc": "2026-10-14T00:35:08Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -127,11 +127,15 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "L - LA ESPERANZA Roberto Martinez Silva 1 Rojas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
             "near_text": "L - LA ESPERANZA Gumersindo Granados Ramirez 1 Rojas"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "L - LA ESPERANZA Antonio Guerrero Rico 1 Rojas"
+            "near_text": "Roberto Martinez Silva LA ESPERANZA 1 Jornadas LA ESPERANZA (Veteranos 50+) vs MANCHESTER (Veteranos 50+)"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
@@ -148,10 +152,6 @@
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
             "near_text": "Hilario Armenta Buenavista DYNAMO 3 Jornadas DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "Gumersindo Granados Ramirez LA ESPERANZA 3 Jornadas BOAVISTA (Veteranos 50+) vs LA ESPERANZA (Veteranos 50+)"
           }
         ]
       },
@@ -532,6 +532,12 @@
             ],
             [
               "Roja",
+              "Roberto Martinez Silva",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "Roja",
               "Gumersindo Granados Ramirez",
               "LA ESPERANZA",
               "1"
@@ -554,6 +560,12 @@
             "Pendientes"
           ],
           "rows": [
+            [
+              "Roberto Martinez Silva",
+              "LA ESPERANZA",
+              "1 Jornadas",
+              "1"
+            ],
             [
               "Jose Antonio Zarate Arellano",
               "BOAVISTA",
