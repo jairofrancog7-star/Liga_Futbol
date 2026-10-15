@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-15T12:50:26Z",
+  "captured_at_utc": "2026-10-15T17:44:23Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 72
+          "Jugadores": 93
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 72
+        "Jugadores": 93
       },
       "standings": [],
       "scorers": [
@@ -3499,7 +3499,26 @@
           "RENE SIERRA VIDAL"
         ],
         "HURACAN": [
-          "Martin Hortelano Luna"
+          "Martin Hortelano Luna",
+          "Julio Cesar Badillo Hernandez",
+          "EDUARDO CALDERON JUAREZ",
+          "ARTURO CONTRERAS GAMUCERO",
+          "FRANCISCO CONTRERAS MORENO",
+          "Jose Guadalupe Delgado Lemus",
+          "Fernando Franco Mendoza",
+          "JESUS HERNANDEZ ABOYTES",
+          "GERARDO JUAREZ RANGEL",
+          "MARTIN LOPEZ CERROBLANCO",
+          "RAUL LOPEZ SANCHEZ",
+          "PEDRO MONTOYA PERU",
+          "ARMANDO MUÑIZ MARTINEZ",
+          "J. Carmen Mosqueda Sanchez",
+          "RICARDO PARIS REYES ESTRADA",
+          "OSCAR ROA RODRIGUEZ",
+          "OMAR SANLUISEÑO GUZMAN",
+          "SAUL SANLUISEÑO GUZMAN",
+          "JULIO CESAR SILLERO RODRIGUEZ",
+          "FRANCISCO VALENZUELA OLIVARES"
         ],
         "PSV": [
           "ENRIQUE ABOYTES CRUZ",
@@ -3557,7 +3576,8 @@
           "ERNESTO RODRIGUEZ MENDOZA",
           "Cecilio Ramos Rangel",
           "Lazaro Ruvalcaba Almanza",
-          "Francisco Vera Martinez"
+          "Francisco Vera Martinez",
+          "Luis Martin Pizano Garcia"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3611,6 +3631,23 @@
           "JONY TORRECILLAS RODRIGUEZ",
           "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
           "EDUARDO ZAVALA ACOSTA"
+        ],
+        "LEYENDAS FC": [
+          "Efren Alberto Montoya",
+          "Jose Eduardo Bravo Sandoval",
+          "Alberto Gasca Cuevas",
+          "JORGE ISLAS YAÑEZ",
+          "David Gonzalo Oñates Noria",
+          "MIGUEL ALEJANDRO PEREZCAMPOS HERNANDEZ",
+          "Jose Juan Perez Ortega",
+          "FRANCISCO JAVIER RAMIREZ ALBERTO",
+          "SERGIO RAMIREZ SIERRA",
+          "Hector Manuel Ramirez Tovar",
+          "Jose Roberto Ramirez Tovar",
+          "Eduardo Ramirez Yañez",
+          "BENIGNO TOVAR AGREDA",
+          "MARCO ANTONIO YAÑEZ MIRANDA",
+          "SALVADOR Yañez Miranda"
         ]
       },
       "player_usage": {},
@@ -4037,6 +4074,12 @@
             "dorsal": "—"
           },
           {
+            "name": "Luis Martin Pizano Garcia",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_12.59.09_PM_1_f53eyl"
+          },
+          {
             "name": "ERNESTO RODRIGUEZ MENDOZA",
             "position": "Defensa",
             "dorsal": "—"
@@ -4061,7 +4104,106 @@
         ],
         "HURACAN": [
           {
+            "name": "Julio Cesar Badillo Hernandez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_12.16.37_PM_fvdaib"
+          },
+          {
+            "name": "EDUARDO CALDERON JUAREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ARTURO CONTRERAS GAMUCERO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "FRANCISCO CONTRERAS MORENO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Guadalupe Delgado Lemus",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-21_at_11.09.44_AM_4_zpsojg"
+          },
+          {
+            "name": "Fernando Franco Mendoza",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-29_at_7.56.13_PM_wkw4ps"
+          },
+          {
+            "name": "JESUS HERNANDEZ ABOYTES",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Martin Hortelano Luna",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "GERARDO JUAREZ RANGEL",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MARTIN LOPEZ CERROBLANCO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "RAUL LOPEZ SANCHEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "PEDRO MONTOYA PERU",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ARMANDO MUÑIZ MARTINEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "J. Carmen Mosqueda Sanchez",
+            "position": "Delantero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-05_at_11.06.20_AM_mb2sgi"
+          },
+          {
+            "name": "RICARDO PARIS REYES ESTRADA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "OSCAR ROA RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "OMAR SANLUISEÑO GUZMAN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "SAUL SANLUISEÑO GUZMAN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JULIO CESAR SILLERO RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "FRANCISCO VALENZUELA OLIVARES",
             "position": "Defensa",
             "dorsal": "—"
           }
@@ -4220,6 +4362,88 @@
             "dorsal": "—"
           }
         ],
+        "LEYENDAS FC": [
+          {
+            "name": "Efren Alberto Montoya",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Eduardo Bravo Sandoval",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_11.52.24_AM_qzema2"
+          },
+          {
+            "name": "Alberto Gasca Cuevas",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JORGE ISLAS YAÑEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "David Gonzalo Oñates Noria",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_3.46.32_PM_auohzf"
+          },
+          {
+            "name": "MIGUEL ALEJANDRO PEREZCAMPOS HERNANDEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Juan Perez Ortega",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_11.28.10_PM_2_qu6oot"
+          },
+          {
+            "name": "FRANCISCO JAVIER RAMIREZ ALBERTO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "SERGIO RAMIREZ SIERRA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Hector Manuel Ramirez Tovar",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Roberto Ramirez Tovar",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-12_at_9.24.49_PM_raffia"
+          },
+          {
+            "name": "Eduardo Ramirez Yañez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_7.28.05_AM_tvbibr"
+          },
+          {
+            "name": "BENIGNO TOVAR AGREDA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MARCO ANTONIO YAÑEZ MIRANDA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "SALVADOR Yañez Miranda",
+            "position": "Defensa",
+            "dorsal": "—"
+          }
+        ],
         "PSV": [
           {
             "name": "ENRIQUE ABOYTES CRUZ",
@@ -4368,7 +4592,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 134
+      "public_player_count_scraped": 169
     },
     "3": {
       "id": 3,
@@ -22132,7 +22356,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 134,
+        "public_names": 169,
         "kept_previous": true
       },
       "Primera Fuerza": {
