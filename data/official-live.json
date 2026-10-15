@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-15T17:44:23Z",
+  "captured_at_utc": "2026-10-15T21:17:38Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 93
+          "Jugadores": 101
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 93
+        "Jugadores": 101
       },
       "standings": [],
       "scorers": [
@@ -3577,7 +3577,8 @@
           "Cecilio Ramos Rangel",
           "Lazaro Ruvalcaba Almanza",
           "Francisco Vera Martinez",
-          "Luis Martin Pizano Garcia"
+          "Luis Martin Pizano Garcia",
+          "VICTOR HUGO ZARATE CERRITO"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3648,6 +3649,26 @@
           "BENIGNO TOVAR AGREDA",
           "MARCO ANTONIO YAÑEZ MIRANDA",
           "SALVADOR Yañez Miranda"
+        ],
+        "CUENDA": [
+          "MARTIN ARCIA MARTINEZ",
+          "FELICIANO CALERO SILVA",
+          "JUAN CERRITO CAMPOS",
+          "Fernando Alonso Calero Cerrito",
+          "SALVADOR GALLARDO PRIETO",
+          "ALEJANDRO GARCIA CAMPOS",
+          "JUAN HUMBERTO GARCIA MONTOYA",
+          "MIGUEL DARIO GARCIA RODRIGUEZ",
+          "Luis Alfonso Garcia Carlin",
+          "ALFREDO HERRERA GONZALEZ",
+          "Francisco Javier Herrera Pizano",
+          "ABEL LINARES CUEVAS",
+          "MARTIN MONTOYA MARTINEZ",
+          "Jesus Enrique Martinez Olivares",
+          "Eduardo Prieto Montes",
+          "JAVIER RAMIREZ RICO",
+          "JUAN NOE SIERRA GUERRERO",
+          "Rogelio Serrano Castro"
         ]
       },
       "player_usage": {},
@@ -4100,6 +4121,113 @@
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_1.03.02_PM_mnkapd"
+          },
+          {
+            "name": "VICTOR HUGO ZARATE CERRITO",
+            "position": "Defensa",
+            "dorsal": "—"
+          }
+        ],
+        "CUENDA": [
+          {
+            "name": "MARTIN ARCIA MARTINEZ",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_11.45.08_AM_5_r7pgzi"
+          },
+          {
+            "name": "FELICIANO CALERO SILVA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JUAN CERRITO CAMPOS",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Fernando Alonso Calero Cerrito",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_4.01.46_PM_xeyyf8"
+          },
+          {
+            "name": "SALVADOR GALLARDO PRIETO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ALEJANDRO GARCIA CAMPOS",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_11.45.08_AM_7_lt0n0g"
+          },
+          {
+            "name": "JUAN HUMBERTO GARCIA MONTOYA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MIGUEL DARIO GARCIA RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_11.28.08_PM_kxyjg6"
+          },
+          {
+            "name": "Luis Alfonso Garcia Carlin",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_3.58.47_PM_zdjff2"
+          },
+          {
+            "name": "ALFREDO HERRERA GONZALEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Francisco Javier Herrera Pizano",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Francisco_Javier_Herrera_Pizano_dah0jx"
+          },
+          {
+            "name": "ABEL LINARES CUEVAS",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MARTIN MONTOYA MARTINEZ",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-02_at_10.38.14_AM_cmmt9d"
+          },
+          {
+            "name": "Jesus Enrique Martinez Olivares",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_10.23.13_AM_i3tcqj"
+          },
+          {
+            "name": "Eduardo Prieto Montes",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-04_at_6.20.54_PM_3_jbbd8g"
+          },
+          {
+            "name": "JAVIER RAMIREZ RICO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JUAN NOE SIERRA GUERRERO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Rogelio Serrano Castro",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-04_at_6.20.56_PM_5_nuhh5f"
           }
         ],
         "HURACAN": [
@@ -4479,12 +4607,6 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Giovanni_eytheh"
           },
           {
-            "name": "MIGUEL DARIO GARCIA RODRIGUEZ",
-            "position": "Defensa",
-            "dorsal": "—",
-            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_11.28.08_PM_kxyjg6"
-          },
-          {
             "name": "LUIS FERNANDO GARCIDUEÑAS CAMACHO",
             "position": "Mediocampista",
             "dorsal": "—"
@@ -4579,11 +4701,6 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Daniel_Yanez_Rangel_eu08hi"
           },
           {
-            "name": "VICTOR HUGO ZARATE CERRITO",
-            "position": "Defensa",
-            "dorsal": "—"
-          },
-          {
             "name": "JOSE LUIS ZUÑIGA CERROBLANCO",
             "position": "Mediocampista",
             "dorsal": "—"
@@ -4592,7 +4709,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 169
+      "public_player_count_scraped": 186
     },
     "3": {
       "id": 3,
@@ -10525,12 +10642,6 @@
             ],
             [
               "JESUS EMMANUEL ZARATE AGUILERA",
-              "Expulsado de la liga",
-              "36 Jornadas",
-              "33"
-            ],
-            [
-              "JAVIER RAMIREZ RICO",
               "Expulsado de la liga",
               "36 Jornadas",
               "33"
@@ -22356,7 +22467,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 169,
+        "public_names": 186,
         "kept_previous": true
       },
       "Primera Fuerza": {
