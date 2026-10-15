@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-14T23:09:45Z",
+  "captured_at_utc": "2026-10-15T01:47:24Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 52
+          "Jugadores": 72
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 52
+        "Jugadores": 72
       },
       "standings": [],
       "scorers": [
@@ -3526,7 +3526,8 @@
           "EMMANUEL PANTOJA CAPULIN",
           "GABRIEL RUVALCABA ALMANZA",
           "JOSE DOMINGO DOMPABLO GONZALEZ",
-          "Alejandro Morales Ortega"
+          "Alejandro Morales Ortega",
+          "Josue Valentin Alvarez Rodriguez"
         ],
         "BOAVISTA": [
           "DAVID ARELLANO ALVAREZ",
@@ -3587,10 +3588,141 @@
           "RICARDO VALENZUELA RANGEL",
           "JAIME ARTURO VELASQUEZ HERNANDEZ",
           "Salvador Fernando Valenzuela Rangel"
+        ],
+        "AGUILARES": [
+          "ROBERTO AGUILAR CERRITO",
+          "JORGE ARMANDO AGUIRRE BELMAN",
+          "SANTIAGO CAMPOS GUERRERO",
+          "DIEGO ARMANDO CERRITOS MUÑOZ",
+          "JOSE MARIA DUARTE TORRES",
+          "Jose de Jesus Garcia Villafuerte",
+          "ISMAEL LERMA MENDOZA",
+          "HUMBERTO LERMA MORENO",
+          "MIGUEL ANGEL MENDOZA GUAPO",
+          "ELEAZAR MORENO LERMA",
+          "MIGUEL ANGEL NORIA GASCA",
+          "FRANCISCO PEREZ CERVANTES",
+          "LUIS MANUEL PEREZ CERVANTES",
+          "JHONNY ALBERTO SALINAS SANCHEZ",
+          "ENRIQUE SANLUISEÑO GUERRERO",
+          "JOSE FRANCISCO SANTAROSA JIMENEZ",
+          "FERNANDO SERRATO TOLEDO",
+          "JOEL TOLEDO CAMPOS",
+          "JONY TORRECILLAS RODRIGUEZ",
+          "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
+          "EDUARDO ZAVALA ACOSTA"
         ]
       },
       "player_usage": {},
       "player_profiles": {
+        "AGUILARES": [
+          {
+            "name": "ROBERTO AGUILAR CERRITO",
+            "position": "Portero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JORGE ARMANDO AGUIRRE BELMAN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "SANTIAGO CAMPOS GUERRERO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "DIEGO ARMANDO CERRITOS MUÑOZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE MARIA DUARTE TORRES",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose de Jesus Garcia Villafuerte",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-11_at_6.11.30_PM_1_wgdezd"
+          },
+          {
+            "name": "ISMAEL LERMA MENDOZA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "HUMBERTO LERMA MORENO",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "MIGUEL ANGEL MENDOZA GUAPO",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "ELEAZAR MORENO LERMA",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "MIGUEL ANGEL NORIA GASCA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "FRANCISCO PEREZ CERVANTES",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "LUIS MANUEL PEREZ CERVANTES",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "JHONNY ALBERTO SALINAS SANCHEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "ENRIQUE SANLUISEÑO GUERRERO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE FRANCISCO SANTAROSA JIMENEZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "FERNANDO SERRATO TOLEDO",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOEL TOLEDO CAMPOS",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JONY TORRECILLAS RODRIGUEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "EDUARDO ZAVALA ACOSTA",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          }
+        ],
         "AMERICA": [
           {
             "name": "LUIS JONATHAN AGUILAR GERVACIO",
@@ -4106,6 +4238,12 @@
             "dorsal": "—"
           },
           {
+            "name": "Josue Valentin Alvarez Rodriguez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.38.47_PM_eg6dru"
+          },
+          {
             "name": "JOSE DOMINGO DOMPABLO GONZALEZ",
             "position": "Delantero",
             "dorsal": "—"
@@ -4230,7 +4368,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 112
+      "public_player_count_scraped": 134
     },
     "3": {
       "id": 3,
@@ -21994,7 +22132,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 112,
+        "public_names": 134,
         "kept_previous": true
       },
       "Primera Fuerza": {
