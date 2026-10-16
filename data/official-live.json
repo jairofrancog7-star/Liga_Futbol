@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-16T14:12:23Z",
+  "captured_at_utc": "2026-10-16T18:19:25Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 122
+          "Jugadores": 136
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 122
+        "Jugadores": 136
       },
       "standings": [],
       "scorers": [
@@ -3705,6 +3705,28 @@
           "JUAN CARLOS VARGAS JARALILLO",
           "JOSE TRINIDAD VERA MARTINEZ",
           "MAURICIO ZEPEDA MC LANE"
+        ],
+        "POZOS FC": [
+          "ARTURO ALBERTO ARCHUNDIA MURO",
+          "Hilario Armenta Buenavista",
+          "Hugo Armenta Buenavista",
+          "RAMIRO CALDERON LOPEZ",
+          "MELCHOR CERDA OROZCO",
+          "OCTAVIO SAUL JIMENEZ JUAREZ",
+          "JOSE LUIS MIRANDA RODRIGUEZ",
+          "FERNANDO MORALES PALMA",
+          "JUAN RAMON MORENO SANCHEZ",
+          "Armando Muñiz Bañales",
+          "MIGUEL ANGEL OCHOA ALVAREZ",
+          "Omar Olivares Paz",
+          "JULIO CESAR PARDINI SANDOVAL",
+          "MAURICIO ARTURO PEREZ GARCIA",
+          "JUAN PABLO PEREZ LUGO",
+          "Eric Peña Luna",
+          "JONATHAN MICHAEL ANGEL RAMIREZ HERNANDEZ",
+          "Jorge Ramirez Huerta",
+          "JOSE JESUS SAUCEDO RODRIGUEZ",
+          "ALBERTO VILLAGOMEZ MANCERA"
         ]
       },
       "player_usage": {},
@@ -4079,7 +4101,8 @@
           {
             "name": "JOSE DE AGUSTIN GUTIERREZ GONZALEZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_2.25.06_PM_uyuryo"
           },
           {
             "name": "Juan Manuel Gamez Lopez",
@@ -4101,12 +4124,14 @@
           {
             "name": "Jose Angel Gutierrez Enrique",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_1.54.39_PM_piuibw"
           },
           {
             "name": "EDGAR SAUL HERNANDEZ AVILA",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_3.03.24_PM_qvuffd"
           },
           {
             "name": "ROGELIO LUNA GUILLEN",
@@ -4181,7 +4206,8 @@
           {
             "name": "VICTOR HUGO ZARATE CERRITO",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_1.57.41_PM_ozdtex"
           }
         ],
         "CUENDA": [
@@ -4786,6 +4812,113 @@
             "dorsal": "—"
           }
         ],
+        "POZOS FC": [
+          {
+            "name": "ARTURO ALBERTO ARCHUNDIA MURO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Hilario Armenta Buenavista",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-05_at_11.00.44_AM_d5payk"
+          },
+          {
+            "name": "Hugo Armenta Buenavista",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-25_at_12.12.32_PM_g3u7gz"
+          },
+          {
+            "name": "RAMIRO CALDERON LOPEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "MELCHOR CERDA OROZCO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "OCTAVIO SAUL JIMENEZ JUAREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE LUIS MIRANDA RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "FERNANDO MORALES PALMA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JUAN RAMON MORENO SANCHEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Armando Muñiz Bañales",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-25_at_12.11.22_PM_szvbvy"
+          },
+          {
+            "name": "MIGUEL ANGEL OCHOA ALVAREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Omar Olivares Paz",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_8.20.39_PM_m8av6i"
+          },
+          {
+            "name": "JULIO CESAR PARDINI SANDOVAL",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MAURICIO ARTURO PEREZ GARCIA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JUAN PABLO PEREZ LUGO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Eric Peña Luna",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JONATHAN MICHAEL ANGEL RAMIREZ HERNANDEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jorge Ramirez Huerta",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Jorge_Ram%C3%ADrez_Huerta_ivkxkc"
+          },
+          {
+            "name": "JOSE JESUS SAUCEDO RODRIGUEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ALBERTO VILLAGOMEZ MANCERA",
+            "position": "Defensa",
+            "dorsal": "—"
+          }
+        ],
         "PSV": [
           {
             "name": "ENRIQUE ABOYTES CRUZ",
@@ -4917,7 +5050,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 219
+      "public_player_count_scraped": 239
     },
     "3": {
       "id": 3,
@@ -9554,7 +9687,8 @@
           {
             "name": "Jose Angel Gutierrez Enrique",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_1.54.39_PM_piuibw"
           },
           {
             "name": "Angel Uriel Gutierrez Espinoza",
@@ -22675,7 +22809,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 219,
+        "public_names": 239,
         "kept_previous": true
       },
       "Primera Fuerza": {
