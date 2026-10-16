@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-15T23:49:04Z",
+  "captured_at_utc": "2026-10-16T04:22:58Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 101
+          "Jugadores": 110
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 101
+        "Jugadores": 110
       },
       "standings": [],
       "scorers": [
@@ -3631,7 +3631,11 @@
           "JOEL TOLEDO CAMPOS",
           "JONY TORRECILLAS RODRIGUEZ",
           "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
-          "EDUARDO ZAVALA ACOSTA"
+          "EDUARDO ZAVALA ACOSTA",
+          "EDUARDO AGUILAR RAMIREZ",
+          "JOSE REMEDIOS GARCIA ALVAREZ",
+          "JORGE ANTONIO GASCA LINARES",
+          "LUIS LOPEZ GASCA"
         ],
         "LEYENDAS FC": [
           "Efren Alberto Montoya",
@@ -3669,6 +3673,16 @@
           "JAVIER RAMIREZ RICO",
           "JUAN NOE SIERRA GUERRERO",
           "Rogelio Serrano Castro"
+        ],
+        "FRANCO-TAVERA-JR": [
+          "AGUSTIN AGOSTADERO PEREZ",
+          "Juan Jesus Beltran Garcia",
+          "FRANCISCO JAVIER GARCIA GUERRERO",
+          "HECTOR HUGO MANCERA DAMIAN",
+          "Alejandro Morales Ortega",
+          "Pedro Navarrete Soledad",
+          "JOSE JESUS RAMIREZ SANTANA",
+          "LUIS EDGAR SANCHEZ HERNANDEZ"
         ]
       },
       "player_usage": {},
@@ -3677,6 +3691,11 @@
           {
             "name": "ROBERTO AGUILAR CERRITO",
             "position": "Portero",
+            "dorsal": "—"
+          },
+          {
+            "name": "EDUARDO AGUILAR RAMIREZ",
+            "position": "Mediocampista",
             "dorsal": "—"
           },
           {
@@ -3700,6 +3719,16 @@
             "dorsal": "—"
           },
           {
+            "name": "JOSE REMEDIOS GARCIA ALVAREZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JORGE ANTONIO GASCA LINARES",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Jose de Jesus Garcia Villafuerte",
             "position": "Defensa",
             "dorsal": "—",
@@ -3712,6 +3741,11 @@
           },
           {
             "name": "HUMBERTO LERMA MORENO",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "LUIS LOPEZ GASCA",
             "position": "Mediocampista",
             "dorsal": "—"
           },
@@ -4230,6 +4264,51 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-04_at_6.20.56_PM_5_nuhh5f"
           }
         ],
+        "FRANCO-TAVERA-JR": [
+          {
+            "name": "AGUSTIN AGOSTADERO PEREZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Juan Jesus Beltran Garcia",
+            "position": "Delantero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_12.49.40_PM_vprgxc"
+          },
+          {
+            "name": "FRANCISCO JAVIER GARCIA GUERRERO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "HECTOR HUGO MANCERA DAMIAN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Alejandro Morales Ortega",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_12.31.27_PM_o9us2x"
+          },
+          {
+            "name": "Pedro Navarrete Soledad",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_1.26.45_PM_c19f3b"
+          },
+          {
+            "name": "JOSE JESUS RAMIREZ SANTANA",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "LUIS EDGAR SANCHEZ HERNANDEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          }
+        ],
         "HURACAN": [
           {
             "name": "Julio Cesar Badillo Hernandez",
@@ -4663,12 +4742,6 @@
             "dorsal": "—"
           },
           {
-            "name": "Alejandro Morales Ortega",
-            "position": "Mediocampista",
-            "dorsal": "—",
-            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_12.31.27_PM_o9us2x"
-          },
-          {
             "name": "RUBEN OLIVARES GUERRERO",
             "position": "Mediocampista",
             "dorsal": "—"
@@ -4709,7 +4782,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 186
+      "public_player_count_scraped": 197
     },
     "3": {
       "id": 3,
@@ -22467,7 +22540,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 186,
+        "public_names": 197,
         "kept_previous": true
       },
       "Primera Fuerza": {
