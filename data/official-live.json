@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-16T04:22:58Z",
+  "captured_at_utc": "2026-10-16T09:15:31Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 110
+          "Jugadores": 122
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 110
+        "Jugadores": 122
       },
       "standings": [],
       "scorers": [
@@ -3578,7 +3578,8 @@
           "Lazaro Ruvalcaba Almanza",
           "Francisco Vera Martinez",
           "Luis Martin Pizano Garcia",
-          "VICTOR HUGO ZARATE CERRITO"
+          "VICTOR HUGO ZARATE CERRITO",
+          "AARON AVECILLA ROJAS"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3682,7 +3683,28 @@
           "Alejandro Morales Ortega",
           "Pedro Navarrete Soledad",
           "JOSE JESUS RAMIREZ SANTANA",
-          "LUIS EDGAR SANCHEZ HERNANDEZ"
+          "LUIS EDGAR SANCHEZ HERNANDEZ",
+          "Pedro Buenavista Sandoval",
+          "CONCEPCION CASTILLO MANZANARES",
+          "JOB CRUZ CENTENO GONZALEZ",
+          "MANUEL CHAVEZ LOPEZ",
+          "JOSE MANUEL ESCUTIA PONCE",
+          "EVERARDO GODINEZ TIERRABLANCA",
+          "JAVIER GODINEZ TIERRABLANCA",
+          "Israel Hernandez Almanza",
+          "ARTURO MENDOZA GARCIA",
+          "Jose Luis Mancera Ramirez",
+          "Jose Antonio Moreno Vargas",
+          "FERNANDO OLIVARES DELGADO",
+          "VICTOR PALACIOS QUINTANILLA",
+          "Rodrigo Paramo Paramo",
+          "LUIS RAMIREZ SALINAS",
+          "JOSE RAMOS CELEDON",
+          "EDGARDO RIVERA BELMAN",
+          "Alejandro Ramirez Medina",
+          "JUAN CARLOS VARGAS JARALILLO",
+          "JOSE TRINIDAD VERA MARTINEZ",
+          "MAURICIO ZEPEDA MC LANE"
         ]
       },
       "player_usage": {},
@@ -4004,7 +4026,7 @@
             "dorsal": "—"
           },
           {
-            "name": "AARON AVECLLA ROJAS",
+            "name": "AARON AVECILLA ROJAS",
             "position": "Defensa",
             "dorsal": "—"
           },
@@ -4277,14 +4299,69 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_12.49.40_PM_vprgxc"
           },
           {
+            "name": "Pedro Buenavista Sandoval",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_5.00.39_PM_k9hnit"
+          },
+          {
+            "name": "CONCEPCION CASTILLO MANZANARES",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOB CRUZ CENTENO GONZALEZ",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-08_at_8.39.40_AM_duda10"
+          },
+          {
+            "name": "MANUEL CHAVEZ LOPEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE MANUEL ESCUTIA PONCE",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "FRANCISCO JAVIER GARCIA GUERRERO",
             "position": "Defensa",
             "dorsal": "—"
           },
           {
+            "name": "EVERARDO GODINEZ TIERRABLANCA",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "JAVIER GODINEZ TIERRABLANCA",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-25_at_9.29.16_AM_rxtghk"
+          },
+          {
+            "name": "Israel Hernandez Almanza",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_8.58.56_PM_ivdnxm"
+          },
+          {
             "name": "HECTOR HUGO MANCERA DAMIAN",
             "position": "Defensa",
             "dorsal": "—"
+          },
+          {
+            "name": "ARTURO MENDOZA GARCIA",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "Jose Luis Mancera Ramirez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_1.05.19_PM_epmzhd"
           },
           {
             "name": "Alejandro Morales Ortega",
@@ -4293,10 +4370,36 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_12.31.27_PM_o9us2x"
           },
           {
+            "name": "Jose Antonio Moreno Vargas",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Pedro Navarrete Soledad",
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-31_at_1.26.45_PM_c19f3b"
+          },
+          {
+            "name": "FERNANDO OLIVARES DELGADO",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "VICTOR PALACIOS QUINTANILLA",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "Rodrigo Paramo Paramo",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-29_at_7.54.40_PM_1_fzbqjn"
+          },
+          {
+            "name": "LUIS RAMIREZ SALINAS",
+            "position": "Delantero",
+            "dorsal": "—"
           },
           {
             "name": "JOSE JESUS RAMIREZ SANTANA",
@@ -4304,7 +4407,39 @@
             "dorsal": "—"
           },
           {
+            "name": "JOSE RAMOS CELEDON",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "EDGARDO RIVERA BELMAN",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.50.44_PM_kgpj7h"
+          },
+          {
+            "name": "Alejandro Ramirez Medina",
+            "position": "Delantero",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_12.31.30_PM_1_coeiq9"
+          },
+          {
             "name": "LUIS EDGAR SANCHEZ HERNANDEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "JUAN CARLOS VARGAS JARALILLO",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "JOSE TRINIDAD VERA MARTINEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "MAURICIO ZEPEDA MC LANE",
             "position": "Mediocampista",
             "dorsal": "—"
           }
@@ -4782,7 +4917,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 197
+      "public_player_count_scraped": 219
     },
     "3": {
       "id": 3,
@@ -22540,7 +22675,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 197,
+        "public_names": 219,
         "kept_previous": true
       },
       "Primera Fuerza": {
