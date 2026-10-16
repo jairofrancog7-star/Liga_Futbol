@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-16T20:42:10Z",
+  "captured_at_utc": "2026-10-16T21:39:35Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 136
+          "Jugadores": 137
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 136
+        "Jugadores": 137
       },
       "standings": [],
       "scorers": [
@@ -3673,7 +3673,8 @@
           "Eduardo Prieto Montes",
           "JAVIER RAMIREZ RICO",
           "JUAN NOE SIERRA GUERRERO",
-          "Rogelio Serrano Castro"
+          "Rogelio Serrano Castro",
+          "GABRIEL ARRIAGA SANCHEZ"
         ],
         "FRANCO-TAVERA-JR": [
           "AGUSTIN AGOSTADERO PEREZ",
@@ -4216,6 +4217,11 @@
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-10_at_11.45.08_AM_5_r7pgzi"
+          },
+          {
+            "name": "GABRIEL ARRIAGA SANCHEZ",
+            "position": "Mediocampista",
+            "dorsal": "—"
           },
           {
             "name": "FELICIANO CALERO SILVA",
@@ -5050,7 +5056,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 239
+      "public_player_count_scraped": 240
     },
     "3": {
       "id": 3,
@@ -5658,11 +5664,167 @@
       "suspensions": [
         {
           "headers": [
-            "Estado"
+            "Jugador",
+            "Equipo",
+            "Castigo",
+            "Pendientes"
           ],
           "rows": [
             [
-              "No hay jugadores castigados."
+              "Cristian Ochoa Torres",
+              "Expulsado de la liga",
+              "5 Jornadas",
+              "3"
+            ],
+            [
+              "Armando Muñoz Badillo",
+              "Expulsado de la liga",
+              "26 Jornadas",
+              "24"
+            ],
+            [
+              "Jose Casiano Campos Belman",
+              "Expulsado de la liga",
+              "",
+              ""
+            ],
+            [
+              "DIEGO ARMANDO CAMPOS CERRITO",
+              "Expulsado de la liga",
+              "",
+              ""
+            ],
+            [
+              "VICTOR ALFONSO SILVA TOVAR",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ROBERTO ALONSO CERRITO GARCIA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "MISAEL RAMIREZ RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOSE GUADALUPE PRIETO GONZALEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOSE ALEJANDRO GONZALEZ MELENDEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOHAN SANTIAGO GONZALEZ LAGUNA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JESUS GUADALUPE HORTELANO PIZANO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JESUS EMMANUEL ZARATE AGUILERA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GIOVANNI GONZALEZ HERRERA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GEREARDO ARRIAGA RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GABRIEL ARRIAGA SANCHEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "FRANCISCO MONTOYA LAGUNA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "FRANCISCO CERRITO JARALEÑO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "EDWIN IMANOL CAMPOS GONZALEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "EDUARDO VAZQUEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "DIEGO PRIETO MONTOYA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "DIEGO LOPEZ PIZANO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "CESAR ALEJANDRO GARCIA RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "CARLOS ARRIAGA OBRAJERO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ALEXIS MONTOYA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "BENIGNO JUAN VALENZUELA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ABELARDO ALBERTO RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
             ]
           ]
         }
@@ -10927,6 +11089,18 @@
               "DEP. NOPALERO",
               "3 Jornadas",
               "1"
+            ],
+            [
+              "Cristian Ochoa Torres",
+              "Expulsado de la liga",
+              "5 Jornadas",
+              "3"
+            ],
+            [
+              "Armando Muñoz Badillo",
+              "Expulsado de la liga",
+              "26 Jornadas",
+              "24"
             ],
             [
               "Jose Casiano Campos Belman",
@@ -17251,6 +17425,150 @@
               "Expulsado de la liga",
               "26 Jornadas",
               "24"
+            ],
+            [
+              "Jose Casiano Campos Belman",
+              "Expulsado de la liga",
+              "",
+              ""
+            ],
+            [
+              "DIEGO ARMANDO CAMPOS CERRITO",
+              "Expulsado de la liga",
+              "",
+              ""
+            ],
+            [
+              "VICTOR ALFONSO SILVA TOVAR",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ROBERTO ALONSO CERRITO GARCIA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "MISAEL RAMIREZ RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOSE GUADALUPE PRIETO GONZALEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOSE ALEJANDRO GONZALEZ MELENDEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JOHAN SANTIAGO GONZALEZ LAGUNA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JESUS GUADALUPE HORTELANO PIZANO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "JESUS EMMANUEL ZARATE AGUILERA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GIOVANNI GONZALEZ HERRERA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GEREARDO ARRIAGA RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "GABRIEL ARRIAGA SANCHEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "FRANCISCO MONTOYA LAGUNA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "FRANCISCO CERRITO JARALEÑO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "EDWIN IMANOL CAMPOS GONZALEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "EDUARDO VAZQUEZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "DIEGO PRIETO MONTOYA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "DIEGO LOPEZ PIZANO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "CESAR ALEJANDRO GARCIA RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "CARLOS ARRIAGA OBRAJERO",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ALEXIS MONTOYA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "BENIGNO JUAN VALENZUELA",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
+            ],
+            [
+              "ABELARDO ALBERTO RAMIREZ",
+              "Expulsado de la liga",
+              "36 Jornadas",
+              "33"
             ]
           ]
         }
@@ -22809,7 +23127,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 239,
+        "public_names": 240,
         "kept_previous": true
       },
       "Primera Fuerza": {
