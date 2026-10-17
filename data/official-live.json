@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-17T16:38:03Z",
+  "captured_at_utc": "2026-10-17T19:17:48Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3546,7 +3546,8 @@
           "GABRIEL RUVALCABA ALMANZA",
           "JOSE DOMINGO DOMPABLO GONZALEZ",
           "Alejandro Morales Ortega",
-          "Josue Valentin Alvarez Rodriguez"
+          "Josue Valentin Alvarez Rodriguez",
+          "Jose Antonio Rubi Perez"
         ],
         "BOAVISTA": [
           "DAVID ARELLANO ALVAREZ",
@@ -5043,6 +5044,12 @@
             "dorsal": "—"
           },
           {
+            "name": "Jose Antonio Rubi Perez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-20_at_5.29.19_PM_4_aheffv"
+          },
+          {
             "name": "Francisco Javier Solache Franco",
             "position": "Defensa",
             "dorsal": "—",
@@ -5063,7 +5070,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 241
+      "public_player_count_scraped": 242
     },
     "3": {
       "id": 3,
@@ -23134,7 +23141,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 241,
+        "public_names": 242,
         "kept_previous": true
       },
       "Primera Fuerza": {
