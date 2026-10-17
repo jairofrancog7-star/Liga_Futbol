@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-17T00:23:13Z",
+  "captured_at_utc": "2026-10-17T04:56:35Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3653,7 +3653,8 @@
           "Eduardo Ramirez Yañez",
           "BENIGNO TOVAR AGREDA",
           "MARCO ANTONIO YAÑEZ MIRANDA",
-          "SALVADOR Yañez Miranda"
+          "SALVADOR Yañez Miranda",
+          "Jose de Jesus Valenzuela Aboytes"
         ],
         "CUENDA": [
           "MARTIN ARCIA MARTINEZ",
@@ -4808,6 +4809,12 @@
             "dorsal": "—"
           },
           {
+            "name": "Jose de Jesus Valenzuela Aboytes",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-12_at_1.30.37_PM_1_ag5yhj"
+          },
+          {
             "name": "MARCO ANTONIO YAÑEZ MIRANDA",
             "position": "Defensa",
             "dorsal": "—"
@@ -5056,7 +5063,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 240
+      "public_player_count_scraped": 241
     },
     "3": {
       "id": 3,
@@ -23127,7 +23134,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 240,
+        "public_names": 241,
         "kept_previous": true
       },
       "Primera Fuerza": {
