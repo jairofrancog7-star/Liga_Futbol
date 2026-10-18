@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-17T19:17:48Z",
+  "captured_at_utc": "2026-10-17T23:59:28Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2806,7 +2806,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 137
+          "Jugadores": 138
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2856,7 +2856,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 137
+        "Jugadores": 138
       },
       "standings": [],
       "scorers": [
@@ -3547,7 +3547,8 @@
           "JOSE DOMINGO DOMPABLO GONZALEZ",
           "Alejandro Morales Ortega",
           "Josue Valentin Alvarez Rodriguez",
-          "Jose Antonio Rubi Perez"
+          "Jose Antonio Rubi Perez",
+          "Elfrego Robles Leon"
         ],
         "BOAVISTA": [
           "DAVID ARELLANO ALVAREZ",
@@ -5044,6 +5045,11 @@
             "dorsal": "—"
           },
           {
+            "name": "Elfrego Robles Leon",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Jose Antonio Rubi Perez",
             "position": "Defensa",
             "dorsal": "—",
@@ -5070,7 +5076,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 242
+      "public_player_count_scraped": 243
     },
     "3": {
       "id": 3,
@@ -23141,7 +23147,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 242,
+        "public_names": 243,
         "kept_previous": true
       },
       "Primera Fuerza": {
