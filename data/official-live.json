@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-18T19:23:46Z",
-  "mode": "fast",
+  "captured_at_utc": "2026-10-18T20:52:20Z",
+  "mode": "full",
   "categories": {
     "1": {
       "id": 1,
@@ -1216,7 +1216,8 @@
           "Fernando Delgado Molina",
           "Guillermo Chavez Mendoza",
           "Arturo Guerrero Rodriguez",
-          "Osvaldo Duran Zarate"
+          "Osvaldo Duran Zarate",
+          "Jose Antonio Zarate Arellano S"
         ],
         "DYNAMO": [
           "Alfredo Rocha Rodriguez",
@@ -1241,7 +1242,8 @@
           "Simon Acosta Frias",
           "Jose Cruz Delgado Lemus",
           "Jose Luis Belman Olivares",
-          "Armando Muñiz Bañales"
+          "Armando Muñiz Bañales",
+          "Hilario Armenta Buenavista S"
         ],
         "LA ESPERANZA": [
           "Juan Carlos Quevedo Estrada",
@@ -1267,329 +1269,331 @@
           "Antonio Guerrero Rico",
           "Hector Arguello Gonzalez",
           "Jose Guadalupe Lopez Martinez",
-          "Feliciano Palacios Lopez"
+          "Feliciano Palacios Lopez",
+          "Antonio Guerrero Rico S",
+          "Feliciano Palacios Lopez S"
         ]
       },
       "player_usage": {
         "BALTAZAR OLIVARES MEDINA": {
           "name": "Baltazar Olivares Medina",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FRANCISCO JAVIER HERRERA PIZANO": {
           "name": "Francisco Javier Herrera Pizano",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "RAUL PARAMO NORIA": {
           "name": "Raul Paramo Noria",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARTIN GARCIA JARALENO": {
           "name": "Martin Garcia Jaraleño",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MAURO SILVA TORRES": {
           "name": "MAURO SILVA TORRES",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "NICOLAS MUNOZ BARAJAS": {
           "name": "Nicolas Muñoz Barajas",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "REY DAVID LOPEZ PARAMO": {
           "name": "Rey David Lopez Paramo",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALONSO MENDOZA CERRITO": {
           "name": "Alonso Mendoza Cerrito",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE MANUEL VARGAS PALACIOS": {
           "name": "Jose Manuel Vargas Palacios",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROBERTO PARAMO NORIA": {
           "name": "Roberto Paramo Noria",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JAVIER MONTOYA JARALENO": {
           "name": "JAVIER MONTOYA JARALEÑO",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARIO HORTELANO PIRUL": {
           "name": "Mario Hortelano Pirul",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ARIEL TIERRAFRIA ANGUIANO": {
           "name": "ARIEL TIERRAFRIA ANGUIANO",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J ROSARIO ACOSTA SANTARROSA": {
           "name": "J. ROSARIO ACOSTA SANTARROSA",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARTINIANO GARCIA RAMIREZ": {
           "name": "Martiniano Garcia Ramirez",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ENRIQUE MENDOZA MUNOZ": {
           "name": "Enrique Mendoza Muñoz",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FRANCISCO GUTIERREZ CAMPOS": {
           "name": "Francisco Gutierrez Campos",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROMAN CAMPOS MURILLO": {
           "name": "Roman Campos Murillo",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "VALENTIN DE JESUS MUNOZ BARAJAS": {
           "name": "Valentin de Jesus Muñoz Barajas",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JUAN CAMPOS AGUILAR": {
           "name": "JUAN CAMPOS AGUILAR",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "SAUL GUZMAN NORIA": {
           "name": "SAUL GUZMAN NORIA",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARTIN MONTOYA MARTINEZ": {
           "name": "MARTIN MONTOYA MARTINEZ",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FRANCISCO HERRERA MANTERO": {
           "name": "FRANCISCO HERRERA MANTERO",
           "team": "TOROS DE CUENDA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "BRUNO RUBI GARCIA": {
           "name": "Bruno Rubi Garcia",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "BENJAMIN VILLAFUERTE RAMIREZ": {
           "name": "Benjamin Villafuerte Ramirez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GERARDO GONZALEZ FRANCO": {
           "name": "Gerardo Gonzalez Franco",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALBERTO RAMIREZ CAMPOS": {
           "name": "Alberto Ramirez Campos",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J CARMEN SUBIAS MIRANDA": {
           "name": "J. Carmen Subias Miranda",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JESUS AGUILAR ORTIZ": {
           "name": "Jesus Aguilar Ortiz",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE ALFREDO RUBI GARCIA": {
           "name": "Jose Alfredo Rubi Garcia",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ISRAEL VELASQUEZ VELASQUEZ": {
           "name": "Israel Velasquez Velasquez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE MARGARITO SANLUISENO RODRIGUEZ": {
           "name": "Jose Margarito Sanluiseño Rodriguez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MANUEL AGOSTADERO QUINTANILLA": {
           "name": "Manuel Agostadero Quintanilla",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE JUAN RAMIREZ LOPEZ": {
           "name": "Jose Juan Ramirez Lopez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MANUEL CERRITOS ARELLANO": {
           "name": "Manuel Cerritos Arellano",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "PEDRO GUERRERO ZARATE": {
           "name": "Pedro Guerrero Zarate",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROGELIO GARCIA AGUIRRE": {
           "name": "Rogelio Garcia Aguirre",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "RAUL GOMEZ DAMIAN": {
           "name": "Raul Gomez Damian",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALBERTO BARCENAS LUCIA": {
           "name": "Alberto Barcenas Lucia",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FERNANDO MONTESINOS FREYRE": {
           "name": "Fernando Montesinos Freyre",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARTIN HORTELANO LUNA": {
           "name": "Martin Hortelano Luna",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JUAN ANDRES TIERRABLANCA LOPEZ": {
           "name": "Juan Andres Tierrablanca Lopez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ANTONIO HUICHAPA LOPEZ": {
           "name": "Antonio Huichapa Lopez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FELIPE PRIETO RAMIREZ": {
           "name": "Felipe Prieto Ramirez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "PEDRO CERVANTES BELMAN": {
           "name": "Pedro Cervantes Belman",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ANTONIO MENDOZA GARCIA": {
           "name": "Antonio Mendoza Garcia",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ANTONINO MARTINEZ": {
           "name": "Antonino Martinez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ELEUTERIO GUERRERO NAVARRETE": {
           "name": "Eleuterio Guerrero Navarrete",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FLORENCIO FRANCO LERMA": {
           "name": "Florencio Franco Lerma",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE JUAN SORIA ORDAZ": {
           "name": "Jose Juan Soria Ordaz",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE AGUILAR GONZALEZ": {
           "name": "Jose Aguilar Gonzalez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FABIAN GUTIERREZ": {
           "name": "Fabian Gutierrez",
           "team": "MANCHESTER",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALFREDO GONZALEZ MEDINA": {
           "name": "Alfredo Gonzalez Medina",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GUSTAVO RAMOS ZALCEDO": {
           "name": "Gustavo Ramos Zalcedo",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MARCO ANTONIO GASCA ARZATE": {
           "name": "Marco Antonio Gasca Arzate",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE RICARDO ABOYTES PIZANO": {
           "name": "Jose Ricardo Aboytes Pizano",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "RAUL GARCIA CELEDON": {
           "name": "Raul Garcia Celedon",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "RAFAEL DAVID ABOYTES PIZANO": {
           "name": "Rafael David Aboytes Pizano",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "TELESFORO VILLAFANA RANGEL": {
           "name": "Telesforo Villafaña Rangel",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "DEMETRIO CAMPOS OLIVARES": {
           "name": "Demetrio Campos Olivares",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE RENE DURAN ZARATE": {
           "name": "Jose Rene Duran Zarate",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GERMAN GUZMAN FRANCO": {
           "name": "German Guzman Franco",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE GERARDO DURAN ZARATE": {
           "name": "Jose Gerardo Duran Zarate",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "RAFAEL LADINOS COYOTE": {
           "name": "Rafael Ladinos Coyote",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE ANTONIO ZARATE ARELLANO": {
           "name": "Jose Antonio Zarate Arellano",
@@ -1599,62 +1603,62 @@
         "LUIS MANCERA GUERRERO": {
           "name": "Luis Mancera Guerrero",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "LAZARO RUVALCABA ALMANZA": {
           "name": "Lazaro Ruvalcaba Almanza",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JORGE DURAN ZARATE": {
           "name": "Jorge Duran Zarate",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FERNANDO DELGADO MOLINA": {
           "name": "Fernando Delgado Molina",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GUILLERMO CHAVEZ MENDOZA": {
           "name": "Guillermo Chavez Mendoza",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ARTURO GUERRERO RODRIGUEZ": {
           "name": "Arturo Guerrero Rodriguez",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "OSVALDO DURAN ZARATE": {
           "name": "Osvaldo Duran Zarate",
           "team": "BOAVISTA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALFREDO ROCHA RODRIGUEZ": {
           "name": "Alfredo Rocha Rodriguez",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J GUADALUPE PENA LUNA": {
           "name": "J. Guadalupe Peña Luna",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FRANCISCO JAVIER CONEJO HERRERA": {
           "name": "Francisco Javier Conejo Herrera",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "OCTAVIO RAMOS ESPINOZA": {
           "name": "Octavio Ramos Espinoza",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "BONIFACIO LOPEZ LEON": {
           "name": "Bonifacio Lopez Leon",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "HILARIO ARMENTA BUENAVISTA": {
           "name": "Hilario Armenta Buenavista",
@@ -1664,187 +1668,187 @@
         "PEDRO MENDOZA MENDOZA": {
           "name": "Pedro Mendoza Mendoza",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "HUMBERTO MORENO FLORES": {
           "name": "Humberto Moreno Flores",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE JESUS LOPEZ LEON": {
           "name": "Jose Jesus Lopez Leon",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J CARMEN MOSQUEDA SANCHEZ": {
           "name": "J. Carmen Mosqueda Sanchez",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FERNANDO ARTURO ARELLANO MACIAS": {
           "name": "Fernando Arturo Arellano Macias",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J GUADALUPE RAMIREZ RAMIREZ": {
           "name": "J. GUADALUPE RAMIREZ RAMIREZ",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ELADIO RAMIREZ ALBERTO": {
           "name": "Eladio Ramirez Alberto",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JESUS ALBERTO DAMIAN": {
           "name": "Jesus Alberto Damian",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JULIO CESAR RUVALCABA ALMANZA": {
           "name": "Julio Cesar Ruvalcaba Almanza",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "CARLOS DAMIAN ZUNIGA": {
           "name": "Carlos Damian Zuñiga",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "HUGO ARMENTA BUENAVISTA": {
           "name": "Hugo Armenta Buenavista",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROBERTO PERDOMO COLIN": {
           "name": "Roberto Perdomo Colin",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GERARDO GARCIA RODRIGUEZ": {
           "name": "GERARDO GARCIA RODRIGUEZ",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "SIMON ACOSTA FRIAS": {
           "name": "Simon Acosta Frias",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE CRUZ DELGADO LEMUS": {
           "name": "Jose Cruz Delgado Lemus",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE LUIS BELMAN OLIVARES": {
           "name": "Jose Luis Belman Olivares",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ARMANDO MUNIZ BANALES": {
           "name": "Armando Muñiz Bañales",
           "team": "DYNAMO",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JUAN CARLOS QUEVEDO ESTRADA": {
           "name": "Juan Carlos Quevedo Estrada",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GABRIEL ESTRADA VILCHIS": {
           "name": "Gabriel Estrada Vilchis",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "LAZARO HERNANDEZ VAZQUEZ": {
           "name": "Lazaro Hernandez Vazquez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROBERTO GARCIA GONZALEZ": {
           "name": "Roberto Garcia Gonzalez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MIGUEL ANGEL LOPEZ ZARAZUA": {
           "name": "Miguel ANgel Lopez Zarazua",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE MENDOZA PESCADOR": {
           "name": "Jose Mendoza Pescador",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J REFUGIO ZARAZUA AGOSTADERO": {
           "name": "J. REFUGIO ZARAZUA AGOSTADERO",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GENARO TERAN VAZQUEZ": {
           "name": "Genaro Teran Vazquez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "BERNARDO ZARAZUA AGOSTADERO": {
           "name": "Bernardo Zarazua Agostadero",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JUAN CARLOS RESENDIZ ALVAREZ": {
           "name": "Juan Carlos Resendiz Alvarez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MIGUEL VELAZQUEZ VARGAS": {
           "name": "Miguel Velazquez Vargas",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALEJANDRO VELAZQUEZ VARGAS": {
           "name": "Alejandro Velazquez Vargas",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J MARCOS ARCE SANCHEZ": {
           "name": "J. MARCOS ARCE SANCHEZ",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "OSCAR ISRAEL GARCIA ZARAGOZA": {
           "name": "Oscar Israel Garcia Zaragoza",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "J JESUS AGUILAR GAMEZ": {
           "name": "J. JESUS AGUILAR GAMEZ",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE LUIS OROZCO MATA": {
           "name": "Jose Luis Orozco Mata",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "MIGUEL MERINO PENA": {
           "name": "Miguel Merino Peña",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ALFREDO MAGUEYAL CHAIRES": {
           "name": "Alfredo Magueyal Chaires",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "GUMERSINDO GRANADOS RAMIREZ": {
           "name": "Gumersindo Granados Ramirez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ROBERTO MARTINEZ SILVA": {
           "name": "Roberto Martinez Silva",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "ANTONIO GUERRERO RICO": {
           "name": "Antonio Guerrero Rico",
@@ -1854,17 +1858,37 @@
         "HECTOR ARGUELLO GONZALEZ": {
           "name": "Hector Arguello Gonzalez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "JOSE GUADALUPE LOPEZ MARTINEZ": {
           "name": "Jose Guadalupe Lopez Martinez",
           "team": "LA ESPERANZA",
-          "cedulas": 7
+          "cedulas": 8
         },
         "FELICIANO PALACIOS LOPEZ": {
           "name": "Feliciano Palacios Lopez",
           "team": "LA ESPERANZA",
           "cedulas": 7
+        },
+        "HILARIO ARMENTA BUENAVISTA S": {
+          "name": "Hilario Armenta Buenavista S",
+          "team": "DYNAMO",
+          "cedulas": 1
+        },
+        "ANTONIO GUERRERO RICO S": {
+          "name": "Antonio Guerrero Rico S",
+          "team": "LA ESPERANZA",
+          "cedulas": 1
+        },
+        "FELICIANO PALACIOS LOPEZ S": {
+          "name": "Feliciano Palacios Lopez S",
+          "team": "LA ESPERANZA",
+          "cedulas": 1
+        },
+        "JOSE ANTONIO ZARATE ARELLANO S": {
+          "name": "Jose Antonio Zarate Arellano S",
+          "team": "BOAVISTA",
+          "cedulas": 1
         }
       },
       "player_profiles": {
@@ -2692,81 +2716,51 @@
         },
         {
           "id": 49,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/49/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/49/",
           "title": "Cédula Arbitral - MANCHESTER (Veteranos 50+) vs BOCA JRS (Veteranos 50+)",
           "local": "MANCHESTER",
           "away": "BOCA JRS",
-          "category": "Veteranos 50+",
-          "date": "03/10/2026 15:30",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         },
         {
           "id": 50,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/50/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/50/",
           "title": "Cédula Arbitral - DYNAMO (Veteranos 50+) vs BOAVISTA (Veteranos 50+)",
           "local": "DYNAMO",
           "away": "BOAVISTA",
-          "category": "Veteranos 50+",
-          "date": "03/10/2026 15:30",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         },
         {
           "id": 51,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/51/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/51/",
           "title": "Cédula Arbitral - TOROS DE CUENDA (Veteranos 50+) vs LA ESPERANZA (Veteranos 50+)",
           "local": "TOROS DE CUENDA",
           "away": "LA ESPERANZA",
-          "category": "Veteranos 50+",
-          "date": "03/10/2026 17:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         },
         {
           "id": 52,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/52/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/52/",
           "title": "Cédula Arbitral - TOROS DE CUENDA (Veteranos 50+) vs DYNAMO (Veteranos 50+)",
           "local": "TOROS DE CUENDA",
           "away": "DYNAMO",
-          "category": "Veteranos 50+",
-          "date": "10/10/2026 17:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         },
         {
           "id": 53,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/53/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/53/",
           "title": "Cédula Arbitral - LA ESPERANZA (Veteranos 50+) vs MANCHESTER (Veteranos 50+)",
           "local": "LA ESPERANZA",
           "away": "MANCHESTER",
-          "category": "Veteranos 50+",
-          "date": "10/10/2026 15:30",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         },
         {
           "id": 54,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/54/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/54/",
           "title": "Cédula Arbitral - BOAVISTA (Veteranos 50+) vs BOCA JRS (Veteranos 50+)",
           "local": "BOAVISTA",
           "away": "BOCA JRS",
-          "category": "Veteranos 50+",
-          "date": "10/10/2026 15:30",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Veteranos 50+"
         }
       ],
       "cedulas_scanned": [
@@ -2795,7 +2789,7 @@
         53,
         54
       ],
-      "public_player_count_scraped": 119
+      "public_player_count_scraped": 123
     },
     "2": {
       "id": 2,
@@ -3466,10 +3460,39 @@
         }
       ],
       "rosters": {
+        "AGUILARES": [
+          "ROBERTO AGUILAR CERRITO",
+          "EDUARDO AGUILAR RAMIREZ",
+          "JORGE ARMANDO AGUIRRE BELMAN",
+          "SANTIAGO CAMPOS GUERRERO",
+          "DIEGO ARMANDO CERRITOS MUÑOZ",
+          "JOSE MARIA DUARTE TORRES",
+          "JOSE REMEDIOS GARCIA ALVAREZ",
+          "JORGE ANTONIO GASCA LINARES",
+          "Jose de Jesus Garcia Villafuerte",
+          "ISMAEL LERMA MENDOZA",
+          "HUMBERTO LERMA MORENO",
+          "LUIS LOPEZ GASCA",
+          "MIGUEL ANGEL MENDOZA GUAPO",
+          "ELEAZAR MORENO LERMA",
+          "MIGUEL ANGEL NORIA GASCA",
+          "FRANCISCO PEREZ CERVANTES",
+          "LUIS MANUEL PEREZ CERVANTES",
+          "JHONNY ALBERTO SALINAS SANCHEZ",
+          "ENRIQUE SANLUISEÑO GUERRERO",
+          "JOSE FRANCISCO SANTAROSA JIMENEZ",
+          "FERNANDO SERRATO TOLEDO",
+          "JOEL TOLEDO CAMPOS",
+          "JONY TORRECILLAS RODRIGUEZ",
+          "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
+          "EDUARDO ZAVALA ACOSTA"
+        ],
         "AMERICA": [
           "LUIS JONATHAN AGUILAR GERVACIO",
+          "DIEGO CAMPOS MONTERO",
           "Sammare Horacio Calderon Martinez",
           "Eric Fernando Dongu Guerrero",
+          "Florencio Franco Lerma",
           "DAVID GARCIA AGUIRRE",
           "PATRICIO GASCA VILLAFUERTE",
           "REYES JOEL GAYTAN LEON",
@@ -3477,82 +3500,28 @@
           "EDGAR HERNANDEZ AUSTRIA",
           "Asuncion Hernandez Hernandez",
           "JORGE GABRIEL JUAREZ CASTRO",
+          "Luis Jimenez Zarate",
           "EDUARDO LOPEZ GARCIA",
           "Gerardo Lopez Guerrero",
           "Jose Alfredo Lopez Perez",
           "Jorge Eduardo Martinez Moreno",
           "Alvaro Alberto Mata Garcia",
           "MANUEL PATIÑO VILLALPANDO",
+          "DANIEL QUEMADA BUSTAMANTE",
+          "DIEGO RICO AVILA",
           "JUAN ENRIQUE RICO GONZALEZ",
           "MANUEL RICO MANCERA",
           "JUAN ANTONIO ROSALES CABELLO",
           "MAURICIO IGNACIO ROSALES OCHOA",
+          "RENE SIERRA VIDAL",
           "Sergio Arturo Sanchez Huizache",
           "FRANCISCO JAVIER VALDEZ CORRALES",
-          "J. REFUGIO ZARAZUA AGOSTADERO",
-          "Florencio Franco Lerma",
-          "Luis Jimenez Zarate",
-          "DANIEL QUEMADA BUSTAMANTE",
           "OSCAR VARGAS TOVAR",
-          "DIEGO CAMPOS MONTERO",
-          "DIEGO RICO AVILA",
-          "RENE SIERRA VIDAL"
-        ],
-        "HURACAN": [
-          "Martin Hortelano Luna",
-          "Julio Cesar Badillo Hernandez",
-          "EDUARDO CALDERON JUAREZ",
-          "ARTURO CONTRERAS GAMUCERO",
-          "FRANCISCO CONTRERAS MORENO",
-          "Jose Guadalupe Delgado Lemus",
-          "Fernando Franco Mendoza",
-          "JESUS HERNANDEZ ABOYTES",
-          "GERARDO JUAREZ RANGEL",
-          "MARTIN LOPEZ CERROBLANCO",
-          "RAUL LOPEZ SANCHEZ",
-          "PEDRO MONTOYA PERU",
-          "ARMANDO MUÑIZ MARTINEZ",
-          "J. Carmen Mosqueda Sanchez",
-          "RICARDO PARIS REYES ESTRADA",
-          "OSCAR ROA RODRIGUEZ",
-          "OMAR SANLUISEÑO GUZMAN",
-          "SAUL SANLUISEÑO GUZMAN",
-          "JULIO CESAR SILLERO RODRIGUEZ",
-          "FRANCISCO VALENZUELA OLIVARES"
-        ],
-        "PSV": [
-          "ENRIQUE ABOYTES CRUZ",
-          "FRANCISCO JESUS AGUIRRE CANO",
-          "LUIS FERNANDO ARREDONDO ZAVALA",
-          "Giovanni Emanuel Flores Guerrero",
-          "MIGUEL DARIO GARCIA RODRIGUEZ",
-          "LUIS FERNANDO GARCIDUEÑAS CAMACHO",
-          "OMAR GUERRERO DAMIAN",
-          "JOSE LUIS GUERRERO RODRIGUEZ",
-          "Cristian Jesus Gasca Rodriguez",
-          "Jose Antonio Juarez Landin",
-          "OSCAR LOPEZ DAMIAN",
-          "Edgar Manuel Landin Ibarra",
-          "JOSE DAVID MARTINEZ FLORES",
-          "Jose Pablo Mejia Campos",
-          "Juan Mendoza Lopez",
-          "RUBEN OLIVARES GUERRERO",
-          "JOSE LUIS ORNELAS RAMIREZ",
-          "Francisco Javier Solache Franco",
-          "Daniel Yañez Rangel",
-          "VICTOR HUGO ZARATE CERRITO",
-          "JOSE LUIS ZUÑIGA CERROBLANCO",
-          "EMMANUEL PANTOJA CAPULIN",
-          "GABRIEL RUVALCABA ALMANZA",
-          "JOSE DOMINGO DOMPABLO GONZALEZ",
-          "Alejandro Morales Ortega",
-          "Josue Valentin Alvarez Rodriguez",
-          "Jose Antonio Rubi Perez",
-          "Elfrego Robles Leon"
+          "J. REFUGIO ZARAZUA AGOSTADERO"
         ],
         "BOAVISTA": [
           "DAVID ARELLANO ALVAREZ",
-          "AARON AVECLLA ROJAS",
+          "AARON AVECILLA ROJAS",
           "Jose Luis Aguilar Solorzano",
           "Ivan Fernando Avecilla Zapatero",
           "Juan Carlos Barron Cano",
@@ -3575,13 +3544,86 @@
           "Juan Antonio Marquez Mendoza",
           "Alvaro Moreno Perez",
           "AMBROCIO PESCADOR RAMIREZ",
+          "Luis Martin Pizano Garcia",
           "ERNESTO RODRIGUEZ MENDOZA",
           "Cecilio Ramos Rangel",
           "Lazaro Ruvalcaba Almanza",
           "Francisco Vera Martinez",
-          "Luis Martin Pizano Garcia",
-          "VICTOR HUGO ZARATE CERRITO",
-          "AARON AVECILLA ROJAS"
+          "VICTOR HUGO ZARATE CERRITO"
+        ],
+        "CUENDA": [
+          "MARTIN ARCIA MARTINEZ",
+          "GABRIEL ARRIAGA SANCHEZ",
+          "FELICIANO CALERO SILVA",
+          "JUAN CERRITO CAMPOS",
+          "Fernando Alonso Calero Cerrito",
+          "SALVADOR GALLARDO PRIETO",
+          "ALEJANDRO GARCIA CAMPOS",
+          "JUAN HUMBERTO GARCIA MONTOYA",
+          "MIGUEL DARIO GARCIA RODRIGUEZ",
+          "Luis Alfonso Garcia Carlin",
+          "ALFREDO HERRERA GONZALEZ",
+          "Francisco Javier Herrera Pizano",
+          "ABEL LINARES CUEVAS",
+          "MARTIN MONTOYA MARTINEZ",
+          "Jesus Enrique Martinez Olivares",
+          "Eduardo Prieto Montes",
+          "JAVIER RAMIREZ RICO",
+          "JUAN NOE SIERRA GUERRERO",
+          "Rogelio Serrano Castro"
+        ],
+        "FRANCO-TAVERA-JR": [
+          "AGUSTIN AGOSTADERO PEREZ",
+          "Juan Jesus Beltran Garcia",
+          "Pedro Buenavista Sandoval",
+          "CONCEPCION CASTILLO MANZANARES",
+          "JOB CRUZ CENTENO GONZALEZ",
+          "MANUEL CHAVEZ LOPEZ",
+          "JOSE MANUEL ESCUTIA PONCE",
+          "FRANCISCO JAVIER GARCIA GUERRERO",
+          "EVERARDO GODINEZ TIERRABLANCA",
+          "JAVIER GODINEZ TIERRABLANCA",
+          "Israel Hernandez Almanza",
+          "HECTOR HUGO MANCERA DAMIAN",
+          "ARTURO MENDOZA GARCIA",
+          "Jose Luis Mancera Ramirez",
+          "Alejandro Morales Ortega",
+          "Jose Antonio Moreno Vargas",
+          "Pedro Navarrete Soledad",
+          "FERNANDO OLIVARES DELGADO",
+          "VICTOR PALACIOS QUINTANILLA",
+          "Rodrigo Paramo Paramo",
+          "LUIS RAMIREZ SALINAS",
+          "JOSE JESUS RAMIREZ SANTANA",
+          "JOSE RAMOS CELEDON",
+          "EDGARDO RIVERA BELMAN",
+          "Alejandro Ramirez Medina",
+          "LUIS EDGAR SANCHEZ HERNANDEZ",
+          "JUAN CARLOS VARGAS JARALILLO",
+          "JOSE TRINIDAD VERA MARTINEZ",
+          "MAURICIO ZEPEDA MC LANE"
+        ],
+        "HURACAN": [
+          "Julio Cesar Badillo Hernandez",
+          "EDUARDO CALDERON JUAREZ",
+          "ARTURO CONTRERAS GAMUCERO",
+          "FRANCISCO CONTRERAS MORENO",
+          "Jose Guadalupe Delgado Lemus",
+          "Fernando Franco Mendoza",
+          "JESUS HERNANDEZ ABOYTES",
+          "Martin Hortelano Luna",
+          "GERARDO JUAREZ RANGEL",
+          "MARTIN LOPEZ CERROBLANCO",
+          "RAUL LOPEZ SANCHEZ",
+          "PEDRO MONTOYA PERU",
+          "ARMANDO MUÑIZ MARTINEZ",
+          "J. Carmen Mosqueda Sanchez",
+          "RICARDO PARIS REYES ESTRADA",
+          "OSCAR ROA RODRIGUEZ",
+          "OMAR SANLUISEÑO GUZMAN",
+          "SAUL SANLUISEÑO GUZMAN",
+          "JULIO CESAR SILLERO RODRIGUEZ",
+          "FRANCISCO VALENZUELA OLIVARES"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3613,33 +3655,6 @@
           "JAIME ARTURO VELASQUEZ HERNANDEZ",
           "Salvador Fernando Valenzuela Rangel"
         ],
-        "AGUILARES": [
-          "ROBERTO AGUILAR CERRITO",
-          "JORGE ARMANDO AGUIRRE BELMAN",
-          "SANTIAGO CAMPOS GUERRERO",
-          "DIEGO ARMANDO CERRITOS MUÑOZ",
-          "JOSE MARIA DUARTE TORRES",
-          "Jose de Jesus Garcia Villafuerte",
-          "ISMAEL LERMA MENDOZA",
-          "HUMBERTO LERMA MORENO",
-          "MIGUEL ANGEL MENDOZA GUAPO",
-          "ELEAZAR MORENO LERMA",
-          "MIGUEL ANGEL NORIA GASCA",
-          "FRANCISCO PEREZ CERVANTES",
-          "LUIS MANUEL PEREZ CERVANTES",
-          "JHONNY ALBERTO SALINAS SANCHEZ",
-          "ENRIQUE SANLUISEÑO GUERRERO",
-          "JOSE FRANCISCO SANTAROSA JIMENEZ",
-          "FERNANDO SERRATO TOLEDO",
-          "JOEL TOLEDO CAMPOS",
-          "JONY TORRECILLAS RODRIGUEZ",
-          "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
-          "EDUARDO ZAVALA ACOSTA",
-          "EDUARDO AGUILAR RAMIREZ",
-          "JOSE REMEDIOS GARCIA ALVAREZ",
-          "JORGE ANTONIO GASCA LINARES",
-          "LUIS LOPEZ GASCA"
-        ],
         "LEYENDAS FC": [
           "Efren Alberto Montoya",
           "Jose Eduardo Bravo Sandoval",
@@ -3654,61 +3669,9 @@
           "Jose Roberto Ramirez Tovar",
           "Eduardo Ramirez Yañez",
           "BENIGNO TOVAR AGREDA",
+          "Jose de Jesus Valenzuela Aboytes",
           "MARCO ANTONIO YAÑEZ MIRANDA",
-          "SALVADOR Yañez Miranda",
-          "Jose de Jesus Valenzuela Aboytes"
-        ],
-        "CUENDA": [
-          "MARTIN ARCIA MARTINEZ",
-          "FELICIANO CALERO SILVA",
-          "JUAN CERRITO CAMPOS",
-          "Fernando Alonso Calero Cerrito",
-          "SALVADOR GALLARDO PRIETO",
-          "ALEJANDRO GARCIA CAMPOS",
-          "JUAN HUMBERTO GARCIA MONTOYA",
-          "MIGUEL DARIO GARCIA RODRIGUEZ",
-          "Luis Alfonso Garcia Carlin",
-          "ALFREDO HERRERA GONZALEZ",
-          "Francisco Javier Herrera Pizano",
-          "ABEL LINARES CUEVAS",
-          "MARTIN MONTOYA MARTINEZ",
-          "Jesus Enrique Martinez Olivares",
-          "Eduardo Prieto Montes",
-          "JAVIER RAMIREZ RICO",
-          "JUAN NOE SIERRA GUERRERO",
-          "Rogelio Serrano Castro",
-          "GABRIEL ARRIAGA SANCHEZ"
-        ],
-        "FRANCO-TAVERA-JR": [
-          "AGUSTIN AGOSTADERO PEREZ",
-          "Juan Jesus Beltran Garcia",
-          "FRANCISCO JAVIER GARCIA GUERRERO",
-          "HECTOR HUGO MANCERA DAMIAN",
-          "Alejandro Morales Ortega",
-          "Pedro Navarrete Soledad",
-          "JOSE JESUS RAMIREZ SANTANA",
-          "LUIS EDGAR SANCHEZ HERNANDEZ",
-          "Pedro Buenavista Sandoval",
-          "CONCEPCION CASTILLO MANZANARES",
-          "JOB CRUZ CENTENO GONZALEZ",
-          "MANUEL CHAVEZ LOPEZ",
-          "JOSE MANUEL ESCUTIA PONCE",
-          "EVERARDO GODINEZ TIERRABLANCA",
-          "JAVIER GODINEZ TIERRABLANCA",
-          "Israel Hernandez Almanza",
-          "ARTURO MENDOZA GARCIA",
-          "Jose Luis Mancera Ramirez",
-          "Jose Antonio Moreno Vargas",
-          "FERNANDO OLIVARES DELGADO",
-          "VICTOR PALACIOS QUINTANILLA",
-          "Rodrigo Paramo Paramo",
-          "LUIS RAMIREZ SALINAS",
-          "JOSE RAMOS CELEDON",
-          "EDGARDO RIVERA BELMAN",
-          "Alejandro Ramirez Medina",
-          "JUAN CARLOS VARGAS JARALILLO",
-          "JOSE TRINIDAD VERA MARTINEZ",
-          "MAURICIO ZEPEDA MC LANE"
+          "SALVADOR Yañez Miranda"
         ],
         "POZOS FC": [
           "ARTURO ALBERTO ARCHUNDIA MURO",
@@ -3731,6 +3694,33 @@
           "Jorge Ramirez Huerta",
           "JOSE JESUS SAUCEDO RODRIGUEZ",
           "ALBERTO VILLAGOMEZ MANCERA"
+        ],
+        "PSV": [
+          "ENRIQUE ABOYTES CRUZ",
+          "FRANCISCO JESUS AGUIRRE CANO",
+          "LUIS FERNANDO ARREDONDO ZAVALA",
+          "Josue Valentin Alvarez Rodriguez",
+          "JOSE DOMINGO DOMPABLO GONZALEZ",
+          "Giovanni Emanuel Flores Guerrero",
+          "LUIS FERNANDO GARCIDUEÑAS CAMACHO",
+          "OMAR GUERRERO DAMIAN",
+          "JOSE LUIS GUERRERO RODRIGUEZ",
+          "Cristian Jesus Gasca Rodriguez",
+          "Jose Antonio Juarez Landin",
+          "OSCAR LOPEZ DAMIAN",
+          "Edgar Manuel Landin Ibarra",
+          "JOSE DAVID MARTINEZ FLORES",
+          "Jose Pablo Mejia Campos",
+          "Juan Mendoza Lopez",
+          "RUBEN OLIVARES GUERRERO",
+          "JOSE LUIS ORNELAS RAMIREZ",
+          "EMMANUEL PANTOJA CAPULIN",
+          "GABRIEL RUVALCABA ALMANZA",
+          "Elfrego Robles Leon",
+          "Jose Antonio Rubi Perez",
+          "Francisco Javier Solache Franco",
+          "Daniel Yañez Rangel",
+          "JOSE LUIS ZUÑIGA CERROBLANCO"
         ]
       },
       "player_usage": {},
@@ -5076,7 +5066,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 243
+      "public_player_count_scraped": 242
     },
     "3": {
       "id": 3,
@@ -6809,6 +6799,7 @@
           "Zuriel Adrian Gutierrez Valdez"
         ],
         "TERRICOLAS": [
+          "Jose Angel Gutierrez Enrique",
           "Adrian Ruvalcaba Lerma",
           "Christofer Ivanovich Olguin Rocha",
           "Angel Uriel Gutierrez Espinoza",
@@ -6821,7 +6812,6 @@
           "Jesus Emmanuel Ojodeagua Gutierrez",
           "Eduardo Martinez Vasquez",
           "JUSTO EMMANUEL PRESA GUERRERO",
-          "Jose Angel Gutierrez Enrique",
           "Rafael Martinez Lara",
           "Juan Pablo Guerrero Flores",
           "Jonathan Martinez Quintanilla",
@@ -8152,6 +8142,11 @@
           "team": "SAN JOSE FC",
           "cedulas": 6
         },
+        "JOSE ANGEL GUTIERREZ ENRIQUE": {
+          "name": "Jose Angel Gutierrez Enrique",
+          "team": "TERRICOLAS",
+          "cedulas": 5
+        },
         "ADRIAN RUVALCABA LERMA": {
           "name": "Adrian Ruvalcaba Lerma",
           "team": "TERRICOLAS",
@@ -8209,11 +8204,6 @@
         },
         "JUSTO EMMANUEL PRESA GUERRERO": {
           "name": "JUSTO EMMANUEL PRESA GUERRERO",
-          "team": "TERRICOLAS",
-          "cedulas": 5
-        },
-        "JOSE ANGEL GUTIERREZ ENRIQUE": {
-          "name": "Jose Angel Gutierrez Enrique",
           "team": "TERRICOLAS",
           "cedulas": 5
         },
@@ -10191,68 +10181,43 @@
         },
         {
           "id": 161,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/161/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/161/",
           "title": "Cédula Arbitral - HERMANOS (Primera Fuerza) vs GALACTICOS (Primera Fuerza)",
           "local": "HERMANOS",
           "away": "GALACTICOS",
-          "category": "Primera Fuerza",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Primera Fuerza"
         },
         {
           "id": 162,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/162/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/162/",
           "title": "Cédula Arbitral - NAPOLI (Primera Fuerza) vs ABEJAS (Primera Fuerza)",
           "local": "NAPOLI",
           "away": "ABEJAS",
-          "category": "Primera Fuerza",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Primera Fuerza"
         },
         {
           "id": 163,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/163/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/163/",
           "title": "Cédula Arbitral - LINCES (Primera Fuerza) vs SAN JOSE FC (Primera Fuerza)",
           "local": "LINCES",
           "away": "SAN JOSE FC",
-          "category": "Primera Fuerza",
-          "date": "27/09/2026 12:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Primera Fuerza"
         },
         {
           "id": 164,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/164/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/164/",
           "title": "Cédula Arbitral - TERRICOLAS (Primera Fuerza) vs LOBOS CDG (Primera Fuerza)",
           "local": "TERRICOLAS",
           "away": "LOBOS CDG",
-          "category": "Primera Fuerza",
-          "date": "27/09/2026 10:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Primera Fuerza"
         },
         {
           "id": 165,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/165/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/165/",
           "title": "Cédula Arbitral - FRANCO FC (Primera Fuerza) vs JUVENTUS (Primera Fuerza)",
           "local": "FRANCO FC",
           "away": "JUVENTUS",
-          "category": "Primera Fuerza",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Primera Fuerza"
         }
       ],
       "cedulas_scanned": [
@@ -12318,64 +12283,6 @@
           "Felipe Salinas Cortes",
           "Guadalupe Baltazar Salinas Banda"
         ],
-        "DEP. LA LUZ": [
-          "Daniel Lona Aguilar",
-          "Anthony Alejandro Lopez Almaraz",
-          "Jose Manuel Coyote Yañez",
-          "Edwin Eduardo Morales Ruiz",
-          "Emmanuel Guzman Gasca",
-          "Christopher Saul Guzman Gasca",
-          "SEBASTIAN OLIVARES NAVARRO",
-          "Carlos Guadalupe Ruiz Vasquez",
-          "Angel Salvador Alvarez Juarez",
-          "REY DAVID RODRIGUEZ AGUILAR",
-          "LUIS MANUEL VILLANUEVA PEREZ",
-          "LEONEL GARCIA ROMERO",
-          "Andy Aaron Arredondo Vazquez",
-          "Jonathan Trinidad Guzman Gasca",
-          "Jose Carmen Navarro Ramos",
-          "Juan Diego Cano Barron",
-          "BENJAMIN FIGUEROA ARELLANO",
-          "Ivan Montoya Enriquez",
-          "Jesus Gasca Perez",
-          "Edwin Emmanuel Torres Mendiola",
-          "Luis Alberto Zaragoza Acosta",
-          "SANTOS ALFREDO TOVAR GUZMAN",
-          "OMAR GASCA SILLERO",
-          "Pedro Dongu",
-          "Juan Carlos Rodriguez Olivares",
-          "Emmanuel Barrientos Arredondo",
-          "MIGUEL DARIO GARCIA RODRIGUEZ",
-          "Juan Diego Tovar Delgado",
-          "Jose Juan Perez Ortega",
-          "Juventino Rico Gutierrez"
-        ],
-        "PACHANGAS FC": [
-          "Carlos Manuel Aguilar Garcia",
-          "Javier Peralta Romero",
-          "Luis Julian Negrete Cervantes",
-          "Ivan Ariza Peralta",
-          "Efrain Moreno Corrales",
-          "Juan Guzman Lopez",
-          "Jose de Jesus Saucillo Ramirez",
-          "Leonardo Uriel Nieto Escalante",
-          "Carlos Sebastian Peralta Aguado",
-          "Victor Manuel Centeno Tapia",
-          "ANGEL JESUS LOPEZ CABELLO",
-          "JESUS TAPIA RODRIGUEZ",
-          "Jesus Guillermo Segura Sanchez",
-          "Rolando Moreno Mendoza",
-          "Juan Nahum Guzman Tapia",
-          "Jose Guadalupe Peralta Ibarra",
-          "BRYAN AARON LOPEZ TORRES",
-          "JOSE FRANCISCO FRANCO LANDIN",
-          "Luis Rodriguez Perez",
-          "Jose Antonio Lopez Diaz",
-          "Francisco Javier Solache Franco",
-          "Edgar Guadalupe Gamez Cabrera",
-          "Julio Cesar Badillo Hernandez",
-          "Raymundo Martin Rodriguez"
-        ],
         "SAN ANTONIO FC": [
           "Francisco Javier Ruiz Plascencia",
           "Saul Sosa Ariza",
@@ -12435,6 +12342,64 @@
           "Francisco Javier Avila Huerta",
           "Jesus Alberto Segura Rodriguez",
           "Jose Luis Aguilar Solorzano"
+        ],
+        "DEP. LA LUZ": [
+          "Daniel Lona Aguilar",
+          "Anthony Alejandro Lopez Almaraz",
+          "Jose Manuel Coyote Yañez",
+          "Edwin Eduardo Morales Ruiz",
+          "Emmanuel Guzman Gasca",
+          "Christopher Saul Guzman Gasca",
+          "SEBASTIAN OLIVARES NAVARRO",
+          "Carlos Guadalupe Ruiz Vasquez",
+          "Angel Salvador Alvarez Juarez",
+          "REY DAVID RODRIGUEZ AGUILAR",
+          "LUIS MANUEL VILLANUEVA PEREZ",
+          "LEONEL GARCIA ROMERO",
+          "Andy Aaron Arredondo Vazquez",
+          "Jonathan Trinidad Guzman Gasca",
+          "Jose Carmen Navarro Ramos",
+          "Juan Diego Cano Barron",
+          "BENJAMIN FIGUEROA ARELLANO",
+          "Ivan Montoya Enriquez",
+          "Jesus Gasca Perez",
+          "Edwin Emmanuel Torres Mendiola",
+          "Luis Alberto Zaragoza Acosta",
+          "SANTOS ALFREDO TOVAR GUZMAN",
+          "OMAR GASCA SILLERO",
+          "Pedro Dongu",
+          "Juan Carlos Rodriguez Olivares",
+          "Emmanuel Barrientos Arredondo",
+          "MIGUEL DARIO GARCIA RODRIGUEZ",
+          "Juan Diego Tovar Delgado",
+          "Jose Juan Perez Ortega",
+          "Juventino Rico Gutierrez"
+        ],
+        "PACHANGAS FC": [
+          "Carlos Manuel Aguilar Garcia",
+          "Javier Peralta Romero",
+          "Luis Julian Negrete Cervantes",
+          "Ivan Ariza Peralta",
+          "Efrain Moreno Corrales",
+          "Juan Guzman Lopez",
+          "Jose de Jesus Saucillo Ramirez",
+          "Leonardo Uriel Nieto Escalante",
+          "Carlos Sebastian Peralta Aguado",
+          "Victor Manuel Centeno Tapia",
+          "ANGEL JESUS LOPEZ CABELLO",
+          "JESUS TAPIA RODRIGUEZ",
+          "Jesus Guillermo Segura Sanchez",
+          "Rolando Moreno Mendoza",
+          "Juan Nahum Guzman Tapia",
+          "Jose Guadalupe Peralta Ibarra",
+          "BRYAN AARON LOPEZ TORRES",
+          "JOSE FRANCISCO FRANCO LANDIN",
+          "Luis Rodriguez Perez",
+          "Jose Antonio Lopez Diaz",
+          "Francisco Javier Solache Franco",
+          "Edgar Guadalupe Gamez Cabrera",
+          "Julio Cesar Badillo Hernandez",
+          "Raymundo Martin Rodriguez"
         ]
       },
       "player_usage": {
@@ -13538,6 +13503,286 @@
           "team": "TAPATIO",
           "cedulas": 6
         },
+        "FRANCISCO JAVIER RUIZ PLASCENCIA": {
+          "name": "Francisco Javier Ruiz Plascencia",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "SAUL SOSA ARIZA": {
+          "name": "Saul Sosa Ariza",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "AGUSTIN BATRES RUBIO": {
+          "name": "Agustin Batres Rubio",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EDGAR TIERRABLANCA MARTINEZ": {
+          "name": "Edgar Tierrablanca Martinez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "OSCAR DANIEL SEGURA SANCHEZ": {
+          "name": "Oscar Daniel Segura Sanchez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "MARIO PEREZ LOPEZ": {
+          "name": "Mario Perez Lopez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "MOISES AGUIRRE GARCIA": {
+          "name": "Moises Aguirre Garcia",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "HUMBERTO PALACIO AGUILAR": {
+          "name": "Humberto Palacio Aguilar",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EDGARDO AGUIRRE GARCIA": {
+          "name": "Edgardo Aguirre Garcia",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "ALEXANDER ARIZA ZERMENO": {
+          "name": "Alexander Ariza Zermeño",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "ESAU PEREZ HERNANDEZ": {
+          "name": "Esau Perez Hernandez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JOSE ENRIQUE CERVANTES PEREZ": {
+          "name": "Jose Enrique Cervantes Perez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JOSE MANUEL PRESA TREJO": {
+          "name": "Jose Manuel Presa Trejo",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "ALBERTO MACIAS NORIA": {
+          "name": "Alberto Macias Noria",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JUAN PABLO MACIAS NORIA": {
+          "name": "Juan Pablo Macias Noria",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EFRAIN PEREZ LOPEZ": {
+          "name": "Efrain Perez Lopez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EDUARDO CAMPOS GODINEZ": {
+          "name": "Eduardo Campos Godinez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JOSE MANUEL GOMEZ HERNANDEZ": {
+          "name": "Jose Manuel Gomez Hernandez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JUAN MARTIN MANZANAREZ LOPEZ": {
+          "name": "Juan Martin Manzanarez Lopez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JOSE JULIAN FIGUEROA CANO": {
+          "name": "Jose Julian Figueroa Cano",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "LUIS FERNANDO LOPEZ VASQUEZ": {
+          "name": "Luis Fernando Lopez Vasquez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JUAN DEMETRIO PRESA TREJO": {
+          "name": "Juan Demetrio Presa Trejo",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "DAVE RICARDO GUERRERO RAMIREZ": {
+          "name": "Dave Ricardo Guerrero Ramirez",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EFRAIN GUTIERREZ LUCIO": {
+          "name": "Efrain Gutierrez Lucio",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JUAN PALACIO AGUILAR": {
+          "name": "Juan Palacio Aguilar",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "JOSE ALBERTO AGUILAR OJEDA": {
+          "name": "Jose Alberto Aguilar Ojeda",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "CHRISTOPHER ALEXIS MERINO DOMPABLO": {
+          "name": "Christopher Alexis Merino Dompablo",
+          "team": "SAN ANTONIO FC",
+          "cedulas": 6
+        },
+        "EDWIN OSVALDO CENTENO GONZALEZ": {
+          "name": "Edwin Osvaldo Centeno Gonzalez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE FIDEL MONDRAGON ESPINOZA": {
+          "name": "Jose Fidel Mondragon Espinoza",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "CARLOS EDUARDO NOLASCO RAMIREZ": {
+          "name": "Carlos Eduardo Nolasco Ramirez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE LARA FLORES": {
+          "name": "Jose Lara Flores",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "LUIS DAVID MENDOZA NORIA": {
+          "name": "Luis David Mendoza Noria",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "ROBERTO HERNANDEZ ALMANZA": {
+          "name": "Roberto Hernandez Almanza",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JUAN ANTONIO VIDAL CHAYRE": {
+          "name": "Juan Antonio Vidal Chayre",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "EDGARDO RIVERA BELMAN": {
+          "name": "EDGARDO RIVERA BELMAN",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "MIGUEL ANGEL PARAMO SANTA ROSA": {
+          "name": "Miguel  Angel Paramo Santa Rosa",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "ISRAEL HERNANDEZ ALMANZA": {
+          "name": "Israel Hernandez Almanza",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE ANTONIO ZARATE AGUILERA": {
+          "name": "Jose Antonio Zarate Aguilera",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "ISRAEL HERNANDEZ ARIZA": {
+          "name": "Israel Hernandez Ariza",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOB CRUZ CENTENO GONZALEZ": {
+          "name": "JOB CRUZ CENTENO GONZALEZ",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "OSCAR RUIZ RAMIREZ": {
+          "name": "Oscar Ruiz Ramirez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JESUS ALEJANDRO AGUILAR RAMIREZ": {
+          "name": "Jesus Alejandro Aguilar Ramirez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "RAFAEL HERNANDEZ ALMANZA": {
+          "name": "Rafael Hernandez Almanza",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "EDGAR MENDOZA MORA": {
+          "name": "Edgar Mendoza Mora",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "MIGUEL ANGEL LARA FLORES": {
+          "name": "Miguel Angel Lara Flores",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "MOISES GUDALUPE ARCE GUTIERREZ": {
+          "name": "Moises Gudalupe Arce Gutierrez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "HONORIO OCHOA AGUILAR": {
+          "name": "Honorio Ochoa Aguilar",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JUAN YUNUEN ARELLANO JUAREZ": {
+          "name": "Juan Yunuen Arellano Juarez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSUE MARTINEZ CASTILLO": {
+          "name": "Josue Martinez Castillo",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JUAN DIEGO MENDOZA GAMEZ": {
+          "name": "Juan Diego Mendoza Gamez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE EMMANUEL MARTINEZ MENDOZA": {
+          "name": "JOSE EMMANUEL MARTINEZ MENDOZA",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE ERNESTO RAMIREZ AGOSTADERO": {
+          "name": "Jose Ernesto Ramirez Agostadero",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "OMAR OLIVARES PAZ": {
+          "name": "Omar Olivares Paz",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "FRANCISCO JAVIER AVILA HUERTA": {
+          "name": "Francisco Javier Avila Huerta",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JESUS ALBERTO SEGURA RODRIGUEZ": {
+          "name": "Jesus Alberto Segura Rodriguez",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
+        "JOSE LUIS AGUILAR SOLORZANO": {
+          "name": "Jose Luis Aguilar Solorzano",
+          "team": "TAVERA FC",
+          "cedulas": 6
+        },
         "DANIEL LONA AGUILAR": {
           "name": "Daniel Lona Aguilar",
           "team": "DEP. LA LUZ",
@@ -13807,286 +14052,6 @@
           "name": "Raymundo Martin Rodriguez",
           "team": "PACHANGAS FC",
           "cedulas": 6
-        },
-        "FRANCISCO JAVIER RUIZ PLASCENCIA": {
-          "name": "Francisco Javier Ruiz Plascencia",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "SAUL SOSA ARIZA": {
-          "name": "Saul Sosa Ariza",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "AGUSTIN BATRES RUBIO": {
-          "name": "Agustin Batres Rubio",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EDGAR TIERRABLANCA MARTINEZ": {
-          "name": "Edgar Tierrablanca Martinez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "OSCAR DANIEL SEGURA SANCHEZ": {
-          "name": "Oscar Daniel Segura Sanchez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "MARIO PEREZ LOPEZ": {
-          "name": "Mario Perez Lopez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "MOISES AGUIRRE GARCIA": {
-          "name": "Moises Aguirre Garcia",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "HUMBERTO PALACIO AGUILAR": {
-          "name": "Humberto Palacio Aguilar",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EDGARDO AGUIRRE GARCIA": {
-          "name": "Edgardo Aguirre Garcia",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "ALEXANDER ARIZA ZERMENO": {
-          "name": "Alexander Ariza Zermeño",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "ESAU PEREZ HERNANDEZ": {
-          "name": "Esau Perez Hernandez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JOSE ENRIQUE CERVANTES PEREZ": {
-          "name": "Jose Enrique Cervantes Perez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JOSE MANUEL PRESA TREJO": {
-          "name": "Jose Manuel Presa Trejo",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "ALBERTO MACIAS NORIA": {
-          "name": "Alberto Macias Noria",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JUAN PABLO MACIAS NORIA": {
-          "name": "Juan Pablo Macias Noria",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EFRAIN PEREZ LOPEZ": {
-          "name": "Efrain Perez Lopez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EDUARDO CAMPOS GODINEZ": {
-          "name": "Eduardo Campos Godinez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JOSE MANUEL GOMEZ HERNANDEZ": {
-          "name": "Jose Manuel Gomez Hernandez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JUAN MARTIN MANZANAREZ LOPEZ": {
-          "name": "Juan Martin Manzanarez Lopez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JOSE JULIAN FIGUEROA CANO": {
-          "name": "Jose Julian Figueroa Cano",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "LUIS FERNANDO LOPEZ VASQUEZ": {
-          "name": "Luis Fernando Lopez Vasquez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JUAN DEMETRIO PRESA TREJO": {
-          "name": "Juan Demetrio Presa Trejo",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "DAVE RICARDO GUERRERO RAMIREZ": {
-          "name": "Dave Ricardo Guerrero Ramirez",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EFRAIN GUTIERREZ LUCIO": {
-          "name": "Efrain Gutierrez Lucio",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JUAN PALACIO AGUILAR": {
-          "name": "Juan Palacio Aguilar",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "JOSE ALBERTO AGUILAR OJEDA": {
-          "name": "Jose Alberto Aguilar Ojeda",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "CHRISTOPHER ALEXIS MERINO DOMPABLO": {
-          "name": "Christopher Alexis Merino Dompablo",
-          "team": "SAN ANTONIO FC",
-          "cedulas": 5
-        },
-        "EDWIN OSVALDO CENTENO GONZALEZ": {
-          "name": "Edwin Osvaldo Centeno Gonzalez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE FIDEL MONDRAGON ESPINOZA": {
-          "name": "Jose Fidel Mondragon Espinoza",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "CARLOS EDUARDO NOLASCO RAMIREZ": {
-          "name": "Carlos Eduardo Nolasco Ramirez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE LARA FLORES": {
-          "name": "Jose Lara Flores",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "LUIS DAVID MENDOZA NORIA": {
-          "name": "Luis David Mendoza Noria",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "ROBERTO HERNANDEZ ALMANZA": {
-          "name": "Roberto Hernandez Almanza",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JUAN ANTONIO VIDAL CHAYRE": {
-          "name": "Juan Antonio Vidal Chayre",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "EDGARDO RIVERA BELMAN": {
-          "name": "EDGARDO RIVERA BELMAN",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "MIGUEL ANGEL PARAMO SANTA ROSA": {
-          "name": "Miguel  Angel Paramo Santa Rosa",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "ISRAEL HERNANDEZ ALMANZA": {
-          "name": "Israel Hernandez Almanza",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE ANTONIO ZARATE AGUILERA": {
-          "name": "Jose Antonio Zarate Aguilera",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "ISRAEL HERNANDEZ ARIZA": {
-          "name": "Israel Hernandez Ariza",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOB CRUZ CENTENO GONZALEZ": {
-          "name": "JOB CRUZ CENTENO GONZALEZ",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "OSCAR RUIZ RAMIREZ": {
-          "name": "Oscar Ruiz Ramirez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JESUS ALEJANDRO AGUILAR RAMIREZ": {
-          "name": "Jesus Alejandro Aguilar Ramirez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "RAFAEL HERNANDEZ ALMANZA": {
-          "name": "Rafael Hernandez Almanza",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "EDGAR MENDOZA MORA": {
-          "name": "Edgar Mendoza Mora",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "MIGUEL ANGEL LARA FLORES": {
-          "name": "Miguel Angel Lara Flores",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "MOISES GUDALUPE ARCE GUTIERREZ": {
-          "name": "Moises Gudalupe Arce Gutierrez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "HONORIO OCHOA AGUILAR": {
-          "name": "Honorio Ochoa Aguilar",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JUAN YUNUEN ARELLANO JUAREZ": {
-          "name": "Juan Yunuen Arellano Juarez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSUE MARTINEZ CASTILLO": {
-          "name": "Josue Martinez Castillo",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JUAN DIEGO MENDOZA GAMEZ": {
-          "name": "Juan Diego Mendoza Gamez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE EMMANUEL MARTINEZ MENDOZA": {
-          "name": "JOSE EMMANUEL MARTINEZ MENDOZA",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE ERNESTO RAMIREZ AGOSTADERO": {
-          "name": "Jose Ernesto Ramirez Agostadero",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "OMAR OLIVARES PAZ": {
-          "name": "Omar Olivares Paz",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "FRANCISCO JAVIER AVILA HUERTA": {
-          "name": "Francisco Javier Avila Huerta",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JESUS ALBERTO SEGURA RODRIGUEZ": {
-          "name": "Jesus Alberto Segura Rodriguez",
-          "team": "TAVERA FC",
-          "cedulas": 5
-        },
-        "JOSE LUIS AGUILAR SOLORZANO": {
-          "name": "Jose Luis Aguilar Solorzano",
-          "team": "TAVERA FC",
-          "cedulas": 5
         },
         "ISMAEL JUAREZ ALDAVERA S": {
           "name": "Ismael Juarez Aldavera S",
@@ -16076,6 +16041,14 @@
           "category": "Segunda Fuerza"
         },
         {
+          "id": 369,
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/369/",
+          "title": "Cédula Arbitral - SAN ANTONIO FC (Segunda Fuerza) vs TAVERA FC (Segunda Fuerza)",
+          "local": "SAN ANTONIO FC",
+          "away": "TAVERA FC",
+          "category": "Segunda Fuerza"
+        },
+        {
           "id": 370,
           "url": "https://www.juventinorosasliga.com/cedula-arbitral/370/",
           "title": "Cédula Arbitral - DEP. LA LUZ (Segunda Fuerza) vs PACHANGAS FC (Segunda Fuerza)",
@@ -16277,81 +16250,51 @@
         },
         {
           "id": 395,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/395/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/395/",
           "title": "Cédula Arbitral - CELTICOS (Segunda Fuerza) vs BARZA (Segunda Fuerza)",
           "local": "CELTICOS",
           "away": "BARZA",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 12:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         },
         {
           "id": 396,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/396/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/396/",
           "title": "Cédula Arbitral - DEP. ZAPATA (Segunda Fuerza) vs SAN ANTONIO FC (Segunda Fuerza)",
           "local": "DEP. ZAPATA",
           "away": "SAN ANTONIO FC",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 12:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         },
         {
           "id": 397,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/397/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/397/",
           "title": "Cédula Arbitral - TAVERA FC (Segunda Fuerza) vs TAPATIO (Segunda Fuerza)",
           "local": "TAVERA FC",
           "away": "TAPATIO",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 12:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         },
         {
           "id": 398,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/398/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/398/",
           "title": "Cédula Arbitral - PACHANGAS FC (Segunda Fuerza) vs DEP. NOPALERO (Segunda Fuerza)",
           "local": "PACHANGAS FC",
           "away": "DEP. NOPALERO",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         },
         {
           "id": 399,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/399/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/399/",
           "title": "Cédula Arbitral - SAN JULIAN (Segunda Fuerza) vs SAN JUAN FC (Segunda Fuerza)",
           "local": "SAN JULIAN",
           "away": "SAN JUAN FC",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         },
         {
           "id": 400,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/400/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/400/",
           "title": "Cédula Arbitral - DEP. LA LUZ (Segunda Fuerza) vs SAN JOSE JRS (Segunda Fuerza)",
           "local": "DEP. LA LUZ",
           "away": "SAN JOSE JRS",
-          "category": "Segunda Fuerza",
-          "date": "27/09/2026 10:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Segunda Fuerza"
         }
       ],
       "cedulas_scanned": [
@@ -16359,6 +16302,7 @@
         366,
         367,
         368,
+        369,
         370,
         371,
         372,
@@ -18548,6 +18492,61 @@
         }
       ],
       "rosters": {
+        "ALDAMA FC": [
+          "Eber Daniel Mosqueda Lopez",
+          "Jesus Gomez Valadez",
+          "Juan Carlos Barron Cano",
+          "Jonathan Alexander Vera Rosales",
+          "SAMUEL Manzo Diaz De Leon",
+          "Jose Alfredo Lopez Perez",
+          "Daniel Yañez Rangel",
+          "JOSE RAMON ARELLANO MANCERA",
+          "Javier Ivan Guerrero Jimenez",
+          "Francisco Vera Martinez",
+          "Edgar Manuel Landin Ibarra",
+          "ANGEL GABRIEL CERVANTES OJEDA",
+          "Jairo Juan Luna Belman",
+          "Juan Antonio Marquez Mendoza",
+          "Juan Jose Lopez Lucio",
+          "Cecilio Ramos Rangel",
+          "Francisco Cabello Castillo",
+          "Alessandro Ortega Belman",
+          "Oscar Arellano Mancera",
+          "Gerardo Belman Navarro",
+          "Alejandro Gonzalez Cervantes",
+          "Marco Polo Landin Ibarra",
+          "Carlos Alberto Gamez Lara",
+          "Pedro Daniel Aguado Ortega",
+          "Jaime Yañez Rangel",
+          "Demetrio Ramirez Subias",
+          "Juan Carlos Lerma Cerritos",
+          "Jose Luis Zuñiga Gonzalez",
+          "Gabriel Cano Gonzalez",
+          "Giovanni Adrian Lopez Romero"
+        ],
+        "ATL. GALEANA": [
+          "Jonathan Mares Olivares",
+          "Erik Antonio Gonzalez Mesita",
+          "Alejandro Montecino Ramos",
+          "Cristian Martin Rodriguez Godinez",
+          "Carlos Enrique Hernandez Yupe",
+          "Enrique Juarez Merino",
+          "Martin Hortelano Luna",
+          "Cristian Peralta Ariza",
+          "Alejandro Guerrero Rodriguez",
+          "Luis Angel Castillo Garcia",
+          "Daniel Solorzano Lopez",
+          "Jose Daniel Garcia Cano",
+          "Juan Pablo Rangel Toledo",
+          "Edgar Roque Flores",
+          "Orlando Herrera Guzman",
+          "Pedro Cesar Olvera Calero",
+          "Luis Gerardo Gonzalez Ruiz",
+          "Eric Lopez Solorzano",
+          "Nestor Raymundo Mendoza Castillo",
+          "Marco Antonio Sillero Zarate",
+          "Jose Guadalupe Valencia Luna"
+        ],
         "CAPIBARAS": [
           "Santiago Mendoza Vazquez",
           "Diego Armando Hurtado Grueso",
@@ -18711,7 +18710,6 @@
           "Edson Jordy Gonzalez Reynoso",
           "Eric Antonio Medina Lopez",
           "Eric Fernando Dongu Guerrero",
-          "Luis Jimenez Zarate",
           "Dylan Guadalupe Aguilar Zarate",
           "Gerardo Lopez Guerrero",
           "Miguel Angel Arias Rubio",
@@ -18724,6 +18722,7 @@
           "Juan Jose Medina Lopez",
           "David Israel Aguado Ibarra",
           "Luis Emiliano Guerrero Ortega",
+          "Luis Jimenez Zarate",
           "Diego Jesus Grangeno Lopez",
           "Salvador Cortes Flores",
           "Martin Lopez Guerrero"
@@ -18781,6 +18780,33 @@
           "Miguel Angel Herrera Rico",
           "JOHAN ANDRES GONZALEZ GASCA"
         ],
+        "OSASUNA": [
+          "Vladimir Hernandez Luna",
+          "Jose Manuel Calero Cerrito",
+          "Antonio Grangeno Paramo",
+          "Rodrigo Paramo Paramo",
+          "Jose Manuel Zarate Calero",
+          "Asuncion Hernandez Hernandez",
+          "Alvaro Alejandro Delgado Oochoa",
+          "Sergio Alexis Flores Guerrero",
+          "Pedro Lopez",
+          "Ricardo Martinez Herrera",
+          "Israel Lopez Ramirez",
+          "Salvador Ramirez Martinez",
+          "Leonel Miller Martinez Merino",
+          "Jonathan Ulises Lopez Gonzalez",
+          "Jose Leonardo Huichapa Rodriguez",
+          "Luis Enrique Lopez Reyna",
+          "Francisco Javier Vasquez Cacique",
+          "Oscar Uriel Paramo Guerrero",
+          "Juan Manuel Lopez Ariza",
+          "Oswaldo Gabriel Torres Solorzano",
+          "Adrian Arzate Guerrero",
+          "Juan Jose Obrajero Rodriguez",
+          "Alan Jesus Ramirez Vega",
+          "Fernando Franco Mendoza",
+          "Giovanni Emanuel Flores Guerrero"
+        ],
         "DEP. MARAVILLAS": [
           "JOSE GERARDO GARCIA PEREZ",
           "CESAR EDUARDO SALAZAR RODRIGUEZ",
@@ -18803,29 +18829,6 @@
           "JOSE JESUS SANCHEZ MATA",
           "LUIS JONATHAN AGUILAR GERVACIO",
           "VICTOR MANUEL ARGUELLO ALBERTO"
-        ],
-        "ATL. GALEANA": [
-          "Jonathan Mares Olivares",
-          "Erik Antonio Gonzalez Mesita",
-          "Alejandro Montecino Ramos",
-          "Cristian Martin Rodriguez Godinez",
-          "Carlos Enrique Hernandez Yupe",
-          "Enrique Juarez Merino",
-          "Martin Hortelano Luna",
-          "Cristian Peralta Ariza",
-          "Alejandro Guerrero Rodriguez",
-          "Luis Angel Castillo Garcia",
-          "Daniel Solorzano Lopez",
-          "Jose Daniel Garcia Cano",
-          "Juan Pablo Rangel Toledo",
-          "Edgar Roque Flores",
-          "Orlando Herrera Guzman",
-          "Pedro Cesar Olvera Calero",
-          "Luis Gerardo Gonzalez Ruiz",
-          "Eric Lopez Solorzano",
-          "Nestor Raymundo Mendoza Castillo",
-          "Marco Antonio Sillero Zarate",
-          "Jose Guadalupe Valencia Luna"
         ],
         "SAN ANTONIO JRS": [
           "Ismael Hortelano Cerrito",
@@ -18854,68 +18857,264 @@
           "Alexis Arturo Nolasco Garcia",
           "JUAN DIEGO CASTILLO CUEVAS",
           "Aaron Aguilar Gutierrez"
-        ],
-        "OSASUNA": [
-          "Vladimir Hernandez Luna",
-          "Jose Manuel Calero Cerrito",
-          "Antonio Grangeno Paramo",
-          "Rodrigo Paramo Paramo",
-          "Jose Manuel Zarate Calero",
-          "Asuncion Hernandez Hernandez",
-          "Alvaro Alejandro Delgado Oochoa",
-          "Sergio Alexis Flores Guerrero",
-          "Pedro Lopez",
-          "Ricardo Martinez Herrera",
-          "Israel Lopez Ramirez",
-          "Salvador Ramirez Martinez",
-          "Leonel Miller Martinez Merino",
-          "Jonathan Ulises Lopez Gonzalez",
-          "Jose Leonardo Huichapa Rodriguez",
-          "Luis Enrique Lopez Reyna",
-          "Francisco Javier Vasquez Cacique",
-          "Oscar Uriel Paramo Guerrero",
-          "Juan Manuel Lopez Ariza",
-          "Oswaldo Gabriel Torres Solorzano",
-          "Adrian Arzate Guerrero",
-          "Juan Jose Obrajero Rodriguez",
-          "Alan Jesus Ramirez Vega",
-          "Fernando Franco Mendoza",
-          "Giovanni Emanuel Flores Guerrero"
-        ],
-        "ALDAMA FC": [
-          "Eber Daniel Mosqueda Lopez",
-          "Jesus Gomez Valadez",
-          "Juan Carlos Barron Cano",
-          "Jonathan Alexander Vera Rosales",
-          "SAMUEL Manzo Diaz De Leon",
-          "Jose Alfredo Lopez Perez",
-          "Daniel Yañez Rangel",
-          "JOSE RAMON ARELLANO MANCERA",
-          "Javier Ivan Guerrero Jimenez",
-          "Francisco Vera Martinez",
-          "Edgar Manuel Landin Ibarra",
-          "ANGEL GABRIEL CERVANTES OJEDA",
-          "Jairo Juan Luna Belman",
-          "Juan Antonio Marquez Mendoza",
-          "Juan Jose Lopez Lucio",
-          "Cecilio Ramos Rangel",
-          "Francisco Cabello Castillo",
-          "Alessandro Ortega Belman",
-          "Oscar Arellano Mancera",
-          "Gerardo Belman Navarro",
-          "Alejandro Gonzalez Cervantes",
-          "Marco Polo Landin Ibarra",
-          "Carlos Alberto Gamez Lara",
-          "Pedro Daniel Aguado Ortega",
-          "Jaime Yañez Rangel",
-          "Demetrio Ramirez Subias",
-          "Juan Carlos Lerma Cerritos",
-          "Jose Luis Zuñiga Gonzalez",
-          "Gabriel Cano Gonzalez",
-          "Giovanni Adrian Lopez Romero"
         ]
       },
       "player_usage": {
+        "EBER DANIEL MOSQUEDA LOPEZ": {
+          "name": "Eber Daniel Mosqueda Lopez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JESUS GOMEZ VALADEZ": {
+          "name": "Jesus Gomez Valadez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JUAN CARLOS BARRON CANO": {
+          "name": "Juan Carlos Barron Cano",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JONATHAN ALEXANDER VERA ROSALES": {
+          "name": "Jonathan Alexander Vera Rosales",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "SAMUEL MANZO DIAZ DE LEON": {
+          "name": "SAMUEL Manzo Diaz De Leon",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JOSE ALFREDO LOPEZ PEREZ": {
+          "name": "Jose Alfredo Lopez Perez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "DANIEL YANEZ RANGEL": {
+          "name": "Daniel Yañez Rangel",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JOSE RAMON ARELLANO MANCERA": {
+          "name": "JOSE RAMON ARELLANO MANCERA",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JAVIER IVAN GUERRERO JIMENEZ": {
+          "name": "Javier Ivan Guerrero Jimenez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "FRANCISCO VERA MARTINEZ": {
+          "name": "Francisco Vera Martinez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "EDGAR MANUEL LANDIN IBARRA": {
+          "name": "Edgar Manuel Landin Ibarra",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "ANGEL GABRIEL CERVANTES OJEDA": {
+          "name": "ANGEL GABRIEL CERVANTES OJEDA",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JAIRO JUAN LUNA BELMAN": {
+          "name": "Jairo Juan Luna Belman",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JUAN ANTONIO MARQUEZ MENDOZA": {
+          "name": "Juan Antonio Marquez Mendoza",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JUAN JOSE LOPEZ LUCIO": {
+          "name": "Juan Jose Lopez Lucio",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "CECILIO RAMOS RANGEL": {
+          "name": "Cecilio Ramos Rangel",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "FRANCISCO CABELLO CASTILLO": {
+          "name": "Francisco Cabello Castillo",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "ALESSANDRO ORTEGA BELMAN": {
+          "name": "Alessandro Ortega Belman",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "OSCAR ARELLANO MANCERA": {
+          "name": "Oscar Arellano Mancera",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "GERARDO BELMAN NAVARRO": {
+          "name": "Gerardo Belman Navarro",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "ALEJANDRO GONZALEZ CERVANTES": {
+          "name": "Alejandro Gonzalez Cervantes",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "MARCO POLO LANDIN IBARRA": {
+          "name": "Marco Polo Landin Ibarra",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "CARLOS ALBERTO GAMEZ LARA": {
+          "name": "Carlos Alberto Gamez Lara",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "PEDRO DANIEL AGUADO ORTEGA": {
+          "name": "Pedro Daniel Aguado Ortega",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JAIME YANEZ RANGEL": {
+          "name": "Jaime Yañez Rangel",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "DEMETRIO RAMIREZ SUBIAS": {
+          "name": "Demetrio Ramirez Subias",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JUAN CARLOS LERMA CERRITOS": {
+          "name": "Juan Carlos Lerma Cerritos",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JOSE LUIS ZUNIGA GONZALEZ": {
+          "name": "Jose Luis Zuñiga Gonzalez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "GABRIEL CANO GONZALEZ": {
+          "name": "Gabriel Cano Gonzalez",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "GIOVANNI ADRIAN LOPEZ ROMERO": {
+          "name": "Giovanni Adrian Lopez Romero",
+          "team": "ALDAMA FC",
+          "cedulas": 6
+        },
+        "JONATHAN MARES OLIVARES": {
+          "name": "Jonathan Mares Olivares",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ERIK ANTONIO GONZALEZ MESITA": {
+          "name": "Erik Antonio Gonzalez Mesita",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ALEJANDRO MONTECINO RAMOS": {
+          "name": "Alejandro Montecino Ramos",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "CRISTIAN MARTIN RODRIGUEZ GODINEZ": {
+          "name": "Cristian Martin Rodriguez Godinez",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "CARLOS ENRIQUE HERNANDEZ YUPE": {
+          "name": "Carlos Enrique Hernandez Yupe",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ENRIQUE JUAREZ MERINO": {
+          "name": "Enrique Juarez Merino",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "MARTIN HORTELANO LUNA": {
+          "name": "Martin Hortelano Luna",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "CRISTIAN PERALTA ARIZA": {
+          "name": "Cristian Peralta Ariza",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ALEJANDRO GUERRERO RODRIGUEZ": {
+          "name": "Alejandro Guerrero Rodriguez",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "LUIS ANGEL CASTILLO GARCIA": {
+          "name": "Luis Angel Castillo Garcia",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "DANIEL SOLORZANO LOPEZ": {
+          "name": "Daniel Solorzano Lopez",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "JOSE DANIEL GARCIA CANO": {
+          "name": "Jose Daniel Garcia Cano",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "JUAN PABLO RANGEL TOLEDO": {
+          "name": "Juan Pablo Rangel Toledo",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "EDGAR ROQUE FLORES": {
+          "name": "Edgar Roque Flores",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ORLANDO HERRERA GUZMAN": {
+          "name": "Orlando Herrera Guzman",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "PEDRO CESAR OLVERA CALERO": {
+          "name": "Pedro Cesar Olvera Calero",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "LUIS GERARDO GONZALEZ RUIZ": {
+          "name": "Luis Gerardo Gonzalez Ruiz",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "ERIC LOPEZ SOLORZANO": {
+          "name": "Eric Lopez Solorzano",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "NESTOR RAYMUNDO MENDOZA CASTILLO": {
+          "name": "Nestor Raymundo Mendoza Castillo",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "MARCO ANTONIO SILLERO ZARATE": {
+          "name": "Marco Antonio Sillero Zarate",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
+        "JOSE GUADALUPE VALENCIA LUNA": {
+          "name": "Jose Guadalupe Valencia Luna",
+          "team": "ATL. GALEANA",
+          "cedulas": 6
+        },
         "SANTIAGO MENDOZA VAZQUEZ": {
           "name": "Santiago Mendoza Vazquez",
           "team": "CAPIBARAS",
@@ -19676,11 +19875,6 @@
           "team": "MALVINAS",
           "cedulas": 6
         },
-        "LUIS JIMENEZ ZARATE": {
-          "name": "Luis Jimenez Zarate",
-          "team": "MALVINAS",
-          "cedulas": 6
-        },
         "DYLAN GUADALUPE AGUILAR ZARATE": {
           "name": "Dylan Guadalupe Aguilar Zarate",
           "team": "MALVINAS",
@@ -19738,6 +19932,11 @@
         },
         "LUIS EMILIANO GUERRERO ORTEGA": {
           "name": "Luis Emiliano Guerrero Ortega",
+          "team": "MALVINAS",
+          "cedulas": 6
+        },
+        "LUIS JIMENEZ ZARATE": {
+          "name": "Luis Jimenez Zarate",
           "team": "MALVINAS",
           "cedulas": 6
         },
@@ -20001,215 +20200,235 @@
           "team": "LA CUADRILLA",
           "cedulas": 6
         },
+        "VLADIMIR HERNANDEZ LUNA": {
+          "name": "Vladimir Hernandez Luna",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JOSE MANUEL CALERO CERRITO": {
+          "name": "Jose Manuel Calero Cerrito",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ANTONIO GRANGENO PARAMO": {
+          "name": "Antonio Grangeno Paramo",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "RODRIGO PARAMO PARAMO": {
+          "name": "Rodrigo Paramo Paramo",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JOSE MANUEL ZARATE CALERO": {
+          "name": "Jose Manuel Zarate Calero",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ASUNCION HERNANDEZ HERNANDEZ": {
+          "name": "Asuncion Hernandez Hernandez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ALVARO ALEJANDRO DELGADO OOCHOA": {
+          "name": "Alvaro Alejandro Delgado Oochoa",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "SERGIO ALEXIS FLORES GUERRERO": {
+          "name": "Sergio Alexis Flores Guerrero",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "PEDRO LOPEZ": {
+          "name": "Pedro Lopez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "RICARDO MARTINEZ HERRERA": {
+          "name": "Ricardo Martinez Herrera",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ISRAEL LOPEZ RAMIREZ": {
+          "name": "Israel Lopez Ramirez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "SALVADOR RAMIREZ MARTINEZ": {
+          "name": "Salvador Ramirez Martinez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "LEONEL MILLER MARTINEZ MERINO": {
+          "name": "Leonel Miller Martinez Merino",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JONATHAN ULISES LOPEZ GONZALEZ": {
+          "name": "Jonathan Ulises Lopez Gonzalez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JOSE LEONARDO HUICHAPA RODRIGUEZ": {
+          "name": "Jose Leonardo Huichapa Rodriguez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "LUIS ENRIQUE LOPEZ REYNA": {
+          "name": "Luis Enrique Lopez Reyna",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "FRANCISCO JAVIER VASQUEZ CACIQUE": {
+          "name": "Francisco Javier Vasquez Cacique",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "OSCAR URIEL PARAMO GUERRERO": {
+          "name": "Oscar Uriel Paramo Guerrero",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JUAN MANUEL LOPEZ ARIZA": {
+          "name": "Juan Manuel Lopez Ariza",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "OSWALDO GABRIEL TORRES SOLORZANO": {
+          "name": "Oswaldo Gabriel Torres Solorzano",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ADRIAN ARZATE GUERRERO": {
+          "name": "Adrian Arzate Guerrero",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "JUAN JOSE OBRAJERO RODRIGUEZ": {
+          "name": "Juan Jose Obrajero Rodriguez",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "ALAN JESUS RAMIREZ VEGA": {
+          "name": "Alan Jesus Ramirez Vega",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "FERNANDO FRANCO MENDOZA": {
+          "name": "Fernando Franco Mendoza",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
+        "GIOVANNI EMANUEL FLORES GUERRERO": {
+          "name": "Giovanni Emanuel Flores Guerrero",
+          "team": "OSASUNA",
+          "cedulas": 5
+        },
         "JOSE GERARDO GARCIA PEREZ": {
           "name": "JOSE GERARDO GARCIA PEREZ",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "CESAR EDUARDO SALAZAR RODRIGUEZ": {
           "name": "CESAR EDUARDO SALAZAR RODRIGUEZ",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JUAN DANIEL RAMIREZ ARGUELLO": {
           "name": "JUAN DANIEL RAMIREZ ARGUELLO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JOSE ARMANDO ARGUELLO ALBERTO": {
           "name": "JOSE ARMANDO ARGUELLO ALBERTO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JUAN ROBLES ROMERO": {
           "name": "JUAN ROBLES ROMERO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JAVIER TORRES GARCIA": {
           "name": "JAVIER TORRES GARCIA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "MAURICIO IGNACIO ROSALES OCHOA": {
           "name": "MAURICIO IGNACIO ROSALES OCHOA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "DIEGO TORRES SALOMON": {
           "name": "DIEGO TORRES SALOMON",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JUAN DIEGO MENDOZA GASCA": {
           "name": "JUAN DIEGO MENDOZA GASCA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "DIEGO ARMANDO SEBASTIAN DELGADO": {
           "name": "DIEGO ARMANDO SEBASTIAN DELGADO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JOSE OMAR BUENRROSTRO ROMERO": {
           "name": "JOSE OMAR BUENRROSTRO ROMERO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "OMAR VEGA AGUILAR": {
           "name": "OMAR VEGA AGUILAR",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "MANUEL RICO MANCERA": {
           "name": "MANUEL RICO MANCERA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JOSE JESUS GRANADOS CANTOR": {
           "name": "JOSE JESUS GRANADOS CANTOR",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "AFONSO PRIETO ESPINOZA": {
           "name": "AFONSO PRIETO ESPINOZA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "PABLO JOEL PRIETO CELEDON": {
           "name": "PABLO JOEL PRIETO CELEDON",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "EDGAR SEBASTIAN CORIA ARROYO": {
           "name": "EDGAR SEBASTIAN CORIA ARROYO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "CRISTOPHER TONATIOH VILLAGOMEZ CUEVAS": {
           "name": "CRISTOPHER TONATIOH VILLAGOMEZ CUEVAS",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "JOSE JESUS SANCHEZ MATA": {
           "name": "JOSE JESUS SANCHEZ MATA",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "LUIS JONATHAN AGUILAR GERVACIO": {
           "name": "LUIS JONATHAN AGUILAR GERVACIO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
+          "cedulas": 6
         },
         "VICTOR MANUEL ARGUELLO ALBERTO": {
           "name": "VICTOR MANUEL ARGUELLO ALBERTO",
           "team": "DEP. MARAVILLAS",
-          "cedulas": 5
-        },
-        "JONATHAN MARES OLIVARES": {
-          "name": "Jonathan Mares Olivares",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ERIK ANTONIO GONZALEZ MESITA": {
-          "name": "Erik Antonio Gonzalez Mesita",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ALEJANDRO MONTECINO RAMOS": {
-          "name": "Alejandro Montecino Ramos",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "CRISTIAN MARTIN RODRIGUEZ GODINEZ": {
-          "name": "Cristian Martin Rodriguez Godinez",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "CARLOS ENRIQUE HERNANDEZ YUPE": {
-          "name": "Carlos Enrique Hernandez Yupe",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ENRIQUE JUAREZ MERINO": {
-          "name": "Enrique Juarez Merino",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "MARTIN HORTELANO LUNA": {
-          "name": "Martin Hortelano Luna",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "CRISTIAN PERALTA ARIZA": {
-          "name": "Cristian Peralta Ariza",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ALEJANDRO GUERRERO RODRIGUEZ": {
-          "name": "Alejandro Guerrero Rodriguez",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "LUIS ANGEL CASTILLO GARCIA": {
-          "name": "Luis Angel Castillo Garcia",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "DANIEL SOLORZANO LOPEZ": {
-          "name": "Daniel Solorzano Lopez",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "JOSE DANIEL GARCIA CANO": {
-          "name": "Jose Daniel Garcia Cano",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "JUAN PABLO RANGEL TOLEDO": {
-          "name": "Juan Pablo Rangel Toledo",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "EDGAR ROQUE FLORES": {
-          "name": "Edgar Roque Flores",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ORLANDO HERRERA GUZMAN": {
-          "name": "Orlando Herrera Guzman",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "PEDRO CESAR OLVERA CALERO": {
-          "name": "Pedro Cesar Olvera Calero",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "LUIS GERARDO GONZALEZ RUIZ": {
-          "name": "Luis Gerardo Gonzalez Ruiz",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "ERIC LOPEZ SOLORZANO": {
-          "name": "Eric Lopez Solorzano",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "NESTOR RAYMUNDO MENDOZA CASTILLO": {
-          "name": "Nestor Raymundo Mendoza Castillo",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "MARCO ANTONIO SILLERO ZARATE": {
-          "name": "Marco Antonio Sillero Zarate",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
-        },
-        "JOSE GUADALUPE VALENCIA LUNA": {
-          "name": "Jose Guadalupe Valencia Luna",
-          "team": "ATL. GALEANA",
-          "cedulas": 5
+          "cedulas": 6
         },
         "ISMAEL HORTELANO CERRITO": {
           "name": "Ismael Hortelano Cerrito",
@@ -20339,281 +20558,6 @@
         "AARON AGUILAR GUTIERREZ": {
           "name": "Aaron Aguilar Gutierrez",
           "team": "SAN ANTONIO JRS",
-          "cedulas": 5
-        },
-        "VLADIMIR HERNANDEZ LUNA": {
-          "name": "Vladimir Hernandez Luna",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JOSE MANUEL CALERO CERRITO": {
-          "name": "Jose Manuel Calero Cerrito",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ANTONIO GRANGENO PARAMO": {
-          "name": "Antonio Grangeno Paramo",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "RODRIGO PARAMO PARAMO": {
-          "name": "Rodrigo Paramo Paramo",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JOSE MANUEL ZARATE CALERO": {
-          "name": "Jose Manuel Zarate Calero",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ASUNCION HERNANDEZ HERNANDEZ": {
-          "name": "Asuncion Hernandez Hernandez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ALVARO ALEJANDRO DELGADO OOCHOA": {
-          "name": "Alvaro Alejandro Delgado Oochoa",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "SERGIO ALEXIS FLORES GUERRERO": {
-          "name": "Sergio Alexis Flores Guerrero",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "PEDRO LOPEZ": {
-          "name": "Pedro Lopez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "RICARDO MARTINEZ HERRERA": {
-          "name": "Ricardo Martinez Herrera",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ISRAEL LOPEZ RAMIREZ": {
-          "name": "Israel Lopez Ramirez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "SALVADOR RAMIREZ MARTINEZ": {
-          "name": "Salvador Ramirez Martinez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "LEONEL MILLER MARTINEZ MERINO": {
-          "name": "Leonel Miller Martinez Merino",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JONATHAN ULISES LOPEZ GONZALEZ": {
-          "name": "Jonathan Ulises Lopez Gonzalez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JOSE LEONARDO HUICHAPA RODRIGUEZ": {
-          "name": "Jose Leonardo Huichapa Rodriguez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "LUIS ENRIQUE LOPEZ REYNA": {
-          "name": "Luis Enrique Lopez Reyna",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "FRANCISCO JAVIER VASQUEZ CACIQUE": {
-          "name": "Francisco Javier Vasquez Cacique",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "OSCAR URIEL PARAMO GUERRERO": {
-          "name": "Oscar Uriel Paramo Guerrero",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JUAN MANUEL LOPEZ ARIZA": {
-          "name": "Juan Manuel Lopez Ariza",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "OSWALDO GABRIEL TORRES SOLORZANO": {
-          "name": "Oswaldo Gabriel Torres Solorzano",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ADRIAN ARZATE GUERRERO": {
-          "name": "Adrian Arzate Guerrero",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "JUAN JOSE OBRAJERO RODRIGUEZ": {
-          "name": "Juan Jose Obrajero Rodriguez",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "ALAN JESUS RAMIREZ VEGA": {
-          "name": "Alan Jesus Ramirez Vega",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "FERNANDO FRANCO MENDOZA": {
-          "name": "Fernando Franco Mendoza",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "GIOVANNI EMANUEL FLORES GUERRERO": {
-          "name": "Giovanni Emanuel Flores Guerrero",
-          "team": "OSASUNA",
-          "cedulas": 4
-        },
-        "EBER DANIEL MOSQUEDA LOPEZ": {
-          "name": "Eber Daniel Mosqueda Lopez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JESUS GOMEZ VALADEZ": {
-          "name": "Jesus Gomez Valadez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JUAN CARLOS BARRON CANO": {
-          "name": "Juan Carlos Barron Cano",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JONATHAN ALEXANDER VERA ROSALES": {
-          "name": "Jonathan Alexander Vera Rosales",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "SAMUEL MANZO DIAZ DE LEON": {
-          "name": "SAMUEL Manzo Diaz De Leon",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JOSE ALFREDO LOPEZ PEREZ": {
-          "name": "Jose Alfredo Lopez Perez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "DANIEL YANEZ RANGEL": {
-          "name": "Daniel Yañez Rangel",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JOSE RAMON ARELLANO MANCERA": {
-          "name": "JOSE RAMON ARELLANO MANCERA",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JAVIER IVAN GUERRERO JIMENEZ": {
-          "name": "Javier Ivan Guerrero Jimenez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "FRANCISCO VERA MARTINEZ": {
-          "name": "Francisco Vera Martinez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "EDGAR MANUEL LANDIN IBARRA": {
-          "name": "Edgar Manuel Landin Ibarra",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "ANGEL GABRIEL CERVANTES OJEDA": {
-          "name": "ANGEL GABRIEL CERVANTES OJEDA",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JAIRO JUAN LUNA BELMAN": {
-          "name": "Jairo Juan Luna Belman",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JUAN ANTONIO MARQUEZ MENDOZA": {
-          "name": "Juan Antonio Marquez Mendoza",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JUAN JOSE LOPEZ LUCIO": {
-          "name": "Juan Jose Lopez Lucio",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "CECILIO RAMOS RANGEL": {
-          "name": "Cecilio Ramos Rangel",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "FRANCISCO CABELLO CASTILLO": {
-          "name": "Francisco Cabello Castillo",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "ALESSANDRO ORTEGA BELMAN": {
-          "name": "Alessandro Ortega Belman",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "OSCAR ARELLANO MANCERA": {
-          "name": "Oscar Arellano Mancera",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "GERARDO BELMAN NAVARRO": {
-          "name": "Gerardo Belman Navarro",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "ALEJANDRO GONZALEZ CERVANTES": {
-          "name": "Alejandro Gonzalez Cervantes",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "MARCO POLO LANDIN IBARRA": {
-          "name": "Marco Polo Landin Ibarra",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "CARLOS ALBERTO GAMEZ LARA": {
-          "name": "Carlos Alberto Gamez Lara",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "PEDRO DANIEL AGUADO ORTEGA": {
-          "name": "Pedro Daniel Aguado Ortega",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JAIME YANEZ RANGEL": {
-          "name": "Jaime Yañez Rangel",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "DEMETRIO RAMIREZ SUBIAS": {
-          "name": "Demetrio Ramirez Subias",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JUAN CARLOS LERMA CERRITOS": {
-          "name": "Juan Carlos Lerma Cerritos",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "JOSE LUIS ZUNIGA GONZALEZ": {
-          "name": "Jose Luis Zuñiga Gonzalez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "GABRIEL CANO GONZALEZ": {
-          "name": "Gabriel Cano Gonzalez",
-          "team": "ALDAMA FC",
-          "cedulas": 5
-        },
-        "GIOVANNI ADRIAN LOPEZ ROMERO": {
-          "name": "Giovanni Adrian Lopez Romero",
-          "team": "ALDAMA FC",
           "cedulas": 5
         }
       },
@@ -22593,6 +22537,14 @@
       },
       "cedulas": [
         {
+          "id": 191,
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/191/",
+          "title": "Cédula Arbitral - ALDAMA FC (Intermedia) vs ATL. GALEANA (Intermedia)",
+          "local": "ALDAMA FC",
+          "away": "ATL. GALEANA",
+          "category": "Intermedia"
+        },
+        {
           "id": 192,
           "url": "https://www.juventinorosasliga.com/cedula-arbitral/192/",
           "title": "Cédula Arbitral - CAPIBARAS (Intermedia) vs MAZACOTES FC (Intermedia)",
@@ -22622,6 +22574,14 @@
           "title": "Cédula Arbitral - PROMESAS FC (Intermedia) vs LA CUADRILLA (Intermedia)",
           "local": "PROMESAS FC",
           "away": "LA CUADRILLA",
+          "category": "Intermedia"
+        },
+        {
+          "id": 196,
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/196/",
+          "title": "Cédula Arbitral - OSASUNA (Intermedia) vs DEP. MARAVILLAS (Intermedia)",
+          "local": "OSASUNA",
+          "away": "DEP. MARAVILLAS",
           "category": "Intermedia"
         },
         {
@@ -22818,88 +22778,60 @@
         },
         {
           "id": 317,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/317/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/317/",
           "title": "Cédula Arbitral - ALDAMA FC (Intermedia) vs LA CUADRILLA (Intermedia)",
           "local": "ALDAMA FC",
           "away": "LA CUADRILLA",
-          "category": "Intermedia",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         },
         {
           "id": 318,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/318/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/318/",
           "title": "Cédula Arbitral - DEP. MARAVILLAS (Intermedia) vs LA CANCHITA DEPORTES (Intermedia)",
           "local": "DEP. MARAVILLAS",
           "away": "LA CANCHITA DEPORTES",
-          "category": "Intermedia",
-          "date": "27/09/2026 10:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         },
         {
           "id": 319,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/319/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/319/",
           "title": "Cédula Arbitral - OSASUNA (Intermedia) vs PROMESAS FC (Intermedia)",
           "local": "OSASUNA",
           "away": "PROMESAS FC",
-          "category": "Intermedia",
-          "date": "27/09/2026 10:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         },
         {
           "id": 320,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/320/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/320/",
           "title": "Cédula Arbitral - POPULARES (Intermedia) vs ATL. GALEANA (Intermedia)",
           "local": "POPULARES",
           "away": "ATL. GALEANA",
-          "category": "Intermedia",
-          "date": "27/09/2026 08:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         },
         {
           "id": 321,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/321/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/321/",
           "title": "Cédula Arbitral - SAN ANTONIO JRS (Intermedia) vs LA HUERTA (Intermedia)",
           "local": "SAN ANTONIO JRS",
           "away": "LA HUERTA",
-          "category": "Intermedia",
-          "date": "27/09/2026 12:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         },
         {
           "id": 322,
-          "url": "https://juventinorosasliga.com/cedula-arbitral/322/",
+          "url": "https://www.juventinorosasliga.com/cedula-arbitral/322/",
           "title": "Cédula Arbitral - MAZACOTES FC (Intermedia) vs MALVINAS (Intermedia)",
           "local": "MAZACOTES FC",
           "away": "MALVINAS",
-          "category": "Intermedia",
-          "date": "27/09/2026 10:00",
-          "local_lineup": [],
-          "away_lineup": [],
-          "local_bench": [],
-          "away_bench": []
+          "category": "Intermedia"
         }
       ],
       "cedulas_scanned": [
+        191,
         192,
         193,
         194,
         195,
+        196,
         197,
         198,
         199,
@@ -23039,10 +22971,6 @@
       "local": "./assets/official-logos/la-huerta.png",
       "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaHuertaCuenda_bm4fxj"
     },
-    "LA TRINIDAD": {
-      "local": "./assets/official-logos/la-trinidad.png",
-      "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/La_trinidad_a32pbk"
-    },
     "LEYENDAS FC": {
       "local": "./assets/official-logos/leyendas-fc.png",
       "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LEYENDAS_jwcnlu"
@@ -23082,6 +23010,10 @@
     "POPULARES": {
       "local": "./assets/official-logos/populares.png",
       "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PopularesFC_onellt"
+    },
+    "POZOS FC": {
+      "local": "./assets/official-logos/pozos-fc.png",
+      "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx"
     },
     "PROMESAS FC": {
       "local": "./assets/official-logos/promesas-fc.png",
@@ -23138,16 +23070,16 @@
       1,
       1200
     ],
-    "valid_public_cedulas": 120,
+    "valid_public_cedulas": 126,
     "summary": {
       "Veteranos 50+": {
-        "cedulas": 21,
-        "public_names": 119,
+        "cedulas": 24,
+        "public_names": 123,
         "kept_previous": false
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 243,
+        "public_names": 242,
         "kept_previous": true
       },
       "Primera Fuerza": {
@@ -23156,12 +23088,12 @@
         "kept_previous": false
       },
       "Segunda Fuerza": {
-        "cedulas": 35,
+        "cedulas": 36,
         "public_names": 332,
         "kept_previous": false
       },
       "Intermedia": {
-        "cedulas": 34,
+        "cedulas": 36,
         "public_names": 340,
         "kept_previous": false
       }
@@ -23176,8 +23108,7 @@
   ],
   "missing_official_logo": [
     "BOCA JRS",
-    "GALACTICOS",
-    "POZOS FC"
+    "GALACTICOS"
   ],
   "checks": {
     "primera_dashboard_players": 292,
