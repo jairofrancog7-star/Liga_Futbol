@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-19T00:10:21Z",
+  "captured_at_utc": "2026-10-19T05:15:29Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3735,7 +3735,8 @@
           "Jose Antonio Rubi Perez",
           "Francisco Javier Solache Franco",
           "Daniel Yañez Rangel",
-          "JOSE LUIS ZUÑIGA CERROBLANCO"
+          "JOSE LUIS ZUÑIGA CERROBLANCO",
+          "Elfego Robles Leon"
         ]
       },
       "player_usage": {},
@@ -5050,7 +5051,7 @@
             "dorsal": "—"
           },
           {
-            "name": "Elfrego Robles Leon",
+            "name": "Elfego Robles Leon",
             "position": "Defensa",
             "dorsal": "—"
           },
@@ -5081,7 +5082,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 242
+      "public_player_count_scraped": 243
     },
     "3": {
       "id": 3,
@@ -23179,7 +23180,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 242,
+        "public_names": 243,
         "kept_previous": true
       },
       "Primera Fuerza": {
