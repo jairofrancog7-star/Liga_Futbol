@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-20T20:31:16Z",
+  "captured_at_utc": "2026-10-20T23:22:23Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3755,12 +3755,14 @@
           {
             "name": "JORGE ARMANDO AGUIRRE BELMAN",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.44.15_AM_t9emyb"
           },
           {
             "name": "SANTIAGO CAMPOS GUERRERO",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_9.06.29_AM_nqeq02"
           },
           {
             "name": "DIEGO ARMANDO CERRITOS MUÑOZ",
@@ -3775,7 +3777,8 @@
           {
             "name": "JOSE REMEDIOS GARCIA ALVAREZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.30.22_AM_eb9e4f"
           },
           {
             "name": "JORGE ANTONIO GASCA LINARES",
@@ -3791,7 +3794,8 @@
           {
             "name": "ISMAEL LERMA MENDOZA",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.39.30_AM_uwxit6"
           },
           {
             "name": "HUMBERTO LERMA MORENO",
@@ -3801,7 +3805,8 @@
           {
             "name": "LUIS LOPEZ GASCA",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-19_at_8.50.59_PM_mboel5"
           },
           {
             "name": "MIGUEL ANGEL MENDOZA GUAPO",
@@ -3811,12 +3816,14 @@
           {
             "name": "ELEAZAR MORENO LERMA",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.42.47_AM_b6w3ps"
           },
           {
             "name": "MIGUEL ANGEL NORIA GASCA",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.53.36_AM_1_zw79qv"
           },
           {
             "name": "FRANCISCO PEREZ CERVANTES",
@@ -3826,12 +3833,14 @@
           {
             "name": "LUIS MANUEL PEREZ CERVANTES",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_9.01.39_AM_qmu7wu"
           },
           {
             "name": "JHONNY ALBERTO SALINAS SANCHEZ",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.38.21_AM_bqu7ic"
           },
           {
             "name": "ENRIQUE SANLUISEÑO GUERRERO",
@@ -3841,7 +3850,8 @@
           {
             "name": "JOSE FRANCISCO SANTAROSA JIMENEZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.34.55_AM_ylxzod"
           },
           {
             "name": "FERNANDO SERRATO TOLEDO",
@@ -3851,17 +3861,20 @@
           {
             "name": "JOEL TOLEDO CAMPOS",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-12_at_10.26.08_AM_tllhmc"
           },
           {
             "name": "JONY TORRECILLAS RODRIGUEZ",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_6.51.31_PM_eb92z0"
           },
           {
             "name": "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_6.50.42_PM_owzno7"
           },
           {
             "name": "EDUARDO ZAVALA ACOSTA",
