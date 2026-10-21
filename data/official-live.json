@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-21T18:14:31Z",
+  "captured_at_utc": "2026-10-21T21:57:34Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -13,7 +13,7 @@
           "Equipos": 6,
           "Partidos Jugados": 24,
           "Partidos Pendientes": 21,
-          "Jugadores": 118
+          "Jugadores": 121
         },
         "current_cedulas": [
           52,
@@ -159,7 +159,7 @@
         "Equipos": 6,
         "Partidos Jugados": 24,
         "Partidos Pendientes": 21,
-        "Jugadores": 118
+        "Jugadores": 121
       },
       "standings": [
         {
@@ -1219,7 +1219,8 @@
           "Guillermo Chavez Mendoza",
           "Arturo Guerrero Rodriguez",
           "Osvaldo Duran Zarate",
-          "Jose Antonio Zarate Arellano S"
+          "Jose Antonio Zarate Arellano S",
+          "ROGELIO LUNA GUILLEN"
         ],
         "DYNAMO": [
           "Alfredo Rocha Rodriguez",
@@ -1273,7 +1274,10 @@
           "Jose Guadalupe Lopez Martinez",
           "Feliciano Palacios Lopez",
           "Antonio Guerrero Rico S",
-          "Feliciano Palacios Lopez S"
+          "Feliciano Palacios Lopez S",
+          "Ricardo Aparicio Madrid",
+          "CARLOS PRESA ARREGUIN",
+          "BERNARDO VARGAS RODRIGUEZ"
         ]
       },
       "player_usage": {
@@ -1968,6 +1972,11 @@
             "dorsal": "—"
           },
           {
+            "name": "ROGELIO LUNA GUILLEN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Rafael Ladinos Coyote",
             "position": "Defensa",
             "dorsal": "—",
@@ -2153,6 +2162,11 @@
             "dorsal": "—"
           },
           {
+            "name": "Ricardo Aparicio Madrid",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Hector Arguello Gonzalez",
             "position": "Defensa",
             "dorsal": "—"
@@ -2225,6 +2239,11 @@
             "dorsal": "—"
           },
           {
+            "name": "CARLOS PRESA ARREGUIN",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "Feliciano Palacios Lopez",
             "position": "Defensa",
             "dorsal": "—",
@@ -2243,6 +2262,11 @@
           },
           {
             "name": "Genaro Teran Vazquez",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "BERNARDO VARGAS RODRIGUEZ",
             "position": "Defensa",
             "dorsal": "—"
           },
@@ -2811,7 +2835,7 @@
         53,
         54
       ],
-      "public_player_count_scraped": 125
+      "public_player_count_scraped": 129
     },
     "2": {
       "id": 2,
@@ -2822,7 +2846,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 142
+          "Jugadores": 145
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2872,7 +2896,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 142
+        "Jugadores": 145
       },
       "standings": [],
       "scorers": [
@@ -3507,7 +3531,9 @@
           "JOEL TOLEDO CAMPOS",
           "JONY TORRECILLAS RODRIGUEZ",
           "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
-          "EDUARDO ZAVALA ACOSTA"
+          "EDUARDO ZAVALA ACOSTA",
+          "SERGIO ROMEO MARTINEZ LOPEZ",
+          "CHRISTIAN EDGARDO MENDOZA PUGA"
         ],
         "AMERICA": [
           "LUIS JONATHAN AGUILAR GERVACIO",
@@ -3571,7 +3597,8 @@
           "Cecilio Ramos Rangel",
           "Lazaro Ruvalcaba Almanza",
           "Francisco Vera Martinez",
-          "VICTOR HUGO ZARATE CERRITO"
+          "VICTOR HUGO ZARATE CERRITO",
+          "HUBERT MADO MANZO"
         ],
         "CUENDA": [
           "MARTIN ARCIA MARTINEZ",
@@ -3821,8 +3848,18 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-19_at_8.50.59_PM_mboel5"
           },
           {
+            "name": "SERGIO ROMEO MARTINEZ LOPEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "MIGUEL ANGEL MENDOZA GUAPO",
             "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
+            "name": "CHRISTIAN EDGARDO MENDOZA PUGA",
+            "position": "Defensa",
             "dorsal": "—"
           },
           {
@@ -4174,6 +4211,11 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-01_at_12.59.09_PM_nhytrp"
           },
           {
+            "name": "HUBERT MADO MANZO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "PABLO MENDOZA TOVAR",
             "position": "Defensa",
             "dorsal": "—"
@@ -4220,11 +4262,6 @@
             "position": "Defensa",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Cecilio_Ramos_Rangel_vy7izk"
-          },
-          {
-            "name": "Lazaro Ruvalcaba Almanza",
-            "position": "Mediocampista",
-            "dorsal": "—"
           },
           {
             "name": "Francisco Vera Martinez",
@@ -5127,7 +5164,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 247
+      "public_player_count_scraped": 250
     },
     "3": {
       "id": 3,
@@ -23220,12 +23257,12 @@
     "summary": {
       "Veteranos 50+": {
         "cedulas": 24,
-        "public_names": 125,
+        "public_names": 129,
         "kept_previous": false
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 247,
+        "public_names": 250,
         "kept_previous": true
       },
       "Primera Fuerza": {
