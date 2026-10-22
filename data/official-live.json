@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-22T20:32:35Z",
+  "captured_at_utc": "2026-10-22T23:33:54Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -1975,7 +1975,8 @@
           {
             "name": "ROGELIO LUNA GUILLEN",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_10.21.45_AM_1_ymsca6"
           },
           {
             "name": "Rafael Ladinos Coyote",
@@ -4228,7 +4229,8 @@
           {
             "name": "ROGELIO LUNA GUILLEN",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_10.21.45_AM_1_ymsca6"
           },
           {
             "name": "Enrique Lopez Aguilar",
