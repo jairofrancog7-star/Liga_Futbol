@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-22T06:03:41Z",
+  "captured_at_utc": "2026-10-22T17:04:56Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2846,7 +2846,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 145
+          "Jugadores": 146
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2896,7 +2896,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 145
+        "Jugadores": 146
       },
       "standings": [],
       "scorers": [
@@ -3747,7 +3747,9 @@
           "JONATHAN MICHAEL ANGEL RAMIREZ HERNANDEZ",
           "Jorge Ramirez Huerta",
           "JOSE JESUS SAUCEDO RODRIGUEZ",
-          "ALBERTO VILLAGOMEZ MANCERA"
+          "ALBERTO VILLAGOMEZ MANCERA",
+          "SALVADOR JUNIOR BENITEZ LEON",
+          "GERARDO ANTONIO CAZARES JUAREZ"
         ],
         "PSV": [
           "ENRIQUE ABOYTES CRUZ",
@@ -3784,7 +3786,8 @@
           {
             "name": "ROBERTO AGUILAR CERRITO",
             "position": "Portero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-20_at_9.29.49_PM_1_pysqpm"
           },
           {
             "name": "EDUARDO AGUILAR RAMIREZ",
@@ -3806,7 +3809,8 @@
           {
             "name": "DIEGO ARMANDO CERRITOS MUÑOZ",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-21_at_4.35.19_PM_bdngvd"
           },
           {
             "name": "JOSE MARIA DUARTE TORRES",
@@ -3839,7 +3843,8 @@
           {
             "name": "HUMBERTO LERMA MORENO",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-21_at_5.23.12_PM_d7cwdn"
           },
           {
             "name": "LUIS LOPEZ GASCA",
@@ -3850,17 +3855,20 @@
           {
             "name": "SERGIO ROMEO MARTINEZ LOPEZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-19_at_8.53.23_PM_nilaju"
           },
           {
             "name": "MIGUEL ANGEL MENDOZA GUAPO",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-21_at_5.09.46_PM_hezrix"
           },
           {
             "name": "CHRISTIAN EDGARDO MENDOZA PUGA",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-19_at_9.05.41_PM_ngu5ys"
           },
           {
             "name": "ELEAZAR MORENO LERMA",
@@ -3928,7 +3936,8 @@
           {
             "name": "EDUARDO ZAVALA ACOSTA",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-21_at_4.53.29_PM_xsopgo"
           }
         ],
         "AMERICA": [
@@ -4244,7 +4253,8 @@
           {
             "name": "AMBROCIO PESCADOR RAMIREZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_9.33.43_AM_afyywc"
           },
           {
             "name": "Luis Martin Pizano Garcia",
@@ -4694,7 +4704,8 @@
           {
             "name": "MOISES DE JESUS GARCIA GUTIERREZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-19_at_2.46.08_PM_isobyq"
           },
           {
             "name": "Serafin Galindo De La Cruz",
@@ -4934,8 +4945,18 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-25_at_12.12.32_PM_g3u7gz"
           },
           {
+            "name": "SALVADOR JUNIOR BENITEZ LEON",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "RAMIRO CALDERON LOPEZ",
             "position": "Mediocampista",
+            "dorsal": "—"
+          },
+          {
+            "name": "GERARDO ANTONIO CAZARES JUAREZ",
+            "position": "Defensa",
             "dorsal": "—"
           },
           {
@@ -5164,7 +5185,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 250
+      "public_player_count_scraped": 252
     },
     "3": {
       "id": 3,
@@ -23262,7 +23283,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 250,
+        "public_names": 252,
         "kept_previous": true
       },
       "Primera Fuerza": {
