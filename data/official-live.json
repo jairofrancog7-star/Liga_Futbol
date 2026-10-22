@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-22T17:04:56Z",
+  "captured_at_utc": "2026-10-22T20:32:35Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -13,7 +13,7 @@
           "Equipos": 6,
           "Partidos Jugados": 24,
           "Partidos Pendientes": 21,
-          "Jugadores": 121
+          "Jugadores": 122
         },
         "current_cedulas": [
           52,
@@ -159,7 +159,7 @@
         "Equipos": 6,
         "Partidos Jugados": 24,
         "Partidos Pendientes": 21,
-        "Jugadores": 121
+        "Jugadores": 122
       },
       "standings": [
         {
@@ -1163,7 +1163,8 @@
           "JUAN CAMPOS AGUILAR",
           "SAUL GUZMAN NORIA",
           "MARTIN MONTOYA MARTINEZ",
-          "FRANCISCO HERRERA MANTERO"
+          "FRANCISCO HERRERA MANTERO",
+          "GERARDO GONZALEZ RUIZ"
         ],
         "MANCHESTER": [
           "Bruno Rubi Garcia",
@@ -2479,6 +2480,12 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Roman_Campos_Murillo_xgyrv1"
           },
           {
+            "name": "GERARDO GONZALEZ RUIZ",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_12.29.31_PM_rnsvil"
+          },
+          {
             "name": "SAUL GUZMAN NORIA",
             "position": "Defensa",
             "dorsal": "—",
@@ -2835,7 +2842,7 @@
         53,
         54
       ],
-      "public_player_count_scraped": 129
+      "public_player_count_scraped": 130
     },
     "2": {
       "id": 2,
@@ -2846,7 +2853,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 146
+          "Jugadores": 151
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2896,7 +2903,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 146
+        "Jugadores": 151
       },
       "standings": [],
       "scorers": [
@@ -3533,7 +3540,8 @@
           "MARTIN ARMANDO TORRECILLAS RODRIGUEZ",
           "EDUARDO ZAVALA ACOSTA",
           "SERGIO ROMEO MARTINEZ LOPEZ",
-          "CHRISTIAN EDGARDO MENDOZA PUGA"
+          "CHRISTIAN EDGARDO MENDOZA PUGA",
+          "ANGEL ANTONIO GARCIA VILLAFUERTE"
         ],
         "AMERICA": [
           "LUIS JONATHAN AGUILAR GERVACIO",
@@ -3675,7 +3683,8 @@
           "OMAR SANLUISEÑO GUZMAN",
           "SAUL SANLUISEÑO GUZMAN",
           "JULIO CESAR SILLERO RODRIGUEZ",
-          "FRANCISCO VALENZUELA OLIVARES"
+          "FRANCISCO VALENZUELA OLIVARES",
+          "LUIS ENRIQUE CAMPOS BADILLO"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3725,7 +3734,10 @@
           "MARCO ANTONIO YAÑEZ MIRANDA",
           "SALVADOR Yañez Miranda",
           "FABIAN GRANADOS ALVAREZ",
-          "SERGIO ALEJANDRO MONTAÑEZ QUINTANA"
+          "SERGIO ALEJANDRO MONTAÑEZ QUINTANA",
+          "JULIO CESAR RAZO PEREZ",
+          "ROMAN TELLEZ ALBERTO",
+          "ADRIAN TOVAR MIRANDA"
         ],
         "POZOS FC": [
           "ARTURO ALBERTO ARCHUNDIA MURO",
@@ -3822,6 +3834,11 @@
             "position": "Delantero",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_8.30.22_AM_eb9e4f"
+          },
+          {
+            "name": "ANGEL ANTONIO GARCIA VILLAFUERTE",
+            "position": "Defensa",
+            "dorsal": "—"
           },
           {
             "name": "JORGE ANTONIO GASCA LINARES",
@@ -4580,6 +4597,11 @@
             "dorsal": "—"
           },
           {
+            "name": "LUIS ENRIQUE CAMPOS BADILLO",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
             "name": "ARTURO CONTRERAS GAMUCERO",
             "position": "Defensa",
             "dorsal": "—"
@@ -4888,6 +4910,11 @@
             "dorsal": "—"
           },
           {
+            "name": "JULIO CESAR RAZO PEREZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "Hector Manuel Ramirez Tovar",
             "position": "Delantero",
             "dorsal": "—"
@@ -4905,8 +4932,18 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_7.28.05_AM_tvbibr"
           },
           {
+            "name": "ROMAN TELLEZ ALBERTO",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "BENIGNO TOVAR AGREDA",
             "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ADRIAN TOVAR MIRANDA",
+            "position": "Mediocampista",
             "dorsal": "—"
           },
           {
@@ -5185,7 +5222,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 252
+      "public_player_count_scraped": 257
     },
     "3": {
       "id": 3,
@@ -23278,12 +23315,12 @@
     "summary": {
       "Veteranos 50+": {
         "cedulas": 24,
-        "public_names": 129,
+        "public_names": 130,
         "kept_previous": false
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 252,
+        "public_names": 257,
         "kept_previous": true
       },
       "Primera Fuerza": {
