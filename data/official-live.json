@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-22T23:33:54Z",
+  "captured_at_utc": "2026-10-23T01:54:47Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2854,7 +2854,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 151
+          "Jugadores": 153
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2904,7 +2904,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 151
+        "Jugadores": 153
       },
       "standings": [],
       "scorers": [
@@ -3542,7 +3542,8 @@
           "EDUARDO ZAVALA ACOSTA",
           "SERGIO ROMEO MARTINEZ LOPEZ",
           "CHRISTIAN EDGARDO MENDOZA PUGA",
-          "ANGEL ANTONIO GARCIA VILLAFUERTE"
+          "ANGEL ANTONIO GARCIA VILLAFUERTE",
+          "OCTAVIO PEREZ MENDOZA"
         ],
         "AMERICA": [
           "LUIS JONATHAN AGUILAR GERVACIO",
@@ -3685,7 +3686,8 @@
           "SAUL SANLUISEÑO GUZMAN",
           "JULIO CESAR SILLERO RODRIGUEZ",
           "FRANCISCO VALENZUELA OLIVARES",
-          "LUIS ENRIQUE CAMPOS BADILLO"
+          "LUIS ENRIQUE CAMPOS BADILLO",
+          "LUIS ANGEL SANCHEZ PEREZ"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -3910,6 +3912,11 @@
             "position": "Mediocampista",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-18_at_9.01.39_AM_qmu7wu"
+          },
+          {
+            "name": "OCTAVIO PEREZ MENDOZA",
+            "position": "Delantero",
+            "dorsal": "—"
           },
           {
             "name": "JHONNY ALBERTO SALINAS SANCHEZ",
@@ -4677,6 +4684,11 @@
             "dorsal": "—"
           },
           {
+            "name": "LUIS ANGEL SANCHEZ PEREZ",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "OMAR SANLUISEÑO GUZMAN",
             "position": "Defensa",
             "dorsal": "—"
@@ -5224,7 +5236,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 257
+      "public_player_count_scraped": 259
     },
     "3": {
       "id": 3,
@@ -23322,7 +23334,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 257,
+        "public_names": 259,
         "kept_previous": true
       },
       "Primera Fuerza": {
