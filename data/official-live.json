@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-23T21:10:18Z",
+  "captured_at_utc": "2026-10-23T21:20:09Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -5272,11 +5272,12 @@
       "dashboard": {
         "counts": {
           "Equipos": 11,
-          "Partidos Jugados": 31,
-          "Partidos Pendientes": 24,
+          "Partidos Jugados": 32,
+          "Partidos Pendientes": 23,
           "Jugadores": 292
         },
         "current_cedulas": [
+          166,
           168
         ],
         "logo_candidates": [
@@ -5293,14 +5294,6 @@
             "near_text": "LINCES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "HERMANOS"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
-            "near_text": "LOBOS CDG"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
             "near_text": "SAN JOSE FC"
           },
@@ -5310,43 +5303,43 @@
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_ntqr0b",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES NAPOLI 14 GOLES HERRERAS FC 13 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES NAPOLI 14 GOLES HERRERAS FC 13 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES NAPOLI 14 GOLES HERRERAS FC 13 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES NAPOLI 14 GOLES HERRERAS FC 13 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 17 GOLES SAN JOSE FC 17 GOLES NAPOLI 14 GOLES HERRERAS FC 13 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "H - HERMANOS Alejandro Moreno Banda 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
             "near_text": "L - LINCES ERNESTO BALTAZAR SOSA ARREDONDO 3 GOLES"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
+            "near_text": "L - LOBOS CDG Emiliano Rubi Campos 2 GOLES"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
             "near_text": "L - LINCES ISRAEL SOLORZANO LINARES 2 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Terricolas_ltbrzy",
-            "near_text": "T - TERRICOLAS Ivan Martinez Vasquez 1 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
-            "near_text": "F - FRANCO FC Rolando Rocha Sierra 1 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
-            "near_text": "F - FRANCO FC Juan Jesus Beltran Garcia 1 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "H - HERMANOS Mario Razo Miranda 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Abejas_lxn6l9",
@@ -5355,6 +5348,14 @@
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
             "near_text": "HERRERAS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "HERMANOS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
+            "near_text": "LOBOS CDG"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
@@ -5380,8 +5381,8 @@
       },
       "counts": {
         "Equipos": 11,
-        "Partidos Jugados": 31,
-        "Partidos Pendientes": 24,
+        "Partidos Jugados": 32,
+        "Partidos Pendientes": 23,
         "Jugadores": 292
       },
       "standings": [
@@ -5413,6 +5414,18 @@
             ],
             [
               "2",
+              "HERMANOS",
+              "6",
+              "4",
+              "1",
+              "1",
+              "15",
+              "9",
+              "+6",
+              "13"
+            ],
+            [
+              "3",
               "JUVENTUS",
               "6",
               "4",
@@ -5424,7 +5437,7 @@
               "12"
             ],
             [
-              "3",
+              "4",
               "LINCES",
               "5",
               "4",
@@ -5436,7 +5449,7 @@
               "12"
             ],
             [
-              "4",
+              "5",
               "NAPOLI",
               "6",
               "3",
@@ -5444,18 +5457,6 @@
               "2",
               "14",
               "11",
-              "+3",
-              "10"
-            ],
-            [
-              "5",
-              "HERMANOS",
-              "5",
-              "3",
-              "1",
-              "1",
-              "10",
-              "7",
               "+3",
               "10"
             ],
@@ -5510,13 +5511,13 @@
             [
               "10",
               "LOBOS CDG",
-              "6",
+              "7",
               "1",
               "0",
+              "6",
               "5",
-              "3",
-              "23",
-              "-20",
+              "28",
+              "-23",
               "3"
             ],
             [
@@ -5545,194 +5546,212 @@
           "rows": [
             [
               "1",
+              "Alejandro Moreno Banda",
+              "HERMANOS",
+              "3"
+            ],
+            [
+              "2",
               "ERNESTO BALTAZAR SOSA ARREDONDO",
               "LINCES",
               "3"
             ],
             [
-              "2",
+              "3",
               "ISRAEL SOLORZANO LINARES",
               "LINCES",
               "2"
             ],
             [
-              "3",
-              "Juan Esteban Montecillo Solache",
-              "NAPOLI",
-              "1"
+              "4",
+              "Mario Razo Miranda",
+              "HERMANOS",
+              "2"
             ],
             [
-              "4",
+              "5",
+              "Emiliano Rubi Campos",
+              "LOBOS CDG",
+              "2"
+            ],
+            [
+              "6",
               "EDGAR OMAR REYES QUINTERO",
               "HERRERAS FC",
               "1"
             ],
             [
-              "5",
+              "7",
               "Juan Angel Gonzalez Martinez",
               "NAPOLI",
               "1"
             ],
             [
-              "6",
+              "8",
               "Angel Santiago Garcia",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "7",
+              "9",
+              "Kevin Orlando Lara Ruiz",
+              "LOBOS CDG",
+              "1"
+            ],
+            [
+              "10",
               "Gustavo Guadalupe Rico Huerta",
               "ABEJAS",
               "1"
             ],
             [
-              "8",
+              "11",
               "Oswaldo Grande Valadez",
               "TERRICOLAS",
               "1"
             ],
             [
-              "9",
+              "12",
               "Jose Rosas Cardenas",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "10",
+              "13",
               "JORGE LUIS ALMAGUER RUIZ",
               "LINCES",
               "1"
             ],
             [
-              "11",
+              "14",
               "Jose Guadalupe Guerrero Lopez",
               "JUVENTUS",
               "1"
             ],
             [
-              "12",
+              "15",
               "Marco Cesar Saavedra Escoto",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "13",
-              "Emiliano Rubi Campos",
-              "LOBOS CDG",
-              "1"
-            ],
-            [
-              "14",
+              "16",
               "Rolando Rocha Sierra",
               "FRANCO FC",
               "1"
             ],
             [
-              "15",
-              "Mario Eduardo Cardenas Ayala",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "16",
-              "Juan Jesus Beltran Garcia",
-              "FRANCO FC",
-              "1"
-            ],
-            [
               "17",
-              "Alejandro Moreno Banda",
-              "HERMANOS",
-              "1"
-            ],
-            [
-              "18",
-              "FRANCISCO JAVIER HERRERA TIERRABLANCA",
-              "HERRERAS FC",
-              "1"
-            ],
-            [
-              "19",
-              "Gerardo Zuñiga Vega",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "20",
-              "BRANDON VALDES ARROYO",
-              "HERRERAS FC",
-              "1"
-            ],
-            [
-              "21",
-              "Ivan Martinez Vasquez",
-              "TERRICOLAS",
-              "1"
-            ],
-            [
-              "22",
-              "Juan Pablo Muñoz Guerrero",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "23",
-              "Victor Manuel Raul Muñoz Vasquez",
-              "TERRICOLAS",
-              "1"
-            ],
-            [
-              "24",
-              "ANDRES AGUILLON TIERRABLANCA",
-              "LINCES",
-              "1"
-            ],
-            [
-              "25",
-              "Oscar Monroy Camacho",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "26",
-              "Jose Ramon Negrete Ruiz",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "27",
-              "Jorge Luis Ramirez Conejo",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "28",
-              "Alejandro Alarcon Aguirre",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "29",
               "Fernando Gamez Reyes",
               "ABEJAS",
               "1"
             ],
             [
+              "18",
+              "Juan Jesus Beltran Garcia",
+              "FRANCO FC",
+              "1"
+            ],
+            [
+              "19",
+              "Emiliano Moreno Banda",
+              "HERMANOS",
+              "1"
+            ],
+            [
+              "20",
+              "FRANCISCO JAVIER HERRERA TIERRABLANCA",
+              "HERRERAS FC",
+              "1"
+            ],
+            [
+              "21",
+              "Gerardo Zuñiga Vega",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "22",
+              "BRANDON VALDES ARROYO",
+              "HERRERAS FC",
+              "1"
+            ],
+            [
+              "23",
+              "Ivan Martinez Vasquez",
+              "TERRICOLAS",
+              "1"
+            ],
+            [
+              "24",
+              "Juan Pablo Muñoz Guerrero",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "25",
+              "Victor Manuel Raul Muñoz Vasquez",
+              "TERRICOLAS",
+              "1"
+            ],
+            [
+              "26",
+              "ANDRES AGUILLON TIERRABLANCA",
+              "LINCES",
+              "1"
+            ],
+            [
+              "27",
+              "Oscar Monroy Camacho",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "28",
+              "Jose Ramon Negrete Ruiz",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "29",
+              "Jorge Luis Ramirez Conejo",
+              "JUVENTUS",
+              "1"
+            ],
+            [
               "30",
-              "Juan Manuel Gamez Lopez",
-              "ABEJAS",
+              "Alejandro Alarcon Aguirre",
+              "NAPOLI",
               "1"
             ],
             [
               "31",
+              "Mario Eduardo Cardenas Ayala",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "32",
               "Juan Pablo Mendoza Macias",
               "NAPOLI",
               "1"
             ],
             [
-              "32",
+              "33",
+              "Juan Manuel Gamez Lopez",
+              "ABEJAS",
+              "1"
+            ],
+            [
+              "34",
               "NESTOR GUTIERREZ MENDOZA",
               "HERRERAS FC",
+              "1"
+            ],
+            [
+              "35",
+              "Juan Esteban Montecillo Solache",
+              "NAPOLI",
               "1"
             ],
             [
@@ -5755,25 +5774,25 @@
             ],
             [
               "4",
+              "HERMANOS",
+              "15 goles en temporada",
+              "15"
+            ],
+            [
+              "5",
               "NAPOLI",
               "14 goles en temporada",
               "14"
             ],
             [
-              "5",
+              "6",
               "HERRERAS FC",
               "13 goles en temporada",
               "13"
             ],
             [
-              "6",
-              "ABEJAS",
-              "10 goles en temporada",
-              "10"
-            ],
-            [
               "7",
-              "HERMANOS",
+              "ABEJAS",
               "10 goles en temporada",
               "10"
             ],
@@ -5792,8 +5811,8 @@
             [
               "10",
               "LOBOS CDG",
-              "3 goles en temporada",
-              "3"
+              "5 goles en temporada",
+              "5"
             ],
             [
               "11",
@@ -6279,9 +6298,9 @@
               "34",
               "7",
               "HERMANOS",
-              "-",
+              "5",
               "vs",
-              "-",
+              "2",
               "LOBOS CDG",
               "Campo 3",
               "18/10/2026 10:00",
@@ -6362,24 +6381,24 @@
             [
               "41",
               "9",
-              "LOBOS CDG",
-              "-",
-              "vs",
-              "-",
-              "FRANCO FC",
-              "Cerrito de Gasca",
-              "01/11/2026 08:00",
-              "---"
-            ],
-            [
-              "42",
-              "9",
               "HERMANOS",
               "-",
               "vs",
               "-",
               "TERRICOLAS",
               "Campo 4",
+              "01/11/2026 08:00",
+              "---"
+            ],
+            [
+              "42",
+              "9",
+              "LOBOS CDG",
+              "-",
+              "vs",
+              "-",
+              "FRANCO FC",
+              "Cerrito de Gasca",
               "01/11/2026 08:00",
               "---"
             ],
@@ -10270,6 +10289,19 @@
           "away_bench": []
         },
         {
+          "id": 166,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/166/",
+          "title": "Cédula Arbitral - HERMANOS (Primera Fuerza) vs LOBOS CDG (Primera Fuerza)",
+          "local": "HERMANOS",
+          "away": "LOBOS CDG",
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
           "id": 168,
           "url": "https://juventinorosasliga.com/cedula-arbitral/168/",
           "title": "Cédula Arbitral - ABEJAS (Primera Fuerza) vs HERRERAS FC (Primera Fuerza)",
@@ -10314,6 +10346,7 @@
         163,
         164,
         165,
+        166,
         168
       ],
       "public_player_count_scraped": 292
