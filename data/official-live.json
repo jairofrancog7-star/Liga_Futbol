@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-23T12:51:01Z",
+  "captured_at_utc": "2026-10-23T17:51:20Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3792,7 +3792,9 @@
           "Francisco Javier Solache Franco",
           "Daniel Yañez Rangel",
           "JOSE LUIS ZUÑIGA CERROBLANCO",
-          "Elfego Robles Leon"
+          "Elfego Robles Leon",
+          "Juan Jose Pineda Mendoza",
+          "Jaime Yañez Rangel"
         ]
       },
       "player_usage": {},
@@ -5200,6 +5202,12 @@
             "dorsal": "—"
           },
           {
+            "name": "Juan Jose Pineda Mendoza",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_3.00.05_PM_ogni5t"
+          },
+          {
             "name": "GABRIEL RUVALCABA ALMANZA",
             "position": "Mediocampista",
             "dorsal": "—"
@@ -5228,6 +5236,12 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Daniel_Yanez_Rangel_eu08hi"
           },
           {
+            "name": "Jaime Yañez Rangel",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Yanez_Rangel_Jaime_nedhcs"
+          },
+          {
             "name": "JOSE LUIS ZUÑIGA CERROBLANCO",
             "position": "Mediocampista",
             "dorsal": "—"
@@ -5236,7 +5250,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 259
+      "public_player_count_scraped": 261
     },
     "3": {
       "id": 3,
@@ -23334,7 +23348,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 259,
+        "public_names": 261,
         "kept_previous": true
       },
       "Primera Fuerza": {
