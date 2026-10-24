@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-24T13:17:39Z",
+  "captured_at_utc": "2026-10-24T16:55:12Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -5048,7 +5048,8 @@
           {
             "name": "SALVADOR JUNIOR BENITEZ LEON",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-24_at_10.33.09_AM_qpd0id"
           },
           {
             "name": "RAMIRO CALDERON LOPEZ",
@@ -9262,7 +9263,8 @@
           {
             "name": "SALVADOR JUNIOR BENITEZ LEON",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-24_at_10.33.09_AM_qpd0id"
           },
           {
             "name": "EMILIANO BLANCO PILLADO",
@@ -16544,11 +16546,12 @@
       "dashboard": {
         "counts": {
           "Equipos": 13,
-          "Partidos Jugados": 38,
-          "Partidos Pendientes": 40,
+          "Partidos Jugados": 39,
+          "Partidos Pendientes": 39,
           "Jugadores": 340
         },
         "current_cedulas": [
+          325,
           326,
           327
         ],
@@ -16578,32 +16581,24 @@
             "near_text": "CAPIBARAS"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/MAravillasFC_mnmhwx",
-            "near_text": "DEP. MARAVILLAS"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
+            "near_text": "LA CANCHITA DEPORTES 34 GOLES ATL. GALEANA 19 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "ATL. GALEANA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
-            "near_text": "LA CANCHITA DEPORTES 34 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES ATL. GALEANA 15 GOLES"
+            "near_text": "LA CANCHITA DEPORTES 34 GOLES ATL. GALEANA 19 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Aldama_mqm3r1",
-            "near_text": "LA CANCHITA DEPORTES 34 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES ATL. GALEANA 15 GOLES"
+            "near_text": "LA CANCHITA DEPORTES 34 GOLES ATL. GALEANA 19 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Capibara_vocmbl",
-            "near_text": "LA CANCHITA DEPORTES 34 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES ATL. GALEANA 15 GOLES"
+            "near_text": "LA CANCHITA DEPORTES 34 GOLES ATL. GALEANA 19 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CuadrillaFC_vpfbtr",
-            "near_text": "LA CANCHITA DEPORTES 34 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES ATL. GALEANA 15 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
-            "near_text": "LA CANCHITA DEPORTES 34 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES ATL. GALEANA 15 GOLES"
+            "near_text": "LA CANCHITA DEPORTES 34 GOLES ATL. GALEANA 19 GOLES ALDAMA FC 18 GOLES CAPIBARAS 18 GOLES LA CUADRILLA 18 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
@@ -16622,8 +16617,8 @@
             "near_text": "L - LA CANCHITA DEPORTES Brandon Antwan Guerrero Lopez 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
-            "near_text": "L - LA CANCHITA DEPORTES Adolfo Angel Alvarez Olvera 3 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
+            "near_text": "A - ATL. GALEANA Marco Antonio Sillero Zarate 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Osasuna_lv6rsa",
@@ -16640,6 +16635,14 @@
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaCanchita_enf6ca",
             "near_text": "LA CANCHITA DEPORTES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/MAravillasFC_mnmhwx",
+            "near_text": "DEP. MARAVILLAS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Galeana_kujrh0",
+            "near_text": "ATL. GALEANA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Capibara_vocmbl",
@@ -16673,8 +16676,8 @@
       },
       "counts": {
         "Equipos": 13,
-        "Partidos Jugados": 38,
-        "Partidos Pendientes": 40,
+        "Partidos Jugados": 39,
+        "Partidos Pendientes": 39,
         "Jugadores": 340
       },
       "standings": [
@@ -16706,6 +16709,18 @@
             ],
             [
               "2",
+              "ATL. GALEANA",
+              "7",
+              "4",
+              "1",
+              "2",
+              "19",
+              "20",
+              "-1",
+              "13"
+            ],
+            [
+              "3",
               "LA CUADRILLA",
               "6",
               "4",
@@ -16717,7 +16732,7 @@
               "12"
             ],
             [
-              "3",
+              "4",
               "CAPIBARAS",
               "5",
               "4",
@@ -16729,7 +16744,7 @@
               "12"
             ],
             [
-              "4",
+              "5",
               "ALDAMA FC",
               "6",
               "4",
@@ -16739,18 +16754,6 @@
               "10",
               "+8",
               "12"
-            ],
-            [
-              "5",
-              "ATL. GALEANA",
-              "6",
-              "3",
-              "1",
-              "2",
-              "15",
-              "19",
-              "-4",
-              "10"
             ],
             [
               "6",
@@ -16802,18 +16805,6 @@
             ],
             [
               "10",
-              "DEP. MARAVILLAS",
-              "6",
-              "1",
-              "1",
-              "4",
-              "6",
-              "14",
-              "-8",
-              "4"
-            ],
-            [
-              "11",
               "PROMESAS FC",
               "5",
               "1",
@@ -16822,6 +16813,18 @@
               "15",
               "24",
               "-9",
+              "4"
+            ],
+            [
+              "11",
+              "DEP. MARAVILLAS",
+              "7",
+              "1",
+              "1",
+              "5",
+              "7",
+              "18",
+              "-11",
               "4"
             ],
             [
@@ -16886,464 +16889,482 @@
             ],
             [
               "5",
-              "Adolfo Angel Alvarez Olvera",
-              "LA CANCHITA DEPORTES",
-              "3"
-            ],
-            [
-              "6",
               "Brandon Antwan Guerrero Lopez",
               "LA CANCHITA DEPORTES",
               "3"
             ],
             [
+              "6",
+              "Marco Antonio Sillero Zarate",
+              "ATL. GALEANA",
+              "3"
+            ],
+            [
               "7",
-              "Giovanni Emanuel Flores Guerrero",
-              "OSASUNA",
-              "2"
+              "Adolfo Angel Alvarez Olvera",
+              "LA CANCHITA DEPORTES",
+              "3"
             ],
             [
               "8",
-              "Juan Pablo Rangel Toledo",
-              "ATL. GALEANA",
-              "2"
-            ],
-            [
-              "9",
-              "Nestor Huitzache Alvarado",
-              "PROMESAS FC",
-              "2"
-            ],
-            [
-              "10",
-              "Emiliano Centeno Gamez",
-              "PROMESAS FC",
-              "2"
-            ],
-            [
-              "11",
-              "Luis Gerardo Gonzalez Ruiz",
-              "ATL. GALEANA",
-              "2"
-            ],
-            [
-              "12",
               "Antonio Calero Luna",
               "LA CANCHITA DEPORTES",
               "2"
             ],
             [
-              "13",
+              "9",
+              "Giovanni Emanuel Flores Guerrero",
+              "OSASUNA",
+              "2"
+            ],
+            [
+              "10",
+              "Juan Pablo Rangel Toledo",
+              "ATL. GALEANA",
+              "2"
+            ],
+            [
+              "11",
               "Jesus Abraham Gamez Rivera",
               "PROMESAS FC",
               "2"
             ],
             [
+              "12",
+              "Luis Gerardo Gonzalez Ruiz",
+              "ATL. GALEANA",
+              "2"
+            ],
+            [
+              "13",
+              "Nestor Huitzache Alvarado",
+              "PROMESAS FC",
+              "2"
+            ],
+            [
               "14",
+              "Emiliano Centeno Gamez",
+              "PROMESAS FC",
+              "2"
+            ],
+            [
+              "15",
               "Gustavo Ramirez Nuñez",
               "MAZACOTES FC",
               "2"
             ],
             [
-              "15",
-              "Daniel Yañez Rangel",
-              "ALDAMA FC",
-              "1"
-            ],
-            [
               "16",
-              "Eric Lopez Solorzano",
+              "Edgar Roque Flores",
               "ATL. GALEANA",
               "1"
             ],
             [
               "17",
+              "Eric Lopez Solorzano",
+              "ATL. GALEANA",
+              "1"
+            ],
+            [
+              "18",
               "Daniel Franco Lerma",
               "POPULARES",
               "1"
             ],
             [
-              "18",
+              "19",
               "Aaron Aguilar Gutierrez",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "19",
+              "20",
+              "Cristian Peralta Ariza",
+              "ATL. GALEANA",
+              "1"
+            ],
+            [
+              "21",
               "ISRAEL HORTELANO CERRITO",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "20",
+              "22",
               "Jose Emiliano Berdin Guerrero",
               "POPULARES",
               "1"
             ],
             [
-              "21",
+              "23",
               "Iker Rodrigo Avecilla Lopez",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "22",
+              "24",
               "Javier Ivan Guerrero Jimenez",
               "ALDAMA FC",
               "1"
             ],
             [
-              "23",
+              "25",
               "Jose Guadalupe Delgado Lemus",
               "MALVINAS",
               "1"
             ],
             [
-              "24",
+              "26",
               "Juan Leonardo Rico Ramos",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "25",
+              "27",
               "Juan Carlos Barron Cano",
               "ALDAMA FC",
               "1"
             ],
             [
-              "26",
+              "28",
               "Matias Armenta Lara",
               "PROMESAS FC",
               "1"
             ],
             [
-              "27",
+              "29",
               "EDGAR SEBASTIAN CORIA ARROYO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "28",
+              "30",
               "Juan Pablo Vasquez Pizano",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "29",
+              "31",
               "Martin Ramirez Subias",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "30",
+              "32",
               "Alessandro Ortega Belman",
               "ALDAMA FC",
               "1"
             ],
             [
-              "31",
+              "33",
               "Diego Eduardo Arce Sanchez",
               "CAPIBARAS",
               "1"
             ],
             [
-              "32",
+              "34",
               "Edgar Ulises Prieto Montoya",
               "LA HUERTA",
               "1"
             ],
             [
-              "33",
-              "Marco Antonio Sillero Zarate",
-              "ATL. GALEANA",
-              "1"
-            ],
-            [
-              "34",
+              "35",
               "Eric Fernando Dongu Guerrero",
               "MALVINAS",
               "1"
             ],
             [
-              "35",
+              "36",
               "CRISTOPHER TONATIOH VILLAGOMEZ CUEVAS",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "36",
+              "37",
               "Vladimir Hernandez Luna",
               "OSASUNA",
               "1"
             ],
             [
-              "37",
+              "38",
               "JUAN DIEGO CASTILLO CUEVAS",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "38",
+              "39",
               "Martin Vazquez Tierrablanca",
               "POPULARES",
               "1"
             ],
             [
-              "39",
+              "40",
               "Carlos Daniel Tierrablanca Salinas",
               "CAPIBARAS",
               "1"
             ],
             [
-              "40",
+              "41",
               "Miguel Alejandro Alvarez Guerrero",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "41",
+              "42",
               "Sergio Alexis Flores Guerrero",
               "OSASUNA",
               "1"
             ],
             [
-              "42",
+              "43",
               "VICTOR MANUEL ARGUELLO ALBERTO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "43",
+              "44",
               "Cristian Armenta Rico",
               "PROMESAS FC",
               "1"
             ],
             [
-              "44",
+              "45",
               "Rodolfo Ramirez Hernandez",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "45",
+              "46",
               "Serafin Galindo De La Cruz",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "46",
+              "47",
               "Marco Antonio Gonzalez Arriaga",
               "CAPIBARAS",
               "1"
             ],
             [
-              "47",
+              "48",
               "Ivan Fernando Avecilla Zapatero",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "48",
+              "49",
               "Adolfo Linares Alvarez",
               "LA CANCHITA DEPORTES",
               "1"
             ],
             [
-              "49",
+              "50",
               "Diego Tadeo Ramirez Coyote",
               "PROMESAS FC",
               "1"
             ],
             [
-              "50",
+              "51",
               "Ismael Hortelano Cerrito",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "51",
+              "52",
               "Luis Fernando Cedeño Cuellar",
               "LA HUERTA",
               "1"
             ],
             [
-              "52",
+              "53",
               "Jesus Gomez Valadez",
               "ALDAMA FC",
               "1"
             ],
             [
-              "53",
+              "54",
               "Adolfo Celedon Galvan",
               "CAPIBARAS",
               "1"
             ],
             [
-              "54",
+              "55",
               "Manuel Romero Gallardo",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "55",
+              "56",
               "Salvador Cortes Flores",
               "MALVINAS",
               "1"
             ],
             [
-              "56",
+              "57",
               "Omar Hernandez Vazquez",
               "POPULARES",
               "1"
             ],
             [
-              "57",
+              "58",
               "Jose Manuel Calero Cerrito",
               "OSASUNA",
               "1"
             ],
             [
-              "58",
+              "59",
               "Andriv Giovanni Galindo Martinez",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "59",
+              "60",
               "Jesus Martin Hortelano Noria",
               "LA HUERTA",
               "1"
             ],
             [
-              "60",
+              "61",
               "Josue Valentin Alvarez Rodriguez",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "61",
+              "62",
               "Juan Carlos Lerma Cerritos",
               "ALDAMA FC",
               "1"
             ],
             [
-              "62",
+              "63",
               "Juan Jose Obrajero Rodriguez",
               "OSASUNA",
               "1"
             ],
             [
-              "63",
+              "64",
+              "JOSE ARMANDO ARGUELLO ALBERTO",
+              "DEP. MARAVILLAS",
+              "1"
+            ],
+            [
+              "65",
               "Adrian Gonzalez Garcia",
               "POPULARES",
               "1"
             ],
             [
-              "64",
+              "66",
               "Pedro Emanuel Figueroa Galvan",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "65",
+              "67",
               "Ivan Franco Montoya",
               "CAPIBARAS",
               "1"
             ],
             [
-              "66",
+              "68",
               "VICTOR MANUEL SILVA NORIA",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "67",
+              "69",
               "Adrian Arzate Guerrero",
               "OSASUNA",
               "1"
             ],
             [
-              "68",
+              "70",
               "Jonathan Brian Rico Gamez",
               "PROMESAS FC",
               "1"
             ],
             [
-              "69",
+              "71",
               "Jesus Vera Cervantes",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "70",
+              "72",
               "Pedro Buenavista Sandoval",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "71",
+              "73",
               "Christopher Cano Vadillo",
               "MAZACOTES FC",
               "1"
             ],
             [
-              "72",
+              "74",
               "Juan Manuel Arcia Calero",
               "SAN ANTONIO JRS",
               "1"
             ],
             [
-              "73",
+              "75",
               "Juan Ignacio Servin Linaldi",
               "POPULARES",
               "1"
             ],
             [
-              "74",
+              "76",
               "LUIS JONATHAN AGUILAR GERVACIO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "75",
+              "77",
               "Diego Jesus Grangeno Lopez",
               "MALVINAS",
               "1"
             ],
             [
-              "76",
+              "78",
               "Miguel Angel Herrera Rico",
               "LA CUADRILLA",
               "1"
             ],
             [
-              "77",
+              "79",
               "JOSE OMAR BUENRROSTRO ROMERO",
               "DEP. MARAVILLAS",
               "1"
             ],
             [
-              "78",
+              "80",
               "Cristian Eduardo Mares Ramirez",
               "POPULARES",
               "1"
             ],
             [
-              "79",
+              "81",
               "Oswaldo Gabriel Torres Solorzano",
               "OSASUNA",
               "1"
             ],
             [
-              "80",
+              "82",
               "Alan Jesus Ramirez Vega",
               "OSASUNA",
               "1"
             ],
             [
-              "81",
+              "83",
               "Juan Pablo Rico Martinez",
               "PROMESAS FC",
+              "1"
+            ],
+            [
+              "84",
+              "Daniel Yañez Rangel",
+              "ALDAMA FC",
               "1"
             ],
             [
@@ -17354,27 +17375,27 @@
             ],
             [
               "2",
+              "ATL. GALEANA",
+              "19 goles en temporada",
+              "19"
+            ],
+            [
+              "3",
               "ALDAMA FC",
               "18 goles en temporada",
               "18"
             ],
             [
-              "3",
+              "4",
               "CAPIBARAS",
               "18 goles en temporada",
               "18"
             ],
             [
-              "4",
+              "5",
               "LA CUADRILLA",
               "18 goles en temporada",
               "18"
-            ],
-            [
-              "5",
-              "ATL. GALEANA",
-              "15 goles en temporada",
-              "15"
             ],
             [
               "6",
@@ -17421,8 +17442,8 @@
             [
               "13",
               "DEP. MARAVILLAS",
-              "6 goles en temporada",
-              "6"
+              "7 goles en temporada",
+              "7"
             ]
           ]
         }
@@ -17595,24 +17616,24 @@
             [
               "2",
               "1",
-              "PROMESAS FC",
-              "-",
-              "vs",
-              "7",
-              "LA CUADRILLA",
-              "Rincón de Centeno",
-              "26/07/2026 10:00",
-              "---"
-            ],
-            [
-              "3",
-              "1",
               "CAPIBARAS",
               "3",
               "vs",
               "1",
               "MAZACOTES FC",
               "Tavera",
+              "26/07/2026 10:00",
+              "---"
+            ],
+            [
+              "3",
+              "1",
+              "PROMESAS FC",
+              "-",
+              "vs",
+              "7",
+              "LA CUADRILLA",
+              "Rincón de Centeno",
               "26/07/2026 10:00",
               "---"
             ],
@@ -17703,18 +17724,6 @@
             [
               "11",
               "2",
-              "LA CANCHITA DEPORTES",
-              "5",
-              "vs",
-              "-",
-              "CAPIBARAS",
-              "Campo 1 (Empastado)",
-              "09/08/2026 12:00",
-              "---"
-            ],
-            [
-              "12",
-              "2",
               "MAZACOTES FC",
               "-",
               "vs",
@@ -17725,19 +17734,19 @@
               "---"
             ],
             [
-              "13",
-              "3",
-              "MAZACOTES FC",
+              "12",
               "2",
+              "LA CANCHITA DEPORTES",
+              "5",
               "vs",
-              "3",
-              "ATL. GALEANA",
-              "Campo 2",
-              "30/08/2026 08:00",
+              "-",
+              "CAPIBARAS",
+              "Campo 1 (Empastado)",
+              "09/08/2026 12:00",
               "---"
             ],
             [
-              "14",
+              "13",
               "3",
               "ALDAMA FC",
               "3",
@@ -17745,6 +17754,18 @@
               "6",
               "LA CANCHITA DEPORTES",
               "Fraccionamiento",
+              "30/08/2026 08:00",
+              "---"
+            ],
+            [
+              "14",
+              "3",
+              "MAZACOTES FC",
+              "2",
+              "vs",
+              "3",
+              "ATL. GALEANA",
+              "Campo 2",
               "30/08/2026 08:00",
               "---"
             ],
@@ -17847,18 +17868,6 @@
             [
               "23",
               "4",
-              "SAN ANTONIO JRS",
-              "2",
-              "vs",
-              "1",
-              "POPULARES",
-              "Romerillo",
-              "06/09/2026 12:00",
-              "---"
-            ],
-            [
-              "24",
-              "4",
               "MALVINAS",
               "1",
               "vs",
@@ -17869,19 +17878,19 @@
               "---"
             ],
             [
-              "25",
-              "5",
-              "MAZACOTES FC",
+              "24",
               "4",
+              "SAN ANTONIO JRS",
+              "2",
               "vs",
-              "-",
-              "DEP. MARAVILLAS",
-              "Campo 1 (Empastado)",
-              "20/09/2026 08:00",
-              "RAUL GARCIA"
+              "1",
+              "POPULARES",
+              "Romerillo",
+              "06/09/2026 12:00",
+              "---"
             ],
             [
-              "26",
+              "25",
               "5",
               "POPULARES",
               "3",
@@ -17893,14 +17902,26 @@
               "---"
             ],
             [
+              "26",
+              "5",
+              "MAZACOTES FC",
+              "4",
+              "vs",
+              "-",
+              "DEP. MARAVILLAS",
+              "Campo 1 (Empastado)",
+              "20/09/2026 08:00",
+              "RAUL GARCIA"
+            ],
+            [
               "27",
               "5",
-              "ALDAMA FC",
-              "6",
+              "CAPIBARAS",
+              "5",
               "vs",
-              "1",
-              "MALVINAS",
-              "Campo 1 (Empastado)",
+              "3",
+              "LA CUADRILLA",
+              "Tavera",
               "20/09/2026 10:00",
               "---"
             ],
@@ -17919,12 +17940,12 @@
             [
               "29",
               "5",
-              "CAPIBARAS",
-              "5",
+              "ALDAMA FC",
+              "6",
               "vs",
-              "3",
-              "LA CUADRILLA",
-              "Tavera",
+              "1",
+              "MALVINAS",
+              "Campo 1 (Empastado)",
               "20/09/2026 10:00",
               "---"
             ],
@@ -17943,18 +17964,6 @@
             [
               "31",
               "6",
-              "POPULARES",
-              "3",
-              "vs",
-              "3",
-              "ATL. GALEANA",
-              "Fraccionamiento",
-              "27/09/2026 08:00",
-              "---"
-            ],
-            [
-              "32",
-              "6",
               "ALDAMA FC",
               "1",
               "vs",
@@ -17965,14 +17974,26 @@
               "---"
             ],
             [
-              "33",
+              "32",
               "6",
-              "DEP. MARAVILLAS",
+              "POPULARES",
               "3",
               "vs",
+              "3",
+              "ATL. GALEANA",
+              "Fraccionamiento",
+              "27/09/2026 08:00",
+              "---"
+            ],
+            [
+              "33",
+              "6",
+              "OSASUNA",
               "4",
-              "LA CANCHITA DEPORTES",
-              "Campo 3",
+              "vs",
+              "4",
+              "PROMESAS FC",
+              "Fraccionamiento",
               "27/09/2026 10:00",
               "---"
             ],
@@ -17991,12 +18012,12 @@
             [
               "35",
               "6",
-              "OSASUNA",
-              "4",
+              "DEP. MARAVILLAS",
+              "3",
               "vs",
               "4",
-              "PROMESAS FC",
-              "Fraccionamiento",
+              "LA CANCHITA DEPORTES",
+              "Campo 3",
               "27/09/2026 10:00",
               "---"
             ],
@@ -18076,9 +18097,9 @@
               "42",
               "7",
               "DEP. MARAVILLAS",
-              "-",
+              "1",
               "vs",
-              "-",
+              "4",
               "ATL. GALEANA",
               "Campo 3",
               "18/10/2026 12:00",
@@ -18111,12 +18132,12 @@
             [
               "45",
               "8",
-              "DEP. MARAVILLAS",
+              "ALDAMA FC",
               "-",
               "vs",
               "-",
-              "MALVINAS",
-              "Campo 2",
+              "SAN ANTONIO JRS",
+              "Romerillo",
               "25/10/2026 10:00",
               "---"
             ],
@@ -18135,12 +18156,12 @@
             [
               "47",
               "8",
-              "ALDAMA FC",
+              "DEP. MARAVILLAS",
               "-",
               "vs",
               "-",
-              "SAN ANTONIO JRS",
-              "Romerillo",
+              "MALVINAS",
+              "Campo 2",
               "25/10/2026 10:00",
               "---"
             ],
@@ -18183,18 +18204,6 @@
             [
               "51",
               "9",
-              "OSASUNA",
-              "-",
-              "vs",
-              "-",
-              "PROMESAS FC",
-              "Fraccionamiento",
-              "01/11/2026 10:00",
-              "---"
-            ],
-            [
-              "52",
-              "9",
               "LA CUADRILLA",
               "-",
               "vs",
@@ -18205,19 +18214,19 @@
               "---"
             ],
             [
-              "53",
+              "52",
               "9",
-              "LA CANCHITA DEPORTES",
+              "OSASUNA",
               "-",
               "vs",
               "-",
-              "MALVINAS",
-              "Campo 2",
-              "01/11/2026 12:00",
+              "PROMESAS FC",
+              "Fraccionamiento",
+              "01/11/2026 10:00",
               "---"
             ],
             [
-              "54",
+              "53",
               "9",
               "SAN ANTONIO JRS",
               "-",
@@ -18229,19 +18238,19 @@
               "---"
             ],
             [
-              "55",
-              "10",
-              "MALVINAS",
+              "54",
+              "9",
+              "LA CANCHITA DEPORTES",
               "-",
               "vs",
               "-",
-              "SAN ANTONIO JRS",
-              "Campo 3",
-              "08/11/2026 08:00",
+              "MALVINAS",
+              "Campo 2",
+              "01/11/2026 12:00",
               "---"
             ],
             [
-              "56",
+              "55",
               "10",
               "POPULARES",
               "-",
@@ -18249,6 +18258,18 @@
               "-",
               "ALDAMA FC",
               "Campo 1 (Empastado)",
+              "08/11/2026 08:00",
+              "---"
+            ],
+            [
+              "56",
+              "10",
+              "MALVINAS",
+              "-",
+              "vs",
+              "-",
+              "SAN ANTONIO JRS",
+              "Campo 3",
               "08/11/2026 08:00",
               "---"
             ],
@@ -22883,6 +22904,19 @@
           "away_bench": []
         },
         {
+          "id": 325,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/325/",
+          "title": "Cédula Arbitral - DEP. MARAVILLAS (Intermedia) vs ATL. GALEANA (Intermedia)",
+          "local": "DEP. MARAVILLAS",
+          "away": "ATL. GALEANA",
+          "category": "Intermedia",
+          "date": "18/10/2026 12:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
           "id": 326,
           "url": "https://juventinorosasliga.com/cedula-arbitral/326/",
           "title": "Cédula Arbitral - OSASUNA (Intermedia) vs POPULARES (Intermedia)",
@@ -22946,6 +22980,7 @@
         320,
         321,
         322,
+        325,
         326,
         327
       ],
