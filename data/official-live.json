@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-24T19:26:51Z",
+  "captured_at_utc": "2026-10-24T21:51:00Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2422,7 +2422,8 @@
           {
             "name": "J. CRUZ PRESA PIZANO",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-23_at_12.10.01_PM_xgbtzr"
           },
           {
             "name": "Felipe Prieto Ramirez",
@@ -4672,12 +4673,14 @@
           {
             "name": "LUIS ENRIQUE CAMPOS BADILLO",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-24_at_1.31.27_PM_bcvxoa"
           },
           {
             "name": "ARTURO CONTRERAS GAMUCERO",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_2.16.10_PM_u84yjg"
           },
           {
             "name": "FRANCISCO CONTRERAS MORENO",
@@ -4699,7 +4702,8 @@
           {
             "name": "JESUS HERNANDEZ ABOYTES",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_2.43.31_PM_bwswdn"
           },
           {
             "name": "Martin Hortelano Luna",
@@ -4745,12 +4749,14 @@
           {
             "name": "OSCAR ROA RODRIGUEZ",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_3.40.38_PM_nylf53"
           },
           {
             "name": "LUIS ANGEL SANCHEZ PEREZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-22_at_2.20.36_PM_uakoiq"
           },
           {
             "name": "OMAR SANLUISEÑO GUZMAN",
@@ -9338,7 +9344,8 @@
           {
             "name": "GALO FLORENTINO MARTINEZ ZARATE",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-10-24_at_1.50.26_PM_a7z8r1"
           },
           {
             "name": "GIOVANI DE JESUS NEGRETE RUIZ",
@@ -10824,8 +10831,8 @@
             ],
             [
               "7",
-              "FRANCISCO GUERRERO GUERRERO",
-              "DEP. NOPALERO",
+              "Rafael Hernandez Almanza",
+              "TAVERA FC",
               "2"
             ],
             [
@@ -10842,8 +10849,8 @@
             ],
             [
               "10",
-              "Rafael Hernandez Almanza",
-              "TAVERA FC",
+              "FRANCISCO GUERRERO GUERRERO",
+              "DEP. NOPALERO",
               "2"
             ],
             [
@@ -10962,14 +10969,14 @@
             ],
             [
               "30",
-              "Christian Ivan Villegas Garcia",
-              "SAN JOSE JRS",
+              "Jose Guadalupe Lopez Cano",
+              "CELTICOS",
               "1"
             ],
             [
               "31",
-              "Jose Guadalupe Lopez Cano",
-              "CELTICOS",
+              "Christian Ivan Villegas Garcia",
+              "SAN JOSE JRS",
               "1"
             ],
             [
@@ -11058,14 +11065,14 @@
             ],
             [
               "46",
-              "Kevin Gustavo Ojeda Ortega",
-              "CELTICOS",
+              "Miguel Angel Solorzano Vargas",
+              "SAN JUAN FC",
               "1"
             ],
             [
               "47",
-              "Miguel Angel Solorzano Vargas",
-              "SAN JUAN FC",
+              "Kevin Gustavo Ojeda Ortega",
+              "CELTICOS",
               "1"
             ],
             [
