@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-25T20:56:39Z",
-  "mode": "full",
+  "captured_at_utc": "2026-10-25T23:10:56Z",
+  "mode": "fast",
   "categories": {
     "1": {
       "id": 1,
@@ -2869,27 +2869,42 @@
         },
         {
           "id": 55,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/55/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/55/",
           "title": "Cédula Arbitral - LA ESPERANZA (Veteranos 50+) vs BOAVISTA (Veteranos 50+)",
           "local": "LA ESPERANZA",
           "away": "BOAVISTA",
-          "category": "Veteranos 50+"
+          "category": "Veteranos 50+",
+          "date": "17/10/2026 15:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 56,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/56/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/56/",
           "title": "Cédula Arbitral - MANCHESTER (Veteranos 50+) vs TOROS DE CUENDA (Veteranos 50+)",
           "local": "MANCHESTER",
           "away": "TOROS DE CUENDA",
-          "category": "Veteranos 50+"
+          "category": "Veteranos 50+",
+          "date": "17/10/2026 15:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 57,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/57/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/57/",
           "title": "Cédula Arbitral - BOCA JRS (Veteranos 50+) vs DYNAMO (Veteranos 50+)",
           "local": "BOCA JRS",
           "away": "DYNAMO",
-          "category": "Veteranos 50+"
+          "category": "Veteranos 50+",
+          "date": "17/10/2026 15:30",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -10382,43 +10397,68 @@
         },
         {
           "id": 166,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/166/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/166/",
           "title": "Cédula Arbitral - HERMANOS (Primera Fuerza) vs LOBOS CDG (Primera Fuerza)",
           "local": "HERMANOS",
           "away": "LOBOS CDG",
-          "category": "Primera Fuerza"
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 167,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/167/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/167/",
           "title": "Cédula Arbitral - TERRICOLAS (Primera Fuerza) vs NAPOLI (Primera Fuerza)",
           "local": "TERRICOLAS",
           "away": "NAPOLI",
-          "category": "Primera Fuerza"
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 08:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 168,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/168/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/168/",
           "title": "Cédula Arbitral - ABEJAS (Primera Fuerza) vs HERRERAS FC (Primera Fuerza)",
           "local": "ABEJAS",
           "away": "HERRERAS FC",
-          "category": "Primera Fuerza"
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 169,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/169/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/169/",
           "title": "Cédula Arbitral - SAN JOSE FC (Primera Fuerza) vs FRANCO FC (Primera Fuerza)",
           "local": "SAN JOSE FC",
           "away": "FRANCO FC",
-          "category": "Primera Fuerza"
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 12:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 170,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/170/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/170/",
           "title": "Cédula Arbitral - GALACTICOS (Primera Fuerza) vs LINCES (Primera Fuerza)",
           "local": "GALACTICOS",
           "away": "LINCES",
-          "category": "Primera Fuerza"
+          "category": "Primera Fuerza",
+          "date": "18/10/2026 09:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -16447,11 +16487,16 @@
         },
         {
           "id": 407,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/407/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/407/",
           "title": "Cédula Arbitral - SAN JULIAN (Segunda Fuerza) vs TAPATIO (Segunda Fuerza)",
           "local": "SAN JULIAN",
           "away": "TAPATIO",
-          "category": "Segunda Fuerza"
+          "category": "Segunda Fuerza",
+          "date": "25/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -22918,51 +22963,81 @@
         },
         {
           "id": 323,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/323/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/323/",
           "title": "Cédula Arbitral - SAN ANTONIO JRS (Intermedia) vs CAPIBARAS (Intermedia)",
           "local": "SAN ANTONIO JRS",
           "away": "CAPIBARAS",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 324,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/324/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/324/",
           "title": "Cédula Arbitral - PROMESAS FC (Intermedia) vs LA HUERTA (Intermedia)",
           "local": "PROMESAS FC",
           "away": "LA HUERTA",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 325,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/325/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/325/",
           "title": "Cédula Arbitral - DEP. MARAVILLAS (Intermedia) vs ATL. GALEANA (Intermedia)",
           "local": "DEP. MARAVILLAS",
           "away": "ATL. GALEANA",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 12:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 326,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/326/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/326/",
           "title": "Cédula Arbitral - OSASUNA (Intermedia) vs POPULARES (Intermedia)",
           "local": "OSASUNA",
           "away": "POPULARES",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 08:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 327,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/327/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/327/",
           "title": "Cédula Arbitral - MALVINAS (Intermedia) vs LA CANCHITA DEPORTES (Intermedia)",
           "local": "MALVINAS",
           "away": "LA CANCHITA DEPORTES",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         },
         {
           "id": 328,
-          "url": "https://www.juventinorosasliga.com/cedula-arbitral/328/",
+          "url": "https://juventinorosasliga.com/cedula-arbitral/328/",
           "title": "Cédula Arbitral - LA CUADRILLA (Intermedia) vs MAZACOTES FC (Intermedia)",
           "local": "LA CUADRILLA",
           "away": "MAZACOTES FC",
-          "category": "Intermedia"
+          "category": "Intermedia",
+          "date": "18/10/2026 08:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
