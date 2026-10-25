@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-25T17:49:32Z",
+  "captured_at_utc": "2026-10-25T20:45:18Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -3857,7 +3857,8 @@
           "JOSE LUIS ZUÑIGA CERROBLANCO",
           "Elfego Robles Leon",
           "Juan Jose Pineda Mendoza",
-          "Jaime Yañez Rangel"
+          "Jaime Yañez Rangel",
+          "Gerardo Zuñiga Vega"
         ]
       },
       "player_usage": {},
@@ -5315,12 +5316,18 @@
             "name": "JOSE LUIS ZUÑIGA CERROBLANCO",
             "position": "Mediocampista",
             "dorsal": "—"
+          },
+          {
+            "name": "Gerardo Zuñiga Vega",
+            "position": "Mediocampista",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_2.44.05_PM_rltg2i"
           }
         ]
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 261
+      "public_player_count_scraped": 262
     },
     "3": {
       "id": 3,
@@ -23345,7 +23352,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 261,
+        "public_names": 262,
         "kept_previous": true
       },
       "Primera Fuerza": {
