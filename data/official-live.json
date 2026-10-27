@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-27T05:32:12Z",
+  "captured_at_utc": "2026-10-27T10:55:05Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -15001,7 +15001,8 @@
           {
             "name": "Noe Guadalupe Garcia Mejia",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/IMG_20260811_072016_hjgat8"
           },
           {
             "name": "Eber Samuel Herrera Guzman",
