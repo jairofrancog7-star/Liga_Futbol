@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-27T16:30:11Z",
+  "captured_at_utc": "2026-10-27T20:55:54Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -274,8 +274,8 @@
             ],
             [
               "3",
-              "Jose Mendoza Pescador",
-              "LA ESPERANZA",
+              "Julio Cesar Ruvalcaba Almanza",
+              "DYNAMO",
               "3"
             ],
             [
@@ -286,26 +286,26 @@
             ],
             [
               "5",
-              "Julio Cesar Ruvalcaba Almanza",
-              "DYNAMO",
+              "Jose Mendoza Pescador",
+              "LA ESPERANZA",
               "3"
             ],
             [
               "6",
-              "Marco Antonio Gasca Arzate",
-              "BOAVISTA",
+              "Miguel ANgel Lopez Zarazua",
+              "LA ESPERANZA",
               "2"
             ],
             [
               "7",
-              "Francisco Gutierrez Campos",
-              "TOROS DE CUENDA",
+              "Manuel Cerritos Arellano",
+              "MANCHESTER",
               "2"
             ],
             [
               "8",
-              "Manuel Cerritos Arellano",
-              "MANCHESTER",
+              "Marco Antonio Gasca Arzate",
+              "BOAVISTA",
               "2"
             ],
             [
@@ -316,86 +316,86 @@
             ],
             [
               "10",
-              "Miguel ANgel Lopez Zarazua",
-              "LA ESPERANZA",
+              "Francisco Gutierrez Campos",
+              "TOROS DE CUENDA",
               "2"
             ],
             [
               "11",
-              "Miguel Merino Peña",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "12",
-              "Felipe Prieto Ramirez",
-              "MANCHESTER",
-              "1"
-            ],
-            [
-              "13",
-              "Eladio Ramirez Alberto",
-              "DYNAMO",
-              "1"
-            ],
-            [
-              "14",
-              "Jorge Duran Zarate",
-              "BOAVISTA",
-              "1"
-            ],
-            [
-              "15",
-              "Feliciano Palacios Lopez",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "16",
-              "Octavio Ramos Espinoza",
-              "DYNAMO",
-              "1"
-            ],
-            [
-              "17",
               "Florencio Franco Lerma",
               "MANCHESTER",
               "1"
             ],
             [
-              "18",
-              "Jose Guadalupe Lopez Martinez",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "19",
-              "J. ROSARIO ACOSTA SANTARROSA",
-              "TOROS DE CUENDA",
-              "1"
-            ],
-            [
-              "20",
-              "Fernando Montesinos Freyre",
-              "MANCHESTER",
-              "1"
-            ],
-            [
-              "21",
-              "Gabriel Estrada Vilchis",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "22",
+              "12",
               "Armando Muñiz Bañales",
               "DYNAMO",
               "1"
             ],
             [
-              "23",
+              "13",
               "Antonio Mendoza Garcia",
               "MANCHESTER",
+              "1"
+            ],
+            [
+              "14",
+              "Jose Manuel Vargas Palacios",
+              "TOROS DE CUENDA",
+              "1"
+            ],
+            [
+              "15",
+              "Lazaro Ruvalcaba Almanza",
+              "BOAVISTA",
+              "1"
+            ],
+            [
+              "16",
+              "Eladio Ramirez Alberto",
+              "DYNAMO",
+              "1"
+            ],
+            [
+              "17",
+              "Jorge Duran Zarate",
+              "BOAVISTA",
+              "1"
+            ],
+            [
+              "18",
+              "Octavio Ramos Espinoza",
+              "DYNAMO",
+              "1"
+            ],
+            [
+              "19",
+              "Jose Guadalupe Lopez Martinez",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "20",
+              "J. ROSARIO ACOSTA SANTARROSA",
+              "TOROS DE CUENDA",
+              "1"
+            ],
+            [
+              "21",
+              "Fernando Montesinos Freyre",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "22",
+              "Gabriel Estrada Vilchis",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "23",
+              "Genaro Teran Vazquez",
+              "LA ESPERANZA",
               "1"
             ],
             [
@@ -406,56 +406,56 @@
             ],
             [
               "25",
-              "Genaro Teran Vazquez",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "26",
               "Rogelio Garcia Aguirre",
               "MANCHESTER",
               "1"
             ],
             [
-              "27",
+              "26",
               "Jose Jesus Lopez Leon",
               "DYNAMO",
               "1"
             ],
             [
-              "28",
+              "27",
               "Jose Antonio Zarate Arellano",
               "BOAVISTA",
               "1"
             ],
             [
-              "29",
+              "28",
               "Hilario Armenta Buenavista",
               "DYNAMO",
               "1"
             ],
             [
-              "30",
+              "29",
               "Alberto Ramirez Campos",
               "MANCHESTER",
               "1"
             ],
             [
-              "31",
-              "Jose Manuel Vargas Palacios",
-              "TOROS DE CUENDA",
-              "1"
-            ],
-            [
-              "32",
+              "30",
               "J. MARCOS ARCE SANCHEZ",
               "LA ESPERANZA",
               "1"
             ],
             [
+              "31",
+              "Miguel Merino Peña",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "32",
+              "Felipe Prieto Ramirez",
+              "MANCHESTER",
+              "1"
+            ],
+            [
               "33",
-              "Lazaro Ruvalcaba Almanza",
-              "BOAVISTA",
+              "Feliciano Palacios Lopez",
+              "LA ESPERANZA",
               "1"
             ],
             [
@@ -5198,7 +5198,8 @@
           {
             "name": "ENRIQUE ABOYTES CRUZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Cachonguis_rjd855"
           },
           {
             "name": "FRANCISCO JESUS AGUIRRE CANO",
@@ -5209,7 +5210,8 @@
           {
             "name": "LUIS FERNANDO ARREDONDO ZAVALA",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Zavala_awq1zy"
           },
           {
             "name": "Josue Valentin Alvarez Rodriguez",
@@ -5242,7 +5244,8 @@
           {
             "name": "JOSE LUIS GUERRERO RODRIGUEZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Grillo_fslcvw"
           },
           {
             "name": "Cristian Jesus Gasca Rodriguez",
@@ -5271,7 +5274,8 @@
           {
             "name": "JOSE DAVID MARTINEZ FLORES",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Gallo_unsuz7"
           },
           {
             "name": "Jose Pablo Mejia Campos",
@@ -5282,7 +5286,8 @@
           {
             "name": "Juan Mendoza Lopez",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Paleto_ccblxx"
           },
           {
             "name": "RUBEN OLIVARES GUERRERO",
@@ -5297,7 +5302,8 @@
           {
             "name": "EMMANUEL PANTOJA CAPULIN",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Pantoja_wpd2ui"
           },
           {
             "name": "Juan Jose Pineda Mendoza",
@@ -5308,12 +5314,14 @@
           {
             "name": "GABRIEL RUVALCABA ALMANZA",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/ruvalcaba_qvwayo"
           },
           {
             "name": "Elfego Robles Leon",
             "position": "Defensa",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/elfego_mucqzu"
           },
           {
             "name": "Jose Antonio Rubi Perez",
@@ -5342,7 +5350,8 @@
           {
             "name": "JOSE LUIS ZUÑIGA CERROBLANCO",
             "position": "Mediocampista",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/PepeZu%C3%B1iga_b6di5q"
           },
           {
             "name": "Gerardo Zuñiga Vega",
@@ -5676,212 +5685,212 @@
           "rows": [
             [
               "1",
-              "Alejandro Moreno Banda",
-              "HERMANOS",
-              "3"
-            ],
-            [
-              "2",
               "ERNESTO BALTAZAR SOSA ARREDONDO",
               "LINCES",
               "3"
             ],
             [
-              "3",
-              "ISRAEL SOLORZANO LINARES",
-              "LINCES",
-              "2"
+              "2",
+              "Alejandro Moreno Banda",
+              "HERMANOS",
+              "3"
             ],
             [
-              "4",
+              "3",
               "Mario Razo Miranda",
               "HERMANOS",
               "2"
             ],
             [
-              "5",
+              "4",
               "Emiliano Rubi Campos",
               "LOBOS CDG",
               "2"
             ],
             [
+              "5",
+              "ISRAEL SOLORZANO LINARES",
+              "LINCES",
+              "2"
+            ],
+            [
               "6",
-              "EDGAR OMAR REYES QUINTERO",
-              "HERRERAS FC",
-              "1"
-            ],
-            [
-              "7",
-              "Juan Angel Gonzalez Martinez",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "8",
-              "Angel Santiago Garcia",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "9",
-              "Kevin Orlando Lara Ruiz",
-              "LOBOS CDG",
-              "1"
-            ],
-            [
-              "10",
-              "Gustavo Guadalupe Rico Huerta",
-              "ABEJAS",
-              "1"
-            ],
-            [
-              "11",
-              "Oswaldo Grande Valadez",
-              "TERRICOLAS",
-              "1"
-            ],
-            [
-              "12",
-              "Jose Rosas Cardenas",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "13",
               "JORGE LUIS ALMAGUER RUIZ",
               "LINCES",
               "1"
             ],
             [
-              "14",
-              "Jose Guadalupe Guerrero Lopez",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "15",
-              "Marco Cesar Saavedra Escoto",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "16",
-              "Rolando Rocha Sierra",
-              "FRANCO FC",
-              "1"
-            ],
-            [
-              "17",
-              "Fernando Gamez Reyes",
-              "ABEJAS",
-              "1"
-            ],
-            [
-              "18",
+              "7",
               "Juan Jesus Beltran Garcia",
               "FRANCO FC",
               "1"
             ],
             [
-              "19",
+              "8",
               "Emiliano Moreno Banda",
               "HERMANOS",
               "1"
             ],
             [
-              "20",
-              "FRANCISCO JAVIER HERRERA TIERRABLANCA",
-              "HERRERAS FC",
-              "1"
-            ],
-            [
-              "21",
+              "9",
               "Gerardo Zuñiga Vega",
               "NAPOLI",
               "1"
             ],
             [
-              "22",
+              "10",
               "BRANDON VALDES ARROYO",
               "HERRERAS FC",
               "1"
             ],
             [
-              "23",
+              "11",
               "Ivan Martinez Vasquez",
               "TERRICOLAS",
               "1"
             ],
             [
-              "24",
-              "Juan Pablo Muñoz Guerrero",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "25",
-              "Victor Manuel Raul Muñoz Vasquez",
-              "TERRICOLAS",
-              "1"
-            ],
-            [
-              "26",
+              "12",
               "ANDRES AGUILLON TIERRABLANCA",
               "LINCES",
               "1"
             ],
             [
-              "27",
+              "13",
               "Oscar Monroy Camacho",
               "JUVENTUS",
               "1"
             ],
             [
-              "28",
+              "14",
               "Jose Ramon Negrete Ruiz",
               "JUVENTUS",
               "1"
             ],
             [
-              "29",
+              "15",
               "Jorge Luis Ramirez Conejo",
               "JUVENTUS",
               "1"
             ],
             [
-              "30",
-              "Alejandro Alarcon Aguirre",
-              "NAPOLI",
-              "1"
-            ],
-            [
-              "31",
-              "Mario Eduardo Cardenas Ayala",
-              "SAN JOSE FC",
-              "1"
-            ],
-            [
-              "32",
+              "16",
               "Juan Pablo Mendoza Macias",
               "NAPOLI",
               "1"
             ],
             [
-              "33",
+              "17",
+              "Juan Esteban Montecillo Solache",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "18",
+              "Juan Angel Gonzalez Martinez",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "19",
+              "Oswaldo Grande Valadez",
+              "TERRICOLAS",
+              "1"
+            ],
+            [
+              "20",
+              "Jose Guadalupe Guerrero Lopez",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "21",
+              "Marco Cesar Saavedra Escoto",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "22",
+              "Rolando Rocha Sierra",
+              "FRANCO FC",
+              "1"
+            ],
+            [
+              "23",
+              "Mario Eduardo Cardenas Ayala",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "24",
+              "FRANCISCO JAVIER HERRERA TIERRABLANCA",
+              "HERRERAS FC",
+              "1"
+            ],
+            [
+              "25",
+              "Juan Pablo Muñoz Guerrero",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "26",
+              "Victor Manuel Raul Muñoz Vasquez",
+              "TERRICOLAS",
+              "1"
+            ],
+            [
+              "27",
+              "Alejandro Alarcon Aguirre",
+              "NAPOLI",
+              "1"
+            ],
+            [
+              "28",
+              "Fernando Gamez Reyes",
+              "ABEJAS",
+              "1"
+            ],
+            [
+              "29",
               "Juan Manuel Gamez Lopez",
               "ABEJAS",
               "1"
             ],
             [
-              "34",
+              "30",
+              "EDGAR OMAR REYES QUINTERO",
+              "HERRERAS FC",
+              "1"
+            ],
+            [
+              "31",
               "NESTOR GUTIERREZ MENDOZA",
               "HERRERAS FC",
               "1"
             ],
             [
+              "32",
+              "Angel Santiago Garcia",
+              "SAN JOSE FC",
+              "1"
+            ],
+            [
+              "33",
+              "Kevin Orlando Lara Ruiz",
+              "LOBOS CDG",
+              "1"
+            ],
+            [
+              "34",
+              "Gustavo Guadalupe Rico Huerta",
+              "ABEJAS",
+              "1"
+            ],
+            [
               "35",
-              "Juan Esteban Montecillo Solache",
-              "NAPOLI",
+              "Jose Rosas Cardenas",
+              "SAN JOSE FC",
               "1"
             ],
             [
@@ -10507,21 +10516,122 @@
       "dashboard": {
         "counts": {
           "Equipos": 12,
-          "Partidos Jugados": 39,
-          "Partidos Pendientes": 27,
+          "Partidos Jugados": 42,
+          "Partidos Pendientes": 24,
           "Jugadores": 330
         },
         "current_cedulas": [
-          407
+          401,
+          402,
+          403,
+          404,
+          405,
+          406
         ],
         "logo_candidates": [
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioFC_tw7bi1",
+            "near_text": "SAN ANTONIO FC"
+          },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pachangas_upqelg",
             "near_text": "PACHANGAS FC"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CelticosFC_nv4ukd",
+            "near_text": "CELTICOS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
+            "near_text": "SAN JUAN FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJulianFC_wetv0z",
+            "near_text": "SAN JULIAN"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
+            "near_text": "TAPATIO"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/DepLaLuz_wibidf",
+            "near_text": "DEP. LA LUZ"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dep.Zapata_a5dsaz",
+            "near_text": "DEP. ZAPATA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Barcelona_amoaiq",
+            "near_text": "BARZA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
+            "near_text": "DEP. NOPALERO"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseJR_dio2dt",
+            "near_text": "SAN JOSE JRS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
+            "near_text": "TAVERA FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
+            "near_text": "TAVERA FC 35 GOLES CELTICOS 25 GOLES SAN ANTONIO FC 21 GOLES DEP. NOPALERO 20 GOLES SAN JUAN FC 20 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CelticosFC_nv4ukd",
+            "near_text": "TAVERA FC 35 GOLES CELTICOS 25 GOLES SAN ANTONIO FC 21 GOLES DEP. NOPALERO 20 GOLES SAN JUAN FC 20 GOLES"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioFC_tw7bi1",
-            "near_text": "SAN ANTONIO FC"
+            "near_text": "TAVERA FC 35 GOLES CELTICOS 25 GOLES SAN ANTONIO FC 21 GOLES DEP. NOPALERO 20 GOLES SAN JUAN FC 20 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
+            "near_text": "TAVERA FC 35 GOLES CELTICOS 25 GOLES SAN ANTONIO FC 21 GOLES DEP. NOPALERO 20 GOLES SAN JUAN FC 20 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
+            "near_text": "TAVERA FC 35 GOLES CELTICOS 25 GOLES SAN ANTONIO FC 21 GOLES DEP. NOPALERO 20 GOLES SAN JUAN FC 20 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
+            "near_text": "D - DEP. NOPALERO Alan Manuel Noria Tovar 5 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
+            "near_text": "T - TAVERA FC Juan Diego Mendoza Gamez 4 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
+            "near_text": "T - TAVERA FC Honorio Ochoa Aguilar 4 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
+            "near_text": "D - DEP. NOPALERO TELESFORO FREYRE VALADEZ 4 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dep.Zapata_a5dsaz",
+            "near_text": "D - DEP. ZAPATA Francisco Javier Muñoz Badillo 3 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pachangas_upqelg",
+            "near_text": "PACHANGAS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
+            "near_text": "TAPATIO"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseJR_dio2dt",
+            "near_text": "SAN JOSE JRS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
+            "near_text": "SAN JUAN FC"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
@@ -10548,52 +10658,12 @@
             "near_text": "DEP. LA LUZ"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
-            "near_text": "TAVERA FC 34 GOLES SAN ANTONIO FC 20 GOLES SAN JUAN FC 20 GOLES SAN JOSE JRS 19 GOLES CELTICOS 18 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanAntonioFC_tw7bi1",
-            "near_text": "TAVERA FC 34 GOLES SAN ANTONIO FC 20 GOLES SAN JUAN FC 20 GOLES SAN JOSE JRS 19 GOLES CELTICOS 18 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJuanFC_jhprtf",
-            "near_text": "TAVERA FC 34 GOLES SAN ANTONIO FC 20 GOLES SAN JUAN FC 20 GOLES SAN JOSE JRS 19 GOLES CELTICOS 18 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseJR_dio2dt",
-            "near_text": "TAVERA FC 34 GOLES SAN ANTONIO FC 20 GOLES SAN JUAN FC 20 GOLES SAN JOSE JRS 19 GOLES CELTICOS 18 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/CelticosFC_nv4ukd",
-            "near_text": "TAVERA FC 34 GOLES SAN ANTONIO FC 20 GOLES SAN JUAN FC 20 GOLES SAN JOSE JRS 19 GOLES CELTICOS 18 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Nopalero_skdsij",
-            "near_text": "D - DEP. NOPALERO TELESFORO FREYRE VALADEZ 4 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
-            "near_text": "T - TAVERA FC Juan Diego Mendoza Gamez 4 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
-            "near_text": "T - TAVERA FC Honorio Ochoa Aguilar 4 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Barcelona_amoaiq",
+            "near_text": "BARZA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dep.Zapata_a5dsaz",
-            "near_text": "D - DEP. ZAPATA Francisco Javier Muñoz Badillo 3 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TaveraFC_gpdbhg",
-            "near_text": "T - TAVERA FC Omar Olivares Paz 3 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJulianFC_wetv0z",
-            "near_text": "SAN JULIAN"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
-            "near_text": "TAPATIO"
+            "near_text": "DEP. ZAPATA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/tapatio_svt6lz",
@@ -10611,8 +10681,8 @@
       },
       "counts": {
         "Equipos": 12,
-        "Partidos Jugados": 39,
-        "Partidos Pendientes": 27,
+        "Partidos Jugados": 42,
+        "Partidos Pendientes": 24,
         "Jugadores": 330
       },
       "standings": [
@@ -10632,30 +10702,18 @@
           "rows": [
             [
               "1",
-              "SAN JULIAN",
+              "TAVERA FC",
               "7",
               "5",
               "2",
               "0",
-              "18",
-              "8",
-              "+10",
+              "35",
+              "6",
+              "+29",
               "17"
             ],
             [
               "2",
-              "TAVERA FC",
-              "6",
-              "5",
-              "1",
-              "0",
-              "34",
-              "5",
-              "+29",
-              "16"
-            ],
-            [
-              "3",
               "SAN JOSE JRS",
               "7",
               "5",
@@ -10667,7 +10725,31 @@
               "16"
             ],
             [
+              "3",
+              "CELTICOS",
+              "7",
+              "5",
+              "0",
+              "2",
+              "25",
+              "12",
+              "+13",
+              "15"
+            ],
+            [
               "4",
+              "SAN JULIAN",
+              "7",
+              "4",
+              "3",
+              "0",
+              "18",
+              "9",
+              "+9",
+              "15"
+            ],
+            [
+              "5",
               "SAN JUAN FC",
               "7",
               "4",
@@ -10677,18 +10759,6 @@
               "5",
               "+15",
               "13"
-            ],
-            [
-              "5",
-              "CELTICOS",
-              "6",
-              "4",
-              "0",
-              "2",
-              "18",
-              "9",
-              "+9",
-              "12"
             ],
             [
               "6",
@@ -10705,37 +10775,37 @@
             [
               "7",
               "DEP. NOPALERO",
-              "6",
-              "3",
+              "7",
+              "4",
               "0",
               "3",
-              "16",
-              "14",
-              "+2",
-              "6"
+              "20",
+              "15",
+              "+5",
+              "9"
             ],
             [
               "8",
-              "SAN ANTONIO FC",
-              "6",
-              "2",
+              "PACHANGAS FC",
+              "7",
+              "3",
               "0",
               "4",
-              "20",
+              "11",
               "25",
-              "-5",
-              "6"
+              "-14",
+              "9"
             ],
             [
               "9",
-              "PACHANGAS FC",
-              "6",
+              "SAN ANTONIO FC",
+              "7",
               "2",
               "0",
-              "4",
-              "10",
-              "25",
-              "-15",
+              "5",
+              "21",
+              "29",
+              "-8",
               "6"
             ],
             [
@@ -10753,13 +10823,13 @@
             [
               "11",
               "DEP. LA LUZ",
-              "6",
+              "7",
               "1",
               "0",
-              "5",
-              "9",
-              "21",
-              "-12",
+              "6",
+              "12",
+              "28",
+              "-16",
               "0"
             ],
             [
@@ -10788,182 +10858,182 @@
           "rows": [
             [
               "1",
-              "Juan Diego Mendoza Gamez",
-              "TAVERA FC",
-              "4"
+              "Alan Manuel Noria Tovar",
+              "DEP. NOPALERO",
+              "5"
             ],
             [
               "2",
-              "TELESFORO FREYRE VALADEZ",
-              "DEP. NOPALERO",
-              "4"
-            ],
-            [
-              "3",
               "Honorio Ochoa Aguilar",
               "TAVERA FC",
               "4"
             ],
             [
+              "3",
+              "Juan Diego Mendoza Gamez",
+              "TAVERA FC",
+              "4"
+            ],
+            [
               "4",
-              "Francisco Javier Muñoz Badillo",
-              "DEP. ZAPATA",
-              "3"
+              "TELESFORO FREYRE VALADEZ",
+              "DEP. NOPALERO",
+              "4"
             ],
             [
               "5",
-              "Omar Olivares Paz",
-              "TAVERA FC",
-              "3"
-            ],
-            [
-              "6",
               "Moises Gudalupe Arce Gutierrez",
               "TAVERA FC",
               "3"
             ],
             [
+              "6",
+              "Eduardo Aguilar Sanchez",
+              "CELTICOS",
+              "3"
+            ],
+            [
               "7",
-              "Alan Manuel Noria Tovar",
-              "DEP. NOPALERO",
+              "Omar Olivares Paz",
+              "TAVERA FC",
               "3"
             ],
             [
               "8",
+              "Jose Carmen Navarro Ramos",
+              "DEP. LA LUZ",
+              "3"
+            ],
+            [
+              "9",
+              "Rafael Hernandez Almanza",
+              "TAVERA FC",
+              "3"
+            ],
+            [
+              "10",
+              "Francisco Javier Muñoz Badillo",
+              "DEP. ZAPATA",
+              "3"
+            ],
+            [
+              "11",
               "Edgar Mendoza Mora",
               "TAVERA FC",
               "2"
             ],
             [
-              "9",
-              "Miguel Antonio Llanos Aguirre",
-              "DEP. ZAPATA",
-              "2"
-            ],
-            [
-              "10",
-              "Benjamin Villafuerte Franco",
-              "DEP. ZAPATA",
-              "2"
-            ],
-            [
-              "11",
-              "Jose Luis Aguilar Solorzano",
-              "TAVERA FC",
-              "2"
-            ],
-            [
               "12",
-              "Javier Peralta Romero",
-              "PACHANGAS FC",
-              "2"
-            ],
-            [
-              "13",
-              "Giovanni Sanchez Delgado",
-              "CELTICOS",
-              "2"
-            ],
-            [
-              "14",
-              "Juan Guzman Lopez",
-              "PACHANGAS FC",
-              "2"
-            ],
-            [
-              "15",
-              "JOSE EMMANUEL MARTINEZ MENDOZA",
-              "TAVERA FC",
-              "2"
-            ],
-            [
-              "16",
-              "Juan Yunuen Arellano Juarez",
-              "TAVERA FC",
-              "2"
-            ],
-            [
-              "17",
-              "Rafael Hernandez Almanza",
-              "TAVERA FC",
-              "2"
-            ],
-            [
-              "18",
-              "FRANCISCO GUERRERO GUERRERO",
-              "DEP. NOPALERO",
-              "2"
-            ],
-            [
-              "19",
-              "Juan Demetrio Presa Trejo",
-              "SAN ANTONIO FC",
-              "2"
-            ],
-            [
-              "20",
               "Miguel Angel Lara Flores",
               "TAVERA FC",
               "2"
             ],
             [
-              "21",
+              "13",
+              "Gilberto Yañez Ramirez",
+              "SAN JULIAN",
+              "2"
+            ],
+            [
+              "14",
+              "Juan Jesus Rangel Ojodeagua",
+              "CELTICOS",
+              "2"
+            ],
+            [
+              "15",
+              "TIMOTEO GODINEZ SANCHEZ",
+              "DEP. NOPALERO",
+              "2"
+            ],
+            [
+              "16",
+              "Miguel Antonio Llanos Aguirre",
+              "DEP. ZAPATA",
+              "2"
+            ],
+            [
+              "17",
+              "Jose Luis Aguilar Solorzano",
+              "TAVERA FC",
+              "2"
+            ],
+            [
+              "18",
+              "Javier Peralta Romero",
+              "PACHANGAS FC",
+              "2"
+            ],
+            [
+              "19",
               "Francisco Javier Avila Huerta",
               "TAVERA FC",
               "2"
             ],
             [
+              "20",
+              "Benjamin Villafuerte Franco",
+              "DEP. ZAPATA",
+              "2"
+            ],
+            [
+              "21",
+              "Jose Angel Cervantes Gasca",
+              "CELTICOS",
+              "2"
+            ],
+            [
               "22",
-              "Francisco Javier Ruiz Plascencia",
-              "SAN ANTONIO FC",
-              "1"
+              "Giovanni Sanchez Delgado",
+              "CELTICOS",
+              "2"
             ],
             [
               "23",
-              "Efrain Gutierrez Lucio",
-              "SAN ANTONIO FC",
-              "1"
+              "JOSE EMMANUEL MARTINEZ MENDOZA",
+              "TAVERA FC",
+              "2"
             ],
             [
               "24",
-              "Alejandro Tellez Campos",
-              "SAN JOSE JRS",
-              "1"
+              "Juan Yunuen Arellano Juarez",
+              "TAVERA FC",
+              "2"
             ],
             [
               "25",
-              "Jose de Jesus Garcia Villafuerte",
-              "SAN JULIAN",
-              "1"
+              "Juan Guzman Lopez",
+              "PACHANGAS FC",
+              "2"
             ],
             [
               "26",
-              "Bryan Doñates Zavala",
-              "SAN JOSE JRS",
-              "1"
+              "FRANCISCO GUERRERO GUERRERO",
+              "DEP. NOPALERO",
+              "2"
             ],
             [
               "27",
+              "Juan Demetrio Presa Trejo",
+              "SAN ANTONIO FC",
+              "2"
+            ],
+            [
+              "28",
               "Aldo Sair Tovar Tovar",
               "SAN JOSE JRS",
               "1"
             ],
             [
-              "28",
+              "29",
               "Mateo Tovar Campos",
               "SAN JOSE JRS",
               "1"
             ],
             [
-              "29",
+              "30",
               "Jesus Ivan Medel Lopez",
               "BARZA",
-              "1"
-            ],
-            [
-              "30",
-              "Jose Guadalupe Lopez Cano",
-              "CELTICOS",
               "1"
             ],
             [
@@ -10974,8 +11044,8 @@
             ],
             [
               "32",
-              "SALVADOR Yañez Miranda",
-              "SAN JOSE JRS",
+              "Jose Guadalupe Lopez Cano",
+              "CELTICOS",
               "1"
             ],
             [
@@ -10986,26 +11056,26 @@
             ],
             [
               "34",
+              "SALVADOR Yañez Miranda",
+              "SAN JOSE JRS",
+              "1"
+            ],
+            [
+              "35",
               "Jose Guadalupe Flores Peñaloza",
               "CELTICOS",
               "1"
             ],
             [
-              "35",
+              "36",
               "Juan Yasbeth Landin Ramirez",
               "SAN JOSE JRS",
               "1"
             ],
             [
-              "36",
+              "37",
               "Jose Antonio Ramirez Alberto",
               "SAN JOSE JRS",
-              "1"
-            ],
-            [
-              "37",
-              "Gilberto Yañez Ramirez",
-              "SAN JULIAN",
               "1"
             ],
             [
@@ -11070,14 +11140,14 @@
             ],
             [
               "48",
-              "Miguel Angel Solorzano Vargas",
-              "SAN JUAN FC",
+              "Kevin Gustavo Ojeda Ortega",
+              "CELTICOS",
               "1"
             ],
             [
               "49",
-              "Kevin Gustavo Ojeda Ortega",
-              "CELTICOS",
+              "Miguel Angel Solorzano Vargas",
+              "SAN JUAN FC",
               "1"
             ],
             [
@@ -11154,57 +11224,93 @@
             ],
             [
               "62",
+              "Jose Manuel Presa Trejo",
+              "SAN ANTONIO FC",
+              "1"
+            ],
+            [
+              "63",
               "Alan Eduardo Meji Damian",
               "CELTICOS",
               "1"
             ],
             [
-              "63",
+              "64",
               "Juan Martin Balderas Olivares",
               "SAN JUAN FC",
               "1"
             ],
             [
+              "65",
+              "Francisco Javier Ruiz Plascencia",
+              "SAN ANTONIO FC",
+              "1"
+            ],
+            [
+              "66",
+              "Efrain Gutierrez Lucio",
+              "SAN ANTONIO FC",
+              "1"
+            ],
+            [
+              "67",
+              "Alejandro Tellez Campos",
+              "SAN JOSE JRS",
+              "1"
+            ],
+            [
+              "68",
+              "Jose de Jesus Garcia Villafuerte",
+              "SAN JULIAN",
+              "1"
+            ],
+            [
+              "69",
+              "Bryan Doñates Zavala",
+              "SAN JOSE JRS",
+              "1"
+            ],
+            [
               "1",
               "TAVERA FC",
-              "34 goles en temporada",
-              "34"
+              "35 goles en temporada",
+              "35"
             ],
             [
               "2",
+              "CELTICOS",
+              "25 goles en temporada",
+              "25"
+            ],
+            [
+              "3",
               "SAN ANTONIO FC",
+              "21 goles en temporada",
+              "21"
+            ],
+            [
+              "4",
+              "DEP. NOPALERO",
               "20 goles en temporada",
               "20"
             ],
             [
-              "3",
+              "5",
               "SAN JUAN FC",
               "20 goles en temporada",
               "20"
             ],
             [
-              "4",
+              "6",
               "SAN JOSE JRS",
               "19 goles en temporada",
               "19"
             ],
             [
-              "5",
-              "CELTICOS",
-              "18 goles en temporada",
-              "18"
-            ],
-            [
-              "6",
+              "7",
               "SAN JULIAN",
               "18 goles en temporada",
               "18"
-            ],
-            [
-              "7",
-              "DEP. NOPALERO",
-              "16 goles en temporada",
-              "16"
             ],
             [
               "8",
@@ -11220,15 +11326,15 @@
             ],
             [
               "10",
-              "PACHANGAS FC",
-              "10 goles en temporada",
-              "10"
+              "DEP. LA LUZ",
+              "12 goles en temporada",
+              "12"
             ],
             [
               "11",
-              "DEP. LA LUZ",
-              "9 goles en temporada",
-              "9"
+              "PACHANGAS FC",
+              "11 goles en temporada",
+              "11"
             ],
             [
               "12",
@@ -11279,12 +11385,6 @@
           ],
           "rows": [
             [
-              "TELESFORO FREYRE VALADEZ",
-              "DEP. NOPALERO",
-              "3 Jornadas",
-              "1"
-            ],
-            [
               "Jose Casiano Campos Belman",
               "Expulsado de la liga",
               "",
@@ -11300,133 +11400,133 @@
               "VICTOR ALFONSO SILVA TOVAR",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "ROBERTO ALONSO CERRITO GARCIA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "MISAEL RAMIREZ RAMIREZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "JOSE GUADALUPE PRIETO GONZALEZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "JOSE ALEJANDRO GONZALEZ MELENDEZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "JOHAN SANTIAGO GONZALEZ LAGUNA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "JESUS GUADALUPE HORTELANO PIZANO",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "JESUS EMMANUEL ZARATE AGUILERA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "GIOVANNI GONZALEZ HERRERA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "GEREARDO ARRIAGA RAMIREZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "GABRIEL ARRIAGA SANCHEZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "FRANCISCO MONTOYA LAGUNA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "FRANCISCO CERRITO JARALEÑO",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "EDWIN IMANOL CAMPOS GONZALEZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "EDUARDO VAZQUEZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "DIEGO PRIETO MONTOYA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "DIEGO LOPEZ PIZANO",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "CESAR ALEJANDRO GARCIA RAMIREZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "CARLOS ARRIAGA OBRAJERO",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "ALEXIS MONTOYA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "BENIGNO JUAN VALENZUELA",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ],
             [
               "ABELARDO ALBERTO RAMIREZ",
               "Expulsado de la liga",
               "36 Jornadas",
-              "31"
+              "32"
             ]
           ]
         }
@@ -11882,11 +11982,11 @@
               "37",
               "7",
               "PACHANGAS FC",
-              "-",
+              "1",
               "vs",
               "-",
-              "SAN ANTONIO FC",
-              "Campo 3",
+              "TAPATIO",
+              "",
               "18/10/2026 07:00",
               "---"
             ],
@@ -11906,9 +12006,9 @@
               "39",
               "7",
               "TAVERA FC",
-              "-",
+              "1",
               "vs",
-              "-",
+              "1",
               "SAN JULIAN",
               "San Julian",
               "18/10/2026 10:00",
@@ -11918,9 +12018,9 @@
               "40",
               "7",
               "DEP. NOPALERO",
-              "-",
+              "4",
               "vs",
-              "-",
+              "1",
               "SAN ANTONIO FC",
               "Campo 2",
               "18/10/2026 10:00",
@@ -11929,24 +12029,24 @@
             [
               "41",
               "7",
-              "CELTICOS",
-              "-",
-              "vs",
-              "-",
-              "DEP. LA LUZ",
-              "Campo 1 (Empastado)",
-              "18/10/2026 12:00",
-              "---"
-            ],
-            [
-              "42",
-              "7",
               "BARZA",
               "-",
               "vs",
               "4",
               "DEP. ZAPATA",
               "Campo 2",
+              "18/10/2026 12:00",
+              "---"
+            ],
+            [
+              "42",
+              "7",
+              "CELTICOS",
+              "7",
+              "vs",
+              "3",
+              "DEP. LA LUZ",
+              "Campo 1 (Empastado)",
               "18/10/2026 12:00",
               "---"
             ],
@@ -11970,7 +12070,7 @@
               "vs",
               "-",
               "TAPATIO",
-              "",
+              "Cuenda",
               "25/10/2026 10:00",
               "---"
             ],
@@ -12073,18 +12173,6 @@
             [
               "53",
               "9",
-              "PACHANGAS FC",
-              "-",
-              "vs",
-              "-",
-              "TAPATIO",
-              "Campo 3",
-              "01/11/2026 12:00",
-              "---"
-            ],
-            [
-              "54",
-              "9",
               "DEP. NOPALERO",
               "-",
               "vs",
@@ -12095,7 +12183,31 @@
               "---"
             ],
             [
+              "54",
+              "9",
+              "PACHANGAS FC",
+              "-",
+              "vs",
+              "-",
+              "TAPATIO",
+              "Campo 3",
+              "01/11/2026 12:00",
+              "---"
+            ],
+            [
               "55",
+              "10",
+              "CELTICOS",
+              "-",
+              "vs",
+              "-",
+              "SAN JULIAN",
+              "Campo 2",
+              "08/11/2026 08:00",
+              "---"
+            ],
+            [
+              "56",
               "10",
               "TAVERA FC",
               "-",
@@ -12107,19 +12219,19 @@
               "---"
             ],
             [
-              "56",
+              "57",
               "10",
-              "CELTICOS",
+              "BARZA",
               "-",
               "vs",
               "-",
-              "SAN JULIAN",
+              "PACHANGAS FC",
               "Campo 2",
-              "08/11/2026 08:00",
+              "08/11/2026 10:00",
               "---"
             ],
             [
-              "57",
+              "58",
               "10",
               "SAN JUAN FC",
               "-",
@@ -12131,31 +12243,7 @@
               "---"
             ],
             [
-              "58",
-              "10",
-              "BARZA",
-              "-",
-              "vs",
-              "-",
-              "PACHANGAS FC",
-              "Campo 2",
-              "08/11/2026 10:00",
-              "---"
-            ],
-            [
               "59",
-              "10",
-              "TAPATIO",
-              "-",
-              "vs",
-              "-",
-              "SAN JOSE JRS",
-              "Campo 2",
-              "08/11/2026 12:00",
-              "---"
-            ],
-            [
-              "60",
               "10",
               "DEP. ZAPATA",
               "-",
@@ -12167,19 +12255,19 @@
               "---"
             ],
             [
-              "61",
-              "11",
-              "SAN ANTONIO FC",
+              "60",
+              "10",
+              "TAPATIO",
               "-",
               "vs",
               "-",
-              "BARZA",
-              "Romerillo",
-              "15/11/2026 08:00",
+              "SAN JOSE JRS",
+              "Campo 2",
+              "08/11/2026 12:00",
               "---"
             ],
             [
-              "62",
+              "61",
               "11",
               "TAPATIO",
               "-",
@@ -12191,19 +12279,19 @@
               "---"
             ],
             [
-              "63",
+              "62",
               "11",
-              "DEP. LA LUZ",
+              "SAN ANTONIO FC",
               "-",
               "vs",
               "-",
-              "SAN JOSE JRS",
-              "Campo 3",
-              "15/11/2026 10:00",
+              "BARZA",
+              "Romerillo",
+              "15/11/2026 08:00",
               "---"
             ],
             [
-              "64",
+              "63",
               "11",
               "PACHANGAS FC",
               "-",
@@ -12215,19 +12303,19 @@
               "---"
             ],
             [
-              "65",
+              "64",
               "11",
-              "DEP. ZAPATA",
+              "DEP. LA LUZ",
               "-",
               "vs",
               "-",
-              "SAN JUAN FC",
-              "Campo 1 (Empastado)",
-              "15/11/2026 12:00",
+              "SAN JOSE JRS",
+              "Campo 3",
+              "15/11/2026 10:00",
               "---"
             ],
             [
-              "66",
+              "65",
               "11",
               "CELTICOS",
               "-",
@@ -12235,6 +12323,18 @@
               "-",
               "TAVERA FC",
               "Campo 3",
+              "15/11/2026 12:00",
+              "---"
+            ],
+            [
+              "66",
+              "11",
+              "DEP. ZAPATA",
+              "-",
+              "vs",
+              "-",
+              "SAN JUAN FC",
+              "Campo 1 (Empastado)",
               "15/11/2026 12:00",
               "---"
             ]
@@ -16495,6 +16595,84 @@
           "category": "Segunda Fuerza"
         },
         {
+          "id": 401,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/401/",
+          "title": "Cédula Arbitral - DEP. NOPALERO (Segunda Fuerza) vs SAN ANTONIO FC (Segunda Fuerza)",
+          "local": "DEP. NOPALERO",
+          "away": "SAN ANTONIO FC",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 402,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/402/",
+          "title": "Cédula Arbitral - CELTICOS (Segunda Fuerza) vs DEP. LA LUZ (Segunda Fuerza)",
+          "local": "CELTICOS",
+          "away": "DEP. LA LUZ",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 12:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 403,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/403/",
+          "title": "Cédula Arbitral - TAVERA FC (Segunda Fuerza) vs SAN JULIAN (Segunda Fuerza)",
+          "local": "TAVERA FC",
+          "away": "SAN JULIAN",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 404,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/404/",
+          "title": "Cédula Arbitral - PACHANGAS FC (Segunda Fuerza) vs TAPATIO (Segunda Fuerza)",
+          "local": "PACHANGAS FC",
+          "away": "TAPATIO",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 07:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 405,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/405/",
+          "title": "Cédula Arbitral - BARZA (Segunda Fuerza) vs DEP. ZAPATA (Segunda Fuerza)",
+          "local": "BARZA",
+          "away": "DEP. ZAPATA",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 12:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 406,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/406/",
+          "title": "Cédula Arbitral - SAN JOSE JRS (Segunda Fuerza) vs SAN JUAN FC (Segunda Fuerza)",
+          "local": "SAN JOSE JRS",
+          "away": "SAN JUAN FC",
+          "category": "Segunda Fuerza",
+          "date": "18/10/2026 10:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
           "id": 407,
           "url": "https://juventinorosasliga.com/cedula-arbitral/407/",
           "title": "Cédula Arbitral - SAN JULIAN (Segunda Fuerza) vs TAPATIO (Segunda Fuerza)",
@@ -16545,6 +16723,12 @@
         398,
         399,
         400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
         407
       ],
       "public_player_count_scraped": 332
