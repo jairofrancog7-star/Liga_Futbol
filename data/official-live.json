@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-28T13:29:28Z",
+  "captured_at_utc": "2026-10-28T19:04:47Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -2947,7 +2947,7 @@
           "Equipos": 10,
           "Partidos Jugados": 0,
           "Partidos Pendientes": 45,
-          "Jugadores": 153
+          "Jugadores": 155
         },
         "current_cedulas": [],
         "logo_candidates": [
@@ -2997,7 +2997,7 @@
         "Equipos": 10,
         "Partidos Jugados": 0,
         "Partidos Pendientes": 45,
-        "Jugadores": 153
+        "Jugadores": 155
       },
       "standings": [],
       "scorers": [
@@ -3699,7 +3699,8 @@
           "ERNESTO RODRIGUEZ MENDOZA",
           "Cecilio Ramos Rangel",
           "Francisco Vera Martinez",
-          "VICTOR HUGO ZARATE CERRITO"
+          "VICTOR HUGO ZARATE CERRITO",
+          "Jesus Humberto Moreno Banda"
         ],
         "CUENDA": [
           "OSCAR ARCIA CALERO",
@@ -3723,7 +3724,9 @@
           "JAVIER RAMIREZ RICO",
           "EBERTO RAMIREZ ROJAS",
           "JUAN NOE SIERRA GUERRERO",
-          "Rogelio Serrano Castro"
+          "Rogelio Serrano Castro",
+          "BRAULIO ALBERTO CERRITO MATINEZ",
+          "ANTONIO CERRITO PERU"
         ],
         "FRANCO-TAVERA-JR": [
           "AGUSTIN AGOSTADERO PEREZ",
@@ -3778,7 +3781,9 @@
           "OMAR SANLUISEÑO GUZMAN",
           "SAUL SANLUISEÑO GUZMAN",
           "JULIO CESAR SILLERO RODRIGUEZ",
-          "FRANCISCO VALENZUELA OLIVARES"
+          "FRANCISCO VALENZUELA OLIVARES",
+          "Juan Guzman Lopez",
+          "ERNESTO VELASQUEZ VALENCIA"
         ],
         "JUVENTUS": [
           "IGNACIO ABOYTES MENDOZA",
@@ -4321,12 +4326,6 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_1.54.39_PM_piuibw"
           },
           {
-            "name": "EDGAR SAUL HERNANDEZ AVILA",
-            "position": "Defensa",
-            "dorsal": "—",
-            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-30_at_3.03.24_PM_qvuffd"
-          },
-          {
             "name": "ROGELIO LUNA GUILLEN",
             "position": "Defensa",
             "dorsal": "—",
@@ -4363,6 +4362,12 @@
             "position": "Portero",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Juan_Antonio_Marquez_viyzdl"
+          },
+          {
+            "name": "Jesus Humberto Moreno Banda",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-03_at_12.41.10_PM_4_vozphf"
           },
           {
             "name": "Alvaro Moreno Perez",
@@ -4429,6 +4434,16 @@
           },
           {
             "name": "JUAN CERRITO CAMPOS",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "BRAULIO ALBERTO CERRITO MATINEZ",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ANTONIO CERRITO PERU",
             "position": "Defensa",
             "dorsal": "—"
           },
@@ -4728,6 +4743,12 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-29_at_7.56.13_PM_wkw4ps"
           },
           {
+            "name": "Juan Guzman Lopez",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-14_at_8.44.12_PM_yrpj1p"
+          },
+          {
             "name": "JESUS HERNANDEZ ABOYTES",
             "position": "Defensa",
             "dorsal": "—",
@@ -4803,6 +4824,11 @@
           },
           {
             "name": "FRANCISCO VALENZUELA OLIVARES",
+            "position": "Defensa",
+            "dorsal": "—"
+          },
+          {
+            "name": "ERNESTO VELASQUEZ VALENCIA",
             "position": "Defensa",
             "dorsal": "—"
           }
@@ -5365,7 +5391,7 @@
       },
       "cedulas": [],
       "cedulas_scanned": [],
-      "public_player_count_scraped": 260
+      "public_player_count_scraped": 265
     },
     "3": {
       "id": 3,
@@ -23495,7 +23521,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 260,
+        "public_names": 265,
         "kept_previous": true
       },
       "Primera Fuerza": {
