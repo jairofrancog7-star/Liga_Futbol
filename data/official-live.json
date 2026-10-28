@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-27T20:55:54Z",
+  "captured_at_utc": "2026-10-28T00:27:16Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -5222,7 +5222,8 @@
           {
             "name": "JOSE DOMINGO DOMPABLO GONZALEZ",
             "position": "Delantero",
-            "dorsal": "—"
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/Mingo_efvwj8"
           },
           {
             "name": "Giovanni Emanuel Flores Guerrero",
