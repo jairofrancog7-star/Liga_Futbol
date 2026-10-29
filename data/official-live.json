@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-29T16:52:56Z",
+  "captured_at_utc": "2026-10-29T21:45:05Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -274,8 +274,8 @@
             ],
             [
               "3",
-              "Julio Cesar Ruvalcaba Almanza",
-              "DYNAMO",
+              "Jose Mendoza Pescador",
+              "LA ESPERANZA",
               "3"
             ],
             [
@@ -286,26 +286,26 @@
             ],
             [
               "5",
-              "Jose Mendoza Pescador",
-              "LA ESPERANZA",
+              "Julio Cesar Ruvalcaba Almanza",
+              "DYNAMO",
               "3"
             ],
             [
               "6",
-              "Miguel ANgel Lopez Zarazua",
-              "LA ESPERANZA",
+              "Marco Antonio Gasca Arzate",
+              "BOAVISTA",
               "2"
             ],
             [
               "7",
-              "Manuel Cerritos Arellano",
-              "MANCHESTER",
+              "Francisco Gutierrez Campos",
+              "TOROS DE CUENDA",
               "2"
             ],
             [
               "8",
-              "Marco Antonio Gasca Arzate",
-              "BOAVISTA",
+              "Manuel Cerritos Arellano",
+              "MANCHESTER",
               "2"
             ],
             [
@@ -316,86 +316,86 @@
             ],
             [
               "10",
-              "Francisco Gutierrez Campos",
-              "TOROS DE CUENDA",
+              "Miguel ANgel Lopez Zarazua",
+              "LA ESPERANZA",
               "2"
             ],
             [
               "11",
-              "Florencio Franco Lerma",
-              "MANCHESTER",
+              "Miguel Merino Peña",
+              "LA ESPERANZA",
               "1"
             ],
             [
               "12",
-              "Armando Muñiz Bañales",
-              "DYNAMO",
-              "1"
-            ],
-            [
-              "13",
-              "Antonio Mendoza Garcia",
+              "Felipe Prieto Ramirez",
               "MANCHESTER",
               "1"
             ],
             [
-              "14",
-              "Jose Manuel Vargas Palacios",
-              "TOROS DE CUENDA",
-              "1"
-            ],
-            [
-              "15",
-              "Lazaro Ruvalcaba Almanza",
-              "BOAVISTA",
-              "1"
-            ],
-            [
-              "16",
+              "13",
               "Eladio Ramirez Alberto",
               "DYNAMO",
               "1"
             ],
             [
-              "17",
+              "14",
               "Jorge Duran Zarate",
               "BOAVISTA",
               "1"
             ],
             [
-              "18",
+              "15",
+              "Feliciano Palacios Lopez",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "16",
               "Octavio Ramos Espinoza",
               "DYNAMO",
               "1"
             ],
             [
-              "19",
+              "17",
+              "Florencio Franco Lerma",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "18",
               "Jose Guadalupe Lopez Martinez",
               "LA ESPERANZA",
               "1"
             ],
             [
-              "20",
+              "19",
               "J. ROSARIO ACOSTA SANTARROSA",
               "TOROS DE CUENDA",
               "1"
             ],
             [
-              "21",
+              "20",
               "Fernando Montesinos Freyre",
               "MANCHESTER",
               "1"
             ],
             [
-              "22",
+              "21",
               "Gabriel Estrada Vilchis",
               "LA ESPERANZA",
               "1"
             ],
             [
+              "22",
+              "Armando Muñiz Bañales",
+              "DYNAMO",
+              "1"
+            ],
+            [
               "23",
-              "Genaro Teran Vazquez",
-              "LA ESPERANZA",
+              "Antonio Mendoza Garcia",
+              "MANCHESTER",
               "1"
             ],
             [
@@ -406,56 +406,56 @@
             ],
             [
               "25",
+              "Genaro Teran Vazquez",
+              "LA ESPERANZA",
+              "1"
+            ],
+            [
+              "26",
               "Rogelio Garcia Aguirre",
               "MANCHESTER",
               "1"
             ],
             [
-              "26",
+              "27",
               "Jose Jesus Lopez Leon",
               "DYNAMO",
               "1"
             ],
             [
-              "27",
+              "28",
               "Jose Antonio Zarate Arellano",
               "BOAVISTA",
               "1"
             ],
             [
-              "28",
+              "29",
               "Hilario Armenta Buenavista",
               "DYNAMO",
               "1"
             ],
             [
-              "29",
+              "30",
               "Alberto Ramirez Campos",
               "MANCHESTER",
               "1"
             ],
             [
-              "30",
+              "31",
+              "Jose Manuel Vargas Palacios",
+              "TOROS DE CUENDA",
+              "1"
+            ],
+            [
+              "32",
               "J. MARCOS ARCE SANCHEZ",
               "LA ESPERANZA",
               "1"
             ],
             [
-              "31",
-              "Miguel Merino Peña",
-              "LA ESPERANZA",
-              "1"
-            ],
-            [
-              "32",
-              "Felipe Prieto Ramirez",
-              "MANCHESTER",
-              "1"
-            ],
-            [
               "33",
-              "Feliciano Palacios Lopez",
-              "LA ESPERANZA",
+              "Lazaro Ruvalcaba Almanza",
+              "BOAVISTA",
               "1"
             ],
             [
@@ -2946,11 +2946,12 @@
       "dashboard": {
         "counts": {
           "Equipos": 10,
-          "Partidos Jugados": 7,
-          "Partidos Pendientes": 36,
+          "Partidos Jugados": 8,
+          "Partidos Pendientes": 35,
           "Jugadores": 160
         },
         "current_cedulas": [
+          577,
           578,
           579,
           580,
@@ -2958,32 +2959,64 @@
         ],
         "logo_candidates": [
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_wioj7b",
+            "near_text": "BOAVISTA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LEYENDAS_jwcnlu",
+            "near_text": "LEYENDAS FC"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx",
             "near_text": "POZOS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
+            "near_text": "JUVENTUS"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/aguilares_ifdgll",
+            "near_text": "AGUILARES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "PSV"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Huracan_pfndn5",
+            "near_text": "HURACAN"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/America_wbi53g",
+            "near_text": "AMERICA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
             "near_text": "CUENDA"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoTaveraVeteranos_qwrqrc",
+            "near_text": "FRANCO-TAVERA-JR"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES CUENDA 5 GOLES HURACAN 5 GOLES AGUILARES 4 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES POZOS FC 7 GOLES CUENDA 6 GOLES HURACAN 5 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES CUENDA 5 GOLES HURACAN 5 GOLES AGUILARES 4 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES POZOS FC 7 GOLES CUENDA 6 GOLES HURACAN 5 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx",
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES POZOS FC 7 GOLES CUENDA 6 GOLES HURACAN 5 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES CUENDA 5 GOLES HURACAN 5 GOLES AGUILARES 4 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES POZOS FC 7 GOLES CUENDA 6 GOLES HURACAN 5 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Huracan_pfndn5",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES CUENDA 5 GOLES HURACAN 5 GOLES AGUILARES 4 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/aguilares_ifdgll",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES CUENDA 5 GOLES HURACAN 5 GOLES AGUILARES 4 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES PSV 9 GOLES POZOS FC 7 GOLES CUENDA 6 GOLES HURACAN 5 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
@@ -3038,6 +3071,14 @@
             "near_text": "AMERICA"
           },
           {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx",
+            "near_text": "POZOS FC"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
+            "near_text": "CUENDA"
+          },
+          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
             "near_text": "Tarjetas Amarillas Ver todos P - PSV Juan Mendoza Lopez 2 Amarillas P - POZOS FC JULIO CESAR PARDINI SANDOVAL 1 Amarillas"
           },
@@ -3057,8 +3098,8 @@
       },
       "counts": {
         "Equipos": 10,
-        "Partidos Jugados": 7,
-        "Partidos Pendientes": 36,
+        "Partidos Jugados": 8,
+        "Partidos Pendientes": 35,
         "Jugadores": 160
       },
       "standings": [
@@ -3114,13 +3155,13 @@
             ],
             [
               "4",
-              "CUENDA",
-              "1",
+              "POZOS FC",
+              "2",
               "1",
               "0",
-              "0",
+              "1",
+              "7",
               "5",
-              "3",
               "+2",
               "3"
             ],
@@ -3138,19 +3179,19 @@
             ],
             [
               "6",
-              "FRANCO-TAVERA-JR",
-              "1",
-              "0",
-              "0",
-              "1",
+              "CUENDA",
               "2",
-              "4",
+              "1",
+              "0",
+              "1",
+              "6",
+              "8",
               "-2",
-              "0"
+              "3"
             ],
             [
               "7",
-              "POZOS FC",
+              "FRANCO-TAVERA-JR",
               "1",
               "0",
               "0",
@@ -3216,63 +3257,63 @@
             ],
             [
               "4",
-              "ELEAZAR MORENO LERMA",
-              "AGUILARES",
-              "2"
-            ],
-            [
-              "5",
-              "Juan Esteban Montecillo Solache",
-              "JUVENTUS",
-              "2"
-            ],
-            [
-              "6",
-              "Francisco Javier Solache Franco",
-              "PSV",
-              "2"
-            ],
-            [
-              "7",
-              "Francisco Javier Herrera Pizano",
-              "CUENDA",
-              "2"
-            ],
-            [
-              "8",
-              "Josue Valentin Alvarez Rodriguez",
-              "PSV",
-              "2"
-            ],
-            [
-              "9",
-              "JHONNY ALBERTO SALINAS SANCHEZ",
-              "AGUILARES",
-              "2"
-            ],
-            [
-              "10",
-              "J. REFUGIO ZARAZUA AGOSTADERO",
-              "AMERICA",
-              "2"
-            ],
-            [
-              "11",
               "MIGUEL DARIO GARCIA RODRIGUEZ",
               "CUENDA",
               "2"
             ],
             [
-              "12",
-              "ALBERTO VILLAGOMEZ MANCERA",
+              "5",
+              "Francisco Javier Herrera Pizano",
+              "CUENDA",
+              "2"
+            ],
+            [
+              "6",
+              "JHONNY ALBERTO SALINAS SANCHEZ",
+              "AGUILARES",
+              "2"
+            ],
+            [
+              "7",
+              "Josue Valentin Alvarez Rodriguez",
+              "PSV",
+              "2"
+            ],
+            [
+              "8",
+              "Juan Esteban Montecillo Solache",
+              "JUVENTUS",
+              "2"
+            ],
+            [
+              "9",
+              "J. REFUGIO ZARAZUA AGOSTADERO",
+              "AMERICA",
+              "2"
+            ],
+            [
+              "10",
+              "ELEAZAR MORENO LERMA",
+              "AGUILARES",
+              "2"
+            ],
+            [
+              "11",
+              "JOSE LUIS MIRANDA RODRIGUEZ",
               "POZOS FC",
-              "1"
+              "2"
+            ],
+            [
+              "12",
+              "MIGUEL ANGEL OCHOA ALVAREZ",
+              "POZOS FC",
+              "2"
             ],
             [
               "13",
-              "Javier Lara Valencia",
-              "JUVENTUS",
-              "1"
+              "Francisco Javier Solache Franco",
+              "PSV",
+              "2"
             ],
             [
               "14",
@@ -3282,62 +3323,86 @@
             ],
             [
               "15",
-              "JAIME ARTURO VELASQUEZ HERNANDEZ",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "16",
-              "JUAN CERRITO CAMPOS",
-              "CUENDA",
-              "1"
-            ],
-            [
-              "17",
-              "FRANCISCO JESUS AGUIRRE CANO",
-              "PSV",
-              "1"
-            ],
-            [
-              "18",
-              "GERARDO JUAREZ RANGEL",
-              "HURACAN",
-              "1"
-            ],
-            [
-              "19",
-              "Hugo Armenta Buenavista",
-              "POZOS FC",
-              "1"
-            ],
-            [
-              "20",
-              "JOB CRUZ CENTENO GONZALEZ",
-              "FRANCO-TAVERA-JR",
-              "1"
-            ],
-            [
-              "21",
-              "Jose Guadalupe Moreno Huerta",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "22",
-              "RICARDO PARIS REYES ESTRADA",
-              "HURACAN",
-              "1"
-            ],
-            [
-              "23",
               "Eric Fernando Dongu Guerrero",
               "AMERICA",
               "1"
             ],
             [
-              "24",
+              "16",
               "CONCEPCION CASTILLO MANZANARES",
               "FRANCO-TAVERA-JR",
+              "1"
+            ],
+            [
+              "17",
+              "JAIME ARTURO VELASQUEZ HERNANDEZ",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "18",
+              "JUAN CERRITO CAMPOS",
+              "CUENDA",
+              "1"
+            ],
+            [
+              "19",
+              "FRANCISCO JESUS AGUIRRE CANO",
+              "PSV",
+              "1"
+            ],
+            [
+              "20",
+              "ALBERTO VILLAGOMEZ MANCERA",
+              "POZOS FC",
+              "1"
+            ],
+            [
+              "21",
+              "Javier Lara Valencia",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "22",
+              "GERARDO JUAREZ RANGEL",
+              "HURACAN",
+              "1"
+            ],
+            [
+              "23",
+              "Hugo Armenta Buenavista",
+              "POZOS FC",
+              "1"
+            ],
+            [
+              "24",
+              "JOB CRUZ CENTENO GONZALEZ",
+              "FRANCO-TAVERA-JR",
+              "1"
+            ],
+            [
+              "25",
+              "Jose Guadalupe Moreno Huerta",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "26",
+              "RICARDO PARIS REYES ESTRADA",
+              "HURACAN",
+              "1"
+            ],
+            [
+              "27",
+              "Fernando Alonso Calero Cerrito",
+              "CUENDA",
+              "1"
+            ],
+            [
+              "28",
+              "Jorge Ramirez Huerta",
+              "POZOS FC",
               "1"
             ],
             [
@@ -3354,37 +3419,37 @@
             ],
             [
               "3",
-              "CUENDA",
-              "5 goles en temporada",
-              "5"
+              "POZOS FC",
+              "7 goles en temporada",
+              "7"
             ],
             [
               "4",
+              "CUENDA",
+              "6 goles en temporada",
+              "6"
+            ],
+            [
+              "5",
               "HURACAN",
               "5 goles en temporada",
               "5"
             ],
             [
-              "5",
+              "6",
               "AGUILARES",
               "4 goles en temporada",
               "4"
             ],
             [
-              "6",
+              "7",
               "AMERICA",
               "3 goles en temporada",
               "3"
             ],
             [
-              "7",
-              "FRANCO-TAVERA-JR",
-              "2 goles en temporada",
-              "2"
-            ],
-            [
               "8",
-              "POZOS FC",
+              "FRANCO-TAVERA-JR",
               "2 goles en temporada",
               "2"
             ],
@@ -3536,9 +3601,9 @@
               "7",
               "2",
               "POZOS FC",
-              "-",
+              "5",
               "vs",
-              "-",
+              "1",
               "CUENDA",
               "Fraccionamiento",
               "24/10/2026 16:30",
@@ -5879,6 +5944,19 @@
           "away_bench": []
         },
         {
+          "id": 577,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/577/",
+          "title": "Cédula Arbitral - POZOS FC (Veteranos 35+) vs CUENDA (Veteranos 35+)",
+          "local": "POZOS FC",
+          "away": "CUENDA",
+          "category": "Veteranos 35+",
+          "date": "24/10/2026 16:30",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
           "id": 578,
           "url": "https://juventinorosasliga.com/cedula-arbitral/578/",
           "title": "Cédula Arbitral - PSV (Veteranos 35+) vs HURACAN (Veteranos 35+)",
@@ -5922,6 +6000,7 @@
         532,
         534,
         536,
+        577,
         578,
         579,
         581
