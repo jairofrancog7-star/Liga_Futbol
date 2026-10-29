@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-29T02:48:03Z",
+  "captured_at_utc": "2026-10-29T09:50:01Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -82,20 +82,20 @@
             "near_text": "M - MANCHESTER Antonio Huichapa Lopez 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "LA ESPERANZA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
             "near_text": "MANCHESTER"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
             "near_text": "TOROS DE CUENDA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "LA ESPERANZA"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "BOAVISTA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
@@ -2946,24 +2946,14 @@
       "dashboard": {
         "counts": {
           "Equipos": 10,
-          "Partidos Jugados": 3,
-          "Partidos Pendientes": 42,
+          "Partidos Jugados": 5,
+          "Partidos Pendientes": 40,
           "Jugadores": 160
         },
         "current_cedulas": [
-          532,
-          534,
-          536
+          579
         ],
         "logo_candidates": [
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
-            "near_text": "PSV"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx",
-            "near_text": "POZOS FC"
-          },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_wioj7b",
             "near_text": "BOAVISTA"
@@ -2973,75 +2963,75 @@
             "near_text": "FRANCO-TAVERA-JR"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ CUENDA 5 GOLES JUVENTUS 5 GOLES AGUILARES 4 GOLES HURACAN 3 GOLES AMERICA 1 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES CUENDA 5 GOLES AGUILARES 4 GOLES PSV 4 GOLES HURACAN 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ CUENDA 5 GOLES JUVENTUS 5 GOLES AGUILARES 4 GOLES HURACAN 3 GOLES AMERICA 1 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES CUENDA 5 GOLES AGUILARES 4 GOLES PSV 4 GOLES HURACAN 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/aguilares_ifdgll",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ CUENDA 5 GOLES JUVENTUS 5 GOLES AGUILARES 4 GOLES HURACAN 3 GOLES AMERICA 1 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES CUENDA 5 GOLES AGUILARES 4 GOLES PSV 4 GOLES HURACAN 3 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES CUENDA 5 GOLES AGUILARES 4 GOLES PSV 4 GOLES HURACAN 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Huracan_pfndn5",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ CUENDA 5 GOLES JUVENTUS 5 GOLES AGUILARES 4 GOLES HURACAN 3 GOLES AMERICA 1 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/America_wbi53g",
-            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ CUENDA 5 GOLES JUVENTUS 5 GOLES AGUILARES 4 GOLES HURACAN 3 GOLES AMERICA 1 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Veteranos 35+ JUVENTUS 9 GOLES CUENDA 5 GOLES AGUILARES 4 GOLES PSV 4 GOLES HURACAN 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Huracan_pfndn5",
             "near_text": "H - HURACAN ARTURO CONTRERAS GAMUCERO 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/aguilares_ifdgll",
-            "near_text": "A - AGUILARES JHONNY ALBERTO SALINAS SANCHEZ 2 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
-            "near_text": "C - CUENDA Francisco Javier Herrera Pizano 2 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
+            "near_text": "J - JUVENTUS Mario Razo Miranda 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
             "near_text": "J - JUVENTUS Juan Esteban Montecillo Solache 2 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
-            "near_text": "C - CUENDA MIGUEL DARIO GARCIA RODRIGUEZ 2 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Huracan_pfndn5",
-            "near_text": "HURACAN"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "P - PSV Edgar Manuel Landin Ibarra 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SantiagoCuenda_fvaq9e",
-            "near_text": "CUENDA"
+            "near_text": "C - CUENDA Francisco Javier Herrera Pizano 2 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/America_wbi53g",
-            "near_text": "AMERICA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/aguilares_ifdgll",
-            "near_text": "AGUILARES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoTaveraVeteranos_qwrqrc",
+            "near_text": "FRANCO-TAVERA-JR"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_fpshqs",
             "near_text": "JUVENTUS"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LEYENDAS_jwcnlu",
-            "near_text": "LEYENDAS FC"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "Tarjetas Amarillas Ver todos P - PSV Juan Mendoza Lopez 2 Amarillas P - POZOS FC JULIO CESAR PARDINI SANDOVAL 1 Amarillas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Pozos_fzkifx",
+            "near_text": "Tarjetas Amarillas Ver todos P - PSV Juan Mendoza Lopez 2 Amarillas P - POZOS FC JULIO CESAR PARDINI SANDOVAL 1 Amarillas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "Tarjetas Rojas P - PSV Juan Mendoza Lopez 1 Rojas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/PSV_ru3tft",
+            "near_text": "Juan Mendoza Lopez PSV 1 Jornadas PSV (Veteranos 35+) vs POZOS FC (Veteranos 35+)"
           }
         ]
       },
       "counts": {
         "Equipos": 10,
-        "Partidos Jugados": 3,
-        "Partidos Pendientes": 42,
+        "Partidos Jugados": 5,
+        "Partidos Pendientes": 40,
         "Jugadores": 160
       },
       "standings": [
@@ -3062,14 +3052,14 @@
             [
               "1",
               "JUVENTUS",
-              "1",
-              "1",
+              "2",
+              "2",
               "0",
               "0",
-              "5",
-              "0",
-              "+5",
-              "3"
+              "9",
+              "2",
+              "+7",
+              "6"
             ],
             [
               "2",
@@ -3097,6 +3087,18 @@
             ],
             [
               "4",
+              "PSV",
+              "1",
+              "1",
+              "0",
+              "0",
+              "4",
+              "2",
+              "+2",
+              "3"
+            ],
+            [
+              "5",
               "HURACAN",
               "1",
               "0",
@@ -3108,7 +3110,31 @@
               "0"
             ],
             [
-              "5",
+              "6",
+              "FRANCO-TAVERA-JR",
+              "1",
+              "0",
+              "0",
+              "1",
+              "2",
+              "4",
+              "-2",
+              "0"
+            ],
+            [
+              "7",
+              "POZOS FC",
+              "1",
+              "0",
+              "0",
+              "1",
+              "2",
+              "4",
+              "-2",
+              "0"
+            ],
+            [
+              "8",
               "AMERICA",
               "1",
               "0",
@@ -3120,7 +3146,7 @@
               "0"
             ],
             [
-              "6",
+              "9",
               "LEYENDAS FC",
               "1",
               "0",
@@ -3145,26 +3171,26 @@
           "rows": [
             [
               "1",
+              "Mario Razo Miranda",
+              "JUVENTUS",
+              "3"
+            ],
+            [
+              "2",
               "ARTURO CONTRERAS GAMUCERO",
               "HURACAN",
               "3"
             ],
             [
-              "2",
-              "JHONNY ALBERTO SALINAS SANCHEZ",
-              "AGUILARES",
-              "2"
-            ],
-            [
               "3",
-              "MIGUEL DARIO GARCIA RODRIGUEZ",
-              "CUENDA",
+              "Juan Esteban Montecillo Solache",
+              "JUVENTUS",
               "2"
             ],
             [
               "4",
-              "Francisco Javier Herrera Pizano",
-              "CUENDA",
+              "JHONNY ALBERTO SALINAS SANCHEZ",
+              "AGUILARES",
               "2"
             ],
             [
@@ -3175,49 +3201,103 @@
             ],
             [
               "6",
-              "Juan Esteban Montecillo Solache",
-              "JUVENTUS",
+              "MIGUEL DARIO GARCIA RODRIGUEZ",
+              "CUENDA",
               "2"
             ],
             [
               "7",
-              "Jorge Alberto Sanchez Mendoza",
-              "JUVENTUS",
-              "1"
+              "Edgar Manuel Landin Ibarra",
+              "PSV",
+              "2"
             ],
             [
               "8",
+              "Francisco Javier Herrera Pizano",
+              "CUENDA",
+              "2"
+            ],
+            [
+              "9",
+              "Josue Valentin Alvarez Rodriguez",
+              "PSV",
+              "1"
+            ],
+            [
+              "10",
+              "CONCEPCION CASTILLO MANZANARES",
+              "FRANCO-TAVERA-JR",
+              "1"
+            ],
+            [
+              "11",
               "JUAN CERRITO CAMPOS",
               "CUENDA",
               "1"
             ],
             [
-              "9",
-              "Jose Guadalupe Moreno Huerta",
-              "JUVENTUS",
-              "1"
-            ],
-            [
-              "10",
+              "12",
               "J. REFUGIO ZARAZUA AGOSTADERO",
               "AMERICA",
               "1"
             ],
             [
-              "11",
-              "Mario Razo Miranda",
+              "13",
+              "JAIME ARTURO VELASQUEZ HERNANDEZ",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "14",
+              "Jorge Alberto Sanchez Mendoza",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "15",
+              "ALBERTO VILLAGOMEZ MANCERA",
+              "POZOS FC",
+              "1"
+            ],
+            [
+              "16",
+              "FRANCISCO JESUS AGUIRRE CANO",
+              "PSV",
+              "1"
+            ],
+            [
+              "17",
+              "Javier Lara Valencia",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "18",
+              "Hugo Armenta Buenavista",
+              "POZOS FC",
+              "1"
+            ],
+            [
+              "19",
+              "JOB CRUZ CENTENO GONZALEZ",
+              "FRANCO-TAVERA-JR",
+              "1"
+            ],
+            [
+              "20",
+              "Jose Guadalupe Moreno Huerta",
               "JUVENTUS",
               "1"
             ],
             [
               "1",
-              "CUENDA",
-              "5 goles en temporada",
-              "5"
+              "JUVENTUS",
+              "9 goles en temporada",
+              "9"
             ],
             [
               "2",
-              "JUVENTUS",
+              "CUENDA",
               "5 goles en temporada",
               "5"
             ],
@@ -3229,18 +3309,36 @@
             ],
             [
               "4",
+              "PSV",
+              "4 goles en temporada",
+              "4"
+            ],
+            [
+              "5",
               "HURACAN",
               "3 goles en temporada",
               "3"
             ],
             [
-              "5",
+              "6",
+              "FRANCO-TAVERA-JR",
+              "2 goles en temporada",
+              "2"
+            ],
+            [
+              "7",
+              "POZOS FC",
+              "2 goles en temporada",
+              "2"
+            ],
+            [
+              "8",
               "AMERICA",
               "1 goles en temporada",
               "1"
             ],
             [
-              "6",
+              "9",
               "LEYENDAS FC",
               "0 goles en temporada",
               "0"
@@ -3252,16 +3350,28 @@
         {
           "headers": [
             "Tipo",
-            "Estado"
+            "Jugador",
+            "Equipo",
+            "Total"
           ],
           "rows": [
             [
-              "Amarillas",
-              "Sin tarjetas amarillas."
+              "Amarilla",
+              "Juan Mendoza Lopez",
+              "PSV",
+              "2"
             ],
             [
-              "Rojas",
-              "Sin tarjetas rojas."
+              "Amarilla",
+              "JULIO CESAR PARDINI SANDOVAL",
+              "POZOS FC",
+              "1"
+            ],
+            [
+              "Roja",
+              "Juan Mendoza Lopez",
+              "PSV",
+              "1"
             ]
           ]
         }
@@ -3276,10 +3386,16 @@
           ],
           "rows": [
             [
+              "Juan Mendoza Lopez",
+              "PSV",
+              "1 Jornadas",
+              "1"
+            ],
+            [
               "Juan Jose Gaytan",
               "Expulsado de la liga",
               "3 Jornadas",
-              "2"
+              "1"
             ]
           ]
         }
@@ -3314,6 +3430,30 @@
             [
               "2",
               "1",
+              "AMERICA",
+              "1",
+              "vs",
+              "4",
+              "AGUILARES",
+              "Campo 1 (Empastado)",
+              "17/10/2026 16:30",
+              "---"
+            ],
+            [
+              "3",
+              "1",
+              "PSV",
+              "4",
+              "vs",
+              "2",
+              "POZOS FC",
+              "Campo 2",
+              "17/10/2026 16:30",
+              "---"
+            ],
+            [
+              "4",
+              "1",
               "BOAVISTA",
               "-",
               "vs",
@@ -3324,7 +3464,7 @@
               "---"
             ],
             [
-              "3",
+              "5",
               "1",
               "JUVENTUS",
               "5",
@@ -3332,30 +3472,6 @@
               "-",
               "LEYENDAS FC",
               "Campo 3",
-              "17/10/2026 16:30",
-              "---"
-            ],
-            [
-              "4",
-              "1",
-              "PSV",
-              "-",
-              "vs",
-              "-",
-              "POZOS FC",
-              "Campo 2",
-              "17/10/2026 16:30",
-              "---"
-            ],
-            [
-              "5",
-              "1",
-              "AMERICA",
-              "1",
-              "vs",
-              "4",
-              "AGUILARES",
-              "Campo 1 (Empastado)",
               "17/10/2026 16:30",
               "---"
             ],
@@ -3387,9 +3503,9 @@
               "8",
               "2",
               "FRANCO-TAVERA-JR",
-              "-",
+              "2",
               "vs",
-              "-",
+              "4",
               "JUVENTUS",
               "Campo 1 (Empastado)",
               "24/10/2026 16:30",
@@ -3434,30 +3550,6 @@
             [
               "12",
               "3",
-              "HURACAN",
-              "-",
-              "vs",
-              "-",
-              "AMERICA",
-              "Campo 2",
-              "31/10/2026 16:30",
-              "---"
-            ],
-            [
-              "13",
-              "3",
-              "POZOS FC",
-              "-",
-              "vs",
-              "-",
-              "JUVENTUS",
-              "Campo 1 (Empastado)",
-              "31/10/2026 16:30",
-              "---"
-            ],
-            [
-              "14",
-              "3",
               "AGUILARES",
               "-",
               "vs",
@@ -3468,7 +3560,7 @@
               "---"
             ],
             [
-              "15",
+              "13",
               "3",
               "CUENDA",
               "-",
@@ -3480,7 +3572,43 @@
               "---"
             ],
             [
+              "14",
+              "3",
+              "HURACAN",
+              "-",
+              "vs",
+              "-",
+              "AMERICA",
+              "Campo 2",
+              "31/10/2026 16:30",
+              "---"
+            ],
+            [
+              "15",
+              "3",
+              "POZOS FC",
+              "-",
+              "vs",
+              "-",
+              "JUVENTUS",
+              "Campo 1 (Empastado)",
+              "31/10/2026 16:30",
+              "---"
+            ],
+            [
               "16",
+              "4",
+              "POZOS FC",
+              "-",
+              "vs",
+              "-",
+              "HURACAN",
+              "Pozos",
+              "07/11/2026 15:30",
+              "---"
+            ],
+            [
+              "17",
               "4",
               "AMERICA",
               "-",
@@ -3492,7 +3620,7 @@
               "---"
             ],
             [
-              "17",
+              "18",
               "4",
               "AGUILARES",
               "-",
@@ -3500,18 +3628,6 @@
               "-",
               "CUENDA",
               "AGUILARES",
-              "07/11/2026 15:30",
-              "---"
-            ],
-            [
-              "18",
-              "4",
-              "POZOS FC",
-              "-",
-              "vs",
-              "-",
-              "HURACAN",
-              "Pozos",
               "07/11/2026 15:30",
               "---"
             ],
@@ -3542,12 +3658,12 @@
             [
               "21",
               "5",
-              "POZOS FC",
+              "CUENDA",
               "-",
               "vs",
               "-",
-              "AMERICA",
-              "Pozos",
+              "LEYENDAS FC",
+              "Cuenda",
               "14/11/2026 15:30",
               "---"
             ],
@@ -3566,12 +3682,12 @@
             [
               "23",
               "5",
-              "CUENDA",
+              "POZOS FC",
               "-",
               "vs",
               "-",
-              "LEYENDAS FC",
-              "Cuenda",
+              "AMERICA",
+              "Pozos",
               "14/11/2026 15:30",
               "---"
             ],
@@ -3722,18 +3838,6 @@
             [
               "36",
               "8",
-              "BOAVISTA",
-              "-",
-              "vs",
-              "-",
-              "PSV",
-              "Campo 2",
-              "05/12/2026 15:30",
-              "---"
-            ],
-            [
-              "37",
-              "8",
               "AMERICA",
               "-",
               "vs",
@@ -3744,7 +3848,7 @@
               "---"
             ],
             [
-              "38",
+              "37",
               "8",
               "POZOS FC",
               "-",
@@ -3752,6 +3856,18 @@
               "-",
               "LEYENDAS FC",
               "Pozos",
+              "05/12/2026 15:30",
+              "---"
+            ],
+            [
+              "38",
+              "8",
+              "BOAVISTA",
+              "-",
+              "vs",
+              "-",
+              "PSV",
+              "Campo 2",
               "05/12/2026 15:30",
               "---"
             ],
@@ -3782,24 +3898,24 @@
             [
               "41",
               "9",
-              "PSV",
-              "-",
-              "vs",
-              "-",
-              "LEYENDAS FC",
-              "Campo 1 (Empastado)",
-              "12/12/2026 15:30",
-              "---"
-            ],
-            [
-              "42",
-              "9",
               "CUENDA",
               "-",
               "vs",
               "-",
               "BOAVISTA",
               "Cuenda",
+              "12/12/2026 15:30",
+              "---"
+            ],
+            [
+              "42",
+              "9",
+              "PSV",
+              "-",
+              "vs",
+              "-",
+              "LEYENDAS FC",
+              "Campo 1 (Empastado)",
               "12/12/2026 15:30",
               "---"
             ],
@@ -3996,7 +4112,9 @@
           "LUIS EDGAR SANCHEZ HERNANDEZ",
           "JUAN CARLOS VARGAS JARALILLO",
           "JOSE TRINIDAD VERA MARTINEZ",
-          "MAURICIO ZEPEDA MC LANE"
+          "MAURICIO ZEPEDA MC LANE",
+          "JHONATAN ALEJANDRO JUAREZ DUARTE",
+          "Jose Ernesto Ramirez Agostadero"
         ],
         "HURACAN": [
           "Julio Cesar Badillo Hernandez",
@@ -4860,6 +4978,11 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-13_at_8.58.56_PM_ivdnxm"
           },
           {
+            "name": "JHONATAN ALEJANDRO JUAREZ DUARTE",
+            "position": "Delantero",
+            "dorsal": "—"
+          },
+          {
             "name": "HECTOR HUGO MANCERA DAMIAN",
             "position": "Defensa",
             "dorsal": "—"
@@ -4930,15 +5053,16 @@
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-07_at_8.50.44_PM_kgpj7h"
           },
           {
+            "name": "Jose Ernesto Ramirez Agostadero",
+            "position": "Defensa",
+            "dorsal": "—",
+            "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-08-20_at_5.38.01_PM_fyecs9"
+          },
+          {
             "name": "Alejandro Ramirez Medina",
             "position": "Delantero",
             "dorsal": "—",
             "photo": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/jugadores/WhatsApp_Image_2026-09-09_at_12.31.30_PM_1_coeiq9"
-          },
-          {
-            "name": "LUIS EDGAR SANCHEZ HERNANDEZ",
-            "position": "Mediocampista",
-            "dorsal": "—"
           },
           {
             "name": "JUAN CARLOS VARGAS JARALILLO",
@@ -5708,14 +5832,28 @@
           "away_lineup": [],
           "local_bench": [],
           "away_bench": []
+        },
+        {
+          "id": 579,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/579/",
+          "title": "Cédula Arbitral - FRANCO-TAVERA-JR (Veteranos 35+) vs JUVENTUS (Veteranos 35+)",
+          "local": "FRANCO-TAVERA-JR",
+          "away": "JUVENTUS",
+          "category": "Veteranos 35+",
+          "date": "24/10/2026 16:30",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
         532,
         534,
-        536
+        536,
+        579
       ],
-      "public_player_count_scraped": 273
+      "public_player_count_scraped": 275
     },
     "3": {
       "id": 3,
@@ -23845,7 +23983,7 @@
       },
       "Veteranos 35+": {
         "cedulas": 0,
-        "public_names": 273,
+        "public_names": 275,
         "kept_previous": true
       },
       "Primera Fuerza": {
