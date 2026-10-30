@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://juventinorosasliga.com/",
-  "captured_at_utc": "2026-10-30T08:31:46Z",
+  "captured_at_utc": "2026-10-30T15:18:06Z",
   "mode": "fast",
   "categories": {
     "1": {
@@ -11,55 +11,38 @@
       "dashboard": {
         "counts": {
           "Equipos": 6,
-          "Partidos Jugados": 27,
-          "Partidos Pendientes": 18,
+          "Partidos Jugados": 29,
+          "Partidos Pendientes": 16,
           "Jugadores": 124
         },
         "current_cedulas": [
-          55,
-          56,
-          57
+          58,
+          59
         ],
         "logo_candidates": [
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "DYNAMO"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "MANCHESTER"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "TOROS DE CUENDA"
-          },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
             "near_text": "LA ESPERANZA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "DYNAMO 19 GOLES MANCHESTER 17 GOLES LA ESPERANZA 15 GOLES BOAVISTA 9 GOLES TOROS DE CUENDA 9 GOLES"
+            "near_text": "DYNAMO 20 GOLES MANCHESTER 18 GOLES LA ESPERANZA 15 GOLES TOROS DE CUENDA 10 GOLES BOAVISTA 9 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "DYNAMO 19 GOLES MANCHESTER 17 GOLES LA ESPERANZA 15 GOLES BOAVISTA 9 GOLES TOROS DE CUENDA 9 GOLES"
+            "near_text": "DYNAMO 20 GOLES MANCHESTER 18 GOLES LA ESPERANZA 15 GOLES TOROS DE CUENDA 10 GOLES BOAVISTA 9 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "DYNAMO 19 GOLES MANCHESTER 17 GOLES LA ESPERANZA 15 GOLES BOAVISTA 9 GOLES TOROS DE CUENDA 9 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "DYNAMO 19 GOLES MANCHESTER 17 GOLES LA ESPERANZA 15 GOLES BOAVISTA 9 GOLES TOROS DE CUENDA 9 GOLES"
+            "near_text": "DYNAMO 20 GOLES MANCHESTER 18 GOLES LA ESPERANZA 15 GOLES TOROS DE CUENDA 10 GOLES BOAVISTA 9 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
-            "near_text": "DYNAMO 19 GOLES MANCHESTER 17 GOLES LA ESPERANZA 15 GOLES BOAVISTA 9 GOLES TOROS DE CUENDA 9 GOLES"
+            "near_text": "DYNAMO 20 GOLES MANCHESTER 18 GOLES LA ESPERANZA 15 GOLES TOROS DE CUENDA 10 GOLES BOAVISTA 9 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "DYNAMO 20 GOLES MANCHESTER 18 GOLES LA ESPERANZA 15 GOLES TOROS DE CUENDA 10 GOLES BOAVISTA 9 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
@@ -70,36 +53,32 @@
             "near_text": "M - MANCHESTER J. Carmen Subias Miranda 4 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "L - LA ESPERANZA Jose Mendoza Pescador 3 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
+            "near_text": "D - DYNAMO Julio Cesar Ruvalcaba Almanza 4 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
-            "near_text": "D - DYNAMO Julio Cesar Ruvalcaba Almanza 3 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
+            "near_text": "L - LA ESPERANZA Jose Mendoza Pescador 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
             "near_text": "M - MANCHESTER Antonio Huichapa Lopez 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
-            "near_text": "MANCHESTER"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
+            "near_text": "BOAVISTA"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/TorosCuenda_od8vcf",
             "near_text": "TOROS DE CUENDA"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
-            "near_text": "LA ESPERANZA"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Boavista_qiq0dy",
-            "near_text": "BOAVISTA"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Dinamo_rgamvy",
             "near_text": "DYNAMO"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
+            "near_text": "MANCHESTER"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
@@ -112,6 +91,10 @@
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
             "near_text": "L - LA ESPERANZA Antonio Guerrero Rico 2 Amarillas"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/ManchesterU_zltkh0",
+            "near_text": "M - MANCHESTER ANTONIO GRANGENO RODRIGUEZ 1 Amarillas"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/LaEsperanzaFC_vazya7",
@@ -157,8 +140,8 @@
       },
       "counts": {
         "Equipos": 6,
-        "Partidos Jugados": 27,
-        "Partidos Pendientes": 18,
+        "Partidos Jugados": 29,
+        "Partidos Pendientes": 16,
         "Jugadores": 124
       },
       "standings": [
@@ -191,49 +174,49 @@
             [
               "2",
               "DYNAMO",
-              "9",
+              "10",
               "6",
-              "1",
               "2",
-              "19",
-              "7",
+              "2",
+              "20",
+              "8",
               "+12",
-              "19"
+              "20"
             ],
             [
               "3",
               "MANCHESTER",
-              "9",
+              "10",
               "4",
-              "3",
+              "4",
               "2",
-              "17",
-              "11",
+              "18",
+              "12",
               "+6",
-              "15"
+              "16"
             ],
             [
               "4",
               "TOROS DE CUENDA",
-              "9",
-              "3",
+              "10",
+              "4",
               "2",
               "4",
-              "9",
+              "10",
               "19",
-              "-10",
-              "11"
+              "-9",
+              "14"
             ],
             [
               "5",
               "BOAVISTA",
-              "9",
+              "10",
               "3",
               "2",
-              "4",
+              "5",
               "9",
-              "17",
-              "-8",
+              "18",
+              "-9",
               "8"
             ],
             [
@@ -274,32 +257,32 @@
             ],
             [
               "3",
+              "Julio Cesar Ruvalcaba Almanza",
+              "DYNAMO",
+              "4"
+            ],
+            [
+              "4",
               "Jose Mendoza Pescador",
               "LA ESPERANZA",
               "3"
             ],
             [
-              "4",
+              "5",
               "Antonio Huichapa Lopez",
               "MANCHESTER",
               "3"
             ],
             [
-              "5",
-              "Julio Cesar Ruvalcaba Almanza",
-              "DYNAMO",
-              "3"
-            ],
-            [
               "6",
-              "Marco Antonio Gasca Arzate",
-              "BOAVISTA",
+              "Miguel ANgel Lopez Zarazua",
+              "LA ESPERANZA",
               "2"
             ],
             [
               "7",
-              "Francisco Gutierrez Campos",
-              "TOROS DE CUENDA",
+              "Marco Antonio Gasca Arzate",
+              "BOAVISTA",
               "2"
             ],
             [
@@ -310,14 +293,14 @@
             ],
             [
               "9",
-              "Roberto Perdomo Colin",
-              "DYNAMO",
+              "Francisco Gutierrez Campos",
+              "TOROS DE CUENDA",
               "2"
             ],
             [
               "10",
-              "Miguel ANgel Lopez Zarazua",
-              "LA ESPERANZA",
+              "Roberto Perdomo Colin",
+              "DYNAMO",
               "2"
             ],
             [
@@ -376,84 +359,96 @@
             ],
             [
               "20",
-              "Fernando Montesinos Freyre",
+              "ANTONIO GRANGENO RODRIGUEZ",
               "MANCHESTER",
               "1"
             ],
             [
               "21",
+              "Fernando Montesinos Freyre",
+              "MANCHESTER",
+              "1"
+            ],
+            [
+              "22",
+              "FRANCISCO HERRERA MANTERO",
+              "TOROS DE CUENDA",
+              "1"
+            ],
+            [
+              "23",
               "Gabriel Estrada Vilchis",
               "LA ESPERANZA",
               "1"
             ],
             [
-              "22",
+              "24",
               "Armando Muñiz Bañales",
               "DYNAMO",
               "1"
             ],
             [
-              "23",
+              "25",
               "Antonio Mendoza Garcia",
               "MANCHESTER",
               "1"
             ],
             [
-              "24",
+              "26",
               "Nicolas Muñoz Barajas",
               "TOROS DE CUENDA",
               "1"
             ],
             [
-              "25",
+              "27",
               "Genaro Teran Vazquez",
               "LA ESPERANZA",
               "1"
             ],
             [
-              "26",
+              "28",
               "Rogelio Garcia Aguirre",
               "MANCHESTER",
               "1"
             ],
             [
-              "27",
+              "29",
               "Jose Jesus Lopez Leon",
               "DYNAMO",
               "1"
             ],
             [
-              "28",
+              "30",
               "Jose Antonio Zarate Arellano",
               "BOAVISTA",
               "1"
             ],
             [
-              "29",
+              "31",
               "Hilario Armenta Buenavista",
               "DYNAMO",
               "1"
             ],
             [
-              "30",
+              "32",
               "Alberto Ramirez Campos",
               "MANCHESTER",
               "1"
             ],
             [
-              "31",
+              "33",
               "Jose Manuel Vargas Palacios",
               "TOROS DE CUENDA",
               "1"
             ],
             [
-              "32",
+              "34",
               "J. MARCOS ARCE SANCHEZ",
               "LA ESPERANZA",
               "1"
             ],
             [
-              "33",
+              "35",
               "Lazaro Ruvalcaba Almanza",
               "BOAVISTA",
               "1"
@@ -461,14 +456,14 @@
             [
               "1",
               "DYNAMO",
-              "19 goles en temporada",
-              "19"
+              "20 goles en temporada",
+              "20"
             ],
             [
               "2",
               "MANCHESTER",
-              "17 goles en temporada",
-              "17"
+              "18 goles en temporada",
+              "18"
             ],
             [
               "3",
@@ -478,13 +473,13 @@
             ],
             [
               "4",
-              "BOAVISTA",
-              "9 goles en temporada",
-              "9"
+              "TOROS DE CUENDA",
+              "10 goles en temporada",
+              "10"
             ],
             [
               "5",
-              "TOROS DE CUENDA",
+              "BOAVISTA",
               "9 goles en temporada",
               "9"
             ],
@@ -523,6 +518,12 @@
               "Antonio Guerrero Rico",
               "LA ESPERANZA",
               "2"
+            ],
+            [
+              "Amarilla",
+              "ANTONIO GRANGENO RODRIGUEZ",
+              "MANCHESTER",
+              "1"
             ],
             [
               "Roja",
@@ -566,23 +567,11 @@
       "suspensions": [
         {
           "headers": [
-            "Jugador",
-            "Equipo",
-            "Castigo",
-            "Pendientes"
+            "Estado"
           ],
           "rows": [
             [
-              "Jose Antonio Zarate Arellano",
-              "BOAVISTA",
-              "3 Jornadas",
-              "1"
-            ],
-            [
-              "Hilario Armenta Buenavista",
-              "DYNAMO",
-              "3 Jornadas",
-              "1"
+              "No hay jugadores castigados."
             ]
           ]
         }
@@ -930,9 +919,9 @@
               "28",
               "10",
               "DYNAMO",
-              "-",
+              "1",
               "vs",
-              "-",
+              "1",
               "MANCHESTER",
               "Campo 3",
               "24/10/2026 15:00",
@@ -944,11 +933,11 @@
               "BOAVISTA",
               "-",
               "vs",
-              "-",
+              "1",
               "TOROS DE CUENDA",
               "Campo 2",
               "24/10/2026 15:00",
-              "---"
+              "SILVESTRE MORENO"
             ],
             [
               "30",
@@ -965,24 +954,24 @@
             [
               "31",
               "11",
-              "MANCHESTER",
-              "-",
-              "vs",
-              "-",
-              "BOAVISTA",
-              "Campo 2",
-              "31/10/2026 15:00",
-              "---"
-            ],
-            [
-              "32",
-              "11",
               "DYNAMO",
               "-",
               "vs",
               "-",
               "LA ESPERANZA",
               "Campo 3",
+              "31/10/2026 15:00",
+              "---"
+            ],
+            [
+              "32",
+              "11",
+              "MANCHESTER",
+              "-",
+              "vs",
+              "-",
+              "BOAVISTA",
+              "Campo 2",
               "31/10/2026 15:00",
               "---"
             ],
@@ -1001,24 +990,24 @@
             [
               "34",
               "12",
-              "BOCA JRS",
-              "-",
-              "vs",
-              "-",
-              "MANCHESTER",
-              "Campo 2",
-              "07/11/2026 15:30",
-              "---"
-            ],
-            [
-              "35",
-              "12",
               "LA ESPERANZA",
               "-",
               "vs",
               "-",
               "TOROS DE CUENDA",
               "Tavera",
+              "07/11/2026 15:30",
+              "---"
+            ],
+            [
+              "35",
+              "12",
+              "BOCA JRS",
+              "-",
+              "vs",
+              "-",
+              "MANCHESTER",
+              "Campo 2",
               "07/11/2026 15:30",
               "---"
             ],
@@ -2906,6 +2895,32 @@
           "away_lineup": [],
           "local_bench": [],
           "away_bench": []
+        },
+        {
+          "id": 58,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/58/",
+          "title": "Cédula Arbitral - BOAVISTA (Veteranos 50+) vs TOROS DE CUENDA (Veteranos 50+)",
+          "local": "BOAVISTA",
+          "away": "TOROS DE CUENDA",
+          "category": "Veteranos 50+",
+          "date": "24/10/2026 15:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
+        },
+        {
+          "id": 59,
+          "url": "https://juventinorosasliga.com/cedula-arbitral/59/",
+          "title": "Cédula Arbitral - DYNAMO (Veteranos 50+) vs MANCHESTER (Veteranos 50+)",
+          "local": "DYNAMO",
+          "away": "MANCHESTER",
+          "category": "Veteranos 50+",
+          "date": "24/10/2026 15:00",
+          "local_lineup": [],
+          "away_lineup": [],
+          "local_bench": [],
+          "away_bench": []
         }
       ],
       "cedulas_scanned": [
@@ -2935,7 +2950,9 @@
         54,
         55,
         56,
-        57
+        57,
+        58,
+        59
       ],
       "public_player_count_scraped": 132
     },
@@ -6014,8 +6031,8 @@
       "dashboard": {
         "counts": {
           "Equipos": 11,
-          "Partidos Jugados": 36,
-          "Partidos Pendientes": 19,
+          "Partidos Jugados": 40,
+          "Partidos Pendientes": 15,
           "Jugadores": 292
         },
         "current_cedulas": [
@@ -6023,80 +6040,48 @@
         ],
         "logo_candidates": [
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_ntqr0b",
-            "near_text": "JUVENTUS"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
-            "near_text": "HERRERAS FC"
-          },
-          {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/FrancoFC_vtd8d7",
             "near_text": "FRANCO FC"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
-            "near_text": "LOBOS CDG"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_ntqr0b",
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 26 GOLES LINCES 19 GOLES HERMANOS 17 GOLES SAN JOSE FC 17 GOLES HERRERAS FC 16 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
-            "near_text": "LINCES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Terricolas_ltbrzy",
-            "near_text": "TERRICOLAS"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Abejas_lxn6l9",
-            "near_text": "ABEJAS"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 26 GOLES LINCES 19 GOLES HERMANOS 17 GOLES SAN JOSE FC 17 GOLES HERRERAS FC 16 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "HERMANOS"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
-            "near_text": "NAPOLI"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Juventus_ntqr0b",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 18 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 18 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 26 GOLES LINCES 19 GOLES HERMANOS 17 GOLES SAN JOSE FC 17 GOLES HERRERAS FC 16 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/SanJoseMonta%C3%B1a_ilen4d",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 18 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 26 GOLES LINCES 19 GOLES HERMANOS 17 GOLES SAN JOSE FC 17 GOLES HERRERAS FC 16 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 18 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Napoli_cp25dv",
-            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 24 GOLES LINCES 18 GOLES SAN JOSE FC 17 GOLES HERMANOS 15 GOLES NAPOLI 14 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "H - HERMANOS Alejandro Moreno Banda 3 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
+            "near_text": "Top 5 Equipos con Más Goles - Primera Fuerza JUVENTUS 26 GOLES LINCES 19 GOLES HERMANOS 17 GOLES SAN JOSE FC 17 GOLES HERRERAS FC 16 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
             "near_text": "L - LINCES ERNESTO BALTAZAR SOSA ARREDONDO 3 GOLES"
           },
           {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
-            "near_text": "L - LOBOS CDG Emiliano Rubi Campos 2 GOLES"
-          },
-          {
-            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Linces_l1lc7c",
-            "near_text": "L - LINCES ISRAEL SOLORZANO LINARES 2 GOLES"
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/HerreraFC_mnmlsd",
+            "near_text": "H - HERRERAS FC EDGAR OMAR REYES QUINTERO 3 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
-            "near_text": "H - HERMANOS Mario Razo Miranda 2 GOLES"
+            "near_text": "H - HERMANOS Alejandro Moreno Banda 3 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Hermanos_kbfrmh",
+            "near_text": "H - HERMANOS JESUS GERARDO RODRIGUEZ ALEJOS 2 GOLES"
+          },
+          {
+            "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
+            "near_text": "L - LOBOS CDG Emiliano Rubi Campos 2 GOLES"
           },
           {
             "source": "https://res.cloudinary.com/rdk7ndhb/image/upload/v1/logos/Lobos_efloib",
@@ -6130,8 +6115,8 @@
       },
       "counts": {
         "Equipos": 11,
-        "Partidos Jugados": 36,
-        "Partidos Pendientes": 19,
+        "Partidos Jugados": 40,
+        "Partidos Pendientes": 15,
         "Jugadores": 292
       },
       "standings": [
@@ -6151,6 +6136,18 @@
           "rows": [
             [
               "1",
+              "LINCES",
+              "7",
+              "6",
+              "0",
+              "1",
+              "19",
+              "10",
+              "+9",
+              "18"
+            ],
+            [
+              "2",
               "SAN JOSE FC",
               "7",
               "5",
@@ -6162,28 +6159,16 @@
               "16"
             ],
             [
-              "2",
-              "LINCES",
-              "6",
-              "5",
-              "0",
-              "1",
-              "18",
-              "10",
-              "+8",
-              "15"
-            ],
-            [
               "3",
               "HERMANOS",
-              "6",
-              "4",
+              "7",
+              "5",
               "1",
               "1",
-              "15",
+              "17",
               "9",
-              "+6",
-              "13"
+              "+8",
+              "16"
             ],
             [
               "4",
@@ -6200,74 +6185,74 @@
             [
               "5",
               "JUVENTUS",
-              "6",
+              "7",
               "4",
               "0",
-              "2",
-              "24",
-              "12",
-              "+12",
+              "3",
+              "26",
+              "15",
+              "+11",
               "12"
             ],
             [
               "6",
               "NAPOLI",
-              "7",
+              "8",
               "3",
               "2",
-              "2",
+              "3",
               "14",
-              "11",
-              "+3",
+              "13",
+              "+1",
               "11"
             ],
             [
               "7",
               "HERRERAS FC",
-              "6",
-              "2",
+              "7",
+              "3",
               "1",
               "3",
-              "13",
-              "13",
-              "0",
-              "7"
+              "16",
+              "15",
+              "+1",
+              "10"
             ],
             [
               "8",
               "TERRICOLAS",
-              "6",
+              "7",
               "2",
-              "1",
+              "2",
               "3",
-              "8",
-              "14",
+              "9",
+              "15",
               "-6",
-              "7"
+              "8"
             ],
             [
               "9",
               "ABEJAS",
-              "6",
+              "7",
               "2",
-              "1",
+              "2",
               "3",
-              "10",
-              "14",
+              "11",
+              "15",
               "-4",
-              "4"
+              "5"
             ],
             [
               "10",
               "LOBOS CDG",
-              "8",
+              "9",
               "1",
               "0",
-              "7",
+              "8",
               "5",
-              "29",
-              "-24",
-              "0"
+              "30",
+              "-25",
+              "-3"
             ],
             [
               "11",
@@ -6307,33 +6292,33 @@
             ],
             [
               "3",
-              "Mario Razo Miranda",
-              "HERMANOS",
-              "2"
+              "EDGAR OMAR REYES QUINTERO",
+              "HERRERAS FC",
+              "3"
             ],
             [
               "4",
-              "Emiliano Rubi Campos",
-              "LOBOS CDG",
-              "2"
-            ],
-            [
-              "5",
               "ISRAEL SOLORZANO LINARES",
               "LINCES",
               "2"
             ],
             [
+              "5",
+              "JESUS GERARDO RODRIGUEZ ALEJOS",
+              "HERMANOS",
+              "2"
+            ],
+            [
               "6",
-              "JORGE LUIS ALMAGUER RUIZ",
-              "LINCES",
-              "1"
+              "Emiliano Rubi Campos",
+              "LOBOS CDG",
+              "2"
             ],
             [
               "7",
-              "Juan Jesus Beltran Garcia",
-              "FRANCO FC",
-              "1"
+              "Mario Razo Miranda",
+              "HERMANOS",
+              "2"
             ],
             [
               "8",
@@ -6361,195 +6346,231 @@
             ],
             [
               "12",
+              "Enrique Alexis Castro Rivera",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "13",
               "ANDRES AGUILLON TIERRABLANCA",
               "LINCES",
               "1"
             ],
             [
-              "13",
+              "14",
               "Oscar Monroy Camacho",
               "JUVENTUS",
               "1"
             ],
             [
-              "14",
+              "15",
               "Jose Ramon Negrete Ruiz",
               "JUVENTUS",
               "1"
             ],
             [
-              "15",
+              "16",
               "Jorge Luis Ramirez Conejo",
               "JUVENTUS",
               "1"
             ],
             [
-              "16",
+              "17",
+              "Marco Antonio Gamez Ramirez",
+              "ABEJAS",
+              "1"
+            ],
+            [
+              "18",
               "Juan Pablo Mendoza Macias",
               "NAPOLI",
               "1"
             ],
             [
-              "17",
+              "19",
               "Juan Esteban Montecillo Solache",
               "NAPOLI",
               "1"
             ],
             [
-              "18",
+              "20",
               "Juan Angel Gonzalez Martinez",
               "NAPOLI",
               "1"
             ],
             [
-              "19",
+              "21",
               "Oswaldo Grande Valadez",
               "TERRICOLAS",
               "1"
             ],
             [
-              "20",
+              "22",
               "Jose Guadalupe Guerrero Lopez",
               "JUVENTUS",
               "1"
             ],
             [
-              "21",
+              "23",
               "Marco Cesar Saavedra Escoto",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "22",
+              "24",
               "Rolando Rocha Sierra",
               "FRANCO FC",
               "1"
             ],
             [
-              "23",
+              "25",
               "Mario Eduardo Cardenas Ayala",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "24",
+              "26",
+              "ALEXIS USBALDO SILVA GARCIA",
+              "HERRERAS FC",
+              "1"
+            ],
+            [
+              "27",
               "FRANCISCO JAVIER HERRERA TIERRABLANCA",
               "HERRERAS FC",
               "1"
             ],
             [
-              "25",
+              "28",
+              "Juan Carlos Acosta Zarate",
+              "JUVENTUS",
+              "1"
+            ],
+            [
+              "29",
               "Juan Pablo Muñoz Guerrero",
               "NAPOLI",
               "1"
             ],
             [
-              "26",
+              "30",
               "Victor Manuel Raul Muñoz Vasquez",
               "TERRICOLAS",
               "1"
             ],
             [
-              "27",
+              "31",
+              "Lazaro Daniel Ruvalcaba Lerma",
+              "TERRICOLAS",
+              "1"
+            ],
+            [
+              "32",
               "Alejandro Alarcon Aguirre",
               "NAPOLI",
               "1"
             ],
             [
-              "28",
+              "33",
               "Fernando Gamez Reyes",
               "ABEJAS",
               "1"
             ],
             [
-              "29",
+              "34",
               "Juan Manuel Gamez Lopez",
               "ABEJAS",
               "1"
             ],
             [
-              "30",
-              "EDGAR OMAR REYES QUINTERO",
-              "HERRERAS FC",
-              "1"
-            ],
-            [
-              "31",
+              "35",
               "NESTOR GUTIERREZ MENDOZA",
               "HERRERAS FC",
               "1"
             ],
             [
-              "32",
+              "36",
               "Angel Santiago Garcia",
               "SAN JOSE FC",
               "1"
             ],
             [
-              "33",
+              "37",
               "Kevin Orlando Lara Ruiz",
               "LOBOS CDG",
               "1"
             ],
             [
-              "34",
+              "38",
               "Gustavo Guadalupe Rico Huerta",
               "ABEJAS",
               "1"
             ],
             [
-              "35",
+              "39",
               "Jose Rosas Cardenas",
               "SAN JOSE FC",
               "1"
             ],
             [
+              "40",
+              "JORGE LUIS ALMAGUER RUIZ",
+              "LINCES",
+              "1"
+            ],
+            [
+              "41",
+              "Juan Jesus Beltran Garcia",
+              "FRANCO FC",
+              "1"
+            ],
+            [
               "1",
               "JUVENTUS",
-              "24 goles en temporada",
-              "24"
+              "26 goles en temporada",
+              "26"
             ],
             [
               "2",
               "LINCES",
-              "18 goles en temporada",
-              "18"
+              "19 goles en temporada",
+              "19"
             ],
             [
               "3",
-              "SAN JOSE FC",
+              "HERMANOS",
               "17 goles en temporada",
               "17"
             ],
             [
               "4",
-              "HERMANOS",
-              "15 goles en temporada",
-              "15"
+              "SAN JOSE FC",
+              "17 goles en temporada",
+              "17"
             ],
             [
               "5",
+              "HERRERAS FC",
+              "16 goles en temporada",
+              "16"
+            ],
+            [
+              "6",
               "NAPOLI",
               "14 goles en temporada",
               "14"
             ],
             [
-              "6",
-              "HERRERAS FC",
-              "13 goles en temporada",
-              "13"
-            ],
-            [
               "7",
               "ABEJAS",
-              "10 goles en temporada",
-              "10"
+              "11 goles en temporada",
+              "11"
             ],
             [
               "8",
               "TERRICOLAS",
-              "8 goles en temporada",
-              "8"
+              "9 goles en temporada",
+              "9"
             ],
             [
               "9",
@@ -7034,24 +7055,24 @@
             [
               "33",
               "7",
-              "HERMANOS",
-              "5",
-              "vs",
-              "2",
-              "LOBOS CDG",
-              "Campo 3",
-              "18/10/2026 10:00",
-              "---"
-            ],
-            [
-              "34",
-              "7",
               "ABEJAS",
               "-",
               "vs",
               "4",
               "HERRERAS FC",
               "Pozos",
+              "18/10/2026 10:00",
+              "---"
+            ],
+            [
+              "34",
+              "7",
+              "HERMANOS",
+              "5",
+              "vs",
+              "2",
+              "LOBOS CDG",
+              "Campo 3",
               "18/10/2026 10:00",
               "---"
             ],
@@ -7070,6 +7091,18 @@
             [
               "36",
               "8",
+              "LOBOS CDG",
+              "-",
+              "vs",
+              "1",
+              "LINCES",
+              "",
+              "25/10/2026 08:00",
+              "---"
+            ],
+            [
+              "37",
+              "8",
               "GALACTICOS",
               "-",
               "vs",
@@ -7080,24 +7113,12 @@
               "---"
             ],
             [
-              "37",
-              "8",
-              "LOBOS CDG",
-              "-",
-              "vs",
-              "-",
-              "LINCES",
-              "Campo 2",
-              "25/10/2026 08:00",
-              "---"
-            ],
-            [
               "38",
               "8",
               "JUVENTUS",
-              "-",
+              "2",
               "vs",
-              "-",
+              "3",
               "HERRERAS FC",
               "Campo 1 (Empastado)",
               "25/10/2026 08:00",
@@ -7107,7 +7128,7 @@
               "39",
               "8",
               "HERMANOS",
-              "-",
+              "2",
               "vs",
               "-",
               "NAPOLI",
@@ -7119,9 +7140,9 @@
               "40",
               "8",
               "TERRICOLAS",
-              "-",
+              "1",
               "vs",
-              "-",
+              "1",
               "ABEJAS",
               "Campo 3",
               "25/10/2026 10:00",
@@ -7142,24 +7163,24 @@
             [
               "42",
               "9",
-              "ABEJAS",
-              "-",
-              "vs",
-              "-",
-              "JUVENTUS",
-              "Campo 3",
-              "01/11/2026 08:00",
-              "---"
-            ],
-            [
-              "43",
-              "9",
               "NAPOLI",
               "-",
               "vs",
               "-",
               "LINCES",
               "Campo 1 (Empastado)",
+              "01/11/2026 08:00",
+              "---"
+            ],
+            [
+              "43",
+              "9",
+              "ABEJAS",
+              "-",
+              "vs",
+              "-",
+              "JUVENTUS",
+              "Campo 3",
               "01/11/2026 08:00",
               "---"
             ],
@@ -7190,24 +7211,24 @@
             [
               "46",
               "10",
-              "ABEJAS",
-              "-",
-              "vs",
-              "-",
-              "SAN JOSE FC",
-              "Campo 4",
-              "08/11/2026 08:00",
-              "---"
-            ],
-            [
-              "47",
-              "10",
               "GALACTICOS",
               "-",
               "vs",
               "-",
               "LINCES",
               "Pozos",
+              "08/11/2026 08:00",
+              "---"
+            ],
+            [
+              "47",
+              "10",
+              "ABEJAS",
+              "-",
+              "vs",
+              "-",
+              "SAN JOSE FC",
+              "Campo 4",
               "08/11/2026 08:00",
               "---"
             ],
@@ -7274,24 +7295,24 @@
             [
               "53",
               "11",
-              "LOBOS CDG",
-              "-",
-              "vs",
-              "-",
-              "LINCES",
-              "Cerrito de Gasca",
-              "15/11/2026 10:00",
-              "---"
-            ],
-            [
-              "54",
-              "11",
               "GALACTICOS",
               "-",
               "vs",
               "-",
               "HERMANOS",
               "Pozos",
+              "15/11/2026 10:00",
+              "---"
+            ],
+            [
+              "54",
+              "11",
+              "LOBOS CDG",
+              "-",
+              "vs",
+              "-",
+              "LINCES",
+              "Cerrito de Gasca",
               "15/11/2026 10:00",
               "---"
             ],
